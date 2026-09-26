@@ -1,0 +1,315 @@
+{
+  "fixture_id": "D16",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question_family": "late-eligible-missing-carrier-packet-evidence",
+  "manifest": {
+    "snapshot_id": "DEV-D16",
+    "as_of": "2026-10-01T12:00:00Z",
+    "dataset_version": "development-v1",
+    "checksum": "ed80eedcc1ead4aa4ca2d91d7ac40c2c088cef6c9843f9b8c9b248f1773523d6"
+  },
+  "policy": {
+    "bundle_id": "last-mile-exception-triage-demo",
+    "bundle_version": "1.0-demo"
+  },
+  "input_profile": "CANONICAL",
+  "input": {
+    "shipments": [
+      {
+        "snapshot_id": "DEV-D16",
+        "shipment_id": "SHP-D16",
+        "carrier": null,
+        "origin_facility_id": "DEMO-FACILITY",
+        "created_at": "2026-09-27T00:00:00Z",
+        "promised_delivery_at": "2026-09-30T12:00:00Z",
+        "delivered_at": null,
+        "current_status": "IN_TRANSIT",
+        "source_system": "SYNTHETIC"
+      }
+    ],
+    "tracking_events": [
+      {
+        "event_id": "SCAN-1",
+        "event_time": "2026-10-01T10:00:00Z",
+        "event_code": "IN_TRANSIT",
+        "attempt_id": null,
+        "facility_id": "DEMO-FACILITY",
+        "source_system": "SYNTHETIC",
+        "snapshot_id": "DEV-D16",
+        "shipment_id": "SHP-D16"
+      }
+    ],
+    "history_declarations": [
+      {
+        "snapshot_id": "DEV-D16",
+        "shipment_id": "SHP-D16",
+        "history_complete": true
+      }
+    ]
+  },
+  "expected_input_findings": [],
+  "gold_provenance": {
+    "method": "INDEPENDENT_WRITTEN_POLICY",
+    "author": "development-artifact-author (Codex; AI-assisted)",
+    "reviewer": "Zhe Wang",
+    "review_status": "OWNER_REVIEWED",
+    "limitations": [
+      "Gold and arithmetic were manually authored from the frozen written PROJECT_SPEC.md and policy bundle 1.0-demo with AI assistance during artifact authoring; no operational implementation generated the labels.",
+      "Project owner Zhe Wang manually reviewed the inputs, arithmetic, rule selection, evidence dependencies, SOP sections, blockers and aggregate outcomes against the frozen policy and approved this fixture.",
+      "There is no independent second human reviewer yet. Implementation-visible DEVELOPMENT material only, not held-out results or production evidence."
+    ]
+  },
+  "expected_results": [
+    {
+      "input_shipment_index": 0,
+      "snapshot_id": "DEV-D16",
+      "shipment_id": "SHP-D16",
+      "assessments": [
+        {
+          "exception_type": "LATE_DELIVERY",
+          "result": "TRUE",
+          "escalation_eligible": true,
+          "action_state": "NEEDS_REVIEW",
+          "rule_ids": [
+            "L-2"
+          ],
+          "expected_sections": [
+            {
+              "policy_id": "SOP-02",
+              "version": "1.0-demo",
+              "section_id": "late-escalate"
+            },
+            {
+              "policy_id": "SOP-05",
+              "version": "1.0-demo",
+              "section_id": "common-evidence"
+            },
+            {
+              "policy_id": "SOP-05",
+              "version": "1.0-demo",
+              "section_id": "late-evidence"
+            },
+            {
+              "policy_id": "SOP-06",
+              "version": "1.0-demo",
+              "section_id": "handoff-boundary"
+            }
+          ],
+          "evidence": {
+            "completeness": "INCOMPLETE",
+            "required_ids": [
+              "E-IDENTITY",
+              "E-STATUS",
+              "E-POLICY-CONTEXT",
+              "E-LATE",
+              "E-POLICY-SECTIONS"
+            ],
+            "missing_ids": [
+              "E-IDENTITY"
+            ],
+            "conflicting_ids": []
+          },
+          "blockers": [
+            {
+              "code": "MISSING_CARRIER",
+              "scope": "CATEGORY",
+              "exception_type": "LATE_DELIVERY",
+              "dependent_decision": "LATE_DELIVERY",
+              "reason": "Valid composite shipment identity remains intact, but carrier is required for the late escalation packet.",
+              "field_refs": [
+                "input.shipments[0].carrier"
+              ],
+              "requirement_ids": [
+                "E-IDENTITY"
+              ]
+            }
+          ],
+          "subtype": null,
+          "subtype_assessments": [],
+          "supported_triggers": [
+            "L-2"
+          ]
+        },
+        {
+          "exception_type": "STALE_TRACKING",
+          "result": "FALSE",
+          "escalation_eligible": false,
+          "action_state": "NORMAL",
+          "rule_ids": [
+            "S-0"
+          ],
+          "expected_sections": [
+            {
+              "policy_id": "SOP-03",
+              "version": "1.0-demo",
+              "section_id": "scan-scope"
+            }
+          ],
+          "evidence": {
+            "completeness": "NOT_APPLICABLE",
+            "required_ids": [],
+            "missing_ids": [],
+            "conflicting_ids": []
+          },
+          "blockers": [],
+          "subtype": null,
+          "subtype_assessments": [],
+          "supported_triggers": []
+        },
+        {
+          "exception_type": "FAILED_ATTEMPT_ADDRESS",
+          "result": "FALSE",
+          "escalation_eligible": false,
+          "action_state": "NORMAL",
+          "rule_ids": [
+            "F-0"
+          ],
+          "expected_sections": [
+            {
+              "policy_id": "SOP-04",
+              "version": "1.0-demo",
+              "section_id": "attempt-counting"
+            }
+          ],
+          "evidence": {
+            "completeness": "NOT_APPLICABLE",
+            "required_ids": [],
+            "missing_ids": [],
+            "conflicting_ids": []
+          },
+          "blockers": [],
+          "subtype": null,
+          "subtype_assessments": [],
+          "supported_triggers": []
+        }
+      ],
+      "aggregate_action_state": "NEEDS_REVIEW",
+      "priority": "HIGH",
+      "common_evidence": {
+        "completeness": "INCOMPLETE",
+        "required_ids": [
+          "E-IDENTITY",
+          "E-STATUS",
+          "E-POLICY-CONTEXT"
+        ],
+        "missing_ids": [
+          "E-IDENTITY"
+        ],
+        "conflicting_ids": []
+      },
+      "shipment_blockers": [],
+      "warnings": [],
+      "derived_facts": {
+        "is_open": true,
+        "hours_overdue": 24,
+        "last_scan_time": "2026-10-01T10:00:00Z",
+        "hours_since_last_scan": 2,
+        "failed_attempt_count": 0,
+        "address_exception_active": false,
+        "exception_started_at": {
+          "LATE_DELIVERY": "2026-09-30T12:00:00Z",
+          "STALE_TRACKING": null,
+          "FAILED_ATTEMPT_ADDRESS": null
+        },
+        "exception_age_hours": {
+          "LATE_DELIVERY": 24,
+          "STALE_TRACKING": null,
+          "FAILED_ATTEMPT_ADDRESS": null
+        },
+        "fact_refs": [
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "shipment",
+            "field": "shipment_id",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "shipment",
+            "field": "carrier",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "shipment",
+            "field": "source_system",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "shipment",
+            "field": "current_status",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "shipment",
+            "field": "promised_delivery_at",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "shipment",
+            "field": "delivered_at",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "manifest",
+            "field": "as_of",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "history_declaration",
+            "field": "history_complete",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "tracking_event",
+            "field": "event_time",
+            "event_id": "SCAN-1",
+            "source_system": "SYNTHETIC"
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "tracking_event",
+            "field": "event_code",
+            "event_id": "SCAN-1",
+            "source_system": "SYNTHETIC"
+          },
+          {
+            "snapshot_id": "DEV-D16",
+            "shipment_id": "SHP-D16",
+            "record_type": "tracking_event",
+            "field": "attempt_id",
+            "event_id": "SCAN-1",
+            "source_system": "SYNTHETIC"
+          }
+        ]
+      },
+      "rationale": "Manual Gold: valid open status, composite shipment identity, snapshot and promise establish overdue/late age exactly 24 hours (86400 seconds). L-2 remains TRUE and escalation_eligible true; its verified trigger remains named. Carrier null is schema-valid and is not invalid shipment identity. Under E-IDENTITY / SOP-05#common-evidence it leaves packet evidence INCOMPLETE and produces a CATEGORY-local MISSING_CARRIER blocker for late readiness, hence NEEDS_REVIEW, not UNKNOWN and not D-CONTEXT. E-LATE and exact policy-section support remain complete; common_evidence reports the shared packet gap without a shipment-global blocker. Complete history, a 2-hour physical scan gap, zero failures and no address markers give S-0 and F-0 FALSE/ineligible/NORMAL with inactive evidence gates. Aggregate NEEDS_REVIEW/HIGH because a verified eligible late trigger remains; no redundant warning, no global blocker. Late citations remain late-escalate, common-evidence, late-evidence and handoff-boundary."
+    }
+  ]
+}

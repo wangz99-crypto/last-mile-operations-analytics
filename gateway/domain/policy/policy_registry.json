@@ -1,0 +1,790 @@
+{
+  "contract_version": "1.0",
+  "bundle_id": "last-mile-exception-triage-demo",
+  "bundle_version": "1.0-demo",
+  "effective_from": "2026-09-26T00:00:00Z",
+  "effective_to": null,
+  "demo_policy": true,
+  "disclaimer": "Fictional demo operating policy. Not real carrier or industry standards.",
+  "authority": "PROJECT_SPEC.md, approved V1 final revision",
+  "thresholds": {
+    "LATE_ESCALATE_HOURS": {
+      "value": 24,
+      "unit": "elapsed_hours",
+      "operator": ">="
+    },
+    "STALE_DETECT_HOURS": {
+      "value": 24,
+      "unit": "elapsed_hours",
+      "operator": ">"
+    },
+    "STALE_ESCALATE_HOURS": {
+      "value": 48,
+      "unit": "elapsed_hours",
+      "operator": ">="
+    },
+    "FAILED_ATTEMPTS_ESCALATE": {
+      "value": 2,
+      "unit": "unique_valid_attempts",
+      "operator": ">="
+    },
+    "ADDRESS_ACTIVE_ESCALATES": {
+      "value": true,
+      "unit": "boolean",
+      "operator": "enabled"
+    }
+  },
+  "late_detection_contract": "Open shipment AND as_of > promised_delivery_at; equality is not late.",
+  "open_statuses": [
+    "PRE_TRANSIT",
+    "IN_TRANSIT",
+    "OUT_FOR_DELIVERY",
+    "EXCEPTION"
+  ],
+  "closed_statuses": [
+    "DELIVERED",
+    "CANCELLED"
+  ],
+  "qualifying_physical_scans": [
+    "ACCEPTED",
+    "IN_TRANSIT",
+    "OUT_FOR_DELIVERY",
+    "ATTEMPT_FAILED",
+    "DELIVERED"
+  ],
+  "dependency_principle": "Missing information blocks only decisions that depend on it unless it invalidates the shipment-level assessment.",
+  "aggregation_contract": [
+    "Any shipment-level blocker => NEEDS_REVIEW",
+    "Otherwise any category READY_TO_ESCALATE => READY_TO_ESCALATE",
+    "Otherwise any category NEEDS_REVIEW => NEEDS_REVIEW",
+    "Otherwise any category MONITOR => MONITOR",
+    "Otherwise NORMAL"
+  ],
+  "lifecycle_contract": [
+    "Failed attempts remain relevant until valid shipment closure.",
+    "Address clears only through a later explicit ADDRESS_CLEARED.",
+    "No inferred recovery, cooldown window or carrier-specific rule."
+  ],
+  "ready_contract": "Human review only. A ready category does not erase unrelated gaps; no actions approved or executed.",
+  "rules": [
+    {
+      "rule_id": "D-CONTEXT",
+      "scope": "SHIPMENT",
+      "exception_type": null,
+      "description": "Invalid composite shipment identity or snapshot context, or unavailable/ambiguous required policy bundle.",
+      "classification_meaning": "Whole assessment cannot be established.",
+      "escalation_eligibility_meaning": "Unknown; global blocker prevents ready aggregate.",
+      "constant_refs": [],
+      "support_sections": [],
+      "failure_guidance_sections": [
+        {
+          "policy_id": "SOP-07",
+          "version": "1.0-demo",
+          "section_id": "missing-facts"
+        },
+        {
+          "policy_id": "SOP-07",
+          "version": "1.0-demo",
+          "section_id": "missing-policy"
+        }
+      ],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-POLICY-CONTEXT"
+      ]
+    },
+    {
+      "rule_id": "D-STATUS",
+      "scope": "SHIPMENT",
+      "exception_type": null,
+      "description": "Unknown or conflicting current open/closed status.",
+      "classification_meaning": "Whole open/closed assessment invalid.",
+      "escalation_eligibility_meaning": "Unknown; global blocker.",
+      "constant_refs": [],
+      "support_sections": [],
+      "failure_guidance_sections": [
+        {
+          "policy_id": "SOP-07",
+          "version": "1.0-demo",
+          "section_id": "data-conflicts"
+        }
+      ],
+      "decision_dependency_ids": [
+        "E-STATUS"
+      ]
+    },
+    {
+      "rule_id": "D-CLOSED",
+      "scope": "SHIPMENT",
+      "exception_type": null,
+      "description": "Consistent DELIVERED or CANCELLED status.",
+      "classification_meaning": "No active categories; NOT_APPLICABLE to open-shipment rules.",
+      "escalation_eligibility_meaning": "False; NORMAL and excluded from open queue.",
+      "constant_refs": [],
+      "support_sections": [
+        {
+          "policy_id": "SOP-01",
+          "version": "1.0-demo",
+          "section_id": "scope"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT"
+      ]
+    },
+    {
+      "rule_id": "L-UNKNOWN",
+      "scope": "CATEGORY",
+      "exception_type": "LATE_DELIVERY",
+      "description": "Open shipment; promised delivery timestamp missing or invalid.",
+      "classification_meaning": "UNKNOWN",
+      "escalation_eligibility_meaning": "Unknown; late-only review.",
+      "constant_refs": [],
+      "support_sections": [],
+      "failure_guidance_sections": [
+        {
+          "policy_id": "SOP-07",
+          "version": "1.0-demo",
+          "section_id": "missing-facts"
+        }
+      ],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-LATE",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "L-0",
+      "scope": "CATEGORY",
+      "exception_type": "LATE_DELIVERY",
+      "description": "Open shipment; as_of <= promised_delivery_at.",
+      "classification_meaning": "FALSE",
+      "escalation_eligibility_meaning": "False.",
+      "constant_refs": [],
+      "support_sections": [
+        {
+          "policy_id": "SOP-02",
+          "version": "1.0-demo",
+          "section_id": "late-boundaries"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-LATE",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "L-1",
+      "scope": "CATEGORY",
+      "exception_type": "LATE_DELIVERY",
+      "description": "Open shipment; as_of > promised_delivery_at and hours_overdue < LATE_ESCALATE_HOURS.",
+      "classification_meaning": "TRUE",
+      "escalation_eligibility_meaning": "False; monitor if dependent evidence complete.",
+      "constant_refs": [
+        "LATE_ESCALATE_HOURS"
+      ],
+      "support_sections": [
+        {
+          "policy_id": "SOP-02",
+          "version": "1.0-demo",
+          "section_id": "late-monitor"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-LATE",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "L-2",
+      "scope": "CATEGORY",
+      "exception_type": "LATE_DELIVERY",
+      "description": "Open shipment; hours_overdue >= LATE_ESCALATE_HOURS.",
+      "classification_meaning": "TRUE",
+      "escalation_eligibility_meaning": "True; readiness still requires late-specific evidence.",
+      "constant_refs": [
+        "LATE_ESCALATE_HOURS"
+      ],
+      "support_sections": [
+        {
+          "policy_id": "SOP-02",
+          "version": "1.0-demo",
+          "section_id": "late-escalate"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-LATE",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "S-UNKNOWN",
+      "scope": "CATEGORY",
+      "exception_type": "STALE_TRACKING",
+      "description": "Open in-network shipment without a qualifying scan, or incomplete/invalid history needed to establish the last scan.",
+      "classification_meaning": "UNKNOWN",
+      "escalation_eligibility_meaning": "Unknown; stale-only review.",
+      "constant_refs": [],
+      "support_sections": [],
+      "failure_guidance_sections": [
+        {
+          "policy_id": "SOP-07",
+          "version": "1.0-demo",
+          "section_id": "missing-facts"
+        }
+      ],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-STALE",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "S-PRE",
+      "scope": "CATEGORY",
+      "exception_type": "STALE_TRACKING",
+      "description": "Valid PRE_TRANSIT shipment with complete empty physical-scan history.",
+      "classification_meaning": "NOT_APPLICABLE",
+      "escalation_eligibility_meaning": "False; late still evaluated independently.",
+      "constant_refs": [],
+      "support_sections": [
+        {
+          "policy_id": "SOP-03",
+          "version": "1.0-demo",
+          "section_id": "scan-scope"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-STALE",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "S-0",
+      "scope": "CATEGORY",
+      "exception_type": "STALE_TRACKING",
+      "description": "Valid qualifying scan/history; hours_since_last_scan <= STALE_DETECT_HOURS.",
+      "classification_meaning": "FALSE",
+      "escalation_eligibility_meaning": "False.",
+      "constant_refs": [
+        "STALE_DETECT_HOURS"
+      ],
+      "support_sections": [
+        {
+          "policy_id": "SOP-03",
+          "version": "1.0-demo",
+          "section_id": "scan-scope"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-STALE",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "S-1",
+      "scope": "CATEGORY",
+      "exception_type": "STALE_TRACKING",
+      "description": "Valid scan/history; STALE_DETECT_HOURS < hours_since_last_scan < STALE_ESCALATE_HOURS.",
+      "classification_meaning": "TRUE",
+      "escalation_eligibility_meaning": "False; monitor if dependent evidence complete.",
+      "constant_refs": [
+        "STALE_DETECT_HOURS",
+        "STALE_ESCALATE_HOURS"
+      ],
+      "support_sections": [
+        {
+          "policy_id": "SOP-03",
+          "version": "1.0-demo",
+          "section_id": "stale-monitor"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-STALE",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "S-2",
+      "scope": "CATEGORY",
+      "exception_type": "STALE_TRACKING",
+      "description": "Valid scan/history; hours_since_last_scan >= STALE_ESCALATE_HOURS.",
+      "classification_meaning": "TRUE",
+      "escalation_eligibility_meaning": "True; readiness still requires stale-specific evidence.",
+      "constant_refs": [
+        "STALE_ESCALATE_HOURS"
+      ],
+      "support_sections": [
+        {
+          "policy_id": "SOP-03",
+          "version": "1.0-demo",
+          "section_id": "stale-escalate"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-STALE",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "F-UNKNOWN",
+      "scope": "CATEGORY",
+      "exception_type": "FAILED_ATTEMPT_ADDRESS",
+      "description": "Incomplete attempt history/identity or unresolved address-marker ordering.",
+      "classification_meaning": "Affected subtype UNKNOWN; preserve a separately confirmed trigger.",
+      "escalation_eligibility_meaning": "Unknown for affected decision; another fully evidenced eligible subtype may support readiness.",
+      "constant_refs": [],
+      "support_sections": [],
+      "failure_guidance_sections": [
+        {
+          "policy_id": "SOP-07",
+          "version": "1.0-demo",
+          "section_id": "missing-facts"
+        }
+      ],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-POLICY-SECTIONS"
+      ],
+      "subtype_dependency_ids": {
+        "FAILED_ATTEMPT": [
+          "E-FAILED"
+        ],
+        "ADDRESS_EXCEPTION": [
+          "E-ADDRESS"
+        ]
+      },
+      "subtype_readiness_contract": {
+        "combination": "ANY_FULLY_SUPPORTED_ELIGIBLE_SUBTYPE",
+        "common_dependency_ids_field": "decision_dependency_ids",
+        "eligible_trigger_rule_ids": {
+          "FAILED_ATTEMPT": "F-2",
+          "ADDRESS_EXCEPTION": "F-3"
+        },
+        "unresolved_other_subtype_blocks_readiness": false
+      }
+    },
+    {
+      "rule_id": "F-0",
+      "scope": "CATEGORY",
+      "exception_type": "FAILED_ATTEMPT_ADDRESS",
+      "description": "Complete history: no failed attempts and address state known inactive.",
+      "classification_meaning": "FALSE",
+      "escalation_eligibility_meaning": "False.",
+      "constant_refs": [],
+      "support_sections": [
+        {
+          "policy_id": "SOP-04",
+          "version": "1.0-demo",
+          "section_id": "attempt-counting"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-FAILED",
+        "E-ADDRESS",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "F-1",
+      "scope": "CATEGORY",
+      "exception_type": "FAILED_ATTEMPT_ADDRESS",
+      "description": "One valid failed attempt; address state known inactive.",
+      "classification_meaning": "TRUE",
+      "escalation_eligibility_meaning": "False; monitor if dependent evidence complete.",
+      "constant_refs": [],
+      "support_sections": [
+        {
+          "policy_id": "SOP-04",
+          "version": "1.0-demo",
+          "section_id": "single-attempt"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-FAILED",
+        "E-ADDRESS",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "F-2",
+      "scope": "CATEGORY",
+      "exception_type": "FAILED_ATTEMPT_ADDRESS",
+      "description": "At least FAILED_ATTEMPTS_ESCALATE unique valid failed attempts on an open shipment.",
+      "classification_meaning": "TRUE",
+      "escalation_eligibility_meaning": "True for failed-attempt basis; address evidence not required unless claimed.",
+      "constant_refs": [
+        "FAILED_ATTEMPTS_ESCALATE"
+      ],
+      "support_sections": [
+        {
+          "policy_id": "SOP-04",
+          "version": "1.0-demo",
+          "section_id": "repeated-attempts"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-FAILED",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    {
+      "rule_id": "F-3",
+      "scope": "CATEGORY",
+      "exception_type": "FAILED_ATTEMPT_ADDRESS",
+      "description": "Explicit unresolved address exception on an open shipment; ADDRESS_ACTIVE_ESCALATES enabled.",
+      "classification_meaning": "TRUE",
+      "escalation_eligibility_meaning": "True immediately for address basis; attempt identities not required unless claimed.",
+      "constant_refs": [
+        "ADDRESS_ACTIVE_ESCALATES"
+      ],
+      "support_sections": [
+        {
+          "policy_id": "SOP-04",
+          "version": "1.0-demo",
+          "section_id": "address-notices"
+        }
+      ],
+      "failure_guidance_sections": [],
+      "decision_dependency_ids": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-ADDRESS",
+        "E-POLICY-SECTIONS"
+      ]
+    }
+  ],
+  "evidence_requirements": [
+    {
+      "requirement_id": "E-IDENTITY",
+      "dependency_scope": "COMMON",
+      "exception_types": [
+        "LATE_DELIVERY",
+        "STALE_TRACKING",
+        "FAILED_ATTEMPT_ADDRESS"
+      ],
+      "depends_on": [
+        "snapshot_id",
+        "shipment_id",
+        "carrier",
+        "source_system",
+        "manifest.as_of"
+      ],
+      "completeness_contract": "Valid composite identity and packet source/carrier. Missing carrier/source blocks each dependent packet, not known classification.",
+      "shipment_blocker_when": "Invalid composite identity or snapshot context only; missing packet carrier/source is category-dependent.",
+      "support_sections": [
+        {
+          "policy_id": "SOP-05",
+          "version": "1.0-demo",
+          "section_id": "common-evidence"
+        }
+      ],
+      "failure_guidance_sections": []
+    },
+    {
+      "requirement_id": "E-STATUS",
+      "dependency_scope": "COMMON",
+      "exception_types": [
+        "LATE_DELIVERY",
+        "STALE_TRACKING",
+        "FAILED_ATTEMPT_ADDRESS"
+      ],
+      "depends_on": [
+        "current_status",
+        "delivered_at",
+        "relevant closure events"
+      ],
+      "completeness_contract": "Consistent current open/closed status; open required for active escalation.",
+      "shipment_blocker_when": "Unknown/conflicting current open/closed status.",
+      "support_sections": [
+        {
+          "policy_id": "SOP-05",
+          "version": "1.0-demo",
+          "section_id": "common-evidence"
+        }
+      ],
+      "failure_guidance_sections": []
+    },
+    {
+      "requirement_id": "E-POLICY-CONTEXT",
+      "dependency_scope": "COMMON",
+      "exception_types": [
+        "LATE_DELIVERY",
+        "STALE_TRACKING",
+        "FAILED_ATTEMPT_ADDRESS"
+      ],
+      "depends_on": [
+        "bundle_id",
+        "bundle_version",
+        "effective interval",
+        "bundle checksum"
+      ],
+      "completeness_contract": "Exactly one approved active bundle, valid version and checksum.",
+      "shipment_blocker_when": "Required bundle missing, invalid or ambiguous.",
+      "support_sections": [
+        {
+          "policy_id": "SOP-05",
+          "version": "1.0-demo",
+          "section_id": "common-evidence"
+        }
+      ],
+      "failure_guidance_sections": [
+        {
+          "policy_id": "SOP-07",
+          "version": "1.0-demo",
+          "section_id": "missing-policy"
+        }
+      ]
+    },
+    {
+      "requirement_id": "E-LATE",
+      "dependency_scope": "CATEGORY",
+      "exception_types": [
+        "LATE_DELIVERY"
+      ],
+      "depends_on": [
+        "promised_delivery_at",
+        "hours_overdue",
+        "fact_refs"
+      ],
+      "completeness_contract": "Valid promise and manually/future-deterministically calculated overdue value. Tracking history completeness is NOT required.",
+      "shipment_blocker_when": null,
+      "support_sections": [
+        {
+          "policy_id": "SOP-05",
+          "version": "1.0-demo",
+          "section_id": "late-evidence"
+        }
+      ],
+      "failure_guidance_sections": []
+    },
+    {
+      "requirement_id": "E-STALE",
+      "dependency_scope": "CATEGORY",
+      "exception_types": [
+        "STALE_TRACKING"
+      ],
+      "depends_on": [
+        "last qualifying scan identity/time/code",
+        "hours_since_last_scan",
+        "history_complete",
+        "fact_refs"
+      ],
+      "completeness_contract": "Qualifying scan and valid gap, history_complete=true, no conflict affecting inactivity.",
+      "shipment_blocker_when": null,
+      "support_sections": [
+        {
+          "policy_id": "SOP-05",
+          "version": "1.0-demo",
+          "section_id": "stale-evidence"
+        }
+      ],
+      "failure_guidance_sections": []
+    },
+    {
+      "requirement_id": "E-FAILED",
+      "dependency_scope": "DECISION",
+      "exception_types": [
+        "FAILED_ATTEMPT_ADDRESS"
+      ],
+      "depends_on": [
+        "failure event IDs/times",
+        "attempt_id",
+        "failed_attempt_count",
+        "history_complete",
+        "fact_refs"
+      ],
+      "completeness_contract": "Complete attempt history, valid unique physical-attempt identities and deduplicated count. Does not gate an independent address decision.",
+      "shipment_blocker_when": null,
+      "support_sections": [
+        {
+          "policy_id": "SOP-05",
+          "version": "1.0-demo",
+          "section_id": "attempt-address-evidence"
+        }
+      ],
+      "failure_guidance_sections": []
+    },
+    {
+      "requirement_id": "E-ADDRESS",
+      "dependency_scope": "DECISION",
+      "exception_types": [
+        "FAILED_ATTEMPT_ADDRESS"
+      ],
+      "depends_on": [
+        "explicit address marker events",
+        "address_exception_active",
+        "history_complete",
+        "fact_refs"
+      ],
+      "completeness_contract": "Explicit current marker state; marker ordering/history sufficient to establish no later clearance. Incomplete marker history means unknown. No attempt identities or literal address required.",
+      "shipment_blocker_when": null,
+      "support_sections": [
+        {
+          "policy_id": "SOP-05",
+          "version": "1.0-demo",
+          "section_id": "attempt-address-evidence"
+        }
+      ],
+      "failure_guidance_sections": []
+    },
+    {
+      "requirement_id": "E-POLICY-SECTIONS",
+      "dependency_scope": "CATEGORY",
+      "exception_types": [
+        "LATE_DELIVERY",
+        "STALE_TRACKING",
+        "FAILED_ATTEMPT_ADDRESS"
+      ],
+      "depends_on": [
+        "required decision section IDs",
+        "required evidence section IDs",
+        "version",
+        "checksum"
+      ],
+      "completeness_contract": "Exact active decision/evidence sections and SOP-06#handoff-boundary. A missing section blocks only its dependent decision.",
+      "shipment_blocker_when": null,
+      "support_sections": [
+        {
+          "policy_id": "SOP-06",
+          "version": "1.0-demo",
+          "section_id": "handoff-boundary"
+        }
+      ],
+      "failure_guidance_sections": [
+        {
+          "policy_id": "SOP-07",
+          "version": "1.0-demo",
+          "section_id": "missing-policy"
+        }
+      ]
+    }
+  ],
+  "mapping_contract": "support_sections support normal decision/evidence outputs. failure_guidance_sections apply only when their failure condition is present, never as mandatory healthy-case citations. Backlinks cover both mapping roles. Rule decision_dependency_ids describe decision inputs, not a mandatory copy into assessment.evidence. F-UNKNOWN combines common decision_dependency_ids with only the relevant subtype_dependency_ids; subtype_readiness_contract records independent eligible trigger support. Ready outputs cite applicable support only; scoped failure guidance may separately explain explicitly unresolved decisions.",
+  "sops": [
+    {
+      "policy_id": "SOP-01",
+      "path": "sops/last_mile/exception_classification.md",
+      "section_ids": [
+        "scope",
+        "taxonomy",
+        "state-precedence"
+      ]
+    },
+    {
+      "policy_id": "SOP-02",
+      "path": "sops/last_mile/late_delivery.md",
+      "section_ids": [
+        "late-boundaries",
+        "late-monitor",
+        "late-escalate"
+      ]
+    },
+    {
+      "policy_id": "SOP-03",
+      "path": "sops/last_mile/tracking_inactivity.md",
+      "section_ids": [
+        "scan-scope",
+        "stale-monitor",
+        "stale-escalate"
+      ]
+    },
+    {
+      "policy_id": "SOP-04",
+      "path": "sops/last_mile/failed_attempt_address.md",
+      "section_ids": [
+        "attempt-counting",
+        "single-attempt",
+        "repeated-attempts",
+        "address-notices"
+      ]
+    },
+    {
+      "policy_id": "SOP-05",
+      "path": "sops/last_mile/escalation_evidence.md",
+      "section_ids": [
+        "common-evidence",
+        "late-evidence",
+        "stale-evidence",
+        "attempt-address-evidence"
+      ]
+    },
+    {
+      "policy_id": "SOP-06",
+      "path": "sops/last_mile/carrier_handoff.md",
+      "section_ids": [
+        "handoff-fields",
+        "handoff-boundary"
+      ]
+    },
+    {
+      "policy_id": "SOP-07",
+      "path": "sops/last_mile/insufficient_evidence.md",
+      "section_ids": [
+        "missing-facts",
+        "data-conflicts",
+        "missing-policy"
+      ]
+    },
+    {
+      "policy_id": "SOP-08",
+      "path": "sops/last_mile/operations_audit.md",
+      "section_ids": [
+        "decision-record",
+        "revision-history",
+        "data-minimization"
+      ]
+    }
+  ]
+}

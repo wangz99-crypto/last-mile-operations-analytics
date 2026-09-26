@@ -1,0 +1,329 @@
+{
+  "fixture_id": "C06",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question_family": "stale-ready-missing-promise",
+  "manifest": {
+    "snapshot_id": "CAL-C06",
+    "as_of": "2026-10-01T12:00:00Z",
+    "dataset_version": "calibration-v1",
+    "checksum": "f83b753c50dab3732b64b59a8e2b356b48c3ee3abda69f88053dbdda92ff56c2"
+  },
+  "policy": {
+    "bundle_id": "last-mile-exception-triage-demo",
+    "bundle_version": "1.0-demo"
+  },
+  "input_profile": "CANONICAL",
+  "input": {
+    "shipments": [
+      {
+        "snapshot_id": "CAL-C06",
+        "shipment_id": "SHP-C06",
+        "carrier": "DEMO-CARRIER",
+        "origin_facility_id": "DEMO-FACILITY",
+        "created_at": "2026-09-27T00:00:00Z",
+        "promised_delivery_at": null,
+        "delivered_at": null,
+        "current_status": "IN_TRANSIT",
+        "source_system": "SYNTHETIC"
+      }
+    ],
+    "tracking_events": [
+      {
+        "event_id": "SCAN-1",
+        "event_time": "2026-09-29T12:00:00Z",
+        "event_code": "IN_TRANSIT",
+        "attempt_id": null,
+        "facility_id": "DEMO-FACILITY",
+        "source_system": "SYNTHETIC",
+        "snapshot_id": "CAL-C06",
+        "shipment_id": "SHP-C06"
+      }
+    ],
+    "history_declarations": [
+      {
+        "snapshot_id": "CAL-C06",
+        "shipment_id": "SHP-C06",
+        "history_complete": true
+      }
+    ]
+  },
+  "expected_input_findings": [],
+  "gold_provenance": {
+    "method": "INDEPENDENT_WRITTEN_POLICY",
+    "author": "calibration-artifact-author (Codex)",
+    "reviewer": "Zhe Wang",
+    "review_status": "OWNER_REVIEWED",
+    "limitations": [
+      "Gold was authored from the frozen written policy with AI assistance during artifact authoring.",
+      "Project owner Zhe Wang manually reviewed the inputs, arithmetic, rule selection, evidence dependencies, SOP sections, blockers and aggregate outcomes against the frozen policy and approved this fixture.",
+      "There is no independent second human reviewer yet. These are implementation-visible DEVELOPMENT fixtures, not held-out results or production evidence."
+    ]
+  },
+  "expected_results": [
+    {
+      "input_shipment_index": 0,
+      "snapshot_id": "CAL-C06",
+      "shipment_id": "SHP-C06",
+      "assessments": [
+        {
+          "exception_type": "LATE_DELIVERY",
+          "result": "UNKNOWN",
+          "escalation_eligible": null,
+          "action_state": "NEEDS_REVIEW",
+          "rule_ids": [
+            "L-UNKNOWN"
+          ],
+          "expected_sections": [
+            {
+              "policy_id": "SOP-07",
+              "version": "1.0-demo",
+              "section_id": "missing-facts"
+            }
+          ],
+          "evidence": {
+            "completeness": "INCOMPLETE",
+            "required_ids": [
+              "E-IDENTITY",
+              "E-STATUS",
+              "E-POLICY-CONTEXT",
+              "E-LATE",
+              "E-POLICY-SECTIONS"
+            ],
+            "missing_ids": [
+              "E-LATE"
+            ],
+            "conflicting_ids": []
+          },
+          "blockers": [
+            {
+              "code": "MISSING_PROMISE",
+              "scope": "CATEGORY",
+              "exception_type": "LATE_DELIVERY",
+              "dependent_decision": "LATE_DELIVERY",
+              "reason": "Promise is explicitly null; lateness cannot be established.",
+              "field_refs": [
+                "input.shipments[0].promised_delivery_at"
+              ],
+              "requirement_ids": [
+                "E-LATE"
+              ]
+            }
+          ],
+          "subtype": null,
+          "subtype_assessments": [],
+          "supported_triggers": []
+        },
+        {
+          "exception_type": "STALE_TRACKING",
+          "result": "TRUE",
+          "escalation_eligible": true,
+          "action_state": "READY_TO_ESCALATE",
+          "rule_ids": [
+            "S-2"
+          ],
+          "expected_sections": [
+            {
+              "policy_id": "SOP-03",
+              "version": "1.0-demo",
+              "section_id": "stale-escalate"
+            },
+            {
+              "policy_id": "SOP-05",
+              "version": "1.0-demo",
+              "section_id": "common-evidence"
+            },
+            {
+              "policy_id": "SOP-05",
+              "version": "1.0-demo",
+              "section_id": "stale-evidence"
+            },
+            {
+              "policy_id": "SOP-06",
+              "version": "1.0-demo",
+              "section_id": "handoff-boundary"
+            }
+          ],
+          "evidence": {
+            "completeness": "COMPLETE",
+            "required_ids": [
+              "E-IDENTITY",
+              "E-STATUS",
+              "E-POLICY-CONTEXT",
+              "E-STALE",
+              "E-POLICY-SECTIONS"
+            ],
+            "missing_ids": [],
+            "conflicting_ids": []
+          },
+          "blockers": [],
+          "subtype": null,
+          "subtype_assessments": [],
+          "supported_triggers": [
+            "S-2"
+          ]
+        },
+        {
+          "exception_type": "FAILED_ATTEMPT_ADDRESS",
+          "result": "FALSE",
+          "escalation_eligible": false,
+          "action_state": "NORMAL",
+          "rule_ids": [
+            "F-0"
+          ],
+          "expected_sections": [
+            {
+              "policy_id": "SOP-04",
+              "version": "1.0-demo",
+              "section_id": "attempt-counting"
+            }
+          ],
+          "evidence": {
+            "completeness": "NOT_APPLICABLE",
+            "required_ids": [],
+            "missing_ids": [],
+            "conflicting_ids": []
+          },
+          "blockers": [],
+          "subtype": null,
+          "subtype_assessments": [],
+          "supported_triggers": []
+        }
+      ],
+      "aggregate_action_state": "READY_TO_ESCALATE",
+      "priority": "HIGH",
+      "common_evidence": {
+        "completeness": "COMPLETE",
+        "required_ids": [
+          "E-IDENTITY",
+          "E-STATUS",
+          "E-POLICY-CONTEXT"
+        ],
+        "missing_ids": [],
+        "conflicting_ids": []
+      },
+      "shipment_blockers": [],
+      "warnings": [
+        {
+          "code": "UNRESOLVED_CATEGORY",
+          "scope": "CATEGORY",
+          "exception_type": "LATE_DELIVERY",
+          "message": "Missing promise does not cancel independently supported stale readiness.",
+          "related_blocker_codes": [
+            "MISSING_PROMISE"
+          ]
+        }
+      ],
+      "derived_facts": {
+        "is_open": true,
+        "hours_overdue": null,
+        "last_scan_time": "2026-09-29T12:00:00Z",
+        "hours_since_last_scan": 48,
+        "failed_attempt_count": 0,
+        "address_exception_active": false,
+        "exception_started_at": {
+          "LATE_DELIVERY": null,
+          "STALE_TRACKING": "2026-09-30T12:00:00Z",
+          "FAILED_ATTEMPT_ADDRESS": null
+        },
+        "exception_age_hours": {
+          "LATE_DELIVERY": null,
+          "STALE_TRACKING": 24,
+          "FAILED_ATTEMPT_ADDRESS": null
+        },
+        "fact_refs": [
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "shipment",
+            "field": "shipment_id",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "shipment",
+            "field": "carrier",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "shipment",
+            "field": "source_system",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "shipment",
+            "field": "current_status",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "shipment",
+            "field": "promised_delivery_at",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "shipment",
+            "field": "delivered_at",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "manifest",
+            "field": "as_of",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "history_declaration",
+            "field": "history_complete",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "tracking_event",
+            "field": "event_time",
+            "event_id": "SCAN-1",
+            "source_system": "SYNTHETIC"
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "tracking_event",
+            "field": "event_code",
+            "event_id": "SCAN-1",
+            "source_system": "SYNTHETIC"
+          },
+          {
+            "snapshot_id": "CAL-C06",
+            "shipment_id": "SHP-C06",
+            "record_type": "tracking_event",
+            "field": "attempt_id",
+            "event_id": "SCAN-1",
+            "source_system": "SYNTHETIC"
+          }
+        ]
+      },
+      "rationale": "Manual: complete scan history gives gap 172800 seconds = 48 hours, exactly S-2 eligibility; stale origin is September 30 noon and age 24 hours. Stale TRUE/eligible/READY_TO_ESCALATE has COMPLETE common/E-STALE/policy-section support. Null promise means hours_overdue and late age/origin are null: L-UNKNOWN UNKNOWN/null/NEEDS_REVIEW with E-LATE missing. Complete history has no failures/address markers, F-0 FALSE/NORMAL with inactive gate. Aggregate READY_TO_ESCALATE/HIGH for stale only; retain the local missing-promise blocker and warning, no global blocker."
+    }
+  ]
+}

@@ -1,0 +1,1287 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:last-mile-demo:contracts:1.0",
+  "$defs": {
+    "exception_type": {
+      "type": "string",
+      "enum": [
+        "LATE_DELIVERY",
+        "STALE_TRACKING",
+        "FAILED_ATTEMPT_ADDRESS"
+      ]
+    },
+    "subtype": {
+      "type": "string",
+      "enum": [
+        "FAILED_ATTEMPT",
+        "ADDRESS_EXCEPTION",
+        "BOTH"
+      ]
+    },
+    "assessment_result": {
+      "type": "string",
+      "enum": [
+        "TRUE",
+        "FALSE",
+        "UNKNOWN",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "action_state": {
+      "type": "string",
+      "enum": [
+        "NORMAL",
+        "MONITOR",
+        "NEEDS_REVIEW",
+        "READY_TO_ESCALATE"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "completeness": {
+      "type": "string",
+      "enum": [
+        "COMPLETE",
+        "INCOMPLETE",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "shipment_status": {
+      "type": "string",
+      "enum": [
+        "PRE_TRANSIT",
+        "IN_TRANSIT",
+        "OUT_FOR_DELIVERY",
+        "EXCEPTION",
+        "DELIVERED",
+        "CANCELLED"
+      ]
+    },
+    "event_code": {
+      "type": "string",
+      "enum": [
+        "LABEL_CREATED",
+        "ACCEPTED",
+        "IN_TRANSIT",
+        "OUT_FOR_DELIVERY",
+        "ATTEMPT_FAILED",
+        "ADDRESS_EXCEPTION",
+        "ADDRESS_CLEARED",
+        "DELIVERED",
+        "CANCELLED"
+      ]
+    },
+    "rule_id": {
+      "type": "string",
+      "enum": [
+        "D-CONTEXT",
+        "D-STATUS",
+        "D-CLOSED",
+        "L-UNKNOWN",
+        "L-0",
+        "L-1",
+        "L-2",
+        "S-UNKNOWN",
+        "S-PRE",
+        "S-0",
+        "S-1",
+        "S-2",
+        "F-UNKNOWN",
+        "F-0",
+        "F-1",
+        "F-2",
+        "F-3"
+      ]
+    },
+    "requirement_id": {
+      "type": "string",
+      "enum": [
+        "E-IDENTITY",
+        "E-STATUS",
+        "E-POLICY-CONTEXT",
+        "E-LATE",
+        "E-STALE",
+        "E-FAILED",
+        "E-ADDRESS",
+        "E-POLICY-SECTIONS"
+      ]
+    },
+    "manifest": {
+      "type": "object",
+      "properties": {
+        "snapshot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as_of": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "dataset_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checksum": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "snapshot_id",
+        "as_of",
+        "dataset_version",
+        "checksum"
+      ],
+      "additionalProperties": false
+    },
+    "shipment": {
+      "type": "object",
+      "properties": {
+        "snapshot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shipment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "carrier": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "origin_facility_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "promised_delivery_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "delivered_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "current_status": {
+          "$ref": "#/$defs/shipment_status"
+        },
+        "source_system": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "snapshot_id",
+        "shipment_id",
+        "carrier",
+        "origin_facility_id",
+        "created_at",
+        "promised_delivery_at",
+        "delivered_at",
+        "current_status",
+        "source_system"
+      ],
+      "additionalProperties": false,
+      "x-primary-key": [
+        "snapshot_id",
+        "shipment_id"
+      ],
+      "x-foreign-key": {
+        "fields": [
+          "snapshot_id"
+        ],
+        "target": "manifest",
+        "target_fields": [
+          "snapshot_id"
+        ]
+      }
+    },
+    "tracking_event": {
+      "type": "object",
+      "properties": {
+        "snapshot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "event_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shipment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "event_time": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "event_code": {
+          "$ref": "#/$defs/event_code"
+        },
+        "attempt_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "facility_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_system": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "snapshot_id",
+        "event_id",
+        "shipment_id",
+        "event_time",
+        "event_code",
+        "attempt_id",
+        "facility_id",
+        "source_system"
+      ],
+      "additionalProperties": false,
+      "x-primary-key": [
+        "snapshot_id",
+        "source_system",
+        "event_id"
+      ],
+      "x-foreign-key": {
+        "fields": [
+          "snapshot_id",
+          "shipment_id"
+        ],
+        "target": "shipment",
+        "target_fields": [
+          "snapshot_id",
+          "shipment_id"
+        ]
+      },
+      "description": "Canonical ATTEMPT_FAILED requires a non-null attempt_id; the offline structural validator enforces this conditional constraint. Raw invalid records belong only to RAW_VALIDATION_CASE fixtures."
+    },
+    "history_declaration": {
+      "type": "object",
+      "properties": {
+        "snapshot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shipment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "history_complete": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "snapshot_id",
+        "shipment_id",
+        "history_complete"
+      ],
+      "additionalProperties": false,
+      "x-primary-key": [
+        "snapshot_id",
+        "shipment_id"
+      ],
+      "x-foreign-key": {
+        "fields": [
+          "snapshot_id",
+          "shipment_id"
+        ],
+        "target": "shipment",
+        "target_fields": [
+          "snapshot_id",
+          "shipment_id"
+        ]
+      }
+    },
+    "policy_ref": {
+      "type": "object",
+      "properties": {
+        "bundle_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bundle_version": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "bundle_id",
+        "bundle_version"
+      ],
+      "additionalProperties": false
+    },
+    "section_ref": {
+      "type": "object",
+      "properties": {
+        "policy_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "section_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "policy_id",
+        "version",
+        "section_id"
+      ],
+      "additionalProperties": false
+    },
+    "fact_ref": {
+      "type": "object",
+      "properties": {
+        "snapshot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shipment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "record_type": {
+          "type": "string",
+          "enum": [
+            "shipment",
+            "tracking_event",
+            "history_declaration",
+            "manifest"
+          ]
+        },
+        "field": {
+          "type": "string",
+          "minLength": 1
+        },
+        "event_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_system": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "snapshot_id",
+        "shipment_id",
+        "record_type",
+        "field",
+        "event_id",
+        "source_system"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "completeness": {
+          "$ref": "#/$defs/completeness"
+        },
+        "required_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/requirement_id"
+          },
+          "minItems": 0
+        },
+        "missing_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/requirement_id"
+          },
+          "minItems": 0
+        },
+        "conflicting_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/requirement_id"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "completeness",
+        "required_ids",
+        "missing_ids",
+        "conflicting_ids"
+      ],
+      "additionalProperties": false
+    },
+    "shipment_blocker": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "const": "SHIPMENT"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "field_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "requirement_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/requirement_id"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "code",
+        "scope",
+        "reason",
+        "field_refs",
+        "requirement_ids"
+      ],
+      "additionalProperties": false
+    },
+    "category_blocker": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "const": "CATEGORY"
+        },
+        "exception_type": {
+          "$ref": "#/$defs/exception_type"
+        },
+        "dependent_decision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "field_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "requirement_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/requirement_id"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "code",
+        "scope",
+        "exception_type",
+        "dependent_decision",
+        "reason",
+        "field_refs",
+        "requirement_ids"
+      ],
+      "additionalProperties": false
+    },
+    "warning": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "type": "string",
+          "enum": [
+            "SHIPMENT",
+            "CATEGORY"
+          ]
+        },
+        "exception_type": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/exception_type"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "related_blocker_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "code",
+        "scope",
+        "exception_type",
+        "message",
+        "related_blocker_codes"
+      ],
+      "additionalProperties": false
+    },
+    "subtype_assessment": {
+      "type": "object",
+      "properties": {
+        "subtype": {
+          "type": "string",
+          "enum": [
+            "FAILED_ATTEMPT",
+            "ADDRESS_EXCEPTION"
+          ]
+        },
+        "result": {
+          "$ref": "#/$defs/assessment_result"
+        },
+        "escalation_eligible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      },
+      "required": [
+        "subtype",
+        "result",
+        "escalation_eligible",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "assessment": {
+      "type": "object",
+      "properties": {
+        "exception_type": {
+          "$ref": "#/$defs/exception_type"
+        },
+        "result": {
+          "$ref": "#/$defs/assessment_result"
+        },
+        "escalation_eligible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "action_state": {
+          "$ref": "#/$defs/action_state"
+        },
+        "rule_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rule_id"
+          },
+          "minItems": 0
+        },
+        "expected_sections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/section_ref"
+          },
+          "minItems": 0,
+          "description": "Only sections supporting this declared output; failure guidance is conditional on an explicit unresolved rule or evidence gap, never a healthy-case citation requirement."
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence",
+          "description": "Action/review gate only; do not mechanically copy rule decision_dependency_ids. NOT_APPLICABLE with empty IDs is valid for inactive NORMAL categories."
+        },
+        "blockers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/category_blocker"
+          },
+          "minItems": 0
+        },
+        "subtype": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/subtype"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "subtype_assessments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/subtype_assessment"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "supported_triggers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "exception_type",
+        "result",
+        "escalation_eligible",
+        "action_state",
+        "rule_ids",
+        "expected_sections",
+        "evidence",
+        "blockers",
+        "subtype",
+        "subtype_assessments",
+        "supported_triggers"
+      ],
+      "additionalProperties": false,
+      "description": "Category result contract, not a computation. evidence is the gate for the actionable/unresolved decision, not an inventory of all classification inputs. FALSE or NOT_APPLICABLE with NORMAL may use NOT_APPLICABLE completeness and empty IDs. Active MONITOR, READY_TO_ESCALATE and NEEDS_REVIEW retain relevant decision/review evidence. Classification provenance remains in rule_ids, derived facts and fact_refs."
+    },
+    "derived_facts": {
+      "type": "object",
+      "properties": {
+        "is_open": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hours_overdue": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "last_scan_time": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hours_since_last_scan": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "failed_attempt_count": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "address_exception_active": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "exception_started_at": {
+          "type": "object",
+          "properties": {
+            "LATE_DELIVERY": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time",
+                  "pattern": "Z$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "STALE_TRACKING": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time",
+                  "pattern": "Z$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "FAILED_ATTEMPT_ADDRESS": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time",
+                  "pattern": "Z$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "LATE_DELIVERY",
+            "STALE_TRACKING",
+            "FAILED_ATTEMPT_ADDRESS"
+          ],
+          "additionalProperties": false
+        },
+        "exception_age_hours": {
+          "type": "object",
+          "properties": {
+            "LATE_DELIVERY": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "STALE_TRACKING": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "FAILED_ATTEMPT_ADDRESS": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "LATE_DELIVERY",
+            "STALE_TRACKING",
+            "FAILED_ATTEMPT_ADDRESS"
+          ],
+          "additionalProperties": false
+        },
+        "fact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/fact_ref"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "is_open",
+        "hours_overdue",
+        "last_scan_time",
+        "hours_since_last_scan",
+        "failed_attempt_count",
+        "address_exception_active",
+        "exception_started_at",
+        "exception_age_hours",
+        "fact_refs"
+      ],
+      "additionalProperties": false
+    },
+    "expected_result": {
+      "type": "object",
+      "properties": {
+        "input_shipment_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "snapshot_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shipment_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assessments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assessment"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "aggregate_action_state": {
+          "$ref": "#/$defs/action_state"
+        },
+        "priority": {
+          "$ref": "#/$defs/priority"
+        },
+        "common_evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "shipment_blockers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/shipment_blocker"
+          },
+          "minItems": 0
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/warning"
+          },
+          "minItems": 0
+        },
+        "derived_facts": {
+          "$ref": "#/$defs/derived_facts"
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "input_shipment_index",
+        "snapshot_id",
+        "shipment_id",
+        "assessments",
+        "aggregate_action_state",
+        "priority",
+        "common_evidence",
+        "shipment_blockers",
+        "warnings",
+        "derived_facts",
+        "rationale"
+      ],
+      "additionalProperties": false
+    },
+    "input_finding": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "path",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "fixture_input": {
+      "type": "object",
+      "properties": {
+        "shipments": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "minItems": 1
+        },
+        "tracking_events": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "minItems": 0
+        },
+        "history_declarations": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "shipments",
+        "tracking_events",
+        "history_declarations"
+      ],
+      "additionalProperties": false
+    },
+    "fixture": {
+      "type": "object",
+      "properties": {
+        "fixture_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contract_version": {
+          "const": "1.0"
+        },
+        "example_only": {
+          "type": "boolean"
+        },
+        "split": {
+          "type": "string",
+          "enum": [
+            "EXAMPLE",
+            "DEVELOPMENT",
+            "HELD_OUT"
+          ]
+        },
+        "question_family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manifest": {
+          "$ref": "#/$defs/manifest"
+        },
+        "policy": {
+          "$ref": "#/$defs/policy_ref"
+        },
+        "input_profile": {
+          "type": "string",
+          "enum": [
+            "CANONICAL",
+            "RAW_VALIDATION_CASE"
+          ]
+        },
+        "input": {
+          "$ref": "#/$defs/fixture_input"
+        },
+        "expected_input_findings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/input_finding"
+          },
+          "minItems": 0
+        },
+        "gold_provenance": {
+          "type": "object",
+          "properties": {
+            "method": {
+              "const": "INDEPENDENT_WRITTEN_POLICY"
+            },
+            "author": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reviewer": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "review_status": {
+              "type": "string",
+              "enum": [
+                "DRAFT",
+                "OWNER_REVIEWED",
+                "SECOND_REVIEWED"
+              ]
+            },
+            "limitations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "method",
+            "author",
+            "reviewer",
+            "review_status",
+            "limitations"
+          ],
+          "additionalProperties": false
+        },
+        "expected_results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/expected_result"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "fixture_id",
+        "contract_version",
+        "example_only",
+        "split",
+        "question_family",
+        "manifest",
+        "policy",
+        "input_profile",
+        "input",
+        "expected_input_findings",
+        "gold_provenance",
+        "expected_results"
+      ],
+      "additionalProperties": false
+    },
+    "retrieval_question": {
+      "type": "object",
+      "properties": {
+        "question_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contract_version": {
+          "const": "1.0"
+        },
+        "example_only": {
+          "type": "boolean"
+        },
+        "split": {
+          "type": "string",
+          "enum": [
+            "EXAMPLE",
+            "DEVELOPMENT",
+            "HELD_OUT"
+          ]
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "ANSWERABLE",
+            "NEGATIVE"
+          ]
+        },
+        "negative_reason": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "OUT_OF_SCOPE",
+                "UNANSWERABLE",
+                "VERSION_CONFLICT"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "gold_policy_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gold_sections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/section_ref"
+          },
+          "minItems": 0
+        },
+        "required_sections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/section_ref"
+          },
+          "minItems": 0
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": [
+            "EASY",
+            "MEDIUM",
+            "HARD"
+          ]
+        },
+        "question_family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewer_rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "question_id",
+        "contract_version",
+        "example_only",
+        "split",
+        "question",
+        "kind",
+        "negative_reason",
+        "gold_policy_version",
+        "gold_sections",
+        "required_sections",
+        "category",
+        "difficulty",
+        "question_family",
+        "reviewer_rationale"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "description": "Select an entry point by #/$defs/name. x-primary-key/x-foreign-key are relational annotations checked by validate_contracts.py for canonical fixtures. Not a rule engine."
+}

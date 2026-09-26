@@ -1,0 +1,20 @@
+{
+  "algorithm": "sha256",
+  "contract_version": "1.0",
+  "note": "File-byte integrity only; no semantic or production quality claim. Manifest excludes itself.",
+  "sha256": {
+    "CONTRACTS.md": "086b83392ee6355379847e83fd59ad8104504ba7f632d02ed2c0457798274f6d",
+    "examples/late_with_gaps.example.json": "7502d626fb7e5f0f46b47ea4ef7edaab41856b8caba9aeecdb255d626d50515f",
+    "examples/normal.example.json": "450cde5be7981c1d3aca3a7da70516a52fc8ab6c6c9d92a1bdf6f7927941798e",
+    "policy/policy_registry.json": "a9d50558f1654281212d45c27ec9e419f788364bf086d4c63b2cf1dcd6eed768",
+    "schemas/contracts.schema.json": "40b61cf217f1cd74e5588c9801dc9537e239f22cbc8cf5498a528b1d86b87daa",
+    "sops/last_mile/carrier_handoff.md": "59c4b5a1b17bc04ab7fdcb314cc5410fb720c592a47c64b36ee16e8e43de3e43",
+    "sops/last_mile/escalation_evidence.md": "cdcf169f6afb7c851de4e3627c3b68c6f4852c4bbe37be63518d7ec5d621a96b",
+    "sops/last_mile/exception_classification.md": "0a3b6be8e1c0d5664660ed16fcd28119bbe1795f634c243335f9cdf0dd4bbdbc",
+    "sops/last_mile/failed_attempt_address.md": "68117c464af073faa9509cabc57ed2e40a61518f48b8177332c7be7d57c1ed50",
+    "sops/last_mile/insufficient_evidence.md": "f680244ecf2aa8b9060d22df8a4b22813c9044aba9bc309f6cef1071d6140eba",
+    "sops/last_mile/late_delivery.md": "1d8f0f27ebc96914f42e1e6fd9bf8b39abf62371971e13c00f30343904032fab",
+    "sops/last_mile/operations_audit.md": "dc340c8fab98706437525c01b169454e59f35008ac87122a27ed7ba4a47dd2f8",
+    "sops/last_mile/tracking_inactivity.md": "ee086c65486376aecd3995fb012744149917491355f0beea1a4b334afe568edb"
+  }
+}

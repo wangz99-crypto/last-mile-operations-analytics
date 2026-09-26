@@ -1,0 +1,295 @@
+{
+  "fixture_id": "C03",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question_family": "late-one-second-below-escalation",
+  "manifest": {
+    "snapshot_id": "CAL-C03",
+    "as_of": "2026-10-01T12:00:00Z",
+    "dataset_version": "calibration-v1",
+    "checksum": "2d81f7a960b71e411190fb46fd30980b64a2fed3bd2e32ef24de7f8a461e2372"
+  },
+  "policy": {
+    "bundle_id": "last-mile-exception-triage-demo",
+    "bundle_version": "1.0-demo"
+  },
+  "input_profile": "CANONICAL",
+  "input": {
+    "shipments": [
+      {
+        "snapshot_id": "CAL-C03",
+        "shipment_id": "SHP-C03",
+        "carrier": "DEMO-CARRIER",
+        "origin_facility_id": "DEMO-FACILITY",
+        "created_at": "2026-09-27T00:00:00Z",
+        "promised_delivery_at": "2026-09-30T12:00:01Z",
+        "delivered_at": null,
+        "current_status": "IN_TRANSIT",
+        "source_system": "SYNTHETIC"
+      }
+    ],
+    "tracking_events": [
+      {
+        "event_id": "SCAN-1",
+        "event_time": "2026-10-01T10:00:00Z",
+        "event_code": "IN_TRANSIT",
+        "attempt_id": null,
+        "facility_id": "DEMO-FACILITY",
+        "source_system": "SYNTHETIC",
+        "snapshot_id": "CAL-C03",
+        "shipment_id": "SHP-C03"
+      }
+    ],
+    "history_declarations": [
+      {
+        "snapshot_id": "CAL-C03",
+        "shipment_id": "SHP-C03",
+        "history_complete": true
+      }
+    ]
+  },
+  "expected_input_findings": [],
+  "gold_provenance": {
+    "method": "INDEPENDENT_WRITTEN_POLICY",
+    "author": "calibration-artifact-author (Codex)",
+    "reviewer": "Zhe Wang",
+    "review_status": "OWNER_REVIEWED",
+    "limitations": [
+      "Gold was authored from the frozen written policy with AI assistance during artifact authoring.",
+      "Project owner Zhe Wang manually reviewed the inputs, arithmetic, rule selection, evidence dependencies, SOP sections, blockers and aggregate outcomes against the frozen policy and approved this fixture.",
+      "There is no independent second human reviewer yet. These are implementation-visible DEVELOPMENT fixtures, not held-out results or production evidence."
+    ]
+  },
+  "expected_results": [
+    {
+      "input_shipment_index": 0,
+      "snapshot_id": "CAL-C03",
+      "shipment_id": "SHP-C03",
+      "assessments": [
+        {
+          "exception_type": "LATE_DELIVERY",
+          "result": "TRUE",
+          "escalation_eligible": false,
+          "action_state": "MONITOR",
+          "rule_ids": [
+            "L-1"
+          ],
+          "expected_sections": [
+            {
+              "policy_id": "SOP-02",
+              "version": "1.0-demo",
+              "section_id": "late-monitor"
+            },
+            {
+              "policy_id": "SOP-05",
+              "version": "1.0-demo",
+              "section_id": "common-evidence"
+            },
+            {
+              "policy_id": "SOP-05",
+              "version": "1.0-demo",
+              "section_id": "late-evidence"
+            },
+            {
+              "policy_id": "SOP-06",
+              "version": "1.0-demo",
+              "section_id": "handoff-boundary"
+            }
+          ],
+          "evidence": {
+            "completeness": "COMPLETE",
+            "required_ids": [
+              "E-IDENTITY",
+              "E-STATUS",
+              "E-POLICY-CONTEXT",
+              "E-LATE",
+              "E-POLICY-SECTIONS"
+            ],
+            "missing_ids": [],
+            "conflicting_ids": []
+          },
+          "blockers": [],
+          "subtype": null,
+          "subtype_assessments": [],
+          "supported_triggers": []
+        },
+        {
+          "exception_type": "STALE_TRACKING",
+          "result": "FALSE",
+          "escalation_eligible": false,
+          "action_state": "NORMAL",
+          "rule_ids": [
+            "S-0"
+          ],
+          "expected_sections": [
+            {
+              "policy_id": "SOP-03",
+              "version": "1.0-demo",
+              "section_id": "scan-scope"
+            }
+          ],
+          "evidence": {
+            "completeness": "NOT_APPLICABLE",
+            "required_ids": [],
+            "missing_ids": [],
+            "conflicting_ids": []
+          },
+          "blockers": [],
+          "subtype": null,
+          "subtype_assessments": [],
+          "supported_triggers": []
+        },
+        {
+          "exception_type": "FAILED_ATTEMPT_ADDRESS",
+          "result": "FALSE",
+          "escalation_eligible": false,
+          "action_state": "NORMAL",
+          "rule_ids": [
+            "F-0"
+          ],
+          "expected_sections": [
+            {
+              "policy_id": "SOP-04",
+              "version": "1.0-demo",
+              "section_id": "attempt-counting"
+            }
+          ],
+          "evidence": {
+            "completeness": "NOT_APPLICABLE",
+            "required_ids": [],
+            "missing_ids": [],
+            "conflicting_ids": []
+          },
+          "blockers": [],
+          "subtype": null,
+          "subtype_assessments": [],
+          "supported_triggers": []
+        }
+      ],
+      "aggregate_action_state": "MONITOR",
+      "priority": "LOW",
+      "common_evidence": {
+        "completeness": "COMPLETE",
+        "required_ids": [
+          "E-IDENTITY",
+          "E-STATUS",
+          "E-POLICY-CONTEXT"
+        ],
+        "missing_ids": [],
+        "conflicting_ids": []
+      },
+      "shipment_blockers": [],
+      "warnings": [],
+      "derived_facts": {
+        "is_open": true,
+        "hours_overdue": 23.99972222222222,
+        "last_scan_time": "2026-10-01T10:00:00Z",
+        "hours_since_last_scan": 2,
+        "failed_attempt_count": 0,
+        "address_exception_active": false,
+        "exception_started_at": {
+          "LATE_DELIVERY": "2026-09-30T12:00:01Z",
+          "STALE_TRACKING": null,
+          "FAILED_ATTEMPT_ADDRESS": null
+        },
+        "exception_age_hours": {
+          "LATE_DELIVERY": 23.99972222222222,
+          "STALE_TRACKING": null,
+          "FAILED_ATTEMPT_ADDRESS": null
+        },
+        "fact_refs": [
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "shipment",
+            "field": "shipment_id",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "shipment",
+            "field": "carrier",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "shipment",
+            "field": "source_system",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "shipment",
+            "field": "current_status",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "shipment",
+            "field": "promised_delivery_at",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "shipment",
+            "field": "delivered_at",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "manifest",
+            "field": "as_of",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "history_declaration",
+            "field": "history_complete",
+            "event_id": null,
+            "source_system": null
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "tracking_event",
+            "field": "event_time",
+            "event_id": "SCAN-1",
+            "source_system": "SYNTHETIC"
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "tracking_event",
+            "field": "event_code",
+            "event_id": "SCAN-1",
+            "source_system": "SYNTHETIC"
+          },
+          {
+            "snapshot_id": "CAL-C03",
+            "shipment_id": "SHP-C03",
+            "record_type": "tracking_event",
+            "field": "attempt_id",
+            "event_id": "SCAN-1",
+            "source_system": "SYNTHETIC"
+          }
+        ]
+      },
+      "rationale": "Manual: elapsed overdue and late age are 86399 seconds = 23h59m59s = 23.99972222222222 hours, one second below 24. L-1 is TRUE, ineligible, MONITOR with common/E-LATE/policy-section evidence COMPLETE. Scan gap 2 hours gives S-0 FALSE; complete history with no failed/address events gives F-0 FALSE, both NORMAL with inactive evidence. Aggregate MONITOR/LOW; no blockers/warnings. Exact support includes late-monitor, common-evidence, late-evidence and handoff-boundary."
+    }
+  ]
+}

@@ -7,16 +7,21 @@ def evidence(required=(), missing=(), conflicting=(), inactive=False):
                 required_ids=sorted(set(required)), missing_ids=sorted(set(missing)), conflicting_ids=sorted(set(conflicting)))
 
 
-def blocker(code, category, reason, fields, requirements):
-    return dict(code=code, scope="CATEGORY", exception_type=category, dependent_decision=category,
+def blocker(code, category, reason, fields, requirements, *, dependent_decision=None):
+    return dict(code=code, scope="CATEGORY", exception_type=category, dependent_decision=dependent_decision or category,
                 reason=reason, field_refs=fields, requirement_ids=list(requirements))
 
 
 def assessment(category, rules, result, eligible, policy, required=None, missing=(), conflicting=(), blockers=(),
-               subtype=None, subtypes=(), triggers=()):
+               subtype=None, subtypes=(), triggers=(), packet_context=None):
     inactive = result in ("FALSE", "NOT_APPLICABLE")
     required = [] if inactive else (policy.dependencies(rules) if required is None else list(required))
     missing, conflicting, blockers = list(missing), list(conflicting), list(blockers)
+    if not inactive and packet_context is not None:
+        packet_missing, packet_blocks = packet_gaps(packet_context, category)
+        required.extend(packet_missing)
+        missing.extend(packet_missing)
+        blockers.extend(packet_blocks)
     if result == "UNKNOWN" or rules == ["F-UNKNOWN"]:
         sections = policy.sections(rules, failure=True)
     else:
@@ -46,21 +51,27 @@ def packet_gaps(ctx, category):
             missing.append("E-IDENTITY")
             blocks.append(blocker("MISSING_CARRIER" if field == "carrier" else "MISSING_SOURCE", category,
                                   f"Missing {field} blocks the dependent packet, not known classification",
-                                  [f"input.shipments[{ctx.index}].{field}"], ["E-IDENTITY"]))
+                                  [f"input.shipments[{ctx.index}].{field}"], ["E-IDENTITY"],
+                                  dependent_decision="LATE_DELIVERY_PACKET" if category == TYPES[0] else "PACKET"))
     return missing, blocks
+
+
+def event_conflict_code(ctx, requirement):
+    if any(f["code"] == "INVALID_EVENT" and requirement in f["requirement_ids"] for f in ctx.findings):
+        return "INVALID_EVENT"
+    return "CONFLICTING_EVENT_IDENTITY"
 
 
 def late(ctx, facts, policy):
     category = TYPES[0]
     if facts.overdue is None:
         b = blocker("MISSING_PROMISE", category, "Missing or invalid promise", [f"input.shipments[{ctx.index}].promised_delivery_at"], ["E-LATE"])
-        return assessment(category, ["L-UNKNOWN"], "UNKNOWN", None, policy, missing=["E-LATE"], blockers=[b])
+        return assessment(category, ["L-UNKNOWN"], "UNKNOWN", None, policy, missing=["E-LATE"], blockers=[b], packet_context=ctx)
     if facts.overdue.total_seconds() == 0:
         return assessment(category, ["L-0"], "FALSE", False, policy)
     eligible = policy.meets("LATE_ESCALATE_HOURS", facts.overdue)
     rule = "L-2" if eligible else "L-1"
-    missing, blocks = packet_gaps(ctx, category)
-    return assessment(category, [rule], "TRUE", eligible, policy, missing=missing, blockers=blocks, triggers=[rule] if eligible else [])
+    return assessment(category, [rule], "TRUE", eligible, policy, triggers=[rule] if eligible else [], packet_context=ctx)
 
 
 def stale(ctx, facts, policy):
@@ -68,21 +79,20 @@ def stale(ctx, facts, policy):
     if not ctx.history or ctx.scan_uncertain:
         if "E-STALE" in ctx.conflicting_requirements:
             fields = [f["path"] for f in ctx.findings if "E-STALE" in f["requirement_ids"]]
-            b = blocker("CONFLICTING_EVENT_IDENTITY", category, "Conflicting source event versions affect inactivity", fields, ["E-STALE"])
-            return assessment(category, ["S-UNKNOWN"], "UNKNOWN", None, policy, conflicting=["E-STALE"], blockers=[b])
+            b = blocker(event_conflict_code(ctx, "E-STALE"), category, "Invalid or conflicting scan evidence affects inactivity", fields, ["E-STALE"])
+            return assessment(category, ["S-UNKNOWN"], "UNKNOWN", None, policy, conflicting=["E-STALE"], blockers=[b], packet_context=ctx)
         b = blocker("INCOMPLETE_SCAN_HISTORY", category, "Scan history is incomplete or invalid for inactivity", ["history_complete"], ["E-STALE"])
-        return assessment(category, ["S-UNKNOWN"], "UNKNOWN", None, policy, missing=["E-STALE"], blockers=[b])
+        return assessment(category, ["S-UNKNOWN"], "UNKNOWN", None, policy, missing=["E-STALE"], blockers=[b], packet_context=ctx)
     if facts.scan_gap is None:
         if ctx.shipment.get("current_status") == "PRE_TRANSIT":
             return assessment(category, ["S-PRE"], "NOT_APPLICABLE", False, policy)
         b = blocker("MISSING_QUALIFYING_SCAN", category, "No valid qualifying scan in in-network history", ["input.tracking_events"], ["E-STALE"])
-        return assessment(category, ["S-UNKNOWN"], "UNKNOWN", None, policy, missing=["E-STALE"], blockers=[b])
+        return assessment(category, ["S-UNKNOWN"], "UNKNOWN", None, policy, missing=["E-STALE"], blockers=[b], packet_context=ctx)
     if not policy.meets("STALE_DETECT_HOURS", facts.scan_gap):
         return assessment(category, ["S-0"], "FALSE", False, policy)
     eligible = policy.meets("STALE_ESCALATE_HOURS", facts.scan_gap)
     rule = "S-2" if eligible else "S-1"
-    missing, blocks = packet_gaps(ctx, category)
-    return assessment(category, [rule], "TRUE", eligible, policy, missing=missing, blockers=blocks, triggers=[rule] if eligible else [])
+    return assessment(category, [rule], "TRUE", eligible, policy, triggers=[rule] if eligible else [], packet_context=ctx)
 
 
 def failed_address(ctx, facts, policy):
@@ -100,9 +110,10 @@ def failed_address(ctx, facts, policy):
         (conflicts if failed_conflict else gaps).extend(mapping["FAILED_ATTEMPT"])
         invalid_ids = [f for f in ctx.findings if f["code"] == "MISSING_ATTEMPT_ID"]
         conflict_refs = [f["path"] for f in ctx.findings if "E-FAILED" in f["requirement_ids"]]
-        blocks.append(blocker("CONFLICTING_EVENT_IDENTITY" if failed_conflict else ("MISSING_ATTEMPT_ID" if invalid_ids else "INCOMPLETE_ATTEMPT_HISTORY"), category,
-                              "Attempt history or physical attempt identity is incomplete",
-                              conflict_refs if failed_conflict else ([f["path"] for f in invalid_ids] or ["history_complete"]), mapping["FAILED_ATTEMPT"]))
+        blocks.append(blocker(event_conflict_code(ctx, "E-FAILED") if failed_conflict else ("MISSING_ATTEMPT_ID" if invalid_ids else "INCOMPLETE_ATTEMPT_HISTORY"), category,
+                              "Attempt history or physical attempt identity is incomplete, invalid or conflicting",
+                              conflict_refs if failed_conflict else ([f["path"] for f in invalid_ids] or ["history_complete"]), mapping["FAILED_ATTEMPT"],
+                              dependent_decision="FAILED_ATTEMPT"))
     if address is None:
         unknown.append("ADDRESS_EXCEPTION")
         if address_conflict:
@@ -111,11 +122,13 @@ def failed_address(ctx, facts, policy):
                       if e["event_code"] in ("ADDRESS_EXCEPTION", "ADDRESS_CLEARED") for field in ("event_time", "event_code")]
             if "E-ADDRESS" in ctx.conflicting_requirements:
                 fields = [f["path"] for f in ctx.findings if "E-ADDRESS" in f["requirement_ids"]]
-            blocks.append(blocker("CONFLICTING_EVENT_IDENTITY" if "E-ADDRESS" in ctx.conflicting_requirements else "CONFLICTING_ADDRESS_MARKERS",
-                                  category, "Conflicting address marker evidence", fields, mapping["ADDRESS_EXCEPTION"]))
+            blocks.append(blocker(event_conflict_code(ctx, "E-ADDRESS") if "E-ADDRESS" in ctx.conflicting_requirements else "CONFLICTING_ADDRESS_MARKERS",
+                                  category, "Invalid or conflicting address marker evidence", fields, mapping["ADDRESS_EXCEPTION"],
+                                  dependent_decision="ADDRESS_EXCEPTION"))
         else:
             gaps += mapping["ADDRESS_EXCEPTION"]
-            blocks.append(blocker("UNKNOWN_ADDRESS_STATE", category, "Incomplete or invalid marker history", ["history_complete"], mapping["ADDRESS_EXCEPTION"]))
+            blocks.append(blocker("UNKNOWN_ADDRESS_STATE", category, "Incomplete or invalid marker history", ["history_complete"], mapping["ADDRESS_EXCEPTION"],
+                                  dependent_decision="ADDRESS_EXCEPTION"))
     subtype_rows = {
         "FAILED_ATTEMPT": dict(subtype="FAILED_ATTEMPT", result="UNKNOWN" if count is None else ("TRUE" if count > 0 else "FALSE"),
                                escalation_eligible=failed_eligible, evidence=evidence(mapping["FAILED_ATTEMPT"],
@@ -146,17 +159,15 @@ def failed_address(ctx, facts, policy):
                 if trigger in unsupported:
                     subtype_rows[name]["evidence"] = evidence(mapping[name] + ["E-POLICY-SECTIONS"], ["E-POLICY-SECTIONS"])
                     b = blocker("MISSING_POLICY_SECTIONS", category, "Other eligible subtype lacks required section support",
-                                ["policy.sections"], ["E-POLICY-SECTIONS"])
-                    b["dependent_decision"] = name
+                                ["policy.sections"], ["E-POLICY-SECTIONS"], dependent_decision=name)
                     blocks.append(b)
         rule_ids = basis + (["F-UNKNOWN"] if unknown else [])
         # The escalation basis includes only supported eligible triggers. Unknown
         # other-subtype gaps remain in subtype rows/blockers, outside its gate.
         required = policy.dependencies(basis)
-        missing, packet_blocks = packet_gaps(ctx, category)
-        return assessment(category, rule_ids, "TRUE", True, policy, required=required, missing=missing,
-                          blockers=blocks + packet_blocks, subtype=subtype,
-                          subtypes=[subtype_rows[n] for n in active + unknown], triggers=basis)
+        return assessment(category, rule_ids, "TRUE", True, policy, required=required,
+                          blockers=blocks, subtype=subtype,
+                          subtypes=[subtype_rows[n] for n in active + unknown], triggers=basis, packet_context=ctx)
     if unknown:
         required = (policy.dependencies(["F-UNKNOWN"]) + gaps + conflicts) if len(unknown) == 2 else gaps + conflicts
         # F-1 records the confirmed non-eligible attempt condition only; its
@@ -164,9 +175,8 @@ def failed_address(ctx, facts, policy):
         rules = (["F-1"] if "FAILED_ATTEMPT" in active and failed_eligible is False else []) + ["F-UNKNOWN"]
         return assessment(category, rules, "TRUE" if active else "UNKNOWN", None, policy, required=required,
                           missing=gaps, conflicting=conflicts, blockers=blocks, subtype=subtype,
-                          subtypes=list(subtype_rows.values()) if len(unknown) == 1 else [])
+                          subtypes=list(subtype_rows.values()) if len(unknown) == 1 else [], packet_context=ctx)
     if count == 0 and not address:
         return assessment(category, ["F-0"], "FALSE", False, policy)
-    missing, packet_blocks = packet_gaps(ctx, category)
-    return assessment(category, ["F-1"], "TRUE", False, policy, missing=missing, blockers=packet_blocks,
-                      subtype=subtype, subtypes=list(subtype_rows.values()))
+    return assessment(category, ["F-1"], "TRUE", False, policy,
+                      subtype=subtype, subtypes=list(subtype_rows.values()), packet_context=ctx)

@@ -42,6 +42,20 @@ class EngineTests(unittest.TestCase):
     def run_packet(self, x, bundle=None):
         return triage_snapshot(**seal(x), bundle=bundle)
 
+    def assert_informational_only(self, actual, single, code, paths, scope):
+        # Assert the newly required diagnostic exactly, then retain the previous
+        # full-output equality check for every other field (including warnings).
+        findings = actual["validation_findings"]
+        self.assertEqual([{**f, "reason": "checked below"} for f in findings],
+                         [dict(path=p, code=code, scope=scope, requirement_ids=[], reason="checked below") for p in paths])
+        self.assertTrue(all(f["reason"] for f in findings))
+        expected = copy.deepcopy(single)
+        expected["validation_findings"] = findings
+        first = findings[0]
+        expected["results"][0]["warnings"].append(dict(code=code, scope="SHIPMENT", exception_type=None,
+            message=f"{first['path']}: {first['reason']}", related_blocker_codes=[]))
+        self.assertEqual(actual, expected)
+
     def test_exact_time_boundaries_without_rounded_hours(self):
         for promise, eligible, state in [("2026-09-30T12:00:00.000001Z", False, "MONITOR"),
                                           ("2026-09-30T12:00:00Z", True, "READY_TO_ESCALATE"),
@@ -82,7 +96,8 @@ class EngineTests(unittest.TestCase):
         x["input"]["tracking_events"].append(dict(reversed(list(repeated.items()))))
         seal(x); original=copy.deepcopy(x)
         actual=triage_snapshot(**x)
-        self.assertEqual(actual,single)
+        self.assert_informational_only(actual,single,"DUPLICATE_EVENT_IDENTITY",["input.tracking_events[0]"],"SHIPMENT")
+        self.assertIn("processed once",actual["results"][0]["warnings"][0]["message"])
         self.assertEqual(x,original)
 
     def test_identical_duplicate_failed_event_is_one_source_event_and_attempt(self):
@@ -91,7 +106,7 @@ class EngineTests(unittest.TestCase):
         single=self.run_packet(x)
         x["input"]["tracking_events"] += [copy.deepcopy(x["input"]["tracking_events"][-1]) for _ in range(2)]
         actual=self.run_packet(x)
-        self.assertEqual(actual,single)
+        self.assert_informational_only(actual,single,"DUPLICATE_EVENT_IDENTITY",["input.tracking_events[1]"],"SHIPMENT")
         result=actual["results"][0]
         self.assertEqual(result["derived_facts"]["failed_attempt_count"],1)
         self.assertEqual(result["assessments"][2]["action_state"],"MONITOR")
@@ -176,10 +191,12 @@ class EngineTests(unittest.TestCase):
 
     def test_non_decision_field_conflict_is_visible_without_dependent_blocker(self):
         x=packet(); x["input_profile"]="RAW_VALIDATION_CASE"
-        single=self.run_packet(x)["results"]
+        single=self.run_packet(x)
         x["input"]["tracking_events"].append(dict(x["input"]["tracking_events"][0],facility_id="OTHER"))
         actual=self.run_packet(x)
-        self.assertEqual(actual["results"],single)
+        self.assert_informational_only(actual,single,"CONFLICTING_EVENT_IDENTITY",
+                                       ["input.tracking_events[0]","input.tracking_events[1]"],"CATEGORY")
+        self.assertIn("facility_id",actual["results"][0]["warnings"][0]["message"])
         self.assertTrue(actual["validation_findings"])
         self.assertTrue(all(not f["requirement_ids"] for f in actual["validation_findings"]))
 

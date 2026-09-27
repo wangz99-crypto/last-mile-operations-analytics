@@ -52,6 +52,29 @@ support and relevant evidence support plus F-UNKNOWN failure guidance; the subty
 evidence stays independent. This output-composition clarification does not change
 registry thresholds, dependencies, policy, schema or any DEVELOPMENT Gold.
 
+Phase 1B.2 is a post-heldout evidence/diagnostic correction. Observed events
+quarantined for invalid core fields or time mark their affected E-STALE, E-FAILED
+or E-ADDRESS requirement as conflicting. Absent/incomplete history remains missing;
+an absent attempt identity remains missing E-FAILED while its valid scan facts
+remain usable. Quarantine, classification, thresholds and subtype readiness are
+unchanged. Blocker codes retain the cause: INVALID_EVENT for invalid rows and
+CONFLICTING_EVENT_IDENTITY for conflicting versions.
+
+Active category gates merge carrier/source packet gaps even when already UNKNOWN.
+Those gaps remain category-local and do not enter independent subtype gates or
+erase known classification/eligibility. Inactive NORMAL gates remain not applicable.
+Blockers distinguish LATE_DELIVERY_PACKET and PACKET from classification decisions;
+failed-attempt and address blockers identify FAILED_ATTEMPT and ADDRESS_EXCEPTION.
+The helper's default remains the category for ordinary category-level decisions.
+
+Identical raw duplicates add one informational DUPLICATE_EVENT_IDENTITY finding and
+shipment warning per source identity. Requirement-free duplicate conflicts retain
+findings for every raw version and add one shipment warning. Disputed facility
+values remain non-authoritative; agreed decision fields remain available. These
+warnings have no related blocker codes and do not participate in state or priority.
+Existing unresolved-category warnings are retained independently. Canonical duplicate
+identity rejection remains strict.
+
 Section support is resolved by exact registry identity and verified SOP file bytes.
 Missing/corrupt required sections block only dependent active decisions. Registry
 or schema checksum/bundle/effective-interval failures are global policy failures.
@@ -74,3 +97,11 @@ or substitution of expected values. Runtime invalid-input findings must include
 each authored expected_input_findings path; additional operational findings (e.g.
 incomplete history) are allowed because that Gold list describes raw invalid input.
 Passing the 18 visible cases establishes DEVELOPMENT conformance only.
+
+The frozen DEVELOPMENT Gold and strict comparator are unchanged in Phase 1B.2.
+Consequently, the refined dependent_decision identifiers produce five diagnostic
+differences across C04, D15, D16 and D17: the original comparison reports 14/18,
+not full conformance. All other compared fields, including business decisions,
+remain equal across the 18 cases. No diagnostic fields are ignored or rewritten to
+obtain a passing result. Initial private-run artifacts remain historical evidence;
+this phase neither reads private Gold nor runs or claims a heldout regression.

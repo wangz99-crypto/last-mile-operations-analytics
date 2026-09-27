@@ -1,0 +1,91 @@
+{
+  "migration_version": "1B.2",
+  "evaluation_role": "POST_HELDOUT_DEVELOPMENT_REGRESSION",
+  "overrides": [
+    {
+      "fixture_id": "C04",
+      "assessment_category": "FAILED_ATTEMPT_ADDRESS",
+      "blocker_selector": {
+        "code": "INCOMPLETE_ATTEMPT_HISTORY",
+        "scope": "CATEGORY",
+        "exception_type": "FAILED_ATTEMPT_ADDRESS",
+        "field_refs": ["history_complete"],
+        "requirement_ids": ["E-FAILED"]
+      },
+      "field_path": "/expected_results/0/assessments/2/blockers/0/dependent_decision",
+      "old_frozen_value": "FAILED_ATTEMPT_ADDRESS",
+      "new_phase_1b2_value": "FAILED_ATTEMPT",
+      "rationale": "Incomplete attempt history blocks the failed-attempt decision specifically; the address dependency has its own blocker. Classification, evidence and action remain unchanged.",
+      "migration_version": "1B.2"
+    },
+    {
+      "fixture_id": "C04",
+      "assessment_category": "FAILED_ATTEMPT_ADDRESS",
+      "blocker_selector": {
+        "code": "UNKNOWN_ADDRESS_STATE",
+        "scope": "CATEGORY",
+        "exception_type": "FAILED_ATTEMPT_ADDRESS",
+        "field_refs": ["history_complete"],
+        "requirement_ids": ["E-ADDRESS"]
+      },
+      "field_path": "/expected_results/0/assessments/2/blockers/1/dependent_decision",
+      "old_frozen_value": "FAILED_ATTEMPT_ADDRESS",
+      "new_phase_1b2_value": "ADDRESS_EXCEPTION",
+      "rationale": "Incomplete marker history blocks the address decision specifically; the failed-attempt dependency has its own blocker. Classification, evidence and action remain unchanged.",
+      "migration_version": "1B.2"
+    },
+    {
+      "fixture_id": "D15",
+      "assessment_category": "FAILED_ATTEMPT_ADDRESS",
+      "blocker_selector": {
+        "code": "CONFLICTING_ADDRESS_MARKERS",
+        "scope": "CATEGORY",
+        "exception_type": "FAILED_ATTEMPT_ADDRESS",
+        "field_refs": [
+          "input.tracking_events[1].event_time",
+          "input.tracking_events[1].event_code",
+          "input.tracking_events[2].event_time",
+          "input.tracking_events[2].event_code"
+        ],
+        "requirement_ids": ["E-ADDRESS"]
+      },
+      "field_path": "/expected_results/0/assessments/2/blockers/0/dependent_decision",
+      "old_frozen_value": "FAILED_ATTEMPT_ADDRESS",
+      "new_phase_1b2_value": "ADDRESS_EXCEPTION",
+      "rationale": "Same-time conflicting address markers leave only the address decision unresolved. The independently ready late decision and every evidence and business field remain unchanged.",
+      "migration_version": "1B.2"
+    },
+    {
+      "fixture_id": "D16",
+      "assessment_category": "LATE_DELIVERY",
+      "blocker_selector": {
+        "code": "MISSING_CARRIER",
+        "scope": "CATEGORY",
+        "exception_type": "LATE_DELIVERY",
+        "field_refs": ["input.shipments[0].carrier"],
+        "requirement_ids": ["E-IDENTITY"]
+      },
+      "field_path": "/expected_results/0/assessments/0/blockers/0/dependent_decision",
+      "old_frozen_value": "LATE_DELIVERY",
+      "new_phase_1b2_value": "LATE_DELIVERY_PACKET",
+      "rationale": "Missing carrier blocks the late escalation packet, while the late classification and eligibility are already known. Phase 1B.2 names that packet dependency LATE_DELIVERY_PACKET; no business or evidence value changes.",
+      "migration_version": "1B.2"
+    },
+    {
+      "fixture_id": "D17",
+      "assessment_category": "FAILED_ATTEMPT_ADDRESS",
+      "blocker_selector": {
+        "code": "MISSING_ATTEMPT_ID",
+        "scope": "CATEGORY",
+        "exception_type": "FAILED_ATTEMPT_ADDRESS",
+        "field_refs": ["input.tracking_events[0].attempt_id"],
+        "requirement_ids": ["E-FAILED"]
+      },
+      "field_path": "/expected_results/0/assessments/2/blockers/0/dependent_decision",
+      "old_frozen_value": "FAILED_ATTEMPT_ADDRESS",
+      "new_phase_1b2_value": "FAILED_ATTEMPT",
+      "rationale": "A missing physical attempt identity prevents a known failed-attempt count; it does not make the independently known address state unresolved. Only the diagnostic dependency identifier changes.",
+      "migration_version": "1B.2"
+    }
+  ]
+}

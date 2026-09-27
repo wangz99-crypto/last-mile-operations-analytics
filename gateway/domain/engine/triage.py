@@ -52,6 +52,9 @@ def triage_snapshot(*, manifest, policy, input, input_profile="CANONICAL", bundl
         else:
             assessments = [late(ctx, facts, bundle), stale(ctx, facts, bundle), failed_address(ctx, facts, bundle)]
         warnings = []
+        for f in ctx.informational_findings:
+            warnings.append(dict(code=f["code"], scope="SHIPMENT", exception_type=None,
+                                 message=f"{f['path']}: {f['reason']}", related_blocker_codes=[]))
         if not global_blocks:
             for a in assessments:
                 if a["result"] == "UNKNOWN" or "F-UNKNOWN" in a["rule_ids"]:

@@ -118,6 +118,7 @@ class Context:
     history: bool = False
     global_findings: list = field(default_factory=list)
     findings: list = field(default_factory=list)
+    informational_findings: list = field(default_factory=list)
     invalid_fields: set = field(default_factory=set)
     scan_uncertain: bool = False
     attempts_invalid: bool = False
@@ -215,6 +216,12 @@ def validate_input(manifest, reference, data, profile, policy):
                     if len(declarations) != 1:
                         structural.append(path)
                     continue
+                if len(group) > 1 and not changed:
+                    f = finding(path, "DUPLICATE_EVENT_IDENTITY", [],
+                                f"Identical source event {event_identity(row)!r} delivered {len(group)} times; processed once.",
+                                "SHIPMENT")
+                    c.findings.append(f); findings.append(f)
+                    c.informational_findings.append(f)
                 if changed:
                     requirements = duplicate_dependencies([v for _, v in group], changed, c, policy)
                     c.conflicting_requirements.update(requirements)
@@ -229,6 +236,9 @@ def validate_input(manifest, reference, data, profile, policy):
                         c.findings.append(f); findings.append(f)
                         if global_requirements:
                             c.global_findings.append(dict(f, scope="SHIPMENT", requirement_ids=sorted(global_requirements)))
+                        if not requirements and index == group[0][0]:
+                            # One warning per identity; findings keep every row.
+                            c.informational_findings.append(f)
                     if changed & {"event_time", "event_code", "shipment_id"}:
                         continue  # No version supplies an authoritative core event.
                     # Retain only agreed fields for independent calculations;
@@ -257,6 +267,7 @@ def validate_input(manifest, reference, data, profile, policy):
                         c.attempts_invalid = True; reqs.append("E-FAILED")
                     if code in ("ADDRESS_EXCEPTION", "ADDRESS_CLEARED") or code not in defs["event_code"]["enum"]:
                         c.address_invalid = True; reqs.append("E-ADDRESS")
+                    c.conflicting_requirements.update(reqs)
                     f = finding(path, "INVALID_EVENT", reqs, "Invalid event fields, identity or event time; dependent facts quarantined")
                     c.findings.append(f); findings.append(f)
                     continue

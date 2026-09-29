@@ -1,10 +1,11 @@
-# Last-Mile SOP retrieval: exact lookup and lexical baseline
+# Last-Mile SOP retrieval: exact lookup, lexical and embedding baselines
 
 This package loads the active `1.0-demo` corpus: **8 SOP documents and 25 stable
 sections**. The registry, frozen artifact manifest, contract schema and existing
 Markdown under `gateway/domain/` remain the policy authority. Nothing is copied
-into the legacy IT knowledge base. The package has only standard-library
+into the legacy IT knowledge base. The core package has only standard-library
 dependencies; it imports neither the deterministic engine nor an application.
+Phase 2D provides an explicitly constructed optional embedding adapter.
 
 The architecture remains:
 
@@ -331,4 +332,137 @@ Focused Phase 2C tests:
 ```powershell
 python -B -m unittest discover -s gateway/domain/tests -p 'test_lexical_retrieval.py' -v
 python -B -m unittest discover -s gateway/domain/tests -p 'test_retrieval_development_evaluation.py' -v
+```
+
+## Phase 2D: optional sentence-embedding baseline
+
+Exact lookup resolves identities already declared by the deterministic engine.
+BM25 ranks sections by lexical overlap. The optional embedding adapter ranks the
+same sections by cosine similarity. Both ranked methods are supplemental: neither
+changes exact lookup, rule decisions, policy authority or business readiness.
+Phase 2C BM25 v0 and its historical artifacts remain unchanged.
+
+The owner-frozen model is **`BAAI/bge-small-en-v1.5`**, matching
+`gateway/configs/server.example.yaml`. The owner selected it after the original
+MiniLM preference was found to differ from repository configuration. No second
+model is evaluated. The runtime uses the repository's existing optional
+`gateway/requirements-embeddings.txt` (`sentence-transformers==3.0.1` plus torch).
+Install those dependencies in a separate virtual environment when running the
+real adapter. They are unnecessary for deterministic execution, SectionStore,
+exact retrieval, BM25 or the ordinary unit tests.
+
+```python
+from gateway.domain.retrieval import SectionStore
+from gateway.domain.retrieval.embedding_retriever import EmbeddingRetriever
+
+retriever = EmbeddingRetriever(SectionStore.load())  # Explicit model initialization.
+response = retriever.search("qualifying scan history evidence", top_k=10)
+for record in response.results:
+    print(record.identity, record.rank, record.score)
+```
+
+Neither `import gateway.domain.retrieval` nor importing the embedding module
+loads SentenceTransformer, torch, NumPy, model weights or network resources.
+`SentenceTransformerBackend` imports the optional runtime only when explicitly
+constructed; a missing dependency raises `EmbeddingDependencyError` with the
+optional requirements path. No silent zero-vector substitute is provided.
+
+### Frozen model and vector configuration
+
+- CPU, one torch compute thread; model evaluation mode.
+- Exactly 25 stable sections from the verified single-version SectionStore,
+  ordered by `(policy_id, version, section_id)`. No additional chunks, legacy
+  IT corpus, vector database, metadata boosts or external vector service.
+- Each section input is exactly readable `title + LF + section_title + LF + text`.
+  Natural identifiers in the original body remain intact. Metadata IDs, filenames,
+  labels, rationales and synonyms are not injected.
+- Original query strings are passed directly, independently of document encoding.
+  **No BGE query instruction, prefix or rewriting** is added. The backend explicitly
+  passes `prompt=""` for both documents and queries, disabling model default prompts.
+- SentenceTransformer `normalize_embeddings=True`, float32 encode precision,
+  batch size 32. The model's own pooling/tokenization/maximum sequence length are
+  retained and recorded; no custom pooling or model-length tuning is applied.
+- The adapter validates and L2 normalizes the vectors in Python float precision,
+  then computes cosine as `math.fsum` of elementwise products. The 25-row matrix
+  is encoded once per retriever instance and stored in memory. Nonfinite, zero,
+  malformed or inconsistent vectors raise `EmbeddingVectorError`.
+- `top_k=10`; positive integer overrides are supported by the search API, capped
+  at 25. The evaluator always uses 10. Once support is accepted, ranking includes
+  all sections, without per-result score filtering. Scores are not rounded before
+  descending ranking; exact ties use ascending canonical identity.
+- **Minimum top cosine similarity 0.30**, fixed a priori. Blank queries abstain
+  without encoding; a top score below 0.30 abstains with no returned support.
+  Equality is accepted. There is no margin test or question-specific exception.
+
+Frozen `EmbeddingResult` objects expose `identity`, `rank`, `score`, `text`,
+`content_hash`, `source_path` and `retrieval_method="EMBEDDING_COSINE"`.
+The frozen response exposes `status`, `results`, `top_score`, `abstention_reason`
+and `abstained`, analogous to the lexical API. Cosine score is a retrieval
+diagnostic, **not confidence**, probability, policy authority or business readiness.
+No business field is derived from similarity.
+
+The backend resolves a Hugging Face model revision before loading, downloads only
+the chosen model's inference files into the ignored `.cache/phase2d-model/`, and
+loads that exact local snapshot with remote code disabled. Runtime metadata records
+the resolved revision, file hashes, package versions, actual CPU device, dimension,
+pooling, sequence limit and whether model files/weights were downloaded by that
+construction. It omits absolute cache paths and private machine identifiers.
+The repository dependency file and model name do not pin every dependency or a
+permanent revision; recorded versions/hashes identify this run, and cross-runtime
+byte-identical model output is not claimed.
+
+### Development evaluation and owner review
+
+```powershell
+python -B gateway/domain/evaluation/retrieval/evaluate_embedding_development.py
+```
+
+Use the Python executable from the optional runtime environment. The CLI accepts
+no arguments, arbitrary question directory or split. It reuses the unchanged
+Phase 2C frozen Development loader and evaluation/metric functions, including all
+custody protections and the same 15 IDs and receipt documented above. The
+retriever receives only question text and `top_k=10`; labels/rationale never enter
+the index or query encoding. The same 14 ANSWERABLE / 1 NEGATIVE denominators and
+Gold-versus-required-section distinctions apply.
+
+New artifacts are written only to `artifacts/retrieval_dev_embedding_baseline/`:
+`DEVELOPMENT_RESULTS.json`, `DEVELOPMENT_REPORT.md` and `RUN_MANIFEST.json`.
+An existing output directory is refused before model initialization. The report
+retains every failure and compares all metrics with the read-only historical
+Phase 2C results, without re-running BM25. The manifest records configuration,
+runtime identity, input/code/output hashes and preserved Phase 2C artifact hashes.
+The base commit is distinguished from the uncommitted candidate source hashes.
+
+This is **DEVELOPMENT only**, not evidence of held-out superiority. No HELD_OUT
+question, result, private authoring material or Gold is accessed. Configuration is
+frozen before seeing results. No model/threshold sweep or post-result tuning is
+allowed in this baseline. Stop after the first valid baseline for owner review.
+A future query-instruction or threshold experiment must be separately labeled
+Development tuning and must not overwrite either baseline.
+
+### Offline tests and separate manual model smoke
+
+```powershell
+python -B -m unittest discover -s gateway/domain/tests -p 'test_embedding*.py' -v
+```
+
+These tests use injected deterministic encoders and an isolated standard-library
+subprocess. They require no network, downloaded weights, GPU or vLLM. Phase 2A/2C
+and deterministic regression commands above remain unchanged.
+
+For an explicitly manual smoke check **after provisioning the model**, outside
+ordinary CI and without evaluating any question set:
+
+```python
+from gateway.domain.retrieval import SectionStore
+from gateway.domain.retrieval.embedding_retriever import (
+    EmbeddingRetriever, SentenceTransformerBackend,
+)
+
+# Supply the resolved revision recorded in RUN_MANIFEST.json for exact cache lookup.
+backend = SentenceTransformerBackend(revision="<recorded-model-revision>", local_files_only=True)
+retriever = EmbeddingRetriever(SectionStore.load(), encoder=backend)
+assert retriever.embedding_dimension == 384
+assert retriever.search("   ").abstained
+print(retriever.search("synthetic retrieval smoke query").status)
 ```

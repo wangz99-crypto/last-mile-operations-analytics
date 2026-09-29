@@ -1,0 +1,3032 @@
+{
+  "configuration": {
+    "abstention": {
+      "also_abstain": [
+        "blank query"
+      ],
+      "comparison": "top_score < threshold",
+      "margin": null,
+      "minimum_top_score": 0.3
+    },
+    "candidate_filter": "all sections; threshold applies to top score for the whole response",
+    "cpu_threads": 1,
+    "device": "cpu",
+    "document_instruction": "",
+    "encode_batch_size": 32,
+    "encode_precision": "float32",
+    "field_joiner": "LF",
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "model_selection": "Owner-frozen repository-configured model; one model only",
+    "normalize_embeddings": true,
+    "pooling": "unmodified model snapshot configuration",
+    "query_instruction": "",
+    "query_transformation": "none; original question text",
+    "retrieval_method": "EMBEDDING_COSINE",
+    "score_meaning": "retrieval diagnostic; not confidence, probability, authority or business readiness",
+    "searchable_fields": [
+      "title",
+      "section_title",
+      "text"
+    ],
+    "section_count": 25,
+    "similarity": "normalized dot product; math.fsum over unit vectors",
+    "tie_breaking": "score descending, then (policy_id, version, section_id) ascending; no rounding",
+    "top_k": 10,
+    "vector_validation": "finite nonzero rows; L2 normalize in Python float precision"
+  },
+  "configuration_status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+  "development_receipt_sha256": "4f5ffc6c780419b31c2b810ccaa66bb39f1b06872266c13816ae06208e660e00",
+  "evaluation_type": "DEVELOPMENT_EMBEDDING_BASELINE",
+  "failures": [
+    {
+      "observations": [
+        "Required coverage@1: 1/2; absent: [('SOP-02', '1.0-demo', 'late-monitor')]."
+      ],
+      "question_id": "RQ009"
+    },
+    {
+      "observations": [
+        "First relevant rank: 2; top result ('SOP-05', '1.0-demo', 'stale-evidence') is not Gold-relevant.",
+        "Required coverage@1: 0/1; absent: [('SOP-03', '1.0-demo', 'stale-monitor')]."
+      ],
+      "question_id": "RQ012"
+    },
+    {
+      "observations": [
+        "First relevant rank: 8; top result ('SOP-03', '1.0-demo', 'scan-scope') is not Gold-relevant.",
+        "No Gold-relevant section within the first three unique results.",
+        "Required coverage@1: 0/1; absent: [('SOP-03', '1.0-demo', 'stale-monitor')].",
+        "Required coverage@3: 0/1; absent: [('SOP-03', '1.0-demo', 'stale-monitor')].",
+        "Required coverage@5: 0/1; absent: [('SOP-03', '1.0-demo', 'stale-monitor')]."
+      ],
+      "question_id": "RQ015"
+    },
+    {
+      "observations": [
+        "Required coverage@1: 1/2; absent: [('SOP-04', '1.0-demo', 'repeated-attempts')]."
+      ],
+      "question_id": "RQ019"
+    },
+    {
+      "observations": [
+        "First relevant rank: 4; top result ('SOP-04', '1.0-demo', 'attempt-counting') is not Gold-relevant.",
+        "No Gold-relevant section within the first three unique results.",
+        "Required coverage@1: 0/1; absent: [('SOP-05', '1.0-demo', 'attempt-address-evidence')].",
+        "Required coverage@3: 0/1; absent: [('SOP-05', '1.0-demo', 'attempt-address-evidence')]."
+      ],
+      "question_id": "RQ025"
+    },
+    {
+      "observations": [
+        "First relevant rank: 2; top result ('SOP-06', '1.0-demo', 'handoff-boundary') is not Gold-relevant.",
+        "Required coverage@1: 0/1; absent: [('SOP-06', '1.0-demo', 'handoff-fields')]."
+      ],
+      "question_id": "RQ026"
+    },
+    {
+      "observations": [
+        "Required coverage@1: 1/2; absent: [('SOP-06', '1.0-demo', 'handoff-fields')]."
+      ],
+      "question_id": "RQ029"
+    },
+    {
+      "observations": [
+        "First relevant rank: 2; top result ('SOP-06', '1.0-demo', 'handoff-boundary') is not Gold-relevant.",
+        "Required coverage@1: 0/1; absent: [('SOP-07', '1.0-demo', 'missing-policy')]."
+      ],
+      "question_id": "RQ035"
+    },
+    {
+      "observations": [
+        "Unsupported negative query returned ('SOP-06', '1.0-demo', 'handoff-boundary') with score 0.619689; no abstention."
+      ],
+      "question_id": "RQ041"
+    }
+  ],
+  "historical_bm25_metrics": {
+    "answerable_count": 14,
+    "full_required_set_success_at_k": {
+      "10": {
+        "count": 3,
+        "rate": 1.0,
+        "total": 3
+      },
+      "3": {
+        "count": 1,
+        "rate": 0.3333333333333333,
+        "total": 3
+      },
+      "5": {
+        "count": 2,
+        "rate": 0.6666666666666666,
+        "total": 3
+      }
+    },
+    "hit_at_1": {
+      "count": 11,
+      "rate": 0.7857142857142857,
+      "total": 14
+    },
+    "hit_at_3": {
+      "count": 11,
+      "rate": 0.7857142857142857,
+      "total": 14
+    },
+    "mrr_at_10": 0.7928571428571428,
+    "multi_required_question_count": 3,
+    "negative_correct_abstention": {
+      "count": 0,
+      "rate": 0.0,
+      "total": 1
+    },
+    "negative_count": 1,
+    "negative_false_support": {
+      "count": 1,
+      "rate": 1.0,
+      "total": 1
+    },
+    "required_coverage_at_k": {
+      "1": {
+        "macro_average": 0.6785714285714286,
+        "micro": {
+          "count": 11,
+          "rate": 0.6470588235294118,
+          "total": 17
+        }
+      },
+      "10": {
+        "macro_average": 0.7857142857142857,
+        "micro": {
+          "count": 14,
+          "rate": 0.8235294117647058,
+          "total": 17
+        }
+      },
+      "3": {
+        "macro_average": 0.7142857142857143,
+        "micro": {
+          "count": 12,
+          "rate": 0.7058823529411765,
+          "total": 17
+        }
+      },
+      "5": {
+        "macro_average": 0.75,
+        "micro": {
+          "count": 13,
+          "rate": 0.7647058823529411,
+          "total": 17
+        }
+      }
+    }
+  },
+  "metrics": {
+    "answerable_count": 14,
+    "full_required_set_success_at_k": {
+      "10": {
+        "count": 3,
+        "rate": 1.0,
+        "total": 3
+      },
+      "3": {
+        "count": 3,
+        "rate": 1.0,
+        "total": 3
+      },
+      "5": {
+        "count": 3,
+        "rate": 1.0,
+        "total": 3
+      }
+    },
+    "hit_at_1": {
+      "count": 9,
+      "rate": 0.6428571428571429,
+      "total": 14
+    },
+    "hit_at_3": {
+      "count": 12,
+      "rate": 0.8571428571428571,
+      "total": 14
+    },
+    "mrr_at_10": 0.7767857142857143,
+    "multi_required_question_count": 3,
+    "negative_correct_abstention": {
+      "count": 0,
+      "rate": 0.0,
+      "total": 1
+    },
+    "negative_count": 1,
+    "negative_false_support": {
+      "count": 1,
+      "rate": 1.0,
+      "total": 1
+    },
+    "required_coverage_at_k": {
+      "1": {
+        "macro_average": 0.5357142857142857,
+        "micro": {
+          "count": 9,
+          "rate": 0.5294117647058824,
+          "total": 17
+        }
+      },
+      "10": {
+        "macro_average": 1.0,
+        "micro": {
+          "count": 17,
+          "rate": 1.0,
+          "total": 17
+        }
+      },
+      "3": {
+        "macro_average": 0.8571428571428571,
+        "micro": {
+          "count": 15,
+          "rate": 0.8823529411764706,
+          "total": 17
+        }
+      },
+      "5": {
+        "macro_average": 0.9285714285714286,
+        "micro": {
+          "count": 16,
+          "rate": 0.9411764705882353,
+          "total": 17
+        }
+      }
+    }
+  },
+  "questions": [
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 1,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-01",
+          "1.0-demo",
+          "state-precedence"
+        ]
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "A category is ready for human review, but the assessment also records a shipment-global blocker. Which aggregate action state takes precedence?",
+      "question_id": "RQ003",
+      "ranked_sections": [
+        {
+          "content_hash": "1ecea461f89ccd2cd46f294b59c72cdc0a32d2afbb77cb6fd047c3f1f3938729",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "state-precedence"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.8145328917842282,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "6dec3f860f83b0d2e0eb2959c3501c8e299d7e0ad8731636ef7dfe62e52a21a5",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-boundary"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7142953807543481,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "d6ec6ec665358d9bf166a1f8284e0c9351d1dae5de138ff43aee93533f59e943",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-policy"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6965545778392808,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "7578315d0a8faedd4fc2c5d63715ade662082adc13a9f6fdc1aa559de02cf5cf",
+          "identity": [
+            "SOP-08",
+            "1.0-demo",
+            "decision-record"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6948608501384266,
+          "source_path": "sops/last_mile/operations_audit.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6801327071284349,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "b72b0e6fd13bcec07a9a38c79ce448b7e9a4cc26f76f8d014e6714ae88ff353f",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-fields"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6769852452621246,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "cc47a1a96b03b3c1a0d93723a9339c232888245f59eece16224bb0632bc592da",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "data-conflicts"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6712266262194388,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "569a93121de6264b1cdb23dea3c0c1da06bda56264bb2ac53510dfbb5d8f94fc",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6548687664400492,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "7ff50ba66d6de964fa0cef7384e411417bb9ddc01a4317b78a2d6ef2a47e4423",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6489432812591893,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "1300d3a76dc0674b1ef29c08ab29bc210f9d494b1db48d11f3706b5dec3e5e68",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "common-evidence"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6483198320401647,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 1.0,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-01",
+          "1.0-demo",
+          "state-precedence"
+        ]
+      ],
+      "top_score": 0.8145328917842282
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 1,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-02",
+          "1.0-demo",
+          "late-boundaries"
+        ]
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "Is an open parcel already late when the evaluation clock has only just reached its promised delivery time?",
+      "question_id": "RQ006",
+      "ranked_sections": [
+        {
+          "content_hash": "2f6fa8647b7f737e40168c54ff1e9f2a6a0d4580a4b6240e5c5a8a9f22070172",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7664690425582029,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "dff2dc2910aa5599706098ed16100658615999e82a96a18f9153c63b61c817ab",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-monitor"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7124311917807338,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "657f53921870e5267621149b236a02b4996a0b73e1753d9837959f312cbf5653",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6679343896963371,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "7ff50ba66d6de964fa0cef7384e411417bb9ddc01a4317b78a2d6ef2a47e4423",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6362046910322047,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "7046a97651a34415bd99b88f961b78c6a3de8665b314731cc22e335f6204d93d",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "late-evidence"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6359497033488608,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "9fbb3508254ef320884bdfe6521d195e535ff1f9d4c017cd89c3e4817c1d40a8",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6122046289689097,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "6dec3f860f83b0d2e0eb2959c3501c8e299d7e0ad8731636ef7dfe62e52a21a5",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-boundary"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5954721214062583,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "569a93121de6264b1cdb23dea3c0c1da06bda56264bb2ac53510dfbb5d8f94fc",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5802596197710221,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5676254789195526,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "d6ec6ec665358d9bf166a1f8284e0c9351d1dae5de138ff43aee93533f59e943",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-policy"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5627207284380958,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 1.0,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-02",
+          "1.0-demo",
+          "late-boundaries"
+        ]
+      ],
+      "top_score": 0.7664690425582029
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 1,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-02",
+          "1.0-demo",
+          "late-boundaries"
+        ],
+        [
+          "SOP-02",
+          "1.0-demo",
+          "late-monitor"
+        ]
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": true,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "With all dependent evidence available, how does an open shipment's late classification and disposition change from exactly its promised time to just after that time, while still below the escalation limit?",
+      "question_id": "RQ009",
+      "ranked_sections": [
+        {
+          "content_hash": "2f6fa8647b7f737e40168c54ff1e9f2a6a0d4580a4b6240e5c5a8a9f22070172",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7659901663937856,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "dff2dc2910aa5599706098ed16100658615999e82a96a18f9153c63b61c817ab",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-monitor"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7591646541016424,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "7046a97651a34415bd99b88f961b78c6a3de8665b314731cc22e335f6204d93d",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "late-evidence"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7463392826392863,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "9fbb3508254ef320884bdfe6521d195e535ff1f9d4c017cd89c3e4817c1d40a8",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7205939873484324,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "09d998430bae5729392b1dc7ef8448bad04161b3ff5822f151a8bfaecac4234b",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "stale-evidence"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7177482630472565,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "1300d3a76dc0674b1ef29c08ab29bc210f9d494b1db48d11f3706b5dec3e5e68",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "common-evidence"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7159051981408175,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "1ecea461f89ccd2cd46f294b59c72cdc0a32d2afbb77cb6fd047c3f1f3938729",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "state-precedence"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7069312646238367,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.698120426790947,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "42445072a3d53692349e90f887d7b3cf1de86d4d201fffd14cd69c88e4a66e94",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6957528344467968,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "657f53921870e5267621149b236a02b4996a0b73e1753d9837959f312cbf5653",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6942210242426516,
+          "source_path": "sops/last_mile/late_delivery.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 1.0,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 0.5,
+          "retrieved": 1,
+          "total": 2
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 2,
+          "total": 2
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 2,
+          "total": 2
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 2,
+          "total": 2
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-02",
+          "1.0-demo",
+          "late-boundaries"
+        ],
+        [
+          "SOP-02",
+          "1.0-demo",
+          "late-monitor"
+        ]
+      ],
+      "top_score": 0.7659901663937856
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 2,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-03",
+          "1.0-demo",
+          "stale-monitor"
+        ]
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "A verified scan gap is longer than the detection threshold but shorter than the escalation threshold, and the required inactivity evidence is complete. Which disposition applies?",
+      "question_id": "RQ012",
+      "ranked_sections": [
+        {
+          "content_hash": "09d998430bae5729392b1dc7ef8448bad04161b3ff5822f151a8bfaecac4234b",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "stale-evidence"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.8087813118169643,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "9349f06368896747f43ca05122e6522188b715120a3e370633b48ea92dfe6f92",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-monitor"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7680414324044815,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "42445072a3d53692349e90f887d7b3cf1de86d4d201fffd14cd69c88e4a66e94",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.759220801818342,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7557527077432304,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "9fbb3508254ef320884bdfe6521d195e535ff1f9d4c017cd89c3e4817c1d40a8",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7502977433825991,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "7046a97651a34415bd99b88f961b78c6a3de8665b314731cc22e335f6204d93d",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "late-evidence"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7381048747822058,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "1300d3a76dc0674b1ef29c08ab29bc210f9d494b1db48d11f3706b5dec3e5e68",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "common-evidence"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.711360552903124,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "101811eb692e6d3f2c892a1d9d510674cf29204eb4f6a7613c9490d1a7d2905c",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7073618571180316,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7056974192634112,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "cc47a1a96b03b3c1a0d93723a9339c232888245f59eece16224bb0632bc592da",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "data-conflicts"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6957234498727978,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 0.5,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 0.0,
+          "retrieved": 0,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-03",
+          "1.0-demo",
+          "stale-monitor"
+        ]
+      ],
+      "top_score": 0.8087813118169643
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 8,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": false,
+        "5": false
+      },
+      "gold_sections": [
+        [
+          "SOP-03",
+          "1.0-demo",
+          "stale-monitor"
+        ],
+        [
+          "SOP-05",
+          "1.0-demo",
+          "stale-evidence"
+        ]
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "This parcel has been quiet longer than the first waiting limit but less than the handoff limit. I can see a scan, yet I cannot complete the supporting inactivity checks. Should I leave it on watch or send that issue for review?",
+      "question_id": "RQ015",
+      "ranked_sections": [
+        {
+          "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6862506212586922,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "dff2dc2910aa5599706098ed16100658615999e82a96a18f9153c63b61c817ab",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-monitor"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.685537861980448,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "657f53921870e5267621149b236a02b4996a0b73e1753d9837959f312cbf5653",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6722348720479019,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "6dec3f860f83b0d2e0eb2959c3501c8e299d7e0ad8731636ef7dfe62e52a21a5",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-boundary"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6717395672767915,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "2f6fa8647b7f737e40168c54ff1e9f2a6a0d4580a4b6240e5c5a8a9f22070172",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6710347398081601,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "7ff50ba66d6de964fa0cef7384e411417bb9ddc01a4317b78a2d6ef2a47e4423",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6677931061978323,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "9fbb3508254ef320884bdfe6521d195e535ff1f9d4c017cd89c3e4817c1d40a8",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6614324877337712,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "09d998430bae5729392b1dc7ef8448bad04161b3ff5822f151a8bfaecac4234b",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "stale-evidence"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6567396697313763,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "9349f06368896747f43ca05122e6522188b715120a3e370633b48ea92dfe6f92",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-monitor"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6564913177483938,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "5ac5f5f297a0cab181843aea2ae48b1f1ee6a244cf065e1f8d630f325fa58fd9",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6446696352820753,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 0.125,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 0.0,
+          "retrieved": 0,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 0.0,
+          "retrieved": 0,
+          "total": 1
+        },
+        "5": {
+          "fraction": 0.0,
+          "retrieved": 0,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-03",
+          "1.0-demo",
+          "stale-monitor"
+        ]
+      ],
+      "top_score": 0.6862506212586922
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 1,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-04",
+          "1.0-demo",
+          "attempt-counting"
+        ]
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "Several tracking messages describe the same unsuccessful delivery visit and carry the same attempt identifier. How many physical attempts should those messages contribute?",
+      "question_id": "RQ016",
+      "ranked_sections": [
+        {
+          "content_hash": "1c2b1e27e082ef5f54bf26e55a82d9752f42d6155a301e2d2ec27aa6a47b54dd",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7931513786076269,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "101811eb692e6d3f2c892a1d9d510674cf29204eb4f6a7613c9490d1a7d2905c",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7231286559075252,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "569a93121de6264b1cdb23dea3c0c1da06bda56264bb2ac53510dfbb5d8f94fc",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7199307070369854,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "42445072a3d53692349e90f887d7b3cf1de86d4d201fffd14cd69c88e4a66e94",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6994570028423,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "5ac5f5f297a0cab181843aea2ae48b1f1ee6a244cf065e1f8d630f325fa58fd9",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.688081465103623,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.675454763486056,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "1300d3a76dc0674b1ef29c08ab29bc210f9d494b1db48d11f3706b5dec3e5e68",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "common-evidence"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6740505682566257,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "9fbb3508254ef320884bdfe6521d195e535ff1f9d4c017cd89c3e4817c1d40a8",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6652133333163595,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "7ff50ba66d6de964fa0cef7384e411417bb9ddc01a4317b78a2d6ef2a47e4423",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6633871859476438,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "812950e28b26b73de16f3275b6f3e24ed910faa3ab26453d6cd5bf59514e1860",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6616196983536606,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 1.0,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-04",
+          "1.0-demo",
+          "attempt-counting"
+        ]
+      ],
+      "top_score": 0.7931513786076269
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 1,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-04",
+          "1.0-demo",
+          "attempt-counting"
+        ],
+        [
+          "SOP-04",
+          "1.0-demo",
+          "repeated-attempts"
+        ],
+        [
+          "SOP-05",
+          "1.0-demo",
+          "common-evidence"
+        ],
+        [
+          "SOP-05",
+          "1.0-demo",
+          "attempt-address-evidence"
+        ]
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": true,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "Before preparing an attempt-based handoff for repeated failed visits, how should duplicate messages be counted, and what support is needed once the configured unique-attempt threshold is met if no address decision is being claimed?",
+      "question_id": "RQ019",
+      "ranked_sections": [
+        {
+          "content_hash": "1c2b1e27e082ef5f54bf26e55a82d9752f42d6155a301e2d2ec27aa6a47b54dd",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.8003525917120269,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "101811eb692e6d3f2c892a1d9d510674cf29204eb4f6a7613c9490d1a7d2905c",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7802347627780818,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "5ac5f5f297a0cab181843aea2ae48b1f1ee6a244cf065e1f8d630f325fa58fd9",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7587527428310361,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "812950e28b26b73de16f3275b6f3e24ed910faa3ab26453d6cd5bf59514e1860",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7440128837208498,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "42445072a3d53692349e90f887d7b3cf1de86d4d201fffd14cd69c88e4a66e94",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7189113206408637,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "569a93121de6264b1cdb23dea3c0c1da06bda56264bb2ac53510dfbb5d8f94fc",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7071665591390066,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "6dec3f860f83b0d2e0eb2959c3501c8e299d7e0ad8731636ef7dfe62e52a21a5",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-boundary"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6744450158916245,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "09d998430bae5729392b1dc7ef8448bad04161b3ff5822f151a8bfaecac4234b",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "stale-evidence"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6650166943553419,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "1300d3a76dc0674b1ef29c08ab29bc210f9d494b1db48d11f3706b5dec3e5e68",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "common-evidence"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6624819780924414,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "b72b0e6fd13bcec07a9a38c79ce448b7e9a4cc26f76f8d014e6714ae88ff353f",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-fields"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6613284351748832,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 1.0,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 0.5,
+          "retrieved": 1,
+          "total": 2
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 2,
+          "total": 2
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 2,
+          "total": 2
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 2,
+          "total": 2
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-04",
+          "1.0-demo",
+          "attempt-counting"
+        ],
+        [
+          "SOP-04",
+          "1.0-demo",
+          "repeated-attempts"
+        ]
+      ],
+      "top_score": 0.8003525917120269
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 1,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-05",
+          "1.0-demo",
+          "stale-evidence"
+        ],
+        [
+          "SOP-03",
+          "1.0-demo",
+          "stale-escalate"
+        ],
+        [
+          "SOP-03",
+          "1.0-demo",
+          "scan-scope"
+        ]
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "For a long period with no recorded movement, is seeing one timestamp enough, or must I also verify the event type and identity, the elapsed interval, history completeness and conflicting records?",
+      "question_id": "RQ022",
+      "ranked_sections": [
+        {
+          "content_hash": "09d998430bae5729392b1dc7ef8448bad04161b3ff5822f151a8bfaecac4234b",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "stale-evidence"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7664032297991644,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "9fbb3508254ef320884bdfe6521d195e535ff1f9d4c017cd89c3e4817c1d40a8",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7579823501865001,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "7046a97651a34415bd99b88f961b78c6a3de8665b314731cc22e335f6204d93d",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "late-evidence"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7497854294107045,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "9349f06368896747f43ca05122e6522188b715120a3e370633b48ea92dfe6f92",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-monitor"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7334673343068532,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7193807231485752,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "42445072a3d53692349e90f887d7b3cf1de86d4d201fffd14cd69c88e4a66e94",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7004580439485186,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "1c2b1e27e082ef5f54bf26e55a82d9752f42d6155a301e2d2ec27aa6a47b54dd",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6960646216502971,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "2f6fa8647b7f737e40168c54ff1e9f2a6a0d4580a4b6240e5c5a8a9f22070172",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.688725848984637,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6873703416730678,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "7578315d0a8faedd4fc2c5d63715ade662082adc13a9f6fdc1aa559de02cf5cf",
+          "identity": [
+            "SOP-08",
+            "1.0-demo",
+            "decision-record"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6850053644150526,
+          "source_path": "sops/last_mile/operations_audit.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 1.0,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-05",
+          "1.0-demo",
+          "stale-evidence"
+        ]
+      ],
+      "top_score": 0.7664032297991644
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 4,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": false,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-05",
+          "1.0-demo",
+          "attempt-address-evidence"
+        ],
+        [
+          "SOP-04",
+          "1.0-demo",
+          "repeated-attempts"
+        ],
+        [
+          "SOP-04",
+          "1.0-demo",
+          "address-notices"
+        ],
+        [
+          "SOP-06",
+          "1.0-demo",
+          "handoff-boundary"
+        ]
+      ],
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "I want the brief to say that repeated failed visits and an address problem both justify passing the case to my supervisor. The visit records are complete, but the address-message history is incomplete. Can I claim both reasons, and how should I handle the uncertain one?",
+      "question_id": "RQ025",
+      "ranked_sections": [
+        {
+          "content_hash": "1c2b1e27e082ef5f54bf26e55a82d9752f42d6155a301e2d2ec27aa6a47b54dd",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7678457730788363,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "5ac5f5f297a0cab181843aea2ae48b1f1ee6a244cf065e1f8d630f325fa58fd9",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7497805328680148,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "569a93121de6264b1cdb23dea3c0c1da06bda56264bb2ac53510dfbb5d8f94fc",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7340688158482208,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "101811eb692e6d3f2c892a1d9d510674cf29204eb4f6a7613c9490d1a7d2905c",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7339689765926797,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "42445072a3d53692349e90f887d7b3cf1de86d4d201fffd14cd69c88e4a66e94",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7288001772399636,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "812950e28b26b73de16f3275b6f3e24ed910faa3ab26453d6cd5bf59514e1860",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7203181092845607,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "cc47a1a96b03b3c1a0d93723a9339c232888245f59eece16224bb0632bc592da",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "data-conflicts"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7017228577592887,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6794581793851641,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6718447368371064,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "09d998430bae5729392b1dc7ef8448bad04161b3ff5822f151a8bfaecac4234b",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "stale-evidence"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6693612057623424,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 0.25,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 0.0,
+          "retrieved": 0,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 0.0,
+          "retrieved": 0,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-05",
+          "1.0-demo",
+          "attempt-address-evidence"
+        ]
+      ],
+      "top_score": 0.7678457730788363
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 2,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-06",
+          "1.0-demo",
+          "handoff-fields"
+        ]
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "What information belongs in the written brief prepared for a person to review a delivery exception?",
+      "question_id": "RQ026",
+      "ranked_sections": [
+        {
+          "content_hash": "6dec3f860f83b0d2e0eb2959c3501c8e299d7e0ad8731636ef7dfe62e52a21a5",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-boundary"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6885642612476706,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "b72b0e6fd13bcec07a9a38c79ce448b7e9a4cc26f76f8d014e6714ae88ff353f",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-fields"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6537492426346366,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "5ac5f5f297a0cab181843aea2ae48b1f1ee6a244cf065e1f8d630f325fa58fd9",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6356783797438483,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "7ff50ba66d6de964fa0cef7384e411417bb9ddc01a4317b78a2d6ef2a47e4423",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6338003004579458,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "1c2b1e27e082ef5f54bf26e55a82d9752f42d6155a301e2d2ec27aa6a47b54dd",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6248646581241508,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "1ecea461f89ccd2cd46f294b59c72cdc0a32d2afbb77cb6fd047c3f1f3938729",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "state-precedence"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6216599262212665,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6152992536198827,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "812950e28b26b73de16f3275b6f3e24ed910faa3ab26453d6cd5bf59514e1860",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6095745322988672,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "42445072a3d53692349e90f887d7b3cf1de86d4d201fffd14cd69c88e4a66e94",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6037178165661359,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "101811eb692e6d3f2c892a1d9d510674cf29204eb4f6a7613c9490d1a7d2905c",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6001827120308662,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 0.5,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 0.0,
+          "retrieved": 0,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-06",
+          "1.0-demo",
+          "handoff-fields"
+        ]
+      ],
+      "top_score": 0.6885642612476706
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 1,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-06",
+          "1.0-demo",
+          "handoff-fields"
+        ],
+        [
+          "SOP-08",
+          "1.0-demo",
+          "data-minimization"
+        ]
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": true,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "How can I assemble a review brief with traceable shipment facts and unresolved items while keeping customer-identifying details out of the demonstration records?",
+      "question_id": "RQ029",
+      "ranked_sections": [
+        {
+          "content_hash": "a787ced0f959e0cc8951dde567d5fa163381d03809322dbfba6d1696f7d02afe",
+          "identity": [
+            "SOP-08",
+            "1.0-demo",
+            "data-minimization"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6919722247677584,
+          "source_path": "sops/last_mile/operations_audit.md"
+        },
+        {
+          "content_hash": "6dec3f860f83b0d2e0eb2959c3501c8e299d7e0ad8731636ef7dfe62e52a21a5",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-boundary"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.688454455750725,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "b72b0e6fd13bcec07a9a38c79ce448b7e9a4cc26f76f8d014e6714ae88ff353f",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-fields"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.676307419666314,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6682927320645075,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "d6ec6ec665358d9bf166a1f8284e0c9351d1dae5de138ff43aee93533f59e943",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-policy"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6393975231932807,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "1ecea461f89ccd2cd46f294b59c72cdc0a32d2afbb77cb6fd047c3f1f3938729",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "state-precedence"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.636369406050007,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "1c2b1e27e082ef5f54bf26e55a82d9752f42d6155a301e2d2ec27aa6a47b54dd",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6249036224027171,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "1300d3a76dc0674b1ef29c08ab29bc210f9d494b1db48d11f3706b5dec3e5e68",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "common-evidence"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.621651159808185,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6205648190686831,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "7046a97651a34415bd99b88f961b78c6a3de8665b314731cc22e335f6204d93d",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "late-evidence"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6202489589749861,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 1.0,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 0.5,
+          "retrieved": 1,
+          "total": 2
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 2,
+          "total": 2
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 2,
+          "total": 2
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 2,
+          "total": 2
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-06",
+          "1.0-demo",
+          "handoff-fields"
+        ],
+        [
+          "SOP-08",
+          "1.0-demo",
+          "data-minimization"
+        ]
+      ],
+      "top_score": 0.6919722247677584
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 1,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-07",
+          "1.0-demo",
+          "data-conflicts"
+        ],
+        [
+          "SOP-05",
+          "1.0-demo",
+          "common-evidence"
+        ]
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "The status and delivery records contradict one another about whether the shipment is open or closed. Is this merely an absent fact affecting one category, or does it invalidate the whole assessment?",
+      "question_id": "RQ032",
+      "ranked_sections": [
+        {
+          "content_hash": "cc47a1a96b03b3c1a0d93723a9339c232888245f59eece16224bb0632bc592da",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "data-conflicts"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7450039550388378,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "7ff50ba66d6de964fa0cef7384e411417bb9ddc01a4317b78a2d6ef2a47e4423",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7378792272531655,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "2f6fa8647b7f737e40168c54ff1e9f2a6a0d4580a4b6240e5c5a8a9f22070172",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7201501578736648,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7099357089587691,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "1ecea461f89ccd2cd46f294b59c72cdc0a32d2afbb77cb6fd047c3f1f3938729",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "state-precedence"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7053010778267625,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "d6ec6ec665358d9bf166a1f8284e0c9351d1dae5de138ff43aee93533f59e943",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-policy"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.695690376343647,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "dff2dc2910aa5599706098ed16100658615999e82a96a18f9153c63b61c817ab",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-monitor"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6812507364869153,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6754317856134613,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "1c2b1e27e082ef5f54bf26e55a82d9752f42d6155a301e2d2ec27aa6a47b54dd",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6667126214583273,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "a787ced0f959e0cc8951dde567d5fa163381d03809322dbfba6d1696f7d02afe",
+          "identity": [
+            "SOP-08",
+            "1.0-demo",
+            "data-minimization"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6622169962408122,
+          "source_path": "sops/last_mile/operations_audit.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 1.0,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-07",
+          "1.0-demo",
+          "data-conflicts"
+        ]
+      ],
+      "top_score": 0.7450039550388378
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 2,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-07",
+          "1.0-demo",
+          "missing-policy"
+        ]
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "Two approved policy bundles both appear to apply at the same moment. Can I use whichever passage looks most similar to my case and finish the ready packet?",
+      "question_id": "RQ035",
+      "ranked_sections": [
+        {
+          "content_hash": "6dec3f860f83b0d2e0eb2959c3501c8e299d7e0ad8731636ef7dfe62e52a21a5",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-boundary"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7106353739003242,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "d6ec6ec665358d9bf166a1f8284e0c9351d1dae5de138ff43aee93533f59e943",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-policy"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7022865561666136,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "7ff50ba66d6de964fa0cef7384e411417bb9ddc01a4317b78a2d6ef2a47e4423",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.687740934649218,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "1300d3a76dc0674b1ef29c08ab29bc210f9d494b1db48d11f3706b5dec3e5e68",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "common-evidence"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6872702555870489,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "1ecea461f89ccd2cd46f294b59c72cdc0a32d2afbb77cb6fd047c3f1f3938729",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "state-precedence"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6803802869323023,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "569a93121de6264b1cdb23dea3c0c1da06bda56264bb2ac53510dfbb5d8f94fc",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6685134924529152,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "09d998430bae5729392b1dc7ef8448bad04161b3ff5822f151a8bfaecac4234b",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "stale-evidence"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6586735806079714,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "cc47a1a96b03b3c1a0d93723a9339c232888245f59eece16224bb0632bc592da",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "data-conflicts"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6531158238539608,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "9fbb3508254ef320884bdfe6521d195e535ff1f9d4c017cd89c3e4817c1d40a8",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6520906045525742,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6493966053664142,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 0.5,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 0.0,
+          "retrieved": 0,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-07",
+          "1.0-demo",
+          "missing-policy"
+        ]
+      ],
+      "top_score": 0.7106353739003242
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": 1,
+      "full_required_set_success_at_k": {
+        "10": true,
+        "3": true,
+        "5": true
+      },
+      "gold_sections": [
+        [
+          "SOP-08",
+          "1.0-demo",
+          "data-minimization"
+        ]
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "kind": "ANSWERABLE",
+      "multi_required_section_question": false,
+      "negative_correctness": null,
+      "negative_false_support": null,
+      "query": "If a synthetic demonstration performs well, may its report claim production compliance or real-world accuracy?",
+      "question_id": "RQ038",
+      "ranked_sections": [
+        {
+          "content_hash": "a787ced0f959e0cc8951dde567d5fa163381d03809322dbfba6d1696f7d02afe",
+          "identity": [
+            "SOP-08",
+            "1.0-demo",
+            "data-minimization"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.7268852715014802,
+          "source_path": "sops/last_mile/operations_audit.md"
+        },
+        {
+          "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-facts"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6478908151378114,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "42445072a3d53692349e90f887d7b3cf1de86d4d201fffd14cd69c88e4a66e94",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6315238683981941,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "1ecea461f89ccd2cd46f294b59c72cdc0a32d2afbb77cb6fd047c3f1f3938729",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "state-precedence"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6302226122400708,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "7046a97651a34415bd99b88f961b78c6a3de8665b314731cc22e335f6204d93d",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "late-evidence"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6224225496523715,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6222567890568891,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "1c2b1e27e082ef5f54bf26e55a82d9752f42d6155a301e2d2ec27aa6a47b54dd",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.618006384833661,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "101811eb692e6d3f2c892a1d9d510674cf29204eb4f6a7613c9490d1a7d2905c",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6171690209576802,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "09d998430bae5729392b1dc7ef8448bad04161b3ff5822f151a8bfaecac4234b",
+          "identity": [
+            "SOP-05",
+            "1.0-demo",
+            "stale-evidence"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6139521370110715,
+          "source_path": "sops/last_mile/escalation_evidence.md"
+        },
+        {
+          "content_hash": "cc47a1a96b03b3c1a0d93723a9339c232888245f59eece16224bb0632bc592da",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "data-conflicts"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.613199356301846,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        }
+      ],
+      "reciprocal_rank_at_10": 1.0,
+      "required_coverage_at_k": {
+        "1": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "10": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "3": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        },
+        "5": {
+          "fraction": 1.0,
+          "retrieved": 1,
+          "total": 1
+        }
+      },
+      "required_sections": [
+        [
+          "SOP-08",
+          "1.0-demo",
+          "data-minimization"
+        ]
+      ],
+      "top_score": 0.7268852715014802
+    },
+    {
+      "abstained": false,
+      "abstention_reason": null,
+      "first_relevant_rank": null,
+      "full_required_set_success_at_k": null,
+      "gold_sections": [],
+      "hit_at_1": null,
+      "hit_at_3": null,
+      "kind": "NEGATIVE",
+      "multi_required_section_question": false,
+      "negative_correctness": false,
+      "negative_false_support": true,
+      "query": "Under FedEx's official service rules, what is the maximum permitted delivery delay before a customer becomes entitled to compensation?",
+      "question_id": "RQ041",
+      "ranked_sections": [
+        {
+          "content_hash": "6dec3f860f83b0d2e0eb2959c3501c8e299d7e0ad8731636ef7dfe62e52a21a5",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-boundary"
+          ],
+          "rank": 1,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6196893842955539,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        },
+        {
+          "content_hash": "dff2dc2910aa5599706098ed16100658615999e82a96a18f9153c63b61c817ab",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-monitor"
+          ],
+          "rank": 2,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6178703640128752,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "2f6fa8647b7f737e40168c54ff1e9f2a6a0d4580a4b6240e5c5a8a9f22070172",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "rank": 3,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.6019277330025431,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "657f53921870e5267621149b236a02b4996a0b73e1753d9837959f312cbf5653",
+          "identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "rank": 4,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5813900933242565,
+          "source_path": "sops/last_mile/late_delivery.md"
+        },
+        {
+          "content_hash": "1ecea461f89ccd2cd46f294b59c72cdc0a32d2afbb77cb6fd047c3f1f3938729",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "state-precedence"
+          ],
+          "rank": 5,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5801230298839583,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "7ff50ba66d6de964fa0cef7384e411417bb9ddc01a4317b78a2d6ef2a47e4423",
+          "identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "rank": 6,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5730076299043778,
+          "source_path": "sops/last_mile/exception_classification.md"
+        },
+        {
+          "content_hash": "9fbb3508254ef320884bdfe6521d195e535ff1f9d4c017cd89c3e4817c1d40a8",
+          "identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "rank": 7,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5674671701186927,
+          "source_path": "sops/last_mile/tracking_inactivity.md"
+        },
+        {
+          "content_hash": "812950e28b26b73de16f3275b6f3e24ed910faa3ab26453d6cd5bf59514e1860",
+          "identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "rank": 8,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.566374778968219,
+          "source_path": "sops/last_mile/failed_attempt_address.md"
+        },
+        {
+          "content_hash": "d6ec6ec665358d9bf166a1f8284e0c9351d1dae5de138ff43aee93533f59e943",
+          "identity": [
+            "SOP-07",
+            "1.0-demo",
+            "missing-policy"
+          ],
+          "rank": 9,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5597220826097979,
+          "source_path": "sops/last_mile/insufficient_evidence.md"
+        },
+        {
+          "content_hash": "b72b0e6fd13bcec07a9a38c79ce448b7e9a4cc26f76f8d014e6714ae88ff353f",
+          "identity": [
+            "SOP-06",
+            "1.0-demo",
+            "handoff-fields"
+          ],
+          "rank": 10,
+          "retrieval_method": "EMBEDDING_COSINE",
+          "score": 0.5574267112966622,
+          "source_path": "sops/last_mile/carrier_handoff.md"
+        }
+      ],
+      "reciprocal_rank_at_10": null,
+      "required_coverage_at_k": null,
+      "required_sections": [],
+      "top_score": 0.6196893842955539
+    }
+  ],
+  "runtime": {
+    "cache_scope": "dedicated Phase 2D model cache; absolute machine path omitted",
+    "cpu_threads": 1,
+    "device": "cpu",
+    "document_instruction": "",
+    "downloaded_files": [
+      "1_Pooling/config.json",
+      "config.json",
+      "config_sentence_transformers.json",
+      "model.safetensors",
+      "modules.json",
+      "sentence_bert_config.json",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "vocab.txt"
+    ],
+    "embedding_dimension": 384,
+    "max_sequence_length": 512,
+    "model_download_occurred": true,
+    "model_file_sha256": {
+      "1_Pooling/config.json": "d1caf60c96f5fba2157c0c26b76d80818fad6cf0b8eb5e73ec372ff9818eba5c",
+      "config.json": "094f8e891b932f2000c92cfc663bac4c62069f5d8af5b5278c4306aef3084750",
+      "config_sentence_transformers.json": "940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56",
+      "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad",
+      "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+      "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+      "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "tokenizer_config.json": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    "model_id_is_not_a_repository_pinned_revision": true,
+    "normalize_embeddings": true,
+    "pooling_configuration": {
+      "include_prompt": true,
+      "pooling_mode_cls_token": true,
+      "pooling_mode_lasttoken": false,
+      "pooling_mode_max_tokens": false,
+      "pooling_mode_mean_sqrt_len_tokens": false,
+      "pooling_mode_mean_tokens": false,
+      "pooling_mode_weightedmean_tokens": false,
+      "word_embedding_dimension": 384
+    },
+    "python_version": "3.12.10",
+    "query_instruction": "",
+    "reproducibility_limit": "Revision and downloaded-file hashes are recorded for this run, but dependency versions and the default main revision are not all pinned in repository requirements; cross-runtime byte-identical embeddings are not claimed.",
+    "requested_model_id": "BAAI/bge-small-en-v1.5",
+    "requested_revision": "main",
+    "resolved_model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "revision_pinned_for_this_load": true,
+    "similarity": "normalized dot product",
+    "truncation": "unmodified SentenceTransformer tokenizer/model maximum; no additional chunking",
+    "versions": {
+      "huggingface-hub": "0.36.2",
+      "numpy": "2.5.3",
+      "sentence-transformers": "3.0.1",
+      "torch": "2.14.0",
+      "transformers": "4.57.6"
+    },
+    "weights_downloaded": true
+  }
+}

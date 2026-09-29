@@ -1,0 +1,7 @@
+# Preserve the exact bytes of frozen DEVELOPMENT retrieval evidence.
+/artifacts/retrieval_dev_lexical_baseline/DEVELOPMENT_RESULTS.json -text
+/artifacts/retrieval_dev_lexical_baseline/DEVELOPMENT_REPORT.md -text
+/artifacts/retrieval_dev_lexical_baseline/RUN_MANIFEST.json -text
+/artifacts/retrieval_dev_embedding_baseline/DEVELOPMENT_RESULTS.json -text
+/artifacts/retrieval_dev_embedding_baseline/DEVELOPMENT_REPORT.md -text
+/artifacts/retrieval_dev_embedding_baseline/RUN_MANIFEST.json -text

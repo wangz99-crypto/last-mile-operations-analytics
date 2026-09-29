@@ -466,3 +466,121 @@ assert retriever.embedding_dimension == 384
 assert retriever.search("   ").abstained
 print(retriever.search("synthetic retrieval smoke query").status)
 ```
+
+## Phase 2E: equal-weight reciprocal rank fusion
+
+Phase 2E adds a supplemental ranks-only hybrid. Exact lookup still resolves the
+engine-declared identities; BM25 still ranks lexical overlap; BGE still ranks
+normalized semantic similarity. RRF combines their returned section ranks without
+changing any of those methods or their historical results. There is no vector
+database, additional chunking, raw-score blending or business decision logic.
+
+```python
+from gateway.domain.retrieval import LexicalRetriever, SectionStore
+from gateway.domain.retrieval.embedding_retriever import (
+    EmbeddingRetriever, SentenceTransformerBackend,
+)
+from gateway.domain.retrieval.hybrid_rrf_retriever import HybridRRFRetriever
+
+store = SectionStore.load()
+backend = SentenceTransformerBackend(
+    revision="5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    local_files_only=True,
+)
+hybrid = HybridRRFRetriever(
+    LexicalRetriever(store), EmbeddingRetriever(store, encoder=backend),
+)
+response = hybrid.search("qualifying scan history evidence", top_k=10)
+```
+
+The hybrid module uses only the standard library and imports no embedding
+runtime. Its constructor takes two existing component retrievers. It compares
+their indexed `_sections` snapshots (already present in both frozen adapters)
+without changing those adapters. Both must contain the same 25 unique identities
+and one version, with matching readable titles, body, hash and source path.
+Every returned record is checked against the common snapshot before fusion;
+inconsistent metadata raises `HybridIntegrityError`, including conflicting
+duplicate records. Construct the actual components from one verified store as
+shown above. Test doubles expose the same indexed snapshot contract.
+
+### Frozen RRF v0 configuration
+
+```text
+RRF k = 60
+BM25 weight = 1.0
+Embedding weight = 1.0
+BM25 component depth = 10
+Embedding component depth = 10
+Final top_k = 10
+
+score(s) = (1 / (60 + bm25_rank(s)) if returned by BM25 else 0)
+         + (1 / (60 + embedding_rank(s)) if returned by BGE else 0)
+```
+
+Both components receive the original query unchanged and depth 10, even when a
+caller requests a different final depth. No query instruction, rewriting,
+synonyms, category/identity boosts, score normalization or learned weights are
+used. Raw BM25/cosine scores are not read by the fusion logic. Component rank is
+the one-based returned-list position. Duplicate identities contribute only at
+their first position within each component; subsequent duplicate positions are
+not compressed. With valid component rankings, these positions are the component
+result ranks. Results sort by descending unrounded RRF score, then ascending
+`(policy_id, version, section_id)`.
+
+An abstaining component contributes no candidates. If both abstain, the hybrid
+returns `ABSTAIN` with reason `BOTH_COMPONENTS_ABSTAIN`; otherwise it ranks the
+union. There is **no new hybrid threshold or margin**. This baseline does not
+attempt to repair negative-query behavior by adjusting abstention. Final `top_k`
+must be a positive integer and is capped by the returned union, at most 20
+identities for two depth-10 components. No sections are added as padding.
+
+Frozen `HybridRRFResult` records include identity, rank, score, text, content hash,
+source path, `retrieval_method="HYBRID_RRF"`, `bm25_rank` and `embedding_rank`.
+A missing component contribution has a null rank. `HybridRRFResponse` includes
+status, results, top score, abstention reason, both component statuses/reasons,
+and complete immutable component ranking diagnostics, including candidates beyond
+the final top 10. RRF score is a retrieval diagnostic, **not confidence**,
+probability, policy authority, evidence completeness, action state, priority or
+readiness.
+
+### Pinned Development evaluation
+
+```powershell
+python -B gateway/domain/evaluation/retrieval/evaluate_hybrid_development.py
+python -B -m unittest discover -s gateway/domain/tests -p 'test_hybrid*.py' -v
+```
+
+Use the existing optional embedding environment only for the real evaluator.
+Normal hybrid tests use fake components and need no model download, network,
+GPU or optional ML runtime. An isolated standard-library test blocks network and
+evaluation-directory reads along the live hybrid path.
+
+The evaluation CLI accepts no arguments and uses the unchanged Phase 2C custody
+loader, question allowlist, frozen receipt and scoring implementation. It verifies
+all six tracked Phase 2C/2D historical artifacts, including the Phase 2C hashes in
+the Phase 2D manifest, Phase 2D output hashes, model configuration and metrics.
+Historical artifacts serve only integrity and comparison; live component calls
+produce the actual hybrid ranks. Only question text and depth reach search.
+
+The exact Phase 2D BGE revision above is mandatory. The evaluator loads it locally
+and verifies all model file hashes and effective settings against Phase 2D before
+any question is searched. If that exact cached model cannot be loaded, the run
+stops; there is no unconstrained `main`, substitute model or network fallback.
+The model contents, normalization, threshold 0.30, CPU execution and raw-query
+handling remain unchanged. Runtime versions and model metadata are recorded,
+without claiming byte-identical embedding vectors across arbitrary runtimes.
+
+New outputs are exclusively `artifacts/retrieval_dev_hybrid_rrf_baseline/`:
+`DEVELOPMENT_RESULTS.json`, `DEVELOPMENT_REPORT.md` and `RUN_MANIFEST.json`.
+An existing directory is refused before real model initialization. Three exact
+root `.gitattributes` rules preserve their bytes under Windows Git checkout;
+the six existing evidence rules are unchanged. The report compares all three
+methods on every frozen metric and retains failures and component diagnostics.
+The manifest distinguishes the base commit from candidate source hashes, records
+the 15 attempts and 25 section hashes, and identifies the historical evidence.
+
+This is DEVELOPMENT only: 14 answerable questions and one negative observation,
+which is not a safety estimate. HELD_OUT remains unopened. RRF parameters are
+fixed before evaluation; no weight, RRF-k, threshold or model search, or
+post-result tuning is performed. The result is a first baseline for owner review,
+not an assumption of hybrid superiority. Phase 2A/2C/2D history remains intact.

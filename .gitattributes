@@ -5,3 +5,6 @@
 /artifacts/retrieval_dev_embedding_baseline/DEVELOPMENT_RESULTS.json -text
 /artifacts/retrieval_dev_embedding_baseline/DEVELOPMENT_REPORT.md -text
 /artifacts/retrieval_dev_embedding_baseline/RUN_MANIFEST.json -text
+/artifacts/retrieval_dev_hybrid_rrf_baseline/DEVELOPMENT_REPORT.md -text
+/artifacts/retrieval_dev_hybrid_rrf_baseline/DEVELOPMENT_RESULTS.json -text
+/artifacts/retrieval_dev_hybrid_rrf_baseline/RUN_MANIFEST.json -text

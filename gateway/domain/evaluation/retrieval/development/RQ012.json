@@ -1,0 +1,28 @@
+{
+  "question_id": "RQ012",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "A verified scan gap is longer than the detection threshold but shorter than the escalation threshold, and the required inactivity evidence is complete. Which disposition applies?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-03",
+      "version": "1.0-demo",
+      "section_id": "stale-monitor"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-03",
+      "version": "1.0-demo",
+      "section_id": "stale-monitor"
+    }
+  ],
+  "category": "SOP-03",
+  "difficulty": "MEDIUM",
+  "question_family": "NEAR_NEIGHBOR",
+  "reviewer_rationale": "SOP-03#stale-monitor is required because it defines the interval strictly above STALE_DETECT_HOURS and below STALE_ESCALATE_HOURS and assigns monitoring with complete E-STALE evidence. SOP-03#stale-escalate is the plausible neighbor, but the gap has not reached its eligibility boundary."
+}

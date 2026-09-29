@@ -1,4 +1,4 @@
-# Phase 2A: exact Last-Mile SOP section retrieval
+# Last-Mile SOP retrieval: exact lookup and lexical baseline
 
 This package loads the active `1.0-demo` corpus: **8 SOP documents and 25 stable
 sections**. The registry, frozen artifact manifest, contract schema and existing
@@ -108,9 +108,10 @@ outside `assessments` are read, and only `exception_type`, `rule_ids` and
 copied solely as provenance; they never generate additional section requests.
 SOP-08 is retrieved only when explicitly requested, just like every other SOP.
 
-Required exact lookup is distinct from any future supplemental ranked search.
-Such search is outside Phase 2A and could not repair a missing required identity
-by choosing a nearby section. No generic context sections are added here.
+Required exact lookup is distinct from supplemental ranked search. Phase 2C adds
+the lexical baseline described below, without replacing or changing Phase 2A.
+A ranked result cannot repair a missing required identity by choosing a nearby
+section. No generic context sections are added by exact retrieval.
 
 ## Integrity and section hashes
 
@@ -195,3 +196,139 @@ The legacy CLI intentionally returns exit code 1 for five diagnostic migrations
 across C04, D15, D16 and D17; the original legacy conformance test retains those
 historical expectations. Phase 2A changes no engine behavior, frozen Gold, legacy
 comparator or private held-out artifacts and performs no private comparison.
+
+## Phase 2C: supplemental lexical search
+
+The boundary is `Deterministic Rules -> Exact Required Lookup -> Supplemental
+Ranked Retrieval`. The lexical retriever does not execute the rules, call exact
+lookup automatically, or select/change business decisions. It searches the same
+verified SectionStore at canonical section identity; there are no additional
+chunks, embeddings, models, network calls or legacy IT retrieval changes.
+
+```python
+from gateway.domain.retrieval import LexicalRetriever, SectionStore
+
+retriever = LexicalRetriever(SectionStore.load())
+response = retriever.search("qualifying scan history evidence", top_k=10)
+if response.status == "ABSTAIN":
+    print(response.abstention_reason)
+else:
+    for record in response.results:
+        print(record.identity, record.rank, record.score)
+```
+
+`LexicalSearchResponse` and its `LexicalResult` records are frozen dataclasses.
+The response exposes `status` (`RETRIEVED` or `ABSTAIN`), `results`, `top_score`,
+`abstention_reason` and the `abstained` property. Each result has `identity`,
+one-based `rank`, `score`, `text`, `content_hash`, `source_path` and
+`retrieval_method="LEXICAL_BM25"`. The raw top score remains a diagnostic even when
+the response abstains; abstention returns no support records. No confidence,
+eligibility, action state or priority is inferred from scores.
+
+`top_k` must be a positive integer (not a boolean); requests larger than the
+corpus return at most the positive-scoring sections. There is no padding with
+unmatched sections. All sections in a search use one policy version.
+
+### Fixed scoring and abstention configuration
+
+Each indexed text is exactly `title + LF + section_title + LF + text`, using
+readable document/section titles and the Markdown section body once each, with
+equal field weights. Policy IDs, stable section IDs, backlinks, file paths,
+question text, Gold labels and rationales are not injected as extra keywords.
+Identifiers occurring naturally in the original body are left untouched.
+
+Tokenization is `re.findall(r"[a-z0-9]+", text.lower())`: ASCII alphanumeric runs,
+with punctuation and underscores as separators. There is no stop-word list,
+stemming, synonym expansion or query rewriting. Repeated document tokens count
+toward term frequency; repeated query tokens contribute once. Query terms are
+summed in sorted order for deterministic floating-point evaluation.
+
+With `N` sections, section frequency `df`, term frequency `tf`, section token
+length `dl` and mean section length `avgdl`:
+
+```text
+idf = ln(1 + (N - df + 0.5) / (df + 0.5))
+score = sum(idf * tf * (k1 + 1) / (tf + k1 * (1 - b + b * dl / avgdl)))
+k1 = 1.5
+b = 0.75
+```
+
+These standard BM25 defaults were fixed before Development evaluation. Results
+sort by descending score, then ascending `(policy_id, version, section_id)` for
+exact ties. No score rounding affects ranking. Scores are retrieval diagnostics,
+not similarity-based business confidence or evidence of policy authority.
+
+The general abstention threshold is **minimum top score 1.0**, chosen as a simple
+initial lexical-evidence floor before evaluation, not calibrated to a particular
+question. Empty token sequences, no positive overlap, or a top score below 1.0
+return `ABSTAIN`. Equality is accepted. There is no margin test or hardcoded
+negative-question rule. This criterion cannot reliably establish semantic scope:
+an unsupported query can still overlap ordinary policy words. Such false support
+is retained and reported rather than corrected by special-casing a known query.
+
+### Development-only evaluation and freeze candidate
+
+Run the pinned evaluator from repository root:
+
+```powershell
+python -B gateway/domain/evaluation/retrieval/evaluate_development.py
+```
+
+The CLI accepts no question-path or split arguments. It reads only
+`evaluation/retrieval/DEVELOPMENT_MANIFEST.json` and these direct Development files:
+RQ003, RQ006, RQ009, RQ012, RQ015, RQ016, RQ019, RQ022, RQ025, RQ026, RQ029, RQ032,
+RQ035, RQ038 and RQ041. There is no recursive question discovery. It rejects other
+IDs, paths, subdirectories, symlinks or splits before accepting a dataset.
+All manifest entries are checked before opening any question file; all file
+hashes and the aggregate receipt are checked before question contents are parsed.
+Alternate roots in the loader API exist for temporary copied-fixture tests;
+they enforce the same exact inventory and pinned receipt.
+
+The manifest must identify an OWNER_REVIEWED, frozen DEVELOPMENT set. The receipt
+is SHA-256 over UTF-8 records `question_id + TAB + lowercase file SHA-256 + LF`,
+sorted by question ID and including the final LF. It must equal:
+
+```text
+4f5ffc6c780419b31c2b810ccaa66bb39f1b06872266c13816ae06208e660e00
+```
+
+Local `.gitattributes` marks only the imported question JSON files and Development
+manifest as `-text`, preserving their reviewed bytes across Git checkouts. It
+does not change their contents or the receipt. The retriever is initialized from
+SectionStore only; evaluation passes it query text and depth 10, never Gold,
+required-section labels or reviewer rationales.
+
+Metrics use the first unique returned section identities. ANSWERABLE denominators
+exclude the negative case: Hit@1/3 uses Gold relevance; MRR@10 uses the first Gold
+rank within ten, with misses/abstentions equal to zero. Required coverage at
+1/3/5/10 uses the separate required set. Both question-macro coverage and pooled
+section-micro coverage are reported. Full required-set success at 3/5/10 is
+aggregated only over questions with more than one required section; per-question
+full-set indicators are also retained for single-required cases. NEGATIVE rows
+retain empty Gold/required sets, null answerable metrics, and explicit correct
+abstention/false-support indicators.
+
+Artifacts are written exclusively to `artifacts/retrieval_dev_lexical_baseline/`:
+
+- `DEVELOPMENT_RESULTS.json`: deterministic full per-question rankings, scores,
+  relevance/required identities, metrics, abstention and observed failure details.
+- `DEVELOPMENT_REPORT.md`: aggregates with denominators and every missed reported
+  target. Partial top-1 coverage on multi-required questions is identified as
+  unavoidable, not automatically a ranking defect.
+- `RUN_MANIFEST.json`: verified input receipt/hashes, corpus section hashes,
+  exact configuration, code base commit, candidate source-file hashes and output
+  hashes. It explicitly qualifies uncommitted candidate code rather than claiming
+  that the base commit contains it. Existing artifacts are never overwritten.
+
+The configuration is a **candidate awaiting owner review**, not final. Development
+is used for method development; it does not establish held-out performance or an
+AI improvement claim. No private HELD_OUT question, manifest, catalog, label,
+rationale or result is accessed. No held-out evaluation is run. The default
+constants and threshold are not changed after seeing this baseline's results.
+
+Focused Phase 2C tests:
+
+```powershell
+python -B -m unittest discover -s gateway/domain/tests -p 'test_lexical_retrieval.py' -v
+python -B -m unittest discover -s gateway/domain/tests -p 'test_retrieval_development_evaluation.py' -v
+```

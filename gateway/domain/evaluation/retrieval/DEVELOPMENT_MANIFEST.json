@@ -1,0 +1,149 @@
+{
+  "manifest_version": "1.0",
+  "split": "DEVELOPMENT",
+  "policy_bundle_id": "last-mile-exception-triage-demo",
+  "policy_version": "1.0-demo",
+  "contract_version": "1.0",
+  "question_count": 15,
+  "answerable_count": 14,
+  "negative_count": 1,
+  "source_artifact_manifest_sha256": "093b763fadfaadf7859d758722e21160390edeb4d0a4e0ce18a97401efcba77f",
+  "authoring_date": "2026-09-28",
+  "last_policy_review_patch_date": "2026-09-29",
+  "author": "Codex (AI-assisted policy-only authoring)",
+  "review_status": "OWNER_REVIEWED",
+  "owner_reviewed": true,
+  "dataset_frozen": true,
+  "independence_statement": "No retrieval implementation or evaluation result was accessed; no retrieval algorithm was executed and no tuning occurred.",
+  "receipt_algorithm": "sha256",
+  "receipt_serialization": "UTF-8; sorted question_id + TAB + lowercase file SHA-256 + LF; final LF included",
+  "aggregate_receipt_sha256": "4f5ffc6c780419b31c2b810ccaa66bb39f1b06872266c13816ae06208e660e00",
+  "questions": [
+    {
+      "question_id": "RQ003",
+      "filename": "development/RQ003.json",
+      "sha256": "12832558f5c1c849d8acda56a3ac6fddedc2daa4060581a116ba067070867b2e",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-01"
+    },
+    {
+      "question_id": "RQ006",
+      "filename": "development/RQ006.json",
+      "sha256": "3e2863926b60fa5e4ebf625e70de78079e89fc2b1c0e77a775cd5c7180797a6e",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-02"
+    },
+    {
+      "question_id": "RQ009",
+      "filename": "development/RQ009.json",
+      "sha256": "80cc525b1c420f122f447274f9d0356651a2cd2ca11e03a8522b675dcd5182e6",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-02"
+    },
+    {
+      "question_id": "RQ012",
+      "filename": "development/RQ012.json",
+      "sha256": "8b5c1a1a8a43f94f4ac961ec11d5d796c653629b247632a5c4bb2e4e13bdcd27",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-03"
+    },
+    {
+      "question_id": "RQ015",
+      "filename": "development/RQ015.json",
+      "sha256": "3ceac834364378df6106a85401f70b21cd54e8735bcf3fe59161e60793cacc42",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-03"
+    },
+    {
+      "question_id": "RQ016",
+      "filename": "development/RQ016.json",
+      "sha256": "f67182f6692c6546e21162f72bbfc397b6dc04ce8b6fae24bd807b5ee1375c41",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-04"
+    },
+    {
+      "question_id": "RQ019",
+      "filename": "development/RQ019.json",
+      "sha256": "4997a21f63f1ba2a151976c9a618b17e848fa74bcda8033f780397f8bcbaf5f5",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-04"
+    },
+    {
+      "question_id": "RQ022",
+      "filename": "development/RQ022.json",
+      "sha256": "2e25927fe8d6f0cd7f653f8abe3c28fb3c6ed14d2cf4e41e86148571fa7118e9",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-05"
+    },
+    {
+      "question_id": "RQ025",
+      "filename": "development/RQ025.json",
+      "sha256": "49d4542c645e38dbe35d594512b7f45e2612610925fd1cdbe7a5fd0163d4fd6f",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-05"
+    },
+    {
+      "question_id": "RQ026",
+      "filename": "development/RQ026.json",
+      "sha256": "dfece676790fc1a3e3fae9616e83249f5070c64f03ac0afe0950ca1010874341",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-06"
+    },
+    {
+      "question_id": "RQ029",
+      "filename": "development/RQ029.json",
+      "sha256": "5cdd3c1afd128501fb5925d52002dfc2c0e32b259c489d203092d51f4f7a6608",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-06"
+    },
+    {
+      "question_id": "RQ032",
+      "filename": "development/RQ032.json",
+      "sha256": "970fe408c659b3602dd9d48653e1597494451b784ee38388b4dc2d54c69e72b8",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-07"
+    },
+    {
+      "question_id": "RQ035",
+      "filename": "development/RQ035.json",
+      "sha256": "3272bf027c0322de71a246acc427c2ea6de85d89d2f996531c0b4c64cba557db",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-07"
+    },
+    {
+      "question_id": "RQ038",
+      "filename": "development/RQ038.json",
+      "sha256": "cb60c35271b23afa4771a8dbb68c6f7f1b7bab98fd7563d2a9dd2e75c8111db3",
+      "split": "DEVELOPMENT",
+      "kind": "ANSWERABLE",
+      "primary_category": "SOP-08"
+    },
+    {
+      "question_id": "RQ041",
+      "filename": "development/RQ041.json",
+      "sha256": "5e4c89c3439350e83b786dff358c46ce13c1a076934d8240bfdf48dc6eac776e",
+      "split": "DEVELOPMENT",
+      "kind": "NEGATIVE",
+      "primary_category": "NEGATIVE"
+    }
+  ],
+  "owner_review_date": "2026-09-29",
+  "freeze_date": "2026-09-29",
+  "reviewer": "Project owner",
+  "review_method": "Project-owner approval following an AI-assisted semantic audit",
+  "independent_second_human_reviewer": false,
+  "review_limitation": "Initial Gold authoring was AI-assisted; project-owner approval followed an AI-assisted semantic audit; no independent second human reviewer was used."
+}

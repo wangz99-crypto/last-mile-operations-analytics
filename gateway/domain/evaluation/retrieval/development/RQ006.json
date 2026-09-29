@@ -1,0 +1,28 @@
+{
+  "question_id": "RQ006",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "Is an open parcel already late when the evaluation clock has only just reached its promised delivery time?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-02",
+      "version": "1.0-demo",
+      "section_id": "late-boundaries"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-02",
+      "version": "1.0-demo",
+      "section_id": "late-boundaries"
+    }
+  ],
+  "category": "SOP-02",
+  "difficulty": "EASY",
+  "question_family": "DIRECT_PARAPHRASE",
+  "reviewer_rationale": "SOP-02#late-boundaries is the required and relevant support for strict late detection: equality with the promise is not late. Monitoring and escalation sections concern later intervals and add no support needed for this equality question."
+}

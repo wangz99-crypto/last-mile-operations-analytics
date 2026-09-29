@@ -1,0 +1,33 @@
+{
+  "question_id": "RQ015",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "This parcel has been quiet longer than the first waiting limit but less than the handoff limit. I can see a scan, yet I cannot complete the supporting inactivity checks. Should I leave it on watch or send that issue for review?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-03",
+      "version": "1.0-demo",
+      "section_id": "stale-monitor"
+    },
+    {
+      "policy_id": "SOP-05",
+      "version": "1.0-demo",
+      "section_id": "stale-evidence"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-03",
+      "version": "1.0-demo",
+      "section_id": "stale-monitor"
+    }
+  ],
+  "category": "SOP-03",
+  "difficulty": "HARD",
+  "question_family": "INDIRECT_OPERATIONAL",
+  "reviewer_rationale": "SOP-03#stale-monitor is required because monitoring in the intermediate gap interval depends on complete E-STALE evidence; otherwise this category needs review. The visible scan alone is not asserted to prove full history. The question asks for disposition rather than an exhaustive evidence list, so this section is sufficient. Additional acceptable Gold, outside the unchanged minimal required set: SOP-05#stale-evidence: It specifies the scan/history/conflict evidence beyond one visible timestamp and says missing evidence blocks the stale decision, supporting why incomplete checks do not justify monitoring. These additional sections materially support the requested answer but are not needed to make the existing required set complete."
+}

@@ -1,0 +1,28 @@
+{
+  "question_id": "RQ035",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "Two approved policy bundles both appear to apply at the same moment. Can I use whichever passage looks most similar to my case and finish the ready packet?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-07",
+      "version": "1.0-demo",
+      "section_id": "missing-policy"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-07",
+      "version": "1.0-demo",
+      "section_id": "missing-policy"
+    }
+  ],
+  "category": "SOP-07",
+  "difficulty": "HARD",
+  "question_family": "INDIRECT_OPERATIONAL",
+  "reviewer_rationale": "SOP-07#missing-policy is required because an ambiguous required bundle is shipment-global and similarity cannot establish policy authority; exact active policy/version/section support is required. This is bundle-selection ambiguity, not a harmless supplemental-search miss or a missing section limited to one category."
+}

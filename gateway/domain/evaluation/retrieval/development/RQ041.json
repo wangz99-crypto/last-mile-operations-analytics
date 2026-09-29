@@ -1,0 +1,16 @@
+{
+  "question_id": "RQ041",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "Under FedEx's official service rules, what is the maximum permitted delivery delay before a customer becomes entitled to compensation?",
+  "kind": "NEGATIVE",
+  "negative_reason": "OUT_OF_SCOPE",
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [],
+  "required_sections": [],
+  "category": "NEGATIVE",
+  "difficulty": "MEDIUM",
+  "question_family": "NEGATIVE_REAL_CARRIER_POLICY",
+  "reviewer_rationale": "This asks for a real carrier's official service and compensation policy. The authorized corpus contains fictional demo procedures and does not establish FedEx obligations or compensation entitlements. Abstain from supplying an official threshold; no demo section is valid answer support."
+}

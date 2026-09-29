@@ -1,0 +1,38 @@
+{
+  "question_id": "RQ022",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "For a long period with no recorded movement, is seeing one timestamp enough, or must I also verify the event type and identity, the elapsed interval, history completeness and conflicting records?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-05",
+      "version": "1.0-demo",
+      "section_id": "stale-evidence"
+    },
+    {
+      "policy_id": "SOP-03",
+      "version": "1.0-demo",
+      "section_id": "stale-escalate"
+    },
+    {
+      "policy_id": "SOP-03",
+      "version": "1.0-demo",
+      "section_id": "scan-scope"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-05",
+      "version": "1.0-demo",
+      "section_id": "stale-evidence"
+    }
+  ],
+  "category": "SOP-05",
+  "difficulty": "MEDIUM",
+  "question_family": "NEAR_NEIGHBOR",
+  "reviewer_rationale": "SOP-05#stale-evidence is required because it defines these E-STALE dependencies beyond a visible timestamp. SOP-05#late-evidence is a plausible neighboring checklist for another elapsed-time exception, but it requires a promise and overdue provenance rather than complete scan history and is not the target. Additional acceptable Gold, outside the unchanged minimal required set: SOP-03#stale-escalate: Its scan reference/time/code, gap, complete history and no-relevant-conflict checklist directly matches the evidence the question asks to verify; its escalation threshold is not asserted to apply. SOP-03#scan-scope: It requires a valid qualifying scan and complete scan history to establish inactivity, directly explaining why a timestamp alone is insufficient; it does not replace the full required evidence checklist. These additional sections materially support the requested answer but are not needed to make the existing required set complete."
+}

@@ -1,0 +1,28 @@
+{
+  "question_id": "RQ038",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "If a synthetic demonstration performs well, may its report claim production compliance or real-world accuracy?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-08",
+      "version": "1.0-demo",
+      "section_id": "data-minimization"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-08",
+      "version": "1.0-demo",
+      "section_id": "data-minimization"
+    }
+  ],
+  "category": "SOP-08",
+  "difficulty": "MEDIUM",
+  "question_family": "POLICY_DETAIL",
+  "reviewer_rationale": "SOP-08#data-minimization is relevant and required because it expressly forbids claiming production compliance or real-world accuracy from synthetic tests. This tests the limit on claims rather than asking for any performance result, so no metric data or additional section is needed."
+}

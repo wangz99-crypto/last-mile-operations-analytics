@@ -1,0 +1,38 @@
+{
+  "question_id": "RQ009",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "With all dependent evidence available, how does an open shipment's late classification and disposition change from exactly its promised time to just after that time, while still below the escalation limit?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-02",
+      "version": "1.0-demo",
+      "section_id": "late-boundaries"
+    },
+    {
+      "policy_id": "SOP-02",
+      "version": "1.0-demo",
+      "section_id": "late-monitor"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-02",
+      "version": "1.0-demo",
+      "section_id": "late-boundaries"
+    },
+    {
+      "policy_id": "SOP-02",
+      "version": "1.0-demo",
+      "section_id": "late-monitor"
+    }
+  ],
+  "category": "SOP-02",
+  "difficulty": "HARD",
+  "question_family": "MULTI_SECTION",
+  "reviewer_rationale": "SOP-02#late-boundaries is required to distinguish equality from strictly after the promise. SOP-02#late-monitor is required to assign monitoring to the confirmed late interval below the escalation limit. One section alone cannot establish both the detection boundary and the subsequent disposition; no escalation-section label is needed."
+}

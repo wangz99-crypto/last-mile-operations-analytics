@@ -1,0 +1,43 @@
+{
+  "question_id": "RQ025",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "I want the brief to say that repeated failed visits and an address problem both justify passing the case to my supervisor. The visit records are complete, but the address-message history is incomplete. Can I claim both reasons, and how should I handle the uncertain one?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-05",
+      "version": "1.0-demo",
+      "section_id": "attempt-address-evidence"
+    },
+    {
+      "policy_id": "SOP-04",
+      "version": "1.0-demo",
+      "section_id": "repeated-attempts"
+    },
+    {
+      "policy_id": "SOP-04",
+      "version": "1.0-demo",
+      "section_id": "address-notices"
+    },
+    {
+      "policy_id": "SOP-06",
+      "version": "1.0-demo",
+      "section_id": "handoff-boundary"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-05",
+      "version": "1.0-demo",
+      "section_id": "attempt-address-evidence"
+    }
+  ],
+  "category": "SOP-05",
+  "difficulty": "HARD",
+  "question_family": "INDIRECT_OPERATIONAL",
+  "reviewer_rationale": "SOP-05#attempt-address-evidence is required because claiming both triggers needs evidence for both. A fully supported eligible subtype may provide the basis while the unknown subtype is disclosed and excluded from that basis. This section alone establishes the claimed-scope evidence rule; the question supplies visit evidence rather than asking how attempts are counted. Additional acceptable Gold, outside the unchanged minimal required set: SOP-04#repeated-attempts: It supports an independent attempt basis and requires address evidence when an address decision is also claimed, directly answering whether both reasons may be asserted. SOP-04#address-notices: It says incomplete marker history cannot establish that no later clearance occurred, directly supporting why the uncertain address reason is not established. SOP-06#handoff-boundary: It restricts ready briefs to supported triggers and keeps unrelated local gaps disclosed, directly supporting how to present the uncertain reason. These additional sections materially support the requested answer but are not needed to make the existing required set complete."
+}

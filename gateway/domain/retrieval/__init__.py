@@ -8,10 +8,12 @@ from .exact_retriever import (
     AssessmentRequest, RequiredSection, RetrievalRecord, collect_required_sections,
     retrieve_case_sections, retrieve_required_sections,
 )
+from .lexical_retriever import LexicalRetriever, LexicalResult, LexicalSearchResponse
 
 __all__ = [
     "SectionStore", "SectionRecord", "ResolvedSection", "RetrievalError",
     "SectionIntegrityError", "SectionNotFoundError", "InvalidSectionReferenceError",
     "section_content_hash", "AssessmentRequest", "RequiredSection", "RetrievalRecord",
     "collect_required_sections", "retrieve_required_sections", "retrieve_case_sections",
+    "LexicalRetriever", "LexicalResult", "LexicalSearchResponse",
 ]

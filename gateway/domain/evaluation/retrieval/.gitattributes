@@ -1,0 +1,3 @@
+# Preserve the reviewed import's raw-byte receipt across Git checkouts.
+/development/*.json -text
+/DEVELOPMENT_MANIFEST.json -text

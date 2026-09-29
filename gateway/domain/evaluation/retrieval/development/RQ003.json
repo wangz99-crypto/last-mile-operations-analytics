@@ -1,0 +1,28 @@
+{
+  "question_id": "RQ003",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "A category is ready for human review, but the assessment also records a shipment-global blocker. Which aggregate action state takes precedence?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-01",
+      "version": "1.0-demo",
+      "section_id": "state-precedence"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-01",
+      "version": "1.0-demo",
+      "section_id": "state-precedence"
+    }
+  ],
+  "category": "SOP-01",
+  "difficulty": "MEDIUM",
+  "question_family": "POLICY_DETAIL",
+  "reviewer_rationale": "SOP-01#state-precedence explicitly puts a shipment-global blocker ahead of any ready category, yielding NEEDS_REVIEW. It is the sole required support for this ordering question; the question supplies the blocker scope and does not ask how the blocker was detected."
+}

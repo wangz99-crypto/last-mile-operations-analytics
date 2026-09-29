@@ -1,0 +1,48 @@
+{
+  "question_id": "RQ019",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "Before preparing an attempt-based handoff for repeated failed visits, how should duplicate messages be counted, and what support is needed once the configured unique-attempt threshold is met if no address decision is being claimed?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-04",
+      "version": "1.0-demo",
+      "section_id": "attempt-counting"
+    },
+    {
+      "policy_id": "SOP-04",
+      "version": "1.0-demo",
+      "section_id": "repeated-attempts"
+    },
+    {
+      "policy_id": "SOP-05",
+      "version": "1.0-demo",
+      "section_id": "common-evidence"
+    },
+    {
+      "policy_id": "SOP-05",
+      "version": "1.0-demo",
+      "section_id": "attempt-address-evidence"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-04",
+      "version": "1.0-demo",
+      "section_id": "attempt-counting"
+    },
+    {
+      "policy_id": "SOP-04",
+      "version": "1.0-demo",
+      "section_id": "repeated-attempts"
+    }
+  ],
+  "category": "SOP-04",
+  "difficulty": "HARD",
+  "question_family": "MULTI_SECTION",
+  "reviewer_rationale": "SOP-04#attempt-counting is required for distinct physical attempt identities, duplicate-message handling and complete history. SOP-04#repeated-attempts is required for the configured eligibility trigger, E-FAILED plus common/policy support, and independence from unclaimed address evidence. Counting alone does not establish an eligible handoff basis, and the repeated-attempt section alone does not explain deduplication. Additional acceptable Gold, outside the unchanged minimal required set: SOP-05#common-evidence: It names the identity, status and policy-context dependencies referred to by the repeated-attempt rule, directly answering what common support the handoff needs. SOP-05#attempt-address-evidence: It explains complete attempt history and identity, and separate address evidence only for an address basis, directly answering the requested attempt-based support. These additional sections materially support the requested answer but are not needed to make the existing required set complete."
+}

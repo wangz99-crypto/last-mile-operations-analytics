@@ -1,0 +1,28 @@
+{
+  "question_id": "RQ026",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "What information belongs in the written brief prepared for a person to review a delivery exception?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-06",
+      "version": "1.0-demo",
+      "section_id": "handoff-fields"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-06",
+      "version": "1.0-demo",
+      "section_id": "handoff-fields"
+    }
+  ],
+  "category": "SOP-06",
+  "difficulty": "EASY",
+  "question_family": "DIRECT_PARAPHRASE",
+  "reviewer_rationale": "SOP-06#handoff-fields is necessary because it lists identity, referenced verified facts, supported categories/triggers, deterministic rationale, exact policy citations and scoped missing/conflicting items. It is a contents question; action permission and a full run-audit record are not requested."
+}

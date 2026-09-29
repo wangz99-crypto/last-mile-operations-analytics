@@ -1,0 +1,33 @@
+{
+  "question_id": "RQ032",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "The status and delivery records contradict one another about whether the shipment is open or closed. Is this merely an absent fact affecting one category, or does it invalidate the whole assessment?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-07",
+      "version": "1.0-demo",
+      "section_id": "data-conflicts"
+    },
+    {
+      "policy_id": "SOP-05",
+      "version": "1.0-demo",
+      "section_id": "common-evidence"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-07",
+      "version": "1.0-demo",
+      "section_id": "data-conflicts"
+    }
+  ],
+  "category": "SOP-07",
+  "difficulty": "MEDIUM",
+  "question_family": "NEAR_NEIGHBOR",
+  "reviewer_rationale": "SOP-07#data-conflicts is necessary because conflicting open/closed status invalidates the whole assessment and conflicts must remain visible. SOP-07#missing-facts is the plausible neighbor, but the supplied records disagree rather than being absent; its ordinary dependent-gap handling is not the correct target. Additional acceptable Gold, outside the unchanged minimal required set: SOP-05#common-evidence: It identifies invalid status as a condition that can invalidate the shipment, directly supporting shipment-wide scope; the required conflict section supplies the explicit open/closed contradiction rule. These additional sections materially support the requested answer but are not needed to make the existing required set complete."
+}

@@ -1,0 +1,38 @@
+{
+  "question_id": "RQ029",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "How can I assemble a review brief with traceable shipment facts and unresolved items while keeping customer-identifying details out of the demonstration records?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-06",
+      "version": "1.0-demo",
+      "section_id": "handoff-fields"
+    },
+    {
+      "policy_id": "SOP-08",
+      "version": "1.0-demo",
+      "section_id": "data-minimization"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-06",
+      "version": "1.0-demo",
+      "section_id": "handoff-fields"
+    },
+    {
+      "policy_id": "SOP-08",
+      "version": "1.0-demo",
+      "section_id": "data-minimization"
+    }
+  ],
+  "category": "SOP-06",
+  "difficulty": "HARD",
+  "question_family": "MULTI_SECTION",
+  "reviewer_rationale": "SOP-06#handoff-fields is required for the brief's referenced facts, identity, rationale, citations and scoped gaps. SOP-08#data-minimization is required to use synthetic identifiers and fictional carriers and exclude names, literal addresses, phones, coordinates and free-text customer notes while retaining factual provenance. The field list alone does not define privacy exclusions, and the minimization rule alone does not define the review brief."
+}

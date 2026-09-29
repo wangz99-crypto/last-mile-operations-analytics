@@ -1,0 +1,28 @@
+{
+  "question_id": "RQ016",
+  "contract_version": "1.0",
+  "example_only": false,
+  "split": "DEVELOPMENT",
+  "question": "Several tracking messages describe the same unsuccessful delivery visit and carry the same attempt identifier. How many physical attempts should those messages contribute?",
+  "kind": "ANSWERABLE",
+  "negative_reason": null,
+  "gold_policy_version": "1.0-demo",
+  "gold_sections": [
+    {
+      "policy_id": "SOP-04",
+      "version": "1.0-demo",
+      "section_id": "attempt-counting"
+    }
+  ],
+  "required_sections": [
+    {
+      "policy_id": "SOP-04",
+      "version": "1.0-demo",
+      "section_id": "attempt-counting"
+    }
+  ],
+  "category": "SOP-04",
+  "difficulty": "EASY",
+  "question_family": "DIRECT_PARAPHRASE",
+  "reviewer_rationale": "SOP-04#attempt-counting is relevant and required because duplicate messages for one physical attempt count once and attempt identity is scoped to the shipment snapshot. Eligibility and address-marker sections are not needed to answer how to count these records."
+}

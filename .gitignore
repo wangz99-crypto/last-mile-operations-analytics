@@ -33,3 +33,7 @@ stream_test.py
 # local debug/demo payloads
 demo_ask*.json
 request.json
+
+# Reserved retrieval HELDOUT custody boundaries (owner-controlled import/run).
+/gateway/domain/evaluation/retrieval/private_heldout/
+/artifacts/retrieval_heldout_bge_v0_private/

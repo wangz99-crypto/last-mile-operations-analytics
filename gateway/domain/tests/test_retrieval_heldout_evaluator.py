@@ -1,4 +1,4 @@
-"""Pre-exposure tests: synthetic temporary imports and DEVELOPMENT parity only."""
+"""Custody revision tests: synthetic temporary imports and DEVELOPMENT parity only."""
 import builtins
 import copy
 import hashlib
@@ -92,15 +92,17 @@ class HeldoutEvaluatorTests(unittest.TestCase):
             return importer(name, *args, **kwargs)
         self.enterContext(patch.object(builtins, "__import__", no_model))
 
-    def fixture(self):
+    def fixture(self, filename_for=None):
         root = self.root / f"synthetic-import-{len(list(self.root.iterdir()))}"
         root.mkdir()
         questions = [synthetic_question(i) for i in range(30)]
         rows = []
         for i, question in enumerate(questions):
-            filename = f"fixture_{i:03d}.json"  # Manifest-directed; unrelated to IDs.
+            filename = filename_for(i) if filename_for else f"fixture_{i:03d}.json"
             blob = h.json_bytes(question)
-            (root / filename).write_bytes(blob)
+            path = root.joinpath(*filename.replace("\\", "/").split("/"))
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(blob)
             rows.append(dict(question_id=question["question_id"], filename=filename, sha256=h.sha256(blob),
                              split="HELD_OUT", kind=question["kind"]))
         digest = h.receipt({r["question_id"]: r["sha256"] for r in rows})
@@ -181,12 +183,83 @@ class HeldoutEvaluatorTests(unittest.TestCase):
         self.edit_manifest(root, lambda m: m["questions"][-1].update(split="DEVELOPMENT"))
         self.reject_before_parse(root, protocol, "HELD_OUT")
 
-    def test_traversal_absolute_nested_and_alternate_stream_paths_rejected(self):
-        for name in ("../outside.json", "nested/q.json", "nested\\q.json", "C:/q.json", "/q.json", "q.json:stream", h.MANIFEST_NAME):
+    def test_traversal_absolute_drive_unc_and_alternate_stream_paths_rejected(self):
+        for name in ("../outside.json", "a/../../question.json", "a/../question.json", "a\\..\\question.json",
+                     "C:/question.json", "C:\\question.json", "C:question.json", "/question.json", "\\question.json",
+                     "\\\\server\\share\\question.json", "//server/share/question.json", "\\\\?\\C:\\question.json",
+                     "q.json:stream", h.MANIFEST_NAME):
             root, protocol = self.fixture()
             self.edit_manifest(root, lambda m: m["questions"][-1].update(filename=name))
             with self.subTest(name=name):
-                self.reject_before_parse(root, protocol, "basename")
+                self.reject_before_parse(root, protocol)
+
+    def test_nested_manifest_relative_json_paths_accepted(self):
+        root, protocol = self.fixture(lambda i: f"synthetic_batch/lane_{i % 3}/fixture_{i:03d}.json")
+        data = h._load_import(root, protocol)
+        self.assertEqual(len(data.questions), 30)
+        self.assertEqual(h.receipt(dict(data.question_hashes)), protocol.receipt)
+        path = h.resolve_question_path(root, "synthetic_batch/lane_0/fixture_000.json")
+        self.assertEqual(path, (root / "synthetic_batch/lane_0/fixture_000.json").resolve())
+
+    def test_multiple_depths_and_direct_basename_share_one_import(self):
+        def filename(i):
+            return "synthetic_level/" * (i % 4) + f"fixture_{i:03d}.json"
+        root, protocol = self.fixture(filename)
+        data = h._load_import(root, protocol)
+        self.assertEqual(len(data.questions), 30)
+        self.assertTrue((root / "fixture_000.json").is_file())
+        self.assertTrue((root / "synthetic_level/synthetic_level/synthetic_level/fixture_003.json").is_file())
+
+    def test_windows_relative_separators_preserve_the_manifest_entry(self):
+        root, protocol = self.fixture(lambda i: f"synthetic_batch\\lane\\fixture_{i:03d}.json")
+        original = (root / h.MANIFEST_NAME).read_bytes()
+        data = h._load_import(root, protocol)
+        self.assertEqual(len(data.questions), 30)
+        self.assertEqual((root / h.MANIFEST_NAME).read_bytes(), original)
+        self.assertEqual(h.resolve_question_path(root, "synthetic_batch\\lane\\fixture_000.json"),
+                         (root / "synthetic_batch/lane/fixture_000.json").resolve())
+
+    def test_ambiguous_normalization_invalid_suffix_and_device_names_rejected(self):
+        for name in ("", None, 12, "./q.json", "a/./q.json", "a//q.json", "a\\\\q.json", "a/q.json/",
+                     "a /q.json", "a./q.json", "q.json ", "q.JSON", "q.txt", ".json", "a\x00/q.json",
+                     "NUL.json", "CON/q.json", "a/COM1.json", "a/?q.json", "a/q*.json"):
+            with self.subTest(name=name), self.assertRaises(h.HeldoutIntegrityError):
+                h._manifest_relative_parts(name)
+
+    def test_resolved_path_escape_rejected_even_after_lexical_validation(self):
+        root, _ = self.fixture()
+        question = root / "fixture_000.json"
+        outside = self.root / "synthetic-outside.json"
+        outside.write_bytes(b"synthetic outside sentinel")
+        original = Path.resolve
+        def redirected(path, *args, **kwargs):
+            return outside if path == question else original(path, *args, **kwargs)
+        with patch.object(Path, "resolve", redirected), self.assertRaisesRegex(h.HeldoutIntegrityError, "strictly inside"):
+            h.resolve_question_path(root, "fixture_000.json")
+
+    def test_duplicate_separator_and_case_aliases_rejected(self):
+        root, protocol = self.fixture(lambda i: f"synthetic_batch/lane/fixture_{i:03d}.json")
+        for name in ("synthetic_batch\\lane\\fixture_000.json", "SYNTHETIC_BATCH/lane/fixture_000.json"):
+            self.edit_manifest(root, lambda m: m["questions"][-1].update(filename=name))
+            with self.subTest(name=name):
+                self.reject_before_parse(root, protocol, "Duplicate question filename")
+
+    def test_conflicting_directory_spelling_rejected(self):
+        root, protocol = self.fixture(lambda i: f"synthetic_batch/fixture_{i:03d}.json")
+        self.edit_manifest(root, lambda m: m["questions"][-1].update(filename="SYNTHETIC_BATCH/fixture_029.json"))
+        self.reject_before_parse(root, protocol, "Ambiguous path spelling")
+
+    def test_question_path_must_resolve_to_regular_file(self):
+        root, protocol = self.fixture()
+        question = root / "fixture_000.json"
+        question.unlink()
+        question.mkdir()
+        self.reject_before_parse(root, protocol, "regular file")
+
+    def test_file_directory_path_collision_rejected(self):
+        root, protocol = self.fixture()
+        self.edit_manifest(root, lambda m: m["questions"][-1].update(filename="fixture_000.json/child.json"))
+        self.reject_before_parse(root, protocol, "both a file and a directory")
 
     def test_duplicate_ids_and_filenames_rejected(self):
         for key in ("question_id", "filename"):
@@ -211,6 +284,111 @@ class HeldoutEvaluatorTests(unittest.TestCase):
         with patch.object(Path, "glob", side_effect=AssertionError("glob forbidden")), \
              patch.object(Path, "rglob", side_effect=AssertionError("recursion forbidden")):
             self.assertEqual(len(h._load_import(root, protocol).questions), 30)
+
+    def test_inventory_visits_only_manifest_implied_directories(self):
+        root, protocol = self.fixture(lambda i: f"synthetic_batch/lane_{i % 2}/fixture_{i:03d}.json")
+        authorized = {root, root / "synthetic_batch", root / "synthetic_batch/lane_0", root / "synthetic_batch/lane_1"}
+        original, visits = Path.iterdir, []
+        def listed(path):
+            self.assertIn(path, authorized)
+            visits.append(path)
+            return original(path)
+        with patch.object(Path, "iterdir", listed), patch.object(Path, "glob", side_effect=AssertionError("No discovery")), \
+             patch.object(Path, "rglob", side_effect=AssertionError("No recursive discovery")):
+            h._load_import(root, protocol)
+        self.assertEqual(set(visits), authorized)
+        self.assertEqual(len(visits), len(authorized))
+
+    def test_unlisted_nested_entries_rejected_without_opening_or_descending(self):
+        for extra_kind in ("file", "directory"):
+            root, protocol = self.fixture(lambda i: f"synthetic_batch/lane/fixture_{i:03d}.json")
+            extra = root / "synthetic_batch/lane/unlisted"
+            if extra_kind == "file":
+                extra.write_bytes(b"synthetic unlisted sentinel")
+            else:
+                extra.mkdir()
+                (extra / "unlisted.json").write_bytes(b"synthetic unlisted sentinel")
+            original, reads = Path.read_bytes, []
+            original_iterdir = Path.iterdir
+            def read(path):
+                reads.append(path)
+                return original(path)
+            def listed(path):
+                self.assertNotEqual(path, extra)
+                return original_iterdir(path)
+            with patch.object(Path, "read_bytes", read), patch.object(Path, "iterdir", listed):
+                self.reject_before_parse(root, protocol, "Inventory")
+            self.assertEqual(reads, [root / h.MANIFEST_NAME])
+
+    def test_missing_listed_file_does_not_use_a_same_basename_elsewhere(self):
+        root, protocol = self.fixture(lambda i: f"synthetic_batch/lane/fixture_{i:03d}.json")
+        path = root / "synthetic_batch/lane/fixture_000.json"
+        # An unlisted alternative is not a recovery mechanism.
+        (root / "fixture_000.json").write_bytes(path.read_bytes())
+        path.unlink()
+        self.reject_before_parse(root, protocol, "Inventory")
+
+    def test_only_manifest_authorized_question_files_are_opened(self):
+        root, protocol = self.fixture(lambda i: f"synthetic_batch/lane/fixture_{i:03d}.json")
+        manifest = json.loads((root / h.MANIFEST_NAME).read_bytes())
+        allowed = {(root / row["filename"]).resolve() for row in manifest["questions"]}
+        original, reads = Path.read_bytes, []
+        def read(path):
+            if path != root / h.MANIFEST_NAME and path != h.DOMAIN / "policy/artifact_manifest.json":
+                self.assertIn(path, allowed)
+                reads.append(path)
+            return original(path)
+        with patch.object(Path, "read_bytes", read):
+            h._load_import(root, protocol)
+        self.assertEqual(set(reads), allowed)
+        self.assertEqual(len(reads), 30)
+
+    def test_synthetic_import_preserves_manifest_structure_bytes_and_receipt(self):
+        source, protocol = self.fixture(lambda i: f"synthetic_batch/lane_{i % 2}/fixture_{i:03d}.json")
+        imported = self.root / "synthetic-import-copy"
+        imported.mkdir()
+        manifest_blob = (source / h.MANIFEST_NAME).read_bytes()
+        manifest = json.loads(manifest_blob)
+        (imported / h.MANIFEST_NAME).write_bytes(manifest_blob)
+        for row in manifest["questions"]:
+            destination = imported / row["filename"]
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            blob = (source / row["filename"]).read_bytes()
+            destination.write_bytes(blob)
+            self.assertEqual(destination.read_bytes(), blob)
+        data = h._load_import(imported, protocol)
+        self.assertEqual((imported / h.MANIFEST_NAME).read_bytes(), manifest_blob)
+        self.assertEqual(data.manifest_sha256, h.sha256(manifest_blob))
+        self.assertEqual(data.receipt, protocol.receipt)
+        self.assertEqual(dict(data.question_hashes), {row["question_id"]: row["sha256"] for row in manifest["questions"]})
+
+    def test_path_layout_does_not_change_receipt_semantics(self):
+        flat, flat_protocol = self.fixture()
+        nested, nested_protocol = self.fixture(lambda i: f"synthetic_batch/lane/fixture_{i:03d}.json")
+        before, after = h._load_import(flat, flat_protocol), h._load_import(nested, nested_protocol)
+        self.assertEqual(before.receipt, after.receipt)
+        self.assertEqual(before.questions, after.questions)
+        self.assertEqual(before.question_hashes, after.question_hashes)
+        self.assertNotEqual(before.manifest_sha256, after.manifest_sha256)
+
+    def test_nested_file_and_directory_symlinks_rejected_before_question_read(self):
+        for target_kind in ("file", "directory"):
+            for mode in ("symlink", "junction"):
+                root, protocol = self.fixture(lambda i: f"synthetic_batch/lane/fixture_{i:03d}.json")
+                target = root / ("synthetic_batch/lane/fixture_000.json" if target_kind == "file" else "synthetic_batch/lane")
+                original, original_read, reads = Path.lstat, Path.read_bytes, []
+                def fake_lstat(path):
+                    if path == target:
+                        return SimpleNamespace(st_mode=stat.S_IFLNK if mode == "symlink" else stat.S_IFDIR,
+                                               st_file_attributes=0x400 if mode == "junction" else 0)
+                    return original(path)
+                def read(path):
+                    reads.append(path)
+                    return original_read(path)
+                with self.subTest(target=target_kind, mode=mode), patch.object(Path, "lstat", fake_lstat), \
+                     patch.object(Path, "read_bytes", read):
+                    self.reject_before_parse(root, protocol, "Links/reparse")
+                self.assertEqual(reads, [root / h.MANIFEST_NAME])
 
     def test_symlinks_and_windows_reparse_points_rejected(self):
         for target_kind in ("root", "manifest", "question", "ancestor"):

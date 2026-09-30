@@ -1,11 +1,23 @@
-"""Phase 2G-A: pre-exposure machinery; running this CLI belongs to Phase 2G-B.
+"""Phase 2G-A.1: custody path revision; running this CLI belongs to Phase 2G-B.
 
-Future import contract (no private manifest was consulted to define it): the
-reserved root contains HELDOUT_MANIFEST.json and exactly its 30 direct JSON
-question files. Manifest fields follow the public DEVELOPMENT manifest schema,
-with HELD_OUT, 30/26/4 and the pre-exposure receipt below. Filenames are direct
-basenames, not directory-prefixed paths. Import preparation must preserve question
-bytes and their receipt; this loader never repairs or discovers alternative data.
+Custody provenance: the original Phase 2G-A harness was frozen before any private
+HELDOUT material was accessed. During the first authorized Phase 2G-B custody
+attempt, only the frozen HELDOUT manifest was read. The manifest receipt matched
+the pre-frozen receipt, but its filename representation revealed that the
+harness's direct-basename restriction was incompatible with the frozen authoring
+package. No question file was read, no question-file hash was verified from
+source bytes, no model was initialized, and no retrieval result was produced.
+This revision changes only safe manifest-relative path handling. It is prepared
+after manifest exposure and before any question-content or retrieval-result
+exposure; owner review and a subsequent freeze are still required.
+
+The reserved root contains the unchanged HELDOUT_MANIFEST.json and exactly its
+30 referenced JSON question files, preserving their relative directory layout.
+Both slash and backslash delimit relative components; ambiguous normalization,
+absolute paths, traversal and links are rejected. Inventory checks visit only
+directories explicitly implied by manifest paths, never discovered directories.
+Import preparation must preserve all manifest/question bytes and the receipt;
+this loader never repairs, flattens or discovers alternative data.
 
 The CLI has no options. Model/cache failures before reservation produce no run.
 After exclusive reservation, the private manifest journals each search BEFORE it
@@ -20,7 +32,7 @@ import hashlib
 import json
 import math
 import os
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 import re
 import stat
 import subprocess
@@ -118,6 +130,67 @@ def _no_links(path):
         ), "Links/reparse points are not permitted at the custody boundary")
 
 
+def _manifest_relative_parts(filename):
+    """Validate spelling before pathlib can collapse dots or repeated separators."""
+    require(isinstance(filename, str) and bool(filename), "Question filename must be a non-empty relative JSON path")
+    windows = PureWindowsPath(filename)
+    require(not windows.drive and not windows.root and not filename.startswith(("/", "\\")),
+            "Question path must be relative; absolute, drive and UNC paths are forbidden")
+    parts = tuple(re.split(r"[\\/]", filename))
+    require(all(part not in ("", ".", "..") for part in parts), "Path traversal or ambiguous normalization is forbidden")
+    for part in parts:
+        require(not re.search(r'[<>:"|?*\x00-\x1f]', part) and not part.endswith((".", " "))
+                and not PureWindowsPath(part).is_reserved(), "Ambiguous or reserved path component")
+    require(Path(parts[-1]).suffix == ".json", "Question path must have the exact .json suffix")
+    require(not (len(parts) == 1 and parts[0].casefold() == MANIFEST_NAME.casefold()),
+            "Question path cannot name the manifest")
+    return parts
+
+
+def _inside_root(root, path):
+    _no_links(path)
+    resolved = path.resolve(strict=True)
+    require(resolved != root and resolved.is_relative_to(root), "Resolved path must remain strictly inside the private root")
+    return resolved
+
+
+def resolve_question_path(root, filename):
+    """Resolve one manifest-authorized regular file; never search or repair paths."""
+    parts = _manifest_relative_parts(filename)
+    root = Path(root)
+    _no_links(root)
+    path = root.joinpath(*parts)
+    _no_links(path)
+    require(path.is_file(), "Manifest question path must name a regular file")
+    return _inside_root(root.resolve(strict=True), path)
+
+
+def _check_manifest_inventory(root, question_parts):
+    # Preserve exact inventory enforcement. The complete directory plan comes
+    # from manifest strings BEFORE any listing; returned entries cannot expand
+    # the plan. Unlisted files/directories are rejected without opening them.
+    directories = {(): {MANIFEST_NAME}}
+    spellings = {MANIFEST_NAME.casefold(): (MANIFEST_NAME,)}
+    files = {tuple(part.casefold() for part in parts) for parts in question_parts}
+    for parts in question_parts:
+        for depth, component in enumerate(parts):
+            prefix = parts[:depth + 1]
+            key = "/".join(part.casefold() for part in prefix)
+            require(key not in spellings or spellings[key] == prefix, "Ambiguous path spelling")
+            spellings[key] = prefix
+            directories.setdefault(parts[:depth], set()).add(component)
+            if depth < len(parts) - 1:
+                require(tuple(part.casefold() for part in prefix) not in files, "Path cannot be both a file and a directory")
+    resolved_root = root.resolve(strict=True)
+    for parts, expected_names in sorted(directories.items(), key=lambda item: (len(item[0]), item[0])):
+        directory = root.joinpath(*parts)
+        _no_links(directory)
+        require(directory.is_dir(), "Manifest ancestor must be a directory")
+        if parts:
+            _inside_root(resolved_root, directory)
+        require({p.name for p in directory.iterdir()} == expected_names, "Inventory mismatch")
+
+
 @dataclass(frozen=True)
 class _Protocol:
     """Internal synthetic-fixture seam; the production wrapper has no parameters."""
@@ -158,16 +231,17 @@ def _load_import(root, protocol):
     require(type(manifest["answerable_count"]) is int and type(manifest["negative_count"]) is int
             and manifest["answerable_count"] == protocol.answerable and manifest["negative_count"] == protocol.negative,
             "Expected 26 ANSWERABLE and 4 NEGATIVE")
-    ids, names = set(), set()
+    ids, names, question_parts = set(), set(), []
     for row in rows:
         identity, filename = row["question_id"], row["filename"]
         require(isinstance(identity, str) and re.fullmatch(r"[A-Za-z0-9_-]+", identity), "Invalid question ID")
         require(identity.casefold() not in ids, "Duplicate question ID")
         ids.add(identity.casefold())
-        require(isinstance(filename, str) and re.fullmatch(r"[A-Za-z0-9_-]+\.json", filename)
-                and filename.casefold() != MANIFEST_NAME.casefold(), "Question must be a direct JSON basename")
-        require(filename.casefold() not in names, "Duplicate question filename")
-        names.add(filename.casefold())
+        parts = _manifest_relative_parts(filename)
+        key = tuple(part.casefold() for part in parts)
+        require(key not in names, "Duplicate question filename")
+        names.add(key)
+        question_parts.append(parts)
         require(row["split"] == "HELD_OUT", "Only HELD_OUT records are permitted")
         require(row["kind"] in ("ANSWERABLE", "NEGATIVE"), "Unknown manifest kind")
         require(isinstance(row["sha256"], str) and re.fullmatch(r"[0-9a-f]{64}", row["sha256"]), "Invalid SHA-256")
@@ -175,20 +249,17 @@ def _load_import(root, protocol):
             and sum(r["kind"] == "NEGATIVE" for r in rows) == protocol.negative, "Manifest kind counts differ")
     require(receipt({r["question_id"]: r["sha256"] for r in rows}) == protocol.receipt,
             "Manifest aggregate receipt differs")
-    # One immediate inventory, no glob/rglob, discovery or recursion. Validate
-    # every entry/path before reading any question, including unlisted entries.
-    entries = tuple(root.iterdir())
-    require({p.name for p in entries} == {MANIFEST_NAME, *(r["filename"] for r in rows)}, "Inventory mismatch")
-    for path in entries:
-        _no_links(path)
-        require(path.is_file() and path.resolve().parent == root.resolve(), "Only direct regular files are permitted")
+    _check_manifest_inventory(root, question_parts)
+    # Resolve EVERY authorized path before opening ANY question file.
+    paths = {row["question_id"]: resolve_question_path(root, row["filename"]) for row in rows}
+    require(len({str(path).casefold() for path in paths.values()}) == len(rows), "Duplicate resolved question path")
     require(manifest["source_artifact_manifest_sha256"] == CORPUS_MANIFEST_SHA256
             == sha256((DOMAIN / "policy/artifact_manifest.json").read_bytes()), "Frozen corpus manifest differs")
     blobs, hashes = {}, {}
     rows = sorted(rows, key=lambda r: r["question_id"])
     for row in rows:
         identity = row["question_id"]
-        blobs[identity] = (root / row["filename"]).read_bytes()
+        blobs[identity] = paths[identity].read_bytes()
         hashes[identity] = sha256(blobs[identity])
         require(hashes[identity] == row["sha256"], "Question file hash differs")
     require(receipt(hashes) == protocol.receipt, "Computed aggregate receipt differs")

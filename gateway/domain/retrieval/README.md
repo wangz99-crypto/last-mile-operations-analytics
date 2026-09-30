@@ -584,3 +584,21 @@ which is not a safety estimate. HELD_OUT remains unopened. RRF parameters are
 fixed before evaluation; no weight, RRF-k, threshold or model search, or
 post-result tuning is performed. The result is a first baseline for owner review,
 not an assumption of hybrid superiority. Phase 2A/2C/2D history remains intact.
+
+## Retriever selection / pre-heldout freeze
+
+On 2026-09-30, **BGE embedding v0** was selected as the supplemental ranked
+retriever from the frozen DEVELOPMENT evidence. Exact required-section lookup
+remains authoritative for deterministic policy support. BM25 and equal-weight RRF
+remain historical DEVELOPMENT baselines, with their implementation and evidence
+unchanged. BGE was selected for stronger supporting-section coverage at @3/@5
+and complete multi-section coverage. BM25 retains stronger Hit@1/MRR; naive
+equal-weight RRF did not improve the Development tradeoff over BGE.
+
+Negative abstention remains unresolved: all three methods falsely supported the
+single Development negative. No threshold or query rule was changed. HELD_OUT had
+not been opened at selection time. This is a project-specific engineering choice,
+not a claim of universal superiority. See the
+[selection record](../evaluation/retrieval/RETRIEVER_SELECTION.md) and
+[freeze record](../evaluation/retrieval/RETRIEVER_FREEZE_RECORD.md) for the exact
+configuration, revision, evidence hashes and future-change boundary.

@@ -1,0 +1,90 @@
+{
+  "aggregate_output_sha256": "5d3c800c29d6ba36de7df4fac86c5d406d79ce9cff4256cfad957fd8466e0a2a",
+  "answerable_count": 26,
+  "baseline_run_sequence": 1,
+  "completed_evaluation_attempts": 1,
+  "configuration": {
+    "abstention": {
+      "also_abstain": [
+        "blank query"
+      ],
+      "comparison": "top_score < threshold",
+      "margin": null,
+      "minimum_top_score": 0.3
+    },
+    "candidate_filter": "all sections; threshold applies to top score for the whole response",
+    "cpu_threads": 1,
+    "device": "cpu",
+    "document_instruction": "",
+    "encode_batch_size": 32,
+    "encode_precision": "float32",
+    "field_joiner": "LF",
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "model_selection": "Owner-frozen repository-configured model; one model only",
+    "normalize_embeddings": true,
+    "pooling": "unmodified model snapshot configuration",
+    "query_instruction": "",
+    "query_transformation": "none; original question text",
+    "retrieval_method": "EMBEDDING_COSINE",
+    "score_meaning": "retrieval diagnostic; not confidence, probability, authority or business readiness",
+    "searchable_fields": [
+      "title",
+      "section_title",
+      "text"
+    ],
+    "section_count": 25,
+    "similarity": "normalized dot product; math.fsum over unit vectors",
+    "tie_breaking": "score descending, then (policy_id, version, section_id) ascending; no rounding",
+    "top_k": 10,
+    "vector_validation": "finite nonzero rows; L2 normalize in Python float precision"
+  },
+  "error_count": 0,
+  "evaluation_started_utc": "2026-10-03T18:59:35.564124+00:00",
+  "heldout_receipt_sha256": "57ebb2478204d765ca52dc11792fa36bc25a02f312536e49d2379dd18a348cb0",
+  "model_file_sha256": {
+    "1_Pooling/config.json": "d1caf60c96f5fba2157c0c26b76d80818fad6cf0b8eb5e73ec372ff9818eba5c",
+    "config.json": "094f8e891b932f2000c92cfc663bac4c62069f5d8af5b5278c4306aef3084750",
+    "config_sentence_transformers.json": "940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56",
+    "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad",
+    "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+    "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "tokenizer_config.json": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "model_or_threshold_sweep_performed": false,
+  "model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "negative_count": 4,
+  "network_access_required": false,
+  "output_receipt_serialization": "UTF-8; sorted private evidence basename + TAB + SHA-256 + LF; final LF included",
+  "per_question_attempts": 1,
+  "post_heldout_tuning_performed": false,
+  "pre_heldout_commit": "d218143f0f900f493341ab1ed2e90e98c7ec47b4",
+  "pre_heldout_tag": "retrieval-ranked-v0.1-pre-heldout",
+  "python_version": "3.12.10",
+  "question_count": 30,
+  "run_type": "PRIMARY_SELECTED_BGE_V0_HELDOUT",
+  "runtime_versions": {
+    "huggingface-hub": "0.36.2",
+    "numpy": "2.5.3",
+    "sentence-transformers": "3.0.1",
+    "torch": "2.14.0",
+    "transformers": "4.57.6"
+  },
+  "secondary_retrievers_evaluated": false,
+  "selected_retriever": "BGE embedding v0",
+  "source_file_sha256": {
+    "gateway/domain/evaluation/retrieval/RETRIEVER_FREEZE_RECORD.md": "791265b299397d7c32fa32a83e8eeeed62e3d33dd09627b472d81d5fa76001fa",
+    "gateway/domain/evaluation/retrieval/RETRIEVER_SELECTION.md": "35f16e3f98f4b0beeb4cac6de94c365663ca619a7194c224132a65d1333b09a4",
+    "gateway/domain/evaluation/retrieval/evaluate_development.py": "e23159b7e1d2e0e23cdd3a6ad5c0be6eeaa58746d6b1487efc2bd6adaf310972",
+    "gateway/domain/evaluation/retrieval/evaluate_selected_heldout.py": "8268b05855ab85a6476b0de3d4845be2859f98d7702b32233f55ed01226cb0ea",
+    "gateway/domain/evaluation/retrieval/retrieval_scoring.py": "029b21001d849aa50fc84f009ea472b7d211e20ae59fb5405d3458676bd5626c",
+    "gateway/domain/retrieval/__init__.py": "7b5a7d1321fcd6a21a1b6eca31bca5291ec742fef5161ff8a88dd39a94de896a",
+    "gateway/domain/retrieval/embedding_retriever.py": "4da7a8ccf26ca5987a9a37479466064e9acf526503b385116845b6daf52576d0",
+    "gateway/domain/retrieval/section_store.py": "6effaa6ba7d3ceb8ba611e1cf612141acf0bec35ff5dd4bf86382309b6525725",
+    "gateway/domain/schemas/contracts.schema.json": "40b61cf217f1cd74e5588c9801dc9537e239f22cbc8cf5498a528b1d86b87daa",
+    "gateway/domain/validate_contracts.py": "c11c93f427ca08d9d62b3f7832b58829d470cc8e6570ff8e1bf6295b7cc4a1fd"
+  },
+  "success_count": 30
+}

@@ -58,3 +58,11 @@ gateway/domain/evaluation/answerability/development/AQ040.json -text
 /artifacts/answerability_dev_bge_evidence_v0/RUN_MANIFEST.json -text
 /artifacts/answerability_dev_bge_evidence_v0/EVIDENCE_FREEZE_RECORD.md -text
 /artifacts/answerability_dev_bge_evidence_v0/ATTEMPT_JOURNAL.jsonl -text
+
+# Preserve only the exact Phase 2H-B3 Round-1 evidence artifacts.
+/artifacts/answerability_dev_gate_baselines_v0/BASELINE_REGISTRY.json -text
+/artifacts/answerability_dev_gate_baselines_v0/BASELINE_RESULTS.json -text
+/artifacts/answerability_dev_gate_baselines_v0/BASELINE_REPORT.md -text
+/artifacts/answerability_dev_gate_baselines_v0/RUN_MANIFEST.json -text
+/artifacts/answerability_dev_gate_baselines_v0/EVALUATION_JOURNAL.jsonl -text
+/artifacts/answerability_dev_gate_baselines_v0/BASELINE_REVIEW_RECORD.md -text

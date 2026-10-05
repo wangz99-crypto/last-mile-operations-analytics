@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "Missing-fact rules produce scoped unknowns, not empirical loss probabilities. The corpus has no risk model or population evidence from which this probability could be substantiated.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "What probability of parcel loss should we assign when both the promise timestamp and the last physical scan are missing?",
+  "question_id": "AQ028",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

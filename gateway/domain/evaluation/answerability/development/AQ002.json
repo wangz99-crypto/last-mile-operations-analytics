@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "Lateness uses strict as_of > promise and exact seconds; equality is not late and display rounding cannot change the decision.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-02",
+      "section_id": "late-boundaries",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "At the exact promised delivery time, is an open shipment already late, and may a rounded hours display decide that boundary?",
+  "question_id": "AQ002",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-02",
+      "section_id": "late-boundaries",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

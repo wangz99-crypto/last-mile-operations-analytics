@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "Identity fields are required, but no external carrier-account alias mapping is provided. Evidence and conflict rules can flag a gap, not determine the missing account.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "Which external carrier account should own this carrier-code alias so I can repair the packet's composite identity?",
+  "question_id": "AQ025",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

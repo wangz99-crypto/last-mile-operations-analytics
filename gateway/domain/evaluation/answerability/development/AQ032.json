@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "The policy permits interpreting explicit markers, not inferring the address defect or a depot root cause. No section combination supplies an investigation finding from this sequence.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "After an address clearance, the parcel was rerouted. Identify the depot process failure that caused the original address exception.",
+  "question_id": "AQ032",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

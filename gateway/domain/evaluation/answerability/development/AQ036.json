@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "The governing replacement context is unresolved. Missing-policy rules prescribe review, not an invented bundle identifier, and no other supplied section identifies the replacement.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "The handover says our required policy bundle was replaced during the shift but identifies neither version nor approval record. Which bundle should govern those newly opened cases?",
+  "question_id": "AQ036",
+  "reason_code": "UNRESOLVED_POLICY_CONTEXT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

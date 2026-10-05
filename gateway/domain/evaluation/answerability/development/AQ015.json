@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "The decision-record section enumerates request, snapshot, version/hash, identity, event/section, outcome and scoped-evidence provenance and separates explanation from deterministic output.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-08",
+      "section_id": "decision-record",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "A colleague needs to reconstruct how our assessment was produced without relying on the explanatory prose. What identifying and provenance information should the decision record retain?",
+  "question_id": "AQ015",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-08",
+      "section_id": "decision-record",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "The corpus supplies shipment triage authority, not equipment safety certification requirements. An answer would need an external safety policy.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": false,
+  "question": "Which safety certification is required to operate the warehouse forklift?",
+  "question_id": "AQ040",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

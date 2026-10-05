@@ -1,0 +1,262 @@
+{
+  "aggregate_receipt": "9913c3028119f708a19ad762efda5f86b80b1f78c624eddbd632d6129e5b802d",
+  "benchmark_name": "Independent Scope and Answerability Benchmark",
+  "benchmark_version": "answerability-benchmark-v0.1",
+  "blueprint_sha256": "bd3bc55cda23adfdd2d6ec6de22188f993ce3c64516a446a3fb471b051a344bc",
+  "entries": [
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ001.json",
+      "question_id": "AQ001",
+      "sha256": "b01c3a7acf77374fc521a16738cc390b6498ae0d8bbc6bbd633c8b0d4d53d36f"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ002.json",
+      "question_id": "AQ002",
+      "sha256": "e2f713926c05d6515f522f0e0d37696f4ed68688c5f46158d1bbfc1d7421df73"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ003.json",
+      "question_id": "AQ003",
+      "sha256": "7af73f54ea943e46e149530fe30973b79baf017e285bc9cb83a2df6c442222c4"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ004.json",
+      "question_id": "AQ004",
+      "sha256": "61414f38d6f3368b64b0e22df721005f5c814e3dc28169aeff0593f556c0a4bb"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ005.json",
+      "question_id": "AQ005",
+      "sha256": "4dd2d21ec5e39b73868658959201b2a0f4d499025766e6f0326a73cc3d7e66cf"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ006.json",
+      "question_id": "AQ006",
+      "sha256": "a51f5dfdd7ded580bc04841071d3857860ab520e563e045148272aa32d5cd62b"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ007.json",
+      "question_id": "AQ007",
+      "sha256": "f74dc48903bef29f286f0bb6c15296d57c52865c83ae9c902265c49034cf72a0"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ008.json",
+      "question_id": "AQ008",
+      "sha256": "6d343f28252058224c061d50ab2b3d709ea839c8acc7b8debe05e99a75bfda9c"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ009.json",
+      "question_id": "AQ009",
+      "sha256": "4ce31f2e28abf3829c84cf5b05d6d9d7765ea8f405d8a0cfe542362e0b16c7e9"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ010.json",
+      "question_id": "AQ010",
+      "sha256": "e64f99cbd9020ee4d26f209609628f9033f7b3bbe5439c07e271020a18a742d2"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ011.json",
+      "question_id": "AQ011",
+      "sha256": "0f75430340c9cccf490ff85dbe90bb8f1329fd9dabc8a1f6cc0be00d4232edf1"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ012.json",
+      "question_id": "AQ012",
+      "sha256": "59fc08d6058100cab7226499007851fb539e36458a7812f565187679b5fc3c7d"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ013.json",
+      "question_id": "AQ013",
+      "sha256": "82bd8a2e5eccda853493d44b1f7726777ddb32c36c8e3d8f583be0c06f923a61"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ014.json",
+      "question_id": "AQ014",
+      "sha256": "135d8572fcb1a2808baf7ff4d6fe5a8fdbe4ceb04b851815fc1d9cacd4c9ce69"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ015.json",
+      "question_id": "AQ015",
+      "sha256": "53b93e32af561fae8c177266b7b1d182e1f5a11474a8a02c693ac7418270b12c"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ016.json",
+      "question_id": "AQ016",
+      "sha256": "aa791b5711a325664840b1844a9c4853870856781b09f700f2ba8f1d6400753d"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ017.json",
+      "question_id": "AQ017",
+      "sha256": "42d86919d3a950149d584d39abfd645a62763e8cbacd35f5a3c7cf5a260a961e"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ018.json",
+      "question_id": "AQ018",
+      "sha256": "effb06f1947b7282d9534f7ab3aee98ed3d32944413bb9ea403dbb289494aabd"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ019.json",
+      "question_id": "AQ019",
+      "sha256": "6d466dbc02d3fc29e6d5832977d78d6e76d1d41256138a7f673b16af3e5962b2"
+    },
+    {
+      "expected_gate": "ALLOW",
+      "filename": "development/AQ020.json",
+      "question_id": "AQ020",
+      "sha256": "559e25239dcd02a3a638bb4f38c0f7ff3da4af613b1da0a8ae53cdc0d4a29662"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ021.json",
+      "question_id": "AQ021",
+      "sha256": "73779815082c856258c244feeb62da0bd81bad1e58fc1d2a42c070c3c037bd66"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ022.json",
+      "question_id": "AQ022",
+      "sha256": "e1a0e69a312b3aa150dedba62ceedd2c58ba0d45f8f20e6582c9ead15b24dc3b"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ023.json",
+      "question_id": "AQ023",
+      "sha256": "224a0957236becab80377536b468efd1ae336e0d638c6582a6ea1c9ac4b78ef9"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ024.json",
+      "question_id": "AQ024",
+      "sha256": "0a91dd0aabbba6f50c63ff300b699cb1d4a758245e097a8c8bf7fc7d9f588c04"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ025.json",
+      "question_id": "AQ025",
+      "sha256": "c81aaf391074a79f4c2766954b0c0c2e7c739cee712cf3efbee8cc46a20062f6"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ026.json",
+      "question_id": "AQ026",
+      "sha256": "a65cfbde0effef4a93bb7e8fcf95d3f1d9df42b7d56ac81cc56e7c0ebcd97f97"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ027.json",
+      "question_id": "AQ027",
+      "sha256": "2a9537230f2ee6ef39df87675621b804f22c94025fd192d25f9743b2084d6306"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ028.json",
+      "question_id": "AQ028",
+      "sha256": "c0dcbf514bfa63b20bad74ee30f85445eea7bba86447c4a0743d364ab3104253"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ029.json",
+      "question_id": "AQ029",
+      "sha256": "e963645afd6999fe747177d3ad6a1cc45853b88e12bec429fe75e9ca0bebe71f"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ030.json",
+      "question_id": "AQ030",
+      "sha256": "452563e723d1b63866d0c4987f55ea7c59b2b59e9f29c55078c13d9cae42f934"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ031.json",
+      "question_id": "AQ031",
+      "sha256": "f29d283d0214fa78e9ce52c4ccd406d0ea8635a392dbfa6caa1501c1dc33d4dc"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ032.json",
+      "question_id": "AQ032",
+      "sha256": "b0507eb16564d32e9985b578ae3e90a8a132dce89bc024b2f5af7f380de37ca0"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ033.json",
+      "question_id": "AQ033",
+      "sha256": "1c1faf7d77f28b2576eb7357773c24e7b61da00ec55b4b7d81786a0e0e84f2e0"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ034.json",
+      "question_id": "AQ034",
+      "sha256": "6c79c1e9c0b09c9706888cb67cf4aa0390cf35adbd0716adf39d4c78b1bd3348"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ035.json",
+      "question_id": "AQ035",
+      "sha256": "6af1b6958d652007b691fd28f9435f1fe2bad7c9b62290c3f07c50be9cc32b84"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ036.json",
+      "question_id": "AQ036",
+      "sha256": "fbe075dbecaa530a4b76f0295ad28ad85ea7ef5aa1704f85872c38f0137109c7"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ037.json",
+      "question_id": "AQ037",
+      "sha256": "7b69b634fae0c9262bf780ed1b5689ed64833cb13af1c40943a47e26b5168dd7"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ038.json",
+      "question_id": "AQ038",
+      "sha256": "1825892a24f488007c40c84f667184449c8cd69fd8f9d24088177d97467af1f9"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ039.json",
+      "question_id": "AQ039",
+      "sha256": "29a35238c37ab57e4e3db0adbfe4ce2a23683c12276db95628633c0afbf48191"
+    },
+    {
+      "expected_gate": "ABSTAIN",
+      "filename": "development/AQ040.json",
+      "question_id": "AQ040",
+      "sha256": "13b54c8cd9f32aecb17782d1f45257f36a096599c89669937f12d513f8898b2d"
+    }
+  ],
+  "finalized_utc": "2026-10-04T19:44:15.430332+00:00",
+  "freeze_date": "2026-10-04",
+  "frozen": true,
+  "manifest_version": "1.0",
+  "owner_review_date": "2026-10-04",
+  "owner_review_identity": "Zhe Wang (Victor)",
+  "protocol_commit": "347ce9f3ff37bd73f4750cde01562f0573a2b4ab",
+  "protocol_tag": "answerability-protocol-v0.1-pre-benchmark",
+  "question_count": 40,
+  "receipt_algorithm": "ANSWERABILITY_MANIFEST_RECEIPT_V1",
+  "receipt_status": "FINAL",
+  "split": "DEVELOPMENT",
+  "status": "OWNER_REVIEWED",
+  "superseded_historical_draft_receipt": "1cb2f5ef4038d8a2f2b95790ec1604e3c886854c1a0454c3cbc47fa3c57a8dad"
+}

@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "The requested authority is an unavailable agreement. The demo bundle cannot identify an unseen account-specific clause, and missing-policy handling does not resolve its content.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "We are handling an account under a signed carrier agreement that has not been supplied. Which escalation clause in that agreement governs this account?",
+  "question_id": "AQ033",
+  "reason_code": "UNRESOLVED_POLICY_CONTEXT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

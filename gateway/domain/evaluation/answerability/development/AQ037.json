@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "No copied policy section contains router administration procedures. Shipment triage and review rules cannot substantiate device reset steps.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": false,
+  "question": "How do I reset the password on the warehouse's shared Wi-Fi router?",
+  "question_id": "AQ037",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

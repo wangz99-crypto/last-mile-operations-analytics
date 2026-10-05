@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "Consistent closed states are outside active exception evaluation; scope directly resolves both named states.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-01",
+      "section_id": "scope",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "A shipment is consistently recorded as delivered or cancelled. Should it still have active exception categories in this triage workflow?",
+  "question_id": "AQ001",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-01",
+      "section_id": "scope",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "Audit fields and data minimization do not set a retention duration or deletion schedule. No combination of these sections provides the requested number of days.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "How many days must we retain carrier-escalation decision records before deleting them?",
+  "question_id": "AQ027",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

@@ -1,0 +1,31 @@
+{
+  "authoring_rationale": "MONITOR requires complete stale evidence; incomplete dependent evidence instead requires category review. The evidence section adds materially relevant details of the missing support.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-03",
+      "section_id": "stale-monitor",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-05",
+      "section_id": "stale-evidence",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "The scan gap is in the stale-monitoring band, but its dependent evidence is incomplete. Is it appropriate to leave that tracking category on MONITOR?",
+  "question_id": "AQ009",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-03",
+      "section_id": "stale-monitor",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

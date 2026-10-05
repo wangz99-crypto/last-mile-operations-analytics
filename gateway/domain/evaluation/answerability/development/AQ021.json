@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "The corpus specifies triage and review boundaries, not credit amounts or a compensation formula. Combining delay eligibility and the no-refund boundary cannot supply an awarded amount.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "What customer credit amount does this policy award when a parcel misses its promised delivery window?",
+  "question_id": "AQ021",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

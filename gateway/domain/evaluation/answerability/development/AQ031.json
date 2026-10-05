@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "Escalation eligibility does not specify contractual penalty terms or invoice arithmetic. Evidence and handoff rules cannot supply an amount absent a commercial agreement.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "The unique failed-attempt count has reached escalation eligibility. What total contractual penalty should our company invoice the carrier?",
+  "question_id": "AQ031",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

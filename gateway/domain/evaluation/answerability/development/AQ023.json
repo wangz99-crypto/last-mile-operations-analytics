@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "The policy records attempt events but contains neither recipient access details nor carrier visit procedures. Combining attempt and handoff guidance cannot supply those operational instructions.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "Which doorbell or building-access instructions should the courier use for the next delivery visit to this recipient?",
+  "question_id": "AQ023",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

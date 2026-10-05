@@ -1,0 +1,36 @@
+{
+  "authoring_rationale": "Handoff fields supply the content requirements; data minimization separately specifies excluded personal details and synthetic identifiers. Neither alone fully answers both material requests.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-06",
+      "section_id": "handoff-fields",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-08",
+      "section_id": "data-minimization",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "I am preparing an incident brief for review. What information belongs in the draft, and how should I keep raw customer details out of it?",
+  "question_id": "AQ005",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-06",
+      "section_id": "handoff-fields",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-08",
+      "section_id": "data-minimization",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "MULTI_SECTION"
+}

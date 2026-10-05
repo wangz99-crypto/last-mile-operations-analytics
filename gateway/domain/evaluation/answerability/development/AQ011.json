@@ -1,0 +1,41 @@
+{
+  "authoring_rationale": "Single-attempt handling prohibits assuming recovery from movement; stale escalation explains that a new qualifying scan may end staleness. Attempt counting additionally states persistence until closure. Both required sections distinguish the separate effects.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-04",
+      "section_id": "single-attempt",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-03",
+      "section_id": "stale-escalate",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-04",
+      "section_id": "attempt-counting",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "A parcel with one valid failed attempt and no address issue gets a new qualifying physical scan. Does movement erase the failed-attempt exception, or can it affect tracking staleness without doing that?",
+  "question_id": "AQ011",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-04",
+      "section_id": "single-attempt",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-03",
+      "section_id": "stale-escalate",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "MULTI_SECTION"
+}

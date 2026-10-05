@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "The corpus defines an internal review draft, not external carrier inboxes, endpoints or submission protocols. Handoff content requirements cannot substantiate carrier-specific transport details.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "What inbox or API endpoint should receive our escalation draft, and what submission format does that carrier accept?",
+  "question_id": "AQ026",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

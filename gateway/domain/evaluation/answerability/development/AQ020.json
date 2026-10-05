@@ -1,0 +1,31 @@
+{
+  "authoring_rationale": "The boundary permits drafting for human review, not contact, approval, refunds or shipment modification. State precedence additionally distinguishes readiness from approval.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-06",
+      "section_id": "handoff-boundary",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-01",
+      "section_id": "state-precedence",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "The brief is marked READY_TO_ESCALATE, and a colleague assumes the assistant has already contacted the carrier and approved a remedy. What does that ready draft actually authorize the assistant to do?",
+  "question_id": "AQ020",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-06",
+      "section_id": "handoff-boundary",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

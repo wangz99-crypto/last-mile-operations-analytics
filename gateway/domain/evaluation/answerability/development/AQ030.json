@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "A qualifying scan may affect staleness but does not predict travel time. No route model, transit schedule or forecasting procedure in the corpus supports an arrival estimate.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "A delayed parcel has just started moving again. Estimate its remaining travel time until delivery from that new scan.",
+  "question_id": "AQ030",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

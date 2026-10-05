@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "Only the current bundle is supplied; no predecessor policy is available for the earlier operation. Current address rules and revision guidance cannot reconstruct historical authority.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "For an operation before this bundle's effective_from date, what address-escalation rule was in force?",
+  "question_id": "AQ035",
+  "reason_code": "UNRESOLVED_POLICY_CONTEXT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

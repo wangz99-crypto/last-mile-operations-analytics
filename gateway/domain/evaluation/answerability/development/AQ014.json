@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "Frozen fixtures are immutable; a correction needs a new fixture or version, rather than an in-place rewrite.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-08",
+      "section_id": "revision-history",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "A frozen test snapshot contains a mistake. Can I correct the file in place and keep calling it the same fixture?",
+  "question_id": "AQ014",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-08",
+      "section_id": "revision-history",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

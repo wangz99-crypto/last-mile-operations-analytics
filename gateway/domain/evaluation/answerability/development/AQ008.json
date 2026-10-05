@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "Confirmed lateness below the escalation limit with complete dependent evidence has MONITOR treatment and is not eligible on that basis.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-02",
+      "section_id": "late-monitor",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "The promise has been missed, but the late escalation trigger has not been reached. All evidence for the late decision is complete. Should the case be monitored or treated as escalation-eligible on that basis?",
+  "question_id": "AQ008",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-02",
+      "section_id": "late-monitor",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

@@ -1,0 +1,36 @@
+{
+  "authoring_rationale": "Data-conflicts establishes global invalidity of the contradictory open/closed assessment. Handoff-fields separately supplies the draft requirements for referenced verified facts, deterministic rule rationale, exact policy citations and scoped missing/conflicting items. Both the assessment and explicit draft-content requests require support.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-07",
+      "section_id": "data-conflicts",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-06",
+      "section_id": "handoff-fields",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "One trusted status row says the shipment is open and another says it is closed. How does that conflict affect the assessment, and which factual references and scoped blocker details must the draft preserve?",
+  "question_id": "AQ019",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-07",
+      "section_id": "data-conflicts",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-06",
+      "section_id": "handoff-fields",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "MULTI_SECTION"
+}

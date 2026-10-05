@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "No room-booking service or procedure appears in the policy corpus. Handoff and audit guidance is unrelated to booking facilities.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": false,
+  "question": "Where should a team lead book next month's staff training room?",
+  "question_id": "AQ039",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

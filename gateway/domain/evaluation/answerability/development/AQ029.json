@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "Per-shipment state and priority precedence do not prescribe a cross-shipment queue tie-break or staffing allocation. Combining readiness rules cannot identify which equally ready shipment goes first.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "Two shipments are independently READY_TO_ESCALATE, but the evening team can investigate only one. Which shipment gets the first position in the work queue?",
+  "question_id": "AQ029",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

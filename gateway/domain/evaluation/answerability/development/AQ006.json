@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "An optional facility omission is explicitly a warning, not a shipment-wide review blocker.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-07",
+      "section_id": "missing-facts",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "If the optional facility field is missing, does that omission itself require the whole shipment to be reviewed?",
+  "question_id": "AQ006",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-07",
+      "section_id": "missing-facts",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

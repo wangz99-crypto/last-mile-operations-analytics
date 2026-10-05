@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "The request depends on unresolved superseding policy authority. Existing demo thresholds cannot establish an unprovided rule's authoritative value; combining known sections does not resolve that context.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "A manager says a newer local rule supersedes the demo bundle, but has not supplied its approved version. Which escalation threshold is authoritative for the current case?",
+  "question_id": "AQ034",
+  "reason_code": "UNRESOLVED_POLICY_CONTEXT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

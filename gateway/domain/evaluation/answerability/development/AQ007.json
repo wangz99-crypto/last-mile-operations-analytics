@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "The taxonomy explicitly permits multiple supported exception categories to coexist; a single-label UI constraint does not alter that policy.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-01",
+      "section_id": "taxonomy",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "Our screen has room for only one exception label. When delay and tracking problems coexist, does the policy require choosing just one category?",
+  "question_id": "AQ007",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-01",
+      "section_id": "taxonomy",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "Address markers govern classification, not the true corrected address. No combination of marker, evidence or privacy guidance provides postal validation or replacement address data.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "What corrected postal address should replace the shipment's address after an address-exception warning?",
+  "question_id": "AQ024",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

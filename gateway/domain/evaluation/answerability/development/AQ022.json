@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "Scan evidence establishes inactivity, not current geolocation. Neither history requirements nor handoff fields supplies live location facts; a substantive location answer would be invented.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": true,
+  "question": "Tracking has stopped moving. What exact physical location should I tell the recipient the parcel is at right now?",
+  "question_id": "AQ022",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

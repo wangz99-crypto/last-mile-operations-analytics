@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "Unavailable or ambiguous required bundle context is a global blocker. The question asks its handling, not an unsupported identification of a missing bundle.",
+  "difficulty_band": "PARAPHRASE",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-07",
+      "section_id": "missing-policy",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "We cannot establish the required active policy bundle. Can the team treat that as a gap in only one exception category?",
+  "question_id": "AQ013",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-07",
+      "section_id": "missing-policy",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

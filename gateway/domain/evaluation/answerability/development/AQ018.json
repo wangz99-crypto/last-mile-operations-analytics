@@ -1,0 +1,36 @@
+{
+  "authoring_rationale": "Address notices establish immediate eligibility and address-only readiness prerequisites. Attempt/address evidence separately requires disclosing the unknown subtype while excluding it from the supported basis.",
+  "difficulty_band": "INDIRECT_OPERATIONAL",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-04",
+      "section_id": "address-notices",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-05",
+      "section_id": "attempt-address-evidence",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "Current address-marker evidence fully supports an unresolved address exception, including the required common and policy evidence, but attempt identities remain unknown. Can an address-based brief be ready, and how should the unknown attempt side be represented?",
+  "question_id": "AQ018",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-04",
+      "section_id": "address-notices",
+      "version": "1.0-demo"
+    },
+    {
+      "policy_id": "SOP-05",
+      "section_id": "attempt-address-evidence",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "MULTI_SECTION"
+}

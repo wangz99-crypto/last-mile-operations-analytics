@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "Distinct physical attempt identities govern counting; duplicate reports of one valid attempt contribute one count.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-04",
+      "section_id": "attempt-counting",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "Several messages describe the same failed delivery visit and carry the same attempt_id. How many physical attempts should that visit contribute to the count?",
+  "question_id": "AQ004",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-04",
+      "section_id": "attempt-counting",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

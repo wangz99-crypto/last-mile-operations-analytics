@@ -1,0 +1,14 @@
+{
+  "authoring_rationale": "The active bundle contains no payroll agreement or overtime rate. No combination of operational SOP sections establishes compensation for staff shifts.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ABSTAIN",
+  "gold_support_sections": [],
+  "hard_negative": false,
+  "question": "What is our company's overtime pay rate for Saturday shifts?",
+  "question_id": "AQ038",
+  "reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+  "required_support_sections": [],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "NOT_APPLICABLE"
+}

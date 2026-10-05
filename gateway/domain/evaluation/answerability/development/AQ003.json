@@ -1,0 +1,26 @@
+{
+  "authoring_rationale": "The stated complete-empty PRE_TRANSIT case is explicitly NOT_APPLICABLE, rather than an invented zero gap or unknown history.",
+  "difficulty_band": "DIRECT",
+  "expected_gate": "ALLOW",
+  "gold_support_sections": [
+    {
+      "policy_id": "SOP-03",
+      "section_id": "scan-scope",
+      "version": "1.0-demo"
+    }
+  ],
+  "hard_negative": false,
+  "question": "How should tracking inactivity be classified for a valid PRE_TRANSIT shipment whose complete physical-scan history is empty?",
+  "question_id": "AQ003",
+  "reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+  "required_support_sections": [
+    {
+      "policy_id": "SOP-03",
+      "section_id": "scan-scope",
+      "version": "1.0-demo"
+    }
+  ],
+  "review_status": "OWNER_REVIEWED",
+  "split": "DEVELOPMENT",
+  "support_shape": "SINGLE_SECTION"
+}

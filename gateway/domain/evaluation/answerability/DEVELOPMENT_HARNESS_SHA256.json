@@ -1,7 +1,25 @@
 {
   "aggregate_algorithm": "SORTED_RELATIVE_PATH_TAB_SHA256_LF_V1",
-  "aggregate_sha256": "53dc0b2b6d4e3a3c558832349156449bf1e99d78406b92568c161411bf287de1",
-  "file_count": 52,
+  "aggregate_sha256": "d7e41ab60c9210ef400e999cfa4ab2d0f3a9c3f710f5e303d5c032917eb45130",
+  "amendment_source_test_before_after": {
+    "gateway/domain/evaluation/answerability/answerability_contracts.py": {
+      "after": "493e58d9be1e0758213a8c889c0a3119aa7189f71bbdb3082c8bf5cd116f78b0",
+      "before": "8ab0e6f417b6c3d32a42d31aa5c05426af3fd0c7171ca4e66a9d0cc72a15b7f3"
+    },
+    "gateway/domain/tests/test_answerability_evaluator_boundary.py": {
+      "after": "d36d94a64b18f448d12d6a08d2c031eac112cca8649f49435a5b8a7182667865",
+      "before": "32ae0c07bb9efdda84d7c4ae683969c7749e32fc9e42111eda6a5c30f12b6217"
+    }
+  },
+  "file_count": 53,
+  "harness_version": "v0.1.1",
+  "historical_v0_1": {
+    "commit": "c8e73b77a9ef95e4d627766efefea3cabccf4f4a",
+    "freeze_record_sha256": "fb2fe7ed5060210f96e5d4675862924ba122d3e96464ac37a479aa1a197ebcdf",
+    "inventory_aggregate_sha256": "53dc0b2b6d4e3a3c558832349156449bf1e99d78406b92568c161411bf287de1",
+    "inventory_sha256": "0a7f87e286506d5c2ebc6bada47e38ce7bc12b194aaed012d9247e39c18eee86",
+    "tag": "answerability-dev-harness-v0.1-pre-candidates"
+  },
   "protected_public_file_sha256_unchanged": {
     "gateway/domain/engine/IMPLEMENTATION.md": "c34db7cbd48e4d9567734ea360c2d40ceaa328cfca784d0bc264e6d5af01092d",
     "gateway/domain/engine/__init__.py": "522ebcef7af0b57269d4459b65a0d8f91d18c26491743043587cfa48469b4635",
@@ -59,10 +77,11 @@
   "self_excluded": "gateway/domain/evaluation/answerability/DEVELOPMENT_HARNESS_SHA256.json",
   "sha256": {
     ".gitattributes": "9ee0c2630d1306200023643675e0aeeccb24a8b1f81e3c80594035d298f860a8",
-    "gateway/domain/evaluation/answerability/DEVELOPMENT_HARNESS_FREEZE_RECORD.md": "fb2fe7ed5060210f96e5d4675862924ba122d3e96464ac37a479aa1a197ebcdf",
+    "gateway/domain/evaluation/answerability/DEVELOPMENT_HARNESS_AMENDMENT_V0_1_1.md": "782b10d403e7a50fe53254772948e72dfb4736399b5937f49751b1263fb707d9",
+    "gateway/domain/evaluation/answerability/DEVELOPMENT_HARNESS_FREEZE_RECORD.md": "32f49b4fa50a1c97519280c24d3063b8f6f45aeb0b875c9ef5ae0bcd84c5179f",
     "gateway/domain/evaluation/answerability/DEVELOPMENT_IMPORT_RECORD.md": "de714ba49f2af8c790cbca69f5c9192696c5b6242674e6258e1340a82d1f051a",
     "gateway/domain/evaluation/answerability/DEVELOPMENT_MANIFEST.json": "cae8a072192cad67b58e7d366afa9210972d672faa2e17047f2742e75a8499c2",
-    "gateway/domain/evaluation/answerability/answerability_contracts.py": "8ab0e6f417b6c3d32a42d31aa5c05426af3fd0c7171ca4e66a9d0cc72a15b7f3",
+    "gateway/domain/evaluation/answerability/answerability_contracts.py": "493e58d9be1e0758213a8c889c0a3119aa7189f71bbdb3082c8bf5cd116f78b0",
     "gateway/domain/evaluation/answerability/answerability_scoring.py": "b2fbdd4241328172909da11aa7959570b9f0ad6e8d35ee6123d93db140e73cf2",
     "gateway/domain/evaluation/answerability/development/AQ001.json": "b01c3a7acf77374fc521a16738cc390b6498ae0d8bbc6bbd633c8b0d4d53d36f",
     "gateway/domain/evaluation/answerability/development/AQ002.json": "e2f713926c05d6515f522f0e0d37696f4ed68688c5f46158d1bbfc1d7421df73",
@@ -108,7 +127,7 @@
     "gateway/domain/evaluation/answerability/evaluate_development_gate.py": "ba67767dacb232143ab95cb536371512294e43d65aa934da6665cf5d1e9e4e5e",
     "gateway/domain/tests/_answerability_fixtures.py": "c0fcdb98647a3530b18eddc0e2502282dc77a06b24155a349b554b6f2d95d7c0",
     "gateway/domain/tests/test_answerability_development_loader.py": "ea6f09720113c2c1971a46cab3621e1515479dc34a0dbfa0165dbf8549529201",
-    "gateway/domain/tests/test_answerability_evaluator_boundary.py": "32ae0c07bb9efdda84d7c4ae683969c7749e32fc9e42111eda6a5c30f12b6217",
+    "gateway/domain/tests/test_answerability_evaluator_boundary.py": "d36d94a64b18f448d12d6a08d2c031eac112cca8649f49435a5b8a7182667865",
     "gateway/domain/tests/test_answerability_scoring.py": "2d5bfc0de5663145555be4accfcd9e1414d940ee5baafd293e8ea09c83d3e246"
   },
   "status": "CANDIDATE_AWAITING_OWNER_REVIEW"

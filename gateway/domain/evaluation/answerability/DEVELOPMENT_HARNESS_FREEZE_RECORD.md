@@ -1,10 +1,17 @@
-# Phase 2H-B1 DEVELOPMENT harness review candidate
+# Phase 2H-B1.1 DEVELOPMENT harness compatibility amendment
 
 Status: **CANDIDATE_AWAITING_OWNER_REVIEW**
 
-Prepared 2026-10-04 against protocol commit `347ce9f3ff37bd73f4750cde01562f0573a2b4ab`.
-This harness has not been declared frozen, committed or tagged. No candidate
-has been selected or evaluated on the imported benchmark.
+Harness: **v0.1.1 compatibility-amended before candidate/retrieval exposure**.
+
+Original v0.1 was prepared 2026-10-04 against protocol commit
+`347ce9f3ff37bd73f4750cde01562f0573a2b4ab` and subsequently owner-frozen at
+`c8e73b77a9ef95e4d627766efefea3cabccf4f4a` /
+`answerability-dev-harness-v0.1-pre-candidates`. That historical commit/tag is
+unchanged. This v0.1.1 amendment remains uncommitted and awaits owner review.
+See [DEVELOPMENT_HARNESS_AMENDMENT_V0_1_1.md](DEVELOPMENT_HARNESS_AMENDMENT_V0_1_1.md)
+for the correction, before/after hashes and zero real retrieval/gate exposure.
+No candidate has been selected or evaluated on the imported benchmark.
 
 ## Pinned source and custody
 
@@ -40,7 +47,12 @@ Supplied `FrozenRetrievalResult` records validate BGE model/revision, CPU,
 25 sections, 384 dimensions, normalization, normalized dot product, 0.30
 threshold, Top-10, no instruction and no rewriting. They reject duplicate
 canonical identities, invalid ranks, excessive depth, nonfinite/out-of-range
-scores, incorrect descending score order or canonical tie order. Production
+scores, incorrect descending score order or canonical tie order. Per-item
+scores use the complete cosine domain [-1, 1]; only the rank-1 score of a
+nonempty response must meet the frozen whole-response threshold 0.30.
+Lower-ranked returned evidence may be below 0.30, including negative scores,
+and is preserved unchanged. No separate top_score field exists in the B1
+input type; rank 1 supplies its unrounded response-level value. Production
 also verifies that supplied identities belong to the active 25-section corpus.
 Empty rankings are valid. No retrieval is executed by this harness. Typed
 provenance does not by itself prove that an external producer actually ran BGE;
@@ -114,7 +126,10 @@ divisor one, while macro coverage can have a fractional numerator. Eligibility
 uses integer counts, never rounded strings. Timestamps/environment details
 are excluded from score bytes. Reversed association order serializes identically.
 
-## Verification
+## Historical v0.1 verification
+
+The following 49-test result and pre-commit checks describe the historical B1
+review. Current amendment verification is recorded below.
 
 Focused unit tests: **49/49 PASS**, using Python 3.12.10 and stdlib
 `unittest`. Scoring and candidate calls use entirely synthetic questions and
@@ -149,22 +164,22 @@ These hashes describe the review candidate's current raw working-tree bytes.
 
 | File | SHA-256 of current raw bytes |
 | --- | --- |
-| `gateway/domain/evaluation/answerability/answerability_contracts.py` | `8ab0e6f417b6c3d32a42d31aa5c05426af3fd0c7171ca4e66a9d0cc72a15b7f3` |
+| `gateway/domain/evaluation/answerability/answerability_contracts.py` | `493e58d9be1e0758213a8c889c0a3119aa7189f71bbdb3082c8bf5cd116f78b0` |
 | `gateway/domain/evaluation/answerability/answerability_scoring.py` | `b2fbdd4241328172909da11aa7959570b9f0ad6e8d35ee6123d93db140e73cf2` |
 | `gateway/domain/evaluation/answerability/development_loader.py` | `be53712203cea92a956ab6d4d0b0c20f74b74c27825fadcc6e2c7079ced5b498` |
 | `gateway/domain/evaluation/answerability/evaluate_development_gate.py` | `ba67767dacb232143ab95cb536371512294e43d65aa934da6665cf5d1e9e4e5e` |
 | `gateway/domain/tests/_answerability_fixtures.py` | `c0fcdb98647a3530b18eddc0e2502282dc77a06b24155a349b554b6f2d95d7c0` |
 | `gateway/domain/tests/test_answerability_development_loader.py` | `ea6f09720113c2c1971a46cab3621e1515479dc34a0dbfa0165dbf8549529201` |
-| `gateway/domain/tests/test_answerability_evaluator_boundary.py` | `32ae0c07bb9efdda84d7c4ae683969c7749e32fc9e42111eda6a5c30f12b6217` |
+| `gateway/domain/tests/test_answerability_evaluator_boundary.py` | `d36d94a64b18f448d12d6a08d2c031eac112cca8649f49435a5b8a7182667865` |
 | `gateway/domain/tests/test_answerability_scoring.py` | `2d5bfc0de5663145555be4accfcd9e1414d940ee5baafd293e8ea09c83d3e246` |
 
-The complete 52-file byte inventory (including all questions, manifest,
-`.gitattributes`, both review records and tests) is in
+The complete 53-file byte inventory (including all questions, manifest,
+`.gitattributes`, the import/freeze/amendment records and tests) is in
 [DEVELOPMENT_HARNESS_SHA256.json](DEVELOPMENT_HARNESS_SHA256.json). The inventory
 excludes itself to avoid a circular digest; its hash is reported separately
 at completion. It also records the 52 unchanged protected public hashes.
 
-## Exact final Git review scope
+## Historical v0.1 pre-commit Git review scope (preserved)
 
 `git diff --name-only` contains only `.gitattributes`; all new B1 files are
 untracked. Full `git status --short --untracked-files=all`:
@@ -228,3 +243,22 @@ untracked. Full `git status --short --untracked-files=all`:
 Proposed commit, after owner approval: `Freeze Phase 2H development evaluator harness`.
 Proposed tag, after owner approval: `answerability-dev-harness-v0.1-pre-candidates`.
 Stop at owner review; this record does not grant candidate-run authorization.
+
+## Current v0.1.1 amendment verification
+
+Full B1 suite plus seven synthetic regressions: **56/56 PASS**. The exact
+0.8 / 0.2 reconstruction passes; top <0.30 nonempty responses fail, and empty
+responses remain valid. Dataclass fields/defaults are identical; scorer,
+evaluator and loader bytes are unchanged. Three synthetic score artifacts
+are byte-identical before/after. DEVELOPMENT custody passes with 40 unchanged
+question hashes and the same manifest/receipt. All 52 protected public
+source hashes match B1. Real DEVELOPMENT BGE queries, model initializations
+and real gate invocations remain zero; neither phase's private heldout was
+accessed. No B2 evidence exists.
+
+The exact five-file amendment scope, changed source/test before/after hashes
+and regression names are in the amendment record. The index is empty.
+Proposed commit: `Correct frozen BGE evidence validation`.
+Proposed new tag: `answerability-dev-harness-v0.1.1-pre-candidates`.
+The original v0.1 tag must remain at its historical commit. Stop for owner
+review; this amendment does not authorize a B2 run.

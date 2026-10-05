@@ -1,6 +1,7 @@
 from contextlib import redirect_stderr
 from dataclasses import FrozenInstanceError, asdict, replace
 import io
+import math
 import subprocess
 import sys
 import unittest
@@ -63,9 +64,61 @@ class EvaluatorBoundaryTests(unittest.TestCase):
                 FrozenRetrievalResult(items, BUNDLE)
         for updates in ({"rank": True}, {"rank": 0}, {"policy_id": "bad"}, {"version": " "},
                         {"section_id": "../bad"}, {"cosine_score": float("nan")},
-                        {"cosine_score": 0.29}, {"cosine_score": float("inf")}, {"cosine_score": True}):
+                        {"cosine_score": float("inf")}, {"cosine_score": True}):
             with self.assertRaises(ContractError):
                 replace(ranked[0], **updates)
+
+    def test_regression_top_0_8_tail_0_2_reconstructs_gate_input(self):
+        ranked = tuple(replace(e, cosine_score=score) for e, score in zip(evidence(2), (0.8, 0.2)))
+        response = FrozenRetrievalResult(ranked, BUNDLE)
+        value = make_gate_input("Original synthetic compatibility question", response)
+        self.assertEqual(tuple(e.cosine_score for e in value.evidence), (0.8, 0.2))
+        self.assertIs(value.evidence, ranked)
+        self.assertEqual(set(asdict(value)), {"question", "evidence", "active_bundle"})
+
+    def test_multiple_below_threshold_tails_include_negative_cosine(self):
+        scores = (0.75, 0.42, 0.29, 0.10, -0.05)
+        ranked = tuple(replace(e, cosine_score=score) for e, score in zip(evidence(5), scores))
+        value = make_gate_input("Synthetic multi-tail question", FrozenRetrievalResult(ranked, BUNDLE))
+        self.assertEqual(tuple(e.cosine_score for e in value.evidence), scores)
+
+    def test_nonempty_top_below_threshold_rejected_without_rounding(self):
+        # 0.29 is a legitimate item score, but cannot head a nonempty frozen response.
+        for score in (0.29, math.nextafter(0.30, -math.inf)):
+            ranked = (replace(evidence(1)[0], cosine_score=score),)
+            with self.assertRaisesRegex(ContractError, "top-score threshold"):
+                FrozenRetrievalResult(ranked, BUNDLE)
+            with self.assertRaisesRegex(ContractError, "top-score threshold"):
+                GateInput("Synthetic question", ranked, BUNDLE)
+
+    def test_top_equal_threshold_and_full_cosine_domain_accepted(self):
+        for scores in ((0.30, -1.0), (1.0, 0.0, -1.0)):
+            ranked = tuple(replace(e, cosine_score=score) for e, score in zip(evidence(len(scores)), scores))
+            self.assertEqual(FrozenRetrievalResult(ranked, BUNDLE).evidence, ranked)
+
+    def test_empty_frozen_abstention_reconstructs_gate_input(self):
+        response = FrozenRetrievalResult((), BUNDLE)
+        value = make_gate_input("Synthetic empty response", response)
+        self.assertEqual(value.evidence, ())
+        self.assertEqual(value.active_bundle, BUNDLE)
+
+    def test_complete_invalid_cosine_domain_rejected(self):
+        for score in (math.nan, math.inf, -math.inf, math.nextafter(-1.0, -math.inf),
+                      math.nextafter(1.0, math.inf), -1.01, 1.01, "0.2", True):
+            with self.subTest(score=score), self.assertRaises(ContractError):
+                replace(evidence(1)[0], cosine_score=score)
+
+    def test_below_threshold_tails_preserve_ranking_guards(self):
+        ranked = tuple(replace(e, cosine_score=score) for e, score in zip(evidence(3), (0.8, 0.2, 0.1)))
+        for invalid in ((ranked[0], replace(ranked[1], cosine_score=0.1), replace(ranked[2], cosine_score=0.2)),
+                        (ranked[0], replace(ranked[1], rank=3)),
+                        (ranked[0], replace(ranked[0], rank=2, cosine_score=0.2))):
+            with self.assertRaises(ContractError):
+                FrozenRetrievalResult(invalid, BUNDLE)
+        ties = (ranked[0], ranked[1], replace(ranked[2], cosine_score=0.2))
+        FrozenRetrievalResult(ties, BUNDLE)
+        with self.assertRaises(ContractError):
+            FrozenRetrievalResult((ties[0], replace(ties[2], rank=2), replace(ties[1], rank=3)), BUNDLE)
 
     def test_descending_scores_and_canonical_ties(self):
         ranked = evidence(2)

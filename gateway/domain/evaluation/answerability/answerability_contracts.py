@@ -65,7 +65,7 @@ class RankedEvidence:
         for field in (self.title, self.section_title, self.body):
             text(field, "readable evidence")
         require(type(self.cosine_score) in (int, float) and math.isfinite(self.cosine_score)
-                and MIN_COSINE <= self.cosine_score <= 1.0, "invalid frozen cosine score")
+                and -1.0 <= self.cosine_score <= 1.0, "invalid frozen cosine score")
 
     @property
     def identity(self):
@@ -111,6 +111,9 @@ def validate_evidence(evidence, bundle):
     require(all(e.version == bundle.bundle_version for e in evidence), "mixed evidence versions")
     keys = [(-e.cosine_score, e.identity) for e in evidence]
     require(keys == sorted(keys), "frozen descending score/canonical tie order violated")
+    # Frozen BGE thresholds the whole response by its top score, never each tail item.
+    require(not evidence or evidence[0].cosine_score >= MIN_COSINE,
+            "nonempty frozen response below top-score threshold")
 
 
 @dataclass(frozen=True, slots=True)

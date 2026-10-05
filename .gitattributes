@@ -51,3 +51,10 @@ gateway/domain/evaluation/answerability/development/AQ037.json -text
 gateway/domain/evaluation/answerability/development/AQ038.json -text
 gateway/domain/evaluation/answerability/development/AQ039.json -text
 gateway/domain/evaluation/answerability/development/AQ040.json -text
+
+# Preserve the exact Phase 2H-B2 DEVELOPMENT evidence bytes.
+/artifacts/answerability_dev_bge_evidence_v0/DEVELOPMENT_BGE_EVIDENCE.json -text
+/artifacts/answerability_dev_bge_evidence_v0/DEVELOPMENT_RETRIEVAL_METRICS.json -text
+/artifacts/answerability_dev_bge_evidence_v0/RUN_MANIFEST.json -text
+/artifacts/answerability_dev_bge_evidence_v0/EVIDENCE_FREEZE_RECORD.md -text
+/artifacts/answerability_dev_bge_evidence_v0/ATTEMPT_JOURNAL.jsonl -text

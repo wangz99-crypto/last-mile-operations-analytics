@@ -1,0 +1,89 @@
+{
+  "allow_retrieval": {
+    "hit_at_1": {
+      "denominator": 20,
+      "numerator": 14,
+      "numerator_divisor": 1,
+      "rate": "0.700000000000"
+    },
+    "hit_at_3": {
+      "denominator": 20,
+      "numerator": 19,
+      "numerator_divisor": 1,
+      "rate": "0.950000000000"
+    },
+    "mrr_at_10": {
+      "denominator": 20,
+      "numerator": 199,
+      "numerator_divisor": 12,
+      "rate": "0.829166666667"
+    },
+    "multi_required_full_at_10": {
+      "denominator": 6,
+      "numerator": 6,
+      "numerator_divisor": 1,
+      "rate": "1.000000000000"
+    },
+    "multi_required_full_at_3": {
+      "denominator": 6,
+      "numerator": 3,
+      "numerator_divisor": 1,
+      "rate": "0.500000000000"
+    },
+    "multi_required_full_at_5": {
+      "denominator": 6,
+      "numerator": 4,
+      "numerator_divisor": 1,
+      "rate": "0.666666666667"
+    },
+    "required_macro_coverage_at_10": {
+      "denominator": 20,
+      "numerator": 20,
+      "numerator_divisor": 1,
+      "rate": "1.000000000000"
+    },
+    "required_macro_coverage_at_3": {
+      "denominator": 20,
+      "numerator": 18,
+      "numerator_divisor": 1,
+      "rate": "0.900000000000"
+    },
+    "required_macro_coverage_at_5": {
+      "denominator": 20,
+      "numerator": 19,
+      "numerator_divisor": 1,
+      "rate": "0.950000000000"
+    },
+    "required_micro_coverage_at_10": {
+      "denominator": 26,
+      "numerator": 26,
+      "numerator_divisor": 1,
+      "rate": "1.000000000000"
+    },
+    "required_micro_coverage_at_3": {
+      "denominator": 26,
+      "numerator": 22,
+      "numerator_divisor": 1,
+      "rate": "0.846153846154"
+    },
+    "required_micro_coverage_at_5": {
+      "denominator": 26,
+      "numerator": 24,
+      "numerator_divisor": 1,
+      "rate": "0.923076923077"
+    }
+  },
+  "gold_abstain_count": 20,
+  "gold_abstain_response_diagnostics": {
+    "question_count": 20,
+    "retriever_abstention_count": 0,
+    "returned_evidence_response_count": 20
+  },
+  "gold_allow_count": 20,
+  "label": "RETRIEVAL DIAGNOSTICS ONLY; NOT ANSWERABILITY-GATE ACCURACY",
+  "overall_response_diagnostics": {
+    "question_count": 40,
+    "retriever_abstention_count": 0,
+    "returned_evidence_response_count": 40
+  }
+}

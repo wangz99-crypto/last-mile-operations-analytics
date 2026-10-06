@@ -1,0 +1,80 @@
+{
+  "candidate_id": "SEMANTIC_MATERIAL_SUPPORT_V1",
+  "codex_model_used_as_experiment_model": false,
+  "configuration_schema_sha256": "b6be8e1a7cd723d0a50c439257706caadb19be3236020b6e91079b6ce9f04d35",
+  "declaration_evidence": [
+    {
+      "finding": "Mutable latest service image and Qwen repository model name; no --revision or immutable model snapshot.",
+      "path": "docker-compose.yml"
+    },
+    {
+      "finding": "backend.engine=vllm and backend.model=Qwen/Qwen2.5-1.5B-Instruct; no immutable model revision.",
+      "path": "gateway/configs/server.yaml"
+    },
+    {
+      "finding": "Same unpinned model name; example limits differ from server configuration.",
+      "path": "gateway/configs/server.example.yaml"
+    },
+    {
+      "finding": "MODEL and VLLM_BASE_URL environment declarations provide no immutable revision.",
+      "path": "gateway/configs/render.yaml"
+    },
+    {
+      "finding": "Application settings permit endpoint/default inheritance and use temperature 0.2; not an experiment-specific frozen semantic configuration.",
+      "path": "gateway/src/app.py"
+    },
+    {
+      "finding": "httpx==0.27.2 pins the HTTP client, not model weights or served model identity.",
+      "path": "gateway/requirements.txt"
+    },
+    {
+      "finding": "A8 leaves provider/runtime selection deferred.",
+      "path": "PROJECT_SPEC.md"
+    }
+  ],
+  "execution_configuration": null,
+  "external_calls": 0,
+  "inspected_source_sha256": {
+    "CLAUDE.md": "5f4ea66db65551774e4132345943a5be53c7b65dcdf4d3604e43ac0bef24b6c8",
+    "PROJECT_SPEC.md": "09f5f595b90840e577beb6af123b39d4b1827e7977a19c19d3023fd8effcd767",
+    "README.md": "0f58aef8f614a32522b92d16d027046c56f6e1e02370e3b07d2d8c9b191c413a",
+    "docker-compose.yml": "640c02eac9ea78b854b4000c0d22b944a15e69fb68090a96c69b892504401d80",
+    "gateway/configs/render.yaml": "91adad5d00ada98e9d6e701980a2780798ee97e33eeea79ba4c73c962f438a05",
+    "gateway/configs/server.example.yaml": "58a1ddcd83ea3780830bc91060059660b4af6d33151a80f2ab4b24ff5af622be",
+    "gateway/configs/server.yaml": "0e73d6c2cfd147b974e642706f4c524a0fc6462f4d8f0c0d9258f87978f11f3c",
+    "gateway/requirements.txt": "2effb59abc3e41477bb5ee553346f5b39eeb1eab87e8183dc67b127e73d89ab3",
+    "gateway/src/app.py": "5f1020d445cf85c652a71c7eed62253b511aeef82d902f7eb08241e841337066"
+  },
+  "model_status": "MODEL_SELECTION_REQUIRED",
+  "no_default_model_substitution": true,
+  "observed_application_model_identifier": "Qwen/Qwen2.5-1.5B-Instruct",
+  "observed_application_provider": "vLLM, local OpenAI-compatible chat-completions server",
+  "observed_application_settings_not_adopted": {
+    "example_max_output_tokens_default": 128,
+    "example_timeout_seconds": 30,
+    "seed": null,
+    "semantic_raw_output_schema": null,
+    "server_max_output_tokens_default": 256,
+    "server_timeout_seconds": 60,
+    "temperature": 0.2,
+    "top_p": null
+  },
+  "observed_client": {
+    "declared_version": "0.27.2",
+    "endpoint_suffix": "/v1/chat/completions",
+    "library": "httpx"
+  },
+  "observed_deployment_image": "vllm/vllm-openai:latest",
+  "observed_immutable_model_revision_or_snapshot": null,
+  "provider_adapter_implemented": false,
+  "qualification_method": "Scoped static repository declarations only; no provider/API/model discovery call; no environment secrets inspected.",
+  "real_development_semantic_calls": 0,
+  "real_semantic_model_calls": 0,
+  "required_next_action": "Separate owner-reviewed exact provider/model immutability qualification, explicit configuration and authorized adapter implementation before any semantic DEVELOPMENT inference.",
+  "retrieval_calls": 0,
+  "schema_version": "semantic-model-qualification-v1",
+  "scientifically_executable": false,
+  "selected_model_identifier": null,
+  "selected_model_revision": null,
+  "selected_provider": null
+}

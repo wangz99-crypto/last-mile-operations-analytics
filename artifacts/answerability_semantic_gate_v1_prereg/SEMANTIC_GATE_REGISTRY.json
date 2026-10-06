@@ -1,0 +1,589 @@
+{
+  "additional_retrieval": "FORBIDDEN",
+  "b2_commit": "e2c363f150f5494b85bcf4de2e7800c57727d92a",
+  "b2_evidence_sha256": "1ba747fe7a6eaa97610d05fd3690048aa062723f87585e38725dd149b6a57a52",
+  "b2_evidence_source": "artifacts/answerability_dev_bge_evidence_v0/DEVELOPMENT_BGE_EVIDENCE.json",
+  "b2_tag": "answerability-dev-evidence-v0.1-pre-candidates",
+  "base_commit": "c6c8ed26ec439f6276de71f6ee121c7ddc7f1d8b",
+  "base_tag": "answerability-dev-baselines-v0.1-pre-semantic",
+  "benchmark_specific_phrase_rules": false,
+  "candidate_errors": "propagate; no automatic ABSTAIN; frozen B1.1 evaluator failures and denominators unchanged",
+  "candidate_id": "SEMANTIC_MATERIAL_SUPPORT_V1",
+  "candidate_selected": false,
+  "candidate_source_path": "gateway/domain/evaluation/answerability/gates/semantic_gate.py",
+  "candidate_source_sha256": "c70218e37b4304b6424e830b7f8698f11c4385ebd214c4d2fce5f8f805055d71",
+  "candidate_status": "PRE_REGISTERED_NOT_EVALUATED",
+  "configuration_schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+      "api_client": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "version": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "version"
+        ],
+        "type": "object"
+      },
+      "immutable_model_reference": {
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "enum": [
+              "IMMUTABLE_MODEL_ID",
+              "REVISION_SNAPSHOT"
+            ]
+          },
+          "provenance": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "value": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "value",
+          "provenance"
+        ],
+        "type": "object"
+      },
+      "max_output_tokens": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "model_identifier": {
+        "minLength": 1,
+        "pattern": "\\S",
+        "type": "string"
+      },
+      "model_revision": {
+        "additionalProperties": false,
+        "oneOf": [
+          {
+            "properties": {
+              "supported": {
+                "const": true
+              },
+              "unsupported_reason": {
+                "type": "null"
+              },
+              "value": {
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              }
+            }
+          },
+          {
+            "properties": {
+              "supported": {
+                "const": false
+              },
+              "unsupported_reason": {
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        ],
+        "properties": {
+          "supported": {
+            "type": "boolean"
+          },
+          "unsupported_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "supported",
+          "value",
+          "unsupported_reason"
+        ],
+        "type": "object"
+      },
+      "provider": {
+        "minLength": 1,
+        "pattern": "\\S",
+        "type": "string"
+      },
+      "response_format": {
+        "additionalProperties": false,
+        "properties": {
+          "schema_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "type": {
+            "const": "json_schema"
+          }
+        },
+        "required": [
+          "type",
+          "schema_sha256"
+        ],
+        "type": "object"
+      },
+      "retry_policy": {
+        "additionalProperties": false,
+        "properties": {
+          "infrastructure_retries": {
+            "const": 0
+          },
+          "infrastructure_retry_authorization": {
+            "const": "NOT_AUTHORIZED"
+          },
+          "quality_retries": {
+            "const": 0
+          }
+        },
+        "required": [
+          "quality_retries",
+          "infrastructure_retries",
+          "infrastructure_retry_authorization"
+        ],
+        "type": "object"
+      },
+      "seed": {
+        "additionalProperties": false,
+        "oneOf": [
+          {
+            "properties": {
+              "supported": {
+                "const": true
+              },
+              "unsupported_reason": {
+                "type": "null"
+              },
+              "value": {
+                "type": "integer"
+              }
+            }
+          },
+          {
+            "properties": {
+              "supported": {
+                "const": false
+              },
+              "unsupported_reason": {
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        ],
+        "properties": {
+          "supported": {
+            "type": "boolean"
+          },
+          "unsupported_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "supported",
+          "value",
+          "unsupported_reason"
+        ],
+        "type": "object"
+      },
+      "temperature": {
+        "minimum": 0,
+        "type": "number"
+      },
+      "timeout_seconds": {
+        "exclusiveMinimum": 0,
+        "type": "number"
+      },
+      "top_p": {
+        "additionalProperties": false,
+        "oneOf": [
+          {
+            "properties": {
+              "supported": {
+                "const": true
+              },
+              "unsupported_reason": {
+                "type": "null"
+              },
+              "value": {
+                "exclusiveMinimum": 0,
+                "maximum": 1,
+                "type": "number"
+              }
+            }
+          },
+          {
+            "properties": {
+              "supported": {
+                "const": false
+              },
+              "unsupported_reason": {
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        ],
+        "properties": {
+          "supported": {
+            "type": "boolean"
+          },
+          "unsupported_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0,
+                "maximum": 1,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "supported",
+          "value",
+          "unsupported_reason"
+        ],
+        "type": "object"
+      }
+    },
+    "required": [
+      "provider",
+      "model_identifier",
+      "model_revision",
+      "immutable_model_reference",
+      "api_client",
+      "temperature",
+      "top_p",
+      "seed",
+      "max_output_tokens",
+      "response_format",
+      "timeout_seconds",
+      "retry_policy"
+    ],
+    "type": "object"
+  },
+  "configuration_schema_sha256": "b6be8e1a7cd723d0a50c439257706caadb19be3236020b6e91079b6ce9f04d35",
+  "contract_source_sha256": "493e58d9be1e0758213a8c889c0a3119aa7189f71bbdb3082c8bf5cd116f78b0",
+  "decision_consistency": {
+    "ABSTAIN_INSUFFICIENT": "INSUFFICIENT_POLICY_SUPPORT; RESOLVED; at least one UNSUPPORTED and no CONTEXT_UNRESOLVED ask",
+    "ABSTAIN_UNRESOLVED": "UNRESOLVED_POLICY_CONTEXT; context UNRESOLVED or at least one CONTEXT_UNRESOLVED ask",
+    "ALLOW": "SUPPORTED_BY_ACTIVE_POLICY; RESOLVED; every material ask SUPPORTED with at least one supplied citation"
+  },
+  "development_receipt": "9913c3028119f708a19ad762efda5f86b80b1f78c624eddbd632d6129e5b802d",
+  "eligibility": {
+    "allow_recall": {
+      "denominator": 20,
+      "minimum_numerator": 18
+    },
+    "correct_abstention": {
+      "denominator": 20,
+      "minimum_numerator": 18
+    },
+    "secondary_override": false,
+    "structural_validity_required": true
+  },
+  "evidence_depth": "FULL_FROZEN_B2_RESPONSE_UP_TO_10",
+  "evidence_order": "unchanged frozen rank order; no filtering or truncation",
+  "execution_configuration": null,
+  "external_calls": 0,
+  "external_knowledge": "FORBIDDEN",
+  "infrastructure_retry": "NOT_AUTHORIZED; zero retries; later authorization must preserve attempts and unchanged prompt/model/config",
+  "input_contract": "frozen B1.1 GateInput",
+  "material_ask_completeness": "REQUIRED",
+  "model_qualification_sha256": "b694a0602add488392415630d2a5f11a612dbd3f348961e0943026b210aac80a",
+  "model_status": "MODEL_SELECTION_REQUIRED",
+  "new_score_threshold": null,
+  "output_contract": "frozen B1.1 GateOutput",
+  "parser_schema_receipt_format": "parser_source_sha256 + TAB + hash + LF + raw_schema_sha256 + TAB + hash + LF",
+  "parser_schema_sha256": "0ef12eacd0def66259414afdfb2c1a588984848a2a95c33cc21a4053d13c58c7",
+  "parser_source_hash_scope": "entire semantic_gate.py including parser helpers; conservative binding",
+  "parser_source_sha256": "c70218e37b4304b6424e830b7f8698f11c4385ebd214c4d2fce5f8f805055d71",
+  "phase_2g_private_heldout_accessed": false,
+  "phase_2h_held_out_accessed": false,
+  "policy_context_resolution": "REQUIRED",
+  "prompt_composition": {
+    "messages": [
+      "system",
+      "user"
+    ],
+    "scores": "unaltered JSON numeric values, no rounding",
+    "section_reference_format": "policy_id@version#section_id",
+    "system": "exact SEMANTIC_PROMPT.txt",
+    "user_serialization": "UTF-8; sort_keys=true; indent=2; ensure_ascii=false; allow_nan=false; final LF",
+    "user_top_level_keys": [
+      "active_bundle",
+      "evidence",
+      "question"
+    ]
+  },
+  "prompt_sha256": "09126ca1ca4cff86f634b6297f64c436863acac7a73a588de1bd249dca3b62cc",
+  "prompt_variant_count": 1,
+  "protocol_sha256": "c410059778514feb89a73497b1b3956ba549a86f8bc5238f964acbaa79021ec2",
+  "quality_retry": "FORBIDDEN",
+  "raw_assessment_schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "oneOf": [
+      {
+        "properties": {
+          "decision": {
+            "const": "ALLOW"
+          },
+          "material_asks": {
+            "items": {
+              "properties": {
+                "support_status": {
+                  "const": "SUPPORTED"
+                }
+              }
+            }
+          },
+          "policy_context_status": {
+            "const": "RESOLVED"
+          },
+          "reason_code": {
+            "const": "SUPPORTED_BY_ACTIVE_POLICY"
+          }
+        }
+      },
+      {
+        "properties": {
+          "decision": {
+            "const": "ABSTAIN"
+          },
+          "material_asks": {
+            "contains": {
+              "properties": {
+                "support_status": {
+                  "const": "UNSUPPORTED"
+                }
+              }
+            },
+            "items": {
+              "properties": {
+                "support_status": {
+                  "enum": [
+                    "SUPPORTED",
+                    "UNSUPPORTED"
+                  ]
+                }
+              }
+            }
+          },
+          "policy_context_status": {
+            "const": "RESOLVED"
+          },
+          "reason_code": {
+            "const": "INSUFFICIENT_POLICY_SUPPORT"
+          }
+        }
+      },
+      {
+        "anyOf": [
+          {
+            "properties": {
+              "policy_context_status": {
+                "const": "UNRESOLVED"
+              }
+            }
+          },
+          {
+            "properties": {
+              "material_asks": {
+                "contains": {
+                  "properties": {
+                    "support_status": {
+                      "const": "CONTEXT_UNRESOLVED"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "decision": {
+            "const": "ABSTAIN"
+          },
+          "reason_code": {
+            "const": "UNRESOLVED_POLICY_CONTEXT"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "decision": {
+        "enum": [
+          "ALLOW",
+          "ABSTAIN"
+        ]
+      },
+      "material_asks": {
+        "items": {
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "supporting_section_ids": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "ask": {
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "support_status": {
+              "enum": [
+                "SUPPORTED",
+                "UNSUPPORTED",
+                "CONTEXT_UNRESOLVED"
+              ]
+            },
+            "supporting_section_ids": {
+              "items": {
+                "pattern": "^SOP-[0-9]{2}@[A-Za-z0-9][A-Za-z0-9._-]*#[a-z][a-z0-9-]*$",
+                "type": "string"
+              },
+              "type": "array",
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "ask",
+            "support_status",
+            "supporting_section_ids"
+          ],
+          "type": "object"
+        },
+        "minItems": 1,
+        "type": "array"
+      },
+      "policy_context_status": {
+        "enum": [
+          "RESOLVED",
+          "UNRESOLVED"
+        ]
+      },
+      "reason_code": {
+        "enum": [
+          "SUPPORTED_BY_ACTIVE_POLICY",
+          "INSUFFICIENT_POLICY_SUPPORT",
+          "UNRESOLVED_POLICY_CONTEXT"
+        ]
+      }
+    },
+    "required": [
+      "material_asks",
+      "policy_context_status",
+      "decision",
+      "reason_code"
+    ],
+    "type": "object"
+  },
+  "raw_assessment_schema_sha256": "03cb63e32303549e6cba16f5215680d95e887a18cd43304ecd409d7d1624b72c",
+  "real_development_semantic_calls": 0,
+  "real_semantic_model_calls": 0,
+  "retrieval_calls": 0,
+  "round1_failure_question_contents_used": false,
+  "round1_frozen_artifact_sha256": {
+    "BASELINE_REGISTRY.json": "9fa84e37ab4d990aef8da3588f5ea590d6b43c648b7f2b19b861ac9b7e8c5117",
+    "BASELINE_REPORT.md": "c7f29028c17db7c01d6890808dfec56f2aac6190deb8232572e97cadb6f27266",
+    "BASELINE_RESULTS.json": "4e75176d500b1a67ecc4313cb2791d6d9678ecc9f38c86c98a0c9fc8a0d77391",
+    "BASELINE_REVIEW_RECORD.md": "d522f278c0aed1996f54896b7f857db1e744bc35e70ae69b08a0bb3b177a7105",
+    "EVALUATION_JOURNAL.jsonl": "009aa2bf29aa2afbcd396acb58d4d71d4028848b3a7f17e27e85ca2eabc6e3b6",
+    "RUN_MANIFEST.json": "244f599013e472bfb9b966e14d9b5b71f7ebe4f2db096cfc5338091701fd9610"
+  },
+  "schema_version": "semantic-gate-preregistration-v1",
+  "scientifically_executable": false,
+  "scorer_source_sha256": "b2fbdd4241328172909da11aa7959570b9f0ad6e8d35ee6123d93db140e73cf2",
+  "synthetic_test_result": {
+    "frozen_synthetic_scorer_boundary_tests": 39,
+    "network_blocked": true,
+    "passed": 84,
+    "provider_model_retrieval_imports_blocked": true,
+    "real_benchmark_and_round1_payload_access_blocked": true,
+    "semantic_tests": 45,
+    "total": 84
+  },
+  "synthetic_test_source_path": "gateway/domain/tests/test_answerability_semantic_gate.py",
+  "synthetic_test_source_sha256": "a22dce4baebf0581f2e710e9bd756d3e0760506f163f2aaa4b271b268b09dd0b"
+}

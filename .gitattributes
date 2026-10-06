@@ -66,3 +66,10 @@ gateway/domain/evaluation/answerability/development/AQ040.json -text
 /artifacts/answerability_dev_gate_baselines_v0/RUN_MANIFEST.json -text
 /artifacts/answerability_dev_gate_baselines_v0/EVALUATION_JOURNAL.jsonl -text
 /artifacts/answerability_dev_gate_baselines_v0/BASELINE_REVIEW_RECORD.md -text
+
+# Preserve only the exact semantic preregistration artifacts.
+/artifacts/answerability_semantic_gate_v1_prereg/SEMANTIC_GATE_PROTOCOL.md -text
+/artifacts/answerability_semantic_gate_v1_prereg/SEMANTIC_GATE_REGISTRY.json -text
+/artifacts/answerability_semantic_gate_v1_prereg/SEMANTIC_PROMPT.txt -text
+/artifacts/answerability_semantic_gate_v1_prereg/MODEL_QUALIFICATION.json -text
+/artifacts/answerability_semantic_gate_v1_prereg/PREREGISTRATION_RECORD.md -text

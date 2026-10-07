@@ -1,0 +1,30 @@
+{
+  "cache_observation": {
+    "exact_path": "C:/Users/zhewa/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct",
+    "exists": false,
+    "scope": "Only this exact default repository cache path checked; no cache overrides declared; not a global cache search"
+  },
+  "candidate_id": "SEMANTIC_MATERIAL_SUPPORT_V1",
+  "declared_context_window": null,
+  "download_count": 0,
+  "download_requirement_note": "No exact snapshot found in the checked location. Acquisition was not attempted because the required execution environment was unavailable.",
+  "identity_status": "NOT_RESOLVED_BEFORE_RUNTIME_STOP",
+  "immutable_revision": null,
+  "local_snapshot_identity": null,
+  "model_architecture": null,
+  "model_file_hashes": {},
+  "model_file_inventory": [],
+  "network_access_occurred": false,
+  "network_download_required": null,
+  "other_models_considered": [],
+  "provenance": {
+    "method": "Local configuration and environment inspection only",
+    "repository_declaration": "docker-compose.yml",
+    "repository_declaration_sha256": "640c02eac9ea78b854b4000c0d22b944a15e69fb68090a96c69b892504401d80"
+  },
+  "qualification_outcome": "QUALIFICATION_BLOCKED",
+  "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+  "schema_version": "semantic-model-qualification-blocked-v1",
+  "selection_basis": "Existing project declaration only; no benchmark performance used",
+  "tokenizer_identity": null
+}

@@ -1,0 +1,74 @@
+{
+  "architecture": "AMD64",
+  "blocking_reason": "No executable or explicitly configured vLLM runtime was established. Docker and WSL were unavailable; neither inspected Python environment contained vLLM. The declared NVIDIA container deployment was not available on the observed host.",
+  "checks": {
+    "docker_desktop_standard_executable_exists": false,
+    "docker_host_environment_declared": false,
+    "docker_on_path": false,
+    "docker_standard_executable_exists": false,
+    "huggingface_cache_environment_overrides_declared": false,
+    "nvidia_smi_on_path": false,
+    "nvidia_smi_standard_executable_exists": false,
+    "render_configuration_endpoint": "Template placeholder only; not an executable service declaration",
+    "vllm_base_url_environment_declared": false,
+    "wsl_result": "The Windows Subsystem for Linux is not installed."
+  },
+  "container_image_digest": null,
+  "context_adequacy": "NOT_ASSESSED_RUNTIME_BLOCKED",
+  "cpu": {
+    "cores": 4,
+    "logical_processors": 8,
+    "name": "AMD Ryzen AI 5 430 w/ Radeon 840M"
+  },
+  "declared_max_model_len": 1536,
+  "declared_runtime_type": "vLLM container with NVIDIA GPU reservation",
+  "dependencies_installed": false,
+  "gpu": {
+    "driver_version": "32.0.22068.0",
+    "name": "AMD Radeon(TM) 840M Graphics",
+    "source": "Win32_VideoController"
+  },
+  "historical_image_repository": "vllm/vllm-openai",
+  "historical_image_tag": "latest",
+  "network_access_occurred": false,
+  "observed_local_environments": [
+    {
+      "cuda_runtime": null,
+      "httpx": null,
+      "huggingface_hub": null,
+      "interpreter": "C:/Users/zhewa/AppData/Local/Programs/Python/Python312/python.exe",
+      "purpose": "Metadata inventory only; not selected for inference",
+      "python": "3.12.10",
+      "torch": null,
+      "transformers": null,
+      "vllm": null
+    },
+    {
+      "cuda_runtime": null,
+      "httpx": null,
+      "huggingface_hub": "0.36.2",
+      "interpreter": "C:/Users/zhewa/.codex/visualizations/2026/09/27/01a0e47a-382f-7503-9548-ffe88a07636a/phase2d-venv/Scripts/python.exe",
+      "purpose": "Existing guarded synthetic unit tests only; not selected for semantic inference",
+      "python": "3.12.10",
+      "torch": "2.14.0",
+      "transformers": "4.57.6",
+      "vllm": null
+    }
+  ],
+  "os_platform": "Windows-11-10.0.26200-SP0",
+  "provider_transport": {
+    "declared_provider": "local/self-hosted vLLM",
+    "declared_transport": "OpenAI-compatible POST /v1/chat/completions",
+    "endpoint_contacted": false,
+    "qualified": false,
+    "qualified_client_library": null
+  },
+  "qualification_outcome": "QUALIFICATION_BLOCKED",
+  "reproducible_inference_dependency_receipt_available": false,
+  "runtime_identity_status": "UNAVAILABLE",
+  "runtime_packages_imported_for_inventory": false,
+  "runtime_type": null,
+  "schema_version": "semantic-runtime-qualification-blocked-v1",
+  "scientific_runtime_identity": null,
+  "scope_limitation": "Records the declared repository runtime and explicitly inspected host paths/environments; does not claim all possible external or future environments are unavailable."
+}

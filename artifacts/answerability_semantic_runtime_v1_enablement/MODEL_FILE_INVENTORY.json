@@ -1,0 +1,114 @@
+{
+  "alternate_model_requests": 0,
+  "completed_snapshot_downloads": 1,
+  "earlier_network_actions": [
+    {
+      "actions": [
+        {
+          "host": "huggingface.co",
+          "method": "GET",
+          "requests": 2
+        },
+        {
+          "host": "huggingface.co",
+          "method": "HEAD",
+          "requests": 4
+        }
+      ],
+      "event_sequence": 10
+    },
+    {
+      "actions": [
+        {
+          "host": "huggingface.co",
+          "method": "GET",
+          "requests": 5
+        },
+        {
+          "host": "huggingface.co",
+          "method": "HEAD",
+          "requests": 9
+        }
+      ],
+      "event_sequence": 13
+    }
+  ],
+  "file_count": 10,
+  "files": [
+    {
+      "byte_size": 1519,
+      "relative_path": ".gitattributes",
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "byte_size": 660,
+      "relative_path": "config.json",
+      "sha256": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670"
+    },
+    {
+      "byte_size": 242,
+      "relative_path": "generation_config.json",
+      "sha256": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6"
+    },
+    {
+      "byte_size": 11343,
+      "relative_path": "LICENSE",
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    {
+      "byte_size": 1671839,
+      "relative_path": "merges.txt",
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+    },
+    {
+      "byte_size": 3087467144,
+      "relative_path": "model.safetensors",
+      "sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+    },
+    {
+      "byte_size": 4917,
+      "relative_path": "README.md",
+      "sha256": "2e1bcd8bd964728a820be709fa0f7b9dd54817a94fd2254c535df70c5e67fada"
+    },
+    {
+      "byte_size": 7031645,
+      "relative_path": "tokenizer.json",
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    {
+      "byte_size": 7305,
+      "relative_path": "tokenizer_config.json",
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    {
+      "byte_size": 2776833,
+      "relative_path": "vocab.json",
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ],
+  "http_count_scope": "First operation Session.request, subsequent operations Session.send; includes diagnostic HEAD, excludes lower adapter retries. High-level counts, not a uniform wire packet count.",
+  "network_actions_serial_download": [
+    {
+      "host": "huggingface.co",
+      "method": "GET",
+      "requests": 7
+    },
+    {
+      "host": "huggingface.co",
+      "method": "HEAD",
+      "requests": 13
+    },
+    {
+      "host": "us.aws.cdn.hf.co",
+      "method": "GET",
+      "requests": 1
+    }
+  ],
+  "remote_lfs_and_git_blob_identity_verified": true,
+  "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "revision_resolution_count": 1,
+  "snapshot_download_operations": 3,
+  "snapshot_path": "C:/Users/zhewa/.virtualenvs/llm-rag-semantic-qwen25-1p5b/hf-cache\\models--Qwen--Qwen2.5-1.5B-Instruct\\snapshots\\989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "total_bytes": 3098973447
+}

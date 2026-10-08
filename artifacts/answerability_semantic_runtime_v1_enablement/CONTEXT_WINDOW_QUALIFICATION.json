@@ -1,0 +1,127 @@
+{
+  "additional_model_loads": 0,
+  "additional_tokenizer_loads_for_this_check": 1,
+  "chat_template_receipt_sha256": "a3922fabdfd4118b9ee974539c9bb2ad57447984dad3711cf0375058822e11c2",
+  "corpus_section_count": 25,
+  "declared_model_context_limit": 32768,
+  "effective_context_limit": 32768,
+  "evidence_selection": "Ten largest serialized public section payloads by token length, tie by canonical identity; size-only corpus inspection, no query retrieval",
+  "input_token_ids_sha256": "f0a38461cf808197b367f81c2c2495bcc50d043f6e1ae3d266867349e6454dee",
+  "maximum_tested_synthetic_input_tokens": 9405,
+  "messages_sha256": "5812bee7d6e3e446c23def91e42537ed10d3f62c71cf5d27740ff90a25da75d0",
+  "method": "Tokenizer-only synthetic stress; no generation or model forward pass",
+  "offline_socket_events": {
+    "socket.__new__": 1,
+    "socket.bind": 1,
+    "socket.gethostname": 1
+  },
+  "planned_reserved_output_tokens": 4096,
+  "policy_manifest_sha256": "093b763fadfaadf7859d758722e21160390edeb4d0a4e0ce18a97401efcba77f",
+  "policy_registry_sha256": "a9d50558f1654281212d45c27ec9e419f788364bf086d4c63b2cf1dcd6eed768",
+  "prompt_sha256": "09126ca1ca4cff86f634b6297f64c436863acac7a73a588de1bd249dca3b62cc",
+  "question_characters": 8192,
+  "question_construction": "8192-character seeded random ASCII, Random(0), independent of benchmark text",
+  "question_contract_maximum": null,
+  "question_sha256": "939e4203211b3789d5939ae469cc2d9cebdf986ba727752ed9901851f1f52ecc",
+  "question_tokens_without_specials": 6046,
+  "question_utf8_bytes": 8192,
+  "real_development_questions_read": 0,
+  "remaining_safety_margin_tokens": 19267,
+  "retrieval_calls": 0,
+  "scope_limitation": "No finite universal guarantee for an unbounded question contract. Future over-budget inputs must be rejected explicitly without evidence truncation.",
+  "selected_sections": [
+    {
+      "content_hash": "812950e28b26b73de16f3275b6f3e24ed910faa3ab26453d6cd5bf59514e1860",
+      "identity": [
+        "SOP-04",
+        "1.0-demo",
+        "address-notices"
+      ],
+      "standalone_payload_tokens": 191
+    },
+    {
+      "content_hash": "1ecea461f89ccd2cd46f294b59c72cdc0a32d2afbb77cb6fd047c3f1f3938729",
+      "identity": [
+        "SOP-01",
+        "1.0-demo",
+        "state-precedence"
+      ],
+      "standalone_payload_tokens": 176
+    },
+    {
+      "content_hash": "8c03da7dc4feb8e6d93753f36ed1f338b3e49349c939da6d038199513cb85c13",
+      "identity": [
+        "SOP-03",
+        "1.0-demo",
+        "scan-scope"
+      ],
+      "standalone_payload_tokens": 168
+    },
+    {
+      "content_hash": "42445072a3d53692349e90f887d7b3cf1de86d4d201fffd14cd69c88e4a66e94",
+      "identity": [
+        "SOP-05",
+        "1.0-demo",
+        "attempt-address-evidence"
+      ],
+      "standalone_payload_tokens": 168
+    },
+    {
+      "content_hash": "9fbb3508254ef320884bdfe6521d195e535ff1f9d4c017cd89c3e4817c1d40a8",
+      "identity": [
+        "SOP-03",
+        "1.0-demo",
+        "stale-escalate"
+      ],
+      "standalone_payload_tokens": 157
+    },
+    {
+      "content_hash": "1c2b1e27e082ef5f54bf26e55a82d9752f42d6155a301e2d2ec27aa6a47b54dd",
+      "identity": [
+        "SOP-04",
+        "1.0-demo",
+        "attempt-counting"
+      ],
+      "standalone_payload_tokens": 150
+    },
+    {
+      "content_hash": "657f53921870e5267621149b236a02b4996a0b73e1753d9837959f312cbf5653",
+      "identity": [
+        "SOP-02",
+        "1.0-demo",
+        "late-escalate"
+      ],
+      "standalone_payload_tokens": 147
+    },
+    {
+      "content_hash": "6dec3f860f83b0d2e0eb2959c3501c8e299d7e0ad8731636ef7dfe62e52a21a5",
+      "identity": [
+        "SOP-06",
+        "1.0-demo",
+        "handoff-boundary"
+      ],
+      "standalone_payload_tokens": 145
+    },
+    {
+      "content_hash": "b72b0e6fd13bcec07a9a38c79ce448b7e9a4cc26f76f8d014e6714ae88ff353f",
+      "identity": [
+        "SOP-06",
+        "1.0-demo",
+        "handoff-fields"
+      ],
+      "standalone_payload_tokens": 145
+    },
+    {
+      "content_hash": "565fa200a2b48e8aa4956185fff15501bfaef2490790886eb709ee168eab2e38",
+      "identity": [
+        "SOP-07",
+        "1.0-demo",
+        "missing-facts"
+      ],
+      "standalone_payload_tokens": 143
+    }
+  ],
+  "status": "PASS_UNDER_EXPLICIT_STRESS_ASSUMPTION",
+  "synthetic_scores": "0.99 - rank * 0.001, shape-only synthetic values",
+  "tokenizer_model_max_length": 131072
+}

@@ -80,3 +80,16 @@ gateway/domain/evaluation/answerability/development/AQ040.json -text
 /artifacts/answerability_semantic_model_v1_qualification/QUALIFICATION_JOURNAL.jsonl -text
 /artifacts/answerability_semantic_model_v1_qualification/MODEL_QUALIFICATION_REPORT.md -text
 /artifacts/answerability_semantic_model_v1_qualification/MODEL_FREEZE_RECORD.md -text
+
+# Preserve only the exact Phase 2H-B3.2-BR runtime-enablement artifacts.
+/artifacts/answerability_semantic_runtime_v1_enablement/RUNTIME_ENABLEMENT_PROTOCOL.md -text
+/artifacts/answerability_semantic_runtime_v1_enablement/MODEL_SNAPSHOT_IDENTITY.json -text
+/artifacts/answerability_semantic_runtime_v1_enablement/MODEL_FILE_INVENTORY.json -text
+/artifacts/answerability_semantic_runtime_v1_enablement/LOCAL_RUNTIME_IDENTITY.json -text
+/artifacts/answerability_semantic_runtime_v1_enablement/DEPENDENCY_RECEIPT.txt -text
+/artifacts/answerability_semantic_runtime_v1_enablement/CHAT_TEMPLATE_RECEIPT.json -text
+/artifacts/answerability_semantic_runtime_v1_enablement/CONTEXT_WINDOW_QUALIFICATION.json -text
+/artifacts/answerability_semantic_runtime_v1_enablement/PROPOSED_INFERENCE_CONFIG.json -text
+/artifacts/answerability_semantic_runtime_v1_enablement/RUNTIME_ENABLEMENT_JOURNAL.jsonl -text
+/artifacts/answerability_semantic_runtime_v1_enablement/RUNTIME_ENABLEMENT_REPORT.md -text
+/artifacts/answerability_semantic_runtime_v1_enablement/RUNTIME_FREEZE_RECORD.md -text

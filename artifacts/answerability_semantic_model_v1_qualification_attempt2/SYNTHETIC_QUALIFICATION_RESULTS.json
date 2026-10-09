@@ -1,0 +1,244 @@
+{
+  "cases": [
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q1",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q2",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q3",
+      "gate_output": null,
+      "internal_consistency": false,
+      "parser_error": "invalid strict JSON output",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": false
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q4",
+      "gate_output": null,
+      "internal_consistency": false,
+      "parser_error": "invalid strict JSON output",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": false
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q5",
+      "gate_output": null,
+      "internal_consistency": false,
+      "parser_error": "invalid strict JSON output",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": false
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q6",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q7",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q8",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q9",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q10",
+      "gate_output": null,
+      "internal_consistency": false,
+      "parser_error": "invalid strict JSON output",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": false
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q11",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    },
+    {
+      "assessment": null,
+      "attempt_type": "PRIMARY",
+      "binary_correctness": false,
+      "case_id": "Q12",
+      "gate_output": null,
+      "internal_consistency": false,
+      "parser_error": "invalid strict JSON output",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": false
+    },
+    {
+      "assessment": null,
+      "attempt_type": "DETERMINISM",
+      "binary_correctness": false,
+      "case_id": "Q2",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    },
+    {
+      "assessment": null,
+      "attempt_type": "DETERMINISM",
+      "binary_correctness": false,
+      "case_id": "Q7",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    },
+    {
+      "assessment": null,
+      "attempt_type": "DETERMINISM",
+      "binary_correctness": false,
+      "case_id": "Q11",
+      "gate_output": null,
+      "internal_consistency": true,
+      "parser_error": "invalid canonical section identity",
+      "parser_valid": false,
+      "reason_code_correctness": false,
+      "section_reference_validity": false,
+      "structured_output_validity": true
+    }
+  ],
+  "determinism_count": 3,
+  "failed_primary_case_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12"
+  ],
+  "infrastructure_failure_count": 0,
+  "metrics": {
+    "binary_correctness": {
+      "denominator": 12,
+      "numerator": 0
+    },
+    "critical_case_binary_correctness": {
+      "denominator": 6,
+      "numerator": 0
+    },
+    "internal_consistency": {
+      "denominator": 12,
+      "numerator": 7
+    },
+    "reason_code_correctness": {
+      "denominator": 12,
+      "numerator": 0
+    },
+    "section_reference_validity": {
+      "denominator": 12,
+      "numerator": 0
+    },
+    "structured_output_validity": {
+      "denominator": 12,
+      "numerator": 7
+    }
+  },
+  "outcome": "QUALIFICATION_FAILED",
+  "primary_count": 12,
+  "timeout_count": 0
+}

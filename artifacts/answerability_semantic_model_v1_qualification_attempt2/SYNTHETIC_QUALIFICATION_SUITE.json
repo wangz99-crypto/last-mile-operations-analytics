@@ -1,0 +1,409 @@
+{
+  "bundle_note": "Contract-compatible synthetic metadata and placeholder digests; no real policy lookup or retrieval",
+  "cases": [
+    {
+      "case_id": "Q1",
+      "category": "single-section supported",
+      "expected": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "The sample dispenser may be used only after its blue lever is locked.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "dispenser",
+            "section_title": "Dispenser",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "Before using the sample dispenser, which lever must I lock?"
+      }
+    },
+    {
+      "case_id": "Q2",
+      "category": "multi-section supported",
+      "expected": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "Before using a gauge, check that its calibration sticker is current.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "gauge-check",
+            "section_title": "Gauge Check",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          },
+          {
+            "body": "After using a gauge, return it to cabinet M.",
+            "cosine_score": 0.8,
+            "policy_id": "SOP-91",
+            "rank": 2,
+            "section_id": "gauge-return",
+            "section_title": "Gauge Return",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "What must I check before using a gauge, and where must I return it afterward?"
+      }
+    },
+    {
+      "case_id": "Q3",
+      "category": "partial multi-part support",
+      "expected": {
+        "decision": "ABSTAIN",
+        "reason_code": "INSUFFICIENT_POLICY_SUPPORT"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "Before using a gauge, check that its calibration sticker is current. If the sticker has expired, set the gauge aside for inspection.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "gauge-check",
+            "section_title": "Gauge Check",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "What check is required before gauge use, and what fee is charged for a failed check?"
+      }
+    },
+    {
+      "case_id": "Q4",
+      "category": "relevant-but-not-supportive",
+      "expected": {
+        "decision": "ABSTAIN",
+        "reason_code": "INSUFFICIENT_POLICY_SUPPORT"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "Store survey-device batteries upright in the grey battery cupboard and record the shelf position.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "battery-storage",
+            "section_title": "Battery Storage",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "How many hours must a survey-device battery be charged before use?"
+      }
+    },
+    {
+      "case_id": "Q5",
+      "category": "external/common-knowledge temptation",
+      "expected": {
+        "decision": "ABSTAIN",
+        "reason_code": "INSUFFICIENT_POLICY_SUPPORT"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "Place measuring cups on the clean-equipment shelf after washing. Cups awaiting washing go in the marked tray.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "cup-storage",
+            "section_title": "Cup Storage",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "How long should I boil water to sanitize a workshop measuring cup?"
+      }
+    },
+    {
+      "case_id": "Q6",
+      "category": "resolved-context insufficiency",
+      "expected": {
+        "decision": "ABSTAIN",
+        "reason_code": "INSUFFICIENT_POLICY_SUPPORT"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "The active workshop procedure requires instruments awaiting inspection to remain in the holding area until an inspector releases them.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "inspection-hold",
+            "section_title": "Inspection Hold",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "What is the maximum time an instrument may remain in the inspection holding area?"
+      }
+    },
+    {
+      "case_id": "Q7",
+      "category": "unresolved authority/version",
+      "expected": {
+        "decision": "ABSTAIN",
+        "reason_code": "UNRESOLVED_POLICY_CONTEXT"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "The workshop register lists both the Cedar edition and the Birch edition as effective for dispatch containers on the same date. It records no supersession or precedence between them.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "seal-editions",
+            "section_title": "Seal Editions",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          },
+          {
+            "body": "The Cedar edition requires four seals per dispatch container. The Birch edition requires six seals per dispatch container.",
+            "cosine_score": 0.8,
+            "policy_id": "SOP-91",
+            "rank": 2,
+            "section_id": "seal-counts",
+            "section_title": "Seal Counts",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "How many seals does the governing workshop edition require on a dispatch container?"
+      }
+    },
+    {
+      "case_id": "Q8",
+      "category": "unresolved applicability",
+      "expected": {
+        "decision": "ABSTAIN",
+        "reason_code": "UNRESOLVED_POLICY_CONTEXT"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "The two-person lift procedure for prism frames is authorized only for benches certified as Green-zone benches. Bench names do not indicate their zone. The supplied certification register contains no zone entry for mobile bench Vega.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "lift-scope",
+            "section_title": "Lift Scope",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "May mobile bench Vega use the two-person lift procedure for the prism frame?"
+      }
+    },
+    {
+      "case_id": "Q9",
+      "category": "evidence synthesis",
+      "expected": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "Every amber-marked crate belongs to handling group K.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "crate-groups",
+            "section_title": "Crate Groups",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          },
+          {
+            "body": "Before release, every handling group K crate must carry signatures from two different inspectors.",
+            "cosine_score": 0.8,
+            "policy_id": "SOP-91",
+            "rank": 2,
+            "section_id": "group-k-release",
+            "section_title": "Group K Release",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "Does an amber-marked crate need two inspection signatures before release?"
+      }
+    },
+    {
+      "case_id": "Q10",
+      "category": "lexically weak paraphrase",
+      "expected": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "Engage the lid latch before moving the cabinet on its casters.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "cabinet-movement",
+            "section_title": "Cabinet Movement",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "Before wheeling the enclosure away, do I need to fasten its hinged cover?"
+      }
+    },
+    {
+      "case_id": "Q11",
+      "category": "high lexical-overlap false friend",
+      "expected": {
+        "decision": "ABSTAIN",
+        "reason_code": "INSUFFICIENT_POLICY_SUPPORT"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "Retain workshop visitor badge scan records for twenty-one days after each visit, then delete those records.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "visitor-badge-records",
+            "section_title": "Visitor Badge Records",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "May a visitor keep using a workshop visitor badge for twenty-one days?"
+      }
+    },
+    {
+      "case_id": "Q12",
+      "category": "unsupported extra material ask",
+      "expected": {
+        "decision": "ABSTAIN",
+        "reason_code": "INSUFFICIENT_POLICY_SUPPORT"
+      },
+      "gate_input": {
+        "active_bundle": {
+          "bundle_id": "last-mile-exception-triage-demo",
+          "bundle_version": "1.0-demo",
+          "effective_from": "2026-01-01T00:00:00Z",
+          "effective_to": null,
+          "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "registry_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "evidence": [
+          {
+            "body": "Each loaned probe must be accompanied by its blue calibration card. Return the card with the probe.",
+            "cosine_score": 0.9,
+            "policy_id": "SOP-91",
+            "rank": 1,
+            "section_id": "probe-loans",
+            "section_title": "Probe Loans",
+            "title": "Synthetic Workshop Manual",
+            "version": "1.0-demo"
+          }
+        ],
+        "question": "Which card must accompany a loaned probe, and how many probes may one person borrow at once?"
+      }
+    }
+  ],
+  "origin": "Original synthetic workshop cases; no benchmark questions",
+  "schema": "synthetic-semantic-qualification-v1"
+}

@@ -1,0 +1,33 @@
+{
+  "comparisons": [
+    {
+      "both_parser_valid": false,
+      "case_id": "Q2",
+      "comparison_available": true,
+      "raw_text_identical": true,
+      "raw_utf8_bytes_identical": true,
+      "semantic_fields": null,
+      "semantic_fields_identical": null
+    },
+    {
+      "both_parser_valid": false,
+      "case_id": "Q7",
+      "comparison_available": true,
+      "raw_text_identical": true,
+      "raw_utf8_bytes_identical": true,
+      "semantic_fields": null,
+      "semantic_fields_identical": null
+    },
+    {
+      "both_parser_valid": false,
+      "case_id": "Q11",
+      "comparison_available": true,
+      "raw_text_identical": true,
+      "raw_utf8_bytes_identical": true,
+      "semantic_fields": null,
+      "semantic_fields_identical": null
+    }
+  ],
+  "diagnostic_only": true,
+  "qualification_requirement": false
+}

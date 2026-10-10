@@ -1,0 +1,67 @@
+[
+  {
+    "download_count": 2,
+    "filename": "apache_tvm_ffi-0.1.14.post1-cp312-cp312-win_amd64.whl",
+    "metadata_source": "https://pypi.org/pypi/apache-tvm-ffi/0.1.14.post1/json",
+    "package": "apache-tvm-ffi",
+    "prior_unsaved_transfers": 1,
+    "sha256": "fd3edd7ccb4fb90092845f4db10ddec92696a5119842062222a9abd3e719565e",
+    "size": 3513921,
+    "source": "https://files.pythonhosted.org/packages/fd/3d/6f9f21541d2431c500ebe559d5215c8c2651b61613011b75d1515dd7b7ba/apache_tvm_ffi-0.1.14.post1-cp312-cp312-win_amd64.whl",
+    "verified_saved_copies": 1,
+    "version": "0.1.14.post1",
+    "yanked": false
+  },
+  {
+    "download_count": 1,
+    "filename": "pydantic-2.13.5-py3-none-any.whl",
+    "metadata_source": "https://pypi.org/pypi/pydantic/2.13.5/json",
+    "package": "pydantic",
+    "prior_unsaved_transfers": 0,
+    "sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73",
+    "size": 472589,
+    "source": "https://files.pythonhosted.org/packages/eb/47/c95ffc2009878c7aac0c5e08528022dcb885933252a88b5f170058014464/pydantic-2.13.5-py3-none-any.whl",
+    "verified_saved_copies": 1,
+    "version": "2.13.5",
+    "yanked": false
+  },
+  {
+    "download_count": 1,
+    "filename": "pydantic_core-2.46.5-cp312-cp312-win_amd64.whl",
+    "metadata_source": "https://pypi.org/pypi/pydantic-core/2.46.5/json",
+    "package": "pydantic-core",
+    "prior_unsaved_transfers": 0,
+    "sha256": "5e81740c09e310f5aa5cbd3e434a01c154d4bef93241c7877b39f211d2b78ba8",
+    "size": 2043140,
+    "source": "https://files.pythonhosted.org/packages/cf/c9/4c19f41b84cf6b622a72fbeed7665b25d47a187d68d47d0d430c07f23268/pydantic_core-2.46.5-cp312-cp312-win_amd64.whl",
+    "verified_saved_copies": 1,
+    "version": "2.46.5",
+    "yanked": false
+  },
+  {
+    "download_count": 1,
+    "filename": "annotated_types-0.8.0-py3-none-any.whl",
+    "metadata_source": "https://pypi.org/pypi/annotated-types/0.8.0/json",
+    "package": "annotated-types",
+    "prior_unsaved_transfers": 0,
+    "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+    "size": 13427,
+    "source": "https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl",
+    "verified_saved_copies": 1,
+    "version": "0.8.0",
+    "yanked": false
+  },
+  {
+    "download_count": 1,
+    "filename": "typing_inspection-0.4.4-py3-none-any.whl",
+    "metadata_source": "https://pypi.org/pypi/typing-inspection/0.4.4/json",
+    "package": "typing-inspection",
+    "prior_unsaved_transfers": 0,
+    "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+    "size": 14750,
+    "source": "https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl",
+    "verified_saved_copies": 1,
+    "version": "0.4.4",
+    "yanked": false
+  }
+]

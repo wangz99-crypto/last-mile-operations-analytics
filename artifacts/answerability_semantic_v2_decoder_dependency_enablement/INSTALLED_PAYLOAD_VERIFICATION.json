@@ -1,0 +1,22 @@
+{
+  "annotated-types": {
+    "metadata_version": "0.8.0",
+    "wheel_payload_files_verified": 6
+  },
+  "apache-tvm-ffi": {
+    "metadata_version": "0.1.14.post1",
+    "wheel_payload_files_verified": 258
+  },
+  "pydantic": {
+    "metadata_version": "2.13.5",
+    "wheel_payload_files_verified": 110
+  },
+  "pydantic-core": {
+    "metadata_version": "2.46.5",
+    "wheel_payload_files_verified": 9
+  },
+  "typing-inspection": {
+    "metadata_version": "0.4.4",
+    "wheel_payload_files_verified": 8
+  }
+}

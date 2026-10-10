@@ -1,0 +1,114 @@
+{
+  "all_satisfied": true,
+  "imported": false,
+  "installed": false,
+  "requirements": [
+    {
+      "applicable": true,
+      "name": "apache-tvm-ffi",
+      "requirement": "apache-tvm-ffi>=0.1.11",
+      "resolved_version": "0.1.14.post1",
+      "satisfied": true
+    },
+    {
+      "applicable": true,
+      "name": "pydantic",
+      "requirement": "pydantic",
+      "resolved_version": "2.13.5",
+      "satisfied": true
+    },
+    {
+      "applicable": true,
+      "name": "torch",
+      "requirement": "torch>=1.10.0",
+      "resolved_version": "2.14.0+cpu",
+      "satisfied": true
+    },
+    {
+      "applicable": true,
+      "name": "transformers",
+      "requirement": "transformers>=4.38.0",
+      "resolved_version": "4.57.6",
+      "satisfied": true
+    },
+    {
+      "applicable": false,
+      "name": "triton",
+      "requirement": "triton; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+      "resolved_version": null,
+      "satisfied": true
+    },
+    {
+      "applicable": true,
+      "name": "numpy",
+      "requirement": "numpy",
+      "resolved_version": "2.5.3",
+      "satisfied": true
+    },
+    {
+      "applicable": true,
+      "name": "typing-extensions",
+      "requirement": "typing-extensions>=4.9.0",
+      "resolved_version": "4.16.0",
+      "satisfied": true
+    },
+    {
+      "applicable": false,
+      "name": "cohere-melody",
+      "requirement": "cohere_melody==0.13.0; python_version >= \"3.10\" and extra == \"test\"",
+      "resolved_version": null,
+      "satisfied": true
+    },
+    {
+      "applicable": false,
+      "name": "huggingface-hub",
+      "requirement": "huggingface-hub[cli]; extra == \"test\"",
+      "resolved_version": "0.36.2",
+      "satisfied": true
+    },
+    {
+      "applicable": false,
+      "name": "protobuf",
+      "requirement": "protobuf; extra == \"test\"",
+      "resolved_version": null,
+      "satisfied": true
+    },
+    {
+      "applicable": false,
+      "name": "pytest",
+      "requirement": "pytest; extra == \"test\"",
+      "resolved_version": null,
+      "satisfied": true
+    },
+    {
+      "applicable": false,
+      "name": "sentencepiece",
+      "requirement": "sentencepiece<0.2.2; python_version < \"3.10\" and extra == \"test\"",
+      "resolved_version": null,
+      "satisfied": true
+    },
+    {
+      "applicable": false,
+      "name": "sentencepiece",
+      "requirement": "sentencepiece; python_version >= \"3.10\" and extra == \"test\"",
+      "resolved_version": null,
+      "satisfied": true
+    },
+    {
+      "applicable": false,
+      "name": "tiktoken",
+      "requirement": "tiktoken; extra == \"test\"",
+      "resolved_version": null,
+      "satisfied": true
+    },
+    {
+      "applicable": false,
+      "name": "mlx-lm",
+      "requirement": "mlx-lm; platform_system == \"Darwin\" and platform_machine == \"arm64\" and extra == \"metal\"",
+      "resolved_version": null,
+      "satisfied": true
+    }
+  ],
+  "scope": "offline metadata-only completion evidence after stopped import check",
+  "wheel_sha256": "dbcf6718e049cbe429742cdb05f85c48135c2e389d45daeafb884af6994bb4a7"
+}

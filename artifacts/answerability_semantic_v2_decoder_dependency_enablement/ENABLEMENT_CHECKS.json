@@ -1,0 +1,28 @@
+{
+  "authorized_unsandboxed_rerun": "15/15 PASS",
+  "checks": [
+    "exact root pins",
+    "yanked version rejection",
+    "wrong wheel filename rejection",
+    "wrong SHA rejection",
+    "unexpected dependency blocker",
+    "typing-extensions preserve rule",
+    "dependency lock immutability",
+    "no-deps/no-index install plan",
+    "package drift detection",
+    "XGrammar absent",
+    "optional extras excluded",
+    "deterministic serialization"
+  ],
+  "initial_sandbox_test_run": {
+    "errors": 1,
+    "passed": 14,
+    "reason": "temporary fixture write permission; no scientific check failed"
+  },
+  "no_benchmark_access": true,
+  "no_model_calls": true,
+  "pre_install_unit_tests": {
+    "passed": 15,
+    "total": 15
+  }
+}

@@ -1,0 +1,55 @@
+# Pre-install and final inventory: identical; no installation attempted.
+# Wheel metadata Name: xgrammar; Version: 0.2.8; Requires-Python: <4,>=3.8
+# Complete installed package inventory:
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+PyYAML==6.0.3
+accelerate==1.15.0
+certifi==2026.7.22
+charset-normalizer==3.5.2
+colorama==0.4.6
+filelock==3.32.3
+fsspec==2026.7.0
+huggingface_hub==0.36.2
+idna==3.20
+mpmath==1.3.0
+networkx==3.6.1
+numpy==2.5.3
+packaging==26.3
+pip==25.0.1
+psutil==7.2.2
+regex==2026.9.29
+requests==2.34.2
+safetensors==0.8.0
+setuptools==78.1.0
+sympy==1.14.0
+tokenizers==0.22.2
+torch==2.14.0+cpu
+tqdm==4.70.1
+transformers==4.57.6
+typing_extensions==4.16.0
+urllib3==2.8.0
+
+# All declared wheel dependencies (inactive markers are not blockers):
+{"active": true, "compatible": false, "installed_version": null, "requirement": "apache-tvm-ffi>=0.1.11"}
+{"active": true, "compatible": false, "installed_version": null, "requirement": "pydantic"}
+{"active": true, "compatible": true, "installed_version": "2.14.0+cpu", "requirement": "torch>=1.10.0"}
+{"active": true, "compatible": true, "installed_version": "4.57.6", "requirement": "transformers>=4.38.0"}
+{"active": false, "compatible": true, "installed_version": null, "requirement": "triton; platform_system == \"Linux\" and platform_machine == \"x86_64\""}
+{"active": true, "compatible": true, "installed_version": "2.5.3", "requirement": "numpy"}
+{"active": true, "compatible": true, "installed_version": "4.16.0", "requirement": "typing-extensions>=4.9.0"}
+{"active": false, "compatible": true, "installed_version": null, "requirement": "cohere_melody==0.13.0; python_version >= \"3.10\" and extra == \"test\""}
+{"active": false, "compatible": true, "installed_version": "0.36.2", "requirement": "huggingface-hub[cli]; extra == \"test\""}
+{"active": false, "compatible": true, "installed_version": null, "requirement": "protobuf; extra == \"test\""}
+{"active": false, "compatible": true, "installed_version": null, "requirement": "pytest; extra == \"test\""}
+{"active": false, "compatible": true, "installed_version": null, "requirement": "sentencepiece<0.2.2; python_version < \"3.10\" and extra == \"test\""}
+{"active": false, "compatible": true, "installed_version": null, "requirement": "sentencepiece; python_version >= \"3.10\" and extra == \"test\""}
+{"active": false, "compatible": true, "installed_version": null, "requirement": "tiktoken; extra == \"test\""}
+{"active": false, "compatible": true, "installed_version": null, "requirement": "mlx-lm; platform_system == \"Darwin\" and platform_machine == \"arm64\" and extra == \"metal\""}
+
+Outcome: DECODER_QUALIFICATION_BLOCKED
+Missing active requirements: apache-tvm-ffi>=0.1.11; pydantic
+Existing versions changed: 0
+Packages installed: 0
+Pre-install inventory SHA-256: 91cc35b9ba8098207769077085366b42cf059f3316df6d6d06bc647e8af0982d
+Final inventory SHA-256: 91cc35b9ba8098207769077085366b42cf059f3316df6d6d06bc647e8af0982d

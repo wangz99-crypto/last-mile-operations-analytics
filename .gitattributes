@@ -114,3 +114,15 @@ gateway/domain/evaluation/answerability/development/AQ040.json -text
 /artifacts/answerability_semantic_gate_v2_prereg/CONSTRAINED_DECODER_REQUIREMENTS.md -text
 /artifacts/answerability_semantic_gate_v2_prereg/FRESH_QUALIFICATION_BLUEPRINT.md -text
 /artifacts/answerability_semantic_gate_v2_prereg/PREREGISTRATION_RECORD.md -text
+
+# Preserve exact A2.1 blocked decoder qualification evidence.
+/artifacts/answerability_semantic_v2_decoder_qualification/DECODER_DEPENDENCY_RECEIPT.txt -text
+/artifacts/answerability_semantic_v2_decoder_qualification/DECODER_FREEZE_RECORD.md -text
+/artifacts/answerability_semantic_v2_decoder_qualification/DECODER_IDENTITY.json -text
+/artifacts/answerability_semantic_v2_decoder_qualification/DECODER_QUALIFICATION_JOURNAL.jsonl -text
+/artifacts/answerability_semantic_v2_decoder_qualification/DECODER_QUALIFICATION_REPORT.md -text
+/artifacts/answerability_semantic_v2_decoder_qualification/DECODER_SELECTION_PROTOCOL.md -text
+/artifacts/answerability_semantic_v2_decoder_qualification/FINAL_PACKAGE_INVENTORY.json -text
+/artifacts/answerability_semantic_v2_decoder_qualification/PRE_INSTALL_PACKAGE_INVENTORY.json -text
+/artifacts/answerability_semantic_v2_decoder_qualification/RAW_STRUCTURAL_OUTPUTS.jsonl -text
+/artifacts/answerability_semantic_v2_decoder_qualification/STRUCTURAL_SMOKE_RESULTS.json -text

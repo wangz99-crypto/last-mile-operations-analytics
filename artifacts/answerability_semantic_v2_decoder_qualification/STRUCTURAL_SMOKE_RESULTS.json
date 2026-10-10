@@ -1,0 +1,43 @@
+{
+  "adapter_diagnostic": "NOT_ASSESSED",
+  "blockers": [
+    "apache-tvm-ffi>=0.1.11",
+    "pydantic"
+  ],
+  "counters": {
+    "decoder_imports": 0,
+    "development_semantic_calls": 0,
+    "held_out_access": false,
+    "infrastructure_execution_failures": 0,
+    "installation_attempts": 0,
+    "model_initializations": 0,
+    "retrieval_calls": 0,
+    "retry_count": 0,
+    "semantic_qualification_calls": 0,
+    "structural_generate_calls": 0,
+    "timeout_count": 0,
+    "tokenizer_initializations": 0
+  },
+  "fresh_v2_qualification_suite": "NOT_YET_AUTHORED",
+  "hf_logits_processor_integration": "NOT_ATTEMPTED",
+  "json_validity": "NOT_ASSESSED",
+  "markdown_prefix_suffix_violations": 0,
+  "model_capability": "NOT_ASSESSED",
+  "outcome": "DECODER_QUALIFICATION_BLOCKED",
+  "planned_smoke_ids": [
+    "S1",
+    "S2",
+    "S3"
+  ],
+  "reason": "MISSING_REQUIRED_DEPENDENCIES",
+  "review_status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+  "schema_compilation": "NOT_ATTEMPTED",
+  "schema_invalid_output_count": 0,
+  "schema_validity": "NOT_ASSESSED",
+  "smoke_config_status": "NOT_CREATED_PREINSTALL_BLOCK",
+  "smoke_execution_status": "NOT_STARTED",
+  "smoke_records": [],
+  "smoke_suite_status": "NOT_AUTHORED_PREINSTALL_BLOCK",
+  "structural_acceptance_count": 0,
+  "zero_output_counts_mean_no_execution": true
+}

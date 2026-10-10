@@ -1,0 +1,121 @@
+{
+  "blockers": [
+    "apache-tvm-ffi>=0.1.11",
+    "pydantic"
+  ],
+  "declared_dependencies": [
+    {
+      "active": true,
+      "compatible": false,
+      "installed_version": null,
+      "requirement": "apache-tvm-ffi>=0.1.11"
+    },
+    {
+      "active": true,
+      "compatible": false,
+      "installed_version": null,
+      "requirement": "pydantic"
+    },
+    {
+      "active": true,
+      "compatible": true,
+      "installed_version": "2.14.0+cpu",
+      "requirement": "torch>=1.10.0"
+    },
+    {
+      "active": true,
+      "compatible": true,
+      "installed_version": "4.57.6",
+      "requirement": "transformers>=4.38.0"
+    },
+    {
+      "active": false,
+      "compatible": true,
+      "installed_version": null,
+      "requirement": "triton; platform_system == \"Linux\" and platform_machine == \"x86_64\""
+    },
+    {
+      "active": true,
+      "compatible": true,
+      "installed_version": "2.5.3",
+      "requirement": "numpy"
+    },
+    {
+      "active": true,
+      "compatible": true,
+      "installed_version": "4.16.0",
+      "requirement": "typing-extensions>=4.9.0"
+    },
+    {
+      "active": false,
+      "compatible": true,
+      "installed_version": null,
+      "requirement": "cohere_melody==0.13.0; python_version >= \"3.10\" and extra == \"test\""
+    },
+    {
+      "active": false,
+      "compatible": true,
+      "installed_version": "0.36.2",
+      "requirement": "huggingface-hub[cli]; extra == \"test\""
+    },
+    {
+      "active": false,
+      "compatible": true,
+      "installed_version": null,
+      "requirement": "protobuf; extra == \"test\""
+    },
+    {
+      "active": false,
+      "compatible": true,
+      "installed_version": null,
+      "requirement": "pytest; extra == \"test\""
+    },
+    {
+      "active": false,
+      "compatible": true,
+      "installed_version": null,
+      "requirement": "sentencepiece<0.2.2; python_version < \"3.10\" and extra == \"test\""
+    },
+    {
+      "active": false,
+      "compatible": true,
+      "installed_version": null,
+      "requirement": "sentencepiece; python_version >= \"3.10\" and extra == \"test\""
+    },
+    {
+      "active": false,
+      "compatible": true,
+      "installed_version": null,
+      "requirement": "tiktoken; extra == \"test\""
+    },
+    {
+      "active": false,
+      "compatible": true,
+      "installed_version": null,
+      "requirement": "mlx-lm; platform_system == \"Darwin\" and platform_machine == \"arm64\" and extra == \"metal\""
+    }
+  ],
+  "download_count": 1,
+  "expected_sha256": "dbcf6718e049cbe429742cdb05f85c48135c2e389d45daeafb884af6994bb4a7",
+  "import_attempts": 0,
+  "installation_attempts": 0,
+  "installed": false,
+  "installed_module_version": null,
+  "installed_version": null,
+  "network_requests": [
+    "https://pypi.org/pypi/xgrammar/0.2.8/json",
+    "https://files.pythonhosted.org/packages/c2/e2/6157eab393b7963f0933dc22c222b0667407ce230eac26bb40645a28748f/xgrammar-0.2.8-cp312-cp312-win_amd64.whl"
+  ],
+  "package": "xgrammar",
+  "platform": "Windows AMD64",
+  "python": "3.12.10",
+  "requires_python": "<4,>=3.8",
+  "source_url": "https://files.pythonhosted.org/packages/c2/e2/6157eab393b7963f0933dc22c222b0667407ce230eac26bb40645a28748f/xgrammar-0.2.8-cp312-cp312-win_amd64.whl",
+  "status": "DECODER_QUALIFICATION_BLOCKED",
+  "target_version": "0.2.8",
+  "wheel_filename": "xgrammar-0.2.8-cp312-cp312-win_amd64.whl",
+  "wheel_metadata_name": "xgrammar",
+  "wheel_metadata_version": "0.2.8",
+  "wheel_sha256": "dbcf6718e049cbe429742cdb05f85c48135c2e389d45daeafb884af6994bb4a7",
+  "wheel_size": 1115212
+}

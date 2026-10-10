@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "oneOf": [
+    {
+      "properties": {
+        "decision": {
+          "const": "ALLOW"
+        },
+        "material_asks": {
+          "items": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          }
+        },
+        "policy_context_status": {
+          "const": "RESOLVED"
+        },
+        "reason_code": {
+          "const": "SUPPORTED_BY_ACTIVE_POLICY"
+        }
+      }
+    },
+    {
+      "properties": {
+        "decision": {
+          "const": "ABSTAIN"
+        },
+        "material_asks": {
+          "contains": {
+            "properties": {
+              "support_status": {
+                "const": "UNSUPPORTED"
+              }
+            }
+          },
+          "items": {
+            "properties": {
+              "support_status": {
+                "enum": [
+                  "SUPPORTED",
+                  "UNSUPPORTED"
+                ]
+              }
+            }
+          }
+        },
+        "policy_context_status": {
+          "const": "RESOLVED"
+        },
+        "reason_code": {
+          "const": "INSUFFICIENT_POLICY_SUPPORT"
+        }
+      }
+    },
+    {
+      "anyOf": [
+        {
+          "properties": {
+            "policy_context_status": {
+              "const": "UNRESOLVED"
+            }
+          }
+        },
+        {
+          "properties": {
+            "material_asks": {
+              "contains": {
+                "properties": {
+                  "support_status": {
+                    "const": "CONTEXT_UNRESOLVED"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "decision": {
+          "const": "ABSTAIN"
+        },
+        "reason_code": {
+          "const": "UNRESOLVED_POLICY_CONTEXT"
+        }
+      }
+    }
+  ],
+  "properties": {
+    "decision": {
+      "enum": [
+        "ALLOW",
+        "ABSTAIN"
+      ]
+    },
+    "material_asks": {
+      "items": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "maxItems": 0
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "support_status": {
+                  "const": "SUPPORTED"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "ask": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED",
+              "CONTEXT_UNRESOLVED"
+            ]
+          },
+          "supporting_evidence_ranks": {
+            "items": {
+              "maximum": 10,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "type": "array",
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ],
+        "type": "object"
+      },
+      "maxItems": 8,
+      "minItems": 1,
+      "type": "array"
+    },
+    "policy_context_status": {
+      "enum": [
+        "RESOLVED",
+        "UNRESOLVED"
+      ]
+    },
+    "reason_code": {
+      "enum": [
+        "SUPPORTED_BY_ACTIVE_POLICY",
+        "INSUFFICIENT_POLICY_SUPPORT",
+        "UNRESOLVED_POLICY_CONTEXT"
+      ]
+    }
+  },
+  "required": [
+    "material_asks",
+    "policy_context_status",
+    "decision",
+    "reason_code"
+  ],
+  "type": "object"
+}

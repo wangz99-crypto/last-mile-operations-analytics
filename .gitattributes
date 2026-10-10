@@ -104,3 +104,13 @@ gateway/domain/evaluation/answerability/development/AQ040.json -text
 /artifacts/answerability_semantic_model_v1_qualification_attempt2/QUALIFICATION_JOURNAL.jsonl -text
 /artifacts/answerability_semantic_model_v1_qualification_attempt2/MODEL_QUALIFICATION_REPORT.md -text
 /artifacts/answerability_semantic_model_v1_qualification_attempt2/MODEL_FREEZE_RECORD.md -text
+
+# Preserve only the exact Phase 2H-B3.2-A2 V2 preregistration artifacts.
+/artifacts/answerability_semantic_gate_v2_prereg/SEMANTIC_GATE_V2_PROTOCOL.md -text
+/artifacts/answerability_semantic_gate_v2_prereg/SEMANTIC_GATE_V2_REGISTRY.json -text
+/artifacts/answerability_semantic_gate_v2_prereg/SEMANTIC_PROMPT_V2.txt -text
+/artifacts/answerability_semantic_gate_v2_prereg/RAW_ASSESSMENT_SCHEMA_V2.json -text
+/artifacts/answerability_semantic_gate_v2_prereg/RANK_MAPPING_CONTRACT.md -text
+/artifacts/answerability_semantic_gate_v2_prereg/CONSTRAINED_DECODER_REQUIREMENTS.md -text
+/artifacts/answerability_semantic_gate_v2_prereg/FRESH_QUALIFICATION_BLUEPRINT.md -text
+/artifacts/answerability_semantic_gate_v2_prereg/PREREGISTRATION_RECORD.md -text

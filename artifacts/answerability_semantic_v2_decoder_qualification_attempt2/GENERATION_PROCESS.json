@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stderr": "[01:36:02] D:\\a\\xgrammar\\xgrammar\\cpp\\json_schema_converter.cc:832: Warning: oneOf with overlapping or non-provably-disjoint branches cannot be represented exactly; falling back to anyOf semantics\n`torch_dtype` is deprecated! Use `dtype` instead!\n",
+  "stdout": "S1 EOS {'A_json_valid': True, 'B_exact_schema_valid': False, 'C_adapter_valid': False, 'generation_complete': True, 'semantic_scoring': 'NOT_PERFORMED', 'fencing_or_prefix_suffix_violation': False, 'C_adapter_error': 'Invalid assessment keys', 'structural_acceptance': False}\nS2 EOS {'A_json_valid': True, 'B_exact_schema_valid': False, 'C_adapter_valid': False, 'generation_complete': True, 'semantic_scoring': 'NOT_PERFORMED', 'fencing_or_prefix_suffix_violation': False, 'C_adapter_error': 'Invalid assessment keys', 'structural_acceptance': False}\nS3 EOS {'A_json_valid': True, 'B_exact_schema_valid': False, 'C_adapter_valid': False, 'generation_complete': True, 'semantic_scoring': 'NOT_PERFORMED', 'fencing_or_prefix_suffix_violation': False, 'C_adapter_error': 'Invalid assessment keys', 'structural_acceptance': False}\n"
+}

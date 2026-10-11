@@ -1,0 +1,21 @@
+{
+  "authorized_differences": [
+    "max_new_tokens"
+  ],
+  "differences": {
+    "max_new_tokens": {
+      "actual": 512,
+      "frozen_runtime": 4096
+    },
+    "repetition_penalty": {
+      "actual": 1.1,
+      "frozen_runtime": 1.0
+    }
+  },
+  "explanation": "GenerationConfig.from_pretrained inherited repetition_penalty=1.1 from the unchanged local generation_config.json. Frozen runtime full_proposed_generation_config records 1.0. This was detected after three calls. Actual outputs/config are preserved; no rerun or post-result fix authorized.",
+  "passed": false,
+  "scientific_configuration_deviation_count": 1,
+  "unauthorized_differences": [
+    "repetition_penalty"
+  ]
+}

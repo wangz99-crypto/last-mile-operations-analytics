@@ -1,0 +1,21 @@
+{
+  "base_commit": "4fea18a9c70b1b9536dd92d7f1a118ac3e02a32f",
+  "execution_source_receipt_match": true,
+  "frozen_v2_hashes": {
+    "files": {
+      "artifacts\\answerability_semantic_gate_v2_prereg\\CONSTRAINED_DECODER_REQUIREMENTS.md": "aea2fbe93165afef76f641d11c5fbea7b54e2c72109e3e2d82dfad2018f34900",
+      "artifacts\\answerability_semantic_gate_v2_prereg\\FRESH_QUALIFICATION_BLUEPRINT.md": "efa5d6abd9255610eb40cd1abf80c3e4a9c9708c259b8d2788238f61ec63f15e",
+      "artifacts\\answerability_semantic_gate_v2_prereg\\RANK_MAPPING_CONTRACT.md": "b62c5e7647dc21749832b75fb1ea6f168ede8f56ab3f81a4c007fe00f1830f6a",
+      "artifacts\\answerability_semantic_gate_v2_prereg\\RAW_ASSESSMENT_SCHEMA_V2.json": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+      "artifacts\\answerability_semantic_gate_v2_prereg\\SEMANTIC_GATE_V2_PROTOCOL.md": "d823f713a042f695854c46eea4a8ad533aab75fb11f057f031d6a7a6b60d325f",
+      "artifacts\\answerability_semantic_gate_v2_prereg\\SEMANTIC_PROMPT_V2.txt": "1b36fbf92f120f77bfb9d2af55409ed48e43341956f7e06fae83777f4937f35e",
+      "gateway\\domain\\evaluation\\answerability\\gates\\semantic_gate.py": "c70218e37b4304b6424e830b7f8698f11c4385ebd214c4d2fce5f8f805055d71",
+      "gateway\\domain\\evaluation\\answerability\\gates\\semantic_gate_v2.py": "a83ebe3b6841e5cd810633c68ba4efc76ed8d6daeee1cbb62899e317133e9219"
+    },
+    "parser_adapter_receipt_sha256": "ea36a48dc9d8b3bb97b6198957a0f5c46d7a90bca895f2364e8f4f080b74e64e",
+    "registry_sha256": "c51d7f92e714421797f51bf1571cb8ee6f50b47352aad7867c1786d818a37ec2"
+  },
+  "historical_tracked_files_unchanged": true,
+  "no_benchmark_payload_read": true,
+  "tracked_diff_before_administrative_attributes": "EMPTY"
+}

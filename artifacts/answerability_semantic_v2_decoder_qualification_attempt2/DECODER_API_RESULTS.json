@@ -1,0 +1,13 @@
+{
+  "distribution_version": "0.2.8",
+  "import_success": true,
+  "module_path": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\xgrammar\\__init__.py",
+  "module_reported_version": null,
+  "passed": true,
+  "required_apis": {
+    "GrammarCompiler": true,
+    "GrammarCompiler.compile_json_schema": true,
+    "TokenizerInfo.from_huggingface": true,
+    "xgrammar.contrib.hf.LogitsProcessor": true
+  }
+}

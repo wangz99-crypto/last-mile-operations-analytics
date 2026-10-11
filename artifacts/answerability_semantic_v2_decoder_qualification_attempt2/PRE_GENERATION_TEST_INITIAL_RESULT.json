@@ -1,0 +1,8 @@
+{
+  "correction": "Validate schema bytes before constructing compiler; valid schema path unchanged. No model calls occurred.",
+  "error": "test_schema_drift_rejected_before_compile: AttributeError before hash rejection",
+  "errors": 1,
+  "failures": 0,
+  "passed": false,
+  "tests_run": 44
+}

@@ -1,0 +1,10 @@
+{
+  "acquisition": "REUSE_EXISTING_EXACT_WHEEL_COPY_OUTSIDE_REPOSITORY_BEFORE_INSTALL",
+  "downloads": 0,
+  "original_verified_copy": "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-a21\\xgrammar-0.2.8-cp312-cp312-win_amd64.whl",
+  "package": "xgrammar",
+  "version": "0.2.8",
+  "wheel_filename": "xgrammar-0.2.8-cp312-cp312-win_amd64.whl",
+  "wheel_sha256": "dbcf6718e049cbe429742cdb05f85c48135c2e389d45daeafb884af6994bb4a7",
+  "wheel_size": 1115212
+}

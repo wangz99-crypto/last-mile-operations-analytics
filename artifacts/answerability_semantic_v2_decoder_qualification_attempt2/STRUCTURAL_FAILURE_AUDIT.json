@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "case_id": "S1",
+      "elapsed_seconds": 32.09399999980815,
+      "generated_token_count": 45,
+      "input_token_count": 987,
+      "missing_required_top_level_keys": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "raw_output_sha256": "a6ba60eccfcc076f569f464c90e9b6e9b25293edd0bf2502e66da5d9b521e9cb"
+    },
+    {
+      "case_id": "S2",
+      "elapsed_seconds": 43.17200000002049,
+      "generated_token_count": 81,
+      "input_token_count": 994,
+      "missing_required_top_level_keys": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "raw_output_sha256": "1b078ff8fffba3a814fb0be5fdc4bb83b9a0a7a8799ac41e3b43016c7aa43afe"
+    },
+    {
+      "case_id": "S3",
+      "elapsed_seconds": 30.67200000002049,
+      "generated_token_count": 43,
+      "input_token_count": 988,
+      "missing_required_top_level_keys": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "raw_output_sha256": "467f92a2c8d285dddb5f574c3c227af3361e7b7f6396fab3ee409a767bbe362a"
+    }
+  ],
+  "method": "Direct set comparison with original schema root required list; no semantic scoring.",
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e"
+}

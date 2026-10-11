@@ -1,0 +1,8 @@
+{
+  "exact_raw_records": 3,
+  "outcome": "DECODER_QUALIFICATION_FAILED",
+  "package_drift": 0,
+  "passed": true,
+  "schema_validation_method": "Independent interpreter of all keywords in hash-locked exact V2 schema",
+  "source_and_config_unchanged": true
+}

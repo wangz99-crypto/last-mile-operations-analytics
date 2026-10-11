@@ -1,0 +1,7 @@
+{
+  "elapsed_seconds": 21.437999999849126,
+  "retry_count": 0,
+  "returncode": 0,
+  "stderr": "[01:30:42] D:\\a\\xgrammar\\xgrammar\\cpp\\json_schema_converter.cc:832: Warning: oneOf with overlapping or non-provably-disjoint branches cannot be represented exactly; falling back to anyOf semantics\n",
+  "stdout": ""
+}

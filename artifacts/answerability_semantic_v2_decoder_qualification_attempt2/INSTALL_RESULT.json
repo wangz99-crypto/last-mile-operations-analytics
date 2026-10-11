@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pip",
+    "install",
+    "--no-deps",
+    "--no-index",
+    "--no-compile",
+    "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-a21-attempt2-wheel-vp7hv_ry\\xgrammar-0.2.8-cp312-cp312-win_amd64.whl"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "stdout": "Processing c:\\users\\zhewa\\appdata\\local\\temp\\phase2h-a21-attempt2-wheel-vp7hv_ry\\xgrammar-0.2.8-cp312-cp312-win_amd64.whl\nInstalling collected packages: xgrammar\nSuccessfully installed xgrammar-0.2.8\n"
+}

@@ -1,0 +1,39 @@
+{
+  "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "model_initializations": 0,
+  "model_vocab_size": 151936,
+  "passed": true,
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "snapshot": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\hf-cache\\models--Qwen--Qwen2.5-1.5B-Instruct\\snapshots\\989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "tokenizer_class": "Qwen2TokenizerFast",
+  "tokenizer_length": 151665,
+  "verified_files": [
+    {
+      "byte_size": 660,
+      "relative_path": "config.json",
+      "sha256": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670"
+    },
+    {
+      "byte_size": 1671839,
+      "relative_path": "merges.txt",
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+    },
+    {
+      "byte_size": 7031645,
+      "relative_path": "tokenizer.json",
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    {
+      "byte_size": 7305,
+      "relative_path": "tokenizer_config.json",
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    {
+      "byte_size": 2776833,
+      "relative_path": "vocab.json",
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ],
+  "vocabulary_sha256": "eac28b4443163ec9294fb2081a1bab689e9391a6787a19c98455185a0ab03a48",
+  "xgrammar_vocab_size": 151936
+}

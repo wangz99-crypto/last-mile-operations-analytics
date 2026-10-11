@@ -1,0 +1,205 @@
+{
+  "architecture": "AMD64",
+  "packages": {
+    "accelerate": {
+      "metadata_sha256": "64e744885238d853870093f1d4526eb93ac6ae8a5420a2b3f864fe5d16189d37",
+      "name": "accelerate",
+      "record_sha256": "4f7c401d11513fb9c640132f82c0103aa80171da5bfcbfdf0f4dce1bf0f5d6e1",
+      "version": "1.15.0"
+    },
+    "annotated-types": {
+      "metadata_sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298",
+      "name": "annotated-types",
+      "record_sha256": "aaa63966313d5663650a9eb71a068e9593df641bf39afcc69b6ab4567e53b2b1",
+      "version": "0.8.0"
+    },
+    "apache-tvm-ffi": {
+      "metadata_sha256": "892a70f9ecee5579202fb3e3918300095a4c5803dea970e10b7340a98f4f06e5",
+      "name": "apache-tvm-ffi",
+      "record_sha256": "dcde0b243533e39ccfc9071bef429d95cf26e4399e436126a2ffd0647235f948",
+      "version": "0.1.14.post1"
+    },
+    "certifi": {
+      "metadata_sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090",
+      "name": "certifi",
+      "record_sha256": "e6c48519c08f2bbe98bb8ccb9c3aa9a157fd41de210173fe047e77b8e8d35421",
+      "version": "2026.7.22"
+    },
+    "charset-normalizer": {
+      "metadata_sha256": "89ce6362bb7be88558f4be99a98f5d1b4da93d19cd0323e5ee0bac05cf883dfb",
+      "name": "charset-normalizer",
+      "record_sha256": "c6b6183b3ccccd716217689a95ab91922ee435096f8914e90c564d024ee07bac",
+      "version": "3.5.2"
+    },
+    "colorama": {
+      "metadata_sha256": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc",
+      "name": "colorama",
+      "record_sha256": "2de1747809a165c7c54a2fd115a569a061e6eedf56d5c6db3fe0dc8a2985562f",
+      "version": "0.4.6"
+    },
+    "filelock": {
+      "metadata_sha256": "2d80f43bd905689145c00b3133bc95895d654ced70a96a1802e9237e0d66599f",
+      "name": "filelock",
+      "record_sha256": "87ac3bb931372412ee7857b9d364a57cc4367af40e5c79e2e8118afe7f72a211",
+      "version": "3.32.3"
+    },
+    "fsspec": {
+      "metadata_sha256": "88b1657585de14e3bb82aa5278aa9595b30aa4ca74ead073d8950615c808099d",
+      "name": "fsspec",
+      "record_sha256": "f7db5d785b40f1eee22ab117eef127fb213aa3230d3a5273ce326dde47e087c2",
+      "version": "2026.7.0"
+    },
+    "huggingface-hub": {
+      "metadata_sha256": "4dc2b0a3fb27bcba8b091f98bccff4b94369d269c9768aeaecd0b99d970665d9",
+      "name": "huggingface_hub",
+      "record_sha256": "11c2690024239d24931fb637bd4039cb92760ad1bddc1f848d832dad742c1ef0",
+      "version": "0.36.2"
+    },
+    "idna": {
+      "metadata_sha256": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85",
+      "name": "idna",
+      "record_sha256": "df9123953b525521bbaa780e02843cdabb3da3f4f119bddcff96ef0f66886f3a",
+      "version": "3.20"
+    },
+    "jinja2": {
+      "metadata_sha256": "68c5548fb67c4132a13898d9b31ec50c6bea2abdd915d921f214355c3a6499c8",
+      "name": "Jinja2",
+      "record_sha256": "0c53d32a3ab7315c84d8278414af16134b29f7ec30fe3d41d90331430a31e525",
+      "version": "3.1.6"
+    },
+    "markupsafe": {
+      "metadata_sha256": "12b4cc61a7fa288cf7667ee3f213786d9619db57fb33ff6f934afbcb5c12ec81",
+      "name": "MarkupSafe",
+      "record_sha256": "602537cb13322b8f5ca66a2fb581b578beccd7193fe949733af07da4a8da6be0",
+      "version": "3.0.3"
+    },
+    "mpmath": {
+      "metadata_sha256": "44b66ea444b9c0d19ae94815d356bf047ae6b680c19268b5c265687cd6a81406",
+      "name": "mpmath",
+      "record_sha256": "6e0dc4362026a41beb2ad7081ec8f6fc9be0c48d9ce65784733aedc223c60100",
+      "version": "1.3.0"
+    },
+    "networkx": {
+      "metadata_sha256": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a",
+      "name": "networkx",
+      "record_sha256": "2a478b4022f8b11de940021fff21b2f0580130a6af6de13063070ada7811574d",
+      "version": "3.6.1"
+    },
+    "numpy": {
+      "metadata_sha256": "451a9b8028000588e66b0b415587b6aef0bbc51a96d8e8a0cba0dc23acf64f99",
+      "name": "numpy",
+      "record_sha256": "d4b72b9dbfa26fc5268cb62af6b99d3b49f31fe0bacb881073c0b0d431ba4704",
+      "version": "2.5.3"
+    },
+    "packaging": {
+      "metadata_sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763",
+      "name": "packaging",
+      "record_sha256": "8c69191044e577ab83c6b2990bc6fd7cfb441e6027ef5bb9e1c49c1dce2cedce",
+      "version": "26.3"
+    },
+    "pip": {
+      "metadata_sha256": "4fa7318cf30f979db7cec45c12cbbc2b4f88a15f12eefbf59a6291d0a03af926",
+      "name": "pip",
+      "record_sha256": "d3f7d026edecc6337b31a1c5511892275888ce527da0d9be6c48adb4ca5d4c18",
+      "version": "25.0.1"
+    },
+    "psutil": {
+      "metadata_sha256": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f",
+      "name": "psutil",
+      "record_sha256": "481092a857176c1a8b92b473aba538340d6ed8cd47bd806bd64b8cc91d55766f",
+      "version": "7.2.2"
+    },
+    "pydantic": {
+      "metadata_sha256": "0685830d13647bd6f3f05526043d32a8b2a221d86b53773053d6c52bb17a9c07",
+      "name": "pydantic",
+      "record_sha256": "85c8ff103b9852dbcbe01c1b9fe9f5f9b8074c711f7246104b266fcd52d6f015",
+      "version": "2.13.5"
+    },
+    "pydantic-core": {
+      "metadata_sha256": "29768c038c0bb3564c0a87ef50ef78d18a2372474bdef0ba356a8c0fd4bd6028",
+      "name": "pydantic_core",
+      "record_sha256": "a561308363198c9aa2ed55bb7720c1657989d2af5124ce7e4016b95fa2c81c2f",
+      "version": "2.46.5"
+    },
+    "pyyaml": {
+      "metadata_sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34",
+      "name": "PyYAML",
+      "record_sha256": "8192cce9eb03fd9bc6afd05abcf791fb6835ef5c46b629eefa05ad315be3d915",
+      "version": "6.0.3"
+    },
+    "regex": {
+      "metadata_sha256": "33859377dbf8dd38ee3de73fd97faebf4a63d50576e3cc1a9dfe44df08b0936a",
+      "name": "regex",
+      "record_sha256": "d50437a52084f9de48cea6b189d49761f2be416a1a7d0bbe4eaad947e9dcf4ce",
+      "version": "2026.9.29"
+    },
+    "requests": {
+      "metadata_sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+      "name": "requests",
+      "record_sha256": "f6bd62ddca64dc9176c0085893fe2f153f553bef4869e9d53416a7c81be5532b",
+      "version": "2.34.2"
+    },
+    "safetensors": {
+      "metadata_sha256": "645be7b8d55e91534f991d144dc9e279581ea8dbea1a8c5b0be14e529d01e345",
+      "name": "safetensors",
+      "record_sha256": "70546da2d572cbe73b36c91b30f6d3cf484362208e8b6a8323476364dbf2cea8",
+      "version": "0.8.0"
+    },
+    "setuptools": {
+      "metadata_sha256": "4444a6b549a8ebb02e1739f4375af7756c841f96f0c31077a183273c7462bd10",
+      "name": "setuptools",
+      "record_sha256": "754d763b11bb61a90275f334f31b61755f262093ec7ede43b55e8d63c908532e",
+      "version": "78.1.0"
+    },
+    "sympy": {
+      "metadata_sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595",
+      "name": "sympy",
+      "record_sha256": "56139de84db3b425a2298ece9b9100df615f99b7e91b1bf77ac0b0233296893e",
+      "version": "1.14.0"
+    },
+    "tokenizers": {
+      "metadata_sha256": "15a5ddaf489f592b77e0a934c0eeb46b51130a94064ca129232afdb0a3868efc",
+      "name": "tokenizers",
+      "record_sha256": "59cb1b72c40c376eb48ba3d2be7aed522b257bb1ab0d451c0e2dffad0a587d89",
+      "version": "0.22.2"
+    },
+    "torch": {
+      "metadata_sha256": "4b33741fadc8b60fb7b08de301f097ece05979ad5b742573a3fd14712cd48bf1",
+      "name": "torch",
+      "record_sha256": "806723c84068c1ffe7adeb2347fa62d95178bcd6dd2e8eb7ed3b0c879f74e89d",
+      "version": "2.14.0+cpu"
+    },
+    "tqdm": {
+      "metadata_sha256": "a5da70b966afea3a759716041bad7187f2ece02c22348cf9e7c0a512bbf15f57",
+      "name": "tqdm",
+      "record_sha256": "4159c56a07e1bfb0ade57ecf9f3efd6b21bd69d7190b6cad2178ecb4350f62ce",
+      "version": "4.70.1"
+    },
+    "transformers": {
+      "metadata_sha256": "91601044a74fe02571a825356754dbbaa9e1d3e3dd3c2237254c15e903e421e3",
+      "name": "transformers",
+      "record_sha256": "e2e3936d8f563ede0bdd51192190073c19e50a80d80b1c301f1597d95835bf70",
+      "version": "4.57.6"
+    },
+    "typing-extensions": {
+      "metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46",
+      "name": "typing_extensions",
+      "record_sha256": "a346a921aa5be35b34ced3258614183d152887b954caaae5de2a94be72d5f2ec",
+      "version": "4.16.0"
+    },
+    "typing-inspection": {
+      "metadata_sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da",
+      "name": "typing-inspection",
+      "record_sha256": "ddcdc762cc08b53be8fc7e86cb59e2ac022859547d764e69e574692dfeee18df",
+      "version": "0.4.4"
+    },
+    "urllib3": {
+      "metadata_sha256": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4",
+      "name": "urllib3",
+      "record_sha256": "d1095c0d4222e159c7ceb2f8767d012e68bc1c4c0025518760aeec47e91326e2",
+      "version": "2.8.0"
+    }
+  },
+  "platform": "Windows",
+  "python": "3.12.10"
+}

@@ -1,0 +1,38 @@
+{
+  "outcome": "DECODER_QUALIFICATION_FAILED",
+  "results": [
+    {
+      "A_json_valid": true,
+      "B_exact_schema_valid": false,
+      "C_adapter_error": "Invalid assessment keys",
+      "C_adapter_valid": false,
+      "case_id": "S1",
+      "fencing_or_prefix_suffix_violation": false,
+      "generation_complete": true,
+      "semantic_scoring": "NOT_PERFORMED",
+      "structural_acceptance": false
+    },
+    {
+      "A_json_valid": true,
+      "B_exact_schema_valid": false,
+      "C_adapter_error": "Invalid assessment keys",
+      "C_adapter_valid": false,
+      "case_id": "S2",
+      "fencing_or_prefix_suffix_violation": false,
+      "generation_complete": true,
+      "semantic_scoring": "NOT_PERFORMED",
+      "structural_acceptance": false
+    },
+    {
+      "A_json_valid": true,
+      "B_exact_schema_valid": false,
+      "C_adapter_error": "Invalid assessment keys",
+      "C_adapter_valid": false,
+      "case_id": "S3",
+      "fencing_or_prefix_suffix_violation": false,
+      "generation_complete": true,
+      "semantic_scoring": "NOT_PERFORMED",
+      "structural_acceptance": false
+    }
+  ]
+}

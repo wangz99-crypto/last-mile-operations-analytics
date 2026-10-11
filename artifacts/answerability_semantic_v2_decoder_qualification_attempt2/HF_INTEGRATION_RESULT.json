@@ -1,0 +1,6 @@
+{
+  "container_type": "LogitsProcessorList",
+  "generate_calls": 0,
+  "passed": true,
+  "processor_type": "LogitsProcessor"
+}

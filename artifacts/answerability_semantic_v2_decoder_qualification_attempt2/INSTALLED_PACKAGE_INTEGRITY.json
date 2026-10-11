@@ -1,0 +1,22 @@
+{
+  "additions": [
+    "xgrammar==0.2.8"
+  ],
+  "direct_url": {
+    "archive_info": {
+      "hash": "sha256=dbcf6718e049cbe429742cdb05f85c48135c2e389d45daeafb884af6994bb4a7",
+      "hashes": {
+        "sha256": "dbcf6718e049cbe429742cdb05f85c48135c2e389d45daeafb884af6994bb4a7"
+      }
+    },
+    "url": "file:///C:/Users/zhewa/AppData/Local/Temp/phase2h-a21-attempt2-wheel-vp7hv_ry/xgrammar-0.2.8-cp312-cp312-win_amd64.whl"
+  },
+  "existing_package_drift": 0,
+  "identity": {
+    "metadata_sha256": "91ffa7936f8bde807ef453245bb41617818b06190d610f9777b135f746197bd8",
+    "name": "xgrammar",
+    "record_sha256": "523f8c65ae897a3ec4fd9a91589f86095c5de24908439d32860dd5f0bfc649af",
+    "version": "0.2.8"
+  },
+  "wheel_payload_files_verified": 41
+}

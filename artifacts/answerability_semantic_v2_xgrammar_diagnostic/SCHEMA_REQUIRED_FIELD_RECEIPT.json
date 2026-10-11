@@ -1,0 +1,95 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "decision": {
+      "enum": [
+        "ALLOW",
+        "ABSTAIN"
+      ]
+    },
+    "material_asks": {
+      "items": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "maxItems": 0
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "support_status": {
+                  "const": "SUPPORTED"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "ask": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED",
+              "CONTEXT_UNRESOLVED"
+            ]
+          },
+          "supporting_evidence_ranks": {
+            "items": {
+              "maximum": 10,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "type": "array",
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ],
+        "type": "object"
+      },
+      "maxItems": 8,
+      "minItems": 1,
+      "type": "array"
+    },
+    "policy_context_status": {
+      "enum": [
+        "RESOLVED",
+        "UNRESOLVED"
+      ]
+    },
+    "reason_code": {
+      "enum": [
+        "SUPPORTED_BY_ACTIVE_POLICY",
+        "INSUFFICIENT_POLICY_SUPPORT",
+        "UNRESOLVED_POLICY_CONTEXT"
+      ]
+    }
+  },
+  "required": [
+    "material_asks",
+    "policy_context_status",
+    "decision",
+    "reason_code"
+  ],
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "type": "object"
+}

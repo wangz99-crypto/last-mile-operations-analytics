@@ -1,0 +1,282 @@
+{
+  "files": [
+    {
+      "package": "xgrammar",
+      "path": "xgrammar-0.2.8.dist-info/INSTALLER",
+      "record_hash_verified": true,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar-0.2.8.dist-info/METADATA",
+      "record_hash_verified": true,
+      "sha256": "91ffa7936f8bde807ef453245bb41617818b06190d610f9777b135f746197bd8"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar-0.2.8.dist-info/REQUESTED",
+      "record_hash_verified": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar-0.2.8.dist-info/WHEEL",
+      "record_hash_verified": true,
+      "sha256": "f15bc60f9bb7ebe0d4e917d2e3627494a9115477e597efbaa12905cd60a9153b"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar-0.2.8.dist-info/direct_url.json",
+      "record_hash_verified": true,
+      "sha256": "ec2fe5fd8d513b4a830fc00140db9ebcf887041e23a34134fc3c66a580a1d0f1"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar-0.2.8.dist-info/licenses/LICENSE",
+      "record_hash_verified": true,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar-0.2.8.dist-info/licenses/NOTICE",
+      "record_hash_verified": true,
+      "sha256": "93971ad2b725c8398df171dbd7c8145fc9d11bf016294aa69a8a783b55a40775"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/__init__.py",
+      "record_hash_verified": true,
+      "sha256": "1ed05da12db21c4aeb36daa1fd1c6b70bc5d8ffb45cdabbbf384c60c8b04ac43"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/_version.py",
+      "record_hash_verified": true,
+      "sha256": "9324f0384e68aa73fb5a3a6b9f913da1f5bb99ca979dffc96eb20065dc7429e6"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/base.py",
+      "record_hash_verified": true,
+      "sha256": "889935d4e0dd8b1fdafa008a21c69c8eb08f06bb55f1e37227a26d2f41c1f70e"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/builtin_structural_tag.py",
+      "record_hash_verified": true,
+      "sha256": "c810d6c2bbd5450984ede2e7af817a65dc4d38f5d16bcaa742be034f0b4b02de"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/compiler.py",
+      "record_hash_verified": true,
+      "sha256": "a5b40ef89f9c8d659261469caf2f5041b3de5f40c235ed91efa6260e022554f7"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/config.py",
+      "record_hash_verified": true,
+      "sha256": "a5e71e4e2a2fd7908611d6d31031432993d656f39cdfbcff2563b7ffbea92640"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/contrib/__init__.py",
+      "record_hash_verified": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/contrib/hf.py",
+      "record_hash_verified": true,
+      "sha256": "7bb8c3853a94daacc51aff867d170c28e500ebef00095fc687962e7b2a9a37bf"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/contrib/mlxlm.py",
+      "record_hash_verified": true,
+      "sha256": "608c1f724144ce59a743220dabda21734edacec4263e6fa5e3b2a578d00bdb6e"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/exception.py",
+      "record_hash_verified": true,
+      "sha256": "3c3baeea3855169cb50d5312bf93d389c2df9a58ce67181a1687bd9a6431cf62"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/grammar.py",
+      "record_hash_verified": true,
+      "sha256": "e528e95d6cbca52cf0f21824ca09db0750c8e0a309c1a1d607be1392652c5b07"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/kernels/__init__.py",
+      "record_hash_verified": true,
+      "sha256": "46675d969427ce7c2e47886b6575c8f9ad0fcb99b497213250a0812e7b449da5"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/kernels/apply_token_bitmask_inplace_cpu.py",
+      "record_hash_verified": true,
+      "sha256": "0d9dd747303b877bea069e9147344282a1da15ebe654320593dbc46e6210b6fc"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/kernels/apply_token_bitmask_inplace_cuda.cu",
+      "record_hash_verified": true,
+      "sha256": "91805d13f404e4668c48051432719cd88b84c0630403ca2c657a0905d4d145b6"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/kernels/apply_token_bitmask_inplace_cuda.py",
+      "record_hash_verified": true,
+      "sha256": "d890d4a5d967b726dab4b503d6774ccd337d0d69e35e781836db848616379626"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/kernels/apply_token_bitmask_inplace_torch.py",
+      "record_hash_verified": true,
+      "sha256": "14956986896b0efc52cbce893a098e6bbed4d75561918014abef308147f9ae6c"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/kernels/apply_token_bitmask_inplace_torch_compile.py",
+      "record_hash_verified": true,
+      "sha256": "a8274a98f934e5506ed4933ca82aab3ce94972575c9c302224a2dba8a206f204"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/kernels/apply_token_bitmask_inplace_triton.py",
+      "record_hash_verified": true,
+      "sha256": "3e517df264f70884203c9907e7ea191bfa146adc3d7b36c440128cd611260e22"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/kernels/apply_token_bitmask_mlx.py",
+      "record_hash_verified": true,
+      "sha256": "e563c82fa8650c4295b76c8bce49a90d978d65e2bcc0b3ba42808eb0d90e5d00"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/load_binding.py",
+      "record_hash_verified": true,
+      "sha256": "3c6b30dc787a3785d49e0279a470cd8a53dc15fbb99a49e96fcd2f1a1216872c"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/matcher.py",
+      "record_hash_verified": true,
+      "sha256": "08efa9f1972eb1cf446113a86a0155cc2d2d7b23e3832aacdac6ca4d01085121"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/openai_tool_call_schema.py",
+      "record_hash_verified": true,
+      "sha256": "81f2de14005133b298f5969268bfc6b1b94d0810cf5e9f0dab4e1fabb9cbb58c"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/py.typed",
+      "record_hash_verified": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/structural_tag.py",
+      "record_hash_verified": true,
+      "sha256": "b38dec23fbefcb41afe2027b817a097834e69293e74472ff4013da6b3c39de53"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/testing.py",
+      "record_hash_verified": true,
+      "sha256": "6a858bc889c2669bb15300870a9bbaa12864a46dcf0ca5e9db4e7b75c230544f"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tokenizer_info.py",
+      "record_hash_verified": true,
+      "sha256": "b6efbd2103e39c980f7660543b998adb504e306b7dd67aae5a9d0e89284a4b28"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/__init__.py",
+      "record_hash_verified": true,
+      "sha256": "8c10c35feedd153fb8d7e76088fdf58fc6eb91d29ecb0bd304cbe59fc3fb2c36"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/_ffi_api.py",
+      "record_hash_verified": true,
+      "sha256": "c92cf538632c061116157ee9a5b10ee3334904a7982015b6bd556be614078d8c"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/config/__init__.py",
+      "record_hash_verified": true,
+      "sha256": "483975f11c8d8c3e0608a0c21ee595d4f70e042a209e4483bd2ba8a7ed99dc72"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/config/_ffi_api.py",
+      "record_hash_verified": true,
+      "sha256": "83c1905f83142ed724a339f5df52e855d8554c22f9b34a5dc255415690f6ecf1"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/kernels/__init__.py",
+      "record_hash_verified": true,
+      "sha256": "c7f781fa88620cd744d1f1dd1d617a3515bab03737dec0e5d62d6c27ea47c8fb"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/kernels/_ffi_api.py",
+      "record_hash_verified": true,
+      "sha256": "a067fecccde2e98050828ab4a24dc20d5114b1cab89a3812f2c1ea1237c28eea"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/testing/__init__.py",
+      "record_hash_verified": true,
+      "sha256": "6cc4b70c5dc7cbfa6d8f021a8d3de32b64b0d9a016b2d2e40348116a910261d0"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/testing/_ffi_api.py",
+      "record_hash_verified": true,
+      "sha256": "cce242d9500d6010e40bf7b4b39342ee406149b0e61a48a732bd5037b37b86cb"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/testing/grammar_functor/__init__.py",
+      "record_hash_verified": true,
+      "sha256": "89edd6705866125144bf6b872c2f72ba98ba1975b37a1fa893e2473e3cae88b4"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/tvm_ffi_binding/testing/grammar_functor/_ffi_api.py",
+      "record_hash_verified": true,
+      "sha256": "11ca6b08d391808777cbcde59aaa2296ef7039c63c86119dc48f43c2ce145472"
+    },
+    {
+      "package": "xgrammar",
+      "path": "xgrammar/xgrammar_bindings.dll",
+      "record_hash_verified": true,
+      "sha256": "24c4aa0dab226250d3d0c10241b080c3c540703f6554447aa622d431d91ad22f"
+    },
+    {
+      "package": "transformers",
+      "path": "transformers/generation/logits_process.py",
+      "record_hash_verified": true,
+      "sha256": "6481506629ff6f021157e893fc64c4e7b5b06a72072771809d679387cb54a4b1"
+    },
+    {
+      "package": "transformers",
+      "path": "transformers/generation/utils.py",
+      "record_hash_verified": true,
+      "sha256": "55fd5c50aa785e226afa03e4507b8d27c0328714c0bd048bc60af9e8813a1173"
+    }
+  ],
+  "packages_unchanged": true,
+  "source_evidence_matches_installed_record": true
+}

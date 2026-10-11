@@ -1,0 +1,72 @@
+{
+  "compile_method_source": {
+    "end_line": 214,
+    "path": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\xgrammar\\compiler.py",
+    "sha256": "a5b40ef89f9c8d659261469caf2f5041b3de5f40c235ed91efa6260e022554f7",
+    "source": "def compile_json_schema(\n        self,\n        schema: Union[str, Type[BaseModel], Dict[str, Any]],\n        *,\n        any_whitespace: bool = True,\n        indent: Optional[int] = None,\n        separators: Optional[Tuple[str, str]] = None,\n        strict_mode: bool = True,\n        max_whitespace_cnt: Optional[int] = None,\n        any_order: bool = False,\n    ) -> CompiledGrammar:\n        \"\"\"Get CompiledGrammar from the specified JSON schema and format. The indent\n        and separators parameters follow the same convention as in json.dumps().\n\n        Parameters\n        ----------\n        schema : Union[str, Type[BaseModel], Dict[str, Any]]\n            The schema string or Pydantic model or JSON schema dict.\n\n        indent : Optional[int], default: None\n            The number of spaces for indentation. If None, the output will be in one line.\n\n        separators : Optional[Tuple[str, str]], default: None\n            Two separators used in the schema: comma and colon. Examples: (\",\", \":\"), (\", \", \": \").\n            If None, the default separators will be used: (\",\", \": \") when the indent is not None,\n            and (\", \", \": \") otherwise.\n\n        strict_mode : bool, default: True\n            Whether to use strict mode. In strict mode, the generated grammar will not allow\n            properties and items that is not specified in the schema. This is equivalent to\n            setting unevaluatedProperties and unevaluatedItems to false.\n\n            This helps LLM to generate accurate output in the grammar-guided generation with JSON\n            schema.\n\n        max_whitespace_cnt : Optional[int], default: None\n            The maximum number of whitespace characters allowed between elements, such like keys, values, separators and so on.\n            If None, there is no limit on the number of whitespace characters.\n            If specified, it will limit the number of whitespace characters to at most max_whitespace_cnt.\n            It should be a positive integer.\n\n        any_order : bool, default: False\n            Whether object properties may appear in any order.\n\n            - False: properties follow the schema's declared order, fully validated (required\n              keys present, no duplicates).\n            - True: properties may appear in any order; only key validity and each key's value\n              schema are enforced. Key presence and uniqueness are not checked, so required keys\n              may be missing and keys may repeat. The entry count is bounded to\n              ``[max(minProperties, n_required), maxProperties]`` (unbounded when maxProperties\n              is unset).\n\n            Applies to every object, nested included.\n\n        Returns\n        -------\n        compiled_grammar : CompiledGrammar\n            The compiled grammar.\n        \"\"\"\n        schema_str = _convert_schema_to_str(schema)\n        return CompiledGrammar._create_from_handle(\n            self._handle.compile_json_schema(\n                schema_str,\n                any_whitespace,\n                indent,\n                separators,\n                strict_mode,\n                max_whitespace_cnt,\n                any_order,\n            )\n        )",
+    "start_line": 144
+  },
+  "compiler_constructor_options": {
+    "cache_enabled": true,
+    "cache_limit_bytes": -1,
+    "max_threads": 8
+  },
+  "compiler_constructor_source": {
+    "end_line": 142,
+    "path": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\xgrammar\\compiler.py",
+    "sha256": "a5b40ef89f9c8d659261469caf2f5041b3de5f40c235ed91efa6260e022554f7",
+    "source": "def __init__(\n        self,\n        tokenizer_info: TokenizerInfo,\n        *,\n        max_threads: int = 8,\n        cache_enabled: bool = True,\n        cache_limit_bytes: int = -1,\n    ):\n        \"\"\"Construct the compiler.\n\n        Parameters\n        ----------\n        tokenizer_info : TokenizerInfo\n            The tokenizer info.\n\n        max_threads : int, default: 8\n            The maximum number of threads used to compile the grammar.\n\n        cache_enabled : bool, default: True\n            Whether to enable the cache.\n\n        cache_limit_bytes : int, default: -1\n            The maximum memory usage for the cache in the specified unit.\n            Note that the actual memory usage may slightly exceed this value.\n        \"\"\"\n        if not isinstance(tokenizer_info, TokenizerInfo):\n            raise ValueError(\n                \"Please convert the tokenizer to TokenizerInfo before passing it \"\n                \"to GrammarCompiler.\"\n            )\n\n        self._init_handle(\n            _core.GrammarCompiler(\n                tokenizer_info._handle, max_threads, cache_enabled, cache_limit_bytes\n            )\n        )",
+    "start_line": 107
+  },
+  "effective_options": {
+    "any_order": false,
+    "any_whitespace": true,
+    "indent": null,
+    "max_whitespace_cnt": null,
+    "separators": null,
+    "strict_mode": true
+  },
+  "evidence_basis": "Hash-verified Attempt-2 call AST plus installed exact-version Python function definitions; not generic documentation defaults.",
+  "explicit_keyword_overrides": {},
+  "schema_argument": "exact frozen UTF-8 schema text, one positional argument",
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "tokenizer_identity": {
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "model_initializations": 0,
+    "model_vocab_size": 151936,
+    "passed": true,
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "snapshot": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\hf-cache\\models--Qwen--Qwen2.5-1.5B-Instruct\\snapshots\\989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "tokenizer_length": 151665,
+    "verified_files": [
+      {
+        "byte_size": 660,
+        "relative_path": "config.json",
+        "sha256": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670"
+      },
+      {
+        "byte_size": 1671839,
+        "relative_path": "merges.txt",
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      {
+        "byte_size": 7031645,
+        "relative_path": "tokenizer.json",
+        "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      },
+      {
+        "byte_size": 7305,
+        "relative_path": "tokenizer_config.json",
+        "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+      },
+      {
+        "byte_size": 2776833,
+        "relative_path": "vocab.json",
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    ],
+    "vocabulary_sha256": "eac28b4443163ec9294fb2081a1bab689e9391a6787a19c98455185a0ab03a48",
+    "xgrammar_vocab_size": 151936
+  }
+}

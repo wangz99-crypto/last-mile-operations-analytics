@@ -1,0 +1,56 @@
+{
+  "attempt2_history_unchanged": {
+    "clean_capability_judgment": "NOT_CONCLUSIVE",
+    "execution_integrity": "NONCONFORMING_CONFIG",
+    "formal_outcome": "DECODER_QUALIFICATION_FAILED"
+  },
+  "attempt3_started": false,
+  "confidence": "ESTABLISHED",
+  "counters": {
+    "development_semantic_calls": 0,
+    "forward": 0,
+    "generate": 0,
+    "model_downloads": 0,
+    "model_network_access": 0,
+    "native_compilations": 1,
+    "native_matcher_cases": 8,
+    "package_changes": 0,
+    "package_installation": 0,
+    "qwen_initialization": 0,
+    "retries": 0,
+    "retrieval_calls": 0,
+    "semantic_outputs": 0
+  },
+  "established_defects": [
+    {
+      "confidence": "ESTABLISHED",
+      "evidence": "M5-M8 accepted body, completion and EOS; matching emitted EBNF branch.",
+      "issue": "Exact schema/options grammar accepts material_asks-only M5 and exact saved S1-S3 despite missing required fields."
+    },
+    {
+      "confidence": "ESTABLISHED",
+      "evidence": "M1 passes independent exact-schema validation but native matcher rejects a body token.",
+      "issue": "Exact schema/options grammar rejects valid complete M1."
+    }
+  ],
+  "fresh_semantic_suite": "NOT YET AUTHORED",
+  "future_recovery_requirement": "Any separately authorized recovery must establish exact-schema conformance including required fields and complete valid objects before generation. No particular parameter/schema/decoder change is established as a fix here.",
+  "generation_path": {
+    "concrete_application_or_lifecycle_defect_established": false,
+    "fresh_processor_per_call": true,
+    "historical_per_token_masking": "NOT_VERIFIED",
+    "processor_argument_present": true
+  },
+  "not_a_general_claim": "This localizes a defect for this exact schema, compiler options and installed 0.2.8 implementation. It does not claim all schemas or configurations are unenforceable.",
+  "penalty": "CONFIG DEVIATION CONFIRMED; CAUSAL ROLE NOT ESTABLISHED",
+  "phase_2g_private_heldout_access": false,
+  "phase_2h_held_out_access": false,
+  "primary_localization_outcome": "GRAMMAR_COMPILATION_OR_REQUIRED_FIELD_ENFORCEMENT_ISSUE",
+  "repairs": 0,
+  "review_status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+  "source_level_mechanism": {
+    "confidence": "SUPPORTED_BUT_NOT_PROVEN",
+    "description": "Emitted composition branches do not preserve the whole-schema constraint intersection; exact native conversion code mechanism is not independently established."
+  },
+  "specific_classification": "GRAMMAR_REQUIRED_FIELD_ENFORCEMENT_FAILURE"
+}

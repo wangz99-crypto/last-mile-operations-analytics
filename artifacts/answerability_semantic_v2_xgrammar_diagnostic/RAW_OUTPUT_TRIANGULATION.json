@@ -1,0 +1,27 @@
+{
+  "results": [
+    {
+      "case_id": "S1",
+      "exact_schema_validator": "FAIL",
+      "json_parser": "PASS",
+      "text_sha256": "a6ba60eccfcc076f569f464c90e9b6e9b25293edd0bf2502e66da5d9b521e9cb",
+      "xgrammar_matcher": "ACCEPT"
+    },
+    {
+      "case_id": "S2",
+      "exact_schema_validator": "FAIL",
+      "json_parser": "PASS",
+      "text_sha256": "1b078ff8fffba3a814fb0be5fdc4bb83b9a0a7a8799ac41e3b43016c7aa43afe",
+      "xgrammar_matcher": "ACCEPT"
+    },
+    {
+      "case_id": "S3",
+      "exact_schema_validator": "FAIL",
+      "json_parser": "PASS",
+      "text_sha256": "467f92a2c8d285dddb5f574c3c227af3361e7b7f6396fab3ee409a767bbe362a",
+      "xgrammar_matcher": "ACCEPT"
+    }
+  ],
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "validator": "Independent exact-keyword interpreter from frozen Attempt-2 runner; schema hash and supported keywords enforced; not a claim of general JSON Schema support."
+}

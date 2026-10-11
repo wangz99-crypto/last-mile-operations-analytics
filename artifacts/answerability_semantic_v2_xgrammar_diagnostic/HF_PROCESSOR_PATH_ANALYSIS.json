@@ -1,0 +1,41 @@
+{
+  "container_handling": {
+    "cleared_or_dropped": "No clearing/removal path found for this nonempty custom list under saved config.",
+    "historical_runtime_verification": "STATIC_SOURCE_ONLY_NO_SAVED_PREPARED_LIST",
+    "initial_handling": "Non-None list retained by generate.",
+    "input": "plain Python list with one XGrammar object",
+    "merge": "New LogitsProcessorList; append default processor references, then custom object references. Same-type custom processors replace defaults only on exact type match.",
+    "object_copy": "References retained; no deep copy or re-instantiation by merge.",
+    "post_merge": "Greedy mode skips sampling warpers; watermarking_config=None and renormalize_logits=False.",
+    "xgrammar_type_collision_with_repetition_processor": false
+  },
+  "edges": [
+    {
+      "basis": "Source hash and compile_exact checked_schema, exact schema text, same options reproduced.",
+      "edge": "frozen schema -> GrammarCompiler",
+      "status": "VERIFIED"
+    },
+    {
+      "basis": "Saved compilation step and current one-shot exact-schema compilation receipt; successful construction is not semantic equivalence.",
+      "edge": "GrammarCompiler -> compiled grammar",
+      "status": "VERIFIED"
+    },
+    {
+      "basis": "Native LogitsProcessor(grammar) constructor in frozen worker, saved pre-model integration result.",
+      "edge": "compiled grammar -> XGrammar HF LogitsProcessor",
+      "status": "VERIFIED"
+    },
+    {
+      "basis": "Each fixed case uses the same frozen worker and explicit one-element list at generate call.",
+      "edge": "HF LogitsProcessor -> model.generate(logits_processor=...)",
+      "status": "VERIFIED"
+    },
+    {
+      "basis": "Transformers source invokes it but Attempt 2 did not record per-token callback/mask telemetry.",
+      "edge": "prepared processor -> actual historical per-token mask application",
+      "status": "NOT_VERIFIED"
+    }
+  ],
+  "established_application_path_defect": false,
+  "evidence": "LOCAL_SOURCE_EVIDENCE.json"
+}

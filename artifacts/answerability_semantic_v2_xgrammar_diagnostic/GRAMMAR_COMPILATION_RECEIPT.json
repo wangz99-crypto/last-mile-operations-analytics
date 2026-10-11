@@ -1,0 +1,32 @@
+{
+  "any_order": false,
+  "compilation_count": 1,
+  "compiled": true,
+  "compiled_grammar_sha256": "d95207f2c0e52f88641274619fba0fe31b74887215f3e99a0f4051b5e3970429",
+  "compiler_constructor_options": {
+    "cache_enabled": true,
+    "cache_limit_bytes": -1,
+    "max_threads": 8
+  },
+  "effective_options": {
+    "any_order": false,
+    "any_whitespace": true,
+    "indent": null,
+    "max_whitespace_cnt": null,
+    "separators": null,
+    "strict_mode": true
+  },
+  "explicit_keyword_overrides": {},
+  "matcher_constructor_defaults": {
+    "default_temperature": null,
+    "max_rollback_tokens": -1,
+    "override_stop_tokens": null,
+    "terminate_without_stop_token": false
+  },
+  "model_initializations": 0,
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "tokenizer_info_vocab_size": 151936,
+  "tokenizer_type": "Qwen2TokenizerFast",
+  "vocabulary_sha256": "eac28b4443163ec9294fb2081a1bab689e9391a6787a19c98455185a0ab03a48",
+  "xgrammar_version": "0.2.8"
+}

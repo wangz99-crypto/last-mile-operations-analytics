@@ -1,0 +1,4 @@
+{
+  "gateway/domain/evaluation/answerability/diagnose_xgrammar_v2.py": "be85e4730bd556befcca12604b240958d09e95cd0b917f7db56584fdfa509e9b",
+  "gateway/domain/tests/test_xgrammar_v2_diagnostic.py": "990da864ddabb3d62d161499a9eab0fc476cb8b1b6a3b90a9432ea87b5ac8e9b"
+}

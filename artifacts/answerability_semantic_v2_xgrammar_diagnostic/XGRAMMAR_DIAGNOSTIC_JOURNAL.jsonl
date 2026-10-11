@@ -1,0 +1,25 @@
+{"details": {"base_commit": "e085c96e5c80ce61bb833be78f36c62ee8ee5790", "base_tag": "answerability-semantic-v2-decoder-v0.2-qualification-failed-nonconforming", "clean_check": "git status --short before authoring diagnostic helper", "initial_clean_worktree": true}, "event": "PRECONDITION_VERIFIED", "timestamp_utc": "2026-10-11T20:10:37.053240+00:00"}
+{"details": {"count": 8, "sha256": "3519ecfb0cd1e215af9d550ed219eff48d02a6fb2ebc3918c7f74425a6390e29"}, "event": "MATCHER_FIXTURES_FROZEN", "timestamp_utc": "2026-10-11T20:10:37.122001+00:00"}
+{"details": {"source_receipt_sha256": "4e054ef0b5962e26a8cf35da5db5217864ccf06b06dac5c69b0b7172536806c5", "tests": 17}, "event": "PRE_DIAGNOSTIC_TESTS_PASSED", "timestamp_utc": "2026-10-11T20:11:06.296599+00:00"}
+{"details": {"maximum_matcher_cases": 8, "model_calls": 0, "retry": 0}, "event": "MATCHER_DIAGNOSTIC_STARTED", "timestamp_utc": "2026-10-11T20:11:40.828335+00:00"}
+{"details": {"any_order": false, "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e"}, "event": "EXACT_SCHEMA_COMPILED", "timestamp_utc": "2026-10-11T20:12:01.698819+00:00"}
+{"details": {"fixture_id": "M1_VALID_COMPLETE"}, "event": "MATCHER_CASE_STARTED", "timestamp_utc": "2026-10-11T20:12:01.698819+00:00"}
+{"details": {"actual": "REJECT", "expected": "ACCEPT", "fixture_id": "M1_VALID_COMPLETE"}, "event": "MATCHER_CASE_COMPLETED", "timestamp_utc": "2026-10-11T20:12:01.698819+00:00"}
+{"details": {"fixture_id": "M2_MISSING_DECISION"}, "event": "MATCHER_CASE_STARTED", "timestamp_utc": "2026-10-11T20:12:01.698819+00:00"}
+{"details": {"actual": "REJECT", "expected": "REJECT", "fixture_id": "M2_MISSING_DECISION"}, "event": "MATCHER_CASE_COMPLETED", "timestamp_utc": "2026-10-11T20:12:01.710358+00:00"}
+{"details": {"fixture_id": "M3_MISSING_POLICY_CONTEXT"}, "event": "MATCHER_CASE_STARTED", "timestamp_utc": "2026-10-11T20:12:01.711491+00:00"}
+{"details": {"actual": "REJECT", "expected": "REJECT", "fixture_id": "M3_MISSING_POLICY_CONTEXT"}, "event": "MATCHER_CASE_COMPLETED", "timestamp_utc": "2026-10-11T20:12:01.712497+00:00"}
+{"details": {"fixture_id": "M4_MISSING_REASON"}, "event": "MATCHER_CASE_STARTED", "timestamp_utc": "2026-10-11T20:12:01.713264+00:00"}
+{"details": {"actual": "REJECT", "expected": "REJECT", "fixture_id": "M4_MISSING_REASON"}, "event": "MATCHER_CASE_COMPLETED", "timestamp_utc": "2026-10-11T20:12:01.714408+00:00"}
+{"details": {"fixture_id": "M5_MISSING_ALL_THREE"}, "event": "MATCHER_CASE_STARTED", "timestamp_utc": "2026-10-11T20:12:01.715407+00:00"}
+{"details": {"actual": "ACCEPT", "expected": "REJECT", "fixture_id": "M5_MISSING_ALL_THREE"}, "event": "MATCHER_CASE_COMPLETED", "timestamp_utc": "2026-10-11T20:12:01.716413+00:00"}
+{"details": {"fixture_id": "M6_ATTEMPT2_S1_RAW"}, "event": "MATCHER_CASE_STARTED", "timestamp_utc": "2026-10-11T20:12:01.716413+00:00"}
+{"details": {"actual": "ACCEPT", "expected": "REJECT", "fixture_id": "M6_ATTEMPT2_S1_RAW"}, "event": "MATCHER_CASE_COMPLETED", "timestamp_utc": "2026-10-11T20:12:01.717410+00:00"}
+{"details": {"fixture_id": "M7_ATTEMPT2_S2_RAW"}, "event": "MATCHER_CASE_STARTED", "timestamp_utc": "2026-10-11T20:12:01.718411+00:00"}
+{"details": {"actual": "ACCEPT", "expected": "REJECT", "fixture_id": "M7_ATTEMPT2_S2_RAW"}, "event": "MATCHER_CASE_COMPLETED", "timestamp_utc": "2026-10-11T20:12:01.719411+00:00"}
+{"details": {"fixture_id": "M8_ATTEMPT2_S3_RAW"}, "event": "MATCHER_CASE_STARTED", "timestamp_utc": "2026-10-11T20:12:01.719411+00:00"}
+{"details": {"actual": "ACCEPT", "expected": "REJECT", "fixture_id": "M8_ATTEMPT2_S3_RAW"}, "event": "MATCHER_CASE_COMPLETED", "timestamp_utc": "2026-10-11T20:12:01.720413+00:00"}
+{"details": {"cases": 8, "retries": 0}, "event": "MATCHER_DIAGNOSTIC_COMPLETED", "timestamp_utc": "2026-10-11T20:12:01.726410+00:00"}
+{"details": {"confidence": "ESTABLISHED", "no_fixes": true, "primary": "GRAMMAR_COMPILATION_OR_REQUIRED_FIELD_ENFORCEMENT_ISSUE"}, "event": "DIAGNOSTIC_OUTCOME_DETERMINED", "timestamp_utc": "2026-10-11T20:14:26.386355+00:00"}
+{"details": {"matcher_reruns": 0, "model_calls": 0, "package_drift": 0, "tests": 17}, "event": "POST_DIAGNOSTIC_VERIFICATION_PASSED", "timestamp_utc": "2026-10-11T20:14:26.386355+00:00"}
+{"details": {"model_calls": 0, "no_fixes": true, "status": "CANDIDATE_AWAITING_OWNER_REVIEW"}, "event": "DIAGNOSTIC_ARTIFACTS_WRITTEN", "timestamp_utc": "2026-10-11T20:16:07.671794+00:00"}

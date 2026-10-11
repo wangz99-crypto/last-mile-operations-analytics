@@ -1,0 +1,10 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "initial_test_guard_correction": "Distinguish string.replace in audit path normalization from filesystem Path.replace; diagnostic behavior unchanged.",
+  "model_calls": 0,
+  "native_matcher_calls": 0,
+  "output": ".................\n----------------------------------------------------------------------\nRan 17 tests in 0.368s\n\nOK\n",
+  "passed": true,
+  "tests_run": 17
+}

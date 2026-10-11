@@ -1,0 +1,7 @@
+{
+  "elapsed_seconds": 21.79699999978766,
+  "retries": 0,
+  "returncode": 0,
+  "stderr": "[16:12:01] D:\\a\\xgrammar\\xgrammar\\cpp\\json_schema_converter.cc:832: Warning: oneOf with overlapping or non-provably-disjoint branches cannot be represented exactly; falling back to anyOf semantics\n",
+  "stdout": "M1_VALID_COMPLETE REJECT expected ACCEPT\nM2_MISSING_DECISION REJECT expected REJECT\nM3_MISSING_POLICY_CONTEXT REJECT expected REJECT\nM4_MISSING_REASON REJECT expected REJECT\nM5_MISSING_ALL_THREE ACCEPT expected REJECT\nM6_ATTEMPT2_S1_RAW ACCEPT expected REJECT\nM7_ATTEMPT2_S2_RAW ACCEPT expected REJECT\nM8_ATTEMPT2_S3_RAW ACCEPT expected REJECT\n"
+}

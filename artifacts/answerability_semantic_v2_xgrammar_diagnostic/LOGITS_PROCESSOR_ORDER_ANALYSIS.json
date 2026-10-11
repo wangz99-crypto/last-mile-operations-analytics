@@ -1,0 +1,18 @@
+{
+  "actual_mask_contents": "NOT_RECORDED_IN_ATTEMPT2",
+  "analysis": "Penalty is applied before grammar masking. It cannot overwrite a later mask. Independently its positive finite multiply/divide preserves negative infinity; no established mask-resurrection mechanism from this penalty.",
+  "basis": "_get_logits_processor adds repetition penalty to default list before merging custom list; LogitsProcessorList applies in order. No sampling/watermark/normalization follows under saved config.",
+  "can_penalty_resurrect_grammar_masked_tokens_in_this_order": false,
+  "causal_role": "NOT_ESTABLISHED",
+  "conclusion": "CONFIG DEVIATION CONFIRMED; CAUSAL ROLE NOT ESTABLISHED",
+  "config_deviation": "CONFIRMED",
+  "evidence": "LOCAL_SOURCE_EVIDENCE.json",
+  "executed_repetition_penalty": 1.1,
+  "frozen_repetition_penalty": 1.0,
+  "no_model_execution": true,
+  "relative_order": [
+    "RepetitionPenaltyLogitsProcessor",
+    "xgrammar.contrib.hf.LogitsProcessor"
+  ],
+  "transformers_version": "4.57.6"
+}

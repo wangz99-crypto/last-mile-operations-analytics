@@ -1,0 +1,9 @@
+{
+  "errors": 0,
+  "failures": 1,
+  "model_calls": 0,
+  "native_matcher_calls": 0,
+  "output": "...........F.....\n======================================================================\nFAIL: test_only_diagnostic_writes (gateway.domain.tests.test_xgrammar_v2_diagnostic.DiagnosticTests.test_only_diagnostic_writes)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\tests\\test_xgrammar_v2_diagnostic.py\", line 105, in test_only_diagnostic_writes\n    self.assertNotIn(node.func.attr,('write_bytes','write_text','unlink','replace','rename','reset'))\nAssertionError: 'replace' unexpectedly found in ('write_bytes', 'write_text', 'unlink', 'replace', 'rename', 'reset')\n\n----------------------------------------------------------------------\nRan 17 tests in 0.406s\n\nFAILED (failures=1)\n",
+  "passed": false,
+  "tests_run": 17
+}

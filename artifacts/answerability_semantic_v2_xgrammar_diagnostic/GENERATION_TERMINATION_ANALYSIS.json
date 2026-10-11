@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "below_token_limit": true,
+      "case_id": "S1",
+      "causal_inference": "NONE",
+      "ends_with_configured_eos": true,
+      "generated_token_count": 45,
+      "last_token_id": 151645,
+      "omitted_required_fields": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "termination_status": "EOS",
+      "token_count_matches_saved_ids": true
+    },
+    {
+      "below_token_limit": true,
+      "case_id": "S2",
+      "causal_inference": "NONE",
+      "ends_with_configured_eos": true,
+      "generated_token_count": 81,
+      "last_token_id": 151645,
+      "omitted_required_fields": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "termination_status": "EOS",
+      "token_count_matches_saved_ids": true
+    },
+    {
+      "below_token_limit": true,
+      "case_id": "S3",
+      "causal_inference": "NONE",
+      "ends_with_configured_eos": true,
+      "generated_token_count": 43,
+      "last_token_id": 151645,
+      "omitted_required_fields": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "termination_status": "EOS",
+      "token_count_matches_saved_ids": true
+    }
+  ],
+  "eos_token_ids": [
+    151645,
+    151643
+  ],
+  "max_new_tokens": 512
+}

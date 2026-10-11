@@ -1,0 +1,19 @@
+{
+  "confidence": "ESTABLISHED_FOR_SOURCE_LIFECYCLE; historical object identities not recorded.",
+  "evidence": "LOCAL_SOURCE_EVIDENCE.json",
+  "expected_library_lifecycle": "Installed xgrammar/contrib/hf.py documents one use only; instantiate a new processor for each generate.",
+  "explicit_reset_in_attempt2": false,
+  "lifecycle_mismatch_established": false,
+  "matcher_lifecycle": "HF __call__ lazily creates matcher(s) when matchers list is empty; per-processor state is fresh.",
+  "observed_source_lifecycle": "NEW_PROCESSOR_PER_GENERATE_CALL",
+  "processor_initial_state": {
+    "batch_size": 0,
+    "matchers": [],
+    "prefilled": false,
+    "token_bitmask": null
+  },
+  "processor_objects": "New LogitsProcessor(grammar) inside each case worker; numeric object IDs not recorded.",
+  "reset_required_for_actual_new_instance_path": false,
+  "reuse_support": "Underlying GrammarMatcher has reset(), but HF wrapper also owns prefilling/bitmask/batch state and exposes no reset method; matcher-only reset is not documented as sufficient for wrapper reuse.",
+  "shared_object": "compiled grammar reused within the process"
+}

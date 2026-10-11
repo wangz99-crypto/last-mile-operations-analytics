@@ -1,0 +1,13 @@
+{
+  "attempt2_all_41_artifacts_unchanged": true,
+  "fixtures_unchanged": true,
+  "frozen_sources_unchanged": true,
+  "helper_tests_unchanged_since_before_native_execution": true,
+  "historical_tracked_git_diff_before_new_attributes": "EMPTY",
+  "native_compilations": 1,
+  "native_matcher_cases": 8,
+  "native_retries": 0,
+  "package_drift": 0,
+  "saved_result_accounting_verified_without_matcher_rerun": true,
+  "schema_unchanged": true
+}

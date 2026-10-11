@@ -1,0 +1,15 @@
+{
+  "inventory_exact_match": true,
+  "package_additions": 0,
+  "package_removals": 0,
+  "payload_counts": {
+    "annotated-types": 6,
+    "apache-tvm-ffi": 258,
+    "pydantic": 110,
+    "pydantic-core": 9,
+    "typing-inspection": 8
+  },
+  "r1_post_inventory_sha256": "92333d1c105214e8393e82f5423e2b7dee2ba8bbb73a00464285beeab80a8016",
+  "record_drift": 0,
+  "version_changes": 0
+}

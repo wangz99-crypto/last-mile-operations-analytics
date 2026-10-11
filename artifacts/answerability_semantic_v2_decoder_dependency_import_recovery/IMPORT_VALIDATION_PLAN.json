@@ -1,0 +1,83 @@
+{
+  "child_script": "\nimport sys,os,json,hashlib,importlib,importlib.metadata as metadata\ntargets=json.loads(sys.argv[1]); observations={'platform_calls':[],'subprocess_events':[],'socket_events':[],'prohibited_content_opens':[]}\ndef profile(frame,event,arg):\n if event=='call' and frame.f_code.co_filename.replace(chr(92),'/').endswith('/platform.py'):\n  name=frame.f_code.co_name\n  if name in ('machine','uname','win32_ver','_win32_ver','_syscmd_ver') and name not in observations['platform_calls']:observations['platform_calls'].append(name)\ndef audit(event,args):\n if event=='subprocess.Popen':observations['subprocess_events'].append({'executable':str(args[0]),'arguments':str(args[1])})\n elif event.startswith('socket.'):\n  observations['socket_events'].append({'operation':event,'arguments':[str(x) for x in args]})\n elif event=='open' and isinstance(args[0],(str,bytes,os.PathLike)):\n  path=os.fsdecode(args[0]);p=path.lower().replace(chr(92),'/')\n  if any(s in p for s in ('heldout','held_out','/development/','/hf-cache/')) or p.endswith('.safetensors'):observations['prohibited_content_opens'].append(path)\nsys.setprofile(profile)\nsys.addaudithook(audit)\nresults=[]\ntry:\n for target in targets:\n  module=importlib.import_module(target['module'])\n  dist=metadata.distribution(target['package'])\n  results.append({'package':target['package'],'module':target['module'],'module_path':module.__file__,\n   'module_version':str(module.__version__) if hasattr(module,'__version__') else None,\n   'distribution_name':dist.metadata['Name'],'distribution_version':dist.version,\n   'metadata_sha256':hashlib.sha256((dist.read_text('METADATA') or '').encode()).hexdigest(),\n   'record_sha256':hashlib.sha256((dist.read_text('RECORD') or '').encode()).hexdigest(),'import_success':True})\nfinally:\n sys.setprofile(None)\n print('R2_RESULT_JSON='+json.dumps({'results':results,'observations':observations,'torch_imported':'torch' in sys.modules,\n  'forbidden_modules_present':[n for n in ('xgrammar','transformers','sentence_transformers','gateway') if n in sys.modules]},sort_keys=True),flush=True)\n",
+  "child_script_sha256": "dc719b374e0dde8dd9e63f7315613c20e4e95247d110754889c91e2e04b19f84",
+  "combined_only_if_all_independent_pass": true,
+  "cwd": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b",
+  "environment_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PIP_NO_INDEX": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "independent_count": 5,
+  "maximum_processes": 6,
+  "python": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+  "python_flags": [
+    "-I",
+    "-B"
+  ],
+  "retries": 0,
+  "runner_sha256": "c243d4bf143e43a1cd77a2d609191a17c8019cd0e0c9445f23dc578f228562e5",
+  "socket_monkeypatch": false,
+  "subprocess_guard": "NONE_OBSERVATION_ONLY",
+  "targets": [
+    {
+      "identity": {
+        "metadata_sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298",
+        "name": "annotated-types",
+        "record_sha256": "aaa63966313d5663650a9eb71a068e9593df641bf39afcc69b6ab4567e53b2b1",
+        "version": "0.8.0"
+      },
+      "module": "annotated_types",
+      "module_evidence": "annotated_types/__init__.py",
+      "package": "annotated-types"
+    },
+    {
+      "identity": {
+        "metadata_sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da",
+        "name": "typing-inspection",
+        "record_sha256": "ddcdc762cc08b53be8fc7e86cb59e2ac022859547d764e69e574692dfeee18df",
+        "version": "0.4.4"
+      },
+      "module": "typing_inspection",
+      "module_evidence": "typing_inspection/__init__.py",
+      "package": "typing-inspection"
+    },
+    {
+      "identity": {
+        "metadata_sha256": "29768c038c0bb3564c0a87ef50ef78d18a2372474bdef0ba356a8c0fd4bd6028",
+        "name": "pydantic_core",
+        "record_sha256": "a561308363198c9aa2ed55bb7720c1657989d2af5124ce7e4016b95fa2c81c2f",
+        "version": "2.46.5"
+      },
+      "module": "pydantic_core",
+      "module_evidence": "pydantic_core/__init__.py",
+      "package": "pydantic-core"
+    },
+    {
+      "identity": {
+        "metadata_sha256": "0685830d13647bd6f3f05526043d32a8b2a221d86b53773053d6c52bb17a9c07",
+        "name": "pydantic",
+        "record_sha256": "85c8ff103b9852dbcbe01c1b9fe9f5f9b8074c711f7246104b266fcd52d6f015",
+        "version": "2.13.5"
+      },
+      "module": "pydantic",
+      "module_evidence": "pydantic/__init__.py",
+      "package": "pydantic"
+    },
+    {
+      "identity": {
+        "metadata_sha256": "892a70f9ecee5579202fb3e3918300095a4c5803dea970e10b7340a98f4f06e5",
+        "name": "apache-tvm-ffi",
+        "record_sha256": "dcde0b243533e39ccfc9071bef429d95cf26e4399e436126a2ffd0647235f948",
+        "version": "0.1.14.post1"
+      },
+      "module": "tvm_ffi",
+      "module_evidence": "tvm_ffi/__init__.py",
+      "package": "apache-tvm-ffi"
+    }
+  ],
+  "timeout_seconds": 120,
+  "venv": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b"
+}

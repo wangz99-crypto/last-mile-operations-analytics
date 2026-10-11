@@ -1,0 +1,55 @@
+{
+  "cwd": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b",
+  "elapsed_seconds": 21.42200000002049,
+  "environment_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PIP_NO_INDEX": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "exit_code": 0,
+  "passed": true,
+  "payload": {
+    "forbidden_modules_present": [],
+    "observations": {
+      "platform_calls": [
+        "machine",
+        "uname",
+        "win32_ver",
+        "_win32_ver"
+      ],
+      "prohibited_content_opens": [],
+      "socket_events": [
+        {
+          "arguments": [],
+          "operation": "socket.gethostname"
+        }
+      ],
+      "subprocess_events": []
+    },
+    "results": [
+      {
+        "distribution_name": "apache-tvm-ffi",
+        "distribution_version": "0.1.14.post1",
+        "import_success": true,
+        "metadata_sha256": "892a70f9ecee5579202fb3e3918300095a4c5803dea970e10b7340a98f4f06e5",
+        "module": "tvm_ffi",
+        "module_path": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\tvm_ffi\\__init__.py",
+        "module_version": "0.1.14.post1",
+        "package": "apache-tvm-ffi",
+        "record_sha256": "dcde0b243533e39ccfc9071bef429d95cf26e4399e436126a2ffd0647235f948"
+      }
+    ],
+    "torch_imported": true
+  },
+  "python": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+  "sequence": 5,
+  "stage": "independent",
+  "stderr": "",
+  "stdout": "R2_RESULT_JSON={\"forbidden_modules_present\": [], \"observations\": {\"platform_calls\": [\"machine\", \"uname\", \"win32_ver\", \"_win32_ver\"], \"prohibited_content_opens\": [], \"socket_events\": [{\"arguments\": [], \"operation\": \"socket.gethostname\"}], \"subprocess_events\": []}, \"results\": [{\"distribution_name\": \"apache-tvm-ffi\", \"distribution_version\": \"0.1.14.post1\", \"import_success\": true, \"metadata_sha256\": \"892a70f9ecee5579202fb3e3918300095a4c5803dea970e10b7340a98f4f06e5\", \"module\": \"tvm_ffi\", \"module_path\": \"C:\\\\Users\\\\zhewa\\\\.virtualenvs\\\\llm-rag-semantic-qwen25-1p5b\\\\Lib\\\\site-packages\\\\tvm_ffi\\\\__init__.py\", \"module_version\": \"0.1.14.post1\", \"package\": \"apache-tvm-ffi\", \"record_sha256\": \"dcde0b243533e39ccfc9071bef429d95cf26e4399e436126a2ffd0647235f948\"}], \"torch_imported\": true}\n",
+  "targets": [
+    "tvm_ffi"
+  ],
+  "timeout": false
+}

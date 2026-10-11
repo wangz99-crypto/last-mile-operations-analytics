@@ -1,0 +1,18 @@
+{
+  "coverage": [
+    "no historical broad guard",
+    "fixed plan/hash",
+    "six-process maximum",
+    "no retries",
+    "exact Python",
+    "module path and package identity",
+    "drift detection",
+    "XGrammar absent",
+    "no benchmark/model/network/pip operations in child"
+  ],
+  "model_calls": 0,
+  "passed": 17,
+  "real_import_processes_during_tests": 0,
+  "test_source_sha256": "4f38fcc5a343f8592d1cf14d9fdb725fa64b097719315c016b28b69b91ccd70f",
+  "total": 17
+}

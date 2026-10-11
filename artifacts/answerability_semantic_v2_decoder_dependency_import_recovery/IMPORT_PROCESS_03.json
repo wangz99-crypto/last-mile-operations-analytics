@@ -1,0 +1,45 @@
+{
+  "cwd": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b",
+  "elapsed_seconds": 0.3910000000614673,
+  "environment_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PIP_NO_INDEX": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "exit_code": 0,
+  "passed": true,
+  "payload": {
+    "forbidden_modules_present": [],
+    "observations": {
+      "platform_calls": [],
+      "prohibited_content_opens": [],
+      "socket_events": [],
+      "subprocess_events": []
+    },
+    "results": [
+      {
+        "distribution_name": "pydantic_core",
+        "distribution_version": "2.46.5",
+        "import_success": true,
+        "metadata_sha256": "29768c038c0bb3564c0a87ef50ef78d18a2372474bdef0ba356a8c0fd4bd6028",
+        "module": "pydantic_core",
+        "module_path": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\pydantic_core\\__init__.py",
+        "module_version": "2.46.5",
+        "package": "pydantic-core",
+        "record_sha256": "a561308363198c9aa2ed55bb7720c1657989d2af5124ce7e4016b95fa2c81c2f"
+      }
+    ],
+    "torch_imported": false
+  },
+  "python": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+  "sequence": 3,
+  "stage": "independent",
+  "stderr": "",
+  "stdout": "R2_RESULT_JSON={\"forbidden_modules_present\": [], \"observations\": {\"platform_calls\": [], \"prohibited_content_opens\": [], \"socket_events\": [], \"subprocess_events\": []}, \"results\": [{\"distribution_name\": \"pydantic_core\", \"distribution_version\": \"2.46.5\", \"import_success\": true, \"metadata_sha256\": \"29768c038c0bb3564c0a87ef50ef78d18a2372474bdef0ba356a8c0fd4bd6028\", \"module\": \"pydantic_core\", \"module_path\": \"C:\\\\Users\\\\zhewa\\\\.virtualenvs\\\\llm-rag-semantic-qwen25-1p5b\\\\Lib\\\\site-packages\\\\pydantic_core\\\\__init__.py\", \"module_version\": \"2.46.5\", \"package\": \"pydantic-core\", \"record_sha256\": \"a561308363198c9aa2ed55bb7720c1657989d2af5124ce7e4016b95fa2c81c2f\"}], \"torch_imported\": false}\n",
+  "targets": [
+    "pydantic_core"
+  ],
+  "timeout": false
+}

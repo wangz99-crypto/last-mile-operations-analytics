@@ -1,0 +1,9 @@
+{
+  "combined_pass": true,
+  "environment_unchanged": true,
+  "import_processes": 6,
+  "independent_pass_count": 5,
+  "outcome": "DEPENDENCIES_ENABLED_AWAITING_DECODER_REQUALIFICATION",
+  "retries": 0,
+  "review_status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+}

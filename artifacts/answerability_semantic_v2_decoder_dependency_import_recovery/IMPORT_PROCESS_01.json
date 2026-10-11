@@ -1,0 +1,45 @@
+{
+  "cwd": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b",
+  "elapsed_seconds": 0.23499999986961484,
+  "environment_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PIP_NO_INDEX": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "exit_code": 0,
+  "passed": true,
+  "payload": {
+    "forbidden_modules_present": [],
+    "observations": {
+      "platform_calls": [],
+      "prohibited_content_opens": [],
+      "socket_events": [],
+      "subprocess_events": []
+    },
+    "results": [
+      {
+        "distribution_name": "annotated-types",
+        "distribution_version": "0.8.0",
+        "import_success": true,
+        "metadata_sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298",
+        "module": "annotated_types",
+        "module_path": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\annotated_types\\__init__.py",
+        "module_version": "0.8.0",
+        "package": "annotated-types",
+        "record_sha256": "aaa63966313d5663650a9eb71a068e9593df641bf39afcc69b6ab4567e53b2b1"
+      }
+    ],
+    "torch_imported": false
+  },
+  "python": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+  "sequence": 1,
+  "stage": "independent",
+  "stderr": "",
+  "stdout": "R2_RESULT_JSON={\"forbidden_modules_present\": [], \"observations\": {\"platform_calls\": [], \"prohibited_content_opens\": [], \"socket_events\": [], \"subprocess_events\": []}, \"results\": [{\"distribution_name\": \"annotated-types\", \"distribution_version\": \"0.8.0\", \"import_success\": true, \"metadata_sha256\": \"614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298\", \"module\": \"annotated_types\", \"module_path\": \"C:\\\\Users\\\\zhewa\\\\.virtualenvs\\\\llm-rag-semantic-qwen25-1p5b\\\\Lib\\\\site-packages\\\\annotated_types\\\\__init__.py\", \"module_version\": \"0.8.0\", \"package\": \"annotated-types\", \"record_sha256\": \"aaa63966313d5663650a9eb71a068e9593df641bf39afcc69b6ab4567e53b2b1\"}], \"torch_imported\": false}\n",
+  "targets": [
+    "annotated_types"
+  ],
+  "timeout": false
+}

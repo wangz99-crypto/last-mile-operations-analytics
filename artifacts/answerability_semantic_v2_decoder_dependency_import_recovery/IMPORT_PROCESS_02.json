@@ -1,0 +1,45 @@
+{
+  "cwd": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b",
+  "elapsed_seconds": 0.2339999999385327,
+  "environment_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PIP_NO_INDEX": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "exit_code": 0,
+  "passed": true,
+  "payload": {
+    "forbidden_modules_present": [],
+    "observations": {
+      "platform_calls": [],
+      "prohibited_content_opens": [],
+      "socket_events": [],
+      "subprocess_events": []
+    },
+    "results": [
+      {
+        "distribution_name": "typing-inspection",
+        "distribution_version": "0.4.4",
+        "import_success": true,
+        "metadata_sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da",
+        "module": "typing_inspection",
+        "module_path": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\typing_inspection\\__init__.py",
+        "module_version": null,
+        "package": "typing-inspection",
+        "record_sha256": "ddcdc762cc08b53be8fc7e86cb59e2ac022859547d764e69e574692dfeee18df"
+      }
+    ],
+    "torch_imported": false
+  },
+  "python": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+  "sequence": 2,
+  "stage": "independent",
+  "stderr": "",
+  "stdout": "R2_RESULT_JSON={\"forbidden_modules_present\": [], \"observations\": {\"platform_calls\": [], \"prohibited_content_opens\": [], \"socket_events\": [], \"subprocess_events\": []}, \"results\": [{\"distribution_name\": \"typing-inspection\", \"distribution_version\": \"0.4.4\", \"import_success\": true, \"metadata_sha256\": \"bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da\", \"module\": \"typing_inspection\", \"module_path\": \"C:\\\\Users\\\\zhewa\\\\.virtualenvs\\\\llm-rag-semantic-qwen25-1p5b\\\\Lib\\\\site-packages\\\\typing_inspection\\\\__init__.py\", \"module_version\": null, \"package\": \"typing-inspection\", \"record_sha256\": \"ddcdc762cc08b53be8fc7e86cb59e2ac022859547d764e69e574692dfeee18df\"}], \"torch_imported\": false}\n",
+  "targets": [
+    "typing_inspection"
+  ],
+  "timeout": false
+}

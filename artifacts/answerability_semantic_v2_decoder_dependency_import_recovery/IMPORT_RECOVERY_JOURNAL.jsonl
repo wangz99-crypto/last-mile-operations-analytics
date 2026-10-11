@@ -1,0 +1,22 @@
+{"details": {"base_commit": "b5ac4a77447849d9fb5adc7427b69e4c3e14a52f", "base_tag": "answerability-semantic-v2-deps-v0.1-enablement-failed", "initial_clean_worktree": true}, "event": "PRECONDITION_VERIFIED", "timestamp_utc": "2026-10-11T05:12:24.936287+00:00"}
+{"details": {"classification": "IMPORT_VALIDATION_HARNESS_INTERFERENCE", "outcome": "OWNER_REVIEWED / DEPENDENCY_ENABLEMENT_FAILED", "record_sha256": "7a426b0ab5902d1b0751744c5a7a6890b986af7b7ddbff42f49075411146fbe6"}, "event": "R1_FAILURE_VERIFIED", "timestamp_utc": "2026-10-11T05:12:24.936287+00:00"}
+{"details": {"inventory_exact_match": true, "package_additions": 0, "package_removals": 0, "payload_counts": {"annotated-types": 6, "apache-tvm-ffi": 258, "pydantic": 110, "pydantic-core": 9, "typing-inspection": 8}, "r1_post_inventory_sha256": "92333d1c105214e8393e82f5423e2b7dee2ba8bbb73a00464285beeab80a8016", "record_drift": 0, "version_changes": 0}, "event": "FROZEN_POST_INSTALL_STATE_VERIFIED", "timestamp_utc": "2026-10-11T05:12:24.941726+00:00"}
+{"details": {"sha256": "92333d1c105214e8393e82f5423e2b7dee2ba8bbb73a00464285beeab80a8016"}, "event": "PRE_VALIDATION_INVENTORY_WRITTEN", "timestamp_utc": "2026-10-11T05:12:24.943465+00:00"}
+{"details": {"sha256": "d38b9159b06210512310d8c7c183cb0748c2e4444712d32a861189571a551308"}, "event": "R2_IMPORT_PLAN_FROZEN", "timestamp_utc": "2026-10-11T05:12:24.945835+00:00"}
+{"details": {"modules": ["annotated_types"], "sequence": 1}, "event": "INDEPENDENT_IMPORT_VALIDATION_STARTED", "timestamp_utc": "2026-10-11T05:12:37.691089+00:00"}
+{"details": {"exit_code": 0, "passed": true, "sequence": 1}, "event": "INDEPENDENT_IMPORT_VALIDATION_COMPLETED", "timestamp_utc": "2026-10-11T05:12:37.934481+00:00"}
+{"details": {"modules": ["typing_inspection"], "sequence": 2}, "event": "INDEPENDENT_IMPORT_VALIDATION_STARTED", "timestamp_utc": "2026-10-11T05:12:37.934481+00:00"}
+{"details": {"exit_code": 0, "passed": true, "sequence": 2}, "event": "INDEPENDENT_IMPORT_VALIDATION_COMPLETED", "timestamp_utc": "2026-10-11T05:12:38.169992+00:00"}
+{"details": {"modules": ["pydantic_core"], "sequence": 3}, "event": "INDEPENDENT_IMPORT_VALIDATION_STARTED", "timestamp_utc": "2026-10-11T05:12:38.169992+00:00"}
+{"details": {"exit_code": 0, "passed": true, "sequence": 3}, "event": "INDEPENDENT_IMPORT_VALIDATION_COMPLETED", "timestamp_utc": "2026-10-11T05:12:38.565011+00:00"}
+{"details": {"modules": ["pydantic"], "sequence": 4}, "event": "INDEPENDENT_IMPORT_VALIDATION_STARTED", "timestamp_utc": "2026-10-11T05:12:38.565011+00:00"}
+{"details": {"exit_code": 0, "passed": true, "sequence": 4}, "event": "INDEPENDENT_IMPORT_VALIDATION_COMPLETED", "timestamp_utc": "2026-10-11T05:12:38.864716+00:00"}
+{"details": {"modules": ["tvm_ffi"], "sequence": 5}, "event": "INDEPENDENT_IMPORT_VALIDATION_STARTED", "timestamp_utc": "2026-10-11T05:12:38.864716+00:00"}
+{"details": {"exit_code": 0, "passed": true, "sequence": 5}, "event": "INDEPENDENT_IMPORT_VALIDATION_COMPLETED", "timestamp_utc": "2026-10-11T05:13:00.287422+00:00"}
+{"details": {"modules": ["annotated_types", "typing_inspection", "pydantic_core", "pydantic", "tvm_ffi"], "sequence": 6}, "event": "COMBINED_IMPORT_VALIDATION_STARTED", "timestamp_utc": "2026-10-11T05:13:00.287422+00:00"}
+{"details": {"exit_code": 0, "passed": true, "sequence": 6}, "event": "COMBINED_IMPORT_VALIDATION_COMPLETED", "timestamp_utc": "2026-10-11T05:13:03.463949+00:00"}
+{"details": {"sha256": "92333d1c105214e8393e82f5423e2b7dee2ba8bbb73a00464285beeab80a8016"}, "event": "POST_VALIDATION_INVENTORY_WRITTEN", "timestamp_utc": "2026-10-11T05:13:03.552348+00:00"}
+{"details": {"unchanged": true, "xgrammar_absent": true}, "event": "PACKAGE_DRIFT_CHECKED", "timestamp_utc": "2026-10-11T05:13:03.555197+00:00"}
+{"details": {"returncode": 0}, "event": "POST_VALIDATION_PIP_CHECKED", "timestamp_utc": "2026-10-11T05:13:04.412293+00:00"}
+{"details": {"combined_pass": true, "environment_unchanged": true, "import_processes": 6, "independent_pass_count": 5, "outcome": "DEPENDENCIES_ENABLED_AWAITING_DECODER_REQUALIFICATION", "retries": 0, "review_status": "CANDIDATE_AWAITING_OWNER_REVIEW"}, "event": "RECOVERY_OUTCOME_DETERMINED", "timestamp_utc": "2026-10-11T05:13:04.415293+00:00"}
+{"details": {"historical_tracked_files_unchanged": true, "import_process_count": 6, "model_calls": 0, "outcome": "DEPENDENCIES_ENABLED_AWAITING_DECODER_REQUALIFICATION", "retry_count": 0, "saved_result_recomputation": "PASS"}, "event": "ARTIFACTS_WRITTEN", "timestamp_utc": "2026-10-11T05:14:36.498295+00:00"}

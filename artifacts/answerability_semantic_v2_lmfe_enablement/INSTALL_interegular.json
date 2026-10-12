@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pip",
+    "install",
+    "--no-deps",
+    "--no-index",
+    "--no-cache-dir",
+    "--disable-pip-version-check",
+    "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-lmfe-wheelhouse\\interegular-0.3.3-py37-none-any.whl"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "stdout": "Processing c:\\users\\zhewa\\appdata\\local\\temp\\phase2h-lmfe-wheelhouse\\interegular-0.3.3-py37-none-any.whl\nInstalling collected packages: interegular\nSuccessfully installed interegular-0.3.3\n"
+}

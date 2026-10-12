@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "stdout": "No broken requirements found.\n"
+}

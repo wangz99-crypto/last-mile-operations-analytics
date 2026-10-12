@@ -1,0 +1,9 @@
+{
+  "additions": {
+    "interegular": "0.3.3",
+    "lm-format-enforcer": "0.11.3"
+  },
+  "removals": [],
+  "unexpected_metadata_record_drift": 0,
+  "version_changes": []
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pip",
+    "install",
+    "--no-deps",
+    "--no-index",
+    "--no-cache-dir",
+    "--disable-pip-version-check",
+    "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-lmfe-wheelhouse\\lm_format_enforcer-0.11.3-py3-none-any.whl"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "stdout": "Processing c:\\users\\zhewa\\appdata\\local\\temp\\phase2h-lmfe-wheelhouse\\lm_format_enforcer-0.11.3-py3-none-any.whl\nInstalling collected packages: lm-format-enforcer\nSuccessfully installed lm-format-enforcer-0.11.3\n"
+}

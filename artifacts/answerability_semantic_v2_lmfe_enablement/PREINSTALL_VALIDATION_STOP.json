@@ -1,0 +1,5 @@
+{
+  "error": "ValueError('Unexpected LMFE dependency declaration')",
+  "outcome": "LMFE_ENABLEMENT_BLOCKED",
+  "stage": "plan"
+}

@@ -1,0 +1,5 @@
+{
+  "error": "ValueError('Import failure; no retry')",
+  "outcome": "LMFE_ENABLEMENT_FAILED",
+  "stage": "validate"
+}

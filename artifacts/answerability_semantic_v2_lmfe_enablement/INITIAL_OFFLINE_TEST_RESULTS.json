@@ -1,0 +1,10 @@
+{
+  "command": [
+    "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+    "-B",
+    "gateway/domain/tests/test_lmfe_enablement.py",
+    "-v"
+  ],
+  "result": "14/14 PASS",
+  "source_state": "Before dependency syntax normalization; original tool-captured result preserved as summary."
+}

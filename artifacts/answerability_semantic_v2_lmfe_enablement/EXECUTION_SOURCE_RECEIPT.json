@@ -1,0 +1,6 @@
+{
+  "sha256": {
+    "gateway/domain/evaluation/answerability/enable_lmfe.py": "0f935eed2064bf028619cd8909b0410532840886e0928d33959364620b2c9346",
+    "gateway/domain/tests/test_lmfe_enablement.py": "2394fa7b0576cd64c5a86278aaf7c94f6370b8969315410d0b5a8f43960d02e7"
+  }
+}

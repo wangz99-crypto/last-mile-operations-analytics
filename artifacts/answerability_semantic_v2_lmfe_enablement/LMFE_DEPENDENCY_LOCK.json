@@ -1,0 +1,26 @@
+{
+  "install_order": [
+    "interegular",
+    "lm-format-enforcer"
+  ],
+  "mode": [
+    "--no-deps",
+    "--no-index"
+  ],
+  "packages": [
+    {
+      "filename": "interegular-0.3.3-py37-none-any.whl",
+      "name": "interegular",
+      "sha256": "b0c07007d48c89d6d19f7204972d369b2a77222722e126b6aa63aa721dc3b19c",
+      "version": "0.3.3"
+    },
+    {
+      "filename": "lm_format_enforcer-0.11.3-py3-none-any.whl",
+      "name": "lm-format-enforcer",
+      "sha256": "cf586350875def1ae7a8fba84fcbbfc8371424b6c9d05c1fcba70aa233fbf06f",
+      "version": "0.11.3"
+    }
+  ],
+  "resolver_selection": false,
+  "wheelhouse": "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-lmfe-wheelhouse"
+}

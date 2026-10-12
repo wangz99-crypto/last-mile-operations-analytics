@@ -1,0 +1,27 @@
+{
+  "JsonSchemaParser_API": "NOT_REACHED",
+  "Transformers_prefix_API": "NOT_REACHED",
+  "diagnosis": "External import guard rejected platform._syscmd_ver command cmd.exe /c \"ver\" while torch was being imported; no package-capability conclusion.",
+  "lmformatenforcer_import": "FAILED_EXTERNAL_GUARD",
+  "observations": {
+    "blocked_events": [],
+    "prohibited_content_opens": [],
+    "socket_events": [
+      {
+        "arguments": [],
+        "operation": "socket.gethostname"
+      }
+    ],
+    "subprocess_events": [
+      "('C:\\\\windows\\\\system32\\\\cmd.exe', 'C:\\\\windows\\\\system32\\\\cmd.exe /c \"ver\"', None, None)"
+    ]
+  },
+  "process_returncode": 1,
+  "results": {
+    "interegular": {
+      "import": "PASS",
+      "module_path": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\interegular\\__init__.py"
+    }
+  },
+  "retry_count": 0
+}

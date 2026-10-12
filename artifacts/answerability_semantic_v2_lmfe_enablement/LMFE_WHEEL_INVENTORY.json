@@ -1,0 +1,37 @@
+{
+  "metadata_request_count": 1,
+  "source_distribution_download_count": 0,
+  "wheel_download_count": 2,
+  "wheel_reuse_count": 0,
+  "wheelhouse": "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-lmfe-wheelhouse",
+  "wheels": [
+    {
+      "distribution": "interegular",
+      "filename": "interegular-0.3.3-py37-none-any.whl",
+      "mode": "DOWNLOADED",
+      "reuse_locations_checked": [
+        "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-lmfe-wheelhouse\\interegular-0.3.3-py37-none-any.whl",
+        "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-a21r-wheels-nd4eh6ew\\interegular-0.3.3-py37-none-any.whl"
+      ],
+      "sha256": "b0c07007d48c89d6d19f7204972d369b2a77222722e126b6aa63aa721dc3b19c",
+      "size": 23635,
+      "source": "https://files.pythonhosted.org/packages/c4/01/72d6472f80651673716d1deda2a5bbb633e563ecf94f4479da5519d69d25/interegular-0.3.3-py37-none-any.whl",
+      "version": "0.3.3",
+      "wheelhouse_path": "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-lmfe-wheelhouse\\interegular-0.3.3-py37-none-any.whl"
+    },
+    {
+      "distribution": "lm-format-enforcer",
+      "filename": "lm_format_enforcer-0.11.3-py3-none-any.whl",
+      "mode": "DOWNLOADED",
+      "reuse_locations_checked": [
+        "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-lmfe-wheelhouse\\lm_format_enforcer-0.11.3-py3-none-any.whl",
+        "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-a21r-wheels-nd4eh6ew\\lm_format_enforcer-0.11.3-py3-none-any.whl"
+      ],
+      "sha256": "cf586350875def1ae7a8fba84fcbbfc8371424b6c9d05c1fcba70aa233fbf06f",
+      "size": 45418,
+      "source": "https://files.pythonhosted.org/packages/a0/ef/11292bb0b85cf4c93447cab5a29f64576ed14d3ab4280e35ddd23486594a/lm_format_enforcer-0.11.3-py3-none-any.whl",
+      "version": "0.11.3",
+      "wheelhouse_path": "C:\\Users\\zhewa\\AppData\\Local\\Temp\\phase2h-lmfe-wheelhouse\\lm_format_enforcer-0.11.3-py3-none-any.whl"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "direct_dependencies": [
+    {
+      "active_without_extras": true,
+      "constraint_satisfied": true,
+      "installed_version": "2.13.5",
+      "name": "pydantic",
+      "requirement": "pydantic>=1.10.8",
+      "status": "SATISFIED"
+    },
+    {
+      "active_without_extras": true,
+      "constraint_satisfied": null,
+      "installed_version": null,
+      "name": "interegular",
+      "requirement": "interegular>=0.3.2",
+      "status": "MISSING"
+    },
+    {
+      "active_without_extras": true,
+      "constraint_satisfied": true,
+      "installed_version": "26.3",
+      "name": "packaging",
+      "requirement": "packaging",
+      "status": "SATISFIED"
+    },
+    {
+      "active_without_extras": true,
+      "constraint_satisfied": true,
+      "installed_version": "6.0.3",
+      "name": "pyyaml",
+      "requirement": "pyyaml",
+      "status": "SATISFIED"
+    }
+  ],
+  "environment_drift": 0,
+  "environment_package_count": 34,
+  "installed_transitive_graph": {
+    "annotated-types": {
+      "declared_dependencies": [],
+      "installed_version": "0.8.0",
+      "metadata_sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298"
+    },
+    "interegular": {
+      "declared_dependencies": null,
+      "status": "MISSING_VERSION_NOT_SELECTED",
+      "transitive_status": "UNRESOLVED_UNTIL_OWNER_AUTHORIZED_EXACT_DEPENDENCY_METADATA"
+    },
+    "packaging": {
+      "declared_dependencies": [],
+      "installed_version": "26.3",
+      "metadata_sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763"
+    },
+    "pydantic": {
+      "declared_dependencies": [
+        {
+          "active_without_extras": true,
+          "constraint_satisfied": true,
+          "installed_version": "0.8.0",
+          "name": "annotated-types",
+          "requirement": "annotated-types>=0.6.0",
+          "status": "SATISFIED"
+        },
+        {
+          "active_without_extras": true,
+          "constraint_satisfied": true,
+          "installed_version": "2.46.5",
+          "name": "pydantic-core",
+          "requirement": "pydantic-core==2.46.5",
+          "status": "SATISFIED"
+        },
+        {
+          "active_without_extras": true,
+          "constraint_satisfied": true,
+          "installed_version": "4.16.0",
+          "name": "typing-extensions",
+          "requirement": "typing-extensions>=4.14.1",
+          "status": "SATISFIED"
+        },
+        {
+          "active_without_extras": true,
+          "constraint_satisfied": true,
+          "installed_version": "0.4.4",
+          "name": "typing-inspection",
+          "requirement": "typing-inspection>=0.4.2",
+          "status": "SATISFIED"
+        },
+        {
+          "active_without_extras": false,
+          "constraint_satisfied": null,
+          "installed_version": null,
+          "name": "email-validator",
+          "requirement": "email-validator>=2.0.0; extra == 'email'",
+          "status": "INACTIVE_MARKER"
+        },
+        {
+          "active_without_extras": false,
+          "constraint_satisfied": null,
+          "installed_version": null,
+          "name": "tzdata",
+          "requirement": "tzdata; (python_version >= '3.9' and platform_system == 'Windows') and extra == 'timezone'",
+          "status": "INACTIVE_MARKER"
+        }
+      ],
+      "installed_version": "2.13.5",
+      "metadata_sha256": "0685830d13647bd6f3f05526043d32a8b2a221d86b53773053d6c52bb17a9c07"
+    },
+    "pydantic-core": {
+      "declared_dependencies": [
+        {
+          "active_without_extras": true,
+          "constraint_satisfied": true,
+          "installed_version": "4.16.0",
+          "name": "typing-extensions",
+          "requirement": "typing-extensions>=4.14.1",
+          "status": "SATISFIED"
+        }
+      ],
+      "installed_version": "2.46.5",
+      "metadata_sha256": "29768c038c0bb3564c0a87ef50ef78d18a2372474bdef0ba356a8c0fd4bd6028"
+    },
+    "pyyaml": {
+      "declared_dependencies": [],
+      "installed_version": "6.0.3",
+      "metadata_sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34"
+    },
+    "typing-extensions": {
+      "declared_dependencies": [],
+      "installed_version": "4.16.0",
+      "metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+    },
+    "typing-inspection": {
+      "declared_dependencies": [
+        {
+          "active_without_extras": true,
+          "constraint_satisfied": true,
+          "installed_version": "4.16.0",
+          "name": "typing-extensions",
+          "requirement": "typing-extensions>=4.15.0",
+          "status": "SATISFIED"
+        }
+      ],
+      "installed_version": "0.4.4",
+      "metadata_sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da"
+    }
+  },
+  "marker_environment": {
+    "extra": "",
+    "implementation_name": "cpython",
+    "implementation_version": "3.12.10",
+    "os_name": "nt",
+    "platform_machine": "AMD64",
+    "platform_python_implementation": "CPython",
+    "platform_release": "11",
+    "platform_system": "Windows",
+    "platform_version": "10.0.26200",
+    "python_full_version": "3.12.10",
+    "python_version": "3.12",
+    "sys_platform": "win32"
+  },
+  "method": "Read release JSON and installed distribution metadata only; no resolver, target-package import, installation or package download. No extras requested.",
+  "missing_dependency_version_selection": "DEFERRED_TO_OWNER_AUTHORIZED_ENABLEMENT",
+  "missing_direct_dependencies": [
+    "interegular>=0.3.2"
+  ],
+  "target_package_installation_authorized": false
+}

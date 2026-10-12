@@ -1,0 +1,50 @@
+{
+  "capability": "NOT_ASSESSED",
+  "distribution": "lm-format-enforcer",
+  "frozen_python": "3.12.10",
+  "installation_status": "INSTALLATION_NOT_AUTHORIZED",
+  "metadata_retrieved_date": "2026-10-12",
+  "metadata_sha256": "803400be3f9e2a78563737503d3d99fa7dff84f0791077cbde949b579e604fdf",
+  "metadata_url": "https://pypi.org/pypi/lm-format-enforcer/0.11.3/json",
+  "package_imported": false,
+  "package_installed": false,
+  "python_classifiers": [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+  ],
+  "python_package": "lmformatenforcer",
+  "python_requirement_satisfied": true,
+  "release_files": [
+    {
+      "downloaded": false,
+      "filename": "lm_format_enforcer-0.11.3-py3-none-any.whl",
+      "packagetype": "bdist_wheel",
+      "sha256": "cf586350875def1ae7a8fba84fcbbfc8371424b6c9d05c1fcba70aa233fbf06f",
+      "size": 45418,
+      "url": "https://files.pythonhosted.org/packages/a0/ef/11292bb0b85cf4c93447cab5a29f64576ed14d3ab4280e35ddd23486594a/lm_format_enforcer-0.11.3-py3-none-any.whl"
+    },
+    {
+      "downloaded": false,
+      "filename": "lm_format_enforcer-0.11.3.tar.gz",
+      "packagetype": "sdist",
+      "sha256": "e68081c108719cce284a9bcc889709b26ffb085a1945b5eba3a12cfa96d528da",
+      "size": 40258,
+      "url": "https://files.pythonhosted.org/packages/84/d5/41cd417ba7dfdbbcfe46cebf81fb3dfd7c591b89897560ad05bb410a465d/lm_format_enforcer-0.11.3.tar.gz"
+    }
+  ],
+  "requires_dist": [
+    "pydantic>=1.10.8",
+    "interegular>=0.3.2",
+    "packaging",
+    "pyyaml"
+  ],
+  "requires_python": "<4.0,>=3.8",
+  "version": "0.11.3"
+}

@@ -1,0 +1,176 @@
+{
+  "adapter_boundary": [
+    "actual evidence-count rank bound",
+    "exact rank-to-canonical identity mapping",
+    "cross-field status/reference consistency",
+    "final GateOutput consistency"
+  ],
+  "artifact_sha256": {
+    "ENVIRONMENT_METADATA_SNAPSHOT.json": "cdceeb15b9185ebd2cb102202b1fa738cf4ddd6f13b2aee95278672f6dfcbf62",
+    "HISTORICAL_INTEGRITY_RECEIPT.json": "1be220817d770375aef32fa8b78eb16e3f6a4ec050446e728a832034b9413dbc",
+    "LMFE_DEPENDENCY_REQUIREMENTS.json": "a1717b502d42d1c0d7533d2362650cedb7bc8aa3667554fe59c234bf97bb6e4d",
+    "LMFE_PACKAGE_IDENTITY.json": "df1d4649dec0bb5a7500367ee67075e3ab241080bc259fc523c23782e750cd24",
+    "PYPI_RELEASE_METADATA.json": "803400be3f9e2a78563737503d3d99fa7dff84f0791077cbde949b579e604fdf",
+    "REPLACEMENT_DECODER_PROTOCOL.md": "1ac698ad3b4dffbcf7b4c28b4bbfb8b230f0a738e74052fc1d1794c45595c2cc",
+    "REPLACEMENT_SELECTION_RECORD.md": "54128c37075aa59c2cedc443659f61dc90cd80b85592e6527eb7854e33b51210",
+    "STRUCTURAL_CONFORMANCE_GATE.md": "f454a978fe33094eb1481f6626620d9605b1a1e36515c5e0c125d48698da2575"
+  },
+  "base_commit": "6e05245a6f7971ab05101bc2b24de42180a614cd",
+  "base_tag": "answerability-semantic-v2-xgrammar-v0.2-required-field-failure",
+  "capability": "NOT_ASSESSED",
+  "conformance_gate": {
+    "cases": [
+      {
+        "expected": "ACCEPT",
+        "fixture_id": "M1_VALID_COMPLETE",
+        "text_sha256": "fcc4e0b4d7d9f0edfb706f3321b3fcf0800c0acb2f09552eec77b96f64cf065b"
+      },
+      {
+        "expected": "REJECT",
+        "fixture_id": "M2_MISSING_DECISION",
+        "text_sha256": "005c6f10a197920eb151aee3be45180dac3bc9b89fa1a7a007d6ee542849d292"
+      },
+      {
+        "expected": "REJECT",
+        "fixture_id": "M3_MISSING_POLICY_CONTEXT",
+        "text_sha256": "a69fd36118fed60516e6f094fb2cef26ba4dd6c15a81cc4a4f3b30dd36e41536"
+      },
+      {
+        "expected": "REJECT",
+        "fixture_id": "M4_MISSING_REASON",
+        "text_sha256": "0d72e0fce14b5ab9450ce28e447e3dadabd31f1af1313fffd65b187db2620c7c"
+      },
+      {
+        "expected": "REJECT",
+        "fixture_id": "M5_MISSING_ALL_THREE",
+        "text_sha256": "02a1ef1e49ce208e45104a372890ed16fc15edbbe79122a802a0141f4a69ed2c"
+      },
+      {
+        "expected": "REJECT",
+        "fixture_id": "M6_ATTEMPT2_S1_RAW",
+        "text_sha256": "a6ba60eccfcc076f569f464c90e9b6e9b25293edd0bf2502e66da5d9b521e9cb"
+      },
+      {
+        "expected": "REJECT",
+        "fixture_id": "M7_ATTEMPT2_S2_RAW",
+        "text_sha256": "1b078ff8fffba3a814fb0be5fdc4bb83b9a0a7a8799ac41e3b43016c7aa43afe"
+      },
+      {
+        "expected": "REJECT",
+        "fixture_id": "M8_ATTEMPT2_S3_RAW",
+        "text_sha256": "467f92a2c8d285dddb5f574c3c227af3361e7b7f6396fab3ee409a767bbe362a"
+      }
+    ],
+    "completion_requires_eos": true,
+    "core_failure_blocks_generation": true,
+    "feature_gap_blocks_full_schema_qualification": true,
+    "feature_gap_requires_owner_review": true,
+    "fixture_source": "artifacts/answerability_semantic_v2_xgrammar_diagnostic/MATCHER_DIAGNOSTIC_FIXTURES.json",
+    "fixture_source_sha256": "3519ecfb0cd1e215af9d550ed219eff48d02a6fb2ebc3918c7f74425a6390e29",
+    "paths": [
+      "CHARACTER_PARSER",
+      "TOKEN_ENFORCER_CALLBACK"
+    ],
+    "required_feature_probes": [
+      "required",
+      "enum",
+      "const",
+      "type:object",
+      "additionalProperties",
+      "type:array",
+      "items",
+      "minItems",
+      "maxItems",
+      "type:integer",
+      "minimum",
+      "maximum",
+      "uniqueItems",
+      "type:string",
+      "minLength",
+      "pattern",
+      "oneOf",
+      "anyOf",
+      "allOf",
+      "if",
+      "then",
+      "else",
+      "contains",
+      "completion/EOS"
+    ],
+    "status": "PREREGISTERED_NOT_EXECUTED"
+  },
+  "counters": {
+    "DEVELOPMENT": 0,
+    "decoder_execution": 0,
+    "forward": 0,
+    "generate": 0,
+    "model_initialization": 0,
+    "package_installation": 0,
+    "parser_conformance_execution": 0,
+    "retrieval": 0
+  },
+  "forbidden_actions": [
+    "package installation",
+    "pip version resolution",
+    "decoder execution",
+    "parser conformance execution",
+    "model initialization",
+    "model generate",
+    "model forward",
+    "DEVELOPMENT access",
+    "HELD_OUT access",
+    "retrieval",
+    "output repair",
+    "regex cleanup",
+    "malformed-output retry",
+    "alternate decoder comparison",
+    "fresh semantic suite authoring",
+    "V1 Q1-Q12 reuse"
+  ],
+  "fresh_semantic_suite": "NOT YET AUTHORED",
+  "future_integration": {
+    "callback": "lmformatenforcer.integrations.transformers.build_transformers_prefix_allowed_tokens_fn",
+    "executed": false,
+    "generation_argument": "prefix_allowed_tokens_fn",
+    "parser": "JsonSchemaParser",
+    "tokenizer": "EXACT_FROZEN_LOCAL_TOKENIZER"
+  },
+  "historical_diagnosis": {
+    "evidence": "ESTABLISHED",
+    "exact_v2_xgrammar_0_2_8_suitability": "REJECTED",
+    "freeze_record": "artifacts/answerability_semantic_v2_xgrammar_diagnostic/XGRAMMAR_DIAGNOSTIC_FREEZE_RECORD.md",
+    "outcome": "GRAMMAR_COMPILATION_OR_REQUIRED_FIELD_ENFORCEMENT_ISSUE",
+    "sha256": "f625083cd16c0b4be3048bd55d12f038fe1e61f277fe5298eb7c3670fb2d8e8a",
+    "status": "OWNER_REVIEWED / DIAGNOSTIC_ESTABLISHED"
+  },
+  "installation_status": "INSTALLATION_NOT_AUTHORIZED",
+  "phase": "Phase 2H-B3.2-A2.1-E",
+  "precondition_clean": true,
+  "quarantine": {
+    "Phase_2G_private_HELDOUT_access": false,
+    "Phase_2H_HELD_OUT_access": false
+  },
+  "replacement_candidates": [
+    {
+      "distribution": "lm-format-enforcer",
+      "python_package": "lmformatenforcer",
+      "version": "0.11.3"
+    }
+  ],
+  "review_status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+  "runtime": {
+    "device": "CPU",
+    "dtype": "FP32",
+    "framework": "Transformers",
+    "frozen_repetition_penalty": 1.0,
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "platform": "Windows",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+  },
+  "schema": {
+    "alteration_permitted": false,
+    "path": "artifacts/answerability_semantic_gate_v2_prereg/RAW_ASSESSMENT_SCHEMA_V2.json",
+    "sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e"
+  },
+  "status": "REPLACEMENT_DECODER_SELECTED_NOT_QUALIFIED"
+}

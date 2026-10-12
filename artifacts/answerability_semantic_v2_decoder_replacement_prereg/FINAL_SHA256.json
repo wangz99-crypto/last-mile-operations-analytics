@@ -1,0 +1,19 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    ".gitattributes": "d6b359eb74242d4d7d4111e2bc37e832108b11e5520f8b224d06dbdf9e89c957",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/ENVIRONMENT_METADATA_SNAPSHOT.json": "cdceeb15b9185ebd2cb102202b1fa738cf4ddd6f13b2aee95278672f6dfcbf62",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/HISTORICAL_INTEGRITY_RECEIPT.json": "1be220817d770375aef32fa8b78eb16e3f6a4ec050446e728a832034b9413dbc",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/LMFE_DEPENDENCY_REQUIREMENTS.json": "a1717b502d42d1c0d7533d2362650cedb7bc8aa3667554fe59c234bf97bb6e4d",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/LMFE_PACKAGE_IDENTITY.json": "df1d4649dec0bb5a7500367ee67075e3ab241080bc259fc523c23782e750cd24",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/OFFLINE_TEST_RESULTS.json": "73562433d3ff2a2d903de160da0a9e2cf73fef417e573c7ad6cabcc475120523",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/PREREGISTRATION_RECORD.md": "55858ab8d57d68210f6bc67b55056a13cba9807fecf975c1bb594d2be96d1ddf",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/PYPI_RELEASE_METADATA.json": "803400be3f9e2a78563737503d3d99fa7dff84f0791077cbde949b579e604fdf",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/REPLACEMENT_DECODER_PROTOCOL.md": "1ac698ad3b4dffbcf7b4c28b4bbfb8b230f0a738e74052fc1d1794c45595c2cc",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/REPLACEMENT_DECODER_REGISTRY.json": "f6affcdfd1e29e1495caa2739267a7f83020333eddd3a85a0387513e4482314c",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/REPLACEMENT_SELECTION_RECORD.md": "54128c37075aa59c2cedc443659f61dc90cd80b85592e6527eb7854e33b51210",
+    "artifacts/answerability_semantic_v2_decoder_replacement_prereg/STRUCTURAL_CONFORMANCE_GATE.md": "f454a978fe33094eb1481f6626620d9605b1a1e36515c5e0c125d48698da2575",
+    "gateway/domain/tests/test_decoder_replacement_prereg.py": "3424a6c8a7c5f10f6e5c7e2678f173ddb96fa97b15a96d0f907d020c3d0104dd"
+  },
+  "self_hash": "Reported separately; not embedded"
+}

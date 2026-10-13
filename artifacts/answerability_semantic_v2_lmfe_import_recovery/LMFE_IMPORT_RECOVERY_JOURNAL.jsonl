@@ -1,0 +1,13 @@
+{"details": {"base": "eaad53841caf73ad6933d7a7bf9612cea09376af", "initial_clean_worktree": true, "tag": "answerability-semantic-v2-lmfe-v0.1-enablement-failed"}, "event": "STARTING_STATE_VERIFIED", "utc": "2026-10-12T20:11:25.826161+00:00"}
+{"details": {"sha256": "b36f44b215af7f28324e4a8b6ba16a6e51f550a66f849739663eaf78ba1b0d2f"}, "event": "IMPORT_API_PLAN_FROZEN", "utc": "2026-10-12T20:11:25.831163+00:00"}
+{"details": {"id": "I1", "process_number": 1}, "event": "VALIDATION_BEGIN", "utc": "2026-10-12T20:12:08.470260+00:00"}
+{"details": {"id": "I1"}, "event": "VALIDATION_PASS", "utc": "2026-10-12T20:12:08.717811+00:00"}
+{"details": {"id": "I2", "process_number": 2}, "event": "VALIDATION_BEGIN", "utc": "2026-10-12T20:12:08.717811+00:00"}
+{"details": {"id": "I2"}, "event": "VALIDATION_PASS", "utc": "2026-10-12T20:12:28.470681+00:00"}
+{"details": {"id": "A1", "process_number": 3}, "event": "VALIDATION_BEGIN", "utc": "2026-10-12T20:12:28.473608+00:00"}
+{"details": {"id": "A1"}, "event": "VALIDATION_PASS", "utc": "2026-10-12T20:12:35.308629+00:00"}
+{"details": {"id": "A2", "process_number": 4}, "event": "VALIDATION_BEGIN", "utc": "2026-10-12T20:12:35.315942+00:00"}
+{"details": {"id": "A2"}, "event": "VALIDATION_PASS", "utc": "2026-10-12T20:12:50.597146+00:00"}
+{"details": {"id": "C1", "process_number": 5}, "event": "VALIDATION_BEGIN", "utc": "2026-10-12T20:12:50.597146+00:00"}
+{"details": {"id": "C1"}, "event": "VALIDATION_PASS", "utc": "2026-10-12T20:13:02.395737+00:00"}
+{"details": {"Phase_2G_private_HELDOUT_access": false, "Phase_2H_HELD_OUT_access": false, "V2": "PRE_REGISTERED_NOT_EVALUATED", "capability": "NOT_ASSESSED", "counters": {"DEVELOPMENT": 0, "JsonSchemaParser_constructions": 0, "M1": 0, "M2": 0, "M3": 0, "M4": 0, "M5": 0, "M6": 0, "M7": 0, "M8": 0, "Qwen_initialization": 0, "V2_parser_constructions": 0, "downloads": 0, "forward": 0, "generate": 0, "model_network_access": 0, "package_index_access": 0, "package_mutation": 0, "retrieval": 0, "semantic_outputs": 0, "tokenizer_loading": 0}, "fresh_semantic_suite": "NOT YET AUTHORED", "outcome": "LMFE_INSTALLED_AWAITING_STRUCTURAL_CONFORMANCE", "package_drift": 0, "parser_conformance": "NOT_ASSESSED", "pip_check": "PASS", "retries": 0, "review_status": "CANDIDATE_AWAITING_OWNER_REVIEW", "validation_processes": 5}, "event": "RECOVERY_COMPLETE", "utc": "2026-10-12T20:13:03.967147+00:00"}

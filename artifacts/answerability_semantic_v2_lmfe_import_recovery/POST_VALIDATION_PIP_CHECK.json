@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "exit_code": 0,
+  "role": "administrative health check, not an import/API validation process",
+  "stderr": "",
+  "stdout": "No broken requirements found.\n"
+}

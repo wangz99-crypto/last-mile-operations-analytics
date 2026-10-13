@@ -1,0 +1,15 @@
+{
+  "cwd": "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant",
+  "elapsed_seconds": 19.74943559989333,
+  "environment_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "exit_code": 0,
+  "python": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+  "stderr": "",
+  "stdout": "FR_RESULT_JSON={\"observations\": {\"platform_calls\": [\"machine\", \"uname\", \"win32_ver\", \"_win32_ver\", \"_syscmd_ver\"], \"prohibited_content_opens\": [], \"scientific_calls\": [], \"socket_events\": [{\"arguments\": [], \"operation\": \"socket.gethostname\"}], \"subprocess_events\": [{\"command\": \"C:\\\\windows\\\\system32\\\\cmd.exe /c \\\"ver\\\"\", \"cwd\": \"None\", \"executable\": \"C:\\\\windows\\\\system32\\\\cmd.exe\", \"platform_stack\": [\"_syscmd_ver\", \"_win32_ver\", \"win32_ver\", \"uname\", \"machine\"]}]}, \"results\": {\"lmformatenforcer\": {\"distribution\": \"lm-format-enforcer\", \"module_path\": \"C:\\\\Users\\\\zhewa\\\\.virtualenvs\\\\llm-rag-semantic-qwen25-1p5b\\\\Lib\\\\site-packages\\\\lmformatenforcer\\\\__init__.py\", \"version\": \"0.11.3\"}}, \"torch_imported\": true}\n",
+  "validation_id": "I2"
+}

@@ -1,0 +1,32 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    ".gitattributes": "a70fe8666a62c093bb2da6a90ee9569a795fa1e6b9cb54712e9c20a6b2cc7572",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/CHANGED_FILES.json": "9f29e154fef23ceacd98284c1006994dad38a3ed194bbca5ce00d23c6a314d6d",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/EXECUTION_SOURCE_RECEIPT.json": "db2080f0f04fa243ce07804f69d05794ce51036ab931978a5098cad65b36807b",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/FINAL_INTEGRITY_VERIFICATION.json": "b98a53996aa205d6fba2e56ad92182af923a2be9b3b9e94096e7a8bcbfe73136",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/HISTORICAL_INTEGRITY_RECEIPT.json": "bc60df0c1880001800bde90cefe57ccc8f74afbd11948574be49a09fd6f8f631",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_API_RESULTS.json": "2c13e2fb419e0d3e85257c0f02e46d048ce7af96809dcba7c43b6a421a9168b4",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_API_VALIDATION_PLAN.json": "b36f44b215af7f28324e4a8b6ba16a6e51f550a66f849739663eaf78ba1b0d2f",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_01.json": "b8f80b71e5b297967741d2664918f7bb41145c9b5d9e6f2caaf0d65f0b7d3201",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_02.json": "80037ff8059443d9b0e4c59f64985e125b68a47d3f618bb674c85da541fa3503",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_03.json": "9f9f3c72160e85b6962c80da39eea46090463f5fd51c8c1148456b04d0b214c1",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_04.json": "a332932e919981c5550fbb62b2d10b759aec9283314d99a6e37a92076bc13d65",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_05.json": "0e75613183cd338ad4869f956e023f02e836f334499f83a1cf963f38ef4db9b5",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/INITIAL_OFFLINE_TEST_RESULT.json": "c7f627730cc84b8acbe7f3feb4a9cd9489b9faaec95c7cf4ac38d24eee892465",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_FREEZE_RECORD.md": "32de9d672233016347f4ae39cab404a471a819919b73510415819dd42537c885",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_JOURNAL.jsonl": "9d651bc4ab3fbdbed8d6e84325cb524455ca86741b369726c998b4ee7cb7a386",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_OUTCOME.json": "bf25517ac8805d309533232a2b14647d68de12871a72bf3319cb55409d33da59",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_PROTOCOL.md": "998a21bff31219baef45eab4d149737406a32b9a45cceff552478fa0d245e656",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_REPORT.md": "fbc8847a709bef23a974fba1c8bf8af7e4c2fd78fb86050570dbdd8a008c9923",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/OFFLINE_TEST_RESULTS.json": "f52fbce3dbdfae509e3c7b44e4d5f8577ee95f0923573d2933c8a2cad0758b5a",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/POST_VALIDATION_PACKAGE_INVENTORY.json": "00b635d6dd1a3458e78db08d3a0a1c12de90c7b95684f231efdfda5af1a24d0d",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/POST_VALIDATION_PIP_CHECK.json": "23e7e46222928f3f67b39c06c9477493184b8252a1405d84e77d5b11c0cd5a98",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/PRE_VALIDATION_PACKAGE_INVENTORY.json": "00b635d6dd1a3458e78db08d3a0a1c12de90c7b95684f231efdfda5af1a24d0d",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/RUNTIME_OBSERVATIONS.json": "6ad9ebded3fc41aeede64d0b726fb2b8d79f0e758b13690ef11866fde46b9eb7",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/STARTING_ENVIRONMENT_RECEIPT.json": "5826985dacc4f0e32e61dad5114f28114f0e648e6f77210f294be07cd56128cd",
+    "gateway/domain/evaluation/answerability/recover_lmfe_imports.py": "110f64ea2d01bc3532f4d53c4d4fcf7ec1544f81970dd03c75a52aec526764d7",
+    "gateway/domain/tests/test_lmfe_import_recovery.py": "11eb0df7aca33555ce3badc69c9a7168e9e361f35d36dc219652f846bb6ed7bf"
+  },
+  "self_hash": "Reported separately; no circular hash"
+}

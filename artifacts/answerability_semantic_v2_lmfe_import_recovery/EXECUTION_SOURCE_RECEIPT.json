@@ -1,0 +1,6 @@
+{
+  "sha256": {
+    "gateway/domain/evaluation/answerability/recover_lmfe_imports.py": "110f64ea2d01bc3532f4d53c4d4fcf7ec1544f81970dd03c75a52aec526764d7",
+    "gateway/domain/tests/test_lmfe_import_recovery.py": "11eb0df7aca33555ce3badc69c9a7168e9e361f35d36dc219652f846bb6ed7bf"
+  }
+}

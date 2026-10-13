@@ -1,0 +1,187 @@
+{
+  "administrative_pip_check_processes": 1,
+  "downloads": 0,
+  "legitimate_platform_child_processes": 4,
+  "local_socket_events_are_not_external_network_access": true,
+  "model_network_access": 0,
+  "outbound_network_observations": 0,
+  "package_index_access": 0,
+  "statement": "No unexpected subprocess activity beyond legitimate local platform/runtime probing.",
+  "unexpected_subprocess_activity": false,
+  "validation_child_processes": 5,
+  "validations": [
+    {
+      "elapsed_seconds": 0.2418770999647677,
+      "exit_code": 0,
+      "platform_calls": [],
+      "socket_events": [],
+      "subprocess_events": [],
+      "torch_imported": false,
+      "validation_id": "I1"
+    },
+    {
+      "elapsed_seconds": 19.74943559989333,
+      "exit_code": 0,
+      "platform_calls": [
+        "machine",
+        "uname",
+        "win32_ver",
+        "_win32_ver",
+        "_syscmd_ver"
+      ],
+      "socket_events": [
+        {
+          "arguments": [],
+          "operation": "socket.gethostname"
+        }
+      ],
+      "subprocess_events": [
+        {
+          "command": "C:\\windows\\system32\\cmd.exe /c \"ver\"",
+          "cwd": "None",
+          "executable": "C:\\windows\\system32\\cmd.exe",
+          "platform_stack": [
+            "_syscmd_ver",
+            "_win32_ver",
+            "win32_ver",
+            "uname",
+            "machine"
+          ]
+        }
+      ],
+      "torch_imported": true,
+      "validation_id": "I2"
+    },
+    {
+      "elapsed_seconds": 6.8377288999035954,
+      "exit_code": 0,
+      "platform_calls": [
+        "machine",
+        "uname",
+        "win32_ver",
+        "_win32_ver",
+        "_syscmd_ver"
+      ],
+      "socket_events": [
+        {
+          "arguments": [],
+          "operation": "socket.gethostname"
+        }
+      ],
+      "subprocess_events": [
+        {
+          "command": "C:\\windows\\system32\\cmd.exe /c \"ver\"",
+          "cwd": "None",
+          "executable": "C:\\windows\\system32\\cmd.exe",
+          "platform_stack": [
+            "_syscmd_ver",
+            "_win32_ver",
+            "win32_ver",
+            "uname",
+            "machine"
+          ]
+        }
+      ],
+      "torch_imported": true,
+      "validation_id": "A1"
+    },
+    {
+      "elapsed_seconds": 15.274931899970397,
+      "exit_code": 0,
+      "platform_calls": [
+        "machine",
+        "uname",
+        "win32_ver",
+        "_win32_ver",
+        "_syscmd_ver"
+      ],
+      "socket_events": [
+        {
+          "arguments": [],
+          "operation": "socket.gethostname"
+        },
+        {
+          "arguments": [
+            "<socket.socket fd=-1, family=0, type=0, proto=0>",
+            "23",
+            "1",
+            "0"
+          ],
+          "operation": "socket.__new__"
+        },
+        {
+          "arguments": [
+            "<socket.socket fd=1088, family=23, type=1, proto=0>",
+            "('::1', 0)"
+          ],
+          "operation": "socket.bind"
+        }
+      ],
+      "subprocess_events": [
+        {
+          "command": "C:\\windows\\system32\\cmd.exe /c \"ver\"",
+          "cwd": "None",
+          "executable": "C:\\windows\\system32\\cmd.exe",
+          "platform_stack": [
+            "_syscmd_ver",
+            "_win32_ver",
+            "win32_ver",
+            "uname",
+            "machine"
+          ]
+        }
+      ],
+      "torch_imported": true,
+      "validation_id": "A2"
+    },
+    {
+      "elapsed_seconds": 11.783678299980238,
+      "exit_code": 0,
+      "platform_calls": [
+        "machine",
+        "uname",
+        "win32_ver",
+        "_win32_ver",
+        "_syscmd_ver"
+      ],
+      "socket_events": [
+        {
+          "arguments": [],
+          "operation": "socket.gethostname"
+        },
+        {
+          "arguments": [
+            "<socket.socket fd=-1, family=0, type=0, proto=0>",
+            "23",
+            "1",
+            "0"
+          ],
+          "operation": "socket.__new__"
+        },
+        {
+          "arguments": [
+            "<socket.socket fd=1236, family=23, type=1, proto=0>",
+            "('::1', 0)"
+          ],
+          "operation": "socket.bind"
+        }
+      ],
+      "subprocess_events": [
+        {
+          "command": "C:\\windows\\system32\\cmd.exe /c \"ver\"",
+          "cwd": "None",
+          "executable": "C:\\windows\\system32\\cmd.exe",
+          "platform_stack": [
+            "_syscmd_ver",
+            "_win32_ver",
+            "win32_ver",
+            "uname",
+            "machine"
+          ]
+        }
+      ],
+      "torch_imported": true,
+      "validation_id": "C1"
+    }
+  ]
+}

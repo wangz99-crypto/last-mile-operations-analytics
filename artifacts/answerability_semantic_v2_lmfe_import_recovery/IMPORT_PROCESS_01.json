@@ -1,0 +1,15 @@
+{
+  "cwd": "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant",
+  "elapsed_seconds": 0.2418770999647677,
+  "environment_overrides": {
+    "HF_HUB_OFFLINE": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "exit_code": 0,
+  "python": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+  "stderr": "",
+  "stdout": "FR_RESULT_JSON={\"observations\": {\"platform_calls\": [], \"prohibited_content_opens\": [], \"scientific_calls\": [], \"socket_events\": [], \"subprocess_events\": []}, \"results\": {\"interegular\": {\"distribution\": \"interegular\", \"module_path\": \"C:\\\\Users\\\\zhewa\\\\.virtualenvs\\\\llm-rag-semantic-qwen25-1p5b\\\\Lib\\\\site-packages\\\\interegular\\\\__init__.py\", \"version\": \"0.3.3\"}}, \"torch_imported\": false}\n",
+  "validation_id": "I1"
+}

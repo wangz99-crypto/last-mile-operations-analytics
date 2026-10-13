@@ -1,0 +1,7 @@
+{
+  "result": "9/10 PASS; one test assertion false positive",
+  "failed_test": "test_no_broad_guard_and_no_forbidden_calls",
+  "cause": "Substring check matched a historical file path used for read-only hashing; no historical guard import existed.",
+  "correction": "Check AST import statements and child observation prefix instead of all source text.",
+  "real_validation_processes_before_correction": 0
+}

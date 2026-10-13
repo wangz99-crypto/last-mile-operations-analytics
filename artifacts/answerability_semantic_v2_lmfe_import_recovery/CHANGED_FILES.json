@@ -1,0 +1,32 @@
+{
+  "paths": [
+    ".gitattributes",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/CHANGED_FILES.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/EXECUTION_SOURCE_RECEIPT.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/FINAL_INTEGRITY_VERIFICATION.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/FINAL_SHA256.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/HISTORICAL_INTEGRITY_RECEIPT.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_API_RESULTS.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_API_VALIDATION_PLAN.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_01.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_02.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_03.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_04.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/IMPORT_PROCESS_05.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/INITIAL_OFFLINE_TEST_RESULT.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_FREEZE_RECORD.md",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_JOURNAL.jsonl",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_OUTCOME.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_PROTOCOL.md",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/LMFE_IMPORT_RECOVERY_REPORT.md",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/OFFLINE_TEST_RESULTS.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/POST_VALIDATION_PACKAGE_INVENTORY.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/POST_VALIDATION_PIP_CHECK.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/PRE_VALIDATION_PACKAGE_INVENTORY.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/RUNTIME_OBSERVATIONS.json",
+    "artifacts/answerability_semantic_v2_lmfe_import_recovery/STARTING_ENVIRONMENT_RECEIPT.json",
+    "gateway/domain/evaluation/answerability/recover_lmfe_imports.py",
+    "gateway/domain/tests/test_lmfe_import_recovery.py"
+  ],
+  "wheels_venv_caches_models_included": false
+}

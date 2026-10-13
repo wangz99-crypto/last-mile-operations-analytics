@@ -1,0 +1,13 @@
+{
+  "adapter_only": [
+    "actual evidence-count bound",
+    "rank-to-policy identity mapping",
+    "semantic support judgment",
+    "final GateOutput transformation"
+  ],
+  "material_rules": "All materially present raw-schema constraints are CRITICAL: violation is rejected by the frozen raw schema before adapter processing. $schema is a dialect annotation. Absent keywords are not tested.",
+  "no_responsibility_transfer": true,
+  "oracle_scope": "Existing frozen exact-keyword interpreter, independent of LMFE and adapter; not a general JSON Schema implementation. Two pure function ASTs loaded without executing historical model-runner imports.",
+  "oracle_source": "gateway\\domain\\evaluation\\answerability\\xgrammar_v2_smoke.py",
+  "oracle_source_sha256": "ffe40fc052f6c25484d0abdf60411c1317873c1965e38c94860d6c88781181f9"
+}

@@ -1,0 +1,94 @@
+{
+  "fixtures": [
+    {
+      "expected": "ACCEPT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "M1",
+      "input_byte_length": 217,
+      "input_character_length": 217,
+      "input_sha256": "fcc4e0b4d7d9f0edfb706f3321b3fcf0800c0acb2f09552eec77b96f64cf065b",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "M2",
+      "input_byte_length": 198,
+      "input_character_length": 198,
+      "input_sha256": "005c6f10a197920eb151aee3be45180dac3bc9b89fa1a7a007d6ee542849d292",
+      "text": "{\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "M3",
+      "input_byte_length": 182,
+      "input_character_length": 182,
+      "input_sha256": "a69fd36118fed60516e6f094fb2cef26ba4dd6c15a81cc4a4f3b30dd36e41536",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "M4",
+      "input_byte_length": 174,
+      "input_character_length": 174,
+      "input_sha256": "0d72e0fce14b5ab9450ce28e447e3dadabd31f1af1313fffd65b187db2620c7c",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "M5",
+      "input_byte_length": 120,
+      "input_character_length": 120,
+      "input_sha256": "02a1ef1e49ce208e45104a372890ed16fc15edbbe79122a802a0141f4a69ed2c",
+      "text": "{\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}]}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "M6",
+      "input_byte_length": 145,
+      "input_character_length": 145,
+      "input_sha256": "a6ba60eccfcc076f569f464c90e9b6e9b25293edd0bf2502e66da5d9b521e9cb",
+      "text": "{\n  \"material_asks\": [\n    {\n      \"ask\": \"Opaque alpha\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1]\n    }\n  ]\n}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "M7",
+      "input_byte_length": 265,
+      "input_character_length": 265,
+      "input_sha256": "1b078ff8fffba3a814fb0be5fdc4bb83b9a0a7a8799ac41e3b43016c7aa43afe",
+      "text": "{\n  \"material_asks\": [\n    {\n      \"ask\": \"Opaque beta\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1, 2]\n    },\n    {\n      \"ask\": \"Opaque gamma\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [3]\n    }\n  ]\n}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "M8",
+      "input_byte_length": 146,
+      "input_character_length": 146,
+      "input_sha256": "467f92a2c8d285dddb5f574c3c227af3361e7b7f6396fab3ee409a767bbe362a",
+      "text": "{\n  \"material_asks\": [\n    {\n      \"ask\": \"Opaque delta\",\n      \"support_status\": \"UNSUPPORTED\",\n      \"supporting_evidence_ranks\": []\n    }\n  ]\n}"
+    }
+  ],
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "source": "Exact preregistered diagnostic text strings; historical raw outputs untouched."
+}

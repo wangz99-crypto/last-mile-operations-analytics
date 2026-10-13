@@ -1,0 +1,211 @@
+{
+  "$schema": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "ANNOTATION",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "DIALECT_ANNOTATION"
+  },
+  "additionalProperties": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "allOf": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "anyOf": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "const": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "contains": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "else": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "enum": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "exclusiveMaximum": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "NOT_APPLICABLE",
+    "invalid_acceptance_ids": [],
+    "present": false,
+    "probe_ids": [],
+    "status": "NOT_APPLICABLE"
+  },
+  "exclusiveMinimum": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "NOT_APPLICABLE",
+    "invalid_acceptance_ids": [],
+    "present": false,
+    "probe_ids": [],
+    "status": "NOT_APPLICABLE"
+  },
+  "if": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "items": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "maxItems": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "maxLength": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "NOT_APPLICABLE",
+    "invalid_acceptance_ids": [],
+    "present": false,
+    "probe_ids": [],
+    "status": "NOT_APPLICABLE"
+  },
+  "maximum": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "minItems": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "minLength": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "minimum": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "oneOf": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "pattern": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "properties": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "required": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8"
+    ],
+    "status": "INCOMPLETE_OR_MISMATCH"
+  },
+  "then": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "type": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  },
+  "uniqueItems": {
+    "causal_limit": "Feature labels may overlap; acceptance violates critical raw schema but keyword-level root cause is not isolated.",
+    "criticality": "CRITICAL",
+    "invalid_acceptance_ids": [],
+    "present": true,
+    "probe_ids": [],
+    "status": "NOT_RUN_DUE_TO_CORE_GATE_FAILURE"
+  }
+}

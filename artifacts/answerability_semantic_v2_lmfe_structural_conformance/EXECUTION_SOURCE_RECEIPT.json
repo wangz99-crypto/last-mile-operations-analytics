@@ -1,0 +1,7 @@
+{
+  "sha256": {
+    "artifacts/answerability_semantic_v2_lmfe_structural_conformance/LMFE_STRUCTURAL_CONFORMANCE_PROTOCOL.md": "c2973f5b1bd45de4bf156505ae3acb76402e6078b94c6ab7f853039dffbbda38",
+    "gateway/domain/evaluation/answerability/qualify_lmfe_structure.py": "45cc57a9534a56fef5834fffd422e618e2bb0574adaed90ac019ab4072d66bc0",
+    "gateway/domain/tests/test_lmfe_structural_conformance.py": "7b0675b7b09576dde885d6534847400be23135f7a7f65201e98238cfb94cd2e7"
+  }
+}

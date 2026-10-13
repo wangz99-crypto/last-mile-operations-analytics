@@ -1,0 +1,907 @@
+{
+  "keywords": {
+    "$schema": {
+      "criticality": "ANNOTATION",
+      "justification": "Dialect declaration or absent keyword; no irrelevant probe.",
+      "occurrences": [
+        {
+          "path": "/$schema",
+          "value": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "present": true
+    },
+    "additionalProperties": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/additionalProperties",
+          "value": false
+        },
+        {
+          "path": "/properties/material_asks/items/additionalProperties",
+          "value": false
+        }
+      ],
+      "present": true
+    },
+    "allOf": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/items/allOf",
+          "value": [
+            {
+              "else": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "maxItems": 0
+                  }
+                }
+              },
+              "if": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "present": true
+    },
+    "anyOf": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/oneOf/2/anyOf",
+          "value": [
+            {
+              "properties": {
+                "policy_context_status": {
+                  "const": "UNRESOLVED"
+                }
+              }
+            },
+            {
+              "properties": {
+                "material_asks": {
+                  "contains": {
+                    "properties": {
+                      "support_status": {
+                        "const": "CONTEXT_UNRESOLVED"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "present": true
+    },
+    "const": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/oneOf/0/properties/decision/const",
+          "value": "ALLOW"
+        },
+        {
+          "path": "/oneOf/0/properties/material_asks/items/properties/support_status/const",
+          "value": "SUPPORTED"
+        },
+        {
+          "path": "/oneOf/0/properties/policy_context_status/const",
+          "value": "RESOLVED"
+        },
+        {
+          "path": "/oneOf/0/properties/reason_code/const",
+          "value": "SUPPORTED_BY_ACTIVE_POLICY"
+        },
+        {
+          "path": "/oneOf/1/properties/decision/const",
+          "value": "ABSTAIN"
+        },
+        {
+          "path": "/oneOf/1/properties/material_asks/contains/properties/support_status/const",
+          "value": "UNSUPPORTED"
+        },
+        {
+          "path": "/oneOf/1/properties/policy_context_status/const",
+          "value": "RESOLVED"
+        },
+        {
+          "path": "/oneOf/1/properties/reason_code/const",
+          "value": "INSUFFICIENT_POLICY_SUPPORT"
+        },
+        {
+          "path": "/oneOf/2/anyOf/0/properties/policy_context_status/const",
+          "value": "UNRESOLVED"
+        },
+        {
+          "path": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties/support_status/const",
+          "value": "CONTEXT_UNRESOLVED"
+        },
+        {
+          "path": "/oneOf/2/properties/decision/const",
+          "value": "ABSTAIN"
+        },
+        {
+          "path": "/oneOf/2/properties/reason_code/const",
+          "value": "UNRESOLVED_POLICY_CONTEXT"
+        },
+        {
+          "path": "/properties/material_asks/items/allOf/0/if/properties/support_status/const",
+          "value": "SUPPORTED"
+        }
+      ],
+      "present": true
+    },
+    "contains": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/oneOf/1/properties/material_asks/contains",
+          "value": {
+            "properties": {
+              "support_status": {
+                "const": "UNSUPPORTED"
+              }
+            }
+          }
+        },
+        {
+          "path": "/oneOf/2/anyOf/1/properties/material_asks/contains",
+          "value": {
+            "properties": {
+              "support_status": {
+                "const": "CONTEXT_UNRESOLVED"
+              }
+            }
+          }
+        }
+      ],
+      "present": true
+    },
+    "else": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/items/allOf/0/else",
+          "value": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      ],
+      "present": true
+    },
+    "enum": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/oneOf/1/properties/material_asks/items/properties/support_status/enum",
+          "value": [
+            "SUPPORTED",
+            "UNSUPPORTED"
+          ]
+        },
+        {
+          "path": "/properties/decision/enum",
+          "value": [
+            "ALLOW",
+            "ABSTAIN"
+          ]
+        },
+        {
+          "path": "/properties/material_asks/items/properties/support_status/enum",
+          "value": [
+            "SUPPORTED",
+            "UNSUPPORTED",
+            "CONTEXT_UNRESOLVED"
+          ]
+        },
+        {
+          "path": "/properties/policy_context_status/enum",
+          "value": [
+            "RESOLVED",
+            "UNRESOLVED"
+          ]
+        },
+        {
+          "path": "/properties/reason_code/enum",
+          "value": [
+            "SUPPORTED_BY_ACTIVE_POLICY",
+            "INSUFFICIENT_POLICY_SUPPORT",
+            "UNRESOLVED_POLICY_CONTEXT"
+          ]
+        }
+      ],
+      "present": true
+    },
+    "exclusiveMaximum": {
+      "criticality": "NOT_APPLICABLE",
+      "justification": "Dialect declaration or absent keyword; no irrelevant probe.",
+      "occurrences": [],
+      "present": false
+    },
+    "exclusiveMinimum": {
+      "criticality": "NOT_APPLICABLE",
+      "justification": "Dialect declaration or absent keyword; no irrelevant probe.",
+      "occurrences": [],
+      "present": false
+    },
+    "if": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/items/allOf/0/if",
+          "value": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          }
+        }
+      ],
+      "present": true
+    },
+    "items": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/oneOf/0/properties/material_asks/items",
+          "value": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          }
+        },
+        {
+          "path": "/oneOf/1/properties/material_asks/items",
+          "value": {
+            "properties": {
+              "support_status": {
+                "enum": [
+                  "SUPPORTED",
+                  "UNSUPPORTED"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "path": "/properties/material_asks/items",
+          "value": {
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "else": {
+                  "properties": {
+                    "supporting_evidence_ranks": {
+                      "maxItems": 0
+                    }
+                  }
+                },
+                "if": {
+                  "properties": {
+                    "support_status": {
+                      "const": "SUPPORTED"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "supporting_evidence_ranks": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "ask": {
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "support_status": {
+                "enum": [
+                  "SUPPORTED",
+                  "UNSUPPORTED",
+                  "CONTEXT_UNRESOLVED"
+                ]
+              },
+              "supporting_evidence_ranks": {
+                "items": {
+                  "maximum": 10,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "maxItems": 10,
+                "type": "array",
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "ask",
+              "support_status",
+              "supporting_evidence_ranks"
+            ],
+            "type": "object"
+          }
+        },
+        {
+          "path": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+          "value": {
+            "maximum": 10,
+            "minimum": 1,
+            "type": "integer"
+          }
+        }
+      ],
+      "present": true
+    },
+    "maxItems": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/maxItems",
+          "value": 8
+        },
+        {
+          "path": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks/maxItems",
+          "value": 0
+        },
+        {
+          "path": "/properties/material_asks/items/properties/supporting_evidence_ranks/maxItems",
+          "value": 10
+        }
+      ],
+      "present": true
+    },
+    "maxLength": {
+      "criticality": "NOT_APPLICABLE",
+      "justification": "Dialect declaration or absent keyword; no irrelevant probe.",
+      "occurrences": [],
+      "present": false
+    },
+    "maximum": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/maximum",
+          "value": 10
+        }
+      ],
+      "present": true
+    },
+    "minItems": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/minItems",
+          "value": 1
+        },
+        {
+          "path": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks/minItems",
+          "value": 1
+        }
+      ],
+      "present": true
+    },
+    "minLength": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/items/properties/ask/minLength",
+          "value": 1
+        }
+      ],
+      "present": true
+    },
+    "minimum": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/minimum",
+          "value": 1
+        }
+      ],
+      "present": true
+    },
+    "oneOf": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/oneOf",
+          "value": [
+            {
+              "properties": {
+                "decision": {
+                  "const": "ALLOW"
+                },
+                "material_asks": {
+                  "items": {
+                    "properties": {
+                      "support_status": {
+                        "const": "SUPPORTED"
+                      }
+                    }
+                  }
+                },
+                "policy_context_status": {
+                  "const": "RESOLVED"
+                },
+                "reason_code": {
+                  "const": "SUPPORTED_BY_ACTIVE_POLICY"
+                }
+              }
+            },
+            {
+              "properties": {
+                "decision": {
+                  "const": "ABSTAIN"
+                },
+                "material_asks": {
+                  "contains": {
+                    "properties": {
+                      "support_status": {
+                        "const": "UNSUPPORTED"
+                      }
+                    }
+                  },
+                  "items": {
+                    "properties": {
+                      "support_status": {
+                        "enum": [
+                          "SUPPORTED",
+                          "UNSUPPORTED"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "policy_context_status": {
+                  "const": "RESOLVED"
+                },
+                "reason_code": {
+                  "const": "INSUFFICIENT_POLICY_SUPPORT"
+                }
+              }
+            },
+            {
+              "anyOf": [
+                {
+                  "properties": {
+                    "policy_context_status": {
+                      "const": "UNRESOLVED"
+                    }
+                  }
+                },
+                {
+                  "properties": {
+                    "material_asks": {
+                      "contains": {
+                        "properties": {
+                          "support_status": {
+                            "const": "CONTEXT_UNRESOLVED"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "properties": {
+                "decision": {
+                  "const": "ABSTAIN"
+                },
+                "reason_code": {
+                  "const": "UNRESOLVED_POLICY_CONTEXT"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "present": true
+    },
+    "pattern": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/items/properties/ask/pattern",
+          "value": "\\S"
+        }
+      ],
+      "present": true
+    },
+    "properties": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties",
+          "value": {
+            "decision": {
+              "enum": [
+                "ALLOW",
+                "ABSTAIN"
+              ]
+            },
+            "material_asks": {
+              "items": {
+                "additionalProperties": false,
+                "allOf": [
+                  {
+                    "else": {
+                      "properties": {
+                        "supporting_evidence_ranks": {
+                          "maxItems": 0
+                        }
+                      }
+                    },
+                    "if": {
+                      "properties": {
+                        "support_status": {
+                          "const": "SUPPORTED"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "supporting_evidence_ranks": {
+                          "minItems": 1
+                        }
+                      }
+                    }
+                  }
+                ],
+                "properties": {
+                  "ask": {
+                    "minLength": 1,
+                    "pattern": "\\S",
+                    "type": "string"
+                  },
+                  "support_status": {
+                    "enum": [
+                      "SUPPORTED",
+                      "UNSUPPORTED",
+                      "CONTEXT_UNRESOLVED"
+                    ]
+                  },
+                  "supporting_evidence_ranks": {
+                    "items": {
+                      "maximum": 10,
+                      "minimum": 1,
+                      "type": "integer"
+                    },
+                    "maxItems": 10,
+                    "type": "array",
+                    "uniqueItems": true
+                  }
+                },
+                "required": [
+                  "ask",
+                  "support_status",
+                  "supporting_evidence_ranks"
+                ],
+                "type": "object"
+              },
+              "maxItems": 8,
+              "minItems": 1,
+              "type": "array"
+            },
+            "policy_context_status": {
+              "enum": [
+                "RESOLVED",
+                "UNRESOLVED"
+              ]
+            },
+            "reason_code": {
+              "enum": [
+                "SUPPORTED_BY_ACTIVE_POLICY",
+                "INSUFFICIENT_POLICY_SUPPORT",
+                "UNRESOLVED_POLICY_CONTEXT"
+              ]
+            }
+          }
+        },
+        {
+          "path": "/oneOf/0/properties",
+          "value": {
+            "decision": {
+              "const": "ALLOW"
+            },
+            "material_asks": {
+              "items": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              }
+            },
+            "policy_context_status": {
+              "const": "RESOLVED"
+            },
+            "reason_code": {
+              "const": "SUPPORTED_BY_ACTIVE_POLICY"
+            }
+          }
+        },
+        {
+          "path": "/oneOf/0/properties/material_asks/items/properties",
+          "value": {
+            "support_status": {
+              "const": "SUPPORTED"
+            }
+          }
+        },
+        {
+          "path": "/oneOf/1/properties",
+          "value": {
+            "decision": {
+              "const": "ABSTAIN"
+            },
+            "material_asks": {
+              "contains": {
+                "properties": {
+                  "support_status": {
+                    "const": "UNSUPPORTED"
+                  }
+                }
+              },
+              "items": {
+                "properties": {
+                  "support_status": {
+                    "enum": [
+                      "SUPPORTED",
+                      "UNSUPPORTED"
+                    ]
+                  }
+                }
+              }
+            },
+            "policy_context_status": {
+              "const": "RESOLVED"
+            },
+            "reason_code": {
+              "const": "INSUFFICIENT_POLICY_SUPPORT"
+            }
+          }
+        },
+        {
+          "path": "/oneOf/1/properties/material_asks/items/properties",
+          "value": {
+            "support_status": {
+              "enum": [
+                "SUPPORTED",
+                "UNSUPPORTED"
+              ]
+            }
+          }
+        },
+        {
+          "path": "/oneOf/1/properties/material_asks/contains/properties",
+          "value": {
+            "support_status": {
+              "const": "UNSUPPORTED"
+            }
+          }
+        },
+        {
+          "path": "/oneOf/2/properties",
+          "value": {
+            "decision": {
+              "const": "ABSTAIN"
+            },
+            "reason_code": {
+              "const": "UNRESOLVED_POLICY_CONTEXT"
+            }
+          }
+        },
+        {
+          "path": "/oneOf/2/anyOf/0/properties",
+          "value": {
+            "policy_context_status": {
+              "const": "UNRESOLVED"
+            }
+          }
+        },
+        {
+          "path": "/oneOf/2/anyOf/1/properties",
+          "value": {
+            "material_asks": {
+              "contains": {
+                "properties": {
+                  "support_status": {
+                    "const": "CONTEXT_UNRESOLVED"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "path": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties",
+          "value": {
+            "support_status": {
+              "const": "CONTEXT_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "path": "/properties/material_asks/items/properties",
+          "value": {
+            "ask": {
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "support_status": {
+              "enum": [
+                "SUPPORTED",
+                "UNSUPPORTED",
+                "CONTEXT_UNRESOLVED"
+              ]
+            },
+            "supporting_evidence_ranks": {
+              "items": {
+                "maximum": 10,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "maxItems": 10,
+              "type": "array",
+              "uniqueItems": true
+            }
+          }
+        },
+        {
+          "path": "/properties/material_asks/items/allOf/0/if/properties",
+          "value": {
+            "support_status": {
+              "const": "SUPPORTED"
+            }
+          }
+        },
+        {
+          "path": "/properties/material_asks/items/allOf/0/then/properties",
+          "value": {
+            "supporting_evidence_ranks": {
+              "minItems": 1
+            }
+          }
+        },
+        {
+          "path": "/properties/material_asks/items/allOf/0/else/properties",
+          "value": {
+            "supporting_evidence_ranks": {
+              "maxItems": 0
+            }
+          }
+        }
+      ],
+      "present": true
+    },
+    "required": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/required",
+          "value": [
+            "material_asks",
+            "policy_context_status",
+            "decision",
+            "reason_code"
+          ]
+        },
+        {
+          "path": "/properties/material_asks/items/required",
+          "value": [
+            "ask",
+            "support_status",
+            "supporting_evidence_ranks"
+          ]
+        }
+      ],
+      "present": true
+    },
+    "then": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/items/allOf/0/then",
+          "value": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ],
+      "present": true
+    },
+    "type": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/type",
+          "value": "object"
+        },
+        {
+          "path": "/properties/material_asks/type",
+          "value": "array"
+        },
+        {
+          "path": "/properties/material_asks/items/type",
+          "value": "object"
+        },
+        {
+          "path": "/properties/material_asks/items/properties/ask/type",
+          "value": "string"
+        },
+        {
+          "path": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+          "value": "array"
+        },
+        {
+          "path": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+          "value": "integer"
+        }
+      ],
+      "present": true
+    },
+    "uniqueItems": {
+      "criticality": "CRITICAL",
+      "justification": "Any violation of this raw-schema constraint can reject an output before adapter processing.",
+      "occurrences": [
+        {
+          "path": "/properties/material_asks/items/properties/supporting_evidence_ranks/uniqueItems",
+          "value": true
+        }
+      ],
+      "present": true
+    }
+  },
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e"
+}

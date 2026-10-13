@@ -1,0 +1,484 @@
+{
+  "count": 38,
+  "fixtures": [
+    {
+      "expected": "ACCEPT",
+      "features": [
+        "type",
+        "properties",
+        "required",
+        "additionalProperties",
+        "enum",
+        "const",
+        "items",
+        "minItems",
+        "maxItems",
+        "uniqueItems",
+        "minimum",
+        "maximum",
+        "minLength",
+        "pattern",
+        "oneOf",
+        "allOf",
+        "if",
+        "then"
+      ],
+      "fixture_id": "E01_VALID_BASE",
+      "input_byte_length": 217,
+      "input_character_length": 217,
+      "input_sha256": "fcc4e0b4d7d9f0edfb706f3321b3fcf0800c0acb2f09552eec77b96f64cf065b",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "additionalProperties",
+        "properties"
+      ],
+      "fixture_id": "E02_UNKNOWN_ROOT",
+      "input_byte_length": 227,
+      "input_character_length": 227,
+      "input_sha256": "97d4e85f9a6f93575e0dda7813d4731e9232bb054ed2bfcc7ba80df73a880604",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\",\"extra\":1}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "additionalProperties",
+        "properties"
+      ],
+      "fixture_id": "E03_UNKNOWN_ITEM",
+      "input_byte_length": 227,
+      "input_character_length": 227,
+      "input_sha256": "3f9a1317301fe2b5c501a21b1f0b70860b7471fbba5e275bd02c9f749672d4fb",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1],\"extra\":1}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "E04_MISSING_ask",
+      "input_byte_length": 179,
+      "input_character_length": 179,
+      "input_sha256": "1ed4033dc8f11851d9a54af956e1731a183190e8d0d4ca8b652c5ac2c4c3c522",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "E05_MISSING_support_status",
+      "input_byte_length": 188,
+      "input_character_length": 188,
+      "input_sha256": "73159f531bd8434fce86a14552e7de205921ec6a8f0b5c5abe391301e08e5926",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "fixture_id": "E06_MISSING_supporting_evidence_ranks",
+      "input_byte_length": 185,
+      "input_character_length": 185,
+      "input_sha256": "fc89dcdc242663ff42642dc46ac49b83c0a8259291962c05186e211a7a64b39a",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\"}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "enum",
+        "const",
+        "oneOf"
+      ],
+      "fixture_id": "E07_BAD_ENUM_decision",
+      "input_byte_length": 219,
+      "input_character_length": 219,
+      "input_sha256": "8d8972b9cdf5033154a17bf1e02b2fe02e7b800b5c7f933bb4d536bc35e333b1",
+      "text": "{\"decision\":\"UNKNOWN\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "enum",
+        "const",
+        "oneOf"
+      ],
+      "fixture_id": "E08_BAD_ENUM_policy_context_status",
+      "input_byte_length": 216,
+      "input_character_length": 216,
+      "input_sha256": "2eafadda1104d69f792a62319744c4e5ff3a87abf2f4574501b420124e71ed17",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"UNKNOWN\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "enum",
+        "const",
+        "oneOf"
+      ],
+      "fixture_id": "E09_BAD_ENUM_reason_code",
+      "input_byte_length": 198,
+      "input_character_length": 198,
+      "input_sha256": "a05813944b7626540865303e958a915000b8935e2ce678bd3d30b641f6a26c59",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"UNKNOWN\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "enum",
+        "items"
+      ],
+      "fixture_id": "E10_BAD_STATUS",
+      "input_byte_length": 215,
+      "input_character_length": 215,
+      "input_sha256": "b07fedad495b8e7bee65f6a343887013a0ba2347a1ec2616a5f99210177b91f6",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"UNKNOWN\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "type"
+      ],
+      "fixture_id": "E11_ROOT_ARRAY",
+      "input_byte_length": 2,
+      "input_character_length": 2,
+      "input_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "[]"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "type",
+        "items"
+      ],
+      "fixture_id": "E12_ASKS_STRING",
+      "input_byte_length": 122,
+      "input_character_length": 122,
+      "input_sha256": "5aabff416bdeff45270d4e2d72cbdd5dbc6f0e5d9a2b514b5516ce3a662fdd33",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":\"wrong\",\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "type",
+        "items"
+      ],
+      "fixture_id": "E13_ITEM_STRING",
+      "input_byte_length": 124,
+      "input_character_length": 124,
+      "input_sha256": "8ceb237aaa094163232f17e3321fda2ecf0c9cf13f6fa1579e6aa5363e14911b",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[\"wrong\"],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "type",
+        "items"
+      ],
+      "fixture_id": "E14_RANK_STRING",
+      "input_byte_length": 219,
+      "input_character_length": 219,
+      "input_sha256": "8ef5907418dab4133639bae28bd3b2f035461833b430dc185f7ebe11d9e2a29f",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[\"1\"]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "type",
+        "items"
+      ],
+      "fixture_id": "E15_RANK_FRACTION",
+      "input_byte_length": 219,
+      "input_character_length": 219,
+      "input_sha256": "2d57e7e4890ded4c26c4ef51a238ae0e6093b55790c89f42fe4098d710460908",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1.5]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "type",
+        "items"
+      ],
+      "fixture_id": "E16_RANK_BOOLEAN",
+      "input_byte_length": 220,
+      "input_character_length": 220,
+      "input_sha256": "c35f20f84d7f345695b09330385564206b72eb907d51312436006f0fc1e7be17",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[true]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "type",
+        "items"
+      ],
+      "fixture_id": "E17_RANK_NULL",
+      "input_byte_length": 220,
+      "input_character_length": 220,
+      "input_sha256": "5d14567bc732b6aa9e272728e2edab2dd9400c62a9e75be4b1819b149d024d6c",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[null]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "type"
+      ],
+      "fixture_id": "E18_RANKS_SCALAR",
+      "input_byte_length": 215,
+      "input_character_length": 215,
+      "input_sha256": "357087fe77580422e3f820682692a1a84f4075496faec23824f8d33cbff26e26",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":1}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "type"
+      ],
+      "fixture_id": "E19_ASK_NUMBER",
+      "input_byte_length": 187,
+      "input_character_length": 187,
+      "input_sha256": "ab6ae355b13581b430263fe4041c41552aa8406c89a9ba047a5c4836472a88f0",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":1,\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "minItems"
+      ],
+      "fixture_id": "E20_EMPTY_ASKS",
+      "input_byte_length": 117,
+      "input_character_length": 117,
+      "input_sha256": "d1739d54807c0dc02ec3f411802d87ecefadddfab18e511dc1b803bcfc595861",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "ACCEPT",
+      "features": [
+        "maxItems",
+        "items"
+      ],
+      "fixture_id": "E21_EIGHT_ASKS",
+      "input_byte_length": 924,
+      "input_character_length": 924,
+      "input_sha256": "c9460a3a943cfc80881e09d3838d560a315e99e815f03ce17e7d64765e980197",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "maxItems"
+      ],
+      "fixture_id": "E22_NINE_ASKS",
+      "input_byte_length": 1025,
+      "input_character_length": 1025,
+      "input_sha256": "85700309f125d59555e9bdb0345c59c383992a0df2cb33ac864c6d5e2787310c",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "ACCEPT",
+      "features": [
+        "maxItems",
+        "minimum",
+        "maximum",
+        "uniqueItems",
+        "items"
+      ],
+      "fixture_id": "E23_TEN_RANKS",
+      "input_byte_length": 236,
+      "input_character_length": 236,
+      "input_sha256": "daeea6d4cb4bef74e6236a210d0e0076546f337157cae6930a8c0d83db6c0654",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1,2,3,4,5,6,7,8,9,10]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "maxItems",
+        "uniqueItems"
+      ],
+      "fixture_id": "E24_ELEVEN_RANKS",
+      "input_byte_length": 238,
+      "input_character_length": 238,
+      "input_sha256": "4840cb3adfdfa655686d3d1aa2d352fb2d822294ae236d8f99cd9d0c96ae49f2",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1,2,3,4,5,6,7,8,9,10,1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "minimum"
+      ],
+      "fixture_id": "E25_RANK_LOW",
+      "input_byte_length": 217,
+      "input_character_length": 217,
+      "input_sha256": "9a337a975d1803947357bfde8aa67f47c28b266d85d5f801dbfc7f12a97082bc",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[0]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "maximum"
+      ],
+      "fixture_id": "E26_RANK_HIGH",
+      "input_byte_length": 218,
+      "input_character_length": 218,
+      "input_sha256": "429fc2f7a0c4a65d14e2668bb79afe13e8dccf52e121b188b026378ba8bddb0d",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[11]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "ACCEPT",
+      "features": [
+        "maximum"
+      ],
+      "fixture_id": "E27_RANK_UPPER",
+      "input_byte_length": 218,
+      "input_character_length": 218,
+      "input_sha256": "4e1ca7dd7aebf48c303fb7eb7c022e98a387982632ea09a4402170ffe55f8e99",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[10]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "uniqueItems"
+      ],
+      "fixture_id": "E28_DUPLICATE",
+      "input_byte_length": 219,
+      "input_character_length": 219,
+      "input_sha256": "a54a24b94db5fdd43d513488163bd7e3b8a009840996aefe9903a3c6e0785c98",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1,1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "minLength",
+        "pattern"
+      ],
+      "fixture_id": "E29_ASK_EMPTY",
+      "input_byte_length": 188,
+      "input_character_length": 188,
+      "input_sha256": "c61936f5a85c4f7cec01b829531c7434fa3cb04fa0e091d66cccd050367eb700",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "pattern"
+      ],
+      "fixture_id": "E30_ASK_WHITESPACE",
+      "input_byte_length": 191,
+      "input_character_length": 191,
+      "input_sha256": "8a65feb71c31c523f1f41c2541e8fe3d982d0048d6a0acd1a7b1b32ce9331912",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"   \",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "allOf",
+        "if",
+        "then",
+        "minItems"
+      ],
+      "fixture_id": "E31_SUPPORTED_EMPTY",
+      "input_byte_length": 216,
+      "input_character_length": 216,
+      "input_sha256": "48545a6dd1b302f07078a9ca1e2e2c12c44f9f2112cc0bb5dc1c42db5179209f",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "expected": "ACCEPT",
+      "features": [
+        "oneOf",
+        "contains",
+        "if",
+        "else",
+        "maxItems",
+        "allOf"
+      ],
+      "fixture_id": "E32_INSUFFICIENT_VALID",
+      "input_byte_length": 221,
+      "input_character_length": 221,
+      "input_sha256": "38f4386189b64e22cdcc82ee2bcfc26e82740ce28a9c0d46f339623960e5c86d",
+      "text": "{\"decision\":\"ABSTAIN\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"UNSUPPORTED\",\"supporting_evidence_ranks\":[]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"INSUFFICIENT_POLICY_SUPPORT\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "if",
+        "else",
+        "maxItems",
+        "allOf"
+      ],
+      "fixture_id": "E33_UNSUPPORTED_WITH_RANK",
+      "input_byte_length": 222,
+      "input_character_length": 222,
+      "input_sha256": "418b0f9f8f1651c67fb9e5b1de56ade778149c20ce05e0628ba797cb0d28836f",
+      "text": "{\"decision\":\"ABSTAIN\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"UNSUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"INSUFFICIENT_POLICY_SUPPORT\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "contains",
+        "oneOf"
+      ],
+      "fixture_id": "E34_CONTAINS_MISSING",
+      "input_byte_length": 220,
+      "input_character_length": 220,
+      "input_sha256": "6181e6836a17e364ec788d01a6090dc3436d1dc19bb907aa3c636ad6621bb182",
+      "text": "{\"decision\":\"ABSTAIN\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"INSUFFICIENT_POLICY_SUPPORT\"}"
+    },
+    {
+      "expected": "ACCEPT",
+      "features": [
+        "oneOf",
+        "anyOf",
+        "const"
+      ],
+      "fixture_id": "E35_CONTEXT_BRANCH_VALID",
+      "input_byte_length": 221,
+      "input_character_length": 221,
+      "input_sha256": "2e39eb0648a2cad0a5e98378a1c9ee7fb75455863446f8fa56be7460c6968337",
+      "text": "{\"decision\":\"ABSTAIN\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"UNSUPPORTED\",\"supporting_evidence_ranks\":[]}],\"policy_context_status\":\"UNRESOLVED\",\"reason_code\":\"UNRESOLVED_POLICY_CONTEXT\"}"
+    },
+    {
+      "expected": "ACCEPT",
+      "features": [
+        "anyOf",
+        "contains",
+        "oneOf"
+      ],
+      "fixture_id": "E36_ASK_BRANCH_VALID",
+      "input_byte_length": 226,
+      "input_character_length": 226,
+      "input_sha256": "6c8f5b19b428ee9e91d0d23256731ed0cc3584388143658c7ec1bec27c931cf0",
+      "text": "{\"decision\":\"ABSTAIN\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"CONTEXT_UNRESOLVED\",\"supporting_evidence_ranks\":[]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"UNRESOLVED_POLICY_CONTEXT\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "anyOf",
+        "contains",
+        "oneOf"
+      ],
+      "fixture_id": "E37_NO_UNRESOLVED_ROUTE",
+      "input_byte_length": 219,
+      "input_character_length": 219,
+      "input_sha256": "064293500db4e541175b2e371cda7aac603e802161bf5ac88dd210a0b6c8a4b4",
+      "text": "{\"decision\":\"ABSTAIN\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"UNSUPPORTED\",\"supporting_evidence_ranks\":[]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"UNRESOLVED_POLICY_CONTEXT\"}"
+    },
+    {
+      "expected": "REJECT",
+      "features": [
+        "const",
+        "oneOf"
+      ],
+      "fixture_id": "E38_CONST_PAIRING",
+      "input_byte_length": 218,
+      "input_character_length": 218,
+      "input_sha256": "5b6e2c93c300de2a33fc992b43644cfa5cfb3950f45c640099baef49fd398aad",
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"INSUFFICIENT_POLICY_SUPPORT\"}"
+    }
+  ],
+  "gate": "CORE_8_OF_8_REQUIRED",
+  "overlap_note": "Eleven ranks cannot isolate maxItems from uniqueItems/domain constraints. All these material rules are critical; do not claim isolated causal attribution. oneOf branches have disjoint decision/reason constants, so a multiply-matching valid object is impossible.",
+  "stop": "First critical mismatch; no retries or adaptive fixtures."
+}

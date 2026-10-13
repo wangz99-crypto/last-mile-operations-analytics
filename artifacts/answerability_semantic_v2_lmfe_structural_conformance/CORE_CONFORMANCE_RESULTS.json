@@ -1,0 +1,195 @@
+{
+  "executions": 8,
+  "fresh_top_level_parsers_constructed": 8,
+  "note": "Internal immutable state clones made by add_character are not additional fixture executions.",
+  "passed": false,
+  "required": 8,
+  "results": [
+    {
+      "actual": "ERROR",
+      "all_characters_consumed": false,
+      "completion_can_end": null,
+      "elapsed_seconds": 0.004431199980899692,
+      "exception": {
+        "character_position": 35,
+        "message": "Unsupported type None",
+        "phase": "traversal",
+        "type": "Exception"
+      },
+      "expected": "ACCEPT",
+      "features": [
+        "required"
+      ],
+      "first_rejected_byte_offset": null,
+      "first_rejected_character_position": null,
+      "fixture_id": "M1",
+      "input_byte_length": 217,
+      "input_character_length": 217,
+      "input_sha256": "fcc4e0b4d7d9f0edfb706f3321b3fcf0800c0acb2f09552eec77b96f64cf065b",
+      "matches_expected": false
+    },
+    {
+      "actual": "ERROR",
+      "all_characters_consumed": false,
+      "completion_can_end": null,
+      "elapsed_seconds": 0.0035319000016897917,
+      "exception": {
+        "character_position": 16,
+        "message": "Unsupported type None",
+        "phase": "traversal",
+        "type": "Exception"
+      },
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "first_rejected_byte_offset": null,
+      "first_rejected_character_position": null,
+      "fixture_id": "M2",
+      "input_byte_length": 198,
+      "input_character_length": 198,
+      "input_sha256": "005c6f10a197920eb151aee3be45180dac3bc9b89fa1a7a007d6ee542849d292",
+      "matches_expected": false
+    },
+    {
+      "actual": "ERROR",
+      "all_characters_consumed": false,
+      "completion_can_end": null,
+      "elapsed_seconds": 0.004105499945580959,
+      "exception": {
+        "character_position": 35,
+        "message": "Unsupported type None",
+        "phase": "traversal",
+        "type": "Exception"
+      },
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "first_rejected_byte_offset": null,
+      "first_rejected_character_position": null,
+      "fixture_id": "M3",
+      "input_byte_length": 182,
+      "input_character_length": 182,
+      "input_sha256": "a69fd36118fed60516e6f094fb2cef26ba4dd6c15a81cc4a4f3b30dd36e41536",
+      "matches_expected": false
+    },
+    {
+      "actual": "ERROR",
+      "all_characters_consumed": false,
+      "completion_can_end": null,
+      "elapsed_seconds": 0.0035294999834150076,
+      "exception": {
+        "character_position": 35,
+        "message": "Unsupported type None",
+        "phase": "traversal",
+        "type": "Exception"
+      },
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "first_rejected_byte_offset": null,
+      "first_rejected_character_position": null,
+      "fixture_id": "M4",
+      "input_byte_length": 174,
+      "input_character_length": 174,
+      "input_sha256": "0d72e0fce14b5ab9450ce28e447e3dadabd31f1af1313fffd65b187db2620c7c",
+      "matches_expected": false
+    },
+    {
+      "actual": "ERROR",
+      "all_characters_consumed": false,
+      "completion_can_end": null,
+      "elapsed_seconds": 0.0030909001361578703,
+      "exception": {
+        "character_position": 16,
+        "message": "Unsupported type None",
+        "phase": "traversal",
+        "type": "Exception"
+      },
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "first_rejected_byte_offset": null,
+      "first_rejected_character_position": null,
+      "fixture_id": "M5",
+      "input_byte_length": 120,
+      "input_character_length": 120,
+      "input_sha256": "02a1ef1e49ce208e45104a372890ed16fc15edbbe79122a802a0141f4a69ed2c",
+      "matches_expected": false
+    },
+    {
+      "actual": "ERROR",
+      "all_characters_consumed": false,
+      "completion_can_end": null,
+      "elapsed_seconds": 0.0037963001523166895,
+      "exception": {
+        "character_position": 19,
+        "message": "Unsupported type None",
+        "phase": "traversal",
+        "type": "Exception"
+      },
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "first_rejected_byte_offset": null,
+      "first_rejected_character_position": null,
+      "fixture_id": "M6",
+      "input_byte_length": 145,
+      "input_character_length": 145,
+      "input_sha256": "a6ba60eccfcc076f569f464c90e9b6e9b25293edd0bf2502e66da5d9b521e9cb",
+      "matches_expected": false
+    },
+    {
+      "actual": "ERROR",
+      "all_characters_consumed": false,
+      "completion_can_end": null,
+      "elapsed_seconds": 0.003603300079703331,
+      "exception": {
+        "character_position": 19,
+        "message": "Unsupported type None",
+        "phase": "traversal",
+        "type": "Exception"
+      },
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "first_rejected_byte_offset": null,
+      "first_rejected_character_position": null,
+      "fixture_id": "M7",
+      "input_byte_length": 265,
+      "input_character_length": 265,
+      "input_sha256": "1b078ff8fffba3a814fb0be5fdc4bb83b9a0a7a8799ac41e3b43016c7aa43afe",
+      "matches_expected": false
+    },
+    {
+      "actual": "ERROR",
+      "all_characters_consumed": false,
+      "completion_can_end": null,
+      "elapsed_seconds": 0.003310499945655465,
+      "exception": {
+        "character_position": 19,
+        "message": "Unsupported type None",
+        "phase": "traversal",
+        "type": "Exception"
+      },
+      "expected": "REJECT",
+      "features": [
+        "required"
+      ],
+      "first_rejected_byte_offset": null,
+      "first_rejected_character_position": null,
+      "fixture_id": "M8",
+      "input_byte_length": 146,
+      "input_character_length": 146,
+      "input_sha256": "467f92a2c8d285dddb5f574c3c227af3361e7b7f6396fab3ee409a767bbe362a",
+      "matches_expected": false
+    }
+  ],
+  "retries": 0,
+  "score": 0
+}

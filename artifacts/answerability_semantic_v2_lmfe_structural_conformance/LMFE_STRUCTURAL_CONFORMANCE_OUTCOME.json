@@ -1,0 +1,20 @@
+{
+  "DEVELOPMENT": 0,
+  "Phase_2G_private_HELDOUT_access": false,
+  "Phase_2H_HELD_OUT_access": false,
+  "Qwen_initialization": 0,
+  "core_executions": 8,
+  "core_score": 0,
+  "extended_executions": 0,
+  "forward": 0,
+  "fresh_semantic_suite": "NOT YET AUTHORED",
+  "generate": 0,
+  "outcome": "LMFE_STRUCTURAL_CONFORMANCE_FAILED",
+  "package_drift": 0,
+  "pip_check": "PASS",
+  "retries": 0,
+  "retrieval": 0,
+  "review_status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+  "semantic_outputs": 0,
+  "tokenizer_loads": 0
+}

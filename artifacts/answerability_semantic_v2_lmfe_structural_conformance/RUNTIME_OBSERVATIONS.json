@@ -1,0 +1,16 @@
+{
+  "forbidden_scientific_calls": [],
+  "prohibited_opens": [],
+  "socket_events": [
+    {
+      "arguments": [],
+      "operation": "socket.gethostname"
+    }
+  ],
+  "subprocess_events": [
+    {
+      "command": "C:\\windows\\system32\\cmd.exe /c \"ver\"",
+      "executable": "C:\\windows\\system32\\cmd.exe"
+    }
+  ]
+}

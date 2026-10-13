@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+    "-B",
+    "gateway/domain/tests/test_lmfe_structural_conformance.py"
+  ],
+  "exit_code": 0,
+  "native_parser_execution": false,
+  "stderr": "test_core_exact_outcomes_historical_bytes (__main__.QualificationTests.test_core_exact_outcomes_historical_bytes) ... ok\ntest_default_config_no_env_override (__main__.QualificationTests.test_default_config_no_env_override) ... ok\ntest_exact_consumption_and_completion (__main__.QualificationTests.test_exact_consumption_and_completion) ... ok\ntest_exact_schema_and_oracle_identity (__main__.QualificationTests.test_exact_schema_and_oracle_identity) ... ok\ntest_exact_version_and_inventory_drift (__main__.QualificationTests.test_exact_version_and_inventory_drift) ... ok\ntest_exceptions_not_scientific_rejections_or_retried (__main__.QualificationTests.test_exceptions_not_scientific_rejections_or_retried) ... ok\ntest_extended_frozen_coverage_and_authoritative_validity (__main__.QualificationTests.test_extended_frozen_coverage_and_authoritative_validity) ... ok\ntest_extended_stops_at_first_critical_mismatch (__main__.QualificationTests.test_extended_stops_at_first_critical_mismatch) ... ok\ntest_fixture_immutability_and_expectation_guard (__main__.QualificationTests.test_fixture_immutability_and_expectation_guard) ... ok\ntest_freeze_events_precede_any_execution (__main__.QualificationTests.test_freeze_events_precede_any_execution) ... ok\ntest_fresh_parser_per_fixture_no_retry (__main__.QualificationTests.test_fresh_parser_per_fixture_no_retry) ... ok\ntest_hard_core_gate_blocks_all_extended_calls (__main__.QualificationTests.test_hard_core_gate_blocks_all_extended_calls) ... ok\ntest_independent_json_schema_parser_triangulation (__main__.QualificationTests.test_independent_json_schema_parser_triangulation) ... ok\ntest_keyword_inventory_and_criticality (__main__.QualificationTests.test_keyword_inventory_and_criticality) ... ok\ntest_no_native_parser_tokenizer_model_or_benchmark_in_offline_tests (__main__.QualificationTests.test_no_native_parser_tokenizer_model_or_benchmark_in_offline_tests) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.033s\n\nOK\n",
+  "stdout": ""
+}

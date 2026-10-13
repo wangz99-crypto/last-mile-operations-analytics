@@ -1,0 +1,29 @@
+{
+  "completion": "ACCEPT iff every character was consumed without exception AND final state.can_end() is True. REJECT on disallowed character or nonterminal final state. Exceptions are ERROR, not credited as expected rejection. No artificial EOS character appended.",
+  "config_argument": null,
+  "constructor": "JsonSchemaParser(json.loads(exact_original_schema_bytes), config=None); existing_stack=None; num_consecutive_whitespaces=0",
+  "distribution": "lm-format-enforcer",
+  "effective_CharacterLevelParserConfig": {
+    "alphabet": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=[]{};:,./<>? `'\"",
+    "force_json_field_order": false,
+    "max_consecutive_whitespaces": 12,
+    "max_json_array_length": 20
+  },
+  "environment": {
+    "LMFE_DEFAULT_ALPHABET": null,
+    "LMFE_MAX_CONSECUTIVE_WHITESPACES": null,
+    "LMFE_MAX_JSON_ARRAY_LENGTH": null,
+    "LMFE_STRICT_JSON_FIELD_ORDER": null
+  },
+  "non_default_overrides": {},
+  "parser_class": "lmformatenforcer.JsonSchemaParser",
+  "position_convention": "zero-based Unicode character position; corresponding UTF-8 byte offset also recorded",
+  "source_sha256": {
+    "lmformatenforcer/characterlevelparser.py": "3e8e1773a2ed3078e9ab44f3aacb438f9529e6fd03bee37684fc0c40a51cab0a",
+    "lmformatenforcer/consts.py": "a021a8369cb5fe2acfa38238b80fcbbde47b3ed7ed77c7680eb688c9d8f461b7",
+    "lmformatenforcer/external/jsonschemaobject.py": "5d3d42f93f0cb46cee766fa11b95358ac4687cb90f3e8039700d598ea62bedcb",
+    "lmformatenforcer/jsonschemaparser.py": "6bc4a8a10621c6d38d70ebb5ae1dc21aaa98c0454a2e80be1896586f10dccf94"
+  },
+  "traversal": "For each Unicode character in exact decoded UTF-8 bytes: require membership in state.get_allowed_characters(); state = state.add_character(character).",
+  "version": "0.11.3"
+}

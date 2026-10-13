@@ -1,0 +1,63 @@
+{
+  "oracle_source_sha256": "ffe40fc052f6c25484d0abdf60411c1317873c1965e38c94860d6c88781181f9",
+  "results": [
+    {
+      "JSON_valid": true,
+      "LMFE_acceptance": "ERROR",
+      "expected_LMFE_acceptance": "ACCEPT",
+      "fixture_id": "M1",
+      "frozen_schema_valid": true
+    },
+    {
+      "JSON_valid": true,
+      "LMFE_acceptance": "ERROR",
+      "expected_LMFE_acceptance": "REJECT",
+      "fixture_id": "M2",
+      "frozen_schema_valid": false
+    },
+    {
+      "JSON_valid": true,
+      "LMFE_acceptance": "ERROR",
+      "expected_LMFE_acceptance": "REJECT",
+      "fixture_id": "M3",
+      "frozen_schema_valid": false
+    },
+    {
+      "JSON_valid": true,
+      "LMFE_acceptance": "ERROR",
+      "expected_LMFE_acceptance": "REJECT",
+      "fixture_id": "M4",
+      "frozen_schema_valid": false
+    },
+    {
+      "JSON_valid": true,
+      "LMFE_acceptance": "ERROR",
+      "expected_LMFE_acceptance": "REJECT",
+      "fixture_id": "M5",
+      "frozen_schema_valid": false
+    },
+    {
+      "JSON_valid": true,
+      "LMFE_acceptance": "ERROR",
+      "expected_LMFE_acceptance": "REJECT",
+      "fixture_id": "M6",
+      "frozen_schema_valid": false
+    },
+    {
+      "JSON_valid": true,
+      "LMFE_acceptance": "ERROR",
+      "expected_LMFE_acceptance": "REJECT",
+      "fixture_id": "M7",
+      "frozen_schema_valid": false
+    },
+    {
+      "JSON_valid": true,
+      "LMFE_acceptance": "ERROR",
+      "expected_LMFE_acceptance": "REJECT",
+      "fixture_id": "M8",
+      "frozen_schema_valid": false
+    }
+  ],
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "semantic_scoring": "NOT_PERFORMED"
+}

@@ -1,0 +1,95 @@
+{
+  "DEVELOPMENT": 0,
+  "G_qualification_reruns": 0,
+  "Phase_2G_private_HELDOUT_access": false,
+  "Phase_2H_HELD_OUT_access": false,
+  "Qwen_initialization": 0,
+  "confidence": "ESTABLISHED",
+  "diagnostic_executions": 26,
+  "exact_subtree_probes": 12,
+  "extended_conformance_probes": 0,
+  "findings": [
+    {
+      "confidence": "ESTABLISHED",
+      "evidence": [
+        "Frozen G helper AST direct unmodified parsed argument",
+        "All eight saved G error positions are the colon immediately after material_asks",
+        "D14 observed oneOf collision merge and colon-triggered dispatcher failure",
+        "T03/T04 unchanged original branch-property subtrees directly reproduce the same terminal exception",
+        "Installed LMFE source _merge_object_schemas lines 162-172; oneOf lines 205-210; property dispatch lines 338-353; fallback line 269"
+      ],
+      "finding": "HISTORICAL_FIRST_ERROR_PATH",
+      "mechanism": "oneOf _merge_object_schemas keeps an already-present branch property instead of merging its parent typed-array definition. On the material_asks colon, ObjectParsingState.add_character dispatches that items-only or contains+items property; its resolved type is None and no earlier get_parser branch handles it; line 269 raises Unsupported type None.",
+      "parent_definition": "/properties/material_asks",
+      "pointers": [
+        "/oneOf/0/properties/material_asks",
+        "/oneOf/1/properties/material_asks"
+      ],
+      "scope": "Localization from saved G prefixes, static installed source, minimal reproduction and exact subtrees; no full-schema or G rerun."
+    },
+    {
+      "confidence": "ESTABLISHED",
+      "evidence": [
+        "D11/D12 minimal conditional and typed-parent allOf reproductions",
+        "T06/T07 exact item and conditional subtrees",
+        "T11 exact array constructs successfully, then its opening bracket dispatches the item and fails",
+        "Runtime call trace shows object -> allOf child with type None -> exception"
+      ],
+      "finding": "ADDITIONAL_EXACT_SUBTREE_DISPATCH_INCOMPATIBILITY",
+      "mechanism": "get_parser tests allOf before explicit object type and recursively dispatches its first child, without retaining parent type/properties. The conditional-only child has if/then/else in extras and no dispatchable type, reaching the same line 269 fallback.",
+      "pointers": [
+        "/properties/material_asks/items",
+        "/properties/material_asks/items/allOf/0"
+      ],
+      "scope": "Established separate exact-subtree incompatibility, NOT attributed as the cause of G first errors at the preceding colon. No claim that allOf generally fails."
+    },
+    {
+      "confidence": "ESTABLISHED",
+      "evidence": [
+        "T05/T08/T09/T10/T12 and D04/D05/T01/T02 controls"
+      ],
+      "finding": "OTHER_UNTYPED_SHAPES",
+      "mechanism": "Exact direct-entry shapes also reach the type-None fallback; enum-only and const-only controls do not.",
+      "pointers": [
+        "/oneOf/2/anyOf/1/properties/material_asks",
+        "/properties/material_asks/items/allOf/0/if",
+        "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks",
+        "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks",
+        "/oneOf/2"
+      ],
+      "scope": "Direct-entry diagnostics only; not additional established causes of G historical first error, nor keyword enforcement/conformance verdicts."
+    },
+    {
+      "confidence": "ESTABLISHED",
+      "evidence": [
+        "Frozen G factory directly passes json.loads(SCHEMA.read_bytes()) with config=None",
+        "Frozen G traversal uses allowed-character membership before add_character",
+        "All 26 diagnostic constructor-entry hashes equal frozen planned argument hashes",
+        "All diagnostic input objects remain unchanged after LMFE calls"
+      ],
+      "finding": "PROJECT_HELPER_TRANSFORMATION",
+      "result": "NO_SCHEMA_TRANSFORMATION_INTRODUCED_BY_PROJECT_HELPER",
+      "scope": "No helper defect established. This does not assert the full schema is supported."
+    }
+  ],
+  "forward": 0,
+  "fresh_V2_semantic_suite": "NOT YET AUTHORED",
+  "full_V2_parser_calls": 0,
+  "generate": 0,
+  "helper_defect_established": false,
+  "helper_repairs": 0,
+  "library_causal_scope": "LMFE 0.11.3 dispatch/merge behavior for these exact frozen V2 shapes and configuration/runtime.",
+  "minimal_probes": 14,
+  "outcome": "LMFE_SCHEMA_SHAPE_INCOMPATIBILITY_ESTABLISHED",
+  "package_drift": 0,
+  "pip_check": "PASS",
+  "primary_classification_rationale": "Exact original schema shapes reproduce the library dispatch exception. One original first-error path is localized; other independently failing subtrees are recorded with limited scope, not promoted to multiple causes of the historical first error.",
+  "retries": 0,
+  "retrieval": 0,
+  "review_status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+  "same_target_exception_count": 19,
+  "schema_repairs": 0,
+  "semantic_outputs": 0,
+  "short_prefix_without_target_exception": 7,
+  "tokenizer_loads": 0
+}

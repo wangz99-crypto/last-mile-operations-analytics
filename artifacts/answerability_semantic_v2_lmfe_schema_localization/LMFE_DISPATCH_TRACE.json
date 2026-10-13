@@ -1,0 +1,1943 @@
+{
+  "events": [
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D01",
+      "sha256": "bf0b727f7b1c6d07c7312c6c7760fd34302744385611a86804210c77d80b0cc7"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "type": "string"
+      },
+      "line": 175,
+      "probe_id": "D01",
+      "type_resolved": "string"
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D02",
+      "sha256": "1e0b1cbf54c5771a7d13d62d42a58b76f82bc92b1d95baaa6a4154858b5a43da"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "type": "integer"
+      },
+      "line": 175,
+      "probe_id": "D02",
+      "type_resolved": "integer"
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D03",
+      "sha256": "dd5cf4b03557d2f3203a0dd415ee8a065e12164ddb9c608ca2092cc5cfbd7a04"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "items": {
+          "extras": {},
+          "type": "integer"
+        },
+        "type": "array"
+      },
+      "line": 175,
+      "probe_id": "D03",
+      "type_resolved": "array"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "type": "integer"
+      },
+      "line": 175,
+      "probe_id": "D03",
+      "type_resolved": "integer"
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D04",
+      "sha256": "9c999ac87ec6406973de66e5f9050d11fc0a796e2b4589ee48b26005b15bd862"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "enum": [
+          "A",
+          "B"
+        ],
+        "extras": {}
+      },
+      "line": 175,
+      "probe_id": "D04",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D05",
+      "sha256": "56c621eaa946264eb857ef5ef7fe040f36b151640295f7876824101918da67f8"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "const": "A"
+        }
+      },
+      "line": 175,
+      "probe_id": "D05",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D06",
+      "sha256": "2cb795b9511a2d9fb9cc59cf06c710847b70a85fbdb383757b39f92e817a9fa1"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "properties": {
+          "s": {
+            "extras": {
+              "const": "A"
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "D06",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "properties": {
+          "s": {
+            "extras": {
+              "const": "A"
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "D06",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D07",
+      "sha256": "2e052244d88cbc2b6c696b767594ca3754d4c6af2ebf4521e9f506c45b41e739"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "items": {
+          "extras": {},
+          "properties": {
+            "s": {
+              "extras": {
+                "const": "A"
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "D07",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "items": {
+          "extras": {},
+          "properties": {
+            "s": {
+              "extras": {
+                "const": "A"
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "D07",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D08",
+      "sha256": "2830d3c5a83a05336b8e5b821efe8183aa52856e1f4b668c949e13ace0b10156"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "contains": {
+            "properties": {
+              "s": {
+                "const": "A"
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "D08",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "contains": {
+            "properties": {
+              "s": {
+                "const": "A"
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "D08",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D09",
+      "sha256": "fc1f6f66e8251430da38020011bc6b657c929a8af93913e531d7251690eec3ff"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "minItems": 1
+      },
+      "line": 175,
+      "probe_id": "D09",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "minItems": 1
+      },
+      "line": 269,
+      "probe_id": "D09",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D10",
+      "sha256": "63c4e45088b474ccc875574674f37cb2f9c4f7b46aeedaefcd9f37ea897865dd"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "maxItems": 0
+      },
+      "line": 175,
+      "probe_id": "D10",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "maxItems": 0
+      },
+      "line": 269,
+      "probe_id": "D10",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D11",
+      "sha256": "5ea21353d664bbde8dc63b8c393d4789facea98d418ccca3c322e20b37225113"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "r": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "s": {
+                "const": "A"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "r": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "D11",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "r": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "s": {
+                "const": "A"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "r": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "D11",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D12",
+      "sha256": "1a26a8bc9be6fc99261051027b25dac0eea1f2965a47272148c36f44e67bd691"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "allOf": [
+          {
+            "extras": {
+              "else": {
+                "properties": {
+                  "r": {
+                    "maxItems": 0
+                  }
+                }
+              },
+              "if": {
+                "properties": {
+                  "s": {
+                    "const": "A"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "r": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "type": "object"
+      },
+      "line": 175,
+      "probe_id": "D12",
+      "type_resolved": "object"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "r": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "s": {
+                "const": "A"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "r": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "D12",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "r": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "s": {
+                "const": "A"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "r": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "D12",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "allOf": [
+          {
+            "extras": {
+              "else": {
+                "properties": {
+                  "r": {
+                    "maxItems": 0
+                  }
+                }
+              },
+              "if": {
+                "properties": {
+                  "s": {
+                    "const": "A"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "r": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "type": "object"
+      },
+      "line": 188,
+      "probe_id": "D12",
+      "type_resolved": "object"
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D13",
+      "sha256": "744bfff6df7cdb62bd3c0304a6458e3b1508a324edc79be4c3449dccf2e5dd93"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "anyOf": [
+          {
+            "extras": {},
+            "properties": {
+              "s": {
+                "extras": {
+                  "const": "A"
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "properties": {
+          "d": {
+            "extras": {
+              "const": "A"
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "D13",
+      "type_resolved": null
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "properties": {
+          "s": {
+            "extras": {
+              "const": "A"
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "D13",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "properties": {
+          "s": {
+            "extras": {
+              "const": "A"
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "D13",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "anyOf": [
+          {
+            "extras": {},
+            "properties": {
+              "s": {
+                "extras": {
+                  "const": "A"
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "properties": {
+          "d": {
+            "extras": {
+              "const": "A"
+            }
+          }
+        }
+      },
+      "line": 182,
+      "probe_id": "D13",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "D14",
+      "sha256": "7e7a03e4c9e5fa503c92d7737f6604ae303eb14ee00bbb7736bb0952b881c76e"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "oneOf": [
+          {
+            "extras": {},
+            "properties": {
+              "x": {
+                "extras": {},
+                "items": {
+                  "extras": {},
+                  "properties": {
+                    "s": {
+                      "extras": {
+                        "const": "A"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "x": {
+            "extras": {},
+            "items": {
+              "extras": {},
+              "properties": {
+                "s": {
+                  "enum": [
+                    "A"
+                  ],
+                  "extras": {}
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "x"
+        ],
+        "type": "object"
+      },
+      "line": 175,
+      "probe_id": "D14",
+      "type_resolved": "object"
+    },
+    {
+      "base": {
+        "extras": {},
+        "oneOf": [
+          {
+            "extras": {},
+            "properties": {
+              "x": {
+                "extras": {},
+                "items": {
+                  "extras": {},
+                  "properties": {
+                    "s": {
+                      "extras": {
+                        "const": "A"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "x": {
+            "extras": {},
+            "items": {
+              "extras": {},
+              "properties": {
+                "s": {
+                  "enum": [
+                    "A"
+                  ],
+                  "extras": {}
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "x"
+        ],
+        "type": "object"
+      },
+      "event": "merge_call",
+      "line": 162,
+      "option": {
+        "extras": {},
+        "properties": {
+          "x": {
+            "extras": {},
+            "items": {
+              "extras": {},
+              "properties": {
+                "s": {
+                  "extras": {
+                    "const": "A"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "probe_id": "D14"
+    },
+    {
+      "base": {
+        "extras": {},
+        "oneOf": [
+          {
+            "extras": {},
+            "properties": {
+              "x": {
+                "extras": {},
+                "items": {
+                  "extras": {},
+                  "properties": {
+                    "s": {
+                      "extras": {
+                        "const": "A"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "x": {
+            "extras": {},
+            "items": {
+              "extras": {},
+              "properties": {
+                "s": {
+                  "enum": [
+                    "A"
+                  ],
+                  "extras": {}
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "x"
+        ],
+        "type": "object"
+      },
+      "event": "merge_return",
+      "line": 172,
+      "option": {
+        "extras": {},
+        "properties": {
+          "x": {
+            "extras": {},
+            "items": {
+              "extras": {},
+              "properties": {
+                "s": {
+                  "extras": {
+                    "const": "A"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "probe_id": "D14"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "items": {
+          "extras": {},
+          "properties": {
+            "s": {
+              "extras": {
+                "const": "A"
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "D14",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "items": {
+          "extras": {},
+          "properties": {
+            "s": {
+              "extras": {
+                "const": "A"
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "D14",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T01",
+      "sha256": "22932a08f2a2e7456c64dcf8a250cdd18c3a060a560f629d3225061d72f3d803"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "enum": [
+          "ALLOW",
+          "ABSTAIN"
+        ],
+        "extras": {}
+      },
+      "line": 175,
+      "probe_id": "T01",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T02",
+      "sha256": "ded7e97f0e7a1a10affbb301417ebec1671050e5f685d45b46939bea393cbe7a"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "const": "ALLOW"
+        }
+      },
+      "line": 175,
+      "probe_id": "T02",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T03",
+      "sha256": "e93be1fd5e5dd97bc4f6b9ab3c29d11611efcecba9fd606a5d5198dc5baa7080"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "items": {
+          "extras": {},
+          "properties": {
+            "support_status": {
+              "extras": {
+                "const": "SUPPORTED"
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "T03",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "items": {
+          "extras": {},
+          "properties": {
+            "support_status": {
+              "extras": {
+                "const": "SUPPORTED"
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "T03",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T04",
+      "sha256": "8a4f8e86a476f8510d1a93ebe8e0e6121e91d04b6535274e443128715ce8bbb6"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "contains": {
+            "properties": {
+              "support_status": {
+                "const": "UNSUPPORTED"
+              }
+            }
+          }
+        },
+        "items": {
+          "extras": {},
+          "properties": {
+            "support_status": {
+              "enum": [
+                "SUPPORTED",
+                "UNSUPPORTED"
+              ],
+              "extras": {}
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "T04",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "contains": {
+            "properties": {
+              "support_status": {
+                "const": "UNSUPPORTED"
+              }
+            }
+          }
+        },
+        "items": {
+          "extras": {},
+          "properties": {
+            "support_status": {
+              "enum": [
+                "SUPPORTED",
+                "UNSUPPORTED"
+              ],
+              "extras": {}
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "T04",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T05",
+      "sha256": "3fa788a29a12affdbd2cff2231b9724cff241b697ffd4083e7a6a562bee825e2"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "contains": {
+            "properties": {
+              "support_status": {
+                "const": "CONTEXT_UNRESOLVED"
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "T05",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "contains": {
+            "properties": {
+              "support_status": {
+                "const": "CONTEXT_UNRESOLVED"
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "T05",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T06",
+      "sha256": "578abefaae108fc4d3bdfe025d68fa3cb80e7a79c55c496aec5e102e9389f199"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "extras": {
+              "else": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "maxItems": 0
+                  }
+                }
+              },
+              "if": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "properties": {
+          "ask": {
+            "extras": {},
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED",
+              "CONTEXT_UNRESOLVED"
+            ],
+            "extras": {}
+          },
+          "supporting_evidence_ranks": {
+            "extras": {},
+            "items": {
+              "extras": {},
+              "maximum": 10,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "type": "array",
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ],
+        "type": "object"
+      },
+      "line": 175,
+      "probe_id": "T06",
+      "type_resolved": "object"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "T06",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "T06",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "extras": {
+              "else": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "maxItems": 0
+                  }
+                }
+              },
+              "if": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "properties": {
+          "ask": {
+            "extras": {},
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED",
+              "CONTEXT_UNRESOLVED"
+            ],
+            "extras": {}
+          },
+          "supporting_evidence_ranks": {
+            "extras": {},
+            "items": {
+              "extras": {},
+              "maximum": 10,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "type": "array",
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ],
+        "type": "object"
+      },
+      "line": 188,
+      "probe_id": "T06",
+      "type_resolved": "object"
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T07",
+      "sha256": "85033e65e7c0618507ae1ca1980f7794f0e534fd63d25478dcb4cbe71ac4c9ab"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "T07",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "T07",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T08",
+      "sha256": "8c021fa10258debc81ba8a68bd0dad63af05038288b03cc21467a0be32dd5641"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "properties": {
+          "support_status": {
+            "extras": {
+              "const": "SUPPORTED"
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "T08",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "properties": {
+          "support_status": {
+            "extras": {
+              "const": "SUPPORTED"
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "T08",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T09",
+      "sha256": "fc1f6f66e8251430da38020011bc6b657c929a8af93913e531d7251690eec3ff"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "minItems": 1
+      },
+      "line": 175,
+      "probe_id": "T09",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "minItems": 1
+      },
+      "line": 269,
+      "probe_id": "T09",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T10",
+      "sha256": "63c4e45088b474ccc875574674f37cb2f9c4f7b46aeedaefcd9f37ea897865dd"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "maxItems": 0
+      },
+      "line": 175,
+      "probe_id": "T10",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "maxItems": 0
+      },
+      "line": 269,
+      "probe_id": "T10",
+      "type_resolved": null
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T11",
+      "sha256": "68dae68238cba1a511f3ffa36a1b6236b8c2199f06ac972d050974c6b5d8a747"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "items": {
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "extras": {
+                "else": {
+                  "properties": {
+                    "supporting_evidence_ranks": {
+                      "maxItems": 0
+                    }
+                  }
+                },
+                "if": {
+                  "properties": {
+                    "support_status": {
+                      "const": "SUPPORTED"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "supporting_evidence_ranks": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "extras": {},
+          "properties": {
+            "ask": {
+              "extras": {},
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "support_status": {
+              "enum": [
+                "SUPPORTED",
+                "UNSUPPORTED",
+                "CONTEXT_UNRESOLVED"
+              ],
+              "extras": {}
+            },
+            "supporting_evidence_ranks": {
+              "extras": {},
+              "items": {
+                "extras": {},
+                "maximum": 10,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "maxItems": 10,
+              "type": "array",
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "ask",
+            "support_status",
+            "supporting_evidence_ranks"
+          ],
+          "type": "object"
+        },
+        "maxItems": 8,
+        "minItems": 1,
+        "type": "array"
+      },
+      "line": 175,
+      "probe_id": "T11",
+      "type_resolved": "array"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "extras": {
+              "else": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "maxItems": 0
+                  }
+                }
+              },
+              "if": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "properties": {
+          "ask": {
+            "extras": {},
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED",
+              "CONTEXT_UNRESOLVED"
+            ],
+            "extras": {}
+          },
+          "supporting_evidence_ranks": {
+            "extras": {},
+            "items": {
+              "extras": {},
+              "maximum": 10,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "type": "array",
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ],
+        "type": "object"
+      },
+      "line": 175,
+      "probe_id": "T11",
+      "type_resolved": "object"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "T11",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {
+          "else": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "T11",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "extras": {
+              "else": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "maxItems": 0
+                  }
+                }
+              },
+              "if": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "properties": {
+          "ask": {
+            "extras": {},
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED",
+              "CONTEXT_UNRESOLVED"
+            ],
+            "extras": {}
+          },
+          "supporting_evidence_ranks": {
+            "extras": {},
+            "items": {
+              "extras": {},
+              "maximum": 10,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "type": "array",
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ],
+        "type": "object"
+      },
+      "line": 188,
+      "probe_id": "T11",
+      "type_resolved": "object"
+    },
+    {
+      "event": "constructor_argument",
+      "line": 32,
+      "probe_id": "T12",
+      "sha256": "234ff0486aa66eeb794dd637df61218a643df8b6012a4d7a972a32dba984d1f3"
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "anyOf": [
+          {
+            "extras": {},
+            "properties": {
+              "policy_context_status": {
+                "extras": {
+                  "const": "UNRESOLVED"
+                }
+              }
+            }
+          },
+          {
+            "extras": {},
+            "properties": {
+              "material_asks": {
+                "extras": {
+                  "contains": {
+                    "properties": {
+                      "support_status": {
+                        "const": "CONTEXT_UNRESOLVED"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "properties": {
+          "decision": {
+            "extras": {
+              "const": "ABSTAIN"
+            }
+          },
+          "reason_code": {
+            "extras": {
+              "const": "UNRESOLVED_POLICY_CONTEXT"
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "T12",
+      "type_resolved": null
+    },
+    {
+      "event": "call",
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "properties": {
+          "policy_context_status": {
+            "extras": {
+              "const": "UNRESOLVED"
+            }
+          }
+        }
+      },
+      "line": 175,
+      "probe_id": "T12",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "extras": {},
+        "properties": {
+          "policy_context_status": {
+            "extras": {
+              "const": "UNRESOLVED"
+            }
+          }
+        }
+      },
+      "line": 269,
+      "probe_id": "T12",
+      "type_resolved": null
+    },
+    {
+      "event": "exception",
+      "exception": {
+        "message": "Unsupported type None",
+        "type": "Exception"
+      },
+      "function": "get_parser",
+      "incoming_schema_object": {
+        "anyOf": [
+          {
+            "extras": {},
+            "properties": {
+              "policy_context_status": {
+                "extras": {
+                  "const": "UNRESOLVED"
+                }
+              }
+            }
+          },
+          {
+            "extras": {},
+            "properties": {
+              "material_asks": {
+                "extras": {
+                  "contains": {
+                    "properties": {
+                      "support_status": {
+                        "const": "CONTEXT_UNRESOLVED"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "extras": {},
+        "properties": {
+          "decision": {
+            "extras": {
+              "const": "ABSTAIN"
+            }
+          },
+          "reason_code": {
+            "extras": {
+              "const": "UNRESOLVED_POLICY_CONTEXT"
+            }
+          }
+        }
+      },
+      "line": 182,
+      "probe_id": "T12",
+      "type_resolved": null
+    }
+  ],
+  "source": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py",
+  "source_sha256": "6bc4a8a10621c6d38d70ebb5ae1dc21aaa98c0454a2e80be1896586f10dccf94",
+  "trace_method": "sys.settrace observes calls/exceptions/merge state; no monkeypatch/library changes"
+}

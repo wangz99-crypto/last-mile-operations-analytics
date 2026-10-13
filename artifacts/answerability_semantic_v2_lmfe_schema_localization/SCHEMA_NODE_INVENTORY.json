@@ -1,0 +1,1330 @@
+{
+  "category_counts": {
+    "$ref plus siblings": 0,
+    "$ref-only": 0,
+    "additionalProperties schema object": 0,
+    "allOf-only": 0,
+    "anyOf-only": 0,
+    "const-only": 13,
+    "empty schema {}": 0,
+    "enum-only": 5,
+    "explicit scalar/object/array type": 6,
+    "if/then/else node": 1,
+    "missing type": 36,
+    "nested items schema": 4,
+    "oneOf-only": 0,
+    "type as array / union": 0
+  },
+  "category_note": "Categories overlap; absence is descriptive, never assumed causal.",
+  "no_explicit_type_count": 36,
+  "node_count": 42,
+  "nodes": [
+    {
+      "additionalProperties_value": false,
+      "categories": [
+        "explicit scalar/object/array type"
+      ],
+      "keys": [
+        "$schema",
+        "additionalProperties",
+        "oneOf",
+        "properties",
+        "required",
+        "type"
+      ],
+      "no_explicit_type": false,
+      "node_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+      "parent_pointer": null,
+      "parent_schema_pointer": null,
+      "pointer": "",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": true,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": true,
+        "properties": true,
+        "then": false
+      },
+      "type_present": true,
+      "type_value": "object"
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "d9cedad17e71985286465a962dd113736710baa7d3b0fc6a9ca85d7b11825a87",
+      "parent_pointer": "/oneOf",
+      "parent_schema_pointer": "",
+      "pointer": "/oneOf/0",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "ded7e97f0e7a1a10affbb301417ebec1671050e5f685d45b46939bea393cbe7a",
+      "parent_pointer": "/oneOf/0/properties",
+      "parent_schema_pointer": "/oneOf/0",
+      "pointer": "/oneOf/0/properties/decision",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "items"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "e93be1fd5e5dd97bc4f6b9ab3c29d11611efcecba9fd606a5d5198dc5baa7080",
+      "parent_pointer": "/oneOf/0/properties",
+      "parent_schema_pointer": "/oneOf/0",
+      "pointer": "/oneOf/0/properties/material_asks",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": true,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "nested items schema"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "8c021fa10258debc81ba8a68bd0dad63af05038288b03cc21467a0be32dd5641",
+      "parent_pointer": "/oneOf/0/properties/material_asks",
+      "parent_schema_pointer": "/oneOf/0/properties/material_asks",
+      "pointer": "/oneOf/0/properties/material_asks/items",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "72f7e695cb477e9ac62fe6a28228c6b6c0d3775fdd9dfe3567d6e6076e2f0216",
+      "parent_pointer": "/oneOf/0/properties/material_asks/items/properties",
+      "parent_schema_pointer": "/oneOf/0/properties/material_asks/items",
+      "pointer": "/oneOf/0/properties/material_asks/items/properties/support_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "e2db7f11845e18c482b7f7e33ab2d16c4154f84eca7660561f32ff893ab2c3cc",
+      "parent_pointer": "/oneOf/0/properties",
+      "parent_schema_pointer": "/oneOf/0",
+      "pointer": "/oneOf/0/properties/policy_context_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "de827e33f51ac280fd82adee16b41c5b90f1ee4c4ab0c414e1de4434cc057c70",
+      "parent_pointer": "/oneOf/0/properties",
+      "parent_schema_pointer": "/oneOf/0",
+      "pointer": "/oneOf/0/properties/reason_code",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "f3c61943357c23052ed1ec28a70c18a0a5cd3562372f40503905a4160b28e839",
+      "parent_pointer": "/oneOf",
+      "parent_schema_pointer": "",
+      "pointer": "/oneOf/1",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "d45eea16324ebb89c7464c5c4aa2af60fac8c4d32a066cef4b6353b194de20d4",
+      "parent_pointer": "/oneOf/1/properties",
+      "parent_schema_pointer": "/oneOf/1",
+      "pointer": "/oneOf/1/properties/decision",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "contains",
+        "items"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "8a4f8e86a476f8510d1a93ebe8e0e6121e91d04b6535274e443128715ce8bbb6",
+      "parent_pointer": "/oneOf/1/properties",
+      "parent_schema_pointer": "/oneOf/1",
+      "pointer": "/oneOf/1/properties/material_asks",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": true,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "ed9968c1c1029d6d7f876fd233d1ab7cf647fe0dc9bc354674dae6c068166608",
+      "parent_pointer": "/oneOf/1/properties/material_asks",
+      "parent_schema_pointer": "/oneOf/1/properties/material_asks",
+      "pointer": "/oneOf/1/properties/material_asks/contains",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "f1d2786cdb5751105941955fac8f427a0450fd5387fb33dd3395a2961053e5ec",
+      "parent_pointer": "/oneOf/1/properties/material_asks/contains/properties",
+      "parent_schema_pointer": "/oneOf/1/properties/material_asks/contains",
+      "pointer": "/oneOf/1/properties/material_asks/contains/properties/support_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "nested items schema"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "4e3c451bd79a9aab931882d5d9cfefbd84b0eedb8c6261f7488cb05bfa06a564",
+      "parent_pointer": "/oneOf/1/properties/material_asks",
+      "parent_schema_pointer": "/oneOf/1/properties/material_asks",
+      "pointer": "/oneOf/1/properties/material_asks/items",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "enum-only"
+      ],
+      "keys": [
+        "enum"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "62103481b20df5e6d694a7576e023747d43a8bc0299d1a0b3e7d522799ea8053",
+      "parent_pointer": "/oneOf/1/properties/material_asks/items/properties",
+      "parent_schema_pointer": "/oneOf/1/properties/material_asks/items",
+      "pointer": "/oneOf/1/properties/material_asks/items/properties/support_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": true,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "e2db7f11845e18c482b7f7e33ab2d16c4154f84eca7660561f32ff893ab2c3cc",
+      "parent_pointer": "/oneOf/1/properties",
+      "parent_schema_pointer": "/oneOf/1",
+      "pointer": "/oneOf/1/properties/policy_context_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "b1461c55d00897cd85a3ed716583630a72a19c076ad0ea12a9a28b543805fed0",
+      "parent_pointer": "/oneOf/1/properties",
+      "parent_schema_pointer": "/oneOf/1",
+      "pointer": "/oneOf/1/properties/reason_code",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "anyOf",
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "234ff0486aa66eeb794dd637df61218a643df8b6012a4d7a972a32dba984d1f3",
+      "parent_pointer": "/oneOf",
+      "parent_schema_pointer": "",
+      "pointer": "/oneOf/2",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": true,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "ae7210fd1cfdc95647f57f1ae185f5b6cd3e0dff7bf91a477fd90c60ede72d19",
+      "parent_pointer": "/oneOf/2/anyOf",
+      "parent_schema_pointer": "/oneOf/2",
+      "pointer": "/oneOf/2/anyOf/0",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "cc824294292e442fad00f0d0320033eaf68a0a8b35b1d16b4d4af74458e34f01",
+      "parent_pointer": "/oneOf/2/anyOf/0/properties",
+      "parent_schema_pointer": "/oneOf/2/anyOf/0",
+      "pointer": "/oneOf/2/anyOf/0/properties/policy_context_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "664b8f5e51489841c82815cf0b8b6aced1d08fdda6bb61c70d9c4b205bd04421",
+      "parent_pointer": "/oneOf/2/anyOf",
+      "parent_schema_pointer": "/oneOf/2",
+      "pointer": "/oneOf/2/anyOf/1",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "contains"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "3fa788a29a12affdbd2cff2231b9724cff241b697ffd4083e7a6a562bee825e2",
+      "parent_pointer": "/oneOf/2/anyOf/1/properties",
+      "parent_schema_pointer": "/oneOf/2/anyOf/1",
+      "pointer": "/oneOf/2/anyOf/1/properties/material_asks",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "b5a464e962150e14a8ac84640071d0696caecd640d38def4a566e3e9b03f2339",
+      "parent_pointer": "/oneOf/2/anyOf/1/properties/material_asks",
+      "parent_schema_pointer": "/oneOf/2/anyOf/1/properties/material_asks",
+      "pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "dbd326195075ce4a89dd4a2fc72a0b2000312d5ae20e357c17efba8b1de6b100",
+      "parent_pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties",
+      "parent_schema_pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains",
+      "pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties/support_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "d45eea16324ebb89c7464c5c4aa2af60fac8c4d32a066cef4b6353b194de20d4",
+      "parent_pointer": "/oneOf/2/properties",
+      "parent_schema_pointer": "/oneOf/2",
+      "pointer": "/oneOf/2/properties/decision",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "24980e478c4e21dbe37aa20691b69ee8a8d435e285b6d006cc1ab3bffc6ffeaf",
+      "parent_pointer": "/oneOf/2/properties",
+      "parent_schema_pointer": "/oneOf/2",
+      "pointer": "/oneOf/2/properties/reason_code",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "enum-only"
+      ],
+      "keys": [
+        "enum"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "22932a08f2a2e7456c64dcf8a250cdd18c3a060a560f629d3225061d72f3d803",
+      "parent_pointer": "/properties",
+      "parent_schema_pointer": "",
+      "pointer": "/properties/decision",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": true,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "explicit scalar/object/array type"
+      ],
+      "keys": [
+        "items",
+        "maxItems",
+        "minItems",
+        "type"
+      ],
+      "no_explicit_type": false,
+      "node_sha256": "68dae68238cba1a511f3ffa36a1b6236b8c2199f06ac972d050974c6b5d8a747",
+      "parent_pointer": "/properties",
+      "parent_schema_pointer": "",
+      "pointer": "/properties/material_asks",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": true,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": true,
+      "type_value": "array"
+    },
+    {
+      "additionalProperties_value": false,
+      "categories": [
+        "explicit scalar/object/array type",
+        "nested items schema"
+      ],
+      "keys": [
+        "additionalProperties",
+        "allOf",
+        "properties",
+        "required",
+        "type"
+      ],
+      "no_explicit_type": false,
+      "node_sha256": "578abefaae108fc4d3bdfe025d68fa3cb80e7a79c55c496aec5e102e9389f199",
+      "parent_pointer": "/properties/material_asks",
+      "parent_schema_pointer": "/properties/material_asks",
+      "pointer": "/properties/material_asks/items",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": true,
+        "allOf": true,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": true,
+      "type_value": "object"
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "if/then/else node"
+      ],
+      "keys": [
+        "else",
+        "if",
+        "then"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "85033e65e7c0618507ae1ca1980f7794f0e534fd63d25478dcb4cbe71ac4c9ab",
+      "parent_pointer": "/properties/material_asks/items/allOf",
+      "parent_schema_pointer": "/properties/material_asks/items",
+      "pointer": "/properties/material_asks/items/allOf/0",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": true,
+        "enum": false,
+        "if": true,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": true
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "1203997e26a3f6d90f8b84b514c8b3c25031b12316825a83adf77549182bffab",
+      "parent_pointer": "/properties/material_asks/items/allOf/0",
+      "parent_schema_pointer": "/properties/material_asks/items/allOf/0",
+      "pointer": "/properties/material_asks/items/allOf/0/else",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "maxItems"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "63c4e45088b474ccc875574674f37cb2f9c4f7b46aeedaefcd9f37ea897865dd",
+      "parent_pointer": "/properties/material_asks/items/allOf/0/else/properties",
+      "parent_schema_pointer": "/properties/material_asks/items/allOf/0/else",
+      "pointer": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "8c021fa10258debc81ba8a68bd0dad63af05038288b03cc21467a0be32dd5641",
+      "parent_pointer": "/properties/material_asks/items/allOf/0",
+      "parent_schema_pointer": "/properties/material_asks/items/allOf/0",
+      "pointer": "/properties/material_asks/items/allOf/0/if",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "const-only"
+      ],
+      "keys": [
+        "const"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "72f7e695cb477e9ac62fe6a28228c6b6c0d3775fdd9dfe3567d6e6076e2f0216",
+      "parent_pointer": "/properties/material_asks/items/allOf/0/if/properties",
+      "parent_schema_pointer": "/properties/material_asks/items/allOf/0/if",
+      "pointer": "/properties/material_asks/items/allOf/0/if/properties/support_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": true,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "properties"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "52ba03a6e144143066e6bb03678790d824677fc6eeb5e3980d6baaa95471b519",
+      "parent_pointer": "/properties/material_asks/items/allOf/0",
+      "parent_schema_pointer": "/properties/material_asks/items/allOf/0",
+      "pointer": "/properties/material_asks/items/allOf/0/then",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": true,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type"
+      ],
+      "keys": [
+        "minItems"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "fc1f6f66e8251430da38020011bc6b657c929a8af93913e531d7251690eec3ff",
+      "parent_pointer": "/properties/material_asks/items/allOf/0/then/properties",
+      "parent_schema_pointer": "/properties/material_asks/items/allOf/0/then",
+      "pointer": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "explicit scalar/object/array type"
+      ],
+      "keys": [
+        "minLength",
+        "pattern",
+        "type"
+      ],
+      "no_explicit_type": false,
+      "node_sha256": "0be5e70fa818c80574e402307e4467188f8d4d933f5bc730d9d204bd1ae7bc9d",
+      "parent_pointer": "/properties/material_asks/items/properties",
+      "parent_schema_pointer": "/properties/material_asks/items",
+      "pointer": "/properties/material_asks/items/properties/ask",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": true,
+      "type_value": "string"
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "enum-only"
+      ],
+      "keys": [
+        "enum"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "5912c79530ea65fbc202faae9a7900b8322bce0045872bf0fe9e07440576ee4b",
+      "parent_pointer": "/properties/material_asks/items/properties",
+      "parent_schema_pointer": "/properties/material_asks/items",
+      "pointer": "/properties/material_asks/items/properties/support_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": true,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "explicit scalar/object/array type"
+      ],
+      "keys": [
+        "items",
+        "maxItems",
+        "type",
+        "uniqueItems"
+      ],
+      "no_explicit_type": false,
+      "node_sha256": "d6c2fb43f4dfb7f92ae9fb2ce48d5310ee4fc0c344aa51ce4bf7ff1fd122b161",
+      "parent_pointer": "/properties/material_asks/items/properties",
+      "parent_schema_pointer": "/properties/material_asks/items",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": true,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": true,
+      "type_value": "array"
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "explicit scalar/object/array type",
+        "nested items schema"
+      ],
+      "keys": [
+        "maximum",
+        "minimum",
+        "type"
+      ],
+      "no_explicit_type": false,
+      "node_sha256": "ace682495f5533855c9bf357845f9668ef54404cccf0a041a279201ab2a1e0e4",
+      "parent_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks",
+      "parent_schema_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": false,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": true,
+      "type_value": "integer"
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "enum-only"
+      ],
+      "keys": [
+        "enum"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "b6b6f697878e4ba162f40ad1968afe2eb2760ff9bbb51d457ff1d959587d710c",
+      "parent_pointer": "/properties",
+      "parent_schema_pointer": "",
+      "pointer": "/properties/policy_context_status",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": true,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    },
+    {
+      "additionalProperties_value": null,
+      "categories": [
+        "missing type",
+        "enum-only"
+      ],
+      "keys": [
+        "enum"
+      ],
+      "no_explicit_type": true,
+      "node_sha256": "73710ff64f62b68260ede7e82a19bf511ce8cbc71cc04ca1086a29c045755c3e",
+      "parent_pointer": "/properties",
+      "parent_schema_pointer": "",
+      "pointer": "/properties/reason_code",
+      "presence": {
+        "$ref": false,
+        "additionalProperties": false,
+        "allOf": false,
+        "anyOf": false,
+        "const": false,
+        "else": false,
+        "enum": true,
+        "if": false,
+        "items": false,
+        "oneOf": false,
+        "properties": false,
+        "then": false
+      },
+      "type_present": false,
+      "type_value": null
+    }
+  ],
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e"
+}

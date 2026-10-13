@@ -1,0 +1,44 @@
+{
+  "candidate_paths": [
+    "oneOf overlapping material_asks branch replaces parent typed-array property with untyped items/contains shape",
+    "typed object allOf dispatches conditional-only first child, whose type is None"
+  ],
+  "dispatch_order": [
+    "anyOf recursive branches",
+    "allOf child dispatch without parent siblings",
+    "const in extras",
+    "explicit string",
+    "oneOf shallow object-property merge",
+    "object",
+    "$ref",
+    "enum",
+    "integer/boolean/null/number",
+    "array",
+    "type list",
+    "Unsupported type fallthrough"
+  ],
+  "exception_line": 269,
+  "file": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py",
+  "locations": {
+    "JsonSchemaParser": {
+      "end_line": 154,
+      "start_line": 16
+    },
+    "ObjectParsingState": {
+      "end_line": 408,
+      "start_line": 281
+    },
+    "_merge_object_schemas": {
+      "end_line": 172,
+      "start_line": 162
+    },
+    "get_parser": {
+      "end_line": 269,
+      "start_line": 175
+    }
+  },
+  "no_library_patch": true,
+  "pre_probe_confidence": "SUPPORTED_BUT_NOT_PROVEN",
+  "sha256": "6bc4a8a10621c6d38d70ebb5ae1dc21aaa98c0454a2e80be1896586f10dccf94",
+  "type_resolution": "JsonSchemaObject.type defaults to None. Presence of items/properties/conditional extras does not itself assign type in get_parser. enum and const have dedicated branches."
+}

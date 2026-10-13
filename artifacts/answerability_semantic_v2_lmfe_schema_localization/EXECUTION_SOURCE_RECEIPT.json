@@ -1,0 +1,5 @@
+{
+  "artifacts/answerability_semantic_v2_lmfe_schema_localization/LMFE_SCHEMA_LOCALIZATION_PROTOCOL.md": "87ee75d0c8cf462fa664c15c40b2b1fade12f45d0349d2414a1fcc876aa64a3d",
+  "gateway/domain/evaluation/answerability/localize_lmfe_schema.py": "36083e7a506a41082f8cbb62a82222169f970c66e3bdb7320c2bb75600bd616d",
+  "gateway/domain/tests/test_lmfe_schema_localization.py": "415dafa6f90d6e667419bbdbb3df41346492c79946bad7fc867742f8a57f5ee7"
+}

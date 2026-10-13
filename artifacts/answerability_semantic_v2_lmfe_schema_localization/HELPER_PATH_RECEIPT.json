@@ -1,0 +1,73 @@
+{
+  "factory_line": 274,
+  "factory_source": "def factory():\n    parser = JsonSchemaParser(json.loads(SCHEMA.read_bytes()), config=None)\n    require(vars(parser.config) == config['effective_CharacterLevelParserConfig'], 'Effective parser config mismatch')\n    initial_parsers.append(parser)\n    return parser",
+  "helper_sha256": "45cc57a9534a56fef5834fffd422e618e2bb0574adaed90ac019ab4072d66bc0",
+  "historical_exception_context": [
+    {
+      "character_at_error": ":",
+      "fixture_id": "M1",
+      "position": 35,
+      "prefix_before_error": "{\"decision\":\"ALLOW\",\"material_asks\""
+    },
+    {
+      "character_at_error": ":",
+      "fixture_id": "M2",
+      "position": 16,
+      "prefix_before_error": "{\"material_asks\""
+    },
+    {
+      "character_at_error": ":",
+      "fixture_id": "M3",
+      "position": 35,
+      "prefix_before_error": "{\"decision\":\"ALLOW\",\"material_asks\""
+    },
+    {
+      "character_at_error": ":",
+      "fixture_id": "M4",
+      "position": 35,
+      "prefix_before_error": "{\"decision\":\"ALLOW\",\"material_asks\""
+    },
+    {
+      "character_at_error": ":",
+      "fixture_id": "M5",
+      "position": 16,
+      "prefix_before_error": "{\"material_asks\""
+    },
+    {
+      "character_at_error": ":",
+      "fixture_id": "M6",
+      "position": 19,
+      "prefix_before_error": "{\n  \"material_asks\""
+    },
+    {
+      "character_at_error": ":",
+      "fixture_id": "M7",
+      "position": 19,
+      "prefix_before_error": "{\n  \"material_asks\""
+    },
+    {
+      "character_at_error": ":",
+      "fixture_id": "M8",
+      "position": 19,
+      "prefix_before_error": "{\n  \"material_asks\""
+    }
+  ],
+  "native_input_receipt": "Per diagnostic probe trace records constructor-entry dict hash and internal dispatch object; full V2/M1-M8 are not rerun.",
+  "parsed_object_order_preserved": [
+    "$schema",
+    "additionalProperties",
+    "oneOf",
+    "properties",
+    "required",
+    "type"
+  ],
+  "path": [
+    "SCHEMA.read_bytes()",
+    "json.loads(original bytes), no sorting or structure transformation",
+    "JsonSchemaParser(parsed object, config=None)",
+    "LMFE JsonSchemaObject(**json_schema)",
+    "get_parser(context.model_class)"
+  ],
+  "project_transformation": "NONE: direct parsed original argument, established by frozen AST/source inspection; historical helper NOT executed",
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e"
+}

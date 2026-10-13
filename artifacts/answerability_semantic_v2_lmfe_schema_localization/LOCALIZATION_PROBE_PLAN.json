@@ -1,0 +1,662 @@
+{
+  "adaptive_probes": false,
+  "minimal_count": 14,
+  "probe_count": 26,
+  "probes": [
+    {
+      "category": "explicit string",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "\"A\"",
+      "probe_id": "D01",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "type": "string"
+      },
+      "schema_sha256": "bf0b727f7b1c6d07c7312c6c7760fd34302744385611a86804210c77d80b0cc7",
+      "source_pointer": "/properties/material_asks/items/properties/ask"
+    },
+    {
+      "category": "explicit integer",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "1",
+      "probe_id": "D02",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "type": "integer"
+      },
+      "schema_sha256": "1e0b1cbf54c5771a7d13d62d42a58b76f82bc92b1d95baaa6a4154858b5a43da",
+      "source_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items"
+    },
+    {
+      "category": "typed array / nested items",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "[1",
+      "probe_id": "D03",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "items": {
+          "type": "integer"
+        },
+        "type": "array"
+      },
+      "schema_sha256": "dd5cf4b03557d2f3203a0dd415ee8a065e12164ddb9c608ca2092cc5cfbd7a04",
+      "source_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks"
+    },
+    {
+      "category": "enum-only",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "\"A\"",
+      "probe_id": "D04",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "enum": [
+          "A",
+          "B"
+        ]
+      },
+      "schema_sha256": "9c999ac87ec6406973de66e5f9050d11fc0a796e2b4589ee48b26005b15bd862",
+      "source_pointer": "/properties/decision"
+    },
+    {
+      "category": "const-only",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "\"A\"",
+      "probe_id": "D05",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "const": "A"
+      },
+      "schema_sha256": "56c621eaa946264eb857ef5ef7fe040f36b151640295f7876824101918da67f8",
+      "source_pointer": "/oneOf/0/properties/decision"
+    },
+    {
+      "category": "missing type / properties-only",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "{",
+      "probe_id": "D06",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "properties": {
+          "s": {
+            "const": "A"
+          }
+        }
+      },
+      "schema_sha256": "2cb795b9511a2d9fb9cc59cf06c710847b70a85fbdb383757b39f92e817a9fa1",
+      "source_pointer": "/oneOf/0"
+    },
+    {
+      "category": "missing type / items-only",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "[",
+      "probe_id": "D07",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "items": {
+          "properties": {
+            "s": {
+              "const": "A"
+            }
+          }
+        }
+      },
+      "schema_sha256": "2e052244d88cbc2b6c696b767594ca3754d4c6af2ebf4521e9f506c45b41e739",
+      "source_pointer": "/oneOf/0/properties/material_asks"
+    },
+    {
+      "category": "missing type / contains-only",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "[",
+      "probe_id": "D08",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "contains": {
+          "properties": {
+            "s": {
+              "const": "A"
+            }
+          }
+        }
+      },
+      "schema_sha256": "2830d3c5a83a05336b8e5b821efe8183aa52856e1f4b668c949e13ace0b10156",
+      "source_pointer": "/oneOf/2/anyOf/1/properties/material_asks"
+    },
+    {
+      "category": "missing type / minItems-only",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "[",
+      "probe_id": "D09",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "minItems": 1
+      },
+      "schema_sha256": "fc1f6f66e8251430da38020011bc6b657c929a8af93913e531d7251690eec3ff",
+      "source_pointer": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks"
+    },
+    {
+      "category": "missing type / maxItems-only",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "[",
+      "probe_id": "D10",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "maxItems": 0
+      },
+      "schema_sha256": "63c4e45088b474ccc875574674f37cb2f9c4f7b46aeedaefcd9f37ea897865dd",
+      "source_pointer": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks"
+    },
+    {
+      "category": "conditional node",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "{",
+      "probe_id": "D11",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "else": {
+          "properties": {
+            "r": {
+              "maxItems": 0
+            }
+          }
+        },
+        "if": {
+          "properties": {
+            "s": {
+              "const": "A"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "r": {
+              "minItems": 1
+            }
+          }
+        }
+      },
+      "schema_sha256": "5ea21353d664bbde8dc63b8c393d4789facea98d418ccca3c322e20b37225113",
+      "source_pointer": "/properties/material_asks/items/allOf/0"
+    },
+    {
+      "category": "typed object with allOf conditional",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "{",
+      "probe_id": "D12",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "r": {
+                  "maxItems": 0
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "s": {
+                  "const": "A"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "r": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ],
+        "type": "object"
+      },
+      "schema_sha256": "1a26a8bc9be6fc99261051027b25dac0eea1f2965a47272148c36f44e67bd691",
+      "source_pointer": "/properties/material_asks/items"
+    },
+    {
+      "category": "anyOf with properties sibling",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "{",
+      "probe_id": "D13",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "anyOf": [
+          {
+            "properties": {
+              "s": {
+                "const": "A"
+              }
+            }
+          }
+        ],
+        "properties": {
+          "d": {
+            "const": "A"
+          }
+        }
+      },
+      "schema_sha256": "744bfff6df7cdb62bd3c0304a6458e3b1508a324edc79be4c3449dccf2e5dd93",
+      "source_pointer": "/oneOf/2"
+    },
+    {
+      "category": "typed object oneOf overlapping property",
+      "derivation": "Retain named structural form; shorten property names/values and remove unrelated siblings. No candidate substitution; no type added to a source node missing type.",
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "prefix": "{\"x\":",
+      "probe_id": "D14",
+      "purpose": "Localize dispatch behavior of this present structural shape, not conformance; no expected acceptance score.",
+      "schema": {
+        "oneOf": [
+          {
+            "properties": {
+              "x": {
+                "items": {
+                  "properties": {
+                    "s": {
+                      "const": "A"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "x": {
+            "items": {
+              "properties": {
+                "s": {
+                  "enum": [
+                    "A"
+                  ]
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "x"
+        ],
+        "type": "object"
+      },
+      "schema_sha256": "7e7a03e4c9e5fa503c92d7737f6604ae303eb14ee00bbb7736bb0952b881c76e",
+      "source_pointer": ""
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "\"ALLOW\"",
+      "probe_id": "T01",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "enum": [
+          "ALLOW",
+          "ABSTAIN"
+        ]
+      },
+      "schema_sha256": "22932a08f2a2e7456c64dcf8a250cdd18c3a060a560f629d3225061d72f3d803",
+      "source_pointer": "/properties/decision"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "\"ALLOW\"",
+      "probe_id": "T02",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "const": "ALLOW"
+      },
+      "schema_sha256": "ded7e97f0e7a1a10affbb301417ebec1671050e5f685d45b46939bea393cbe7a",
+      "source_pointer": "/oneOf/0/properties/decision"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "[",
+      "probe_id": "T03",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "items": {
+          "properties": {
+            "support_status": {
+              "const": "SUPPORTED"
+            }
+          }
+        }
+      },
+      "schema_sha256": "e93be1fd5e5dd97bc4f6b9ab3c29d11611efcecba9fd606a5d5198dc5baa7080",
+      "source_pointer": "/oneOf/0/properties/material_asks"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "[",
+      "probe_id": "T04",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "contains": {
+          "properties": {
+            "support_status": {
+              "const": "UNSUPPORTED"
+            }
+          }
+        },
+        "items": {
+          "properties": {
+            "support_status": {
+              "enum": [
+                "SUPPORTED",
+                "UNSUPPORTED"
+              ]
+            }
+          }
+        }
+      },
+      "schema_sha256": "8a4f8e86a476f8510d1a93ebe8e0e6121e91d04b6535274e443128715ce8bbb6",
+      "source_pointer": "/oneOf/1/properties/material_asks"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "[",
+      "probe_id": "T05",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "contains": {
+          "properties": {
+            "support_status": {
+              "const": "CONTEXT_UNRESOLVED"
+            }
+          }
+        }
+      },
+      "schema_sha256": "3fa788a29a12affdbd2cff2231b9724cff241b697ffd4083e7a6a562bee825e2",
+      "source_pointer": "/oneOf/2/anyOf/1/properties/material_asks"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "{",
+      "probe_id": "T06",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "maxItems": 0
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "support_status": {
+                  "const": "SUPPORTED"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "ask": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED",
+              "CONTEXT_UNRESOLVED"
+            ]
+          },
+          "supporting_evidence_ranks": {
+            "items": {
+              "maximum": 10,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "type": "array",
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ],
+        "type": "object"
+      },
+      "schema_sha256": "578abefaae108fc4d3bdfe025d68fa3cb80e7a79c55c496aec5e102e9389f199",
+      "source_pointer": "/properties/material_asks/items"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "{",
+      "probe_id": "T07",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "else": {
+          "properties": {
+            "supporting_evidence_ranks": {
+              "maxItems": 0
+            }
+          }
+        },
+        "if": {
+          "properties": {
+            "support_status": {
+              "const": "SUPPORTED"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "supporting_evidence_ranks": {
+              "minItems": 1
+            }
+          }
+        }
+      },
+      "schema_sha256": "85033e65e7c0618507ae1ca1980f7794f0e534fd63d25478dcb4cbe71ac4c9ab",
+      "source_pointer": "/properties/material_asks/items/allOf/0"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "{",
+      "probe_id": "T08",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "properties": {
+          "support_status": {
+            "const": "SUPPORTED"
+          }
+        }
+      },
+      "schema_sha256": "8c021fa10258debc81ba8a68bd0dad63af05038288b03cc21467a0be32dd5641",
+      "source_pointer": "/properties/material_asks/items/allOf/0/if"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "[",
+      "probe_id": "T09",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "minItems": 1
+      },
+      "schema_sha256": "fc1f6f66e8251430da38020011bc6b657c929a8af93913e531d7251690eec3ff",
+      "source_pointer": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "[",
+      "probe_id": "T10",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "maxItems": 0
+      },
+      "schema_sha256": "63c4e45088b474ccc875574674f37cb2f9c4f7b46aeedaefcd9f37ea897865dd",
+      "source_pointer": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "[",
+      "probe_id": "T11",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "items": {
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "else": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "maxItems": 0
+                  }
+                }
+              },
+              "if": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "supporting_evidence_ranks": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "ask": {
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            "support_status": {
+              "enum": [
+                "SUPPORTED",
+                "UNSUPPORTED",
+                "CONTEXT_UNRESOLVED"
+              ]
+            },
+            "supporting_evidence_ranks": {
+              "items": {
+                "maximum": 10,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "maxItems": 10,
+              "type": "array",
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "ask",
+            "support_status",
+            "supporting_evidence_ranks"
+          ],
+          "type": "object"
+        },
+        "maxItems": 8,
+        "minItems": 1,
+        "type": "array"
+      },
+      "schema_sha256": "68dae68238cba1a511f3ffa36a1b6236b8c2199f06ac972d050974c6b5d8a747",
+      "source_pointer": "/properties/material_asks"
+    },
+    {
+      "category": "exact subtree; categories in node inventory",
+      "derivation": "Exact JSON Pointer extraction, no structure/value edits.",
+      "kind": "EXACT_SCHEMA_SUBTREE",
+      "prefix": "{",
+      "probe_id": "T12",
+      "purpose": "Dispatch unchanged extracted subtree in an independent diagnostic instance; not a full V2 conformance run.",
+      "schema": {
+        "anyOf": [
+          {
+            "properties": {
+              "policy_context_status": {
+                "const": "UNRESOLVED"
+              }
+            }
+          },
+          {
+            "properties": {
+              "material_asks": {
+                "contains": {
+                  "properties": {
+                    "support_status": {
+                      "const": "CONTEXT_UNRESOLVED"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "decision": {
+            "const": "ABSTAIN"
+          },
+          "reason_code": {
+            "const": "UNRESOLVED_POLICY_CONTEXT"
+          }
+        }
+      },
+      "schema_sha256": "234ff0486aa66eeb794dd637df61218a643df8b6012a4d7a972a32dba984d1f3",
+      "source_pointer": "/oneOf/2"
+    }
+  ],
+  "retries": 0,
+  "root_V2_parser_calls": 0,
+  "rule": "One instance per frozen probe; stop each prefix on exception or disallowed character. No acceptance qualification. No M1-M8 or extended probes.",
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "subtree_count": 12
+}

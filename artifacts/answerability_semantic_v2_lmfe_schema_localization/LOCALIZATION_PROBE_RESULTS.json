@@ -1,0 +1,260 @@
+{
+  "results": [
+    {
+      "category": "explicit string",
+      "characters_consumed": 3,
+      "constructor": "PASS",
+      "constructor_input_after_sha256": "bf0b727f7b1c6d07c7312c6c7760fd34302744385611a86804210c77d80b0cc7",
+      "constructor_input_sha256": "bf0b727f7b1c6d07c7312c6c7760fd34302744385611a86804210c77d80b0cc7",
+      "elapsed_seconds": 0.0017585998866707087,
+      "exception": null,
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D01",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": false,
+      "source_pointer": "/properties/material_asks/items/properties/ask",
+      "traversal": "PREFIX_EXERCISED_WITHOUT_TARGET_EXCEPTION"
+    },
+    {
+      "category": "explicit integer",
+      "characters_consumed": 1,
+      "constructor": "PASS",
+      "constructor_input_after_sha256": "1e0b1cbf54c5771a7d13d62d42a58b76f82bc92b1d95baaa6a4154858b5a43da",
+      "constructor_input_sha256": "1e0b1cbf54c5771a7d13d62d42a58b76f82bc92b1d95baaa6a4154858b5a43da",
+      "elapsed_seconds": 0.0010898001492023468,
+      "exception": null,
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D02",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": false,
+      "source_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "traversal": "PREFIX_EXERCISED_WITHOUT_TARGET_EXCEPTION"
+    },
+    {
+      "category": "typed array / nested items",
+      "characters_consumed": 2,
+      "constructor": "PASS",
+      "constructor_input_after_sha256": "dd5cf4b03557d2f3203a0dd415ee8a065e12164ddb9c608ca2092cc5cfbd7a04",
+      "constructor_input_sha256": "dd5cf4b03557d2f3203a0dd415ee8a065e12164ddb9c608ca2092cc5cfbd7a04",
+      "elapsed_seconds": 0.0019725998863577843,
+      "exception": null,
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D03",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": false,
+      "source_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks",
+      "traversal": "PREFIX_EXERCISED_WITHOUT_TARGET_EXCEPTION"
+    },
+    {
+      "category": "enum-only",
+      "characters_consumed": 3,
+      "constructor": "PASS",
+      "constructor_input_after_sha256": "9c999ac87ec6406973de66e5f9050d11fc0a796e2b4589ee48b26005b15bd862",
+      "constructor_input_sha256": "9c999ac87ec6406973de66e5f9050d11fc0a796e2b4589ee48b26005b15bd862",
+      "elapsed_seconds": 0.001646100077778101,
+      "exception": null,
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D04",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": false,
+      "source_pointer": "/properties/decision",
+      "traversal": "PREFIX_EXERCISED_WITHOUT_TARGET_EXCEPTION"
+    },
+    {
+      "category": "const-only",
+      "characters_consumed": 3,
+      "constructor": "PASS",
+      "constructor_input_after_sha256": "56c621eaa946264eb857ef5ef7fe040f36b151640295f7876824101918da67f8",
+      "constructor_input_sha256": "56c621eaa946264eb857ef5ef7fe040f36b151640295f7876824101918da67f8",
+      "elapsed_seconds": 0.0016326999757438898,
+      "exception": null,
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D05",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": false,
+      "source_pointer": "/oneOf/0/properties/decision",
+      "traversal": "PREFIX_EXERCISED_WITHOUT_TARGET_EXCEPTION"
+    },
+    {
+      "category": "missing type / properties-only",
+      "characters_consumed": 0,
+      "constructor": "ERROR",
+      "constructor_input_after_sha256": "2cb795b9511a2d9fb9cc59cf06c710847b70a85fbdb383757b39f92e817a9fa1",
+      "constructor_input_sha256": "2cb795b9511a2d9fb9cc59cf06c710847b70a85fbdb383757b39f92e817a9fa1",
+      "elapsed_seconds": 0.0034607001580297947,
+      "exception": {
+        "message": "Unsupported type None",
+        "phase": "constructor",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\evaluation\\answerability\\localize_lmfe_schema.py\", line 165, in probe\n    state=parser_class(argument,config=None);result['constructor']='PASS'\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 51, in __init__\n    self.object_stack = [get_parser(self, self.context.model_class)]\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 269, in get_parser\n    raise Exception(\"Unsupported type \" + str(value_schema.type))\nException: Unsupported type None\n",
+        "type": "Exception"
+      },
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D06",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": true,
+      "source_pointer": "/oneOf/0",
+      "traversal": "NOT_STARTED"
+    },
+    {
+      "category": "missing type / items-only",
+      "characters_consumed": 0,
+      "constructor": "ERROR",
+      "constructor_input_after_sha256": "2e052244d88cbc2b6c696b767594ca3754d4c6af2ebf4521e9f506c45b41e739",
+      "constructor_input_sha256": "2e052244d88cbc2b6c696b767594ca3754d4c6af2ebf4521e9f506c45b41e739",
+      "elapsed_seconds": 0.0031117000617086887,
+      "exception": {
+        "message": "Unsupported type None",
+        "phase": "constructor",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\evaluation\\answerability\\localize_lmfe_schema.py\", line 165, in probe\n    state=parser_class(argument,config=None);result['constructor']='PASS'\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 51, in __init__\n    self.object_stack = [get_parser(self, self.context.model_class)]\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 269, in get_parser\n    raise Exception(\"Unsupported type \" + str(value_schema.type))\nException: Unsupported type None\n",
+        "type": "Exception"
+      },
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D07",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": true,
+      "source_pointer": "/oneOf/0/properties/material_asks",
+      "traversal": "NOT_STARTED"
+    },
+    {
+      "category": "missing type / contains-only",
+      "characters_consumed": 0,
+      "constructor": "ERROR",
+      "constructor_input_after_sha256": "2830d3c5a83a05336b8e5b821efe8183aa52856e1f4b668c949e13ace0b10156",
+      "constructor_input_sha256": "2830d3c5a83a05336b8e5b821efe8183aa52856e1f4b668c949e13ace0b10156",
+      "elapsed_seconds": 0.0020007998682558537,
+      "exception": {
+        "message": "Unsupported type None",
+        "phase": "constructor",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\evaluation\\answerability\\localize_lmfe_schema.py\", line 165, in probe\n    state=parser_class(argument,config=None);result['constructor']='PASS'\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 51, in __init__\n    self.object_stack = [get_parser(self, self.context.model_class)]\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 269, in get_parser\n    raise Exception(\"Unsupported type \" + str(value_schema.type))\nException: Unsupported type None\n",
+        "type": "Exception"
+      },
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D08",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": true,
+      "source_pointer": "/oneOf/2/anyOf/1/properties/material_asks",
+      "traversal": "NOT_STARTED"
+    },
+    {
+      "category": "missing type / minItems-only",
+      "characters_consumed": 0,
+      "constructor": "ERROR",
+      "constructor_input_after_sha256": "fc1f6f66e8251430da38020011bc6b657c929a8af93913e531d7251690eec3ff",
+      "constructor_input_sha256": "fc1f6f66e8251430da38020011bc6b657c929a8af93913e531d7251690eec3ff",
+      "elapsed_seconds": 0.0019326000474393368,
+      "exception": {
+        "message": "Unsupported type None",
+        "phase": "constructor",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\evaluation\\answerability\\localize_lmfe_schema.py\", line 165, in probe\n    state=parser_class(argument,config=None);result['constructor']='PASS'\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 51, in __init__\n    self.object_stack = [get_parser(self, self.context.model_class)]\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 269, in get_parser\n    raise Exception(\"Unsupported type \" + str(value_schema.type))\nException: Unsupported type None\n",
+        "type": "Exception"
+      },
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D09",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": true,
+      "source_pointer": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks",
+      "traversal": "NOT_STARTED"
+    },
+    {
+      "category": "missing type / maxItems-only",
+      "characters_consumed": 0,
+      "constructor": "ERROR",
+      "constructor_input_after_sha256": "63c4e45088b474ccc875574674f37cb2f9c4f7b46aeedaefcd9f37ea897865dd",
+      "constructor_input_sha256": "63c4e45088b474ccc875574674f37cb2f9c4f7b46aeedaefcd9f37ea897865dd",
+      "elapsed_seconds": 0.0023836998734623194,
+      "exception": {
+        "message": "Unsupported type None",
+        "phase": "constructor",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\evaluation\\answerability\\localize_lmfe_schema.py\", line 165, in probe\n    state=parser_class(argument,config=None);result['constructor']='PASS'\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 51, in __init__\n    self.object_stack = [get_parser(self, self.context.model_class)]\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 269, in get_parser\n    raise Exception(\"Unsupported type \" + str(value_schema.type))\nException: Unsupported type None\n",
+        "type": "Exception"
+      },
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D10",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": true,
+      "source_pointer": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks",
+      "traversal": "NOT_STARTED"
+    },
+    {
+      "category": "conditional node",
+      "characters_consumed": 0,
+      "constructor": "ERROR",
+      "constructor_input_after_sha256": "5ea21353d664bbde8dc63b8c393d4789facea98d418ccca3c322e20b37225113",
+      "constructor_input_sha256": "5ea21353d664bbde8dc63b8c393d4789facea98d418ccca3c322e20b37225113",
+      "elapsed_seconds": 0.0020220999140292406,
+      "exception": {
+        "message": "Unsupported type None",
+        "phase": "constructor",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\evaluation\\answerability\\localize_lmfe_schema.py\", line 165, in probe\n    state=parser_class(argument,config=None);result['constructor']='PASS'\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 51, in __init__\n    self.object_stack = [get_parser(self, self.context.model_class)]\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 269, in get_parser\n    raise Exception(\"Unsupported type \" + str(value_schema.type))\nException: Unsupported type None\n",
+        "type": "Exception"
+      },
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D11",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": true,
+      "source_pointer": "/properties/material_asks/items/allOf/0",
+      "traversal": "NOT_STARTED"
+    },
+    {
+      "category": "typed object with allOf conditional",
+      "characters_consumed": 0,
+      "constructor": "ERROR",
+      "constructor_input_after_sha256": "1a26a8bc9be6fc99261051027b25dac0eea1f2965a47272148c36f44e67bd691",
+      "constructor_input_sha256": "1a26a8bc9be6fc99261051027b25dac0eea1f2965a47272148c36f44e67bd691",
+      "elapsed_seconds": 0.0023914999328553677,
+      "exception": {
+        "message": "Unsupported type None",
+        "phase": "constructor",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\evaluation\\answerability\\localize_lmfe_schema.py\", line 165, in probe\n    state=parser_class(argument,config=None);result['constructor']='PASS'\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 51, in __init__\n    self.object_stack = [get_parser(self, self.context.model_class)]\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 188, in get_parser\n    return get_parser(parsing_state, merged_schema)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 269, in get_parser\n    raise Exception(\"Unsupported type \" + str(value_schema.type))\nException: Unsupported type None\n",
+        "type": "Exception"
+      },
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D12",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": true,
+      "source_pointer": "/properties/material_asks/items",
+      "traversal": "NOT_STARTED"
+    },
+    {
+      "category": "anyOf with properties sibling",
+      "characters_consumed": 0,
+      "constructor": "ERROR",
+      "constructor_input_after_sha256": "744bfff6df7cdb62bd3c0304a6458e3b1508a324edc79be4c3449dccf2e5dd93",
+      "constructor_input_sha256": "744bfff6df7cdb62bd3c0304a6458e3b1508a324edc79be4c3449dccf2e5dd93",
+      "elapsed_seconds": 0.004230099963024259,
+      "exception": {
+        "message": "Unsupported type None",
+        "phase": "constructor",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\evaluation\\answerability\\localize_lmfe_schema.py\", line 165, in probe\n    state=parser_class(argument,config=None);result['constructor']='PASS'\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 51, in __init__\n    self.object_stack = [get_parser(self, self.context.model_class)]\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 182, in get_parser\n    parsers = [get_parser(parsing_state, schema) for schema in value_schema.anyOf]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 269, in get_parser\n    raise Exception(\"Unsupported type \" + str(value_schema.type))\nException: Unsupported type None\n",
+        "type": "Exception"
+      },
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D13",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": true,
+      "source_pointer": "/oneOf/2",
+      "traversal": "NOT_STARTED"
+    },
+    {
+      "category": "typed object oneOf overlapping property",
+      "characters_consumed": 4,
+      "constructor": "PASS",
+      "constructor_input_after_sha256": "7e7a03e4c9e5fa503c92d7737f6604ae303eb14ee00bbb7736bb0952b881c76e",
+      "constructor_input_sha256": "7e7a03e4c9e5fa503c92d7737f6604ae303eb14ee00bbb7736bb0952b881c76e",
+      "elapsed_seconds": 0.005276500014588237,
+      "exception": {
+        "message": "Unsupported type None",
+        "phase": "traversal",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\gateway\\domain\\evaluation\\answerability\\localize_lmfe_schema.py\", line 171, in probe\n    state=state.add_character(ch);result['characters_consumed']+=1\n          ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 74, in add_character\n    updated_parser.object_stack[receiving_idx] = updated_parser.object_stack[receiving_idx].add_character(new_character)\n                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 351, in add_character\n    self.current_key_parser = get_parser(\n                              ^^^^^^^^^^^\n  File \"C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Lib\\site-packages\\lmformatenforcer\\jsonschemaparser.py\", line 269, in get_parser\n    raise Exception(\"Unsupported type \" + str(value_schema.type))\nException: Unsupported type None\n",
+        "type": "Exception"
+      },
+      "kind": "MINIMAL_DIAGNOSTIC_FRAGMENT",
+      "probe_id": "D14",
+      "qualification_verdict": "NOT_A_QUALIFICATION_CASE",
+      "same_target_exception": true,
+      "source_pointer": "",
+      "traversal": "ERROR"
+    }
+  ],
+  "retries": 0
+}

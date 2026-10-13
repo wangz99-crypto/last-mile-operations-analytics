@@ -1,0 +1,13 @@
+{
+  "forbidden_calls": [],
+  "protected_opens": [],
+  "socket_events": [
+    {
+      "args": [],
+      "event": "socket.gethostname"
+    }
+  ],
+  "subprocess_events": [
+    "C:\\windows\\system32\\cmd.exe /c \"ver\""
+  ]
+}

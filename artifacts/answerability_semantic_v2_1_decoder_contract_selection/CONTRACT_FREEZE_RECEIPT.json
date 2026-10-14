@@ -1,0 +1,80 @@
+{
+  "accounting": {
+    "adapter_migrations": 0,
+    "adapter_responsibilities": 6,
+    "decoder_owned_losses": 0,
+    "decoder_owned_represented": 18,
+    "decoder_owned_source": 18,
+    "explicitly_delegated": 46,
+    "source_constraints": 64,
+    "trace_rows": 64,
+    "unowned": 0,
+    "validator_only": 46
+  },
+  "base_commit": "4458c5efefc020b9a4f86fcff6c41cce1f668e19",
+  "base_tag": "answerability-semantic-v2_1-responsibility-split-v0.1-pre-contract",
+  "derivation_helper_sha256": "65be424feaa153f9e792fbd0376b5fc1c84dcbd876183fefaac4079df35bff7c",
+  "entry_git_status": "",
+  "events": [
+    {
+      "candidate_inspection_started": false,
+      "event": "DERIVATION_RULES_FROZEN",
+      "rules_sha256": "ea6e491ba295328bae66651230da39c87159ee06cc3eb4b2d146bbe066cc029e",
+      "sequence": 1,
+      "utc": "2026-10-14T18:53:51.971690+00:00"
+    },
+    {
+      "barrier": "64/64 trace;18/18 retained;46/46 delegated;0 unowned;6 adapter obligations unmigrated;M1-M8 frozen",
+      "candidate_inspection_started": false,
+      "event": "DECODER_ENFORCEMENT_CONTRACT_FROZEN",
+      "freeze_hashes": {
+        "CORE_FIXTURE_EXPECTATIONS.json": "14710f087bfd539038057da376a925e0423bfca7a4fd396ac30dd2ce478c34e3",
+        "DECODER_CONTRACT_DERIVATION_RULES.json": "ea6e491ba295328bae66651230da39c87159ee06cc3eb4b2d146bbe066cc029e",
+        "DECODER_CONTRACT_DERIVATION_TRACE.json": "f1a667780a09c03b928542b1d54f6f4538efb2bf18271258a7a4347f3a6a8ea6",
+        "DECODER_ENFORCEMENT_CONTRACT.json": "768b9147e77f1dcc9dfd13b9dc4a6f9a2dad0ea6ad498219341fee0c43166198",
+        "VALIDATOR_ONLY_CONSTRAINTS.json": "ba702eee48c216166c5e358c754c3b84f780e59d0e7a755fadc290aa746dda63"
+      },
+      "sequence": 2,
+      "utc": "2026-10-14T18:55:10.522938+00:00"
+    },
+    {
+      "all_frozen_hashes_reverified": true,
+      "backend": "outlines_core",
+      "event": "CANDIDATE_INSPECTION_STARTED",
+      "preceding_event": "DECODER_ENFORCEMENT_CONTRACT_FROZEN",
+      "sequence": 3,
+      "sole_candidate": "outlines==1.3.3",
+      "utc": "2026-10-14T18:55:34.622467+00:00"
+    },
+    {
+      "alternate_candidates": 0,
+      "candidate": "outlines==1.3.3 + outlines_core==0.2.14",
+      "constraint_id": "/properties/material_asks/items/properties/ask/type",
+      "contract_hashes_unchanged": true,
+      "decoder_executions": 0,
+      "event": "CANDIDATE_STATIC_INCOMPATIBILITY_ESTABLISHED",
+      "finding": "Generic string language excludes some valid JSON string values and their required unicode escape spellings; no legal serialization for a string containing U+0000.",
+      "further_candidate_capability_research": "STOPPED",
+      "outcome": "DECODER_CANDIDATE_SELECTION_BLOCKED",
+      "sequence": 4,
+      "utc": "2026-10-14T19:02:29.311228+00:00"
+    }
+  ],
+  "freeze_hashes": {
+    "CORE_FIXTURE_EXPECTATIONS.json": "14710f087bfd539038057da376a925e0423bfca7a4fd396ac30dd2ce478c34e3",
+    "DECODER_CONTRACT_DERIVATION_RULES.json": "ea6e491ba295328bae66651230da39c87159ee06cc3eb4b2d146bbe066cc029e",
+    "DECODER_CONTRACT_DERIVATION_TRACE.json": "f1a667780a09c03b928542b1d54f6f4538efb2bf18271258a7a4347f3a6a8ea6",
+    "DECODER_ENFORCEMENT_CONTRACT.json": "768b9147e77f1dcc9dfd13b9dc4a6f9a2dad0ea6ad498219341fee0c43166198",
+    "VALIDATOR_ONLY_CONSTRAINTS.json": "ba702eee48c216166c5e358c754c3b84f780e59d0e7a755fadc290aa746dda63"
+  },
+  "inclusion_argument": [
+    "Every retained leaf predicate is an unconditional frozen source assertion with identical value.",
+    "Each properties/items container preserves field/element associations while child obligations are independent retained rows. No delegated subtree is copied into the contract.",
+    "Removing delegated conjuncts/applicators enlarges the permitted value set; none is inverted, hoisted or replaced. Thus every exact-valid JSON value satisfies every contract predicate.",
+    "Property order/whitespace do not change object semantics. Any later canonicalization must preserve at least one legal serialization per permitted value. Mathematical integer values can use canonical integer spelling; stricter adapter checks remain separate."
+  ],
+  "inclusion_result": "V_exact subseteq V_decoder ESTABLISHED_BY_STRUCTURAL_DERIVATION_ARGUMENT",
+  "phase": "2H-B3.2-A2.1-P2P3",
+  "phase_a_frozen": true,
+  "post_freeze_edit_policy": "Contract, ownership and derivation rules immutable; candidate failure cannot trigger changes."
+}

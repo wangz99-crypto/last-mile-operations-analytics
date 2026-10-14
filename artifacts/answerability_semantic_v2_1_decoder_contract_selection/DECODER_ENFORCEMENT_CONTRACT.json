@@ -1,0 +1,347 @@
+{
+  "adapter_obligations": "Not part of this contract; all six remain exclusively at the unchanged adapter.",
+  "authoritative_schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "authority": "NON_AUTHORITATIVE_DECODER_CONTRACT",
+  "candidate_id": "SEMANTIC_MATERIAL_SUPPORT_V2_1",
+  "constraints": [
+    {
+      "constraint_id": "/additionalProperties",
+      "predicate": "additionalProperties",
+      "scope": [],
+      "value": {
+        "allowed": false,
+        "declared_property_names": [
+          "decision",
+          "material_asks",
+          "policy_context_status",
+          "reason_code"
+        ]
+      }
+    },
+    {
+      "constraint_id": "/properties",
+      "predicate": "properties",
+      "scope": [],
+      "value": {
+        "child_predicates": "Separate owned rows at their field scopes; omitted children remain validator-only.",
+        "declared_property_names": [
+          "decision",
+          "material_asks",
+          "policy_context_status",
+          "reason_code"
+        ]
+      }
+    },
+    {
+      "constraint_id": "/properties/decision/enum",
+      "predicate": "enum",
+      "scope": [
+        {
+          "field": "decision"
+        }
+      ],
+      "value": [
+        "ALLOW",
+        "ABSTAIN"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items",
+      "predicate": "items",
+      "scope": [
+        {
+          "field": "material_asks"
+        }
+      ],
+      "value": {
+        "child_predicates": "Separate owned rows at the element scope; no copied delegated assertions.",
+        "quantifier": "every array element"
+      }
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/additionalProperties",
+      "predicate": "additionalProperties",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        }
+      ],
+      "value": {
+        "allowed": false,
+        "declared_property_names": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ]
+      }
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties",
+      "predicate": "properties",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        }
+      ],
+      "value": {
+        "child_predicates": "Separate owned rows at their field scopes; omitted children remain validator-only.",
+        "declared_property_names": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ]
+      }
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/ask/type",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "ask"
+        }
+      ],
+      "value": "string"
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/support_status/enum",
+      "predicate": "enum",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "support_status"
+        }
+      ],
+      "value": [
+        "SUPPORTED",
+        "UNSUPPORTED",
+        "CONTEXT_UNRESOLVED"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "predicate": "items",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "supporting_evidence_ranks"
+        }
+      ],
+      "value": {
+        "child_predicates": "Separate owned rows at the element scope; no copied delegated assertions.",
+        "quantifier": "every array element"
+      }
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "supporting_evidence_ranks"
+        },
+        {
+          "each_array_element": true
+        }
+      ],
+      "value": "integer"
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "supporting_evidence_ranks"
+        }
+      ],
+      "value": "array"
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/required",
+      "predicate": "required",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        }
+      ],
+      "value": [
+        "ask",
+        "support_status",
+        "supporting_evidence_ranks"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/type",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        }
+      ],
+      "value": "object"
+    },
+    {
+      "constraint_id": "/properties/material_asks/type",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        }
+      ],
+      "value": "array"
+    },
+    {
+      "constraint_id": "/properties/policy_context_status/enum",
+      "predicate": "enum",
+      "scope": [
+        {
+          "field": "policy_context_status"
+        }
+      ],
+      "value": [
+        "RESOLVED",
+        "UNRESOLVED"
+      ]
+    },
+    {
+      "constraint_id": "/properties/reason_code/enum",
+      "predicate": "enum",
+      "scope": [
+        {
+          "field": "reason_code"
+        }
+      ],
+      "value": [
+        "SUPPORTED_BY_ACTIVE_POLICY",
+        "INSUFFICIENT_POLICY_SUPPORT",
+        "UNRESOLVED_POLICY_CONTEXT"
+      ]
+    },
+    {
+      "constraint_id": "/required",
+      "predicate": "required",
+      "scope": [],
+      "value": [
+        "material_asks",
+        "policy_context_status",
+        "decision",
+        "reason_code"
+      ]
+    },
+    {
+      "constraint_id": "/type",
+      "predicate": "type",
+      "scope": [],
+      "value": "object"
+    }
+  ],
+  "contract_id": "DECODER_ENFORCEMENT_CONTRACT_V2_1_V0_1",
+  "inclusion_argument": "Every retained predicate is an unconditional conjunction from P1. Properties/items are projected recursively, not copied with omitted assertions. Remove entire delegated applicators, never invert/hoist them. Therefore every exact-valid value satisfies all retained predicates. No semantic strengthening or extra constraints.",
+  "parse_boundary": [
+    {
+      "criticality": "CRITICAL",
+      "domain": "PARSE_BOUNDARY_NOT_SCHEMA_OCCURRENCE",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "id": "single_top_level_object"
+    },
+    {
+      "criticality": "CRITICAL",
+      "domain": "PARSE_BOUNDARY_NOT_SCHEMA_OCCURRENCE",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "id": "standard_json_syntax"
+    },
+    {
+      "criticality": "CRITICAL",
+      "domain": "PARSE_BOUNDARY_NOT_SCHEMA_OCCURRENCE",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "id": "no_markdown_or_prose"
+    },
+    {
+      "criticality": "CRITICAL",
+      "domain": "PARSE_BOUNDARY_NOT_SCHEMA_OCCURRENCE",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "id": "no_duplicate_keys"
+    },
+    {
+      "criticality": "CRITICAL",
+      "domain": "PARSE_BOUNDARY_NOT_SCHEMA_OCCURRENCE",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "id": "finite_json_values"
+    }
+  ],
+  "predicate_semantics": {
+    "additionalProperties": "No key outside the declared property names at the scope.",
+    "enum": "Value membership in the exact frozen finite domain.",
+    "items": "Apply owned element predicates to every member, including vacuous satisfaction on empty arrays; no cardinality restriction.",
+    "properties": "Declare field scopes; their predicates are separate conjunctions. Unknown properties are governed by additionalProperties.",
+    "required": "All listed property names must be present in the object at scope.",
+    "scope": "Apply to present values at each field/array-element path. Required predicates separately enforce presence. No implicit defaults.",
+    "type": "JSON value type; integer means mathematical integral number, never boolean."
+  },
+  "prohibited": [
+    "semantic strengthening",
+    "delegated constraint approximation",
+    "post-generation repair",
+    "structural retry"
+  ],
+  "semantic_domain": "JSON values/object semantics; mathematical integers exclude boolean and include numerically integral JSON numbers.",
+  "serialization": {
+    "candidate_canonicalization": "May be documented separately only if each valid semantic value retains at least one representation and no field/value combination is lost.",
+    "contract_domain": "JSON semantic values",
+    "order_or_whitespace_semantics": false,
+    "rank_integer": "Allow any legal textual representation of an integer semantic value in the abstract contract; canonical integer serialization is neutral if it preserves that value. Adapter lexical checks stay separate."
+  }
+}

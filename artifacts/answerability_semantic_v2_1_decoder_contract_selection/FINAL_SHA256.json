@@ -1,0 +1,21 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "Raw worktree bytes; 12 artifacts and 2 new hash-bound source files have exact-path -text rules. The attributes file retains normal Git text conversion.",
+  "self_hash": "Excluded; reported externally to avoid circular self-hash",
+  "sha256": {
+    ".gitattributes": "47d7325ccab079fcde5458efed652d6a7990f96605980ded9356adf02680eec1",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/CANDIDATE_DEPENDENCY_METADATA.json": "340a4cc6b2f3c51263f70936dd47af6056abd36377fff557a5ad0ceefa0b58d6",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/CANDIDATE_SELECTION_RECORD.md": "1d879011061651e1729d4f5dd2a40836f1635edde6614bfcd0a0273c0aad7028",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/CONTRACT_FREEZE_RECEIPT.json": "369bb105b9265cf562456b3719da88c41c79dfeea1146eadb33779668984f270",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/CORE_FIXTURE_EXPECTATIONS.json": "14710f087bfd539038057da376a925e0423bfca7a4fd396ac30dd2ce478c34e3",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/DECODER_CONTRACT_DERIVATION_RULES.json": "ea6e491ba295328bae66651230da39c87159ee06cc3eb4b2d146bbe066cc029e",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/DECODER_CONTRACT_DERIVATION_TRACE.json": "f1a667780a09c03b928542b1d54f6f4538efb2bf18271258a7a4347f3a6a8ea6",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/DECODER_ENFORCEMENT_CONTRACT.json": "768b9147e77f1dcc9dfd13b9dc4a6f9a2dad0ea6ad498219341fee0c43166198",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/FREEZE_RECORD.md": "ac0c8bade367e197bda09d2e325072c6c244813dc12836328187a3900cfaf008",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/OFFLINE_TEST_RESULTS.json": "f9aebe1cbb1fb9fb44435022bf58851512ecfe1d6faea72d5233324f0f788d1a",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/OUTLINES_CORE_CONTRACT_CAPABILITY_MATRIX.json": "467c6360089a73f27c7c29096dea26699f8e3cefb99498a612ef7d11a4450f0d",
+    "artifacts/answerability_semantic_v2_1_decoder_contract_selection/VALIDATOR_ONLY_CONSTRAINTS.json": "ba702eee48c216166c5e358c754c3b84f780e59d0e7a755fadc290aa746dda63",
+    "gateway/domain/evaluation/answerability/derive_decoder_contract.py": "65be424feaa153f9e792fbd0376b5fc1c84dcbd876183fefaac4079df35bff7c",
+    "gateway/domain/tests/test_decoder_contract_selection.py": "ae2085a2f8ea521662b4f26129c2325bcc5cf378240e780cc06c672051addc0d"
+  }
+}

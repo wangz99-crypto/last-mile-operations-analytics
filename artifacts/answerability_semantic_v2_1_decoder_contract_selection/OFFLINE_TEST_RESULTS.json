@@ -1,0 +1,29 @@
+{
+  "errors": 0,
+  "execution_guard": {
+    "benchmark_paths_blocked": true,
+    "blocked_attempts": [],
+    "forbidden_import_roots": [
+      "jsonschema",
+      "llguidance",
+      "lmformatenforcer",
+      "outlines",
+      "outlines_core",
+      "sentence_transformers",
+      "tokenizers",
+      "torch",
+      "transformers",
+      "xgrammar"
+    ],
+    "prohibited_modules_loaded": [],
+    "socket_and_child_process_blocked": true
+  },
+  "failures": 0,
+  "output": "test_freeze_precedes_research_and_rejects_mutation (gateway.domain.tests.test_decoder_contract_selection.DecoderContractSelectionTests.test_freeze_precedes_research_and_rejects_mutation) ... ok\ntest_known_incompatibility_blocks_selection (gateway.domain.tests.test_decoder_contract_selection.DecoderContractSelectionTests.test_known_incompatibility_blocks_selection) ... ok\ntest_m1_m8_expectations_preserve_p1_evidence (gateway.domain.tests.test_decoder_contract_selection.DecoderContractSelectionTests.test_m1_m8_expectations_preserve_p1_evidence) ... ok\ntest_p1_accounting_and_exact_reproduction (gateway.domain.tests.test_decoder_contract_selection.DecoderContractSelectionTests.test_p1_accounting_and_exact_reproduction) ... ok\ntest_projection_preserves_predicates_and_delegation (gateway.domain.tests.test_decoder_contract_selection.DecoderContractSelectionTests.test_projection_preserves_predicates_and_delegation) ... ok\ntest_static_only_boundary (gateway.domain.tests.test_decoder_contract_selection.DecoderContractSelectionTests.test_static_only_boundary) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.024s\n\nOK\n",
+  "scope": "Six offline declaration/integrity tests; no decoder/parser/model qualification",
+  "skipped": 0,
+  "successful": true,
+  "test_source_sha256": "ae2085a2f8ea521662b4f26129c2325bcc5cf378240e780cc06c672051addc0d",
+  "tests_run": 6,
+  "utc": "2026-10-14T19:08:04.476181+00:00"
+}

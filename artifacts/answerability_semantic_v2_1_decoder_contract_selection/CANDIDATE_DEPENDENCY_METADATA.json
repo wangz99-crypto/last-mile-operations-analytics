@@ -1,0 +1,1674 @@
+{
+  "backend": "outlines_core",
+  "candidate": "outlines==1.3.3",
+  "core_requirement": "outlines_core==0.2.14",
+  "dependency_graph": {
+    "closure_status": "PARTIALLY_RESOLVED_DECLARED_GRAPH; missing unpinned package versions and their transitive edges remain explicit pending nodes; no complete installation lock claimed.",
+    "edges": [
+      {
+        "distribution": "jinja2",
+        "known_version": "3.1.6",
+        "parent": "outlines",
+        "requirement": "jinja2",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "cloudpickle",
+        "known_version": null,
+        "parent": "outlines",
+        "requirement": "cloudpickle",
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING"
+      },
+      {
+        "distribution": "diskcache",
+        "known_version": null,
+        "parent": "outlines",
+        "requirement": "diskcache",
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING"
+      },
+      {
+        "distribution": "pydantic",
+        "known_version": "2.13.5",
+        "parent": "outlines",
+        "requirement": "pydantic>=2.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "jsonschema",
+        "known_version": null,
+        "parent": "outlines",
+        "requirement": "jsonschema",
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING"
+      },
+      {
+        "distribution": "pillow",
+        "known_version": null,
+        "parent": "outlines",
+        "requirement": "pillow",
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING"
+      },
+      {
+        "distribution": "typing-extensions",
+        "known_version": "4.16.0",
+        "parent": "outlines",
+        "requirement": "typing_extensions",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "outlines-core",
+        "known_version": "0.2.14",
+        "parent": "outlines",
+        "requirement": "outlines_core==0.2.14",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "genson",
+        "known_version": null,
+        "parent": "outlines",
+        "requirement": "genson",
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING"
+      },
+      {
+        "distribution": "accelerate",
+        "known_version": "1.15.0",
+        "parent": "outlines",
+        "requirement": "accelerate; extra == \"transformers\"",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "datasets",
+        "known_version": null,
+        "parent": "outlines",
+        "requirement": "datasets; extra == \"transformers\"",
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING"
+      },
+      {
+        "distribution": "transformers",
+        "known_version": "4.57.6",
+        "parent": "outlines",
+        "requirement": "transformers; extra == \"transformers\"",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "setuptools",
+        "known_version": "78.1.0",
+        "parent": "outlines",
+        "requirement": "setuptools; extra == \"transformers\"",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "sentencepiece",
+        "known_version": null,
+        "parent": "outlines",
+        "requirement": "sentencepiece; extra == \"transformers\"",
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING"
+      },
+      {
+        "distribution": "markupsafe",
+        "known_version": "3.0.3",
+        "parent": "jinja2",
+        "requirement": "MarkupSafe>=2.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "annotated-types",
+        "known_version": "0.8.0",
+        "parent": "pydantic",
+        "requirement": "annotated-types>=0.6.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "pydantic-core",
+        "known_version": "2.46.5",
+        "parent": "pydantic",
+        "requirement": "pydantic-core==2.46.5",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "typing-extensions",
+        "known_version": "4.16.0",
+        "parent": "pydantic",
+        "requirement": "typing-extensions>=4.14.1",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "typing-inspection",
+        "known_version": "0.4.4",
+        "parent": "pydantic",
+        "requirement": "typing-inspection>=0.4.2",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "numpy",
+        "known_version": "2.5.3",
+        "parent": "accelerate",
+        "requirement": "numpy>=1.17",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "packaging",
+        "known_version": "26.3",
+        "parent": "accelerate",
+        "requirement": "packaging>=20.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "psutil",
+        "known_version": "7.2.2",
+        "parent": "accelerate",
+        "requirement": "psutil",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "pyyaml",
+        "known_version": "6.0.3",
+        "parent": "accelerate",
+        "requirement": "pyyaml",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "torch",
+        "known_version": "2.14.0+cpu",
+        "parent": "accelerate",
+        "requirement": "torch>=2.0.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "huggingface-hub",
+        "known_version": "0.36.2",
+        "parent": "accelerate",
+        "requirement": "huggingface_hub>=0.21.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "safetensors",
+        "known_version": "0.8.0",
+        "parent": "accelerate",
+        "requirement": "safetensors>=0.4.3",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "filelock",
+        "known_version": "3.32.3",
+        "parent": "transformers",
+        "requirement": "filelock",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "huggingface-hub",
+        "known_version": "0.36.2",
+        "parent": "transformers",
+        "requirement": "huggingface-hub<1.0,>=0.34.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "numpy",
+        "known_version": "2.5.3",
+        "parent": "transformers",
+        "requirement": "numpy>=1.17",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "packaging",
+        "known_version": "26.3",
+        "parent": "transformers",
+        "requirement": "packaging>=20.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "pyyaml",
+        "known_version": "6.0.3",
+        "parent": "transformers",
+        "requirement": "pyyaml>=5.1",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "regex",
+        "known_version": "2026.9.29",
+        "parent": "transformers",
+        "requirement": "regex!=2019.12.17",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "requests",
+        "known_version": "2.34.2",
+        "parent": "transformers",
+        "requirement": "requests",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "tokenizers",
+        "known_version": "0.22.2",
+        "parent": "transformers",
+        "requirement": "tokenizers<=0.23.0,>=0.22.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "safetensors",
+        "known_version": "0.8.0",
+        "parent": "transformers",
+        "requirement": "safetensors>=0.4.3",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "tqdm",
+        "known_version": "4.70.1",
+        "parent": "transformers",
+        "requirement": "tqdm>=4.27",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "typing-extensions",
+        "known_version": "4.16.0",
+        "parent": "pydantic-core",
+        "requirement": "typing-extensions>=4.14.1",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "typing-extensions",
+        "known_version": "4.16.0",
+        "parent": "typing-inspection",
+        "requirement": "typing-extensions>=4.15.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "filelock",
+        "known_version": "3.32.3",
+        "parent": "torch",
+        "requirement": "filelock",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "typing-extensions",
+        "known_version": "4.16.0",
+        "parent": "torch",
+        "requirement": "typing-extensions>=4.10.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "setuptools",
+        "known_version": "78.1.0",
+        "parent": "torch",
+        "requirement": "setuptools>=77.0.3",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "sympy",
+        "known_version": "1.14.0",
+        "parent": "torch",
+        "requirement": "sympy>=1.13.3",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "networkx",
+        "known_version": "3.6.1",
+        "parent": "torch",
+        "requirement": "networkx>=2.5.1",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "jinja2",
+        "known_version": "3.1.6",
+        "parent": "torch",
+        "requirement": "jinja2",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "fsspec",
+        "known_version": "2026.7.0",
+        "parent": "torch",
+        "requirement": "fsspec>=0.8.5",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "filelock",
+        "known_version": "3.32.3",
+        "parent": "huggingface-hub",
+        "requirement": "filelock",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "fsspec",
+        "known_version": "2026.7.0",
+        "parent": "huggingface-hub",
+        "requirement": "fsspec>=2023.5.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "packaging",
+        "known_version": "26.3",
+        "parent": "huggingface-hub",
+        "requirement": "packaging>=20.9",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "pyyaml",
+        "known_version": "6.0.3",
+        "parent": "huggingface-hub",
+        "requirement": "pyyaml>=5.1",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "requests",
+        "known_version": "2.34.2",
+        "parent": "huggingface-hub",
+        "requirement": "requests",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "tqdm",
+        "known_version": "4.70.1",
+        "parent": "huggingface-hub",
+        "requirement": "tqdm>=4.42.1",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "typing-extensions",
+        "known_version": "4.16.0",
+        "parent": "huggingface-hub",
+        "requirement": "typing-extensions>=3.7.4.3",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "charset-normalizer",
+        "known_version": "3.5.2",
+        "parent": "requests",
+        "requirement": "charset_normalizer<4,>=2",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "idna",
+        "known_version": "3.20",
+        "parent": "requests",
+        "requirement": "idna<4,>=2.5",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "urllib3",
+        "known_version": "2.8.0",
+        "parent": "requests",
+        "requirement": "urllib3<3,>=1.26",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "certifi",
+        "known_version": "2026.7.22",
+        "parent": "requests",
+        "requirement": "certifi>=2023.5.7",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "huggingface-hub",
+        "known_version": "0.36.2",
+        "parent": "tokenizers",
+        "requirement": "huggingface-hub>=0.16.4,<2.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "colorama",
+        "known_version": "0.4.6",
+        "parent": "tqdm",
+        "requirement": "colorama; platform_system == \"Windows\"",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      },
+      {
+        "distribution": "mpmath",
+        "known_version": "1.3.0",
+        "parent": "sympy",
+        "requirement": "mpmath<1.4,>=1.1.0",
+        "status": "EXISTING_OR_METADATA_PIN_SATISFIES"
+      }
+    ],
+    "nodes": {
+      "accelerate": {
+        "mandatory_requirements_for_frozen_environment": [
+          "numpy>=1.17",
+          "packaging>=20.0",
+          "psutil",
+          "pyyaml",
+          "torch>=2.0.0",
+          "huggingface_hub>=0.21.0",
+          "safetensors>=0.4.3"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "1.15.0"
+      },
+      "annotated-types": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "0.8.0"
+      },
+      "certifi": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "2026.7.22"
+      },
+      "charset-normalizer": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "3.5.2"
+      },
+      "cloudpickle": {
+        "no_resolver": true,
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING",
+        "transitive_dependencies": "UNRESOLVED_UNTIL_VERSION_AUTHORIZED",
+        "version": null
+      },
+      "colorama": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "0.4.6"
+      },
+      "datasets": {
+        "no_resolver": true,
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING",
+        "transitive_dependencies": "UNRESOLVED_UNTIL_VERSION_AUTHORIZED",
+        "version": null
+      },
+      "diskcache": {
+        "no_resolver": true,
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING",
+        "transitive_dependencies": "UNRESOLVED_UNTIL_VERSION_AUTHORIZED",
+        "version": null
+      },
+      "filelock": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "3.32.3"
+      },
+      "fsspec": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "2026.7.0"
+      },
+      "genson": {
+        "no_resolver": true,
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING",
+        "transitive_dependencies": "UNRESOLVED_UNTIL_VERSION_AUTHORIZED",
+        "version": null
+      },
+      "huggingface-hub": {
+        "mandatory_requirements_for_frozen_environment": [
+          "filelock",
+          "fsspec>=2023.5.0",
+          "packaging>=20.9",
+          "pyyaml>=5.1",
+          "requests",
+          "tqdm>=4.42.1",
+          "typing-extensions>=3.7.4.3"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "0.36.2"
+      },
+      "idna": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "3.20"
+      },
+      "jinja2": {
+        "mandatory_requirements_for_frozen_environment": [
+          "MarkupSafe>=2.0"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "3.1.6"
+      },
+      "jsonschema": {
+        "no_resolver": true,
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING",
+        "transitive_dependencies": "UNRESOLVED_UNTIL_VERSION_AUTHORIZED",
+        "version": null
+      },
+      "markupsafe": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "3.0.3"
+      },
+      "mpmath": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "1.3.0"
+      },
+      "networkx": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "3.6.1"
+      },
+      "numpy": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "2.5.3"
+      },
+      "outlines-core": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "authoritative selected release metadata",
+        "status": "EXACT_RELEASE_PIN_NOT_INSTALLED",
+        "version": "0.2.14"
+      },
+      "packaging": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "26.3"
+      },
+      "pillow": {
+        "no_resolver": true,
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING",
+        "transitive_dependencies": "UNRESOLVED_UNTIL_VERSION_AUTHORIZED",
+        "version": null
+      },
+      "psutil": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "7.2.2"
+      },
+      "pydantic": {
+        "mandatory_requirements_for_frozen_environment": [
+          "annotated-types>=0.6.0",
+          "pydantic-core==2.46.5",
+          "typing-extensions>=4.14.1",
+          "typing-inspection>=0.4.2"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "2.13.5"
+      },
+      "pydantic-core": {
+        "mandatory_requirements_for_frozen_environment": [
+          "typing-extensions>=4.14.1"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "2.46.5"
+      },
+      "pyyaml": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "6.0.3"
+      },
+      "regex": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "2026.9.29"
+      },
+      "requests": {
+        "mandatory_requirements_for_frozen_environment": [
+          "charset_normalizer<4,>=2",
+          "idna<4,>=2.5",
+          "urllib3<3,>=1.26",
+          "certifi>=2023.5.7"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "2.34.2"
+      },
+      "safetensors": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "0.8.0"
+      },
+      "sentencepiece": {
+        "no_resolver": true,
+        "status": "DEPENDENCY_VERSION_SELECTION_PENDING",
+        "transitive_dependencies": "UNRESOLVED_UNTIL_VERSION_AUTHORIZED",
+        "version": null
+      },
+      "setuptools": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "78.1.0"
+      },
+      "sympy": {
+        "mandatory_requirements_for_frozen_environment": [
+          "mpmath<1.4,>=1.1.0"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "1.14.0"
+      },
+      "tokenizers": {
+        "mandatory_requirements_for_frozen_environment": [
+          "huggingface-hub>=0.16.4,<2.0"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "0.22.2"
+      },
+      "torch": {
+        "mandatory_requirements_for_frozen_environment": [
+          "filelock",
+          "typing-extensions>=4.10.0",
+          "setuptools>=77.0.3",
+          "sympy>=1.13.3",
+          "networkx>=2.5.1",
+          "jinja2",
+          "fsspec>=0.8.5"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "2.14.0+cpu"
+      },
+      "tqdm": {
+        "mandatory_requirements_for_frozen_environment": [
+          "colorama; platform_system == \"Windows\""
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "4.70.1"
+      },
+      "transformers": {
+        "mandatory_requirements_for_frozen_environment": [
+          "filelock",
+          "huggingface-hub<1.0,>=0.34.0",
+          "numpy>=1.17",
+          "packaging>=20.0",
+          "pyyaml>=5.1",
+          "regex!=2019.12.17",
+          "requests",
+          "tokenizers<=0.23.0,>=0.22.0",
+          "safetensors>=0.4.3",
+          "tqdm>=4.27"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "4.57.6"
+      },
+      "typing-extensions": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "4.16.0"
+      },
+      "typing-inspection": {
+        "mandatory_requirements_for_frozen_environment": [
+          "typing-extensions>=4.15.0"
+        ],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "0.4.4"
+      },
+      "urllib3": {
+        "mandatory_requirements_for_frozen_environment": [],
+        "metadata_origin": "frozen installed distribution METADATA",
+        "status": "EXISTING_VERSION_ONLY_NO_NEW_SELECTION",
+        "version": "2.8.0"
+      }
+    },
+    "resolver_used": false,
+    "roots": "Outlines base + transformers extra; outlines_core backend only. Other extras not selected.",
+    "selection_block_prevents_enablement": true,
+    "unresolved_nodes": [
+      "cloudpickle",
+      "datasets",
+      "diskcache",
+      "genson",
+      "jsonschema",
+      "pillow",
+      "sentencepiece"
+    ],
+    "version_rule": "Reuse installed versions only for static compatibility comparison; exact outlines-core pin comes from release metadata. No new version selected for missing/ranged distributions."
+  },
+  "environment_integrity": {
+    "inventory_sha256": "00b635d6dd1a3458e78db08d3a0a1c12de90c7b95684f231efdfda5af1a24d0d",
+    "outlines_core_installed": false,
+    "outlines_installed": false,
+    "package_count": 36,
+    "package_drift": 0
+  },
+  "network_requests": [
+    {
+      "bytes": 31044,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "8814595f93e580ccba91f39df412577d1836736a6459d159f897d03916bb605a",
+      "url": "https://pypi.org/pypi/outlines/1.3.3/json",
+      "utc": "2026-10-14T18:56:44.752083+00:00"
+    },
+    {
+      "bytes": 50476,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "21abe8716463c7de0f91ebe7025edfd587ec4f47d2e2e58bb72bd887ff368ee0",
+      "url": "https://pypi.org/pypi/outlines-core/0.2.14/json",
+      "utc": "2026-10-14T18:56:44.819063+00:00"
+    },
+    {
+      "bytes": 36725,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "90bc76cfbb602cbd506a8d69a055fc3c652a63aa4f54ec962b2bd379082bf9cd",
+      "url": "https://api.github.com/repos/dottxt-ai/outlines/tags?per_page=100",
+      "utc": "2026-10-14T19:00:00.829802+00:00"
+    },
+    {
+      "bytes": 82514,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "76154dee56be84f116dcdc5c9d61afce9e746c4e7c760db4f4555e8c46afc50c",
+      "url": "https://api.github.com/repos/dottxt-ai/outlines/git/trees/3d251f8d758a01cfee4ddc99646886845dbd8c6d?recursive=1",
+      "utc": "2026-10-14T19:00:01.140104+00:00"
+    },
+    {
+      "bytes": 18196,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "f724185022f7c99f0c199c9600601a3315c3397fe2f45619b3678241952e8b07",
+      "url": "https://api.github.com/repos/dottxt-ai/outlines-core/tags?per_page=100",
+      "utc": "2026-10-14T19:00:01.473429+00:00"
+    },
+    {
+      "bytes": 19814,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "ec6ccf41bad7041942d78638802d04f7a1f785674d9ae9b97ef4389d87afd969",
+      "url": "https://api.github.com/repos/dottxt-ai/outlines-core/git/trees/8466141a4d882572876d39563c9e6be372d918d3?recursive=1",
+      "utc": "2026-10-14T19:00:01.699917+00:00"
+    },
+    {
+      "bytes": 83137,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "27d602e7ef74a7a87f6c7f3f03e521b44b9f7ff767672c06555d19314b8c85aa",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines-core/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/mod.rs",
+      "utc": "2026-10-14T19:00:24.577873+00:00"
+    },
+    {
+      "bytes": 25142,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "35e234421f231fa6b51611f71d9ed85a3be510be4309b71be2a84ef909bc6c9a",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines-core/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs",
+      "utc": "2026-10-14T19:00:24.764456+00:00"
+    },
+    {
+      "bytes": 3972,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "4b93c65238b2991f75384e759d7b4c0842dd8d6fbc92fe93a0bf4921c511c34c",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines-core/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/types.rs",
+      "utc": "2026-10-14T19:00:24.968041+00:00"
+    },
+    {
+      "bytes": 765,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "2de3f2cbaf6a43192e2e04f5747e2531bd80235cbcfaa9837ca1f18a86217ddd",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines-core/8466141a4d882572876d39563c9e6be372d918d3/outlines_core/_json_schema.py",
+      "utc": "2026-10-14T19:00:25.190527+00:00"
+    },
+    {
+      "bytes": 10636,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "0b6495f22e1c41886d2215b29c9bda4a6ed66f3118efeeaa455a4bc8bfead621",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines/3d251f8d758a01cfee4ddc99646886845dbd8c6d/src/outlines/backends/outlines_core.py",
+      "utc": "2026-10-14T19:00:25.374289+00:00"
+    },
+    {
+      "bytes": 3758,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "435e93b43947ae3229e51544947509a3c1f2da4531871221da474129b06ad382",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines/3d251f8d758a01cfee4ddc99646886845dbd8c6d/src/outlines/backends/__init__.py",
+      "utc": "2026-10-14T19:00:25.583980+00:00"
+    },
+    {
+      "bytes": 25131,
+      "executed": false,
+      "http_status": 200,
+      "sha256": "257298fd8dd9a069376d3c06e945e012d16e4d41e6daf3b1bcd515083f01be15",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines/3d251f8d758a01cfee4ddc99646886845dbd8c6d/src/outlines/models/transformers.py",
+      "utc": "2026-10-14T19:00:25.726829+00:00"
+    },
+    {
+      "bytes": 25142,
+      "executed": false,
+      "http_status": 200,
+      "purpose": "Confirm exact code paths and possible semantic string restriction",
+      "sha256": "35e234421f231fa6b51611f71d9ed85a3be510be4309b71be2a84ef909bc6c9a",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines-core/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs",
+      "utc": "2026-10-14T19:01:53.568235+00:00"
+    },
+    {
+      "bytes": 3972,
+      "executed": false,
+      "http_status": 200,
+      "purpose": "Confirm exact code paths and possible semantic string restriction",
+      "sha256": "4b93c65238b2991f75384e759d7b4c0842dd8d6fbc92fe93a0bf4921c511c34c",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines-core/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/types.rs",
+      "utc": "2026-10-14T19:01:53.599280+00:00"
+    },
+    {
+      "bytes": 10636,
+      "executed": false,
+      "http_status": 200,
+      "purpose": "Confirm exact code paths and possible semantic string restriction",
+      "sha256": "0b6495f22e1c41886d2215b29c9bda4a6ed66f3118efeeaa455a4bc8bfead621",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines/3d251f8d758a01cfee4ddc99646886845dbd8c6d/src/outlines/backends/outlines_core.py",
+      "utc": "2026-10-14T19:01:53.644695+00:00"
+    },
+    {
+      "bytes": 25131,
+      "executed": false,
+      "http_status": 200,
+      "purpose": "Confirm exact code paths and possible semantic string restriction",
+      "sha256": "257298fd8dd9a069376d3c06e945e012d16e4d41e6daf3b1bcd515083f01be15",
+      "url": "https://raw.githubusercontent.com/dottxt-ai/outlines/3d251f8d758a01cfee4ddc99646886845dbd8c6d/src/outlines/models/transformers.py",
+      "utc": "2026-10-14T19:01:53.686083+00:00"
+    }
+  ],
+  "package_downloads": 0,
+  "package_imports": 0,
+  "package_installations": 0,
+  "packages": {
+    "outlines": {
+      "intended_frozen_environment_wheel": {
+        "digests": {
+          "blake2b_256": "2b2d54727dcaa15ceb8279e0bcd9c06eb6f30e1b0147004359bf5a78f12cd85e",
+          "md5": "af631d764c13eb470c70995c7181b7af",
+          "sha256": "0e185dd5a0cfeb62e0268018972d3c22bb9b7d43db3dc1f39f3b754175a82c54"
+        },
+        "filename": "outlines-1.3.3-py3-none-any.whl",
+        "requires_python": "<3.14,>=3.10",
+        "upload_time_iso_8601": "2026-08-06T12:27:13.488500Z",
+        "url": "https://files.pythonhosted.org/packages/2b/2d/54727dcaa15ceb8279e0bcd9c06eb6f30e1b0147004359bf5a78f12cd85e/outlines-1.3.3-py3-none-any.whl",
+        "yanked": false
+      },
+      "platform_tag_compatible": true,
+      "project_urls": {
+        "documentation": "https://dottxt-ai.github.io/outlines/",
+        "homepage": "https://github.com/dottxt-ai/outlines",
+        "repository": "https://github.com/dottxt-ai/outlines"
+      },
+      "provides_extra": [
+        "anthropic",
+        "dottxt",
+        "gemini",
+        "llamacpp",
+        "mlxlm",
+        "lmstudio",
+        "ollama",
+        "openai",
+        "mistral",
+        "sglang",
+        "tgi",
+        "transformers",
+        "vllm",
+        "xgrammar",
+        "llguidance",
+        "airports",
+        "countries",
+        "test"
+      ],
+      "python_compatible": true,
+      "release_files": [
+        {
+          "digests": {
+            "blake2b_256": "2b2d54727dcaa15ceb8279e0bcd9c06eb6f30e1b0147004359bf5a78f12cd85e",
+            "md5": "af631d764c13eb470c70995c7181b7af",
+            "sha256": "0e185dd5a0cfeb62e0268018972d3c22bb9b7d43db3dc1f39f3b754175a82c54"
+          },
+          "filename": "outlines-1.3.3-py3-none-any.whl",
+          "requires_python": "<3.14,>=3.10",
+          "upload_time_iso_8601": "2026-08-06T12:27:13.488500Z",
+          "url": "https://files.pythonhosted.org/packages/2b/2d/54727dcaa15ceb8279e0bcd9c06eb6f30e1b0147004359bf5a78f12cd85e/outlines-1.3.3-py3-none-any.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "a20f95627aba2d038f8ba24c31b689609b153386806a46448abf4c27029b0001",
+            "md5": "6e2a511d641eb18506afaa6689a39f89",
+            "sha256": "5dcd1b9d261ced1337042d6b1fd2bb4e706a09a0121957bcd9eb331d1ea6940c"
+          },
+          "filename": "outlines-1.3.3.tar.gz",
+          "requires_python": "<3.14,>=3.10",
+          "upload_time_iso_8601": "2026-08-06T12:27:14.921111Z",
+          "url": "https://files.pythonhosted.org/packages/a2/0f/95627aba2d038f8ba24c31b689609b153386806a46448abf4c27029b0001/outlines-1.3.3.tar.gz",
+          "yanked": false
+        }
+      ],
+      "requires_dist": [
+        "jinja2",
+        "cloudpickle",
+        "diskcache",
+        "pydantic>=2.0",
+        "jsonschema",
+        "pillow",
+        "typing_extensions",
+        "outlines_core==0.2.14",
+        "genson",
+        "anthropic; extra == \"anthropic\"",
+        "dottxt; extra == \"dottxt\"",
+        "google-genai; extra == \"gemini\"",
+        "huggingface-hub; extra == \"llamacpp\"",
+        "llama-cpp-python; extra == \"llamacpp\"",
+        "numba; extra == \"llamacpp\"",
+        "datasets; extra == \"mlxlm\"",
+        "mlx; extra == \"mlxlm\"",
+        "mlx-lm; extra == \"mlxlm\"",
+        "lmstudio; extra == \"lmstudio\"",
+        "ollama; extra == \"ollama\"",
+        "openai; extra == \"openai\"",
+        "mistralai; extra == \"mistral\"",
+        "openai; extra == \"sglang\"",
+        "huggingface_hub; extra == \"tgi\"",
+        "accelerate; extra == \"transformers\"",
+        "datasets; extra == \"transformers\"",
+        "transformers; extra == \"transformers\"",
+        "setuptools; extra == \"transformers\"",
+        "sentencepiece; extra == \"transformers\"",
+        "openai; extra == \"vllm\"",
+        "xgrammar; extra == \"xgrammar\"",
+        "llguidance; extra == \"llguidance\"",
+        "airportsdata; extra == \"airports\"",
+        "iso3166; extra == \"countries\"",
+        "pre-commit; extra == \"test\"",
+        "pytest; extra == \"test\"",
+        "pytest-cov; extra == \"test\"",
+        "pytest-mock; extra == \"test\"",
+        "pytest-asyncio; extra == \"test\"",
+        "coverage[toml]>=5.1; extra == \"test\"",
+        "diff-cover; extra == \"test\"",
+        "accelerate; extra == \"test\"",
+        "beartype<0.16.0; extra == \"test\"",
+        "responses; extra == \"test\"",
+        "llama-cpp-python; extra == \"test\"",
+        "mlx-lm>=0.19.2; (platform_machine == \"arm64\" and sys_platform == \"darwin\") and extra == \"test\"",
+        "huggingface_hub; extra == \"test\"",
+        "openai>=1.0.0; extra == \"test\"",
+        "datasets; extra == \"test\"",
+        "anthropic; extra == \"test\"",
+        "google-genai; extra == \"test\"",
+        "mistralai; extra == \"test\"",
+        "transformers; extra == \"test\"",
+        "pillow; extra == \"test\"",
+        "jax; extra == \"test\"",
+        "flax; extra == \"test\"",
+        "numpy<2.2.0,>=2.0.0; extra == \"test\"",
+        "numba; extra == \"test\"",
+        "torch>2.3.0; extra == \"test\"",
+        "tensorflow; extra == \"test\"",
+        "tf-keras; extra == \"test\"",
+        "ollama; extra == \"test\"",
+        "lmstudio; extra == \"test\"",
+        "dottxt>=0.2.0; extra == \"test\"",
+        "sentencepiece; extra == \"test\"",
+        "mkdocs_gen_files; extra == \"test\"",
+        "llguidance; extra == \"test\"",
+        "xgrammar; extra == \"test\"",
+        "airportsdata; extra == \"test\"",
+        "iso3166; extra == \"test\"",
+        "requests; extra == \"test\""
+      ],
+      "requires_python": "<3.14,>=3.10",
+      "upstream_release_commit": "3d251f8d758a01cfee4ddc99646886845dbd8c6d",
+      "upstream_release_tag": "1.3.3",
+      "version": "1.3.3",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    "outlines-core": {
+      "intended_frozen_environment_wheel": {
+        "digests": {
+          "blake2b_256": "f8df0f145c52ebd156d80273e2f5278227ea57e0275b2aa863bed33f44f77923",
+          "md5": "1a6837d989ec310d31db28b84d637c89",
+          "sha256": "87b42440478764cce1353a87d8560ef82f3b39b9d753bfe93195ea3584f369e3"
+        },
+        "filename": "outlines_core-0.2.14-cp312-cp312-win_amd64.whl",
+        "requires_python": ">=3.8",
+        "upload_time_iso_8601": "2026-01-09T15:58:37.831543Z",
+        "url": "https://files.pythonhosted.org/packages/f8/df/0f145c52ebd156d80273e2f5278227ea57e0275b2aa863bed33f44f77923/outlines_core-0.2.14-cp312-cp312-win_amd64.whl",
+        "yanked": false
+      },
+      "platform_tag_compatible": true,
+      "project_urls": {
+        "documentation": "https://dottxt-ai.github.io/outlines-core/",
+        "homepage": "https://github.com/dottxt-ai/outlines-core",
+        "repository": "https://github.com/dottxt-ai/outlines-core"
+      },
+      "provides_extra": null,
+      "python_compatible": true,
+      "release_files": [
+        {
+          "digests": {
+            "blake2b_256": "d1d0e7719044b3ed57fde6f700211be67682eec4a2735fcf8d4199400ac8f7a3",
+            "md5": "81b4b459fa1b8b531900727a92a70bf4",
+            "sha256": "056f656ea6e4807338963377afb50b9d936593ba3545a819f1aba56fd6e14920"
+          },
+          "filename": "outlines_core-0.2.14-cp310-cp310-macosx_14_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:07.323443Z",
+          "url": "https://files.pythonhosted.org/packages/d1/d0/e7719044b3ed57fde6f700211be67682eec4a2735fcf8d4199400ac8f7a3/outlines_core-0.2.14-cp310-cp310-macosx_14_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "fbfff41c933bc5b69b7080e763af375d7632d419859b6cd4492c5a12d5c89c80",
+            "md5": "ac488e5b0e164cf2c209d7ae61ce81a5",
+            "sha256": "c76f28feb6ea71b1ff4b0ba5901dc383273a32b156213dc1bc753fc634645a1e"
+          },
+          "filename": "outlines_core-0.2.14-cp310-cp310-macosx_14_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:08.876547Z",
+          "url": "https://files.pythonhosted.org/packages/fb/ff/f41c933bc5b69b7080e763af375d7632d419859b6cd4492c5a12d5c89c80/outlines_core-0.2.14-cp310-cp310-macosx_14_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "ab3c05b3e5b9fa4f7f40da459022b2292c6bca48492df920eebd3572844e7fe6",
+            "md5": "78720a5292b616a219683a84f8bfd1a6",
+            "sha256": "e604925d6525f669253160568397df6d6c8124b2e01f1fde553e3b9f28ce9e21"
+          },
+          "filename": "outlines_core-0.2.14-cp310-cp310-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:10.176713Z",
+          "url": "https://files.pythonhosted.org/packages/ab/3c/05b3e5b9fa4f7f40da459022b2292c6bca48492df920eebd3572844e7fe6/outlines_core-0.2.14-cp310-cp310-macosx_15_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "d6eeabcee1d35c7a7fde984ce4299de2db72add3c8a88a0f6e9e7f8c4836151d",
+            "md5": "117c0df7452436c980389c1c59352d4f",
+            "sha256": "f0e5037153b5b3abfb617f6dfdc3ff28b6fab50f0de5936ea6995f5675d23e0b"
+          },
+          "filename": "outlines_core-0.2.14-cp310-cp310-macosx_15_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:11.253609Z",
+          "url": "https://files.pythonhosted.org/packages/d6/ee/abcee1d35c7a7fde984ce4299de2db72add3c8a88a0f6e9e7f8c4836151d/outlines_core-0.2.14-cp310-cp310-macosx_15_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "19cc6f5d1b92e79b30c2ac187b23ab66b0365e06007a9405b35709d02e94615b",
+            "md5": "b92444b2da2f18c678278c71e49fa63c",
+            "sha256": "0e4b5b7c8e50489bea444b095692ddb5d8fb92ea6b949c4a6a3381eca9b691a7"
+          },
+          "filename": "outlines_core-0.2.14-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:12.488344Z",
+          "url": "https://files.pythonhosted.org/packages/19/cc/6f5d1b92e79b30c2ac187b23ab66b0365e06007a9405b35709d02e94615b/outlines_core-0.2.14-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "66f7252c0d4ecc5020d698b23257b9860fbab020c1120c15417ed02a9fd82d19",
+            "md5": "816c46768f9b0d1f0d12d4ee01b11e30",
+            "sha256": "b582b5d2f773cff966f37d7a5680d97506792647c93fb2e522283e8a14726e9d"
+          },
+          "filename": "outlines_core-0.2.14-cp310-cp310-manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:13.942365Z",
+          "url": "https://files.pythonhosted.org/packages/66/f7/252c0d4ecc5020d698b23257b9860fbab020c1120c15417ed02a9fd82d19/outlines_core-0.2.14-cp310-cp310-manylinux_2_28_aarch64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "b6605599fef9e4184a99684c9cc285081a1b5f4a741b2d6c676466a0ca365d39",
+            "md5": "19bc902e773bcbe3f55a6d6c32cbeaca",
+            "sha256": "f753edd430ac27e6dcde5a614665888db72b78c666aa160c478afd1eb986fb8b"
+          },
+          "filename": "outlines_core-0.2.14-cp310-cp310-win32.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:15.282927Z",
+          "url": "https://files.pythonhosted.org/packages/b6/60/5599fef9e4184a99684c9cc285081a1b5f4a741b2d6c676466a0ca365d39/outlines_core-0.2.14-cp310-cp310-win32.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "8b5fda4daf605ab9c26e854a741c3567eb717e8622d4d17bcd751da5238b039f",
+            "md5": "bab65f74febaf8ff3648e9bb5af6ec01",
+            "sha256": "060a0174a6262bfd378763f210e374e52011776849a3a767df9863fb6839c142"
+          },
+          "filename": "outlines_core-0.2.14-cp310-cp310-win_amd64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:16.939859Z",
+          "url": "https://files.pythonhosted.org/packages/8b/5f/da4daf605ab9c26e854a741c3567eb717e8622d4d17bcd751da5238b039f/outlines_core-0.2.14-cp310-cp310-win_amd64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "0512a67f0be9546776f71c5df373f38ce6db965abc9845fbcd291b393a20712e",
+            "md5": "a6e1886839842a13c15e7d831a6366a2",
+            "sha256": "7770b5e0497e6f4548a8923299d4438d7dd61dc17c2f58acfd5df4d3101bb991"
+          },
+          "filename": "outlines_core-0.2.14-cp311-cp311-macosx_14_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:18.399046Z",
+          "url": "https://files.pythonhosted.org/packages/05/12/a67f0be9546776f71c5df373f38ce6db965abc9845fbcd291b393a20712e/outlines_core-0.2.14-cp311-cp311-macosx_14_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "3431f2e19cc32ea97c1bac4882dbfa693671175a330ad5a735af5b97c2258056",
+            "md5": "a19dc20d63400c2af3a9839dcd875ceb",
+            "sha256": "a2795dc2047821b229457f941a303639e0c14e4c3c5718797540a27b529a062e"
+          },
+          "filename": "outlines_core-0.2.14-cp311-cp311-macosx_14_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:19.775272Z",
+          "url": "https://files.pythonhosted.org/packages/34/31/f2e19cc32ea97c1bac4882dbfa693671175a330ad5a735af5b97c2258056/outlines_core-0.2.14-cp311-cp311-macosx_14_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "e3ea19e859d4cfcbeceace30ad490f5369c87eab81767238593e20c17f55a390",
+            "md5": "f942d9b0474f38e167a06c7cb70e57a9",
+            "sha256": "4daa22d677dc6a74c44f9266ec9e3151332dcea4250dd019ea0c75b98ae32938"
+          },
+          "filename": "outlines_core-0.2.14-cp311-cp311-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:20.981312Z",
+          "url": "https://files.pythonhosted.org/packages/e3/ea/19e859d4cfcbeceace30ad490f5369c87eab81767238593e20c17f55a390/outlines_core-0.2.14-cp311-cp311-macosx_15_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "c9db188aecb87008ddd293b8d315f26017750a1d7f9e95b8e2756d4a3af08196",
+            "md5": "f5a374d4f246f5f1444ff34ba68e254f",
+            "sha256": "813b28813b22025c3d079b3b8a20cf5a28c6d5ba29ec21c5b1093442aa5d4e91"
+          },
+          "filename": "outlines_core-0.2.14-cp311-cp311-macosx_15_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:22.110587Z",
+          "url": "https://files.pythonhosted.org/packages/c9/db/188aecb87008ddd293b8d315f26017750a1d7f9e95b8e2756d4a3af08196/outlines_core-0.2.14-cp311-cp311-macosx_15_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "f769e0be45d4c8ad7d301cdc9917d22ff39211da1e830f92fb07b29c9221b5c4",
+            "md5": "1168d6b22eb7396225aea18519d38b76",
+            "sha256": "615566bf8257d2bba8ac192cdfc29d1c4357f57b53672fbd622e821215e4f1bd"
+          },
+          "filename": "outlines_core-0.2.14-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:23.317834Z",
+          "url": "https://files.pythonhosted.org/packages/f7/69/e0be45d4c8ad7d301cdc9917d22ff39211da1e830f92fb07b29c9221b5c4/outlines_core-0.2.14-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "f2679dab90313460eb250f926e7985d62cebfc33c7580197be8a496de6e9f7c4",
+            "md5": "07a7ac5606e98083fa8494eb84caddd6",
+            "sha256": "81d01cfae29de5671bc5013fd6b2008621157bec3d8be284da7da2dc0672745c"
+          },
+          "filename": "outlines_core-0.2.14-cp311-cp311-manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:24.575197Z",
+          "url": "https://files.pythonhosted.org/packages/f2/67/9dab90313460eb250f926e7985d62cebfc33c7580197be8a496de6e9f7c4/outlines_core-0.2.14-cp311-cp311-manylinux_2_28_aarch64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "ef91289996bae3457cf3917ff21e0082e4950cf27a101d0870e16fee94c917e0",
+            "md5": "ee5d5a8d89d3b715a7af1e807c4811de",
+            "sha256": "8a5e5f34961fe4d04c389d00f92d624c6318ab3ff00467fbf7c93324458886d9"
+          },
+          "filename": "outlines_core-0.2.14-cp311-cp311-win32.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:26.309245Z",
+          "url": "https://files.pythonhosted.org/packages/ef/91/289996bae3457cf3917ff21e0082e4950cf27a101d0870e16fee94c917e0/outlines_core-0.2.14-cp311-cp311-win32.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "be652d59be2f8c0cca118a6235ab2286615e3c1b2fa9d6768c4ea4b86b556204",
+            "md5": "69d0ba07a3b6a62ea74821ce78bbd5ee",
+            "sha256": "babf97a54662330c55a79fdcab8994f96faa6dcb71b458d4b18c4fb538f5d461"
+          },
+          "filename": "outlines_core-0.2.14-cp311-cp311-win_amd64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:27.443825Z",
+          "url": "https://files.pythonhosted.org/packages/be/65/2d59be2f8c0cca118a6235ab2286615e3c1b2fa9d6768c4ea4b86b556204/outlines_core-0.2.14-cp311-cp311-win_amd64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "669330b9188648a479b32be429a24166db47a7bfdb0f9a8aac4c6dcf569e0a52",
+            "md5": "b3ff0517a318cb9c99d94300866d3f34",
+            "sha256": "95e6476d9702d2fcc4e85370dbbfb6933a46c816e9c90107f6ce36eb68b5d64a"
+          },
+          "filename": "outlines_core-0.2.14-cp312-cp312-macosx_14_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:28.549901Z",
+          "url": "https://files.pythonhosted.org/packages/66/93/30b9188648a479b32be429a24166db47a7bfdb0f9a8aac4c6dcf569e0a52/outlines_core-0.2.14-cp312-cp312-macosx_14_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "0d06f3557daa8e87d5b95f64de269a301d73ec3c2202ab897c3e1f1cb93eb1db",
+            "md5": "0fc546796f11eca82d188e906bc6817e",
+            "sha256": "f04731a5e29a190e2cc9f692a1f3fb2414a645355ca7d01b83df43439c38bea8"
+          },
+          "filename": "outlines_core-0.2.14-cp312-cp312-macosx_14_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:29.958802Z",
+          "url": "https://files.pythonhosted.org/packages/0d/06/f3557daa8e87d5b95f64de269a301d73ec3c2202ab897c3e1f1cb93eb1db/outlines_core-0.2.14-cp312-cp312-macosx_14_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "0c67d8acf778990964c951080d568284e858d466f27dfd6f2674781927faba1c",
+            "md5": "587d8fe807d8d2b75f89f810cc5d99ce",
+            "sha256": "0e4c69f0a8565edb56464c4c9b6c291a10805f3a96dff84182980e90ae1a5e2f"
+          },
+          "filename": "outlines_core-0.2.14-cp312-cp312-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:31.003938Z",
+          "url": "https://files.pythonhosted.org/packages/0c/67/d8acf778990964c951080d568284e858d466f27dfd6f2674781927faba1c/outlines_core-0.2.14-cp312-cp312-macosx_15_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "17e10320b14b49b8379ced1ab195ecf5875dbd2267b90148847541f43bfde6c1",
+            "md5": "774dfca4472551df186c02ce24ec5f06",
+            "sha256": "63f53cfd9614e754499ae86dd699f3abcecf42d6a4e58d80fd80347881d85960"
+          },
+          "filename": "outlines_core-0.2.14-cp312-cp312-macosx_15_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:32.390778Z",
+          "url": "https://files.pythonhosted.org/packages/17/e1/0320b14b49b8379ced1ab195ecf5875dbd2267b90148847541f43bfde6c1/outlines_core-0.2.14-cp312-cp312-macosx_15_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "29293a04944407207a5d214879ca5ca33c2bd3e65199a4e927051c1bdaaa4d50",
+            "md5": "d714ca40d7a0292f445fb6f917936237",
+            "sha256": "3bb2060c240c4507f334965a8948dbeeb22007560d797f6debd92346c0b620cb"
+          },
+          "filename": "outlines_core-0.2.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:33.553398Z",
+          "url": "https://files.pythonhosted.org/packages/29/29/3a04944407207a5d214879ca5ca33c2bd3e65199a4e927051c1bdaaa4d50/outlines_core-0.2.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "b2a7a77f746272504bac3f628047d56ea1731b61549a3e1d9bbfd226f2968246",
+            "md5": "e175e77f03a362e1598e0e8bb396b047",
+            "sha256": "1de34681c7e0e7e1551fc9036e4fa3c57986336c905a10536591ceb6d869c258"
+          },
+          "filename": "outlines_core-0.2.14-cp312-cp312-manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:35.118539Z",
+          "url": "https://files.pythonhosted.org/packages/b2/a7/a77f746272504bac3f628047d56ea1731b61549a3e1d9bbfd226f2968246/outlines_core-0.2.14-cp312-cp312-manylinux_2_28_aarch64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "990d9f599d938923ab8ceeff26fdf2f9ea53bea3c962085c4927a08338a32349",
+            "md5": "120a55e5b0073523a60325dfd3d8a573",
+            "sha256": "870e8e038853818cb202ccc8cde92251f300f96805bfcc3be1c883adda7b5297"
+          },
+          "filename": "outlines_core-0.2.14-cp312-cp312-win32.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:36.544186Z",
+          "url": "https://files.pythonhosted.org/packages/99/0d/9f599d938923ab8ceeff26fdf2f9ea53bea3c962085c4927a08338a32349/outlines_core-0.2.14-cp312-cp312-win32.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "f8df0f145c52ebd156d80273e2f5278227ea57e0275b2aa863bed33f44f77923",
+            "md5": "1a6837d989ec310d31db28b84d637c89",
+            "sha256": "87b42440478764cce1353a87d8560ef82f3b39b9d753bfe93195ea3584f369e3"
+          },
+          "filename": "outlines_core-0.2.14-cp312-cp312-win_amd64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:37.831543Z",
+          "url": "https://files.pythonhosted.org/packages/f8/df/0f145c52ebd156d80273e2f5278227ea57e0275b2aa863bed33f44f77923/outlines_core-0.2.14-cp312-cp312-win_amd64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "139de6c81c975c123f0639d5f6909c987e510d43e07c2e1e6495b21639c4dec6",
+            "md5": "3304077d18f9c2b8f0425afe65765538",
+            "sha256": "8b3e8d668188282a1f7666732bb8a01958ab134db35bb792e7442a40e55ff1e7"
+          },
+          "filename": "outlines_core-0.2.14-cp313-cp313-macosx_14_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:39.184227Z",
+          "url": "https://files.pythonhosted.org/packages/13/9d/e6c81c975c123f0639d5f6909c987e510d43e07c2e1e6495b21639c4dec6/outlines_core-0.2.14-cp313-cp313-macosx_14_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "7ad15ce55ef724aed0915edc877b6dd610d39b3169e4341154bb53daa022065a",
+            "md5": "049b24fd35d01dfe9097e6169a2757b0",
+            "sha256": "66e695b375b180725fb534d9adf298531c152ec3d881e3b9e01c82b5dd269f52"
+          },
+          "filename": "outlines_core-0.2.14-cp313-cp313-macosx_14_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:40.257065Z",
+          "url": "https://files.pythonhosted.org/packages/7a/d1/5ce55ef724aed0915edc877b6dd610d39b3169e4341154bb53daa022065a/outlines_core-0.2.14-cp313-cp313-macosx_14_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "32e360ad781251eedcf1496317ecd58eb2e4488717ba63b10494ab49dfd05e5d",
+            "md5": "71549b5d366d855550632ed291af8675",
+            "sha256": "6bd166d3b07acef2f60d4ede44592a26d3f7d8712876bfc8e22150045def5857"
+          },
+          "filename": "outlines_core-0.2.14-cp313-cp313-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:41.635683Z",
+          "url": "https://files.pythonhosted.org/packages/32/e3/60ad781251eedcf1496317ecd58eb2e4488717ba63b10494ab49dfd05e5d/outlines_core-0.2.14-cp313-cp313-macosx_15_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "bc2d662d6a76face5b4b3481f888900d00856c37aa2927341a023866457da212",
+            "md5": "f676f5792a706996f8040f109c4c3d91",
+            "sha256": "9d45462d7548aa0e17176a691ae73447f3e6bed9658a0cd96fe72eadf7474475"
+          },
+          "filename": "outlines_core-0.2.14-cp313-cp313-macosx_15_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:42.861373Z",
+          "url": "https://files.pythonhosted.org/packages/bc/2d/662d6a76face5b4b3481f888900d00856c37aa2927341a023866457da212/outlines_core-0.2.14-cp313-cp313-macosx_15_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "c19a4b62903de006d991b58674ff033c1b6fb92be5767360376fc961f6771bdb",
+            "md5": "7d1297053c6421692a5d5743fffc340a",
+            "sha256": "6453e23f01d98ec48e3a4141d7112792ce77001dfb28d91d6fd89f47009f91ef"
+          },
+          "filename": "outlines_core-0.2.14-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:44.415558Z",
+          "url": "https://files.pythonhosted.org/packages/c1/9a/4b62903de006d991b58674ff033c1b6fb92be5767360376fc961f6771bdb/outlines_core-0.2.14-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "50361532f7d9ab16c676812d94528e89964aa0d15f12adcb285e6ed86f86f2fe",
+            "md5": "6f35ba905d774fc75fc67f65c0a8b403",
+            "sha256": "7deef6df74cb247f2a3a62f03438ba967456504b0555ec7029f8db834e054448"
+          },
+          "filename": "outlines_core-0.2.14-cp313-cp313-manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:45.437582Z",
+          "url": "https://files.pythonhosted.org/packages/50/36/1532f7d9ab16c676812d94528e89964aa0d15f12adcb285e6ed86f86f2fe/outlines_core-0.2.14-cp313-cp313-manylinux_2_28_aarch64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "a85adfd94f15f4c04e691e7fdf30cf8b9b22bf2cbc426b3ef270af3e200596d5",
+            "md5": "4b5455b6fd60194f189f08c8620b2f6d",
+            "sha256": "bb008c7ecc034bcfda0ddc10a4d1f2181a4b61ec1643ee56183dd6fa64139c9d"
+          },
+          "filename": "outlines_core-0.2.14-cp313-cp313-win32.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:46.723273Z",
+          "url": "https://files.pythonhosted.org/packages/a8/5a/dfd94f15f4c04e691e7fdf30cf8b9b22bf2cbc426b3ef270af3e200596d5/outlines_core-0.2.14-cp313-cp313-win32.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "3435e24ab5d2116812464380587435297d8ece2f0218c2ba8afc9f541e3a6911",
+            "md5": "c820123dedf8f0e64639cc26179b2d5e",
+            "sha256": "eb27e92204b296a063ac58f361153be4e78c8103a96e0b1c085b22d4fc3534cf"
+          },
+          "filename": "outlines_core-0.2.14-cp313-cp313-win_amd64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:47.784310Z",
+          "url": "https://files.pythonhosted.org/packages/34/35/e24ab5d2116812464380587435297d8ece2f0218c2ba8afc9f541e3a6911/outlines_core-0.2.14-cp313-cp313-win_amd64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "1b2822fe8ee3bdf9cf13ab88a9d9b96729d9966c791c25227d0b7ca45c8d118f",
+            "md5": "54b2ca71ef1edad5c3b78b14c461d9ae",
+            "sha256": "69410e5b55bcbaad8c865d94bd01e7bff8a57996dcd2251b7d50dec70d7d9a63"
+          },
+          "filename": "outlines_core-0.2.14-cp314-cp314-macosx_14_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:49.217773Z",
+          "url": "https://files.pythonhosted.org/packages/1b/28/22fe8ee3bdf9cf13ab88a9d9b96729d9966c791c25227d0b7ca45c8d118f/outlines_core-0.2.14-cp314-cp314-macosx_14_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "d43e30ce0b13e4c4c82de606c8bbf60775ac6fca1978efa54cd553893795fd0b",
+            "md5": "6d3d5fe64ee00887db2092f997a1e56b",
+            "sha256": "adf96395759d7fdf6efeb8a67d3f36f520c1546bfd4df0752306db8c7cb7d6c5"
+          },
+          "filename": "outlines_core-0.2.14-cp314-cp314-macosx_14_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:50.281587Z",
+          "url": "https://files.pythonhosted.org/packages/d4/3e/30ce0b13e4c4c82de606c8bbf60775ac6fca1978efa54cd553893795fd0b/outlines_core-0.2.14-cp314-cp314-macosx_14_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "5313bd2ff9e90b28fa0dcc345c9196731ed9126e366733c8ccbc559149e34893",
+            "md5": "086a127c3d14d06b5245ef7e4c917a6d",
+            "sha256": "b02bb0fc21c5e23e2ff9b2d1459db2c1c3e813a7646c9d5db091c6931edb9c85"
+          },
+          "filename": "outlines_core-0.2.14-cp314-cp314-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:51.596454Z",
+          "url": "https://files.pythonhosted.org/packages/53/13/bd2ff9e90b28fa0dcc345c9196731ed9126e366733c8ccbc559149e34893/outlines_core-0.2.14-cp314-cp314-macosx_15_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "1e25fc0ae7d04345d17267d4dd5c693ed9e86c7f44419cc04ad92348472781be",
+            "md5": "049010a8d58ddddf89e76eb59fca406d",
+            "sha256": "e75395b1cccecdf85d8d8265aba28841ddeb1e8da406f4b1e0135df5a6e9960f"
+          },
+          "filename": "outlines_core-0.2.14-cp314-cp314-macosx_15_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:53.170999Z",
+          "url": "https://files.pythonhosted.org/packages/1e/25/fc0ae7d04345d17267d4dd5c693ed9e86c7f44419cc04ad92348472781be/outlines_core-0.2.14-cp314-cp314-macosx_15_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "d563dfa000239e46f17b47e6dc9bec3aab8a8136fe400312f1916320e02c8f38",
+            "md5": "caf8ba9b4d4a29b59e6f77f3569a5de9",
+            "sha256": "d1776ae984574461f249fe590314a439992eb9b883f4091b8fa7fc56f29f3717"
+          },
+          "filename": "outlines_core-0.2.14-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:54.282111Z",
+          "url": "https://files.pythonhosted.org/packages/d5/63/dfa000239e46f17b47e6dc9bec3aab8a8136fe400312f1916320e02c8f38/outlines_core-0.2.14-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "364f0e63da06c6054f154ef22b5ef3c6b9030cb22da9c03d2d2dd82836a1e795",
+            "md5": "3b1452cc81a42b80b54a1e6373e8adae",
+            "sha256": "7eba2b41dac03d6e6e8d5ea0aecbbc03dacb4c57de3b1fc944d0bafb022941f7"
+          },
+          "filename": "outlines_core-0.2.14-cp314-cp314-manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:55.705968Z",
+          "url": "https://files.pythonhosted.org/packages/36/4f/0e63da06c6054f154ef22b5ef3c6b9030cb22da9c03d2d2dd82836a1e795/outlines_core-0.2.14-cp314-cp314-manylinux_2_28_aarch64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "744e382271ab5ffe768055f11dddb50e82a0c46487f3766bf08a06cfcd35388b",
+            "md5": "318eb3521d05adc8f2fda1d3f8072d51",
+            "sha256": "0cd8ce3ce61df44fd9c5450d9744e2280586c2a6e6e3dfefa0dab1944764b424"
+          },
+          "filename": "outlines_core-0.2.14-cp314-cp314-win32.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:56.795196Z",
+          "url": "https://files.pythonhosted.org/packages/74/4e/382271ab5ffe768055f11dddb50e82a0c46487f3766bf08a06cfcd35388b/outlines_core-0.2.14-cp314-cp314-win32.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "0d1113adf2d02c681b599c1eb550b0dbd763d1b818a106a13bd693019bdb5637",
+            "md5": "466ba95d614e6d43242d3a7b35151251",
+            "sha256": "3e67fc23b1a3ac9562488fb50f409c171538b76f64aa5f7e25d9b0bf14770204"
+          },
+          "filename": "outlines_core-0.2.14-cp314-cp314-win_amd64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:57.984916Z",
+          "url": "https://files.pythonhosted.org/packages/0d/11/13adf2d02c681b599c1eb550b0dbd763d1b818a106a13bd693019bdb5637/outlines_core-0.2.14-cp314-cp314-win_amd64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "73b86e7259db96c4ecb579635657260061471dd9445698948df4cd7e4b312734",
+            "md5": "70fc8465b312bea8650235aa4dbf625e",
+            "sha256": "7d14c48649d5df5c488b16c67493385cf8b3fe71da14466843e294c562417f21"
+          },
+          "filename": "outlines_core-0.2.14-cp39-cp39-macosx_14_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:58:59.025193Z",
+          "url": "https://files.pythonhosted.org/packages/73/b8/6e7259db96c4ecb579635657260061471dd9445698948df4cd7e4b312734/outlines_core-0.2.14-cp39-cp39-macosx_14_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "c69b4cf56fdd1dea413daba868e839dbbfd128d9d91574142504763494810097",
+            "md5": "55eb4234ce90002bd0b3ea0e3e497f6e",
+            "sha256": "7a52a56b2b627cec2d824af063a5020bf6ab9090cf9c9b4f20dcf1407eee80fc"
+          },
+          "filename": "outlines_core-0.2.14-cp39-cp39-macosx_14_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:59:00.340715Z",
+          "url": "https://files.pythonhosted.org/packages/c6/9b/4cf56fdd1dea413daba868e839dbbfd128d9d91574142504763494810097/outlines_core-0.2.14-cp39-cp39-macosx_14_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "698c5cc7fb3d3669145111895c6ad16b6da7ff94dd2c926df7608e31a37df6d6",
+            "md5": "c74eb8baa5238d3a7eb39ed3f0eeccf1",
+            "sha256": "a646a43a482aa0b4a2b286735efa476b31cecd0032024cba4bb9a5d62623ef45"
+          },
+          "filename": "outlines_core-0.2.14-cp39-cp39-macosx_15_0_arm64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:59:01.641613Z",
+          "url": "https://files.pythonhosted.org/packages/69/8c/5cc7fb3d3669145111895c6ad16b6da7ff94dd2c926df7608e31a37df6d6/outlines_core-0.2.14-cp39-cp39-macosx_15_0_arm64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "6848961383352ef4e55c51546f99b1dd81415216db807513be33cc31000eeb73",
+            "md5": "feaf717e43dccd42da1077b7c7f11c78",
+            "sha256": "6b149452f7387501252f46f2c81847067e0820d7bff8b2b4201084f559d2300d"
+          },
+          "filename": "outlines_core-0.2.14-cp39-cp39-macosx_15_0_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:59:03.005281Z",
+          "url": "https://files.pythonhosted.org/packages/68/48/961383352ef4e55c51546f99b1dd81415216db807513be33cc31000eeb73/outlines_core-0.2.14-cp39-cp39-macosx_15_0_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "6ee2e442da3ee46812eb5ff6f4d58422b8b655cdba5af5fa18c2ddb67d8bef71",
+            "md5": "b0a4cf123e24bf7c7778dc1b5341e115",
+            "sha256": "bb3245cbd7a2e9800f257b45cb5a8d690abd39dbaa8371ea40132f6f1eb2e3d2"
+          },
+          "filename": "outlines_core-0.2.14-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:59:04.408814Z",
+          "url": "https://files.pythonhosted.org/packages/6e/e2/e442da3ee46812eb5ff6f4d58422b8b655cdba5af5fa18c2ddb67d8bef71/outlines_core-0.2.14-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "e908f38f19188033054b730845678b658a2ccd015e7718cf76ff62914e3fe5ab",
+            "md5": "b73f89523fe8dc265ffbfaea83256ec6",
+            "sha256": "fd7d432817978ea474de428ed6ca5ed3195812f8cfb787b85fb5ec0a51a440d2"
+          },
+          "filename": "outlines_core-0.2.14-cp39-cp39-manylinux_2_28_aarch64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:59:05.532563Z",
+          "url": "https://files.pythonhosted.org/packages/e9/08/f38f19188033054b730845678b658a2ccd015e7718cf76ff62914e3fe5ab/outlines_core-0.2.14-cp39-cp39-manylinux_2_28_aarch64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "8be12291888f1833863ae2c5c9595d8d6e61fbcb045aee0fbf5ca07267467e0a",
+            "md5": "427d0adc15f0dc9b6bd8739c450e4ffc",
+            "sha256": "98d1929a7a0ff43332448c176b92041c2755c4843a22223d341c3b96165c2a37"
+          },
+          "filename": "outlines_core-0.2.14-cp39-cp39-win32.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:59:06.958613Z",
+          "url": "https://files.pythonhosted.org/packages/8b/e1/2291888f1833863ae2c5c9595d8d6e61fbcb045aee0fbf5ca07267467e0a/outlines_core-0.2.14-cp39-cp39-win32.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "366c617a20218ee866dbc58bd311a771a4a2ccbb0d4c3e7913ba7b6baae37157",
+            "md5": "9d591a8ee74331063579136143a25d72",
+            "sha256": "5f8893cf24e4f3e5a7b246b578079ff0dff3228aa9c731bd7fb1f3f55ebee19e"
+          },
+          "filename": "outlines_core-0.2.14-cp39-cp39-win_amd64.whl",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:59:08.709145Z",
+          "url": "https://files.pythonhosted.org/packages/36/6c/617a20218ee866dbc58bd311a771a4a2ccbb0d4c3e7913ba7b6baae37157/outlines_core-0.2.14-cp39-cp39-win_amd64.whl",
+          "yanked": false
+        },
+        {
+          "digests": {
+            "blake2b_256": "6a044a0812eb27c086cfd2e66e7ec9150f33e105912a9b7f8b335e3479f03a06",
+            "md5": "5dbac796f2b6a38ed0a664626b2e6ca4",
+            "sha256": "64808deed1591ca3029ff64346ceb974cd5d780c916ea82504951fe83523039e"
+          },
+          "filename": "outlines_core-0.2.14.tar.gz",
+          "requires_python": ">=3.8",
+          "upload_time_iso_8601": "2026-01-09T15:59:10.016278Z",
+          "url": "https://files.pythonhosted.org/packages/6a/04/4a0812eb27c086cfd2e66e7ec9150f33e105912a9b7f8b335e3479f03a06/outlines_core-0.2.14.tar.gz",
+          "yanked": false
+        }
+      ],
+      "requires_dist": [
+        "pre-commit; extra == \"test\"",
+        "pydantic; extra == \"test\"",
+        "pytest; extra == \"test\"",
+        "pytest-benchmark; extra == \"test\"",
+        "pytest-cov; extra == \"test\"",
+        "pytest-mock; extra == \"test\"",
+        "coverage[toml]>=5.1; extra == \"test\"",
+        "diff-cover; extra == \"test\"",
+        "numpy; extra == \"test\"",
+        "torch; extra == \"test\"",
+        "numba; extra == \"test\"",
+        "scipy; extra == \"test\"",
+        "asv; extra == \"test\"",
+        "psutil; extra == \"test\"",
+        "maturin[patchelf]; extra == \"test\""
+      ],
+      "requires_python": ">=3.8",
+      "upstream_release_commit": "8466141a4d882572876d39563c9e6be372d918d3",
+      "upstream_release_tag": "0.2.14",
+      "version": "0.2.14",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    }
+  },
+  "pip_resolver_invocations": 0,
+  "runtime_compatibility": {
+    "cpu_fp32_execution": "NOT_ASSESSED",
+    "frozen_target": "Qwen/Qwen2.5-1.5B-Instruct@989aa7980e4cf806f80c7fef2b1adb7bc71aa306; CPU FP32; torch 2.14.0+cpu; transformers 4.57.6",
+    "remaining_unknowns": "Runtime/tokenizer/processor qualification and full resolved dependency lock not performed; candidate already blocked by semantic string restriction.",
+    "transformers_entrypoint": "Release source from_transformers accepts existing local model/tokenizer; no hard CUDA/vLLM/Linux requirement established in inspected path.",
+    "windows_python_wheel_metadata": "COMPATIBLE"
+  }
+}

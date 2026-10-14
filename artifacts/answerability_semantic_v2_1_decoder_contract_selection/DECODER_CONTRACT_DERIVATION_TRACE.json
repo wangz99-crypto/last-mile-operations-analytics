@@ -1,0 +1,1264 @@
+{
+  "duplicate_constraint_ids": 0,
+  "missing_constraint_ids": 0,
+  "rows": [
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/additionalProperties",
+      "decoder_contract_representation": "/constraints/0",
+      "json_pointer": "/additionalProperties",
+      "keyword": "additionalProperties",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": false,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf",
+      "keyword": "oneOf",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        {
+          "properties": {
+            "decision": {
+              "const": "ALLOW"
+            },
+            "material_asks": {
+              "items": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              }
+            },
+            "policy_context_status": {
+              "const": "RESOLVED"
+            },
+            "reason_code": {
+              "const": "SUPPORTED_BY_ACTIVE_POLICY"
+            }
+          }
+        },
+        {
+          "properties": {
+            "decision": {
+              "const": "ABSTAIN"
+            },
+            "material_asks": {
+              "contains": {
+                "properties": {
+                  "support_status": {
+                    "const": "UNSUPPORTED"
+                  }
+                }
+              },
+              "items": {
+                "properties": {
+                  "support_status": {
+                    "enum": [
+                      "SUPPORTED",
+                      "UNSUPPORTED"
+                    ]
+                  }
+                }
+              }
+            },
+            "policy_context_status": {
+              "const": "RESOLVED"
+            },
+            "reason_code": {
+              "const": "INSUFFICIENT_POLICY_SUPPORT"
+            }
+          }
+        },
+        {
+          "anyOf": [
+            {
+              "properties": {
+                "policy_context_status": {
+                  "const": "UNRESOLVED"
+                }
+              }
+            },
+            {
+              "properties": {
+                "material_asks": {
+                  "contains": {
+                    "properties": {
+                      "support_status": {
+                        "const": "CONTEXT_UNRESOLVED"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "decision": {
+              "const": "ABSTAIN"
+            },
+            "reason_code": {
+              "const": "UNRESOLVED_POLICY_CONTEXT"
+            }
+          }
+        }
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/0/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/0/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "decision": {
+          "const": "ALLOW"
+        },
+        "material_asks": {
+          "items": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          }
+        },
+        "policy_context_status": {
+          "const": "RESOLVED"
+        },
+        "reason_code": {
+          "const": "SUPPORTED_BY_ACTIVE_POLICY"
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/0/properties/decision/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/0/properties/decision/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "ALLOW",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/0/properties/material_asks/items",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/0/properties/material_asks/items",
+      "keyword": "items",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "properties": {
+          "support_status": {
+            "const": "SUPPORTED"
+          }
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/0/properties/material_asks/items/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/0/properties/material_asks/items/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "support_status": {
+          "const": "SUPPORTED"
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/0/properties/material_asks/items/properties/support_status/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/0/properties/material_asks/items/properties/support_status/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "SUPPORTED",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/0/properties/policy_context_status/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/0/properties/policy_context_status/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "RESOLVED",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/0/properties/reason_code/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/0/properties/reason_code/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "SUPPORTED_BY_ACTIVE_POLICY",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "decision": {
+          "const": "ABSTAIN"
+        },
+        "material_asks": {
+          "contains": {
+            "properties": {
+              "support_status": {
+                "const": "UNSUPPORTED"
+              }
+            }
+          },
+          "items": {
+            "properties": {
+              "support_status": {
+                "enum": [
+                  "SUPPORTED",
+                  "UNSUPPORTED"
+                ]
+              }
+            }
+          }
+        },
+        "policy_context_status": {
+          "const": "RESOLVED"
+        },
+        "reason_code": {
+          "const": "INSUFFICIENT_POLICY_SUPPORT"
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties/decision/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties/decision/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "ABSTAIN",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties/material_asks/contains",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties/material_asks/contains",
+      "keyword": "contains",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "properties": {
+          "support_status": {
+            "const": "UNSUPPORTED"
+          }
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties/material_asks/contains/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties/material_asks/contains/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "support_status": {
+          "const": "UNSUPPORTED"
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties/material_asks/contains/properties/support_status/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties/material_asks/contains/properties/support_status/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "UNSUPPORTED",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties/material_asks/items",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties/material_asks/items",
+      "keyword": "items",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "properties": {
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED"
+            ]
+          }
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties/material_asks/items/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties/material_asks/items/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "support_status": {
+          "enum": [
+            "SUPPORTED",
+            "UNSUPPORTED"
+          ]
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties/material_asks/items/properties/support_status/enum",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties/material_asks/items/properties/support_status/enum",
+      "keyword": "enum",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        "SUPPORTED",
+        "UNSUPPORTED"
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties/policy_context_status/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties/policy_context_status/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "RESOLVED",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/1/properties/reason_code/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/1/properties/reason_code/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "INSUFFICIENT_POLICY_SUPPORT",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/anyOf",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/anyOf",
+      "keyword": "anyOf",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        {
+          "properties": {
+            "policy_context_status": {
+              "const": "UNRESOLVED"
+            }
+          }
+        },
+        {
+          "properties": {
+            "material_asks": {
+              "contains": {
+                "properties": {
+                  "support_status": {
+                    "const": "CONTEXT_UNRESOLVED"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/anyOf/0/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/anyOf/0/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "policy_context_status": {
+          "const": "UNRESOLVED"
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/anyOf/0/properties/policy_context_status/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/anyOf/0/properties/policy_context_status/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "UNRESOLVED",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/anyOf/1/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/anyOf/1/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "material_asks": {
+          "contains": {
+            "properties": {
+              "support_status": {
+                "const": "CONTEXT_UNRESOLVED"
+              }
+            }
+          }
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/anyOf/1/properties/material_asks/contains",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains",
+      "keyword": "contains",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "properties": {
+          "support_status": {
+            "const": "CONTEXT_UNRESOLVED"
+          }
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "support_status": {
+          "const": "CONTEXT_UNRESOLVED"
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties/support_status/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties/support_status/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "CONTEXT_UNRESOLVED",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "decision": {
+          "const": "ABSTAIN"
+        },
+        "reason_code": {
+          "const": "UNRESOLVED_POLICY_CONTEXT"
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/properties/decision/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/properties/decision/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "ABSTAIN",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/oneOf/2/properties/reason_code/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/oneOf/2/properties/reason_code/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "UNRESOLVED_POLICY_CONTEXT",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties",
+      "decoder_contract_representation": "/constraints/1",
+      "json_pointer": "/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "decision": {
+          "enum": [
+            "ALLOW",
+            "ABSTAIN"
+          ]
+        },
+        "material_asks": {
+          "items": {
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "else": {
+                  "properties": {
+                    "supporting_evidence_ranks": {
+                      "maxItems": 0
+                    }
+                  }
+                },
+                "if": {
+                  "properties": {
+                    "support_status": {
+                      "const": "SUPPORTED"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "supporting_evidence_ranks": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "ask": {
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "support_status": {
+                "enum": [
+                  "SUPPORTED",
+                  "UNSUPPORTED",
+                  "CONTEXT_UNRESOLVED"
+                ]
+              },
+              "supporting_evidence_ranks": {
+                "items": {
+                  "maximum": 10,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "maxItems": 10,
+                "type": "array",
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "ask",
+              "support_status",
+              "supporting_evidence_ranks"
+            ],
+            "type": "object"
+          },
+          "maxItems": 8,
+          "minItems": 1,
+          "type": "array"
+        },
+        "policy_context_status": {
+          "enum": [
+            "RESOLVED",
+            "UNRESOLVED"
+          ]
+        },
+        "reason_code": {
+          "enum": [
+            "SUPPORTED_BY_ACTIVE_POLICY",
+            "INSUFFICIENT_POLICY_SUPPORT",
+            "UNRESOLVED_POLICY_CONTEXT"
+          ]
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/decision/enum",
+      "decoder_contract_representation": "/constraints/2",
+      "json_pointer": "/properties/decision/enum",
+      "keyword": "enum",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        "ALLOW",
+        "ABSTAIN"
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items",
+      "decoder_contract_representation": "/constraints/3",
+      "json_pointer": "/properties/material_asks/items",
+      "keyword": "items",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "maxItems": 0
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "support_status": {
+                  "const": "SUPPORTED"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "ask": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED",
+              "CONTEXT_UNRESOLVED"
+            ]
+          },
+          "supporting_evidence_ranks": {
+            "items": {
+              "maximum": 10,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "type": "array",
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ],
+        "type": "object"
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/additionalProperties",
+      "decoder_contract_representation": "/constraints/4",
+      "json_pointer": "/properties/material_asks/items/additionalProperties",
+      "keyword": "additionalProperties",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": false,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf",
+      "keyword": "allOf",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        {
+          "else": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf/0/else",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf/0/else",
+      "keyword": "else",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "properties": {
+          "supporting_evidence_ranks": {
+            "maxItems": 0
+          }
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf/0/else/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf/0/else/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "supporting_evidence_ranks": {
+          "maxItems": 0
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks/maxItems",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks/maxItems",
+      "keyword": "maxItems",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": 0,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf/0/if",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf/0/if",
+      "keyword": "if",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "properties": {
+          "support_status": {
+            "const": "SUPPORTED"
+          }
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf/0/if/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf/0/if/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "support_status": {
+          "const": "SUPPORTED"
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf/0/if/properties/support_status/const",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf/0/if/properties/support_status/const",
+      "keyword": "const",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "SUPPORTED",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf/0/then",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf/0/then",
+      "keyword": "then",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "properties": {
+          "supporting_evidence_ranks": {
+            "minItems": 1
+          }
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf/0/then/properties",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf/0/then/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "supporting_evidence_ranks": {
+          "minItems": 1
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks/minItems",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks/minItems",
+      "keyword": "minItems",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": 1,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties",
+      "decoder_contract_representation": "/constraints/5",
+      "json_pointer": "/properties/material_asks/items/properties",
+      "keyword": "properties",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "ask": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "type": "string"
+        },
+        "support_status": {
+          "enum": [
+            "SUPPORTED",
+            "UNSUPPORTED",
+            "CONTEXT_UNRESOLVED"
+          ]
+        },
+        "supporting_evidence_ranks": {
+          "items": {
+            "maximum": 10,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "maxItems": 10,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/ask/minLength",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/properties/ask/minLength",
+      "keyword": "minLength",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": 1,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/ask/pattern",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/properties/ask/pattern",
+      "keyword": "pattern",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "\\S",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/ask/type",
+      "decoder_contract_representation": "/constraints/6",
+      "json_pointer": "/properties/material_asks/items/properties/ask/type",
+      "keyword": "type",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "string",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/support_status/enum",
+      "decoder_contract_representation": "/constraints/7",
+      "json_pointer": "/properties/material_asks/items/properties/support_status/enum",
+      "keyword": "enum",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        "SUPPORTED",
+        "UNSUPPORTED",
+        "CONTEXT_UNRESOLVED"
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "decoder_contract_representation": "/constraints/8",
+      "json_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "keyword": "items",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": {
+        "maximum": 10,
+        "minimum": 1,
+        "type": "integer"
+      },
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/maximum",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/maximum",
+      "keyword": "maximum",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": 10,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/minimum",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/minimum",
+      "keyword": "minimum",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": 1,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "decoder_contract_representation": "/constraints/9",
+      "json_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "keyword": "type",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "integer",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/maxItems",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/maxItems",
+      "keyword": "maxItems",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": 10,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "decoder_contract_representation": "/constraints/10",
+      "json_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "keyword": "type",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "array",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/uniqueItems",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/uniqueItems",
+      "keyword": "uniqueItems",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": true,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/required",
+      "decoder_contract_representation": "/constraints/11",
+      "json_pointer": "/properties/material_asks/items/required",
+      "keyword": "required",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        "ask",
+        "support_status",
+        "supporting_evidence_ranks"
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/items/type",
+      "decoder_contract_representation": "/constraints/12",
+      "json_pointer": "/properties/material_asks/items/type",
+      "keyword": "type",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "object",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/maxItems",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/maxItems",
+      "keyword": "maxItems",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": 8,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/minItems",
+      "decoder_contract_representation": null,
+      "json_pointer": "/properties/material_asks/minItems",
+      "keyword": "minItems",
+      "p1_ownership": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": 1,
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/material_asks/type",
+      "decoder_contract_representation": "/constraints/13",
+      "json_pointer": "/properties/material_asks/type",
+      "keyword": "type",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "array",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/policy_context_status/enum",
+      "decoder_contract_representation": "/constraints/14",
+      "json_pointer": "/properties/policy_context_status/enum",
+      "keyword": "enum",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        "RESOLVED",
+        "UNRESOLVED"
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/properties/reason_code/enum",
+      "decoder_contract_representation": "/constraints/15",
+      "json_pointer": "/properties/reason_code/enum",
+      "keyword": "enum",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        "SUPPORTED_BY_ACTIVE_POLICY",
+        "INSUFFICIENT_POLICY_SUPPORT",
+        "UNRESOLVED_POLICY_CONTEXT"
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/required",
+      "decoder_contract_representation": "/constraints/16",
+      "json_pointer": "/required",
+      "keyword": "required",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": [
+        "material_asks",
+        "policy_context_status",
+        "decision",
+        "reason_code"
+      ],
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    },
+    {
+      "adapter_relation": "No raw-schema ownership transfer; six adapter obligations remain separate.",
+      "constraint_id": "/type",
+      "decoder_contract_representation": "/constraints/17",
+      "json_pointer": "/type",
+      "keyword": "type",
+      "p1_ownership": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "raw_constraint": "object",
+      "validator_delegation": "MANDATORY_EXACT_VALIDATOR_ENFORCED"
+    }
+  ],
+  "source_constraints": 64,
+  "trace_rows": 64
+}

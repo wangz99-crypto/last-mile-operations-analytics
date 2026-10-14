@@ -1,0 +1,719 @@
+{
+  "activity": {
+    "DEVELOPMENT": 0,
+    "forward": 0,
+    "generate": 0,
+    "grammar_regex_compilation": 0,
+    "logits_processor_construction": 0,
+    "model_initialization": 0,
+    "outlines_core_imports": 0,
+    "outlines_imports": 0,
+    "package_installs": 0,
+    "package_removals": 0,
+    "retrieval": 0,
+    "tokenizer_loads": 0
+  },
+  "backend": "outlines_core==0.2.14",
+  "candidate": "outlines==1.3.3",
+  "contract_sha256": "768b9147e77f1dcc9dfd13b9dc4a6f9a2dad0ea6ad498219341fee0c43166198",
+  "counts": {
+    "AMBIGUOUS": 0,
+    "REQUIRES_RUNTIME_QUALIFICATION": 17,
+    "STATICALLY_SUPPORTED": 0,
+    "STATICALLY_UNSUPPORTED": 1
+  },
+  "exact_validator": "NOT_YET_SELECTED_NOT_QUALIFIED",
+  "integration_evidence": [
+    "https://github.com/dottxt-ai/outlines/blob/3d251f8d758a01cfee4ddc99646886845dbd8c6d/src/outlines/backends/outlines_core.py#L233-L251",
+    "https://github.com/dottxt-ai/outlines/blob/3d251f8d758a01cfee4ddc99646886845dbd8c6d/src/outlines/models/transformers.py#L663-L710"
+  ],
+  "outcome": "DECODER_CANDIDATE_SELECTION_BLOCKED",
+  "pure_layer_plan": {
+    "coverage": "All 18 rows plus frozen M1-M8 expectations; no model generation required if direct backend language testing is available.",
+    "direct_backend_test_api": "NOT_RUNTIME_QUALIFIED; establish feasibility before any tokenizer/model use; never silently escalate to generation.",
+    "parse_boundary_probes": [
+      "single object only",
+      "standard JSON syntax",
+      "no markdown/prose",
+      "no duplicate keys",
+      "finite JSON values"
+    ],
+    "status": "PREREGISTERED_PROBES_ONLY; execution blocked for this candidate",
+    "validator_only": "46 delegated predicates are not decoder acceptance requirements. Contract-legal empty arrays and unconstrained integer ranges must not acquire extra restrictions."
+  },
+  "quarantine": {
+    "fresh_v2_1_semantic_suite": "NOT YET AUTHORED",
+    "phase_2g_private_heldout_access": false,
+    "phase_2h_held_out_access": false
+  },
+  "research_stop": "No second candidate; no post-finding contract/rule/ownership changes.",
+  "rows": [
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Declared property recursion and required mask are represented in source; actual accepted language and token masks are not tested.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L89-L169"
+        }
+      ],
+      "constraint_id": "/additionalProperties",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Add unknown key unexpected_probe at this scope",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Declared keys only at this scope",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/additionalProperties",
+        "predicate": "additionalProperties",
+        "scope": [],
+        "value": {
+          "allowed": false,
+          "declared_property_names": [
+            "decision",
+            "material_asks",
+            "policy_context_status",
+            "reason_code"
+          ]
+        }
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Declared property recursion and required mask are represented in source; actual accepted language and token masks are not tested.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L89-L169"
+        }
+      ],
+      "constraint_id": "/properties",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Place wrong-shaped value under each constrained declared key; verify child predicates are not skipped",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Preserve each declared field and apply its child predicates at this exact scope",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties",
+        "predicate": "properties",
+        "scope": [],
+        "value": {
+          "child_predicates": "Separate owned rows at their field scopes; omitted children remain validator-only.",
+          "declared_property_names": [
+            "decision",
+            "material_asks",
+            "policy_context_status",
+            "reason_code"
+          ]
+        }
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Enum values are converted through constant alternatives; frozen enum strings are ASCII. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L234-L246"
+        }
+      ],
+      "constraint_id": "/properties/decision/enum",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Use NOT_A_DECLARED_ENUM and a non-string value",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Exercise every declared enum value",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/decision/enum",
+        "predicate": "enum",
+        "scope": [
+          {
+            "field": "decision"
+          }
+        ],
+        "value": [
+          "ALLOW",
+          "ABSTAIN"
+        ]
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Array item schema recursion is present; absent cardinality limits leave zero-or-more elements. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L562-L584"
+        },
+        {
+          "finding": "Array item schema recursion is present; absent cardinality limits leave zero-or-more elements. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L641-L658"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Insert a wrong-shaped element at first and later positions",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Empty array and arrays with one/two correctly shaped members",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items",
+        "predicate": "items",
+        "scope": [
+          {
+            "field": "material_asks"
+          }
+        ],
+        "value": {
+          "child_predicates": "Separate owned rows at the element scope; no copied delegated assertions.",
+          "quantifier": "every array element"
+        }
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Declared property recursion and required mask are represented in source; actual accepted language and token masks are not tested.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L89-L169"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items/additionalProperties",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Add unknown key unexpected_probe at this scope",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Declared keys only at this scope",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items/additionalProperties",
+        "predicate": "additionalProperties",
+        "scope": [
+          {
+            "field": "material_asks"
+          },
+          {
+            "each_array_element": true
+          }
+        ],
+        "value": {
+          "allowed": false,
+          "declared_property_names": [
+            "ask",
+            "support_status",
+            "supporting_evidence_ranks"
+          ]
+        }
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Declared property recursion and required mask are represented in source; actual accepted language and token masks are not tested.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L89-L169"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items/properties",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Place wrong-shaped value under each constrained declared key; verify child predicates are not skipped",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Preserve each declared field and apply its child predicates at this exact scope",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items/properties",
+        "predicate": "properties",
+        "scope": [
+          {
+            "field": "material_asks"
+          },
+          {
+            "each_array_element": true
+          }
+        ],
+        "value": {
+          "child_predicates": "Separate owned rows at their field scopes; omitted children remain validator-only.",
+          "declared_property_names": [
+            "ask",
+            "support_status",
+            "supporting_evidence_ranks"
+          ]
+        }
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Generic string character class excludes U+0000 and escape alternatives omit Unicode escapes. A semantic string containing U+0000 has no accepted legal JSON spelling. Static incompatibility; no regex was compiled or executed.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L380-L418"
+        },
+        {
+          "finding": "Generic string character class excludes U+0000 and escape alternatives omit Unicode escapes. A semantic string containing U+0000 has no accepted legal JSON spelling. Static incompatibility; no regex was compiled or executed.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/types.rs#L5-L6"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items/properties/ask/type",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Exercise each other primitive/container type including null and boolean",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Ordinary string, empty string and string containing U+0000; each must retain a legal serialization at the contract layer",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items/properties/ask/type",
+        "predicate": "type",
+        "scope": [
+          {
+            "field": "material_asks"
+          },
+          {
+            "each_array_element": true
+          },
+          {
+            "field": "ask"
+          }
+        ],
+        "value": "string"
+      },
+      "support_classification": "STATICALLY_UNSUPPORTED"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Enum values are converted through constant alternatives; frozen enum strings are ASCII. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L234-L246"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items/properties/support_status/enum",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Use NOT_A_DECLARED_ENUM and a non-string value",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Exercise every declared enum value",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items/properties/support_status/enum",
+        "predicate": "enum",
+        "scope": [
+          {
+            "field": "material_asks"
+          },
+          {
+            "each_array_element": true
+          },
+          {
+            "field": "support_status"
+          }
+        ],
+        "value": [
+          "SUPPORTED",
+          "UNSUPPORTED",
+          "CONTEXT_UNRESOLVED"
+        ]
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Array item schema recursion is present; absent cardinality limits leave zero-or-more elements. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L562-L584"
+        },
+        {
+          "finding": "Array item schema recursion is present; absent cardinality limits leave zero-or-more elements. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L641-L658"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Insert a wrong-shaped element at first and later positions",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Empty array and arrays with one/two correctly shaped members",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+        "predicate": "items",
+        "scope": [
+          {
+            "field": "material_asks"
+          },
+          {
+            "each_array_element": true
+          },
+          {
+            "field": "supporting_evidence_ranks"
+          }
+        ],
+        "value": {
+          "child_predicates": "Separate owned rows at the element scope; no copied delegated assertions.",
+          "quantifier": "every array element"
+        }
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Canonical signed decimal integer language is declared; boolean is not its integer branch. Mathematical integer values retain canonical decimal spelling. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L483-L503"
+        },
+        {
+          "finding": "Canonical signed decimal integer language is declared; boolean is not its integer branch. Mathematical integer values retain canonical decimal spelling. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/types.rs#L7"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Exercise each other primitive/container type including null and boolean",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Value of declared JSON semantic type integer",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+        "predicate": "type",
+        "scope": [
+          {
+            "field": "material_asks"
+          },
+          {
+            "each_array_element": true
+          },
+          {
+            "field": "supporting_evidence_ranks"
+          },
+          {
+            "each_array_element": true
+          }
+        ],
+        "value": "integer"
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Array item schema recursion is present; absent cardinality limits leave zero-or-more elements. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L562-L584"
+        },
+        {
+          "finding": "Array item schema recursion is present; absent cardinality limits leave zero-or-more elements. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L641-L658"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Exercise each other primitive/container type including null and boolean",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Value of declared JSON semantic type array",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+        "predicate": "type",
+        "scope": [
+          {
+            "field": "material_asks"
+          },
+          {
+            "each_array_element": true
+          },
+          {
+            "field": "supporting_evidence_ranks"
+          }
+        ],
+        "value": "array"
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Declared property recursion and required mask are represented in source; actual accepted language and token masks are not tested.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L89-L169"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items/required",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Omit each required field individually, then all required fields",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "All required fields present at this scope",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items/required",
+        "predicate": "required",
+        "scope": [
+          {
+            "field": "material_asks"
+          },
+          {
+            "each_array_element": true
+          }
+        ],
+        "value": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ]
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Declared property recursion and required mask are represented in source; actual accepted language and token masks are not tested.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L89-L169"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/items/type",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Exercise each other primitive/container type including null and boolean",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Value of declared JSON semantic type object",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/items/type",
+        "predicate": "type",
+        "scope": [
+          {
+            "field": "material_asks"
+          },
+          {
+            "each_array_element": true
+          }
+        ],
+        "value": "object"
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Array item schema recursion is present; absent cardinality limits leave zero-or-more elements. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L562-L584"
+        },
+        {
+          "finding": "Array item schema recursion is present; absent cardinality limits leave zero-or-more elements. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L641-L658"
+        }
+      ],
+      "constraint_id": "/properties/material_asks/type",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Exercise each other primitive/container type including null and boolean",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Value of declared JSON semantic type array",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/material_asks/type",
+        "predicate": "type",
+        "scope": [
+          {
+            "field": "material_asks"
+          }
+        ],
+        "value": "array"
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Enum values are converted through constant alternatives; frozen enum strings are ASCII. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L234-L246"
+        }
+      ],
+      "constraint_id": "/properties/policy_context_status/enum",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Use NOT_A_DECLARED_ENUM and a non-string value",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Exercise every declared enum value",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/policy_context_status/enum",
+        "predicate": "enum",
+        "scope": [
+          {
+            "field": "policy_context_status"
+          }
+        ],
+        "value": [
+          "RESOLVED",
+          "UNRESOLVED"
+        ]
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Enum values are converted through constant alternatives; frozen enum strings are ASCII. Runtime enforcement pending.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L234-L246"
+        }
+      ],
+      "constraint_id": "/properties/reason_code/enum",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Use NOT_A_DECLARED_ENUM and a non-string value",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Exercise every declared enum value",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/properties/reason_code/enum",
+        "predicate": "enum",
+        "scope": [
+          {
+            "field": "reason_code"
+          }
+        ],
+        "value": [
+          "SUPPORTED_BY_ACTIVE_POLICY",
+          "INSUFFICIENT_POLICY_SUPPORT",
+          "UNRESOLVED_POLICY_CONTEXT"
+        ]
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Declared property recursion and required mask are represented in source; actual accepted language and token masks are not tested.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L89-L169"
+        }
+      ],
+      "constraint_id": "/required",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Omit each required field individually, then all required fields",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "All required fields present at this scope",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/required",
+        "predicate": "required",
+        "scope": [],
+        "value": [
+          "material_asks",
+          "policy_context_status",
+          "decision",
+          "reason_code"
+        ]
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    },
+    {
+      "authoritative_candidate_evidence": [
+        {
+          "finding": "Declared property recursion and required mask are represented in source; actual accepted language and token masks are not tested.",
+          "release": "outlines-core==0.2.14",
+          "url": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L89-L169"
+        }
+      ],
+      "constraint_id": "/type",
+      "direct_p4_probe": {
+        "execution": "NOT_EXECUTED; blocked candidate has no P4 authorization",
+        "negative": "Exercise each other primitive/container type including null and boolean",
+        "negative_expected": "REJECT when a retained predicate is violated",
+        "positive": "Value of declared JSON semantic type object",
+        "positive_expected": "ACCEPT at contract layer"
+      },
+      "notes": "No compiler acceptance or runtime masking PASS claimed. Validator-only conditions are outside target.",
+      "required_behavior": {
+        "constraint_id": "/type",
+        "predicate": "type",
+        "scope": [],
+        "value": "object"
+      },
+      "support_classification": "REQUIRES_RUNTIME_QUALIFICATION"
+    }
+  ],
+  "runtime_target": "Windows; CPU FP32; Python 3.12.10; torch 2.14.0+cpu; transformers 4.57.6; Qwen/Qwen2.5-1.5B-Instruct@989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "serialization_assessment": [
+    {
+      "basis": "Each otherwise representable object has a serialization in that order; field/value combinations are unchanged.",
+      "classification": "SEMANTICALLY_NEUTRAL_SERIALIZATION_RESTRICTION",
+      "restriction": "Fixed declared-property order",
+      "source": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/parsing.rs#L89-L169"
+    },
+    {
+      "basis": "Whitespace-free JSON remains a legal spelling for every otherwise representable value.",
+      "classification": "SEMANTICALLY_NEUTRAL_SERIALIZATION_RESTRICTION",
+      "restriction": "Optional single-space whitespace",
+      "source": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/types.rs#L17"
+    },
+    {
+      "basis": "Every mathematical integer has a decimal integer spelling; lexical adapter checks remain separate.",
+      "classification": "SEMANTICALLY_NEUTRAL_SERIALIZATION_RESTRICTION",
+      "restriction": "Canonical decimal integer spelling",
+      "source": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/types.rs#L7"
+    },
+    {
+      "basis": "A string consisting of x followed by U+0000 is permitted by the contract. Literal U+0000 is illegal in JSON strings; the needed Unicode escape is absent from the candidate generic string language. This loses a semantic value, not merely an alternative spelling.",
+      "classification": "SEMANTIC_VALUE_RESTRICTION",
+      "restriction": "Restricted generic string alphabet without Unicode escapes",
+      "source": "https://github.com/dottxt-ai/outlines-core/blob/8466141a4d882572876d39563c9e6be372d918d3/src/json_schema/types.rs#L5-L6"
+    }
+  ]
+}

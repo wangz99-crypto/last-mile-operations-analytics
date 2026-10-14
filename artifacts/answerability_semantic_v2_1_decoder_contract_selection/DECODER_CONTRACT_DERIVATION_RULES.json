@@ -1,0 +1,42 @@
+{
+  "constraint_id_rule": "Use the exact P1 JSON Pointer as stable constraint_id; lexical order; never renumber after candidate research.",
+  "immutable_after_event": "DERIVATION_RULES_FROZEN",
+  "inclusion_argument": "Every retained predicate is an unconditional conjunction from P1. Properties/items are projected recursively, not copied with omitted assertions. Remove entire delegated applicators, never invert/hoist them. Therefore every exact-valid value satisfies all retained predicates. No semantic strengthening or extra constraints.",
+  "ownership_rules": {
+    "ADAPTER_ENFORCED": "Preserve six separate obligations; move none into decoder.",
+    "DECODER_ENFORCED": "Represent every dual-owned occurrence, exactly once, with source pointer and original predicate.",
+    "EXACT_VALIDATOR_ENFORCED_only": "No token-level approximation; explicitly delegate full original value/context, preserving all 46 occurrences."
+  },
+  "phase_a_limit": "No candidate capability research until freeze receipt event. No library syntax, regex or decoder-specific grammar.",
+  "representation_rules": {
+    "items": "Represent universal array-element scope; child predicates are separate decoder-owned entries. Do not copy delegated child predicates.",
+    "leaf_predicates": "type/enum/required/additionalProperties=false retain exact P1 leaf value.",
+    "properties": "Represent property-name to child-scope association, not an opaque copy of raw child schemas. Independently represent only decoder-owned children.",
+    "required_counts": {
+      "adapter": 6,
+      "decoder": 18,
+      "material": 64,
+      "unowned": 0,
+      "validator_only": 46
+    },
+    "scope": "Convert properties/name to JSON object field and items to every array element, using typed path steps; no conditional branch is hoisted.",
+    "unknown_owner_or_keyword": "STOP; never omit an unrecognized mandatory rule."
+  },
+  "rules_id": "DECODER_CONTRACT_DERIVATION_RULES_V2_1_V0_1",
+  "semantic_domain": "JSON values/object semantics; mathematical integers exclude boolean and include numerically integral JSON numbers.",
+  "serialization_policy": {
+    "candidate_canonicalization": "May be documented separately only if each valid semantic value retains at least one representation and no field/value combination is lost.",
+    "contract_domain": "JSON semantic values",
+    "order_or_whitespace_semantics": false,
+    "rank_integer": "Allow any legal textual representation of an integer semantic value in the abstract contract; canonical integer serialization is neutral if it preserves that value. Adapter lexical checks stay separate."
+  },
+  "source_sha256": {
+    "artifacts/answerability_semantic_gate_v2_prereg/RAW_ASSESSMENT_SCHEMA_V2.json": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/ADAPTER_RESPONSIBILITY_CONTRACT.md": "1df9f843ad150aa70748c95a015038f18edb2c487bbd7c17799e4486c918a3b8",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/FROZEN_SCHEMA_CONSTRAINT_INVENTORY.json": "5fc0d85c36a8687adc4a36f28fb8071c61571ff168496d55a4440edb4103fe1c",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/M1_M8_TREATMENT.json": "b03dc04f8787a3a2d8e31b0d29f5210c6de250648d6dd36854432d0a26a13939",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/MANDATORY_DECODER_CONSTRAINTS.md": "1f41d4a3cdcfdde3dabc7d596406023885b2f11fcf768b64a6b8f6b979bc670d",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/PREREGISTRATION_RECORD.md": "a98fe04d0e5f3ee7604c034adae5635d8c579b031929acd44facfdeda5782bf4",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/STRUCTURAL_ENFORCEMENT_MATRIX.json": "7e24ba10ab8760006ee2129f6a3ab7a0ec479e1cf0bae6c6343215e193b9cae9"
+  }
+}

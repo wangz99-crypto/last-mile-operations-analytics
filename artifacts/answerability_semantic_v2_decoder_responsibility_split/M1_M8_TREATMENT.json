@@ -1,0 +1,103 @@
+{
+  "decoder_executions": 0,
+  "fixtures": [
+    {
+      "combined_expected": "ACCEPT",
+      "decoder_expected": "ACCEPT",
+      "exact_validator_expected": "ACCEPT",
+      "expectation_basis": "Existing frozen fixture expectation and required-field declaration inspection; no instance schema validator or decoder run",
+      "id": "M1",
+      "missing_required_top_level_fields": [],
+      "raw_sha256": "fcc4e0b4d7d9f0edfb706f3321b3fcf0800c0acb2f09552eec77b96f64cf065b"
+    },
+    {
+      "combined_expected": "REJECT",
+      "decoder_expected": "REJECT",
+      "exact_validator_expected": "REJECT",
+      "expectation_basis": "Existing frozen fixture expectation and required-field declaration inspection; no instance schema validator or decoder run",
+      "id": "M2",
+      "missing_required_top_level_fields": [
+        "decision"
+      ],
+      "raw_sha256": "005c6f10a197920eb151aee3be45180dac3bc9b89fa1a7a007d6ee542849d292"
+    },
+    {
+      "combined_expected": "REJECT",
+      "decoder_expected": "REJECT",
+      "exact_validator_expected": "REJECT",
+      "expectation_basis": "Existing frozen fixture expectation and required-field declaration inspection; no instance schema validator or decoder run",
+      "id": "M3",
+      "missing_required_top_level_fields": [
+        "policy_context_status"
+      ],
+      "raw_sha256": "a69fd36118fed60516e6f094fb2cef26ba4dd6c15a81cc4a4f3b30dd36e41536"
+    },
+    {
+      "combined_expected": "REJECT",
+      "decoder_expected": "REJECT",
+      "exact_validator_expected": "REJECT",
+      "expectation_basis": "Existing frozen fixture expectation and required-field declaration inspection; no instance schema validator or decoder run",
+      "id": "M4",
+      "missing_required_top_level_fields": [
+        "reason_code"
+      ],
+      "raw_sha256": "0d72e0fce14b5ab9450ce28e447e3dadabd31f1af1313fffd65b187db2620c7c"
+    },
+    {
+      "combined_expected": "REJECT",
+      "decoder_expected": "REJECT",
+      "exact_validator_expected": "REJECT",
+      "expectation_basis": "Existing frozen fixture expectation and required-field declaration inspection; no instance schema validator or decoder run",
+      "id": "M5",
+      "missing_required_top_level_fields": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "raw_sha256": "02a1ef1e49ce208e45104a372890ed16fc15edbbe79122a802a0141f4a69ed2c"
+    },
+    {
+      "combined_expected": "REJECT",
+      "decoder_expected": "REJECT",
+      "exact_validator_expected": "REJECT",
+      "expectation_basis": "Existing frozen fixture expectation and required-field declaration inspection; no instance schema validator or decoder run",
+      "id": "M6",
+      "missing_required_top_level_fields": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "raw_sha256": "a6ba60eccfcc076f569f464c90e9b6e9b25293edd0bf2502e66da5d9b521e9cb"
+    },
+    {
+      "combined_expected": "REJECT",
+      "decoder_expected": "REJECT",
+      "exact_validator_expected": "REJECT",
+      "expectation_basis": "Existing frozen fixture expectation and required-field declaration inspection; no instance schema validator or decoder run",
+      "id": "M7",
+      "missing_required_top_level_fields": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "raw_sha256": "1b078ff8fffba3a814fb0be5fdc4bb83b9a0a7a8799ac41e3b43016c7aa43afe"
+    },
+    {
+      "combined_expected": "REJECT",
+      "decoder_expected": "REJECT",
+      "exact_validator_expected": "REJECT",
+      "expectation_basis": "Existing frozen fixture expectation and required-field declaration inspection; no instance schema validator or decoder run",
+      "id": "M8",
+      "missing_required_top_level_fields": [
+        "decision",
+        "policy_context_status",
+        "reason_code"
+      ],
+      "raw_sha256": "467f92a2c8d285dddb5f574c3c227af3361e7b7f6396fab3ee409a767bbe362a"
+    }
+  ],
+  "raw_fixture_modifications": 0,
+  "schema_validation_executions": 0,
+  "source": "artifacts/answerability_semantic_v2_lmfe_structural_conformance/CORE_CONFORMANCE_FIXTURES.json",
+  "source_sha256": "992d5959789d81da2822b5995e83eb548332f50eb786ec4f8b765025ff127d68"
+}

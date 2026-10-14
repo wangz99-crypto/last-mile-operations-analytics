@@ -1,0 +1,25 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "forbidden_modules_imported": [],
+  "guard": {
+    "blocked_import_roots": [
+      "jsonschema",
+      "llguidance",
+      "lmformatenforcer",
+      "outlines",
+      "sentence_transformers",
+      "tokenizers",
+      "torch",
+      "transformers",
+      "xgrammar"
+    ],
+    "repository_reads": "new phase artifacts/helper/tests plus 276 explicit historical paths only",
+    "socket_and_subprocess_blocked": true,
+    "violations": []
+  },
+  "output": "test_adapter_source_and_semantics_unchanged (offline_architecture_tests.ResponsibilitySplitTests.test_adapter_source_and_semantics_unchanged) ... ok\ntest_advanced_branch_constraints_delegate_without_dropping (offline_architecture_tests.ResponsibilitySplitTests.test_advanced_branch_constraints_delegate_without_dropping) ... ok\ntest_all_named_history_bytes_unchanged (offline_architecture_tests.ResponsibilitySplitTests.test_all_named_history_bytes_unchanged) ... ok\ntest_distinct_identity_and_no_decoder_selection (offline_architecture_tests.ResponsibilitySplitTests.test_distinct_identity_and_no_decoder_selection) ... ok\ntest_exact_schema_and_deterministic_inventory (offline_architecture_tests.ResponsibilitySplitTests.test_exact_schema_and_deterministic_inventory) ... ok\ntest_exact_validator_is_not_selected_or_implicitly_qualified (offline_architecture_tests.ResponsibilitySplitTests.test_exact_validator_is_not_selected_or_implicitly_qualified) ... ok\ntest_full_keyword_occurrence_coverage_independently (offline_architecture_tests.ResponsibilitySplitTests.test_full_keyword_occurrence_coverage_independently) ... ok\ntest_full_ladder_and_model_budget (offline_architecture_tests.ResponsibilitySplitTests.test_full_ladder_and_model_budget) ... ok\ntest_helper_and_tests_import_only_record_tools (offline_architecture_tests.ResponsibilitySplitTests.test_helper_and_tests_import_only_record_tools) ... ok\ntest_historical_m1_m8_bytes_and_required_defects (offline_architecture_tests.ResponsibilitySplitTests.test_historical_m1_m8_bytes_and_required_defects) ... ok\ntest_invalid_or_indeterminate_states_cannot_reach_adapter (offline_architecture_tests.ResponsibilitySplitTests.test_invalid_or_indeterminate_states_cannot_reach_adapter) ... ok\ntest_language_and_derivation_preregistration_only (offline_architecture_tests.ResponsibilitySplitTests.test_language_and_derivation_preregistration_only) ... ok\ntest_no_material_constraint_unowned_or_downgraded (offline_architecture_tests.ResponsibilitySplitTests.test_no_material_constraint_unowned_or_downgraded) ... ok\ntest_no_repair_and_no_retry (offline_architecture_tests.ResponsibilitySplitTests.test_no_repair_and_no_retry) ... ok\ntest_ownership_counts_and_separate_adapter_denominator (offline_architecture_tests.ResponsibilitySplitTests.test_ownership_counts_and_separate_adapter_denominator) ... ok\ntest_required_fields_are_mandatory_at_both_layers (offline_architecture_tests.ResponsibilitySplitTests.test_required_fields_are_mandatory_at_both_layers) ... ok\ntest_unconditional_types_and_enums_are_decoder_owned (offline_architecture_tests.ResponsibilitySplitTests.test_unconditional_types_and_enums_are_decoder_owned) ... ok\ntest_zero_execution_and_benchmark_quarantine (offline_architecture_tests.ResponsibilitySplitTests.test_zero_execution_and_benchmark_quarantine) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.699s\n\nOK\n",
+  "passed": true,
+  "scope": "Architecture declaration checks only; no decoder/schema-instance validation/adapter/model execution",
+  "tests_run": 18
+}

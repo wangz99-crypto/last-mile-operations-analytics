@@ -1,0 +1,56 @@
+{
+  "error_handling": "API/internal exceptions, timeout or indeterminate result remain candidate errors, never evidence of a valid REJECT; preserve error and invalid disposition; no adapter/semantic continuation.",
+  "fault_is_expected_rejection": false,
+  "invalid_disposition": "STRUCTURAL_INVALID",
+  "rules": [
+    {
+      "adapter_execution": "NOT_RUN",
+      "downstream": "NOT_RUN",
+      "failure_reason": "DECODER_STRUCTURAL_REJECT",
+      "generation_retries": 0,
+      "raw_bytes": "PRESERVED",
+      "repair_retries": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "stage": "decoder"
+    },
+    {
+      "adapter_execution": "NOT_RUN",
+      "downstream": "NOT_RUN",
+      "failure_reason": "JSON_PARSE_FAILED",
+      "generation_retries": 0,
+      "raw_bytes": "PRESERVED",
+      "repair_retries": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "stage": "json_parse"
+    },
+    {
+      "adapter_execution": "NOT_RUN",
+      "downstream": "NOT_RUN",
+      "failure_reason": "EXACT_SCHEMA_REJECT",
+      "generation_retries": 0,
+      "raw_bytes": "PRESERVED",
+      "repair_retries": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "stage": "exact_validator"
+    },
+    {
+      "adapter_execution": "FAILED_WITHOUT_GATEOUTPUT",
+      "downstream": "NOT_RUN",
+      "failure_reason": "ADAPTER_STRUCTURAL_REJECT",
+      "generation_retries": 0,
+      "raw_bytes": "PRESERVED",
+      "repair_retries": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "stage": "adapter"
+    }
+  ],
+  "runtime_fault_channel": "CANDIDATE_ERROR",
+  "structural_result_classes": [
+    "DECODER_STRUCTURAL_REJECT",
+    "JSON_PARSE_FAILED",
+    "EXACT_SCHEMA_REJECT",
+    "ADAPTER_STRUCTURAL_REJECT",
+    "COMBINED_STRUCTURAL_ACCEPT"
+  ],
+  "unknown_or_not_run_is_pass": false
+}

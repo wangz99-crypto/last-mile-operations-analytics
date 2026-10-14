@@ -1,0 +1,185 @@
+{
+  "adapter_preconditions": [
+    "decoder_PASS",
+    "json_parse_PASS",
+    "exact_schema_PASS"
+  ],
+  "adaptive_contract_changes": false,
+  "all_raw_schema_constraints_exact_validator_required": true,
+  "benchmark_quarantine": true,
+  "candidate_id": "SEMANTIC_MATERIAL_SUPPORT_V2_1",
+  "candidate_status": "PRE_REGISTERED_NOT_EVALUATED",
+  "combined_raw_structural_accept": [
+    "decoder_PASS",
+    "json_parse_PASS",
+    "exact_schema_PASS"
+  ],
+  "decoder_contract_status": "P2_DERIVATION_AND_FREEZE_REQUIRED_NOT_CREATED",
+  "decoder_implementation": null,
+  "derivation_rules": {
+    "exclude": "All branch applicators and their subtrees plus other delegated constraints; their exact meanings remain mandatory in validator.",
+    "include": "Only unconditional type/properties/required/additionalProperties/enum/items spine; preserve full values for leaf assertions and recursively project schema-valued properties/items.",
+    "mandatory_implied_types": "Enum domains imply string type; no widening of decoder enum sets.",
+    "no_hoisting": "Do not hoist branch-local properties/enum/const/required into unconditional decoder constraints.",
+    "no_restrictions": "No key-order/canonical-whitespace/count/rank-order/lexical-number restrictions beyond authoritative constraints in the decoder contract; adapter retains its stricter token/rank rules.",
+    "proof_obligation": "P2 must demonstrate L_exact subseteq L_decoder on object semantics and supported JSON serializations, before candidate selection; no result-dependent derivation.",
+    "source": "exact immutable schema"
+  },
+  "executions_authorized_now": false,
+  "final_structural_accept": [
+    "decoder_PASS",
+    "json_parse_PASS",
+    "exact_schema_PASS",
+    "adapter_PASS"
+  ],
+  "fresh_semantic_suite": "NOT YET AUTHORED",
+  "future_ladder": [
+    {
+      "id": "P1",
+      "predecessors": []
+    },
+    {
+      "id": "P2",
+      "predecessors": [
+        "P1"
+      ]
+    },
+    {
+      "id": "P3",
+      "predecessors": [
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": "P4",
+      "predecessors": [
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    {
+      "id": "P5",
+      "predecessors": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    {
+      "id": "P6",
+      "predecessors": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ]
+    },
+    {
+      "id": "P7",
+      "predecessors": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ]
+    },
+    {
+      "id": "P8",
+      "predecessors": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7"
+      ]
+    },
+    {
+      "id": "P9",
+      "predecessors": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
+      ]
+    },
+    {
+      "id": "P10",
+      "predecessors": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9"
+      ]
+    },
+    {
+      "id": "P11",
+      "predecessors": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "P10"
+      ]
+    }
+  ],
+  "generation_retries": 0,
+  "language_relationship": "L_exact subseteq L_decoder; no additional semantic restriction authorized",
+  "model_budget": {
+    "device": "CPU",
+    "dtype": "FP32",
+    "generate_calls": 3,
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "python": "3.12.10",
+    "quality_retries": 0,
+    "repair_retries": 0,
+    "repetition_penalty": 1.0,
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "stage": "P9",
+    "torch": "2.14.0+cpu",
+    "transformers": "4.57.6"
+  },
+  "no_post_generation_repair": true,
+  "outcome": "RESPONSIBILITY_SPLIT_PREREGISTERED",
+  "owner_status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+  "parent_candidate": "SEMANTIC_MATERIAL_SUPPORT_V2",
+  "phase": "2H-B3.2-A2.1-P",
+  "repair_retries": 0,
+  "schema_path": "artifacts/answerability_semantic_gate_v2_prereg/RAW_ASSESSMENT_SCHEMA_V2.json",
+  "schema_rewriting": false,
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "semantic_evaluation_preconditions": [
+    "COMBINED_STRUCTURAL_ACCEPT",
+    "adapter_PASS"
+  ],
+  "semantic_invariance": [
+    "decision_rules",
+    "material_ask_semantics",
+    "reason_codes",
+    "policy_context",
+    "rank_based_evidence",
+    "deterministic_adapter_semantics"
+  ],
+  "validator_implementation": "NOT_SELECTED_NOT_QUALIFIED"
+}

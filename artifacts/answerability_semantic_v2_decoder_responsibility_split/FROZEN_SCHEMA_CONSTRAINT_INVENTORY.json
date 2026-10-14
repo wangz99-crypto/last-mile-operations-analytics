@@ -1,0 +1,1699 @@
+{
+  "absent_inspected_keywords": [
+    "$ref",
+    "exclusiveMaximum",
+    "exclusiveMinimum",
+    "maxContains",
+    "maxLength",
+    "minContains",
+    "prefixItems"
+  ],
+  "constraints": [
+    {
+      "conditional_scope": false,
+      "constraint_value": "https://json-schema.org/draft/2020-12/schema",
+      "criticality": "NONCRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [],
+      "exact_validator": "DIALECT_METADATA",
+      "justification": "Frozen dialect declaration; not an instance constraint.",
+      "keyword": "$schema",
+      "materiality": "ANNOTATION",
+      "pointer": "/$schema",
+      "schema_node_pointer": ""
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": false,
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "additionalProperties",
+      "materiality": "MATERIAL",
+      "pointer": "/additionalProperties",
+      "schema_node_pointer": ""
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": [
+        {
+          "properties": {
+            "decision": {
+              "const": "ALLOW"
+            },
+            "material_asks": {
+              "items": {
+                "properties": {
+                  "support_status": {
+                    "const": "SUPPORTED"
+                  }
+                }
+              }
+            },
+            "policy_context_status": {
+              "const": "RESOLVED"
+            },
+            "reason_code": {
+              "const": "SUPPORTED_BY_ACTIVE_POLICY"
+            }
+          }
+        },
+        {
+          "properties": {
+            "decision": {
+              "const": "ABSTAIN"
+            },
+            "material_asks": {
+              "contains": {
+                "properties": {
+                  "support_status": {
+                    "const": "UNSUPPORTED"
+                  }
+                }
+              },
+              "items": {
+                "properties": {
+                  "support_status": {
+                    "enum": [
+                      "SUPPORTED",
+                      "UNSUPPORTED"
+                    ]
+                  }
+                }
+              }
+            },
+            "policy_context_status": {
+              "const": "RESOLVED"
+            },
+            "reason_code": {
+              "const": "INSUFFICIENT_POLICY_SUPPORT"
+            }
+          }
+        },
+        {
+          "anyOf": [
+            {
+              "properties": {
+                "policy_context_status": {
+                  "const": "UNRESOLVED"
+                }
+              }
+            },
+            {
+              "properties": {
+                "material_asks": {
+                  "contains": {
+                    "properties": {
+                      "support_status": {
+                        "const": "CONTEXT_UNRESOLVED"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "decision": {
+              "const": "ABSTAIN"
+            },
+            "reason_code": {
+              "const": "UNRESOLVED_POLICY_CONTEXT"
+            }
+          }
+        }
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "oneOf",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf",
+      "schema_node_pointer": ""
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "decision": {
+          "const": "ALLOW"
+        },
+        "material_asks": {
+          "items": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          }
+        },
+        "policy_context_status": {
+          "const": "RESOLVED"
+        },
+        "reason_code": {
+          "const": "SUPPORTED_BY_ACTIVE_POLICY"
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/0/properties",
+      "schema_node_pointer": "/oneOf/0"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "ALLOW",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/0/properties/decision/const",
+      "schema_node_pointer": "/oneOf/0/properties/decision"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "properties": {
+          "support_status": {
+            "const": "SUPPORTED"
+          }
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "items",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/0/properties/material_asks/items",
+      "schema_node_pointer": "/oneOf/0/properties/material_asks"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "support_status": {
+          "const": "SUPPORTED"
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/0/properties/material_asks/items/properties",
+      "schema_node_pointer": "/oneOf/0/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "SUPPORTED",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/0/properties/material_asks/items/properties/support_status/const",
+      "schema_node_pointer": "/oneOf/0/properties/material_asks/items/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "RESOLVED",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/0/properties/policy_context_status/const",
+      "schema_node_pointer": "/oneOf/0/properties/policy_context_status"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "SUPPORTED_BY_ACTIVE_POLICY",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/0/properties/reason_code/const",
+      "schema_node_pointer": "/oneOf/0/properties/reason_code"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "decision": {
+          "const": "ABSTAIN"
+        },
+        "material_asks": {
+          "contains": {
+            "properties": {
+              "support_status": {
+                "const": "UNSUPPORTED"
+              }
+            }
+          },
+          "items": {
+            "properties": {
+              "support_status": {
+                "enum": [
+                  "SUPPORTED",
+                  "UNSUPPORTED"
+                ]
+              }
+            }
+          }
+        },
+        "policy_context_status": {
+          "const": "RESOLVED"
+        },
+        "reason_code": {
+          "const": "INSUFFICIENT_POLICY_SUPPORT"
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties",
+      "schema_node_pointer": "/oneOf/1"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "ABSTAIN",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties/decision/const",
+      "schema_node_pointer": "/oneOf/1/properties/decision"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "properties": {
+          "support_status": {
+            "const": "UNSUPPORTED"
+          }
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "contains",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties/material_asks/contains",
+      "schema_node_pointer": "/oneOf/1/properties/material_asks"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "support_status": {
+          "const": "UNSUPPORTED"
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties/material_asks/contains/properties",
+      "schema_node_pointer": "/oneOf/1/properties/material_asks/contains"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "UNSUPPORTED",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties/material_asks/contains/properties/support_status/const",
+      "schema_node_pointer": "/oneOf/1/properties/material_asks/contains/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "properties": {
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED"
+            ]
+          }
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "items",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties/material_asks/items",
+      "schema_node_pointer": "/oneOf/1/properties/material_asks"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "support_status": {
+          "enum": [
+            "SUPPORTED",
+            "UNSUPPORTED"
+          ]
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties/material_asks/items/properties",
+      "schema_node_pointer": "/oneOf/1/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": [
+        "SUPPORTED",
+        "UNSUPPORTED"
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "enum",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties/material_asks/items/properties/support_status/enum",
+      "schema_node_pointer": "/oneOf/1/properties/material_asks/items/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "RESOLVED",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties/policy_context_status/const",
+      "schema_node_pointer": "/oneOf/1/properties/policy_context_status"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "INSUFFICIENT_POLICY_SUPPORT",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/1/properties/reason_code/const",
+      "schema_node_pointer": "/oneOf/1/properties/reason_code"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": [
+        {
+          "properties": {
+            "policy_context_status": {
+              "const": "UNRESOLVED"
+            }
+          }
+        },
+        {
+          "properties": {
+            "material_asks": {
+              "contains": {
+                "properties": {
+                  "support_status": {
+                    "const": "CONTEXT_UNRESOLVED"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "anyOf",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/anyOf",
+      "schema_node_pointer": "/oneOf/2"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "policy_context_status": {
+          "const": "UNRESOLVED"
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/anyOf/0/properties",
+      "schema_node_pointer": "/oneOf/2/anyOf/0"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "UNRESOLVED",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/anyOf/0/properties/policy_context_status/const",
+      "schema_node_pointer": "/oneOf/2/anyOf/0/properties/policy_context_status"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "material_asks": {
+          "contains": {
+            "properties": {
+              "support_status": {
+                "const": "CONTEXT_UNRESOLVED"
+              }
+            }
+          }
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/anyOf/1/properties",
+      "schema_node_pointer": "/oneOf/2/anyOf/1"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "properties": {
+          "support_status": {
+            "const": "CONTEXT_UNRESOLVED"
+          }
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "contains",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains",
+      "schema_node_pointer": "/oneOf/2/anyOf/1/properties/material_asks"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "support_status": {
+          "const": "CONTEXT_UNRESOLVED"
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties",
+      "schema_node_pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "CONTEXT_UNRESOLVED",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties/support_status/const",
+      "schema_node_pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "decision": {
+          "const": "ABSTAIN"
+        },
+        "reason_code": {
+          "const": "UNRESOLVED_POLICY_CONTEXT"
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/properties",
+      "schema_node_pointer": "/oneOf/2"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "ABSTAIN",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/properties/decision/const",
+      "schema_node_pointer": "/oneOf/2/properties/decision"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "UNRESOLVED_POLICY_CONTEXT",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/oneOf/2/properties/reason_code/const",
+      "schema_node_pointer": "/oneOf/2/properties/reason_code"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": {
+        "decision": {
+          "enum": [
+            "ALLOW",
+            "ABSTAIN"
+          ]
+        },
+        "material_asks": {
+          "items": {
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "else": {
+                  "properties": {
+                    "supporting_evidence_ranks": {
+                      "maxItems": 0
+                    }
+                  }
+                },
+                "if": {
+                  "properties": {
+                    "support_status": {
+                      "const": "SUPPORTED"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "supporting_evidence_ranks": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "ask": {
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              "support_status": {
+                "enum": [
+                  "SUPPORTED",
+                  "UNSUPPORTED",
+                  "CONTEXT_UNRESOLVED"
+                ]
+              },
+              "supporting_evidence_ranks": {
+                "items": {
+                  "maximum": 10,
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "maxItems": 10,
+                "type": "array",
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "ask",
+              "support_status",
+              "supporting_evidence_ranks"
+            ],
+            "type": "object"
+          },
+          "maxItems": 8,
+          "minItems": 1,
+          "type": "array"
+        },
+        "policy_context_status": {
+          "enum": [
+            "RESOLVED",
+            "UNRESOLVED"
+          ]
+        },
+        "reason_code": {
+          "enum": [
+            "SUPPORTED_BY_ACTIVE_POLICY",
+            "INSUFFICIENT_POLICY_SUPPORT",
+            "UNRESOLVED_POLICY_CONTEXT"
+          ]
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/properties",
+      "schema_node_pointer": ""
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": [
+        "ALLOW",
+        "ABSTAIN"
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "enum",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/decision/enum",
+      "schema_node_pointer": "/properties/decision"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "maxItems": 0
+                }
+              }
+            },
+            "if": {
+              "properties": {
+                "support_status": {
+                  "const": "SUPPORTED"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "supporting_evidence_ranks": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ],
+        "properties": {
+          "ask": {
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "UNSUPPORTED",
+              "CONTEXT_UNRESOLVED"
+            ]
+          },
+          "supporting_evidence_ranks": {
+            "items": {
+              "maximum": 10,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "type": "array",
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ],
+        "type": "object"
+      },
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "items",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items",
+      "schema_node_pointer": "/properties/material_asks"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": false,
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "additionalProperties",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/additionalProperties",
+      "schema_node_pointer": "/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": [
+        {
+          "else": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "maxItems": 0
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "support_status": {
+                "const": "SUPPORTED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "supporting_evidence_ranks": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "allOf",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf",
+      "schema_node_pointer": "/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "properties": {
+          "supporting_evidence_ranks": {
+            "maxItems": 0
+          }
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "else",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf/0/else",
+      "schema_node_pointer": "/properties/material_asks/items/allOf/0"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "supporting_evidence_ranks": {
+          "maxItems": 0
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf/0/else/properties",
+      "schema_node_pointer": "/properties/material_asks/items/allOf/0/else"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": 0,
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "maxItems",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks/maxItems",
+      "schema_node_pointer": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "properties": {
+          "support_status": {
+            "const": "SUPPORTED"
+          }
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "if",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf/0/if",
+      "schema_node_pointer": "/properties/material_asks/items/allOf/0"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "support_status": {
+          "const": "SUPPORTED"
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf/0/if/properties",
+      "schema_node_pointer": "/properties/material_asks/items/allOf/0/if"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": "SUPPORTED",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "const",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf/0/if/properties/support_status/const",
+      "schema_node_pointer": "/properties/material_asks/items/allOf/0/if/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "properties": {
+          "supporting_evidence_ranks": {
+            "minItems": 1
+          }
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "then",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf/0/then",
+      "schema_node_pointer": "/properties/material_asks/items/allOf/0"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": {
+        "supporting_evidence_ranks": {
+          "minItems": 1
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf/0/then/properties",
+      "schema_node_pointer": "/properties/material_asks/items/allOf/0/then"
+    },
+    {
+      "conditional_scope": true,
+      "constraint_value": 1,
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Preserve branch-local meaning at the exact validator; never hoist branch constraints into the decoder.",
+      "keyword": "minItems",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks/minItems",
+      "schema_node_pointer": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": {
+        "ask": {
+          "minLength": 1,
+          "pattern": "\\S",
+          "type": "string"
+        },
+        "support_status": {
+          "enum": [
+            "SUPPORTED",
+            "UNSUPPORTED",
+            "CONTEXT_UNRESOLVED"
+          ]
+        },
+        "supporting_evidence_ranks": {
+          "items": {
+            "maximum": 10,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "maxItems": 10,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "properties",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties",
+      "schema_node_pointer": "/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": 1,
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Delegate this full constraint to the mandatory exact validator, without changing its criticality.",
+      "keyword": "minLength",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/ask/minLength",
+      "schema_node_pointer": "/properties/material_asks/items/properties/ask"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": "\\S",
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Delegate this full constraint to the mandatory exact validator, without changing its criticality.",
+      "keyword": "pattern",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/ask/pattern",
+      "schema_node_pointer": "/properties/material_asks/items/properties/ask"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": "string",
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "type",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/ask/type",
+      "schema_node_pointer": "/properties/material_asks/items/properties/ask"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": [
+        "SUPPORTED",
+        "UNSUPPORTED",
+        "CONTEXT_UNRESOLVED"
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "enum",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/support_status/enum",
+      "schema_node_pointer": "/properties/material_asks/items/properties/support_status"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": {
+        "maximum": 10,
+        "minimum": 1,
+        "type": "integer"
+      },
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "items",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "schema_node_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": 10,
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Delegate this full constraint to the mandatory exact validator, without changing its criticality.",
+      "keyword": "maximum",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/maximum",
+      "schema_node_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": 1,
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Delegate this full constraint to the mandatory exact validator, without changing its criticality.",
+      "keyword": "minimum",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/minimum",
+      "schema_node_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": "integer",
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "type",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "schema_node_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": 10,
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Delegate this full constraint to the mandatory exact validator, without changing its criticality.",
+      "keyword": "maxItems",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/maxItems",
+      "schema_node_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": "array",
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "type",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "schema_node_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": true,
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Delegate this full constraint to the mandatory exact validator, without changing its criticality.",
+      "keyword": "uniqueItems",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/uniqueItems",
+      "schema_node_pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": [
+        "ask",
+        "support_status",
+        "supporting_evidence_ranks"
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "required",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/required",
+      "schema_node_pointer": "/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": "object",
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "type",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/items/type",
+      "schema_node_pointer": "/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": 8,
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Delegate this full constraint to the mandatory exact validator, without changing its criticality.",
+      "keyword": "maxItems",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/maxItems",
+      "schema_node_pointer": "/properties/material_asks"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": 1,
+      "criticality": "CRITICAL",
+      "decoder": "NOT_ENFORCED",
+      "enforcement_owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Delegate this full constraint to the mandatory exact validator, without changing its criticality.",
+      "keyword": "minItems",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/minItems",
+      "schema_node_pointer": "/properties/material_asks"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": "array",
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "type",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/material_asks/type",
+      "schema_node_pointer": "/properties/material_asks"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": [
+        "RESOLVED",
+        "UNRESOLVED"
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "enum",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/policy_context_status/enum",
+      "schema_node_pointer": "/properties/policy_context_status"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": [
+        "SUPPORTED_BY_ACTIVE_POLICY",
+        "INSUFFICIENT_POLICY_SUPPORT",
+        "UNRESOLVED_POLICY_CONTEXT"
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "enum",
+      "materiality": "MATERIAL",
+      "pointer": "/properties/reason_code/enum",
+      "schema_node_pointer": "/properties/reason_code"
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": [
+        "material_asks",
+        "policy_context_status",
+        "decision",
+        "reason_code"
+      ],
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "required",
+      "materiality": "MATERIAL",
+      "pointer": "/required",
+      "schema_node_pointer": ""
+    },
+    {
+      "conditional_scope": false,
+      "constraint_value": "object",
+      "criticality": "CRITICAL",
+      "decoder": "ENFORCED",
+      "enforcement_owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "exact_validator": "ENFORCED",
+      "justification": "Mandatory unconditional structural spine; also checked by the authoritative validator.",
+      "keyword": "type",
+      "materiality": "MATERIAL",
+      "pointer": "/type",
+      "schema_node_pointer": ""
+    }
+  ],
+  "counting_unit": "One material keyword occurrence at a schema node; list members retained in full value, not counted again. Container applicators/properties and their child constraints counted separately.",
+  "counts": {
+    "adapter_owned_raw_constraints": 0,
+    "decoder_owned_raw_constraints": 18,
+    "exact_validator_owned_raw_constraints": 64,
+    "keyword_occurrences": 65,
+    "material_schema_constraints": 64,
+    "multi_owned_raw_constraints": 18,
+    "schema_nodes": 42,
+    "unowned_material_constraints": 0
+  },
+  "execution": "DECLARATION_INVENTORY_ONLY_NOT_INSTANCE_VALIDATION",
+  "schema_nodes": [
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": ""
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/0"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/0/properties/decision"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/0/properties/material_asks"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/0/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/0/properties/material_asks/items/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/0/properties/policy_context_status"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/0/properties/reason_code"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/1"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/1/properties/decision"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/1/properties/material_asks"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/1/properties/material_asks/contains"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/1/properties/material_asks/contains/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/1/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/1/properties/material_asks/items/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/1/properties/policy_context_status"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/1/properties/reason_code"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/2"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/2/anyOf/0"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/2/anyOf/0/properties/policy_context_status"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/2/anyOf/1"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/2/anyOf/1/properties/material_asks"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/2/properties/decision"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/oneOf/2/properties/reason_code"
+    },
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": "/properties/decision"
+    },
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": "/properties/material_asks"
+    },
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/allOf/0"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/allOf/0/else"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/allOf/0/if"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/allOf/0/if/properties/support_status"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/allOf/0/then"
+    },
+    {
+      "conditional_scope": true,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks"
+    },
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/properties/ask"
+    },
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/properties/support_status"
+    },
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks"
+    },
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": "/properties/material_asks/items/properties/supporting_evidence_ranks/items"
+    },
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": "/properties/policy_context_status"
+    },
+    {
+      "conditional_scope": false,
+      "kind": "object",
+      "pointer": "/properties/reason_code"
+    }
+  ],
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e"
+}

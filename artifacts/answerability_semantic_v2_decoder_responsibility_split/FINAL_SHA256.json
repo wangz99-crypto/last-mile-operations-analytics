@@ -1,0 +1,31 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "Raw worktree bytes of all candidate files except this receipt. Artifacts have exact -text rules; Python/attributes retain normal Git text handling.",
+  "self_hash": "Reported externally; no circular self-hash",
+  "sha256": {
+    ".gitattributes": "fcbd63f79b7d52ffa61756fddd26650987fed58d92a7bec1b5cb45e409deda93",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/ACCEPTANCE_STATE_GRAPH.json": "589ae087d4e467f36842a9baf6b6c1b34c1b988bf8d3c5d5f5dc1f9fbfdc7a44",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/ADAPTER_RESPONSIBILITY_CONTRACT.md": "1df9f843ad150aa70748c95a015038f18edb2c487bbd7c17799e4486c918a3b8",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/ARCHITECTURE_REGISTRY.json": "8a2f1253a3b67c8a91c534cdf8a2c20324b79f1e9f506d37d44a2762b182bd66",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/CANDIDATE_VERSIONING_DECISION.md": "36dcfcb583494476a462a6db6c34f26eacb071f4f21842be40dca3ddee79a209",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/COMPLETION_REPORT.md": "51d71ccda4f96c0b61312daf7fa11846c7bd6309b8e18d125395e2c25fcc5cb5",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/ENVIRONMENT_INTEGRITY.json": "11cdb0997accc1894ece74cca5cba0aae1fbdc9dc37b758ae6268d3b88ec9678",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/EXACT_VALIDATOR_CONTRACT.md": "b2ad6b7c3e51f4562156fe720c3ea70f3ee5e83e718eb0bc7e7e0e60286e9909",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/FROZEN_SCHEMA_CONSTRAINT_INVENTORY.json": "5fc0d85c36a8687adc4a36f28fb8071c61571ff168496d55a4440edb4103fe1c",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/FUTURE_QUALIFICATION_LADDER.md": "7e418e5c0473a4e84773ec19bc63be3b263472ebd2bc9eb290a656843ed78cd8",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/GIT_REVIEW.json": "e517a9b320609238c6540e07b86d934b5a015bdb5a0922a9289482eaeaed6ddf",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/HISTORICAL_DECODER_EVIDENCE.md": "148c6cab6168b40e38759d3260b10ebfb968fd1781099864740de308c0a2af87",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/HISTORICAL_INTEGRITY_RECEIPT.json": "34563874ed3ffee17f1206f14a824c0685d339fc10ef8a1f476a458a755f315c",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/M1_M8_TREATMENT.json": "b03dc04f8787a3a2d8e31b0d29f5210c6de250648d6dd36854432d0a26a13939",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/MANDATORY_DECODER_CONSTRAINTS.md": "1f41d4a3cdcfdde3dabc7d596406023885b2f11fcf768b64a6b8f6b979bc670d",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/OFFLINE_TEST_RESULTS.json": "582150a03e908b76f3df2010cffbc3b6c6600c45d974fae92025b1ed98842d05",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/PHASE_ACCOUNTING.json": "c9dace122070f569105255c68a2026a5d29aebc9d83eeb326ceda6c7ec74f90e",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/PREREGISTRATION_RECORD.md": "00529f69131909bde90d5b5d9c8bf4e719c875f0ad8d67717554c09f41deae59",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/RESPONSIBILITY_SPLIT_PROTOCOL.md": "677e3b841b464c26e372d28c8f1f21af1c213456f1d948060f2c8f720544318b",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/STRUCTURAL_ENFORCEMENT_MATRIX.json": "7e24ba10ab8760006ee2129f6a3ab7a0ec479e1cf0bae6c6343215e193b9cae9",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/STRUCTURAL_ERROR_TAXONOMY.json": "35de07ce8e85c5e79215a6e56d8842c38816fbd794a675850574bebd3d9a6ecd",
+    "artifacts/answerability_semantic_v2_decoder_responsibility_split/TWO_LAYER_ACCEPTANCE_CONTRACT.md": "906294f40e4b94fd64218d8856bc84e75c50b2930e1298d0cd2f209ace24098f",
+    "gateway/domain/evaluation/answerability/preregister_responsibility_split.py": "41bd4c85e0846158a8b5f116150b51ed7a3596f4bb6774f0e5313bf0c9238746",
+    "gateway/domain/tests/test_decoder_responsibility_split.py": "6b051b7ef8509b1b95a6af4021c583de731ee6447ac8b078291e4cf9135cc9ec"
+  }
+}

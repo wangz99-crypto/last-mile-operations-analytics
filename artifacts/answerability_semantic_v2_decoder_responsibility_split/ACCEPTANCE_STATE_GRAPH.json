@@ -1,0 +1,119 @@
+{
+  "entry": "DECODER_VERIFY",
+  "kind": "DECLARATIVE_ARCHITECTURE_NOT_EXECUTABLE_PIPELINE",
+  "raw_structural_checkpoint": "The first three PASS states establish combined structural acceptance per definition; adapter PASS is additionally required before final accepted GateOutput or semantic scoring.",
+  "states": {
+    "ADAPTER": {
+      "ERROR": {
+        "disposition": "STRUCTURAL_INVALID",
+        "fault": "CANDIDATE_ERROR",
+        "halt": true,
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN",
+        "valid_rejection": false
+      },
+      "NOT_RUN": {
+        "disposition": "STRUCTURAL_INVALID",
+        "fault": "INCOMPLETE",
+        "halt": true,
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN"
+      },
+      "PASS": "COMBINED_STRUCTURAL_ACCEPT",
+      "REJECT": {
+        "disposition": "STRUCTURAL_INVALID",
+        "halt": true,
+        "reason": "ADAPTER_STRUCTURAL_REJECT",
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN"
+      }
+    },
+    "DECODER_VERIFY": {
+      "ERROR": {
+        "disposition": "STRUCTURAL_INVALID",
+        "fault": "CANDIDATE_ERROR",
+        "halt": true,
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN",
+        "valid_rejection": false
+      },
+      "NOT_RUN": {
+        "disposition": "STRUCTURAL_INVALID",
+        "fault": "INCOMPLETE",
+        "halt": true,
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN"
+      },
+      "PASS": "JSON_PARSE",
+      "REJECT": {
+        "disposition": "STRUCTURAL_INVALID",
+        "halt": true,
+        "reason": "DECODER_STRUCTURAL_REJECT",
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN"
+      }
+    },
+    "EXACT_SCHEMA": {
+      "ERROR": {
+        "disposition": "STRUCTURAL_INVALID",
+        "fault": "CANDIDATE_ERROR",
+        "halt": true,
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN",
+        "valid_rejection": false
+      },
+      "NOT_RUN": {
+        "disposition": "STRUCTURAL_INVALID",
+        "fault": "INCOMPLETE",
+        "halt": true,
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN"
+      },
+      "PASS": "ADAPTER",
+      "REJECT": {
+        "disposition": "STRUCTURAL_INVALID",
+        "halt": true,
+        "reason": "EXACT_SCHEMA_REJECT",
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN"
+      }
+    },
+    "JSON_PARSE": {
+      "ERROR": {
+        "disposition": "STRUCTURAL_INVALID",
+        "fault": "CANDIDATE_ERROR",
+        "halt": true,
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN",
+        "valid_rejection": false
+      },
+      "NOT_RUN": {
+        "disposition": "STRUCTURAL_INVALID",
+        "fault": "INCOMPLETE",
+        "halt": true,
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN"
+      },
+      "PASS": "EXACT_SCHEMA",
+      "REJECT": {
+        "disposition": "STRUCTURAL_INVALID",
+        "halt": true,
+        "reason": "JSON_PARSE_FAILED",
+        "repair": false,
+        "retries": 0,
+        "semantic_evaluation": "NOT_RUN"
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "downloaded_source_tree": false,
+  "inspected_json_source_paths": [
+    "parser/src/json/README.md",
+    "parser/src/json/compiler.rs",
+    "parser/src/json/context_ref.rs",
+    "parser/src/json/context_simple/context.rs",
+    "parser/src/json/context_simple/draft.rs",
+    "parser/src/json/context_simple/mod.rs",
+    "parser/src/json/mod.rs",
+    "parser/src/json/schema.rs",
+    "parser/src/json/shared_context.rs"
+  ],
+  "release_tree_sha": "f0971424ec072d3e4d4196bcc7f31a2f60527df9",
+  "requests": [
+    {
+      "bytes": 65609,
+      "final_url": "https://api.github.com/repos/guidance-ai/llguidance/git/trees/v1.9.1?recursive=1",
+      "http_status": 200,
+      "sha256": "594907d6b73482aaba30a7d53da24e5c10f045cf0cb4125aa165ea27fc28316b",
+      "url": "https://api.github.com/repos/guidance-ai/llguidance/git/trees/v1.9.1?recursive=1",
+      "utc": "2026-10-13T20:45:23.404140+00:00"
+    },
+    {
+      "bytes": 8542,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/docs/json_schema.md",
+      "http_status": 200,
+      "sha256": "4fb2d3a4516e76527a19d8a722a76e45563b4e37f0d1bacb16e525a11db1cbe5",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/docs/json_schema.md",
+      "utc": "2026-10-13T20:45:23.647913+00:00"
+    },
+    {
+      "bytes": 26028,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/python/llguidance/_lib.pyi",
+      "http_status": 200,
+      "sha256": "b430840677605549a022953e2c339c813362523c1865d6b809a8856b0de95d5b",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/python/llguidance/_lib.pyi",
+      "utc": "2026-10-13T20:45:23.849532+00:00"
+    },
+    {
+      "bytes": 102,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/context_simple/mod.rs",
+      "http_status": 200,
+      "sha256": "36adb59de79e1736176dd555dd13144f1045f51c7df64f614e0688e19f1bccc8",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/context_simple/mod.rs",
+      "utc": "2026-10-13T20:45:24.066870+00:00"
+    },
+    {
+      "bytes": 1211,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/mod.rs",
+      "http_status": 200,
+      "sha256": "4a06ee403f718219d76619063e774049a55fef6ae7ec1f019836e3143456b8f3",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/mod.rs",
+      "utc": "2026-10-13T20:45:24.203659+00:00"
+    },
+    {
+      "bytes": 46625,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/schema.rs",
+      "http_status": 200,
+      "sha256": "3b043d701153560437e423f28b1924779323ea960c5e80761e3a461dd39001bb",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/schema.rs",
+      "utc": "2026-10-13T20:45:24.340654+00:00"
+    },
+    {
+      "bytes": 51928,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/compiler.rs",
+      "http_status": 200,
+      "sha256": "afb33d27eadaee74cda39ff495bc7efb6488533bada0b505909480ab77d7243b",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/compiler.rs",
+      "utc": "2026-10-13T20:46:10.146702+00:00"
+    },
+    {
+      "bytes": 3048,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/context_simple/context.rs",
+      "http_status": 200,
+      "sha256": "33f29f33e26d660a9e9bfe711d17670c294b1dc90359c72dd26b4fb136e0f58c",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/context_simple/context.rs",
+      "utc": "2026-10-13T20:46:10.344661+00:00"
+    },
+    {
+      "bytes": 5032,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/context_simple/draft.rs",
+      "http_status": 200,
+      "sha256": "80cd1444218d8094c84b652b72920948cdd4ba9212ff4fd8f96d752d879e8350",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/context_simple/draft.rs",
+      "utc": "2026-10-13T20:46:10.547618+00:00"
+    },
+    {
+      "bytes": 160,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/README.md",
+      "http_status": 200,
+      "sha256": "db74e75b491dbacc8446e2c4d06a0ab50ed7c8cb82e2a4ec823059fd27e55040",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/README.md",
+      "utc": "2026-10-13T20:46:10.746086+00:00"
+    },
+    {
+      "bytes": 26028,
+      "final_url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/python/llguidance/_lib.pyi",
+      "http_status": 200,
+      "sha256": "b430840677605549a022953e2c339c813362523c1865d6b809a8856b0de95d5b",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/python/llguidance/_lib.pyi",
+      "utc": "2026-10-13T20:46:10.779078+00:00"
+    },
+    {
+      "bytes": 6057,
+      "http_status": 200,
+      "sha256": "910f0073519a8392a35be8513e76ad10806b641fcb622d9380f4ebd3046ab8e5",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/shared_context.rs",
+      "utc": "2026-10-13T20:47:03.583545+00:00"
+    },
+    {
+      "bytes": 3523,
+      "http_status": 200,
+      "sha256": "84718da43b875ebc3da5f6c5d9cd3a487218a5caabc60dd23a15256fc579fd8f",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/context_ref.rs",
+      "utc": "2026-10-13T20:47:03.797906+00:00"
+    },
+    {
+      "bytes": 46625,
+      "http_status": 200,
+      "purpose": "confirm blocking keyword dispatch; source read only",
+      "sha256": "3b043d701153560437e423f28b1924779323ea960c5e80761e3a461dd39001bb",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/schema.rs",
+      "utc": "2026-10-13T20:52:31.201573+00:00"
+    },
+    {
+      "bytes": 6057,
+      "http_status": 200,
+      "purpose": "confirm blocking keyword dispatch; source read only",
+      "sha256": "910f0073519a8392a35be8513e76ad10806b641fcb622d9380f4ebd3046ab8e5",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/shared_context.rs",
+      "utc": "2026-10-13T20:52:31.304731+00:00"
+    },
+    {
+      "bytes": 5032,
+      "http_status": 200,
+      "purpose": "confirm blocking keyword dispatch; source read only",
+      "sha256": "80cd1444218d8094c84b652b72920948cdd4ba9212ff4fd8f96d752d879e8350",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/context_simple/draft.rs",
+      "utc": "2026-10-13T20:52:31.419887+00:00"
+    },
+    {
+      "bytes": 46625,
+      "http_status": 200,
+      "purpose": "verify strict rejection path line locations",
+      "sha256": "3b043d701153560437e423f28b1924779323ea960c5e80761e3a461dd39001bb",
+      "url": "https://raw.githubusercontent.com/guidance-ai/llguidance/v1.9.1/parser/src/json/schema.rs",
+      "utc": "2026-10-13T20:53:05.908844+00:00"
+    }
+  ],
+  "source_execution": false
+}

@@ -1,0 +1,39 @@
+{
+  "dependency_closure_qualified": false,
+  "package_inventory_matches_frozen": true,
+  "package_mutations": 0,
+  "packages": {
+    "llguidance": {
+      "current_runtime_tag_compatible": true,
+      "installed": false,
+      "python_3_12_10_compatible": true,
+      "requires_python": ">=3.10",
+      "runtime_capability": "NOT_ASSESSED",
+      "selected_wheel_sha256": "8aaa55958adb4871016700e9140543ccbd9d6b5136d0a1756a114af706cc50c1",
+      "wheel": "llguidance-1.9.1-cp39-abi3-win_amd64.whl",
+      "wheel_tags": [
+        "cp39-abi3-win_amd64"
+      ]
+    },
+    "outlines": {
+      "current_runtime_tag_compatible": true,
+      "installed": false,
+      "python_3_12_10_compatible": true,
+      "requires_python": "<3.14,>=3.10",
+      "runtime_capability": "NOT_ASSESSED",
+      "selected_wheel_sha256": "0e185dd5a0cfeb62e0268018972d3c22bb9b7d43db3dc1f39f3b754175a82c54",
+      "wheel": "outlines-1.3.3-py3-none-any.whl",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    }
+  },
+  "runtime": {
+    "device": "CPU",
+    "platform": "Windows AMD64",
+    "precision": "FP32",
+    "python": "3.12.10",
+    "torch": "2.14.0+cpu",
+    "transformers": "4.57.6"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "initial_wrapper_stop": "importlib attempted a bytecode-cache read outside the strict file allowlist before tests began. No decoder/model/schema execution. Loaded the same Python test source directly under the unchanged guard; no test or scientific configuration change.",
+  "model_or_decoder_modules_imported": [],
+  "passed": true,
+  "runtime_guard": {
+    "blocked_import_modules": [
+      "llguidance",
+      "lmformatenforcer",
+      "outlines",
+      "sentence_transformers",
+      "tokenizers",
+      "torch",
+      "transformers",
+      "xgrammar"
+    ],
+    "network_and_subprocess_blocked": true,
+    "repository_read_allowlist": "this phase artifacts, exact test, 249 explicitly listed historical artifacts/sources only",
+    "violations": []
+  },
+  "scope": "offline preregistration record checks; NOT decoder qualification",
+  "test_output": "test_core_fixture_identity_and_expectations (offline_prereg_tests.LLGuidancePreregistrationTests.test_core_fixture_identity_and_expectations) ... ok\ntest_dependency_classifications_cover_every_declared_edge (offline_prereg_tests.LLGuidancePreregistrationTests.test_dependency_classifications_cover_every_declared_edge) ... ok\ntest_exact_schema_bytes_and_candidate (offline_prereg_tests.LLGuidancePreregistrationTests.test_exact_schema_bytes_and_candidate) ... ok\ntest_frozen_model_identity_and_future_budget (offline_prereg_tests.LLGuidancePreregistrationTests.test_frozen_model_identity_and_future_budget) ... ok\ntest_historical_rejections_and_byte_integrity (offline_prereg_tests.LLGuidancePreregistrationTests.test_historical_rejections_and_byte_integrity) ... ok\ntest_known_risk_pointers_exist_without_schema_conversion (offline_prereg_tests.LLGuidancePreregistrationTests.test_known_risk_pointers_exist_without_schema_conversion) ... ok\ntest_mandatory_ladder_order (offline_prereg_tests.LLGuidancePreregistrationTests.test_mandatory_ladder_order) ... ok\ntest_material_keyword_inventory_matches_raw_schema (offline_prereg_tests.LLGuidancePreregistrationTests.test_material_keyword_inventory_matches_raw_schema) ... ok\ntest_no_oneof_coercion_or_lenient_relaxation (offline_prereg_tests.LLGuidancePreregistrationTests.test_no_oneof_coercion_or_lenient_relaxation) ... ok\ntest_no_tokenizer_or_model_before_pure_gates (offline_prereg_tests.LLGuidancePreregistrationTests.test_no_tokenizer_or_model_before_pure_gates) ... ok\ntest_offline_test_import_surface (offline_prereg_tests.LLGuidancePreregistrationTests.test_offline_test_import_surface) ... ok\ntest_only_owner_selected_stack (offline_prereg_tests.LLGuidancePreregistrationTests.test_only_owner_selected_stack) ... ok\ntest_release_wheel_identities (offline_prereg_tests.LLGuidancePreregistrationTests.test_release_wheel_identities) ... ok\ntest_runtime_inventory_no_selected_packages (offline_prereg_tests.LLGuidancePreregistrationTests.test_runtime_inventory_no_selected_packages) ... ok\ntest_source_blocker_is_not_a_measured_qualification (offline_prereg_tests.LLGuidancePreregistrationTests.test_source_blocker_is_not_a_measured_qualification) ... ok\ntest_zero_execution_and_quarantine_record (offline_prereg_tests.LLGuidancePreregistrationTests.test_zero_execution_and_quarantine_record) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 1.257s\n\nOK\n",
+  "tests_run": 16
+}

@@ -1,0 +1,31 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "raw worktree bytes of all candidate files except this self-referential receipt; Python/.gitattributes retain normal Git text handling, artifacts use exact -text rules",
+  "self_hash": "reported separately in completion response",
+  "sha256": {
+    ".gitattributes": "96b2e4c11896217034186407456cce4eda7bbcb77b1dce7396583ed86bad3617",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/COMPLETION_REPORT.md": "b3ff25bf07a7aca29a5bc3426db85dff6f18d80974e6bc1152016307dab542d7",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/DECLARED_DEPENDENCY_GRAPH.json": "f51f3c57f7a8e830426adcaa7877812f51957fa8cd990382c33bc0430142fc89",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/ENVIRONMENT_COMPATIBILITY_MATRIX.json": "bb261c47b0ef8794f7f4f6fa13530586b2e387fa1178fcd6ea68b85e03570692",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/ENVIRONMENT_METADATA_SNAPSHOT.json": "00b635d6dd1a3458e78db08d3a0a1c12de90c7b95684f231efdfda5af1a24d0d",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/FINAL_ENVIRONMENT_VERIFICATION.json": "7b21fc185ea9989f20893149bb4a1fa70d274f8cacc8d8c8a966c95499a061d1",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/FUTURE_STRUCTURAL_GATE.md": "7747e882ea63628d5ce31de0e315044c40bb2ed85080599632b23bc45235eec2",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/GIT_REVIEW.json": "76321c74aca3b8bb665ba1c554caa1d924bcbb5ed795ee8214221d84698e7897",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/HISTORICAL_INTEGRITY_RECEIPT.json": "47b6cee57b5251f630ac83bd575f5f3cc0677fd0e2fb92cb41bd23e1dcf7c387",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/INTEGRATION_STACK_CONTRACT.md": "10ddd36eb3cada03a5d09d0bc122e72cbd548832d3ef5651753408f5d6e63aad",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/JSON_SCHEMA_CAPABILITY_MATRIX.json": "9bd262000fb3d76b14d7ec17491d583a1d5d074808ec09163b57001c9430a2c7",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/KNOWN_RISK_SCHEMA_SHAPES.md": "da0f069186390525b655a4f5009e708652d5af1ff0f83ec456ca4a4d262a7895",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/LLGUIDANCE_PACKAGE_IDENTITY.json": "a4c74eb7df4b3390afb11438fb7823afd4546dcaf6691d477ee4c847a898e24c",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/LLGUIDANCE_STACK_PREREG_PROTOCOL.md": "6a50b94ce0b5d5a25bda5de91fbec010003231e8bf47f7277e8f41daefc88b1e",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/NETWORK_SCOPE_SUMMARY.json": "b19396f1b73ca70bb87d680e49423d4a4ce3a47490b315429024e7013f9905d5",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/OFFLINE_TEST_RESULTS.json": "04de17a448b54137fec3b1a7fdf6bc944dfe3fa88b14d15ea525ea81f8d03bca",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/OUTLINES_PACKAGE_IDENTITY.json": "8d38adb9e3ff4e31f5c687be3f634ea2569085f3250c959096618e167d8af32f",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/PHASE_ACCOUNTING.json": "560e70dc074dc4fbc6e4a4cae70cc93d1cdd843cde9439cf9372ca8dd38d73a7",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/PREREGISTERED_STACK.json": "0768db98e661118b3e4c2d8a3096090596617b44070114444db503c2c63bb03d",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/PREREGISTRATION_RECORD.md": "de2c52c9c52ed609f5ec08295f61482094df1b416fa1840213f68bfb61ef20cb",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/RELEASE_METADATA_RECEIPT.json": "4cf1e11e920f471f7fa492ea8c5d9f5770bf02dec2b4587e4045cd0613b26a97",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/STACK_SELECTION_RECORD.md": "422dff9c61b53ac7a44fd2ff768ecf0a1088adf5e744405818e9e2423f93f444",
+    "artifacts/answerability_semantic_v2_llguidance_stack_prereg/UPSTREAM_SOURCE_RECEIPT.json": "cb71264da54d3ee2f77c038411df1065291e0bb0e84d4b382db496b23c202398",
+    "gateway/domain/tests/test_llguidance_stack_prereg.py": "d30df23eeb9a7d98b451fad14e2337125609c1279135efc32ebabeb8efc684f4"
+  }
+}

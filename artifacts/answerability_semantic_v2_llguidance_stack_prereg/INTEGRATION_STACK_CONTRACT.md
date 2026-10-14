@@ -1,0 +1,7 @@
+# Conditional stack responsibilities
+
+llguidance owns JSON Schema grammar construction/compilation, grammar validation, pure matcher structural enforcement and token-mask semantics. Outlines owns future Transformers integration, llguidance backend wiring and the structured-generation adapter. The deterministic V2 adapter continues to own evidence-rank to canonical policy identity mapping, rank validity against the actual returned evidence count, cross-field semantic consistency and frozen GateOutput mapping. No semantic business rules move into the decoder.
+
+Future integration is exclusively outlines==1.3.3 with llguidance==1.9.1 and local Transformers. Exact release/installed API paths and dependency closure remain NOT FROZEN / NOT AUTHORIZED; they must be frozen before installation or execution. No current-main API is assumed. Integration cannot start until all pure structural gates pass, and the current static blocker prevents even K0.
+
+Model identity remains Qwen/Qwen2.5-1.5B-Instruct, revision 989aa7980e4cf806f80c7fef2b1adb7bc71aa306, Windows, CPU FP32, Python 3.12.10, torch 2.14.0+cpu, transformers 4.57.6. Any later smoke must use repetition_penalty=1.0 and the complete frozen scientific configuration; do not inherit the prior unauthorized 1.1. No model activity is authorized here. Conditional future budget is exactly three generate calls, no quality or schema-repair retries.

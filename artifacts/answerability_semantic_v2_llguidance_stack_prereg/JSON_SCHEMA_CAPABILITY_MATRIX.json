@@ -1,0 +1,314 @@
+{
+  "architectural_fit_only": {
+    "Python": "Requires-Python >=3.10; frozen 3.12.10 compatible by metadata",
+    "Windows": "cp39-abi3-win_amd64 release wheel compatible by local packaging.tags check",
+    "allOf": "Native keyword but conditional/partial intersection handling; no project flattening",
+    "anyOf": "Implemented keyword, exact V2 use unqualified",
+    "const_enum": "Implemented keywords; not qualification evidence",
+    "matcher": "LLMatcher constructor requires LLTokenizer; token-oriented error state and EOS behavior require future acceptance specification",
+    "oneOf": "Native keyword but conditional/partial; exact disjointness or equivalent semantics required; coerce_one_of=false",
+    "references": "Implemented subject to documented restrictions; no remote/external resolution; absent from frozen V2",
+    "schema_to_grammar": "LLMatcher.grammar_from_json_schema; construction alone not proof of complete compilation",
+    "sibling_keywords": "Combined/intersected constraints described in release documentation; exact interactions remain unqualified",
+    "type": "Single/multiple types supported in upstream documentation; primitive enforcement must still qualify",
+    "validation": "LLMatcher.validate_grammar / validate_grammar_with_warnings; warnings and is_error state must be preserved"
+  },
+  "assessment_method": "STATIC_RELEASE_SOURCE_REVIEW_ONLY",
+  "blocker_keywords": [
+    "uniqueItems",
+    "contains",
+    "if",
+    "then",
+    "else"
+  ],
+  "capability": "NOT_ASSESSED_BY_EXECUTION",
+  "features": {
+    "$ref": {
+      "criticality": "NOT_PRESENT",
+      "pointers": [],
+      "present": false,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "PARTIAL_CONDITIONAL"
+    },
+    "additionalProperties": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/additionalProperties",
+        "/properties/material_asks/items/additionalProperties"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "allOf": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/allOf"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "PARTIAL_CONDITIONAL"
+    },
+    "anyOf": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/oneOf/2/anyOf"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "const": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/oneOf/0/properties/decision/const",
+        "/oneOf/0/properties/material_asks/items/properties/support_status/const",
+        "/oneOf/0/properties/policy_context_status/const",
+        "/oneOf/0/properties/reason_code/const",
+        "/oneOf/1/properties/decision/const",
+        "/oneOf/1/properties/material_asks/contains/properties/support_status/const",
+        "/oneOf/1/properties/policy_context_status/const",
+        "/oneOf/1/properties/reason_code/const",
+        "/oneOf/2/anyOf/0/properties/policy_context_status/const",
+        "/oneOf/2/anyOf/1/properties/material_asks/contains/properties/support_status/const",
+        "/oneOf/2/properties/decision/const",
+        "/oneOf/2/properties/reason_code/const",
+        "/properties/material_asks/items/allOf/0/if/properties/support_status/const"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "contains": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/oneOf/1/properties/material_asks/contains",
+        "/oneOf/2/anyOf/1/properties/material_asks/contains"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "KNOWN_UNIMPLEMENTED_STRICT_REJECTION_PATH"
+    },
+    "else": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/allOf/0/else"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "KNOWN_UNIMPLEMENTED_STRICT_REJECTION_PATH"
+    },
+    "enum": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/oneOf/1/properties/material_asks/items/properties/support_status/enum",
+        "/properties/decision/enum",
+        "/properties/material_asks/items/properties/support_status/enum",
+        "/properties/policy_context_status/enum",
+        "/properties/reason_code/enum"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "exclusiveMaximum": {
+      "criticality": "NOT_PRESENT",
+      "pointers": [],
+      "present": false,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "exclusiveMinimum": {
+      "criticality": "NOT_PRESENT",
+      "pointers": [],
+      "present": false,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "if": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/allOf/0/if"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "KNOWN_UNIMPLEMENTED_STRICT_REJECTION_PATH"
+    },
+    "items": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/oneOf/0/properties/material_asks/items",
+        "/oneOf/1/properties/material_asks/items",
+        "/properties/material_asks/items",
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/items"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "maxItems": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks/maxItems",
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/maxItems",
+        "/properties/material_asks/maxItems"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "maxLength": {
+      "criticality": "NOT_PRESENT",
+      "pointers": [],
+      "present": false,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "maximum": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/items/maximum"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "minItems": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks/minItems",
+        "/properties/material_asks/minItems"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "minLength": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/properties/ask/minLength"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "minimum": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/items/minimum"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "oneOf": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/oneOf"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "PARTIAL_CONDITIONAL"
+    },
+    "pattern": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/properties/ask/pattern"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "properties": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/oneOf/0/properties",
+        "/oneOf/0/properties/material_asks/items/properties",
+        "/oneOf/1/properties",
+        "/oneOf/1/properties/material_asks/contains/properties",
+        "/oneOf/1/properties/material_asks/items/properties",
+        "/oneOf/2/anyOf/0/properties",
+        "/oneOf/2/anyOf/1/properties",
+        "/oneOf/2/anyOf/1/properties/material_asks/contains/properties",
+        "/oneOf/2/properties",
+        "/properties",
+        "/properties/material_asks/items/allOf/0/else/properties",
+        "/properties/material_asks/items/allOf/0/if/properties",
+        "/properties/material_asks/items/allOf/0/then/properties",
+        "/properties/material_asks/items/properties"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "required": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/required",
+        "/required"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "then": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/allOf/0/then"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "KNOWN_UNIMPLEMENTED_STRICT_REJECTION_PATH"
+    },
+    "type": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/properties/ask/type",
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+        "/properties/material_asks/items/type",
+        "/properties/material_asks/type",
+        "/type"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "IMPLEMENTED_KEYWORD_NOT_QUALIFIED"
+    },
+    "uniqueItems": {
+      "criticality": "CRITICAL",
+      "pointers": [
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/uniqueItems"
+      ],
+      "present": true,
+      "qualification": "NOT_EXECUTED",
+      "upstream_status": "KNOWN_UNIMPLEMENTED_STRICT_REJECTION_PATH"
+    }
+  },
+  "json_schema_support_assumed_complete": false,
+  "outcome": "LLGUIDANCE_STACK_PREREGISTRATION_BLOCKED",
+  "qualification_failure_claimed": false,
+  "schema_path": "artifacts/answerability_semantic_gate_v2_prereg/RAW_ASSESSMENT_SCHEMA_V2.json",
+  "schema_sha256": "6fd9429c6238525dadf259d8a3b2b877b0da2b9bc1c2e8f44c42bbe1d07dfc1e",
+  "source_findings": [
+    {
+      "finding": "The implemented and annotation lists omit uniqueItems, contains, if, then, else. Known unimplemented keys trigger an error when lenient is false; lenient records a warning and omits enforcement.",
+      "lines": "16-49, 54-68, 617-630",
+      "path": "parser/src/json/schema.rs"
+    },
+    {
+      "finding": "Known keywords are valid only if implemented or classified as annotations.",
+      "lines": "128-135",
+      "path": "parser/src/json/shared_context.rs"
+    },
+    {
+      "finding": "uniqueItems is known; contains is known from Draft6; if/then/else are known from Draft7, including the V2 2020-12 dialect.",
+      "lines": "102-114",
+      "path": "parser/src/json/context_simple/draft.rs"
+    },
+    {
+      "finding": "oneOf and allOf support are conditional/partial; references have limitations; declarations are not frozen-schema qualification.",
+      "path": "docs/json_schema.md"
+    }
+  ],
+  "source_receipt": "UPSTREAM_SOURCE_RECEIPT.json"
+}

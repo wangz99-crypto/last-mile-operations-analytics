@@ -1,0 +1,276 @@
+{
+  "metadata_url": "https://pypi.org/pypi/llguidance/1.9.1/json",
+  "name": "llguidance",
+  "project_urls": {
+    "issue_tracker": "https://github.com/microsoft/llguidance/issues",
+    "repository": "https://github.com/microsoft/llguidance"
+  },
+  "provides_extra": null,
+  "release_date_utc": "2026-09-30T19:13:08.592197Z",
+  "release_files": [
+    {
+      "digests": {
+        "blake2b_256": "045f1e6822fbc3361b5dd8e2ae40ea0a314b2390970d464f3930d4fd7e9d7a83",
+        "md5": "6d2fc87f017bb8353cc1f9ffde857755",
+        "sha256": "f824a817a841563d5b068a0dd22563e5f063cdbda382cf3f6e18c1c68c45db38"
+      },
+      "filename": "llguidance-1.9.1-cp314-cp314t-macosx_10_12_x86_64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:08.592197Z",
+      "url": "https://files.pythonhosted.org/packages/04/5f/1e6822fbc3361b5dd8e2ae40ea0a314b2390970d464f3930d4fd7e9d7a83/llguidance-1.9.1-cp314-cp314t-macosx_10_12_x86_64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "73bebd4f79bb2a88ee1ec0e677b61e4256e6008c677d68c996029af344f4eecc",
+        "md5": "386761c47a03c64df70b62c0a2bab532",
+        "sha256": "2d7aa419d8b63a528347f73ee57185b4172c8bb09287e5ef9eefe3eb6d709356"
+      },
+      "filename": "llguidance-1.9.1-cp314-cp314t-macosx_11_0_arm64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:10.625427Z",
+      "url": "https://files.pythonhosted.org/packages/73/be/bd4f79bb2a88ee1ec0e677b61e4256e6008c677d68c996029af344f4eecc/llguidance-1.9.1-cp314-cp314t-macosx_11_0_arm64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "b023421afd6f3422513007678543594b7dbed0602f0e293e19912eea6758d491",
+        "md5": "172221339b1dfd8d91a7eacba6411635",
+        "sha256": "8b29903d5108cefc715e013381c7474846e9b0edb5e2534000f5e3a3d870a293"
+      },
+      "filename": "llguidance-1.9.1-cp314-cp314t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:12.213854Z",
+      "url": "https://files.pythonhosted.org/packages/b0/23/421afd6f3422513007678543594b7dbed0602f0e293e19912eea6758d491/llguidance-1.9.1-cp314-cp314t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "1bb0942727dcf0ad8bb0ecec261d2243086c8577790502b3ffa0d0bf3d7f7048",
+        "md5": "a4275fbb8ab6ba947a8f8147949ac894",
+        "sha256": "a5dcbdd38bc75f149ed349525f3884160de80900952147a4b7ef40a5b1a4a1a1"
+      },
+      "filename": "llguidance-1.9.1-cp314-cp314t-manylinux_2_17_i686.manylinux2014_i686.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:13.979631Z",
+      "url": "https://files.pythonhosted.org/packages/1b/b0/942727dcf0ad8bb0ecec261d2243086c8577790502b3ffa0d0bf3d7f7048/llguidance-1.9.1-cp314-cp314t-manylinux_2_17_i686.manylinux2014_i686.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "9c781f2d501136395dfe8e77837a086069c72dbd179176ead88aa9c9e682f3af",
+        "md5": "d4eeb01549c2333e5fcc1270217d86b9",
+        "sha256": "34ad7bdff67219c7bf43ff60eb7b1d97232092fe7a40715ae330f894def04f82"
+      },
+      "filename": "llguidance-1.9.1-cp314-cp314t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:15.535993Z",
+      "url": "https://files.pythonhosted.org/packages/9c/78/1f2d501136395dfe8e77837a086069c72dbd179176ead88aa9c9e682f3af/llguidance-1.9.1-cp314-cp314t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "dfdf8f39f11fbb9ac4b43cf5854b2ac2c4fd6099033e1e17b9bb43e991fd7952",
+        "md5": "99b1fc8a1eb85ca2b27045693f727d16",
+        "sha256": "6216861eaeef0f96251d7a9ed1c26a228a4c7879c5f062092691f8f17087ae4e"
+      },
+      "filename": "llguidance-1.9.1-cp314-cp314t-win32.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:17.955357Z",
+      "url": "https://files.pythonhosted.org/packages/df/df/8f39f11fbb9ac4b43cf5854b2ac2c4fd6099033e1e17b9bb43e991fd7952/llguidance-1.9.1-cp314-cp314t-win32.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "403d7d46ff69c0743b6415666a15e63519700aa6fd1348a0b0a31ef84379f201",
+        "md5": "c65fb3f361d09c7c8c3e3bf3b0d892fe",
+        "sha256": "151a615f3d871fc096984b705daa211faccc78ed2f9e3a2a80e57283e16e2898"
+      },
+      "filename": "llguidance-1.9.1-cp314-cp314t-win_amd64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:19.360134Z",
+      "url": "https://files.pythonhosted.org/packages/40/3d/7d46ff69c0743b6415666a15e63519700aa6fd1348a0b0a31ef84379f201/llguidance-1.9.1-cp314-cp314t-win_amd64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "ace6fc736d29f46c216b0b1e3882b2a29d5ba2dc74b641ec312140a3cf5e21d6",
+        "md5": "8a39bf934afce3636a26204acbbb2f6c",
+        "sha256": "96b52f9d3eccb1d6c1ee4454c3424e8da5171c879e33c294a68e6c731fec25dc"
+      },
+      "filename": "llguidance-1.9.1-cp314-cp314t-win_arm64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:20.788626Z",
+      "url": "https://files.pythonhosted.org/packages/ac/e6/fc736d29f46c216b0b1e3882b2a29d5ba2dc74b641ec312140a3cf5e21d6/llguidance-1.9.1-cp314-cp314t-win_arm64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "48b5001504a719e61c8227158bed8c640ad35a58fa5416864c4ad4211d36a8f2",
+        "md5": "02f175739e8e6b7773b340b5e462281b",
+        "sha256": "367da91f0db6b494e1d4916e6ab3e3db3eb73f178fda6be32681c026af99f775"
+      },
+      "filename": "llguidance-1.9.1-cp39-abi3-macosx_10_12_x86_64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:22.273857Z",
+      "url": "https://files.pythonhosted.org/packages/48/b5/001504a719e61c8227158bed8c640ad35a58fa5416864c4ad4211d36a8f2/llguidance-1.9.1-cp39-abi3-macosx_10_12_x86_64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "6e6ef4acb8bd966e3533ebc888eeb7854482ece71668e002401a41bbfe37dd07",
+        "md5": "b857d8412b57663fa354561a231002aa",
+        "sha256": "a942487cd6221b793df3a11450881a6c9d25a45460a900c56d99b682633c45fe"
+      },
+      "filename": "llguidance-1.9.1-cp39-abi3-macosx_11_0_arm64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:23.717283Z",
+      "url": "https://files.pythonhosted.org/packages/6e/6e/f4acb8bd966e3533ebc888eeb7854482ece71668e002401a41bbfe37dd07/llguidance-1.9.1-cp39-abi3-macosx_11_0_arm64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "60d1a32019fec392f9072bf8193310d9676407e8027c5239690cc4e429e69935",
+        "md5": "af49450d3aff34106a086af88a9378de",
+        "sha256": "31b75c9f6e09d000d062ef7e4eb3bcb3759fc1eda5619be50fdd8a830b0e8bdf"
+      },
+      "filename": "llguidance-1.9.1-cp39-abi3-manylinux_2_31_aarch64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:25.551414Z",
+      "url": "https://files.pythonhosted.org/packages/60/d1/a32019fec392f9072bf8193310d9676407e8027c5239690cc4e429e69935/llguidance-1.9.1-cp39-abi3-manylinux_2_31_aarch64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "46c3b50a05a16af0a84f5a9a6fb4707006d3fc377d1b446599d23ac78f3e144c",
+        "md5": "40d08753537adfb204e3ad17c0403f96",
+        "sha256": "dfac6021d9c4c5ef16b3a1d336c05ca5e8208ff30dec29d1c63ebcafbee3a346"
+      },
+      "filename": "llguidance-1.9.1-cp39-abi3-manylinux_2_31_x86_64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:27.331359Z",
+      "url": "https://files.pythonhosted.org/packages/46/c3/b50a05a16af0a84f5a9a6fb4707006d3fc377d1b446599d23ac78f3e144c/llguidance-1.9.1-cp39-abi3-manylinux_2_31_x86_64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "79d0247dfe7b68ef71274255ab807f49f4684df9e8e899236a9cf62778f15186",
+        "md5": "6bc32fba2d3a6023c31b39f3d6767cac",
+        "sha256": "9892220b2698f58193ef54a886e5f3d5eb2a60d510db49ca4c492b46ebb786fd"
+      },
+      "filename": "llguidance-1.9.1-cp39-abi3-manylinux_2_34_i686.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:29.207663Z",
+      "url": "https://files.pythonhosted.org/packages/79/d0/247dfe7b68ef71274255ab807f49f4684df9e8e899236a9cf62778f15186/llguidance-1.9.1-cp39-abi3-manylinux_2_34_i686.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "dac2d52e40712d77906d938907eabbe5c6130fe64a90d4c207fc40ccdc63cc5b",
+        "md5": "20c9210fba0b1ff9eb0baf9344e8d241",
+        "sha256": "dd5c87df5e60a7d8f54f46bfd5e11abb10f93636712ace09a8c1d2a0c4aeade0"
+      },
+      "filename": "llguidance-1.9.1-cp39-abi3-manylinux_2_39_riscv64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:30.907721Z",
+      "url": "https://files.pythonhosted.org/packages/da/c2/d52e40712d77906d938907eabbe5c6130fe64a90d4c207fc40ccdc63cc5b/llguidance-1.9.1-cp39-abi3-manylinux_2_39_riscv64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "27936584ee3f527ef885e3055d8f90f8acf2670fb93ae36f6a3fc6fb54c46b4e",
+        "md5": "db7aa28307b870ce82c5318a806569d9",
+        "sha256": "cc7d1024c3df780a5eb14d30744539e8a1aa6d94c5dabf7605c82c0567d45a51"
+      },
+      "filename": "llguidance-1.9.1-cp39-abi3-win32.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:32.742415Z",
+      "url": "https://files.pythonhosted.org/packages/27/93/6584ee3f527ef885e3055d8f90f8acf2670fb93ae36f6a3fc6fb54c46b4e/llguidance-1.9.1-cp39-abi3-win32.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "4ae7650aa5e6615399255cc0342bccba16c6f636ca57c5d15df0e59bb65a1302",
+        "md5": "2444da2773ef97a8b9015299759c69f0",
+        "sha256": "8aaa55958adb4871016700e9140543ccbd9d6b5136d0a1756a114af706cc50c1"
+      },
+      "filename": "llguidance-1.9.1-cp39-abi3-win_amd64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:34.614840Z",
+      "url": "https://files.pythonhosted.org/packages/4a/e7/650aa5e6615399255cc0342bccba16c6f636ca57c5d15df0e59bb65a1302/llguidance-1.9.1-cp39-abi3-win_amd64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "834a889f5c7d1ab5f89ae1b3ec1c3ef20358717bed0ca4ca20fa35ce0c705d2d",
+        "md5": "c62b97ce320f1b67210b8534a10e45cd",
+        "sha256": "0ab9d2681c0fcb4389f3c1c79697f1e724771d74d366bb5a22edae155252dfed"
+      },
+      "filename": "llguidance-1.9.1-cp39-abi3-win_arm64.whl",
+      "packagetype": "bdist_wheel",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:36.092486Z",
+      "url": "https://files.pythonhosted.org/packages/83/4a/889f5c7d1ab5f89ae1b3ec1c3ef20358717bed0ca4ca20fa35ce0c705d2d/llguidance-1.9.1-cp39-abi3-win_arm64.whl",
+      "yanked": false
+    },
+    {
+      "digests": {
+        "blake2b_256": "1e2e3b0e13c1e01d5598708a6e7b77c55f3ae9c6c4e242a50a239f03ee800630",
+        "md5": "6578201851aaa7ab4510e5812df8aac5",
+        "sha256": "3ba1b37585d07f50bb73e06dca6d45c88c9d5801789c071c8ff784c9dbcc5c46"
+      },
+      "filename": "llguidance-1.9.1.tar.gz",
+      "packagetype": "sdist",
+      "requires_python": ">=3.10",
+      "upload_time_iso_8601": "2026-09-30T19:13:37.491029Z",
+      "url": "https://files.pythonhosted.org/packages/1e/2e/3b0e13c1e01d5598708a6e7b77c55f3ae9c6c4e242a50a239f03ee800630/llguidance-1.9.1.tar.gz",
+      "yanked": false
+    }
+  ],
+  "requires_dist": null,
+  "requires_python": ">=3.10",
+  "selected_wheel": {
+    "comment_text": null,
+    "core-metadata": {
+      "sha256": "198dee334426fa7fb9265b38d5550e0c8cfee21df06e7e4176a7e4b3db976b4b"
+    },
+    "digests": {
+      "blake2b_256": "4ae7650aa5e6615399255cc0342bccba16c6f636ca57c5d15df0e59bb65a1302",
+      "md5": "2444da2773ef97a8b9015299759c69f0",
+      "sha256": "8aaa55958adb4871016700e9140543ccbd9d6b5136d0a1756a114af706cc50c1"
+    },
+    "downloads": -1,
+    "filename": "llguidance-1.9.1-cp39-abi3-win_amd64.whl",
+    "has_sig": false,
+    "md5_digest": "2444da2773ef97a8b9015299759c69f0",
+    "packagetype": "bdist_wheel",
+    "python_version": "cp39",
+    "requires_python": ">=3.10",
+    "size": 2884987,
+    "upload_time": "2026-09-30T19:13:34",
+    "upload_time_iso_8601": "2026-09-30T19:13:34.614840Z",
+    "url": "https://files.pythonhosted.org/packages/4a/e7/650aa5e6615399255cc0342bccba16c6f636ca57c5d15df0e59bb65a1302/llguidance-1.9.1-cp39-abi3-win_amd64.whl",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "version": "1.9.1",
+  "wheel_downloaded": false,
+  "yanked": false,
+  "yanked_reason": null
+}

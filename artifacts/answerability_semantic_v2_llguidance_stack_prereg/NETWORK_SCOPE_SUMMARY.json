@@ -1,0 +1,18 @@
+{
+  "benchmark_requests": 0,
+  "initial_sandbox_DNS_failure": true,
+  "model_downloads": 0,
+  "official_hosts": [
+    "api.github.com",
+    "pypi.org",
+    "raw.githubusercontent.com"
+  ],
+  "package_index_resolution": 0,
+  "package_or_upstream_source_execution": 0,
+  "release_metadata_receipt": "RELEASE_METADATA_RECEIPT.json",
+  "source_tree_downloads": 0,
+  "successful_direct_metadata_source_requests": 19,
+  "upstream_source_receipt": "UPSTREAM_SOURCE_RECEIPT.json",
+  "web_tool_cache_transport_count": "NOT_INFERRED",
+  "wheel_downloads": 0
+}

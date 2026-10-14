@@ -1,0 +1,886 @@
+{
+  "llguidance": {
+    "declared_direct_edges": [],
+    "extras": [],
+    "transitive_resolution": "NOT_PERFORMED; no resolver; missing unpinned versions and dependency closure deferred to separately authorized enablement",
+    "version": "1.9.1"
+  },
+  "outlines": {
+    "declared_direct_edges": [
+      {
+        "distribution": "jinja2",
+        "groups": [
+          "base"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "3.1.6",
+        "metadata_exact_pin": null,
+        "requirement": "jinja2",
+        "status": "ALREADY_SATISFIED",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "cloudpickle",
+        "groups": [
+          "base"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "cloudpickle",
+        "status": "MISSING",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "diskcache",
+        "groups": [
+          "base"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "diskcache",
+        "status": "MISSING",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "pydantic",
+        "groups": [
+          "base"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "2.13.5",
+        "metadata_exact_pin": null,
+        "requirement": "pydantic>=2.0",
+        "status": "ALREADY_SATISFIED",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "jsonschema",
+        "groups": [
+          "base"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "jsonschema",
+        "status": "MISSING",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "pillow",
+        "groups": [
+          "base"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "pillow",
+        "status": "MISSING",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "typing-extensions",
+        "groups": [
+          "base"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "4.16.0",
+        "metadata_exact_pin": null,
+        "requirement": "typing_extensions",
+        "status": "ALREADY_SATISFIED",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "outlines-core",
+        "groups": [
+          "base"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": [
+          "0.2.14"
+        ],
+        "requirement": "outlines_core==0.2.14",
+        "status": "MISSING",
+        "version_selection": "EXACT_VERSION_PINNED_BY_RELEASE_METADATA"
+      },
+      {
+        "distribution": "genson",
+        "groups": [
+          "base"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "genson",
+        "status": "MISSING",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "anthropic",
+        "groups": [
+          "anthropic"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "anthropic; extra == \"anthropic\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "dottxt",
+        "groups": [
+          "dottxt"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "dottxt; extra == \"dottxt\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "google-genai",
+        "groups": [
+          "gemini"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "google-genai; extra == \"gemini\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "huggingface-hub",
+        "groups": [
+          "llamacpp"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "0.36.2",
+        "metadata_exact_pin": null,
+        "requirement": "huggingface-hub; extra == \"llamacpp\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "llama-cpp-python",
+        "groups": [
+          "llamacpp"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "llama-cpp-python; extra == \"llamacpp\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "numba",
+        "groups": [
+          "llamacpp"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "numba; extra == \"llamacpp\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "datasets",
+        "groups": [
+          "mlxlm"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "datasets; extra == \"mlxlm\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "mlx",
+        "groups": [
+          "mlxlm"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "mlx; extra == \"mlxlm\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "mlx-lm",
+        "groups": [
+          "mlxlm"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "mlx-lm; extra == \"mlxlm\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "lmstudio",
+        "groups": [
+          "lmstudio"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "lmstudio; extra == \"lmstudio\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "ollama",
+        "groups": [
+          "ollama"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "ollama; extra == \"ollama\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "openai",
+        "groups": [
+          "openai"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "openai; extra == \"openai\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "mistralai",
+        "groups": [
+          "mistral"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "mistralai; extra == \"mistral\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "openai",
+        "groups": [
+          "sglang"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "openai; extra == \"sglang\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "huggingface-hub",
+        "groups": [
+          "tgi"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "0.36.2",
+        "metadata_exact_pin": null,
+        "requirement": "huggingface_hub; extra == \"tgi\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "accelerate",
+        "groups": [
+          "transformers"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "1.15.0",
+        "metadata_exact_pin": null,
+        "requirement": "accelerate; extra == \"transformers\"",
+        "status": "ALREADY_SATISFIED",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "datasets",
+        "groups": [
+          "transformers"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "datasets; extra == \"transformers\"",
+        "status": "MISSING",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "transformers",
+        "groups": [
+          "transformers"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "4.57.6",
+        "metadata_exact_pin": null,
+        "requirement": "transformers; extra == \"transformers\"",
+        "status": "ALREADY_SATISFIED",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "setuptools",
+        "groups": [
+          "transformers"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "78.1.0",
+        "metadata_exact_pin": null,
+        "requirement": "setuptools; extra == \"transformers\"",
+        "status": "ALREADY_SATISFIED",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "sentencepiece",
+        "groups": [
+          "transformers"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "sentencepiece; extra == \"transformers\"",
+        "status": "MISSING",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "openai",
+        "groups": [
+          "vllm"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "openai; extra == \"vllm\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "xgrammar",
+        "groups": [
+          "xgrammar"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "0.2.8",
+        "metadata_exact_pin": null,
+        "requirement": "xgrammar; extra == \"xgrammar\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "llguidance",
+        "groups": [
+          "llguidance"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "llguidance; extra == \"llguidance\"",
+        "status": "MISSING",
+        "version_selection": "OWNER_SELECTED_1.9.1"
+      },
+      {
+        "distribution": "airportsdata",
+        "groups": [
+          "airports"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "airportsdata; extra == \"airports\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "iso3166",
+        "groups": [
+          "countries"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "iso3166; extra == \"countries\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "pre-commit",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "pre-commit; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "pytest",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "pytest; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "pytest-cov",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "pytest-cov; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "pytest-mock",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "pytest-mock; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "pytest-asyncio",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "pytest-asyncio; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "coverage",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "coverage[toml]>=5.1; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "diff-cover",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "diff-cover; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "accelerate",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "1.15.0",
+        "metadata_exact_pin": null,
+        "requirement": "accelerate; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "beartype",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "beartype<0.16.0; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "responses",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "responses; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "llama-cpp-python",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "llama-cpp-python; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "mlx-lm",
+        "groups": [],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "mlx-lm>=0.19.2; (platform_machine == \"arm64\" and sys_platform == \"darwin\") and extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "huggingface-hub",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "0.36.2",
+        "metadata_exact_pin": null,
+        "requirement": "huggingface_hub; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "openai",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "openai>=1.0.0; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "datasets",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "datasets; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "anthropic",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "anthropic; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "google-genai",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "google-genai; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "mistralai",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "mistralai; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "transformers",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "4.57.6",
+        "metadata_exact_pin": null,
+        "requirement": "transformers; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "pillow",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "pillow; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "jax",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "jax; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "flax",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "flax; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "numpy",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "VERSION_CONFLICT",
+        "installed_version": "2.5.3",
+        "metadata_exact_pin": null,
+        "requirement": "numpy<2.2.0,>=2.0.0; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "numba",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "numba; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "torch",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "2.14.0+cpu",
+        "metadata_exact_pin": null,
+        "requirement": "torch>2.3.0; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "tensorflow",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "tensorflow; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "tf-keras",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "tf-keras; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "ollama",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "ollama; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "lmstudio",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "lmstudio; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "dottxt",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "dottxt>=0.2.0; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "sentencepiece",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "sentencepiece; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "mkdocs-gen-files",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "mkdocs_gen_files; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "llguidance",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "llguidance; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "xgrammar",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "0.2.8",
+        "metadata_exact_pin": null,
+        "requirement": "xgrammar; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      },
+      {
+        "distribution": "airportsdata",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "airportsdata; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "iso3166",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "MISSING",
+        "installed_version": null,
+        "metadata_exact_pin": null,
+        "requirement": "iso3166; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "VERSION_SELECTION_PENDING_OWNER_AUTHORIZATION"
+      },
+      {
+        "distribution": "requests",
+        "groups": [
+          "test"
+        ],
+        "installed_compatibility_if_extra_enabled": "ALREADY_SATISFIED",
+        "installed_version": "2.34.2",
+        "metadata_exact_pin": null,
+        "requirement": "requests; extra == \"test\"",
+        "status": "OPTIONAL_NOT_REQUIRED_YET",
+        "version_selection": "NO_VERSION_SELECTION_PERFORMED"
+      }
+    ],
+    "extras": [
+      "anthropic",
+      "dottxt",
+      "gemini",
+      "llamacpp",
+      "mlxlm",
+      "lmstudio",
+      "ollama",
+      "openai",
+      "mistral",
+      "sglang",
+      "tgi",
+      "transformers",
+      "vllm",
+      "xgrammar",
+      "llguidance",
+      "airports",
+      "countries",
+      "test"
+    ],
+    "transitive_resolution": "NOT_PERFORMED; no resolver; missing unpinned versions and dependency closure deferred to separately authorized enablement",
+    "version": "1.3.3"
+  }
+}

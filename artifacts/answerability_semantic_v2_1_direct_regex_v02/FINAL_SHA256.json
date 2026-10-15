@@ -1,0 +1,9 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "artifacts/answerability_semantic_v2_1_direct_regex_v02/FINAL_RECORD.md": "7864885693509b7014c2122247b8e25d9dd554b3d8a260c7401ea025d1b086fe",
+    "artifacts/answerability_semantic_v2_1_direct_regex_v02/TERMINALITY_DIAGNOSTIC.json": "9efec58ebfe5b2f0305e08c83fab65a94eed4a9b07b90bf89542771705ef7902",
+    "gateway/domain/evaluation/answerability/qualify_direct_regex_v02.py": "e9e6b031f1f6543ab1d7dfbdc4ef6e37c0d219e7b115f71e03c8cdca94d00f8e"
+  },
+  "self_hash": "Excluded to avoid circularity; reported separately."
+}

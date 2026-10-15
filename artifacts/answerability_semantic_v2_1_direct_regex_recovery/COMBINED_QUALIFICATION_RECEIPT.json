@@ -1,0 +1,1009 @@
+{
+  "M1_M8": [
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "M1",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M2",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M3",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M4",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M5",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M6",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M7",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M8",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    }
+  ],
+  "U+0000": {
+    "fixture_id": "STRING_NUL",
+    "historical_contract": "PASS",
+    "historical_json": "PASS",
+    "historical_textual_regex": "ACCEPT",
+    "recovery": {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_NUL",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    "regression_result": "FAIL_EXACT_SINGLETON_EOS_REQUIREMENT"
+  },
+  "base_commit": "bc1fd59e175dd7136447392055789811dd4e194c",
+  "base_tag": "answerability-semantic-v2_1-direct-regex-v0.1-harness-failed",
+  "carried_rejects": [
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M2",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M3",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M4",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M5",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M6",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M7",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "M8",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R01_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R02_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R03_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R04_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R05_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R06_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R07_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R08_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R09_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R10_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R11_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R12_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R13_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R14_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R15_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R16_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R17_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "R18_NEG",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "PROSE",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "TRAILING_OBJECT",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "DUPLICATE_KEY",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "RAW_NUL",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    },
+    {
+      "executed_in_recovery": false,
+      "expected": "REJECT",
+      "fixture_id": "INVALID_ESCAPE",
+      "matches_expectation": true,
+      "result": "REJECT",
+      "source": "HISTORICAL_CARRIED_FORWARD"
+    }
+  ],
+  "combined": {
+    "correctly_adjudicated": 30,
+    "errors": 0,
+    "false_accepts": 0,
+    "false_reject_definition": "Expected ACCEPT but REJECT under the frozen recovery acceptance predicate.",
+    "false_rejects": 34,
+    "total_fixtures": 64
+  },
+  "counters": {
+    "DEVELOPMENT": 0,
+    "Index_reconstructions": 1,
+    "eos_advance_calls": 0,
+    "forward": 0,
+    "generate": 0,
+    "historical_reject_fixtures_rerun": 0,
+    "model_initialization": 0,
+    "package_mutations": 0,
+    "recovery_FSM_fixture_executions": 34,
+    "regex_derivations": 0,
+    "retries": 0,
+    "retrieval": 0,
+    "textual_regex_reruns": 0,
+    "tokenizer_loads": 1
+  },
+  "decoder_owned_coverage": [
+    {
+      "association_note": null,
+      "constraint_id": "/additionalProperties",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R01_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R01_NEG"
+    },
+    {
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R02_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R02_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/decision/enum",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R03_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R03_NEG"
+    },
+    {
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties/material_asks/items",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R04_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R04_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/additionalProperties",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R05_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R05_NEG"
+    },
+    {
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties/material_asks/items/properties",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R06_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R06_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/ask/type",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R07_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R07_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/support_status/enum",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R08_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R08_NEG"
+    },
+    {
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R09_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R09_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R10_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R10_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R11_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R11_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/required",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R12_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R12_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/type",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R13_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R13_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/type",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R14_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R14_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/policy_context_status/enum",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R15_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R15_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/reason_code/enum",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R16_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R16_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/required",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R17_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R17_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/type",
+      "negative_result": "REJECT",
+      "negative_source": "HISTORICAL_CARRIED_FORWARD",
+      "positive": "R18_POS",
+      "positive_result": "REJECT",
+      "qualified": false,
+      "violating": "R18_NEG"
+    }
+  ],
+  "decoder_owned_rules_qualified": 0,
+  "decoder_owned_rules_total": 18,
+  "exact_validator_qualification": "NOT_BEGUN",
+  "failure_classification": "FINAL_ALLOWED_TOKEN_SET_NOT_SINGLETON_EOS",
+  "fresh_v2_1_semantic_suite": "NOT YET AUTHORED",
+  "historical_textual": {
+    "correct": 64,
+    "errors": 0,
+    "rerun": false,
+    "source": "HISTORICAL_CARRIED_FORWARD",
+    "total": 64
+  },
+  "interpretation": "All 34 expected-valid fixtures traversed successfully and reached a final state with EOS permitted. Each final allowed-token list contains 423 tokens, violating the frozen exact-singleton-EOS predicate. This result does not establish that the regex cannot represent the frozen contract. No acceptance rule was changed after execution.",
+  "outcome": "DIRECT_REGEX_RECOVERY_FAILED",
+  "recovery_positives": [
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "M1",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R01_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R02_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R03_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R04_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R05_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R06_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R07_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R08_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R09_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R10_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R11_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R12_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R13_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R14_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R15_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R16_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R17_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "R18_POS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_NUL",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_UNIT_SEPARATOR",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_UNICODE",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_QUOTE",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_BACKSLASH",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_NEWLINE",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_EMPTY",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_LONE_SURROGATE",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "STRING_RAW_UNICODE",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "DELEGATED_UNIQUE",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "DELEGATED_CONTAINS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "DELEGATED_CONDITIONAL",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "EMPTY_ASK_ARRAY",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "UNBOUNDED_INTEGERS",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    },
+    {
+      "all_content_token_advances_successful": true,
+      "allowed_token_count": 423,
+      "eos_present": true,
+      "eos_token_id": 151645,
+      "exact_singleton_eos": false,
+      "expected": "ACCEPT",
+      "fixture_id": "WHITESPACE",
+      "is_finished": true,
+      "matches_expectation": false,
+      "result": "REJECT",
+      "source": "RECOVERY_RESULTS.json"
+    }
+  ],
+  "sources_sha256": {
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/STRUCTURAL_FIXTURES.json": "2e361461bd6b4e89db5aec35e4d43b94984812f43328ec3ce456b2e582c299eb",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/STRUCTURAL_RESULTS.json": "306ac3d132187be11696b97d05695f1f524f78bfc319bef1816e857e3b9f0368",
+    "artifacts/answerability_semantic_v2_1_direct_regex_recovery/CORRECTED_ACCEPTANCE_ORACLE.json": "62538b7ccf3b0260a9a1b6b37639aa93aa36803656cffc1d783fa9ce403c1baf",
+    "artifacts/answerability_semantic_v2_1_direct_regex_recovery/ENVIRONMENT_RECEIPT.json": "067f1368c5921407bb4c6b131d3c065c1c7e115518ccd9ddb7cef381c950d46c",
+    "artifacts/answerability_semantic_v2_1_direct_regex_recovery/RECOVERY_RESULTS.json": "e0f09994ba0d7b7c679ce322ba69a5171247de419f4dc47eb7830856ee588e02",
+    "gateway/domain/evaluation/answerability/recover_direct_regex_acceptance.py": "3050703ed4c6321180deb1a59326cf1873413babbc1a9313dba37d04bd5825a0"
+  }
+}

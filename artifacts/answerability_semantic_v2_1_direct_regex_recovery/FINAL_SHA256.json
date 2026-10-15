@@ -1,0 +1,14 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "artifacts/answerability_semantic_v2_1_direct_regex_recovery/COMBINED_QUALIFICATION_RECEIPT.json": "8460d7123d55b8007803d4699bcde77c17bd48308202f57b7894224c48c7c1e5",
+    "artifacts/answerability_semantic_v2_1_direct_regex_recovery/CORRECTED_ACCEPTANCE_ORACLE.json": "62538b7ccf3b0260a9a1b6b37639aa93aa36803656cffc1d783fa9ce403c1baf",
+    "artifacts/answerability_semantic_v2_1_direct_regex_recovery/ENVIRONMENT_RECEIPT.json": "067f1368c5921407bb4c6b131d3c065c1c7e115518ccd9ddb7cef381c950d46c",
+    "artifacts/answerability_semantic_v2_1_direct_regex_recovery/FREEZE_RECORD.md": "1ad8afe2991e6a0b1b6bdd6cf6c6a21a77c340ca8c73994203a97ed9bd500323",
+    "artifacts/answerability_semantic_v2_1_direct_regex_recovery/RECOVERY_PROTOCOL.md": "ad29b8821cdd80b81a677aa0ca9e53221502b0cb85ba33415f028c232938781b",
+    "artifacts/answerability_semantic_v2_1_direct_regex_recovery/RECOVERY_RESULTS.json": "e0f09994ba0d7b7c679ce322ba69a5171247de419f4dc47eb7830856ee588e02",
+    "gateway/domain/evaluation/answerability/recover_direct_regex_acceptance.py": "3050703ed4c6321180deb1a59326cf1873413babbc1a9313dba37d04bd5825a0",
+    "gateway/domain/tests/test_direct_regex_acceptance_recovery.py": "7393faa04180c948f1705e5d5f761659eb9e10d5a82c794fbe2011a4a85259f3"
+  },
+  "self_hash": "Excluded; reported separately to avoid circularity."
+}

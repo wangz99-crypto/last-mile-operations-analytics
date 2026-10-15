@@ -435,3 +435,20 @@ gateway/domain/evaluation/answerability/development/AQ040.json -text
 /artifacts/answerability_semantic_v2_1_decoder_contract_selection/VALIDATOR_ONLY_CONSTRAINTS.json -text
 /gateway/domain/evaluation/answerability/derive_decoder_contract.py -text
 /gateway/domain/tests/test_decoder_contract_selection.py -text
+
+# Frozen direct-regex qualification evidence and sources.
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/DECODER_ENFORCEMENT_REGEX.txt -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/DEPENDENCY_LOCK.json -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/DIRECT_REGEX_PROTOCOL.md -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/ENVIRONMENT_RECEIPT.json -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/FINAL_SHA256.json -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/FREEZE_RECORD.md -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/OUTCOME.json -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_DERIVATION_RULES.json -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_FREEZE_RECEIPT.json -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_PROVENANCE_TRACE.json -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/STRUCTURAL_FIXTURES.json -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/STRUCTURAL_RESULTS.json -text
+/artifacts/answerability_semantic_v2_1_direct_regex_decoder/UNICODE_REGRESSION_RESULT.json -text
+/gateway/domain/evaluation/answerability/direct_regex_qualification.py -text
+/gateway/domain/tests/test_direct_regex_qualification.py -text

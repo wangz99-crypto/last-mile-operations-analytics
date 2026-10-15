@@ -1,0 +1,22 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "Raw bytes; 13 evidence artifacts and 2 new sources have exact-path -text. Attributes retain normal Git text handling.",
+  "self_hash": "Excluded; reported externally to avoid circular hash",
+  "sha256": {
+    ".gitattributes": "1116c3789fda0b518f2eb7a99dd7d7c53102e859c8e412c719b12945e66dec29",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/DECODER_ENFORCEMENT_REGEX.txt": "3ec42de4a205e599789575954494ad2004beedcc49e2ed550ef865b591dc1482",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/DEPENDENCY_LOCK.json": "1f584603c67500b487b764a907ef58755c43c242e908d1d2ba1ec46c303e7302",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/DIRECT_REGEX_PROTOCOL.md": "bfeed3a5781dffb767ea28418e237423563337f2db9022ee21b38f62ea826d7c",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/ENVIRONMENT_RECEIPT.json": "d1a4880499234e7b484bb34557fc6d8b017ec03b4032cf3ffe94168fc64adb64",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/FREEZE_RECORD.md": "d5b6892310406603f6c2a14c5685dfec57864e92c46925032df6b6c5c0e7956b",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/OUTCOME.json": "d2b552ead330cb2ab05aa79f2992a397c71c34cfb0844a2c84c87a46f1423e1c",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_DERIVATION_RULES.json": "013d980ebb25e5c6104ac3e75ca790c7eda408528247fbeb71d35ee2d79f8796",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_FREEZE_RECEIPT.json": "9a96c7f3f086347acb4848da75b69258b2a2e947c159b57111ae185eca970b0a",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_PROVENANCE_TRACE.json": "aac84b964337551042f9d9d936765a035aa631286d3ea3a30fcdbdf08a4cf477",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/STRUCTURAL_FIXTURES.json": "2e361461bd6b4e89db5aec35e4d43b94984812f43328ec3ce456b2e582c299eb",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/STRUCTURAL_RESULTS.json": "306ac3d132187be11696b97d05695f1f524f78bfc319bef1816e857e3b9f0368",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/UNICODE_REGRESSION_RESULT.json": "75c7293c0bd56cefb2fd7147df4f955bccd2bb6e3092b694dee216d990f1a89c",
+    "gateway/domain/evaluation/answerability/direct_regex_qualification.py": "2005deee0e85d250d9d484e7d95f5e7a7856434466e7e8d4315944f0c97d4e0e",
+    "gateway/domain/tests/test_direct_regex_qualification.py": "2101c0fdc023bc8e92db3302b4cc472cced05a73b12cd6010f78488c4c9dcca6"
+  }
+}

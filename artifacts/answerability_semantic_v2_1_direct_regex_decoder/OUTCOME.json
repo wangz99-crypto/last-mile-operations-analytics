@@ -1,0 +1,321 @@
+{
+  "FSM_result": {
+    "error_note": "Zero classified false accepts/rejects does not mean a clean run: 34 ERROR observations remain failures.",
+    "errors": 34,
+    "false_accepts": 0,
+    "false_rejects": 0,
+    "matches": 30,
+    "positive_pre_EOS_final_and_EOS_allowed": 34,
+    "qualification_pass": false,
+    "total": 64
+  },
+  "V_contract_subset_V_regex": "ESTABLISHED_BY_STRUCTURAL_DERIVATION_ARGUMENT",
+  "base_commit": "1d14c85f15ed615ec224d7b07339bbceccbba2bb",
+  "base_tag": "answerability-semantic-v2_1-outlines-jsonschema-v0.1-selection-blocked",
+  "candidate": {
+    "mode": "DIRECT REGEX CONSTRAINT",
+    "outlines": "1.3.3",
+    "outlines_core": "0.2.14"
+  },
+  "clean_decoder_capability_judgment": "NOT_CONCLUSIVE_FROM_THIS_FAILED_QUALIFICATION_ATTEMPT",
+  "completed_utc": "2026-10-15T00:51:17.374764+00:00",
+  "contract_sha256": "768b9147e77f1dcc9dfd13b9dc4a6f9a2dad0ea6ad498219341fee0c43166198",
+  "core_results": {
+    "M1": {
+      "FSM": "ERROR",
+      "textual": "ACCEPT"
+    },
+    "M2": {
+      "FSM": "REJECT",
+      "textual": "REJECT"
+    },
+    "M3": {
+      "FSM": "REJECT",
+      "textual": "REJECT"
+    },
+    "M4": {
+      "FSM": "REJECT",
+      "textual": "REJECT"
+    },
+    "M5": {
+      "FSM": "REJECT",
+      "textual": "REJECT"
+    },
+    "M6": {
+      "FSM": "REJECT",
+      "textual": "REJECT"
+    },
+    "M7": {
+      "FSM": "REJECT",
+      "textual": "REJECT"
+    },
+    "M8": {
+      "FSM": "REJECT",
+      "textual": "REJECT"
+    }
+  },
+  "counters": {
+    "DEVELOPMENT": 0,
+    "FSM_fixture_executions": 64,
+    "JSON_schema_compiler_calls": 0,
+    "decoder_root_import_attempts_total": 4,
+    "exact_validator_qualification": 0,
+    "existing_package_mutations": 0,
+    "fixture_retries": 0,
+    "forward": 0,
+    "generate": 0,
+    "installation_operations": 1,
+    "logits_processor_constructions": 1,
+    "model_initialization": 0,
+    "outlines_core_Index_compilations": 1,
+    "outlines_core_import_attempts": 2,
+    "outlines_import_attempts": 2,
+    "package_additions": 28,
+    "package_mutations_total_additions_included": 28,
+    "package_removals": 0,
+    "regex_compilations": 2,
+    "retrieval": 0,
+    "textual_regex_compilations": 1,
+    "tokenizer_loads": 1
+  },
+  "dependency_lock_additions_sha256": "8ab256f6619c867ef616319c857e5e042e43c66ee334f4a36672652792f67976",
+  "derivation_rules_sha256": "013d980ebb25e5c6104ac3e75ca790c7eda408528247fbeb71d35ee2d79f8796",
+  "empirically_exercised_rules": 18,
+  "exact_validator": "NOT_YET_SELECTED_NOT_QUALIFIED",
+  "existing_environment_drift": 0,
+  "failure_classification": "FSM_EOS_ADVANCE_EXCEPTION_AT_RUNNER_API_BOUNDARY",
+  "fresh_v2_1_semantic_suite": "NOT YET AUTHORED",
+  "fully_qualified_rules": 0,
+  "historical_integrity": {
+    "contract_and_P2P3_history_unchanged": true,
+    "named_hashes_verified": 276,
+    "unchanged": true
+  },
+  "import_API_integrity": "PASS",
+  "interpretation": "Textual contract language passed. All 34 positive fixtures traversed to final states with EOS allowed; the runner then explicitly advanced EOS and received ValueError. Preserve ERROR, not REJECT or retroactive PASS. The selected release wrapper includes a final-state/accepts_tokens guard around advance, whereas this model-free runner advanced EOS unconditionally after observing acceptance. This does not establish a regex language limitation or generalized Outlines failure. No post-result correction or rerun occurred.",
+  "network_scope": "Resolver/28 frozen wheel downloads authorized; runtime external network access 0; socket capability-probe events retained in execution receipts.",
+  "offline_tests": {
+    "passed": 3,
+    "rerun_after_results": false,
+    "total": 3
+  },
+  "outcome": "DIRECT_REGEX_CANDIDATE_FAILED",
+  "owner_status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+  "package_integrity": "PASS",
+  "phase_2g_private_heldout_access": false,
+  "phase_2h_held_out_access": false,
+  "regex_frozen_before_runtime": true,
+  "regex_identity": "DECODER_ENFORCEMENT_REGEX_V2_1_V0_1",
+  "regex_sha256": "3ec42de4a205e599789575954494ad2004beedcc49e2ed550ef865b591dc1482",
+  "rule_coverage": [
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/additionalProperties",
+      "positive": "R01_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R01_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties",
+      "positive": "R02_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R02_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/decision/enum",
+      "positive": "R03_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R03_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties/material_asks/items",
+      "positive": "R04_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R04_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/additionalProperties",
+      "positive": "R05_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R05_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties/material_asks/items/properties",
+      "positive": "R06_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R06_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/ask/type",
+      "positive": "R07_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R07_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/support_status/enum",
+      "positive": "R08_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R08_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "positive": "R09_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R09_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "positive": "R10_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R10_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "positive": "R11_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R11_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/required",
+      "positive": "R12_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R12_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/type",
+      "positive": "R13_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R13_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/type",
+      "positive": "R14_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R14_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/policy_context_status/enum",
+      "positive": "R15_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R15_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/properties/reason_code/enum",
+      "positive": "R16_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R16_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/required",
+      "positive": "R17_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R17_NEG"
+    },
+    {
+      "FSM_positive": "ERROR",
+      "FSM_violating": "REJECT",
+      "association_note": null,
+      "constraint_id": "/type",
+      "positive": "R18_POS",
+      "qualified": false,
+      "textual_pass": true,
+      "violating": "R18_NEG"
+    }
+  ],
+  "runner_sha256": "16768d8d088bee354342ba7dda9f8ae16536c5cdbc02c34d7257ec32f077ad4a",
+  "stop": "No qualification repair, parameter/regex/fixture edits, candidate replacement, model execution, exact-validator qualification, commit or tag. Owner review required for next phase.",
+  "string_language": "ordinary JSON characters excluding raw quote/backslash/U+0000-U+001F; short escapes; Unicode escape uXXXX with four hexadecimal digits; no value narrowing",
+  "target_rules": 18,
+  "textual_result": {
+    "errors": 0,
+    "false_accepts": 0,
+    "false_rejects": 0,
+    "matches": 64,
+    "total": 64
+  },
+  "unicode_U0000": {
+    "FSM_before_EOS_advance": {
+      "EOS": "ALLOWED",
+      "final_state": true,
+      "traversal": "COMPLETE"
+    },
+    "contract": "PASS",
+    "formal_FSM_result": "ERROR",
+    "full_acceptance_claimed": false,
+    "json_parse": "PASS",
+    "regex": "ACCEPT"
+  },
+  "validator_only_interpretation": {
+    "DELEGATED_CONDITIONAL": "Textually accepted inconsistent decision/reason/support combination; delegated branch/conditional semantics are outside decoder scope.",
+    "DELEGATED_CONTAINS": "Historical fixture identifier is retained. This authored sample actually isolates the delegated supported-ask rank minItems condition, not an isolated contains condition. Do not claim contains-specific qualification. Textual ACCEPT is permitted.",
+    "DELEGATED_UNIQUE": "Textually accepted; duplicate rank example remains exact-validator owned. FSM reaches final/EOS allowed, then terminal advance ERROR.",
+    "exact_validation_executed": false
+  }
+}

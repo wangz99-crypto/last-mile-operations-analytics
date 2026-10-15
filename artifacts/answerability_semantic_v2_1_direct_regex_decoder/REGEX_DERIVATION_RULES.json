@@ -1,0 +1,32 @@
+{
+  "authoritative_input": "Frozen Decoder Enforcement Contract only; do not derive from raw schema",
+  "fail_closed": "Reject unknown predicate, unresolved scope, duplicate predicate or omitted source row; no approximation",
+  "identity": "DIRECT_REGEX_DERIVATION_RULES_V2_1_V0_1",
+  "inclusion_argument": [
+    "Each object has exactly the required declared keys; sorting them changes no values.",
+    "Each enum has its exact literal spelling.",
+    "Every finite mathematical integer has signed decimal integer spelling.",
+    "Every semantic string has a JSON spelling using ordinary Unicode or short/Unicode escapes, including control characters, supplementary characters and escaped surrogate code units.",
+    "Unbounded array recursion preserves all finite lengths including zero.",
+    "Induction over this finite contract tree establishes V_contract subseteq V_regex; no validator-only predicate is introduced."
+  ],
+  "integer_pattern": "-?(?:0|[1-9][0-9]*)",
+  "mapping": {
+    "additionalProperties": "Closed declared key list; no unknown or duplicate fields",
+    "enum": "Exact escaped JSON literal alternatives from contract enum values",
+    "properties": "Recursively render each declared property scope once",
+    "required": "All listed fields occur exactly once; require declared keys equal required keys for this contract",
+    "type_array_and_items": "Brackets with zero-or-more recursively rendered elements separated by commas; no length/uniqueness/contains conditions",
+    "type_integer": "Optional minus followed by zero or nonzero decimal digit and zero-or-more decimal digits; mathematical integer values retain a canonical representation; no magnitude/range limits",
+    "type_object": "Literal braces and all declared required fields in lexical field-name order; no extra fields; reject if the contract has unsupported optional structure",
+    "type_string": "Quoted zero-or-more ordinary characters excluding raw quote, backslash, U+0000-U+001F; or backslash followed by a JSON short escape or u plus exactly four hex digits",
+    "whitespace": "Only JSON whitespace [space TAB CR LF], zero-or-more at every token boundary and document edges"
+  },
+  "original_derivation_rules_sha256": "ea6e491ba295328bae66651230da39c87159ee06cc3eb4b2d146bbe066cc029e",
+  "post_freeze": "No regex/rule/contract edits or tuning after structural outcomes; candidate errors distinct from rejection; no recovery following environment mutation failure.",
+  "serialization": "SEMANTICALLY_NEUTRAL_SERIALIZATION_RESTRICTION: lexical property order, literal canonical keys/enums and canonical integer spelling; preserve every semantic value at least once",
+  "source": "artifacts/answerability_semantic_v2_1_decoder_contract_selection/DECODER_ENFORCEMENT_CONTRACT.json",
+  "source_sha256": "768b9147e77f1dcc9dfd13b9dc4a6f9a2dad0ea6ad498219341fee0c43166198",
+  "string_pattern": "\"(?:[^\"\\\\\\x00-\\x1F]|\\\\(?:[\"\\\\/bfnrt]|u[0-9a-fA-F]{4}))*\"",
+  "whitespace_pattern": "[ \\t\\r\\n]*"
+}

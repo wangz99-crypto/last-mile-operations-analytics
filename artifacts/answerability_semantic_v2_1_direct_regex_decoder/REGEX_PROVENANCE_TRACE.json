@@ -1,0 +1,305 @@
+{
+  "argument": [
+    "Each object has exactly the required declared keys; sorting them changes no values.",
+    "Each enum has its exact literal spelling.",
+    "Every finite mathematical integer has signed decimal integer spelling.",
+    "Every semantic string has a JSON spelling using ordinary Unicode or short/Unicode escapes, including control characters, supplementary characters and escaped surrogate code units.",
+    "Unbounded array recursion preserves all finite lengths including zero.",
+    "Induction over this finite contract tree establishes V_contract subseteq V_regex; no validator-only predicate is introduced."
+  ],
+  "identity": "DECODER_ENFORCEMENT_REGEX_V2_1_V0_1",
+  "inclusion": "V_contract subseteq V_regex ESTABLISHED by structural induction",
+  "omitted": 0,
+  "represented": 18,
+  "rows": [
+    {
+      "constraint_id": "/additionalProperties",
+      "contract_value": {
+        "allowed": false,
+        "declared_property_names": [
+          "decision",
+          "material_asks",
+          "policy_context_status",
+          "reason_code"
+        ]
+      },
+      "derivation": "Closed declared key list; no unknown or duplicate fields",
+      "predicate": "additionalProperties",
+      "scope": []
+    },
+    {
+      "constraint_id": "/properties",
+      "contract_value": {
+        "child_predicates": "Separate owned rows at their field scopes; omitted children remain validator-only.",
+        "declared_property_names": [
+          "decision",
+          "material_asks",
+          "policy_context_status",
+          "reason_code"
+        ]
+      },
+      "derivation": "Recursively render each declared property scope once",
+      "predicate": "properties",
+      "scope": []
+    },
+    {
+      "constraint_id": "/properties/decision/enum",
+      "contract_value": [
+        "ALLOW",
+        "ABSTAIN"
+      ],
+      "derivation": "Exact escaped JSON literal alternatives from contract enum values",
+      "predicate": "enum",
+      "scope": [
+        {
+          "field": "decision"
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items",
+      "contract_value": {
+        "child_predicates": "Separate owned rows at the element scope; no copied delegated assertions.",
+        "quantifier": "every array element"
+      },
+      "derivation": "Brackets with zero-or-more recursively rendered elements separated by commas; no length/uniqueness/contains conditions",
+      "predicate": "items",
+      "scope": [
+        {
+          "field": "material_asks"
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/additionalProperties",
+      "contract_value": {
+        "allowed": false,
+        "declared_property_names": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ]
+      },
+      "derivation": "Closed declared key list; no unknown or duplicate fields",
+      "predicate": "additionalProperties",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties",
+      "contract_value": {
+        "child_predicates": "Separate owned rows at their field scopes; omitted children remain validator-only.",
+        "declared_property_names": [
+          "ask",
+          "support_status",
+          "supporting_evidence_ranks"
+        ]
+      },
+      "derivation": "Recursively render each declared property scope once",
+      "predicate": "properties",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/ask/type",
+      "contract_value": "string",
+      "derivation": "Quoted zero-or-more ordinary characters excluding raw quote, backslash, U+0000-U+001F; or backslash followed by a JSON short escape or u plus exactly four hex digits",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "ask"
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/support_status/enum",
+      "contract_value": [
+        "SUPPORTED",
+        "UNSUPPORTED",
+        "CONTEXT_UNRESOLVED"
+      ],
+      "derivation": "Exact escaped JSON literal alternatives from contract enum values",
+      "predicate": "enum",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "support_status"
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "contract_value": {
+        "child_predicates": "Separate owned rows at the element scope; no copied delegated assertions.",
+        "quantifier": "every array element"
+      },
+      "derivation": "Brackets with zero-or-more recursively rendered elements separated by commas; no length/uniqueness/contains conditions",
+      "predicate": "items",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "supporting_evidence_ranks"
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "contract_value": "integer",
+      "derivation": "Optional minus followed by zero or nonzero decimal digit and zero-or-more decimal digits; mathematical integer values retain a canonical representation; no magnitude/range limits",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "supporting_evidence_ranks"
+        },
+        {
+          "each_array_element": true
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "contract_value": "array",
+      "derivation": "Brackets with zero-or-more recursively rendered elements separated by commas; no length/uniqueness/contains conditions",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        },
+        {
+          "field": "supporting_evidence_ranks"
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/required",
+      "contract_value": [
+        "ask",
+        "support_status",
+        "supporting_evidence_ranks"
+      ],
+      "derivation": "All listed fields occur exactly once; require declared keys equal required keys for this contract",
+      "predicate": "required",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/type",
+      "contract_value": "object",
+      "derivation": "Literal braces and all declared required fields in lexical field-name order; no extra fields; reject if the contract has unsupported optional structure",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        },
+        {
+          "each_array_element": true
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/type",
+      "contract_value": "array",
+      "derivation": "Brackets with zero-or-more recursively rendered elements separated by commas; no length/uniqueness/contains conditions",
+      "predicate": "type",
+      "scope": [
+        {
+          "field": "material_asks"
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/policy_context_status/enum",
+      "contract_value": [
+        "RESOLVED",
+        "UNRESOLVED"
+      ],
+      "derivation": "Exact escaped JSON literal alternatives from contract enum values",
+      "predicate": "enum",
+      "scope": [
+        {
+          "field": "policy_context_status"
+        }
+      ]
+    },
+    {
+      "constraint_id": "/properties/reason_code/enum",
+      "contract_value": [
+        "SUPPORTED_BY_ACTIVE_POLICY",
+        "INSUFFICIENT_POLICY_SUPPORT",
+        "UNRESOLVED_POLICY_CONTEXT"
+      ],
+      "derivation": "Exact escaped JSON literal alternatives from contract enum values",
+      "predicate": "enum",
+      "scope": [
+        {
+          "field": "reason_code"
+        }
+      ]
+    },
+    {
+      "constraint_id": "/required",
+      "contract_value": [
+        "material_asks",
+        "policy_context_status",
+        "decision",
+        "reason_code"
+      ],
+      "derivation": "All listed fields occur exactly once; require declared keys equal required keys for this contract",
+      "predicate": "required",
+      "scope": []
+    },
+    {
+      "constraint_id": "/type",
+      "contract_value": "object",
+      "derivation": "Literal braces and all declared required fields in lexical field-name order; no extra fields; reject if the contract has unsupported optional structure",
+      "predicate": "type",
+      "scope": []
+    }
+  ],
+  "serialization": "SEMANTICALLY_NEUTRAL_SERIALIZATION_RESTRICTION; lexical key order, canonical keys/enums and integer notation; arbitrary valid string values preserved by Unicode escapes.",
+  "source_contract_sha256": "768b9147e77f1dcc9dfd13b9dc4a6f9a2dad0ea6ad498219341fee0c43166198",
+  "validator_only_added": 0
+}

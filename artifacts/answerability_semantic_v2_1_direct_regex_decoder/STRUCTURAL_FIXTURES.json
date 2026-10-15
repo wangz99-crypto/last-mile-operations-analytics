@@ -1,0 +1,699 @@
+{
+  "coverage": [
+    {
+      "association_note": null,
+      "constraint_id": "/additionalProperties",
+      "positive": "R01_POS",
+      "violating": "R01_NEG"
+    },
+    {
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties",
+      "positive": "R02_POS",
+      "violating": "R02_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/decision/enum",
+      "positive": "R03_POS",
+      "violating": "R03_NEG"
+    },
+    {
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties/material_asks/items",
+      "positive": "R04_POS",
+      "violating": "R04_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/additionalProperties",
+      "positive": "R05_POS",
+      "violating": "R05_NEG"
+    },
+    {
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties/material_asks/items/properties",
+      "positive": "R06_POS",
+      "violating": "R06_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/ask/type",
+      "positive": "R07_POS",
+      "violating": "R07_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/support_status/enum",
+      "positive": "R08_POS",
+      "violating": "R08_NEG"
+    },
+    {
+      "association_note": "properties/items have no independent exclusion predicate; a wrong child exercises the association jointly with its child type/domain rule",
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "positive": "R09_POS",
+      "violating": "R09_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "positive": "R10_POS",
+      "violating": "R10_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "positive": "R11_POS",
+      "violating": "R11_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/required",
+      "positive": "R12_POS",
+      "violating": "R12_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/items/type",
+      "positive": "R13_POS",
+      "violating": "R13_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/material_asks/type",
+      "positive": "R14_POS",
+      "violating": "R14_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/policy_context_status/enum",
+      "positive": "R15_POS",
+      "violating": "R15_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/properties/reason_code/enum",
+      "positive": "R16_POS",
+      "violating": "R16_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/required",
+      "positive": "R17_POS",
+      "violating": "R17_NEG"
+    },
+    {
+      "association_note": null,
+      "constraint_id": "/type",
+      "positive": "R18_POS",
+      "violating": "R18_NEG"
+    }
+  ],
+  "fixture_policy": "Frozen before outcomes; exact historical bytes; no benchmark questions; every fixture executes once per language layer; errors distinct from rejection.",
+  "fixtures": [
+    {
+      "category": "historical",
+      "expected": "ACCEPT",
+      "id": "M1",
+      "input_sha256": "fcc4e0b4d7d9f0edfb706f3321b3fcf0800c0acb2f09552eec77b96f64cf065b",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "historical",
+      "expected": "REJECT",
+      "id": "M2",
+      "input_sha256": "005c6f10a197920eb151aee3be45180dac3bc9b89fa1a7a007d6ee542849d292",
+      "targets": [],
+      "text": "{\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "historical",
+      "expected": "REJECT",
+      "id": "M3",
+      "input_sha256": "a69fd36118fed60516e6f094fb2cef26ba4dd6c15a81cc4a4f3b30dd36e41536",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "historical",
+      "expected": "REJECT",
+      "id": "M4",
+      "input_sha256": "0d72e0fce14b5ab9450ce28e447e3dadabd31f1af1313fffd65b187db2620c7c",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\"}"
+    },
+    {
+      "category": "historical",
+      "expected": "REJECT",
+      "id": "M5",
+      "input_sha256": "02a1ef1e49ce208e45104a372890ed16fc15edbbe79122a802a0141f4a69ed2c",
+      "targets": [],
+      "text": "{\"material_asks\":[{\"ask\":\"Opaque diagnostic requirement\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}]}"
+    },
+    {
+      "category": "historical",
+      "expected": "REJECT",
+      "id": "M6",
+      "input_sha256": "a6ba60eccfcc076f569f464c90e9b6e9b25293edd0bf2502e66da5d9b521e9cb",
+      "targets": [],
+      "text": "{\n  \"material_asks\": [\n    {\n      \"ask\": \"Opaque alpha\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1]\n    }\n  ]\n}"
+    },
+    {
+      "category": "historical",
+      "expected": "REJECT",
+      "id": "M7",
+      "input_sha256": "1b078ff8fffba3a814fb0be5fdc4bb83b9a0a7a8799ac41e3b43016c7aa43afe",
+      "targets": [],
+      "text": "{\n  \"material_asks\": [\n    {\n      \"ask\": \"Opaque beta\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1, 2]\n    },\n    {\n      \"ask\": \"Opaque gamma\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [3]\n    }\n  ]\n}"
+    },
+    {
+      "category": "historical",
+      "expected": "REJECT",
+      "id": "M8",
+      "input_sha256": "467f92a2c8d285dddb5f574c3c227af3361e7b7f6396fab3ee409a767bbe362a",
+      "targets": [],
+      "text": "{\n  \"material_asks\": [\n    {\n      \"ask\": \"Opaque delta\",\n      \"support_status\": \"UNSUPPORTED\",\n      \"supporting_evidence_ranks\": []\n    }\n  ]\n}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R01_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/additionalProperties"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R01_NEG",
+      "input_sha256": "c8bbd744533bde8782b70b7e45019d819dc1794c37b65fcf23696fd54c60cfa6",
+      "targets": [
+        "/additionalProperties"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\",\"unexpected_probe\":true}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R02_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R02_NEG",
+      "input_sha256": "6274b5e350e93a42aea1261533009f2504b933de75da43dd8758ab9df40738db",
+      "targets": [
+        "/properties"
+      ],
+      "text": "{\"decision\":7,\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R03_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/decision/enum"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R03_NEG",
+      "input_sha256": "4aa13f105178badca21543bfb194172f61eb012fd78f7da1b004dd4c63e0e7da",
+      "targets": [
+        "/properties/decision/enum"
+      ],
+      "text": "{\"decision\":\"NOT_A_DECLARED_ENUM\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R04_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R04_NEG",
+      "input_sha256": "48b831be506319e12e5e0cd508403753dd8160ac307252cb51c9dc43d067ddf8",
+      "targets": [
+        "/properties/material_asks/items"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]},\"WRONG_ITEM_SHAPE\"],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R05_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items/additionalProperties"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R05_NEG",
+      "input_sha256": "4459dcfc2887e226968f737aabd64b438bc11f1992ba9c7e11bf9317f1b14d39",
+      "targets": [
+        "/properties/material_asks/items/additionalProperties"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1],\"unexpected_probe\":true}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R06_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items/properties"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R06_NEG",
+      "input_sha256": "196dfeda2082a3c1d96961e3913bdbff599c89f9c7b3592f78d4d93e2840e241",
+      "targets": [
+        "/properties/material_asks/items/properties"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":7,\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R07_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items/properties/ask/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R07_NEG",
+      "input_sha256": "196dfeda2082a3c1d96961e3913bdbff599c89f9c7b3592f78d4d93e2840e241",
+      "targets": [
+        "/properties/material_asks/items/properties/ask/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":7,\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R08_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items/properties/support_status/enum"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R08_NEG",
+      "input_sha256": "410651321279b8bc19f7c3fe4c5b594db79f75361b421a66eb51b58eb2086fff",
+      "targets": [
+        "/properties/material_asks/items/properties/support_status/enum"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"NOT_A_DECLARED_ENUM\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R09_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/items"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R09_NEG",
+      "input_sha256": "b3cfe9768727e525c237d0d7688d014e8fff082c4db823f16148d57ff31f2ee0",
+      "targets": [
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/items"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1,\"WRONG_ITEM_SHAPE\"]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R10_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R10_NEG",
+      "input_sha256": "50651169ca3324ec10ddcaadbd65e299462afde18536fa21f27e2ed2a196b015",
+      "targets": [
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[true]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R11_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R11_NEG",
+      "input_sha256": "8d337ea28044f6f6269cca9be8e0a0e5944ed1d2fe957da8659d2b80828d8346",
+      "targets": [
+        "/properties/material_asks/items/properties/supporting_evidence_ranks/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":{}}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R12_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items/required"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R12_NEG",
+      "input_sha256": "1ed4033dc8f11851d9a54af956e1731a183190e8d0d4ca8b652c5ac2c4c3c522",
+      "targets": [
+        "/properties/material_asks/items/required"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R13_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/items/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R13_NEG",
+      "input_sha256": "c280a0a7de043f3e92a5a1d15b7d5e7bb5475b198424c3a5f16b507bf3da67a4",
+      "targets": [
+        "/properties/material_asks/items/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[[]],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R14_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/material_asks/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R14_NEG",
+      "input_sha256": "f92442fc0dd484135c2f3d03ae8269062c404da3764b175cd3516bb5d4d283fe",
+      "targets": [
+        "/properties/material_asks/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":{},\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R15_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/policy_context_status/enum"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R15_NEG",
+      "input_sha256": "c556b71dc115e7f537c943f67e966f39e62ac8edcbfe0ccd2254ca2b77d84f3e",
+      "targets": [
+        "/properties/policy_context_status/enum"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"NOT_A_DECLARED_ENUM\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R16_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/properties/reason_code/enum"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R16_NEG",
+      "input_sha256": "7accd6b4430bcff72a3bf8f50350c65e40b07c520c2e0842ab3c81f63368eb0f",
+      "targets": [
+        "/properties/reason_code/enum"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"NOT_A_DECLARED_ENUM\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R17_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/required"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R17_NEG",
+      "input_sha256": "9d6ee84cd4f373afa9b3314f86da4335fea6f8cc304c344e8aa4700cd81e5285",
+      "targets": [
+        "/required"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "ACCEPT",
+      "id": "R18_POS",
+      "input_sha256": "afc57dabb9c42e53c2266af61a5d4037d685b62d87ee502a2e238f691be5e869",
+      "targets": [
+        "/type"
+      ],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "structural",
+      "expected": "REJECT",
+      "id": "R18_NEG",
+      "input_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "targets": [
+        "/type"
+      ],
+      "text": "[]"
+    },
+    {
+      "category": "unicode",
+      "expected": "ACCEPT",
+      "id": "STRING_NUL",
+      "input_sha256": "1d431987a206f6b6e5465d1569ceba88742a54ce29cc2fc0df1ebf1a24007cef",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\\u0000\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "unicode",
+      "expected": "ACCEPT",
+      "id": "STRING_UNIT_SEPARATOR",
+      "input_sha256": "ac370f7a1df29f243f27d78b2df0aec39ce0d19dfae34d1b0fe0131c6e7314b9",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\\u001f\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "unicode",
+      "expected": "ACCEPT",
+      "id": "STRING_UNICODE",
+      "input_sha256": "7f7ea46bd24166cba31e4be1bcbb089d05889a527f988f4fe50f354d25e54e6c",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\\u4e2d\\u6587\\ud83d\\ude00\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "unicode",
+      "expected": "ACCEPT",
+      "id": "STRING_QUOTE",
+      "input_sha256": "574a6c03167f305c4f2db255dffe6609846b41b421eba3591ab5d8b4ef6797a8",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\\\"\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "unicode",
+      "expected": "ACCEPT",
+      "id": "STRING_BACKSLASH",
+      "input_sha256": "4ebb16103c3607eaabb7d7f05ec795c1b4a6915cf62280992bfdbd2c6f76ebd6",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\\\\\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "unicode",
+      "expected": "ACCEPT",
+      "id": "STRING_NEWLINE",
+      "input_sha256": "a3b3104fa17a2bea9607da8e6adb879647a58c8a8beb37068d1c1680045be775",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\\n\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "unicode",
+      "expected": "ACCEPT",
+      "id": "STRING_EMPTY",
+      "input_sha256": "c61936f5a85c4f7cec01b829531c7434fa3cb04fa0e091d66cccd050367eb700",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "unicode",
+      "expected": "ACCEPT",
+      "id": "STRING_LONE_SURROGATE",
+      "input_sha256": "df0e69c0e5322a71b3e09562dece9a7f411e05ce226a99b6fb2131782144b765",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\\ud800\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "unicode",
+      "expected": "ACCEPT",
+      "id": "STRING_RAW_UNICODE",
+      "input_sha256": "197dcfcd79bd815c7b7c00d44eaf526256c2d5bba0bef7b4d4c06f629de11b70",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\u4e2d\u6587\ud83d\ude00\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "validator_only",
+      "expected": "ACCEPT",
+      "id": "DELEGATED_UNIQUE",
+      "input_sha256": "ab74219f7ad53772e526682d37e0647141ccf315aaea3fd38980bbf183d4d6c0",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1,1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "validator_only",
+      "expected": "ACCEPT",
+      "id": "DELEGATED_CONTAINS",
+      "input_sha256": "c8af7e97d62d912389a720a22ec29946c6a482a936d70369c9336e86918b285f",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "validator_only",
+      "expected": "ACCEPT",
+      "id": "DELEGATED_CONDITIONAL",
+      "input_sha256": "2b5af58598f62bc74e3f16196891b9cbaa7ab268b35406138add5e52f0ded3b1",
+      "targets": [],
+      "text": "{\"decision\":\"ABSTAIN\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "contract_relaxation",
+      "expected": "ACCEPT",
+      "id": "EMPTY_ASK_ARRAY",
+      "input_sha256": "d1739d54807c0dc02ec3f411802d87ecefadddfab18e511dc1b803bcfc595861",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "contract_relaxation",
+      "expected": "ACCEPT",
+      "id": "UNBOUNDED_INTEGERS",
+      "input_sha256": "5618e0b608a81ee06f913fe8add8a91e35972543e51c72fb0caddc0f4d17cc1a",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[-1,0,123456789012345678901234567890]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "serialization",
+      "expected": "ACCEPT",
+      "id": "WHITESPACE",
+      "input_sha256": "0acd1a9e17859058cc97161f53735a76d5921836deeffd5eabc9d47505c37afb",
+      "targets": [],
+      "text": "{\n  \"decision\": \"ALLOW\",\n  \"material_asks\": [\n    {\n      \"ask\": \"Synthetic structural item\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [\n        1\n      ]\n    }\n  ],\n  \"policy_context_status\": \"RESOLVED\",\n  \"reason_code\": \"SUPPORTED_BY_ACTIVE_POLICY\"\n}"
+    },
+    {
+      "category": "parse_boundary",
+      "expected": "REJECT",
+      "id": "PROSE",
+      "input_sha256": "2a30b5fc4459d08700e38daec730f39dd36563204b76d9582fa88743178eb44e",
+      "targets": [],
+      "text": "answer:{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "parse_boundary",
+      "expected": "REJECT",
+      "id": "TRAILING_OBJECT",
+      "input_sha256": "92276da67dab48ba638b9328dc9ae080181dace9ff2af8c65be756a55be8ab9c",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "parse_boundary",
+      "expected": "REJECT",
+      "id": "DUPLICATE_KEY",
+      "input_sha256": "e55ca92254669f7f262e698be270718aa5b94da8ad8a38c7e62249e02069d540",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"Synthetic structural item\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "parse_boundary",
+      "expected": "REJECT",
+      "id": "RAW_NUL",
+      "input_sha256": "1948ebad697ba139df1593e7eb89ea67b42b19d1e2d7969b8355fca3cc68e784",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\u0000\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    },
+    {
+      "category": "parse_boundary",
+      "expected": "REJECT",
+      "id": "INVALID_ESCAPE",
+      "input_sha256": "d2169adfee121d0e516a8f7648636a1b11db5491f6a6052f72cd718143ca1696",
+      "targets": [],
+      "text": "{\"decision\":\"ALLOW\",\"material_asks\":[{\"ask\":\"\\q\",\"support_status\":\"SUPPORTED\",\"supporting_evidence_ranks\":[1]}],\"policy_context_status\":\"RESOLVED\",\"reason_code\":\"SUPPORTED_BY_ACTIVE_POLICY\"}"
+    }
+  ]
+}

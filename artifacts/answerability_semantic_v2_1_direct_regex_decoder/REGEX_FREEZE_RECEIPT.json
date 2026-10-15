@@ -1,0 +1,43 @@
+{
+  "base_commit": "1d14c85f15ed615ec224d7b07339bbceccbba2bb",
+  "base_tag": "answerability-semantic-v2_1-outlines-jsonschema-v0.1-selection-blocked",
+  "contract_sha256": "768b9147e77f1dcc9dfd13b9dc4a6f9a2dad0ea6ad498219341fee0c43166198",
+  "direct_regex_contract_frozen": true,
+  "entry_git_status": "",
+  "events": [
+    {
+      "event": "REGEX_DERIVATION_RULES_FROZEN",
+      "sha256": "013d980ebb25e5c6104ac3e75ca790c7eda408528247fbeb71d35ee2d79f8796",
+      "utc": "2026-10-14T19:24:35.405942+00:00"
+    },
+    {
+      "event": "STATIC_DISPLAY_INTERPRETATION_CORRECTED",
+      "note": "An initial tool-output escaping interpretation was incorrect. Literal byte counts show string escape prefix has 2 backslashes and whitespace escapes have 1, as required. Failed diagnostic assertion wrote no blocked outcome. Rules were never changed; no regex engine had run.",
+      "utc": "2026-10-15T00:39:52.596345+00:00"
+    },
+    {
+      "before_installation": true,
+      "before_runtime_execution": true,
+      "event": "DIRECT_REGEX_CONTRACT_FROZEN",
+      "freeze_hashes": {
+        "artifacts/answerability_semantic_v2_1_direct_regex_decoder/DECODER_ENFORCEMENT_REGEX.txt": "3ec42de4a205e599789575954494ad2004beedcc49e2ed550ef865b591dc1482",
+        "artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_DERIVATION_RULES.json": "013d980ebb25e5c6104ac3e75ca790c7eda408528247fbeb71d35ee2d79f8796",
+        "artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_PROVENANCE_TRACE.json": "aac84b964337551042f9d9d936765a035aa631286d3ea3a30fcdbdf08a4cf477",
+        "artifacts/answerability_semantic_v2_1_direct_regex_decoder/STRUCTURAL_FIXTURES.json": "2e361461bd6b4e89db5aec35e4d43b94984812f43328ec3ce456b2e582c299eb",
+        "gateway/domain/evaluation/answerability/direct_regex_qualification.py": "2005deee0e85d250d9d484e7d95f5e7a7856434466e7e8d4315944f0c97d4e0e",
+        "gateway/domain/tests/test_direct_regex_qualification.py": "2101c0fdc023bc8e92db3302b4cc472cced05a73b12cd6010f78488c4c9dcca6"
+      },
+      "inclusion": "ESTABLISHED",
+      "utc": "2026-10-15T00:39:52.600341+00:00"
+    }
+  ],
+  "freeze_hashes": {
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/DECODER_ENFORCEMENT_REGEX.txt": "3ec42de4a205e599789575954494ad2004beedcc49e2ed550ef865b591dc1482",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_DERIVATION_RULES.json": "013d980ebb25e5c6104ac3e75ca790c7eda408528247fbeb71d35ee2d79f8796",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/REGEX_PROVENANCE_TRACE.json": "aac84b964337551042f9d9d936765a035aa631286d3ea3a30fcdbdf08a4cf477",
+    "artifacts/answerability_semantic_v2_1_direct_regex_decoder/STRUCTURAL_FIXTURES.json": "2e361461bd6b4e89db5aec35e4d43b94984812f43328ec3ce456b2e582c299eb",
+    "gateway/domain/evaluation/answerability/direct_regex_qualification.py": "2005deee0e85d250d9d484e7d95f5e7a7856434466e7e8d4315944f0c97d4e0e",
+    "gateway/domain/tests/test_direct_regex_qualification.py": "2101c0fdc023bc8e92db3302b4cc472cced05a73b12cd6010f78488c4c9dcca6"
+  },
+  "runtime_result_exposure": false
+}

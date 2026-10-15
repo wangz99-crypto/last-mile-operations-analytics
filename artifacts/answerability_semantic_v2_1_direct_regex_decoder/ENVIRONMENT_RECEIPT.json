@@ -1,0 +1,1188 @@
+{
+  "executable": "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+  "existing_package_mutations": 0,
+  "import_api": {
+    "api": {
+      "Guide": {
+        "doc": "Guide object based on Index.",
+        "module": "outlines_core",
+        "public_members": [
+          "accepts_tokens",
+          "advance",
+          "from_binary",
+          "get_allowed_rollback",
+          "get_state",
+          "get_tokens",
+          "is_finished",
+          "reset",
+          "rollback_state",
+          "write_mask_into"
+        ]
+      },
+      "Index": {
+        "doc": "Index object based on regex and vocabulary.",
+        "module": "outlines_core",
+        "public_members": [
+          "from_binary",
+          "get_allowed_tokens",
+          "get_final_states",
+          "get_initial_state",
+          "get_next_state",
+          "get_transitions",
+          "is_final_state"
+        ]
+      },
+      "TransformerTokenizer": {
+        "doc": "Represents a tokenizer for models in the `transformers` library.",
+        "module": "outlines.models.transformers",
+        "public_members": [
+          "convert_token_to_string",
+          "decode",
+          "encode"
+        ]
+      },
+      "Transformers": {
+        "doc": "Thin wrapper around a `transformers` model and a `transformers`\n    tokenizer.\n\n    This wrapper is used to convert the input and output types specified by the\n    users at a higher level to arguments to the `transformers` model and\n    tokenizer.\n\n    ",
+        "module": "outlines.models.transformers",
+        "public_members": [
+          "batch",
+          "generate",
+          "generate_batch",
+          "generate_stream",
+          "stream"
+        ]
+      },
+      "Vocabulary": {
+        "doc": "LLM vocabulary.",
+        "module": "outlines_core",
+        "public_members": [
+          "from_binary",
+          "from_pretrained",
+          "get",
+          "get_eos_token_id",
+          "insert",
+          "remove"
+        ]
+      },
+      "direct_regex_processor": {
+        "doc": "Create a logits processor from a regex.\n\n        Parameters\n        ----------\n        regex: str\n            The regex to create a logits processor from.\n\n        Returns\n        -------\n        LogitsProcessor\n            The logits processor to use to constrain the generation.\n\n        ",
+        "module": "outlines.backends.outlines_core",
+        "public_members": []
+      },
+      "from_transformers": {
+        "doc": "Create an Outlines `Transformers` or `TransformersMultiModal` model\n    instance from a `PreTrainedModel` instance and a `PreTrainedTokenizer` or\n    `ProcessorMixin` instance.\n\n    `outlines` supports `PreTrainedModelForCausalLM`,\n    `PreTrainedMambaForCausalLM`, `PreTrainedModelForSeq2Seq` and any model\n    that implements the `transformers` model API.\n\n    Parameters\n    ----------\n    model\n        A `transformers.PreTrainedModel` instance.\n    tokenizer_or_processor\n        A `transformers.PreTrainedTokenizer` or\n        `transformers.ProcessorMixin` instance.\n    device_dtype\n        The dtype to use for the model. If not provided, the model will use\n        the default dtype.\n\n    Returns\n    -------\n    Union[Transformers, TransformersMultiModal]\n        An Outlines `Transformers` or `TransformersMultiModal` model instance.\n\n    ",
+        "module": "outlines.models.transformers",
+        "public_members": []
+      },
+      "processor": {
+        "doc": "Logits processor for Outlines Core.",
+        "module": "outlines.backends.outlines_core",
+        "public_members": [
+          "process_logits",
+          "reset"
+        ]
+      },
+      "vocabulary_factory": {
+        "doc": "Create an Outlines Core Vocabulary instance.\n\n        Parameters\n        ----------\n        vocab: Dict[str, int]\n            The vocabulary to create an Outlines Core vocabulary from.\n        eos_token_id: int\n            The EOS token ID.\n        eos_token: str\n            The EOS token.\n        token_to_str: Callable[[str], str]\n            The function to convert a token to a string.\n\n        Returns\n        -------\n        Vocabulary\n            The Outlines Core Vocabulary instance.\n\n        ",
+        "module": "outlines.backends.outlines_core",
+        "public_members": []
+      }
+    },
+    "decoder_execution": 0,
+    "forward": 0,
+    "generate": 0,
+    "model_initialization": 0,
+    "outlines_core_import_attempts": 1,
+    "outlines_import_attempts": 1,
+    "socket_events": [
+      {
+        "args": "(<socket.socket fd=-1, family=0, type=0, proto=0>, 23, 1, 0)",
+        "event": "socket.__new__"
+      },
+      {
+        "args": "(<socket.socket fd=196, family=23, type=1, proto=0>, ('::1', 0))",
+        "event": "socket.bind"
+      },
+      {
+        "args": "()",
+        "event": "socket.gethostname"
+      }
+    ],
+    "status": "PASS",
+    "tokenizer_loads": 0,
+    "utc": "2026-10-15T00:45:37.854432+00:00"
+  },
+  "installation": {
+    "command": [
+      "C:\\Users\\zhewa\\.virtualenvs\\llm-rag-semantic-qwen25-1p5b\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip",
+      "install",
+      "--no-deps",
+      "--no-index",
+      "--no-cache-dir",
+      "--disable-pip-version-check",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\aiohappyeyeballs-2.7.1-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\aiohttp-3.14.5-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\aiosignal-1.4.0-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\attrs-26.1.0-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\cloudpickle-3.1.2-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\datasets-2.14.4-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\dill-0.3.7-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\diskcache-5.6.3-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\frozenlist-1.8.0-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\genson-1.4.0-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\jsonschema-4.26.0-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\jsonschema_specifications-2025.9.1-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\multidict-7.1.0-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\multiprocess-0.70.15-py311-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\outlines-1.3.3-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\outlines_core-0.2.14-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\pandas-3.0.6-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\pillow-12.3.0-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\propcache-0.5.4-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\pyarrow-26.0.0-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\referencing-0.37.0-py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\rpds_py-2026.9.1-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\sentencepiece-0.2.2-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\six-1.17.0-py2.py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\tzdata-2026.5-py2.py3-none-any.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\xxhash-4.0.1-cp312-cp312-win_amd64.whl",
+      "C:\\Users\\zhewa\\OneDrive\\Documents\\GitHub\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\yarl-1.25.1-cp312-cp312-win_amd64.whl"
+    ],
+    "finished_utc": "2026-10-15T00:44:46.807562+00:00",
+    "network_index_disabled": true,
+    "resolver_mutation": false,
+    "returncode": 0,
+    "started_utc": "2026-10-15T00:44:20.683442+00:00",
+    "stderr": "",
+    "stdout": "Processing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\aiohappyeyeballs-2.7.1-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\aiohttp-3.14.5-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\aiosignal-1.4.0-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\attrs-26.1.0-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\cloudpickle-3.1.2-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\datasets-2.14.4-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\dill-0.3.7-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\diskcache-5.6.3-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\frozenlist-1.8.0-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\genson-1.4.0-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\jsonschema-4.26.0-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\jsonschema_specifications-2025.9.1-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\multidict-7.1.0-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\multiprocess-0.70.15-py311-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\outlines-1.3.3-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\outlines_core-0.2.14-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\pandas-3.0.6-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\pillow-12.3.0-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\propcache-0.5.4-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\pyarrow-26.0.0-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\python_dateutil-2.9.0.post0-py2.py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\referencing-0.37.0-py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\rpds_py-2026.9.1-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\sentencepiece-0.2.2-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\six-1.17.0-py2.py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\tzdata-2026.5-py2.py3-none-any.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\xxhash-4.0.1-cp312-cp312-win_amd64.whl\nProcessing c:\\users\\zhewa\\onedrive\\documents\\github\\llm-internal-assistant\\.cache\\phase2h-direct-regex-wheels\\yarl-1.25.1-cp312-cp312-win_amd64.whl\nInstalling collected packages: yarl, xxhash, tzdata, six, sentencepiece, rpds-py, referencing, python-dateutil, pyarrow, propcache, pillow, pandas, outlines-core, outlines, multiprocess, multidict, jsonschema-specifications, jsonschema, genson, frozenlist, diskcache, dill, datasets, cloudpickle, attrs, aiosignal, aiohttp, aiohappyeyeballs\nSuccessfully installed aiohappyeyeballs-2.7.1 aiohttp-3.14.5 aiosignal-1.4.0 attrs-26.1.0 cloudpickle-3.1.2 datasets-2.14.4 dill-0.3.7 diskcache-5.6.3 frozenlist-1.8.0 genson-1.4.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 multidict-7.1.0 multiprocess-0.70.15 outlines-1.3.3 outlines-core-0.2.14 pandas-3.0.6 pillow-12.3.0 propcache-0.5.4 pyarrow-26.0.0 python-dateutil-2.9.0.post0 referencing-0.37.0 rpds-py-2026.9.1 sentencepiece-0.2.2 six-1.17.0 tzdata-2026.5 xxhash-4.0.1 yarl-1.25.1\n"
+  },
+  "mutations": 28,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "post_execution_integrity": {
+    "exact_raw_metadata_record_inventory_match": true,
+    "existing_package_drift": 0,
+    "no_recovery_attempt": true,
+    "package_count": 64,
+    "removals": 0,
+    "unexpected_additions": 0,
+    "utc": "2026-10-15T00:49:35.018995+00:00"
+  },
+  "post_install": {
+    "additions": {
+      "aiohappyeyeballs": {
+        "metadata_sha256": "e68d1bf48aec9dcc2767343dedec25e12860085cba180e10bc3d3bdd031602ba",
+        "name": "aiohappyeyeballs",
+        "record_sha256": "c5bc6658e40e3afb303ddf6482fdb51d1d6072432b4e607715a952b9a34d9f0f",
+        "version": "2.7.1"
+      },
+      "aiohttp": {
+        "metadata_sha256": "063c418f586e6e668be019ff7b8cc98ee08e7f836ef205686275c7bd1a6099d7",
+        "name": "aiohttp",
+        "record_sha256": "de345533918774e6cc6df04d2806f16bd6b526a651dbcc760d24f14dbdf192b4",
+        "version": "3.14.5"
+      },
+      "aiosignal": {
+        "metadata_sha256": "09247ef1da8bc696728d47130e702e4307f6f7d101d6c485bff9f3a71ce7008d",
+        "name": "aiosignal",
+        "record_sha256": "2ac901c9cbf2bb8ce7caf43cfbe6f470faee728586ee867eeffd3f59e08364ae",
+        "version": "1.4.0"
+      },
+      "attrs": {
+        "metadata_sha256": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc",
+        "name": "attrs",
+        "record_sha256": "f8a5b12cf5a55c6e999896035da5598434a2873cafa5a19790298570d36362d1",
+        "version": "26.1.0"
+      },
+      "cloudpickle": {
+        "metadata_sha256": "3d0263bfe9ee4f23b244bdcaff73acbe7a1957ebf82743b6ae42693adc48d721",
+        "name": "cloudpickle",
+        "record_sha256": "7483a357cc62e65d2ab774b359659cf7c3ad5ecb331321356b9c87306cd0bb34",
+        "version": "3.1.2"
+      },
+      "datasets": {
+        "metadata_sha256": "93988c9ea58a369ab6819dde208ef33af52f0008f705066d7535c188cdd07ce6",
+        "name": "datasets",
+        "record_sha256": "ef64ec03790d25c739b0e01a11ca6aaaa0196e81713855aad92b4377c3cea4d6",
+        "version": "2.14.4"
+      },
+      "dill": {
+        "metadata_sha256": "3e167ac14d7950229dc8b7e7b21fd3e7ee624e027c67429cd003e5a4a4e0e8c3",
+        "name": "dill",
+        "record_sha256": "64570bc781b32568d48e123460cd05d71ecdac286b366328cd8386421e78af09",
+        "version": "0.3.7"
+      },
+      "diskcache": {
+        "metadata_sha256": "6fc70cff43a3c6666531e6c268e90059fb93ae58aed708163c0ceecab24dbaef",
+        "name": "diskcache",
+        "record_sha256": "ea0e99f7e5a9c27a149b167412ed4b6bc35e8f51481d408e3e59211c8fd2ff6e",
+        "version": "5.6.3"
+      },
+      "frozenlist": {
+        "metadata_sha256": "4278aeb3d18f1f8b7e6af5b6771ba9a8f327012a42d64509f9d4087b55f71a94",
+        "name": "frozenlist",
+        "record_sha256": "76a15c9a23001085d86f2483d1de6c7a0efd6ec929acc6cd36c54a3cb51a252a",
+        "version": "1.8.0"
+      },
+      "genson": {
+        "metadata_sha256": "57b82b3e6e4163cb28fc7878e429d2546547fd723109c1e78650f9262e97432c",
+        "name": "genson",
+        "record_sha256": "0d7766d31ddeb44ba4b08c7f9dac18613dbecc37677588be0960d255ecbc5714",
+        "version": "1.4.0"
+      },
+      "jsonschema": {
+        "metadata_sha256": "05b189866ca98a96da3934bf6b83687ced3ff85325273b77e16b705f6d8b26d2",
+        "name": "jsonschema",
+        "record_sha256": "6b9da70f1f0f629f0ab7900e705467e3097e43596e0d2db33186d0d374e40652",
+        "version": "4.26.0"
+      },
+      "jsonschema-specifications": {
+        "metadata_sha256": "35abd41757f32b4ea24756920ded47b70173d77cbc052a5a6d3ab583b2e8d89d",
+        "name": "jsonschema-specifications",
+        "record_sha256": "8d51ed1c7be6daa4688cb7dbb0b190176929fcfa2ac51298740cd506a4f130cd",
+        "version": "2025.9.1"
+      },
+      "multidict": {
+        "metadata_sha256": "266d7fbaa481b22d7e1ae273ab43ddfcee1b1b1baeb9af505cbce24382d2b28c",
+        "name": "multidict",
+        "record_sha256": "87f4907989f414b73b8d38789c98329981e0cee600283c057ec1c0f9c36d76e7",
+        "version": "7.1.0"
+      },
+      "multiprocess": {
+        "metadata_sha256": "5cee51a6883a358f05ddc88b4991395dacb3ff144e2e1c457821fe43ad5c3a8a",
+        "name": "multiprocess",
+        "record_sha256": "5dce139b72c35380d9c5c8a9e96d08eaa83ba85b702b2efc872ad24ac6e4716f",
+        "version": "0.70.15"
+      },
+      "outlines": {
+        "metadata_sha256": "156cda7f8371802411a837b91f6f2f7ee628a6dd58318b59ba03845fcc56b9f0",
+        "name": "outlines",
+        "record_sha256": "135f0797eba9667a2b958bb0858748383c1ccf3813dfc63c9a0b6d37bbd0891a",
+        "version": "1.3.3"
+      },
+      "outlines-core": {
+        "metadata_sha256": "e8e479bb5fe5f24198b4f66b21fa50868e625b9cc2c63fe555eccde163b1de54",
+        "name": "outlines_core",
+        "record_sha256": "d48ea62232525efb8956ad0e6386326dceadd3aa39aeac02f07dcc8e30e8071f",
+        "version": "0.2.14"
+      },
+      "pandas": {
+        "metadata_sha256": "9eb4d20fc21b7851d6f782bd5186ded152fce80a48ac93120bf88e03c89ebc39",
+        "name": "pandas",
+        "record_sha256": "d54b2aad9ff5b21c5762c6d24703c4c862bd108f9dc51869bb7e22fd8a59ffd9",
+        "version": "3.0.6"
+      },
+      "pillow": {
+        "metadata_sha256": "2c4378001803cfac65809a50722d46e0da4ce8061e717f103e5d52734bab30f5",
+        "name": "pillow",
+        "record_sha256": "66a768c02617632025c1a45d64601c33688034303734dc29a415dcb8d5ff92ee",
+        "version": "12.3.0"
+      },
+      "propcache": {
+        "metadata_sha256": "30f8056d018d2771659b9389094ab2fbee28840e8ccf67ba2179effd2f588383",
+        "name": "propcache",
+        "record_sha256": "9a4c5555f023f9c204cb73abbf6a852c603e178766d23b2014d8ca77a5627d5e",
+        "version": "0.5.4"
+      },
+      "pyarrow": {
+        "metadata_sha256": "be4adabcb9b03f3a468f17bb0f42b48e7e17cdd58741ba15753f28610c2497fb",
+        "name": "pyarrow",
+        "record_sha256": "39b11339cc3e3c098ee4d753ff3aa73821bf78d15aafa1f7cc9c37a5d39d4cce",
+        "version": "26.0.0"
+      },
+      "python-dateutil": {
+        "metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+        "name": "python-dateutil",
+        "record_sha256": "4d8d33cebd9c3f70f37f9f309402058fb69f4fe984ecf9b01482d283ec0b8197",
+        "version": "2.9.0.post0"
+      },
+      "referencing": {
+        "metadata_sha256": "c93b00e6ab1524fd60848376604c189a114374776475c25a31d57be47b29de6a",
+        "name": "referencing",
+        "record_sha256": "184ac366de5dddbfcd316f2eeff635461c3db1a605f040b25affd959005c9a9b",
+        "version": "0.37.0"
+      },
+      "rpds-py": {
+        "metadata_sha256": "778fb36890d26c5657d256db3e61a05a637468aa4cf607f8d1059c5079fcefd8",
+        "name": "rpds-py",
+        "record_sha256": "e9d79668c220da73ef9b7afdd45d345ca1256f710abdbec2c47bd7a50f74283a",
+        "version": "2026.9.1"
+      },
+      "sentencepiece": {
+        "metadata_sha256": "eb1173d40630c7d15aba70e145e6d378ba9137ec1634e74b2f4e4ccd0dc5ffc7",
+        "name": "sentencepiece",
+        "record_sha256": "54e0ceff0b22264bdaabd434aff8b6c4a23a8bf4343b87276b617f0fb512cd25",
+        "version": "0.2.2"
+      },
+      "six": {
+        "metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+        "name": "six",
+        "record_sha256": "03a7a870f94819839dd6d2089200e7412c735c247af773fb2d2e2ed8310c179b",
+        "version": "1.17.0"
+      },
+      "tzdata": {
+        "metadata_sha256": "e0780e8b6dc8882ce87e871a9d4589d59cb05a0c2d64f58b1ba62cde1ee91f6a",
+        "name": "tzdata",
+        "record_sha256": "4af0adc51081b7277ca7f7403193b06b94177466ff3d94af703b5b7cf98c9436",
+        "version": "2026.5"
+      },
+      "xxhash": {
+        "metadata_sha256": "6bd45a2b485477d1bd7e321d03a7593ca44c50f2b5ee96b36918c19a2f5dfa88",
+        "name": "xxhash",
+        "record_sha256": "60290493a72f121c4a1c64cf7680e8a40e4b4acdce02d7bb8a2769d2e87f688b",
+        "version": "4.0.1"
+      },
+      "yarl": {
+        "metadata_sha256": "a6e8eb9810e93ee04f3159904ccec9d0780f4a9ed5181a59859b47d1b1e7afeb",
+        "name": "yarl",
+        "record_sha256": "4bf7315dab3128f426c8358e14745cc6bf9b98e9cda4459f9834fe2081608e7a",
+        "version": "1.25.1"
+      }
+    },
+    "authorized_additions_match": true,
+    "existing_package_drift": {},
+    "integrity": "PASS",
+    "packages": {
+      "accelerate": {
+        "metadata_sha256": "64e744885238d853870093f1d4526eb93ac6ae8a5420a2b3f864fe5d16189d37",
+        "name": "accelerate",
+        "record_sha256": "90c80b0037cf1c8205d316b96ca24c0f8355f352eeb58b844c535efbd67a1673",
+        "version": "1.15.0"
+      },
+      "aiohappyeyeballs": {
+        "metadata_sha256": "e68d1bf48aec9dcc2767343dedec25e12860085cba180e10bc3d3bdd031602ba",
+        "name": "aiohappyeyeballs",
+        "record_sha256": "c5bc6658e40e3afb303ddf6482fdb51d1d6072432b4e607715a952b9a34d9f0f",
+        "version": "2.7.1"
+      },
+      "aiohttp": {
+        "metadata_sha256": "063c418f586e6e668be019ff7b8cc98ee08e7f836ef205686275c7bd1a6099d7",
+        "name": "aiohttp",
+        "record_sha256": "de345533918774e6cc6df04d2806f16bd6b526a651dbcc760d24f14dbdf192b4",
+        "version": "3.14.5"
+      },
+      "aiosignal": {
+        "metadata_sha256": "09247ef1da8bc696728d47130e702e4307f6f7d101d6c485bff9f3a71ce7008d",
+        "name": "aiosignal",
+        "record_sha256": "2ac901c9cbf2bb8ce7caf43cfbe6f470faee728586ee867eeffd3f59e08364ae",
+        "version": "1.4.0"
+      },
+      "annotated-types": {
+        "metadata_sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298",
+        "name": "annotated-types",
+        "record_sha256": "b43bb044cedfc31ee6bbce07483656407bb19631d1c4fa6060581ff6a08e0ff8",
+        "version": "0.8.0"
+      },
+      "apache-tvm-ffi": {
+        "metadata_sha256": "892a70f9ecee5579202fb3e3918300095a4c5803dea970e10b7340a98f4f06e5",
+        "name": "apache-tvm-ffi",
+        "record_sha256": "a372cfc00189700d17cba107b96f670ac48e1e0f702716ecc1adbd67ea78f0c2",
+        "version": "0.1.14.post1"
+      },
+      "attrs": {
+        "metadata_sha256": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc",
+        "name": "attrs",
+        "record_sha256": "f8a5b12cf5a55c6e999896035da5598434a2873cafa5a19790298570d36362d1",
+        "version": "26.1.0"
+      },
+      "certifi": {
+        "metadata_sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090",
+        "name": "certifi",
+        "record_sha256": "54fa8ebe7e5d1cd4a48064f94e706e5f7a6cdcccef364379692ed7657bfed982",
+        "version": "2026.7.22"
+      },
+      "charset-normalizer": {
+        "metadata_sha256": "49e955a09e1a159e0846872798006e8db7d518d8d70c637066fefdb08d3d9f7b",
+        "name": "charset-normalizer",
+        "record_sha256": "a6898dd4265e9fcdeb7140fb1565c404f7b8451846b8017c71c1651bc98b15a0",
+        "version": "3.5.2"
+      },
+      "cloudpickle": {
+        "metadata_sha256": "3d0263bfe9ee4f23b244bdcaff73acbe7a1957ebf82743b6ae42693adc48d721",
+        "name": "cloudpickle",
+        "record_sha256": "7483a357cc62e65d2ab774b359659cf7c3ad5ecb331321356b9c87306cd0bb34",
+        "version": "3.1.2"
+      },
+      "colorama": {
+        "metadata_sha256": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc",
+        "name": "colorama",
+        "record_sha256": "24ecf55e9e177d90edaf7e688cc0d1944d32d35027e53f2c51d076cb9f4e103d",
+        "version": "0.4.6"
+      },
+      "datasets": {
+        "metadata_sha256": "93988c9ea58a369ab6819dde208ef33af52f0008f705066d7535c188cdd07ce6",
+        "name": "datasets",
+        "record_sha256": "ef64ec03790d25c739b0e01a11ca6aaaa0196e81713855aad92b4377c3cea4d6",
+        "version": "2.14.4"
+      },
+      "dill": {
+        "metadata_sha256": "3e167ac14d7950229dc8b7e7b21fd3e7ee624e027c67429cd003e5a4a4e0e8c3",
+        "name": "dill",
+        "record_sha256": "64570bc781b32568d48e123460cd05d71ecdac286b366328cd8386421e78af09",
+        "version": "0.3.7"
+      },
+      "diskcache": {
+        "metadata_sha256": "6fc70cff43a3c6666531e6c268e90059fb93ae58aed708163c0ceecab24dbaef",
+        "name": "diskcache",
+        "record_sha256": "ea0e99f7e5a9c27a149b167412ed4b6bc35e8f51481d408e3e59211c8fd2ff6e",
+        "version": "5.6.3"
+      },
+      "filelock": {
+        "metadata_sha256": "2d80f43bd905689145c00b3133bc95895d654ced70a96a1802e9237e0d66599f",
+        "name": "filelock",
+        "record_sha256": "679499108d56433f5c6ce79675b87661069bb9c8ee4b3479384e7bc91c2da420",
+        "version": "3.32.3"
+      },
+      "frozenlist": {
+        "metadata_sha256": "4278aeb3d18f1f8b7e6af5b6771ba9a8f327012a42d64509f9d4087b55f71a94",
+        "name": "frozenlist",
+        "record_sha256": "76a15c9a23001085d86f2483d1de6c7a0efd6ec929acc6cd36c54a3cb51a252a",
+        "version": "1.8.0"
+      },
+      "fsspec": {
+        "metadata_sha256": "88b1657585de14e3bb82aa5278aa9595b30aa4ca74ead073d8950615c808099d",
+        "name": "fsspec",
+        "record_sha256": "4801db90e1425026baa5d1164ce1ea97a882a7d71f27081a77e7e3154ab8d958",
+        "version": "2026.7.0"
+      },
+      "genson": {
+        "metadata_sha256": "57b82b3e6e4163cb28fc7878e429d2546547fd723109c1e78650f9262e97432c",
+        "name": "genson",
+        "record_sha256": "0d7766d31ddeb44ba4b08c7f9dac18613dbecc37677588be0960d255ecbc5714",
+        "version": "1.4.0"
+      },
+      "huggingface-hub": {
+        "metadata_sha256": "4dc2b0a3fb27bcba8b091f98bccff4b94369d269c9768aeaecd0b99d970665d9",
+        "name": "huggingface_hub",
+        "record_sha256": "f46f0dc3d2fa99d480c07f33b26d869a70f7e35c59d915c8b9c13d87bfa18c3b",
+        "version": "0.36.2"
+      },
+      "idna": {
+        "metadata_sha256": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85",
+        "name": "idna",
+        "record_sha256": "6afd2fb967a98f479799fc8d5b06707dd660717c428dde14d26546081e98123d",
+        "version": "3.20"
+      },
+      "interegular": {
+        "metadata_sha256": "c7598668f970b37c6d21612cc2abc9253156bf8b5c3905524793ed9af309acb3",
+        "name": "interegular",
+        "record_sha256": "0add906b188ad97dd87e3d2f809f316c8be72022b34c1336f3c49eb5ebbb5af1",
+        "version": "0.3.3"
+      },
+      "jinja2": {
+        "metadata_sha256": "68c5548fb67c4132a13898d9b31ec50c6bea2abdd915d921f214355c3a6499c8",
+        "name": "Jinja2",
+        "record_sha256": "1bb3b46d00f55f63d24c3a34a7f955ef6692d4691217a53b15261769607f9f7c",
+        "version": "3.1.6"
+      },
+      "jsonschema": {
+        "metadata_sha256": "05b189866ca98a96da3934bf6b83687ced3ff85325273b77e16b705f6d8b26d2",
+        "name": "jsonschema",
+        "record_sha256": "6b9da70f1f0f629f0ab7900e705467e3097e43596e0d2db33186d0d374e40652",
+        "version": "4.26.0"
+      },
+      "jsonschema-specifications": {
+        "metadata_sha256": "35abd41757f32b4ea24756920ded47b70173d77cbc052a5a6d3ab583b2e8d89d",
+        "name": "jsonschema-specifications",
+        "record_sha256": "8d51ed1c7be6daa4688cb7dbb0b190176929fcfa2ac51298740cd506a4f130cd",
+        "version": "2025.9.1"
+      },
+      "lm-format-enforcer": {
+        "metadata_sha256": "e1079fb57a9f23d3d4f3f8ea2385d7166e650d788203faf19d95c19f69a46a49",
+        "name": "lm-format-enforcer",
+        "record_sha256": "d1d348fa004ace95d2b92388dda036bc3d84cf4d1b0ecd4dde8dfa7748acd190",
+        "version": "0.11.3"
+      },
+      "markupsafe": {
+        "metadata_sha256": "f0ae5dbb09d50fb5f7632c3d53f0220995ef76019e5892e0a545740136a4e3cb",
+        "name": "MarkupSafe",
+        "record_sha256": "d2b82cc3750bb0cd40c0f6e13f388c346bff58aaaf2791f289411ec92e04bd81",
+        "version": "3.0.3"
+      },
+      "mpmath": {
+        "metadata_sha256": "44b66ea444b9c0d19ae94815d356bf047ae6b680c19268b5c265687cd6a81406",
+        "name": "mpmath",
+        "record_sha256": "89869bb99d259b6078aa20ebadb44d921aa20595ffa58ab929e3082d7f3f5529",
+        "version": "1.3.0"
+      },
+      "multidict": {
+        "metadata_sha256": "266d7fbaa481b22d7e1ae273ab43ddfcee1b1b1baeb9af505cbce24382d2b28c",
+        "name": "multidict",
+        "record_sha256": "87f4907989f414b73b8d38789c98329981e0cee600283c057ec1c0f9c36d76e7",
+        "version": "7.1.0"
+      },
+      "multiprocess": {
+        "metadata_sha256": "5cee51a6883a358f05ddc88b4991395dacb3ff144e2e1c457821fe43ad5c3a8a",
+        "name": "multiprocess",
+        "record_sha256": "5dce139b72c35380d9c5c8a9e96d08eaa83ba85b702b2efc872ad24ac6e4716f",
+        "version": "0.70.15"
+      },
+      "networkx": {
+        "metadata_sha256": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a",
+        "name": "networkx",
+        "record_sha256": "b9eec012d3da7de578ab44e1effc11626e933a07ecbd50e7d474b4b92648574c",
+        "version": "3.6.1"
+      },
+      "numpy": {
+        "metadata_sha256": "451a9b8028000588e66b0b415587b6aef0bbc51a96d8e8a0cba0dc23acf64f99",
+        "name": "numpy",
+        "record_sha256": "45dd6410cdb34dbbfa99b7dec266598cd7a8d11d59b1b225cbd3f4276e001b07",
+        "version": "2.5.3"
+      },
+      "outlines": {
+        "metadata_sha256": "156cda7f8371802411a837b91f6f2f7ee628a6dd58318b59ba03845fcc56b9f0",
+        "name": "outlines",
+        "record_sha256": "135f0797eba9667a2b958bb0858748383c1ccf3813dfc63c9a0b6d37bbd0891a",
+        "version": "1.3.3"
+      },
+      "outlines-core": {
+        "metadata_sha256": "e8e479bb5fe5f24198b4f66b21fa50868e625b9cc2c63fe555eccde163b1de54",
+        "name": "outlines_core",
+        "record_sha256": "d48ea62232525efb8956ad0e6386326dceadd3aa39aeac02f07dcc8e30e8071f",
+        "version": "0.2.14"
+      },
+      "packaging": {
+        "metadata_sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763",
+        "name": "packaging",
+        "record_sha256": "a2cd431afc6ca596c9bf35faf2b902709cad9c48a55d264a71c71e70c6cb2e7a",
+        "version": "26.3"
+      },
+      "pandas": {
+        "metadata_sha256": "9eb4d20fc21b7851d6f782bd5186ded152fce80a48ac93120bf88e03c89ebc39",
+        "name": "pandas",
+        "record_sha256": "d54b2aad9ff5b21c5762c6d24703c4c862bd108f9dc51869bb7e22fd8a59ffd9",
+        "version": "3.0.6"
+      },
+      "pillow": {
+        "metadata_sha256": "2c4378001803cfac65809a50722d46e0da4ce8061e717f103e5d52734bab30f5",
+        "name": "pillow",
+        "record_sha256": "66a768c02617632025c1a45d64601c33688034303734dc29a415dcb8d5ff92ee",
+        "version": "12.3.0"
+      },
+      "pip": {
+        "metadata_sha256": "4fa7318cf30f979db7cec45c12cbbc2b4f88a15f12eefbf59a6291d0a03af926",
+        "name": "pip",
+        "record_sha256": "414f959b9a3212bedd4dbe382d818efbd6af0b0bb4d3918980ff9f232f439710",
+        "version": "25.0.1"
+      },
+      "propcache": {
+        "metadata_sha256": "30f8056d018d2771659b9389094ab2fbee28840e8ccf67ba2179effd2f588383",
+        "name": "propcache",
+        "record_sha256": "9a4c5555f023f9c204cb73abbf6a852c603e178766d23b2014d8ca77a5627d5e",
+        "version": "0.5.4"
+      },
+      "psutil": {
+        "metadata_sha256": "a263a40220d921d9cb963fc636d34f817aa2eb72c2696e3e3465d088cdb1976b",
+        "name": "psutil",
+        "record_sha256": "ba431e5c7c55206ac3e21d5c8f9aceefe1a40a7c1f0d33220f4ac59a649eb0cf",
+        "version": "7.2.2"
+      },
+      "pyarrow": {
+        "metadata_sha256": "be4adabcb9b03f3a468f17bb0f42b48e7e17cdd58741ba15753f28610c2497fb",
+        "name": "pyarrow",
+        "record_sha256": "39b11339cc3e3c098ee4d753ff3aa73821bf78d15aafa1f7cc9c37a5d39d4cce",
+        "version": "26.0.0"
+      },
+      "pydantic": {
+        "metadata_sha256": "0685830d13647bd6f3f05526043d32a8b2a221d86b53773053d6c52bb17a9c07",
+        "name": "pydantic",
+        "record_sha256": "0f244eeb4cee8397676741454836e1fa46e02e65232466df142bc6b93e1003cd",
+        "version": "2.13.5"
+      },
+      "pydantic-core": {
+        "metadata_sha256": "a193d0a16e9372c99b84b9216e274e28521fe5e5bf7be7b8b11be1c3c50cd9ca",
+        "name": "pydantic_core",
+        "record_sha256": "4dd34afad1e65f6a5c674da8e2b7d6f628c082fee1f68869c7c5c6b03abf29ac",
+        "version": "2.46.5"
+      },
+      "python-dateutil": {
+        "metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+        "name": "python-dateutil",
+        "record_sha256": "4d8d33cebd9c3f70f37f9f309402058fb69f4fe984ecf9b01482d283ec0b8197",
+        "version": "2.9.0.post0"
+      },
+      "pyyaml": {
+        "metadata_sha256": "847a701020334386852b6e07bad1053cb0ce3da9ee1846e7e9d02b24e8bb3f8d",
+        "name": "PyYAML",
+        "record_sha256": "ff25f9939487eaabf6e6da28b74a1e419aff9587664e2d17997cf3c207531b41",
+        "version": "6.0.3"
+      },
+      "referencing": {
+        "metadata_sha256": "c93b00e6ab1524fd60848376604c189a114374776475c25a31d57be47b29de6a",
+        "name": "referencing",
+        "record_sha256": "184ac366de5dddbfcd316f2eeff635461c3db1a605f040b25affd959005c9a9b",
+        "version": "0.37.0"
+      },
+      "regex": {
+        "metadata_sha256": "726c658b5d0ee420e773f9e6c843918e8a2ad7c27577d20c8f502c08eccb211e",
+        "name": "regex",
+        "record_sha256": "b2e4a745311a052d0fe63df2d84546bc1b0de833319d6fd34e40c27f16f376a2",
+        "version": "2026.9.29"
+      },
+      "requests": {
+        "metadata_sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+        "name": "requests",
+        "record_sha256": "9fe8a6fba6bb2091ccd8e5c3d279392ba36c03fc42e7854c792c74c98d5b3e91",
+        "version": "2.34.2"
+      },
+      "rpds-py": {
+        "metadata_sha256": "778fb36890d26c5657d256db3e61a05a637468aa4cf607f8d1059c5079fcefd8",
+        "name": "rpds-py",
+        "record_sha256": "e9d79668c220da73ef9b7afdd45d345ca1256f710abdbec2c47bd7a50f74283a",
+        "version": "2026.9.1"
+      },
+      "safetensors": {
+        "metadata_sha256": "597731d1baf7a94219753fa0a74abd1a8a18562d50d98b2e25d91e11e3224d36",
+        "name": "safetensors",
+        "record_sha256": "1f64c6474ece692a5d3517f00f28d507b8b044e326f80d9ead1225eddf46e9d2",
+        "version": "0.8.0"
+      },
+      "sentencepiece": {
+        "metadata_sha256": "eb1173d40630c7d15aba70e145e6d378ba9137ec1634e74b2f4e4ccd0dc5ffc7",
+        "name": "sentencepiece",
+        "record_sha256": "54e0ceff0b22264bdaabd434aff8b6c4a23a8bf4343b87276b617f0fb512cd25",
+        "version": "0.2.2"
+      },
+      "setuptools": {
+        "metadata_sha256": "4444a6b549a8ebb02e1739f4375af7756c841f96f0c31077a183273c7462bd10",
+        "name": "setuptools",
+        "record_sha256": "3620fe28d9f6218a0d0864d8afc83ce14cdb9f17748948965d18e675feeb7c41",
+        "version": "78.1.0"
+      },
+      "six": {
+        "metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+        "name": "six",
+        "record_sha256": "03a7a870f94819839dd6d2089200e7412c735c247af773fb2d2e2ed8310c179b",
+        "version": "1.17.0"
+      },
+      "sympy": {
+        "metadata_sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595",
+        "name": "sympy",
+        "record_sha256": "b8be6403a16d422f2aba202ff95b5276b685ffb821098f656b7acd8144100334",
+        "version": "1.14.0"
+      },
+      "tokenizers": {
+        "metadata_sha256": "5ad9bccf21ae53d45f812703c80c7c03ecea300823655a2968f9e6778779bdb3",
+        "name": "tokenizers",
+        "record_sha256": "75d3f2b4cd08d70c9053a36d18ce84e36776e9d1d5e9c4b51e25108ddeff5df7",
+        "version": "0.22.2"
+      },
+      "torch": {
+        "metadata_sha256": "4b33741fadc8b60fb7b08de301f097ece05979ad5b742573a3fd14712cd48bf1",
+        "name": "torch",
+        "record_sha256": "0d3adbfc3c58d01cda695fb77ed916612958bf8141c416f7ce912f7f99b30c8a",
+        "version": "2.14.0+cpu"
+      },
+      "tqdm": {
+        "metadata_sha256": "a5da70b966afea3a759716041bad7187f2ece02c22348cf9e7c0a512bbf15f57",
+        "name": "tqdm",
+        "record_sha256": "f53efd4c97ce4a12f379d6652d55e2f3db7a88de6430f5399b8a3b814cbaa828",
+        "version": "4.70.1"
+      },
+      "transformers": {
+        "metadata_sha256": "91601044a74fe02571a825356754dbbaa9e1d3e3dd3c2237254c15e903e421e3",
+        "name": "transformers",
+        "record_sha256": "c4bb3349c84771ba29322e9d324e407c311f2e8df9f1519229a8f17fd81711e1",
+        "version": "4.57.6"
+      },
+      "typing-extensions": {
+        "metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46",
+        "name": "typing_extensions",
+        "record_sha256": "78f74ed46a377d6e1debed78b3e994ff9cfe02a529d393d7c8ab80989bd25079",
+        "version": "4.16.0"
+      },
+      "typing-inspection": {
+        "metadata_sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da",
+        "name": "typing-inspection",
+        "record_sha256": "eac75806093dd7090671e15695a08c2ce4cf39133ce26fca1f084d03a6db201f",
+        "version": "0.4.4"
+      },
+      "tzdata": {
+        "metadata_sha256": "e0780e8b6dc8882ce87e871a9d4589d59cb05a0c2d64f58b1ba62cde1ee91f6a",
+        "name": "tzdata",
+        "record_sha256": "4af0adc51081b7277ca7f7403193b06b94177466ff3d94af703b5b7cf98c9436",
+        "version": "2026.5"
+      },
+      "urllib3": {
+        "metadata_sha256": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4",
+        "name": "urllib3",
+        "record_sha256": "5d88c4832d0406a7fd3c000f924b00394c2d7f694b332bc441370d1a7f5fe392",
+        "version": "2.8.0"
+      },
+      "xgrammar": {
+        "metadata_sha256": "91ffa7936f8bde807ef453245bb41617818b06190d610f9777b135f746197bd8",
+        "name": "xgrammar",
+        "record_sha256": "bbb084183d2dd315eb117e39604abdc66663bfefab9edd3ee3eb5e76f1d2e2c9",
+        "version": "0.2.8"
+      },
+      "xxhash": {
+        "metadata_sha256": "6bd45a2b485477d1bd7e321d03a7593ca44c50f2b5ee96b36918c19a2f5dfa88",
+        "name": "xxhash",
+        "record_sha256": "60290493a72f121c4a1c64cf7680e8a40e4b4acdce02d7bb8a2769d2e87f688b",
+        "version": "4.0.1"
+      },
+      "yarl": {
+        "metadata_sha256": "a6e8eb9810e93ee04f3159904ccec9d0780f4a9ed5181a59859b47d1b1e7afeb",
+        "name": "yarl",
+        "record_sha256": "4bf7315dab3128f426c8358e14745cc6bf9b98e9cda4459f9834fe2081608e7a",
+        "version": "1.25.1"
+      }
+    },
+    "pip_check": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "No broken requirements found.\n"
+    },
+    "removals": []
+  },
+  "pre_install": {
+    "hash_method_note": "Historical receipt hashes importlib.metadata.read_text UTF-8 (universal newlines). New pre/post comparison hashes raw METADATA and RECORD bytes. Initial raw-vs-normalized mismatch was measurement-method mismatch; 36/36 normalized identities match.",
+    "historical_normalized_text_inventory": {
+      "accelerate": {
+        "metadata_sha256": "64e744885238d853870093f1d4526eb93ac6ae8a5420a2b3f864fe5d16189d37",
+        "name": "accelerate",
+        "record_sha256": "4f7c401d11513fb9c640132f82c0103aa80171da5bfcbfdf0f4dce1bf0f5d6e1",
+        "version": "1.15.0"
+      },
+      "annotated-types": {
+        "metadata_sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298",
+        "name": "annotated-types",
+        "record_sha256": "aaa63966313d5663650a9eb71a068e9593df641bf39afcc69b6ab4567e53b2b1",
+        "version": "0.8.0"
+      },
+      "apache-tvm-ffi": {
+        "metadata_sha256": "892a70f9ecee5579202fb3e3918300095a4c5803dea970e10b7340a98f4f06e5",
+        "name": "apache-tvm-ffi",
+        "record_sha256": "dcde0b243533e39ccfc9071bef429d95cf26e4399e436126a2ffd0647235f948",
+        "version": "0.1.14.post1"
+      },
+      "certifi": {
+        "metadata_sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090",
+        "name": "certifi",
+        "record_sha256": "e6c48519c08f2bbe98bb8ccb9c3aa9a157fd41de210173fe047e77b8e8d35421",
+        "version": "2026.7.22"
+      },
+      "charset-normalizer": {
+        "metadata_sha256": "89ce6362bb7be88558f4be99a98f5d1b4da93d19cd0323e5ee0bac05cf883dfb",
+        "name": "charset-normalizer",
+        "record_sha256": "c6b6183b3ccccd716217689a95ab91922ee435096f8914e90c564d024ee07bac",
+        "version": "3.5.2"
+      },
+      "colorama": {
+        "metadata_sha256": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc",
+        "name": "colorama",
+        "record_sha256": "2de1747809a165c7c54a2fd115a569a061e6eedf56d5c6db3fe0dc8a2985562f",
+        "version": "0.4.6"
+      },
+      "filelock": {
+        "metadata_sha256": "2d80f43bd905689145c00b3133bc95895d654ced70a96a1802e9237e0d66599f",
+        "name": "filelock",
+        "record_sha256": "87ac3bb931372412ee7857b9d364a57cc4367af40e5c79e2e8118afe7f72a211",
+        "version": "3.32.3"
+      },
+      "fsspec": {
+        "metadata_sha256": "88b1657585de14e3bb82aa5278aa9595b30aa4ca74ead073d8950615c808099d",
+        "name": "fsspec",
+        "record_sha256": "f7db5d785b40f1eee22ab117eef127fb213aa3230d3a5273ce326dde47e087c2",
+        "version": "2026.7.0"
+      },
+      "huggingface-hub": {
+        "metadata_sha256": "4dc2b0a3fb27bcba8b091f98bccff4b94369d269c9768aeaecd0b99d970665d9",
+        "name": "huggingface_hub",
+        "record_sha256": "11c2690024239d24931fb637bd4039cb92760ad1bddc1f848d832dad742c1ef0",
+        "version": "0.36.2"
+      },
+      "idna": {
+        "metadata_sha256": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85",
+        "name": "idna",
+        "record_sha256": "df9123953b525521bbaa780e02843cdabb3da3f4f119bddcff96ef0f66886f3a",
+        "version": "3.20"
+      },
+      "interegular": {
+        "metadata_sha256": "ed9049b0decb4c54cfc886aecc9f09a2ad9fbbbdf93fb649fbf1543560abffa7",
+        "name": "interegular",
+        "record_sha256": "0ab49c677739b9ee4b214dd1ea8fa5723904bd583e641f4c99f438c8ee2ac148",
+        "version": "0.3.3"
+      },
+      "jinja2": {
+        "metadata_sha256": "68c5548fb67c4132a13898d9b31ec50c6bea2abdd915d921f214355c3a6499c8",
+        "name": "Jinja2",
+        "record_sha256": "0c53d32a3ab7315c84d8278414af16134b29f7ec30fe3d41d90331430a31e525",
+        "version": "3.1.6"
+      },
+      "lm-format-enforcer": {
+        "metadata_sha256": "e1079fb57a9f23d3d4f3f8ea2385d7166e650d788203faf19d95c19f69a46a49",
+        "name": "lm-format-enforcer",
+        "record_sha256": "74682eaa6dc572b350fd84457bb5543bc8c9ded5736f267d0382589372212ab4",
+        "version": "0.11.3"
+      },
+      "markupsafe": {
+        "metadata_sha256": "12b4cc61a7fa288cf7667ee3f213786d9619db57fb33ff6f934afbcb5c12ec81",
+        "name": "MarkupSafe",
+        "record_sha256": "602537cb13322b8f5ca66a2fb581b578beccd7193fe949733af07da4a8da6be0",
+        "version": "3.0.3"
+      },
+      "mpmath": {
+        "metadata_sha256": "44b66ea444b9c0d19ae94815d356bf047ae6b680c19268b5c265687cd6a81406",
+        "name": "mpmath",
+        "record_sha256": "6e0dc4362026a41beb2ad7081ec8f6fc9be0c48d9ce65784733aedc223c60100",
+        "version": "1.3.0"
+      },
+      "networkx": {
+        "metadata_sha256": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a",
+        "name": "networkx",
+        "record_sha256": "2a478b4022f8b11de940021fff21b2f0580130a6af6de13063070ada7811574d",
+        "version": "3.6.1"
+      },
+      "numpy": {
+        "metadata_sha256": "451a9b8028000588e66b0b415587b6aef0bbc51a96d8e8a0cba0dc23acf64f99",
+        "name": "numpy",
+        "record_sha256": "d4b72b9dbfa26fc5268cb62af6b99d3b49f31fe0bacb881073c0b0d431ba4704",
+        "version": "2.5.3"
+      },
+      "packaging": {
+        "metadata_sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763",
+        "name": "packaging",
+        "record_sha256": "8c69191044e577ab83c6b2990bc6fd7cfb441e6027ef5bb9e1c49c1dce2cedce",
+        "version": "26.3"
+      },
+      "pip": {
+        "metadata_sha256": "4fa7318cf30f979db7cec45c12cbbc2b4f88a15f12eefbf59a6291d0a03af926",
+        "name": "pip",
+        "record_sha256": "d3f7d026edecc6337b31a1c5511892275888ce527da0d9be6c48adb4ca5d4c18",
+        "version": "25.0.1"
+      },
+      "psutil": {
+        "metadata_sha256": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f",
+        "name": "psutil",
+        "record_sha256": "481092a857176c1a8b92b473aba538340d6ed8cd47bd806bd64b8cc91d55766f",
+        "version": "7.2.2"
+      },
+      "pydantic": {
+        "metadata_sha256": "0685830d13647bd6f3f05526043d32a8b2a221d86b53773053d6c52bb17a9c07",
+        "name": "pydantic",
+        "record_sha256": "85c8ff103b9852dbcbe01c1b9fe9f5f9b8074c711f7246104b266fcd52d6f015",
+        "version": "2.13.5"
+      },
+      "pydantic-core": {
+        "metadata_sha256": "29768c038c0bb3564c0a87ef50ef78d18a2372474bdef0ba356a8c0fd4bd6028",
+        "name": "pydantic_core",
+        "record_sha256": "a561308363198c9aa2ed55bb7720c1657989d2af5124ce7e4016b95fa2c81c2f",
+        "version": "2.46.5"
+      },
+      "pyyaml": {
+        "metadata_sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34",
+        "name": "PyYAML",
+        "record_sha256": "8192cce9eb03fd9bc6afd05abcf791fb6835ef5c46b629eefa05ad315be3d915",
+        "version": "6.0.3"
+      },
+      "regex": {
+        "metadata_sha256": "33859377dbf8dd38ee3de73fd97faebf4a63d50576e3cc1a9dfe44df08b0936a",
+        "name": "regex",
+        "record_sha256": "d50437a52084f9de48cea6b189d49761f2be416a1a7d0bbe4eaad947e9dcf4ce",
+        "version": "2026.9.29"
+      },
+      "requests": {
+        "metadata_sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+        "name": "requests",
+        "record_sha256": "f6bd62ddca64dc9176c0085893fe2f153f553bef4869e9d53416a7c81be5532b",
+        "version": "2.34.2"
+      },
+      "safetensors": {
+        "metadata_sha256": "645be7b8d55e91534f991d144dc9e279581ea8dbea1a8c5b0be14e529d01e345",
+        "name": "safetensors",
+        "record_sha256": "70546da2d572cbe73b36c91b30f6d3cf484362208e8b6a8323476364dbf2cea8",
+        "version": "0.8.0"
+      },
+      "setuptools": {
+        "metadata_sha256": "4444a6b549a8ebb02e1739f4375af7756c841f96f0c31077a183273c7462bd10",
+        "name": "setuptools",
+        "record_sha256": "754d763b11bb61a90275f334f31b61755f262093ec7ede43b55e8d63c908532e",
+        "version": "78.1.0"
+      },
+      "sympy": {
+        "metadata_sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595",
+        "name": "sympy",
+        "record_sha256": "56139de84db3b425a2298ece9b9100df615f99b7e91b1bf77ac0b0233296893e",
+        "version": "1.14.0"
+      },
+      "tokenizers": {
+        "metadata_sha256": "15a5ddaf489f592b77e0a934c0eeb46b51130a94064ca129232afdb0a3868efc",
+        "name": "tokenizers",
+        "record_sha256": "59cb1b72c40c376eb48ba3d2be7aed522b257bb1ab0d451c0e2dffad0a587d89",
+        "version": "0.22.2"
+      },
+      "torch": {
+        "metadata_sha256": "4b33741fadc8b60fb7b08de301f097ece05979ad5b742573a3fd14712cd48bf1",
+        "name": "torch",
+        "record_sha256": "806723c84068c1ffe7adeb2347fa62d95178bcd6dd2e8eb7ed3b0c879f74e89d",
+        "version": "2.14.0+cpu"
+      },
+      "tqdm": {
+        "metadata_sha256": "a5da70b966afea3a759716041bad7187f2ece02c22348cf9e7c0a512bbf15f57",
+        "name": "tqdm",
+        "record_sha256": "4159c56a07e1bfb0ade57ecf9f3efd6b21bd69d7190b6cad2178ecb4350f62ce",
+        "version": "4.70.1"
+      },
+      "transformers": {
+        "metadata_sha256": "91601044a74fe02571a825356754dbbaa9e1d3e3dd3c2237254c15e903e421e3",
+        "name": "transformers",
+        "record_sha256": "e2e3936d8f563ede0bdd51192190073c19e50a80d80b1c301f1597d95835bf70",
+        "version": "4.57.6"
+      },
+      "typing-extensions": {
+        "metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46",
+        "name": "typing_extensions",
+        "record_sha256": "a346a921aa5be35b34ced3258614183d152887b954caaae5de2a94be72d5f2ec",
+        "version": "4.16.0"
+      },
+      "typing-inspection": {
+        "metadata_sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da",
+        "name": "typing-inspection",
+        "record_sha256": "ddcdc762cc08b53be8fc7e86cb59e2ac022859547d764e69e574692dfeee18df",
+        "version": "0.4.4"
+      },
+      "urllib3": {
+        "metadata_sha256": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4",
+        "name": "urllib3",
+        "record_sha256": "d1095c0d4222e159c7ceb2f8767d012e68bc1c4c0025518760aeec47e91326e2",
+        "version": "2.8.0"
+      },
+      "xgrammar": {
+        "metadata_sha256": "91ffa7936f8bde807ef453245bb41617818b06190d610f9777b135f746197bd8",
+        "name": "xgrammar",
+        "record_sha256": "523f8c65ae897a3ec4fd9a91589f86095c5de24908439d32860dd5f0bfc649af",
+        "version": "0.2.8"
+      }
+    },
+    "historical_package_drift": 0,
+    "packages": {
+      "accelerate": {
+        "metadata_sha256": "64e744885238d853870093f1d4526eb93ac6ae8a5420a2b3f864fe5d16189d37",
+        "name": "accelerate",
+        "record_sha256": "90c80b0037cf1c8205d316b96ca24c0f8355f352eeb58b844c535efbd67a1673",
+        "version": "1.15.0"
+      },
+      "annotated-types": {
+        "metadata_sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298",
+        "name": "annotated-types",
+        "record_sha256": "b43bb044cedfc31ee6bbce07483656407bb19631d1c4fa6060581ff6a08e0ff8",
+        "version": "0.8.0"
+      },
+      "apache-tvm-ffi": {
+        "metadata_sha256": "892a70f9ecee5579202fb3e3918300095a4c5803dea970e10b7340a98f4f06e5",
+        "name": "apache-tvm-ffi",
+        "record_sha256": "a372cfc00189700d17cba107b96f670ac48e1e0f702716ecc1adbd67ea78f0c2",
+        "version": "0.1.14.post1"
+      },
+      "certifi": {
+        "metadata_sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090",
+        "name": "certifi",
+        "record_sha256": "54fa8ebe7e5d1cd4a48064f94e706e5f7a6cdcccef364379692ed7657bfed982",
+        "version": "2026.7.22"
+      },
+      "charset-normalizer": {
+        "metadata_sha256": "49e955a09e1a159e0846872798006e8db7d518d8d70c637066fefdb08d3d9f7b",
+        "name": "charset-normalizer",
+        "record_sha256": "a6898dd4265e9fcdeb7140fb1565c404f7b8451846b8017c71c1651bc98b15a0",
+        "version": "3.5.2"
+      },
+      "colorama": {
+        "metadata_sha256": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc",
+        "name": "colorama",
+        "record_sha256": "24ecf55e9e177d90edaf7e688cc0d1944d32d35027e53f2c51d076cb9f4e103d",
+        "version": "0.4.6"
+      },
+      "filelock": {
+        "metadata_sha256": "2d80f43bd905689145c00b3133bc95895d654ced70a96a1802e9237e0d66599f",
+        "name": "filelock",
+        "record_sha256": "679499108d56433f5c6ce79675b87661069bb9c8ee4b3479384e7bc91c2da420",
+        "version": "3.32.3"
+      },
+      "fsspec": {
+        "metadata_sha256": "88b1657585de14e3bb82aa5278aa9595b30aa4ca74ead073d8950615c808099d",
+        "name": "fsspec",
+        "record_sha256": "4801db90e1425026baa5d1164ce1ea97a882a7d71f27081a77e7e3154ab8d958",
+        "version": "2026.7.0"
+      },
+      "huggingface-hub": {
+        "metadata_sha256": "4dc2b0a3fb27bcba8b091f98bccff4b94369d269c9768aeaecd0b99d970665d9",
+        "name": "huggingface_hub",
+        "record_sha256": "f46f0dc3d2fa99d480c07f33b26d869a70f7e35c59d915c8b9c13d87bfa18c3b",
+        "version": "0.36.2"
+      },
+      "idna": {
+        "metadata_sha256": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85",
+        "name": "idna",
+        "record_sha256": "6afd2fb967a98f479799fc8d5b06707dd660717c428dde14d26546081e98123d",
+        "version": "3.20"
+      },
+      "interegular": {
+        "metadata_sha256": "c7598668f970b37c6d21612cc2abc9253156bf8b5c3905524793ed9af309acb3",
+        "name": "interegular",
+        "record_sha256": "0add906b188ad97dd87e3d2f809f316c8be72022b34c1336f3c49eb5ebbb5af1",
+        "version": "0.3.3"
+      },
+      "jinja2": {
+        "metadata_sha256": "68c5548fb67c4132a13898d9b31ec50c6bea2abdd915d921f214355c3a6499c8",
+        "name": "Jinja2",
+        "record_sha256": "1bb3b46d00f55f63d24c3a34a7f955ef6692d4691217a53b15261769607f9f7c",
+        "version": "3.1.6"
+      },
+      "lm-format-enforcer": {
+        "metadata_sha256": "e1079fb57a9f23d3d4f3f8ea2385d7166e650d788203faf19d95c19f69a46a49",
+        "name": "lm-format-enforcer",
+        "record_sha256": "d1d348fa004ace95d2b92388dda036bc3d84cf4d1b0ecd4dde8dfa7748acd190",
+        "version": "0.11.3"
+      },
+      "markupsafe": {
+        "metadata_sha256": "f0ae5dbb09d50fb5f7632c3d53f0220995ef76019e5892e0a545740136a4e3cb",
+        "name": "MarkupSafe",
+        "record_sha256": "d2b82cc3750bb0cd40c0f6e13f388c346bff58aaaf2791f289411ec92e04bd81",
+        "version": "3.0.3"
+      },
+      "mpmath": {
+        "metadata_sha256": "44b66ea444b9c0d19ae94815d356bf047ae6b680c19268b5c265687cd6a81406",
+        "name": "mpmath",
+        "record_sha256": "89869bb99d259b6078aa20ebadb44d921aa20595ffa58ab929e3082d7f3f5529",
+        "version": "1.3.0"
+      },
+      "networkx": {
+        "metadata_sha256": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a",
+        "name": "networkx",
+        "record_sha256": "b9eec012d3da7de578ab44e1effc11626e933a07ecbd50e7d474b4b92648574c",
+        "version": "3.6.1"
+      },
+      "numpy": {
+        "metadata_sha256": "451a9b8028000588e66b0b415587b6aef0bbc51a96d8e8a0cba0dc23acf64f99",
+        "name": "numpy",
+        "record_sha256": "45dd6410cdb34dbbfa99b7dec266598cd7a8d11d59b1b225cbd3f4276e001b07",
+        "version": "2.5.3"
+      },
+      "packaging": {
+        "metadata_sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763",
+        "name": "packaging",
+        "record_sha256": "a2cd431afc6ca596c9bf35faf2b902709cad9c48a55d264a71c71e70c6cb2e7a",
+        "version": "26.3"
+      },
+      "pip": {
+        "metadata_sha256": "4fa7318cf30f979db7cec45c12cbbc2b4f88a15f12eefbf59a6291d0a03af926",
+        "name": "pip",
+        "record_sha256": "414f959b9a3212bedd4dbe382d818efbd6af0b0bb4d3918980ff9f232f439710",
+        "version": "25.0.1"
+      },
+      "psutil": {
+        "metadata_sha256": "a263a40220d921d9cb963fc636d34f817aa2eb72c2696e3e3465d088cdb1976b",
+        "name": "psutil",
+        "record_sha256": "ba431e5c7c55206ac3e21d5c8f9aceefe1a40a7c1f0d33220f4ac59a649eb0cf",
+        "version": "7.2.2"
+      },
+      "pydantic": {
+        "metadata_sha256": "0685830d13647bd6f3f05526043d32a8b2a221d86b53773053d6c52bb17a9c07",
+        "name": "pydantic",
+        "record_sha256": "0f244eeb4cee8397676741454836e1fa46e02e65232466df142bc6b93e1003cd",
+        "version": "2.13.5"
+      },
+      "pydantic-core": {
+        "metadata_sha256": "a193d0a16e9372c99b84b9216e274e28521fe5e5bf7be7b8b11be1c3c50cd9ca",
+        "name": "pydantic_core",
+        "record_sha256": "4dd34afad1e65f6a5c674da8e2b7d6f628c082fee1f68869c7c5c6b03abf29ac",
+        "version": "2.46.5"
+      },
+      "pyyaml": {
+        "metadata_sha256": "847a701020334386852b6e07bad1053cb0ce3da9ee1846e7e9d02b24e8bb3f8d",
+        "name": "PyYAML",
+        "record_sha256": "ff25f9939487eaabf6e6da28b74a1e419aff9587664e2d17997cf3c207531b41",
+        "version": "6.0.3"
+      },
+      "regex": {
+        "metadata_sha256": "726c658b5d0ee420e773f9e6c843918e8a2ad7c27577d20c8f502c08eccb211e",
+        "name": "regex",
+        "record_sha256": "b2e4a745311a052d0fe63df2d84546bc1b0de833319d6fd34e40c27f16f376a2",
+        "version": "2026.9.29"
+      },
+      "requests": {
+        "metadata_sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+        "name": "requests",
+        "record_sha256": "9fe8a6fba6bb2091ccd8e5c3d279392ba36c03fc42e7854c792c74c98d5b3e91",
+        "version": "2.34.2"
+      },
+      "safetensors": {
+        "metadata_sha256": "597731d1baf7a94219753fa0a74abd1a8a18562d50d98b2e25d91e11e3224d36",
+        "name": "safetensors",
+        "record_sha256": "1f64c6474ece692a5d3517f00f28d507b8b044e326f80d9ead1225eddf46e9d2",
+        "version": "0.8.0"
+      },
+      "setuptools": {
+        "metadata_sha256": "4444a6b549a8ebb02e1739f4375af7756c841f96f0c31077a183273c7462bd10",
+        "name": "setuptools",
+        "record_sha256": "3620fe28d9f6218a0d0864d8afc83ce14cdb9f17748948965d18e675feeb7c41",
+        "version": "78.1.0"
+      },
+      "sympy": {
+        "metadata_sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595",
+        "name": "sympy",
+        "record_sha256": "b8be6403a16d422f2aba202ff95b5276b685ffb821098f656b7acd8144100334",
+        "version": "1.14.0"
+      },
+      "tokenizers": {
+        "metadata_sha256": "5ad9bccf21ae53d45f812703c80c7c03ecea300823655a2968f9e6778779bdb3",
+        "name": "tokenizers",
+        "record_sha256": "75d3f2b4cd08d70c9053a36d18ce84e36776e9d1d5e9c4b51e25108ddeff5df7",
+        "version": "0.22.2"
+      },
+      "torch": {
+        "metadata_sha256": "4b33741fadc8b60fb7b08de301f097ece05979ad5b742573a3fd14712cd48bf1",
+        "name": "torch",
+        "record_sha256": "0d3adbfc3c58d01cda695fb77ed916612958bf8141c416f7ce912f7f99b30c8a",
+        "version": "2.14.0+cpu"
+      },
+      "tqdm": {
+        "metadata_sha256": "a5da70b966afea3a759716041bad7187f2ece02c22348cf9e7c0a512bbf15f57",
+        "name": "tqdm",
+        "record_sha256": "f53efd4c97ce4a12f379d6652d55e2f3db7a88de6430f5399b8a3b814cbaa828",
+        "version": "4.70.1"
+      },
+      "transformers": {
+        "metadata_sha256": "91601044a74fe02571a825356754dbbaa9e1d3e3dd3c2237254c15e903e421e3",
+        "name": "transformers",
+        "record_sha256": "c4bb3349c84771ba29322e9d324e407c311f2e8df9f1519229a8f17fd81711e1",
+        "version": "4.57.6"
+      },
+      "typing-extensions": {
+        "metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46",
+        "name": "typing_extensions",
+        "record_sha256": "78f74ed46a377d6e1debed78b3e994ff9cfe02a529d393d7c8ab80989bd25079",
+        "version": "4.16.0"
+      },
+      "typing-inspection": {
+        "metadata_sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da",
+        "name": "typing-inspection",
+        "record_sha256": "eac75806093dd7090671e15695a08c2ce4cf39133ce26fca1f084d03a6db201f",
+        "version": "0.4.4"
+      },
+      "urllib3": {
+        "metadata_sha256": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4",
+        "name": "urllib3",
+        "record_sha256": "5d88c4832d0406a7fd3c000f924b00394c2d7f694b332bc441370d1a7f5fe392",
+        "version": "2.8.0"
+      },
+      "xgrammar": {
+        "metadata_sha256": "91ffa7936f8bde807ef453245bb41617818b06190d610f9777b135f746197bd8",
+        "name": "xgrammar",
+        "record_sha256": "bbb084183d2dd315eb117e39604abdc66663bfefab9edd3ee3eb5e76f1d2e2c9",
+        "version": "0.2.8"
+      }
+    },
+    "pip_check": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "No broken requirements found.\n"
+    },
+    "utc": "2026-10-15T00:41:00.428470+00:00"
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+}

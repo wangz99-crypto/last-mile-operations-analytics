@@ -1,0 +1,13 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "artifacts/answerability_semantic_v2_1_whitespace_closure/ACCEPTING_STATE_INVENTORY.json": "ef28af3697c4e8b70edb283505c251e902ae7776df9f13a94b1176bd8d0bccef",
+    "artifacts/answerability_semantic_v2_1_whitespace_closure/CONTRACT_ALIGNED_ORACLE.json": "7b2544c34164c9aad739108f7892e55a26f2b6fb974027895b64f7c0aff97ca0",
+    "artifacts/answerability_semantic_v2_1_whitespace_closure/FINAL_RECORD.md": "d98d1612226a8686d52ae8b7a5c482e01c230bf3bf1394b38f6fad1e586186e5",
+    "artifacts/answerability_semantic_v2_1_whitespace_closure/QUALIFICATION_RECEIPT.json": "a565cb1cc81f66fdf5e0206954af69fdb94b2b617048e441242c80e5d7a7d7c6",
+    "artifacts/answerability_semantic_v2_1_whitespace_closure/WHITESPACE_CLOSURE_GRAPH.json": "a96f570298b8a06600d11d5385e9e6395c0923ac295218a943435536d13c7e8c",
+    "artifacts/answerability_semantic_v2_1_whitespace_closure/WHITESPACE_CLOSURE_PROTOCOL.md": "7f928f93bf352a53946e133d1f9a0ae7f4476cb18c00d7fd299a4e7623cae353",
+    "gateway/domain/evaluation/answerability/qualify_direct_regex_whitespace_closure.py": "fe3126cd0f18a38306542079ab4930bb9a414192d10bb7159ded6970f506d77a"
+  },
+  "self_hash": "Excluded to avoid circularity; reported separately."
+}

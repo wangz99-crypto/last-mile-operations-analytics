@@ -1,0 +1,1895 @@
+{
+  "covered_count": 64,
+  "frozen_plan_sha256": "b6e0ed407ff607ee2534a01059d9a9c9a8a9303c41d5445c6aa3114f04e14d7b",
+  "rows": [
+    {
+      "constraint_id": "/additionalProperties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "additionalProperties",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R01_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R01_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "oneOf",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET",
+        "UNRESOLVED_MISSING_TARGET",
+        "BRANCH_0_DECISION",
+        "BRANCH_0_REASON",
+        "BRANCH_1_DECISION",
+        "BRANCH_1_REASON",
+        "BRANCH_2_DECISION",
+        "BRANCH_2_REASON",
+        "ALLOW_CONTEXT",
+        "ALLOW_UNSUPPORTED",
+        "INSUFFICIENT_CONTEXT",
+        "INSUFFICIENT_STATUS"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET",
+        "UNRESOLVED_MISSING_TARGET",
+        "BRANCH_0_DECISION",
+        "BRANCH_0_REASON",
+        "BRANCH_1_DECISION",
+        "BRANCH_1_REASON",
+        "BRANCH_2_DECISION",
+        "BRANCH_2_REASON",
+        "ALLOW_CONTEXT",
+        "ALLOW_UNSUPPORTED",
+        "INSUFFICIENT_CONTEXT",
+        "INSUFFICIENT_STATUS"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/0/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "M1",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_0_DECISION",
+        "BRANCH_0_REASON",
+        "ALLOW_CONTEXT",
+        "ALLOW_UNSUPPORTED"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_0_DECISION",
+        "BRANCH_0_REASON",
+        "ALLOW_CONTEXT",
+        "ALLOW_UNSUPPORTED"
+      ],
+      "planned_positive_witnesses": [
+        "M1"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/0/properties/decision/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "M1",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_0_DECISION"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_0_DECISION"
+      ],
+      "planned_positive_witnesses": [
+        "M1"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/0/properties/material_asks/items",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "items",
+      "observed_witnesses": [
+        "M1",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ALLOW_UNSUPPORTED"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ALLOW_UNSUPPORTED"
+      ],
+      "planned_positive_witnesses": [
+        "M1"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/0/properties/material_asks/items/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "M1",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ALLOW_UNSUPPORTED"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ALLOW_UNSUPPORTED"
+      ],
+      "planned_positive_witnesses": [
+        "M1"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/0/properties/material_asks/items/properties/support_status/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "M1",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ALLOW_UNSUPPORTED"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ALLOW_UNSUPPORTED"
+      ],
+      "planned_positive_witnesses": [
+        "M1"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/0/properties/policy_context_status/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "M1",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ALLOW_CONTEXT"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ALLOW_CONTEXT"
+      ],
+      "planned_positive_witnesses": [
+        "M1"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/0/properties/reason_code/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "M1",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_0_REASON"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_0_REASON"
+      ],
+      "planned_positive_witnesses": [
+        "M1"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET",
+        "BRANCH_1_DECISION",
+        "BRANCH_1_REASON",
+        "INSUFFICIENT_CONTEXT",
+        "INSUFFICIENT_STATUS"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET",
+        "BRANCH_1_DECISION",
+        "BRANCH_1_REASON",
+        "INSUFFICIENT_CONTEXT",
+        "INSUFFICIENT_STATUS"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties/decision/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_1_DECISION"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_1_DECISION"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties/material_asks/contains",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "contains",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties/material_asks/contains/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties/material_asks/contains/properties/support_status/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_MISSING_TARGET"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties/material_asks/items",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "items",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_STATUS"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_STATUS"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties/material_asks/items/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_STATUS"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_STATUS"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties/material_asks/items/properties/support_status/enum",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "enum",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_STATUS"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_STATUS"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties/policy_context_status/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_CONTEXT"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "INSUFFICIENT_CONTEXT"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/1/properties/reason_code/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_1_REASON"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_1_REASON"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/anyOf",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "anyOf",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/anyOf/0/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/anyOf/0/properties/policy_context_status/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/anyOf/1/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/anyOf/1/properties/material_asks/contains",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "contains",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/anyOf/1/properties/material_asks/contains/properties/support_status/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_2_DECISION",
+        "BRANCH_2_REASON"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_2_DECISION",
+        "BRANCH_2_REASON"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/properties/decision/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_2_DECISION"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_2_DECISION"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/oneOf/2/properties/reason_code/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_2_REASON"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "BRANCH_2_REASON"
+      ],
+      "planned_positive_witnesses": [
+        "POS_UNRESOLVED_CONTEXT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R03_NEG",
+        "R04_NEG",
+        "R05_NEG",
+        "R06_NEG",
+        "R07_NEG",
+        "R08_NEG",
+        "R09_NEG",
+        "R10_NEG",
+        "R11_NEG",
+        "R12_NEG",
+        "R13_NEG",
+        "R14_NEG",
+        "R15_NEG",
+        "R16_NEG",
+        "DELEGATED_UNIQUE",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ASK_EMPTY",
+        "ASK_WHITESPACE",
+        "ASKS_EMPTY",
+        "ASKS_NINE",
+        "RANK_ZERO",
+        "RANK_ELEVEN",
+        "RANKS_ELEVEN",
+        "THEN_EMPTY",
+        "ELSE_NONEMPTY"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R03_NEG",
+        "R04_NEG",
+        "R05_NEG",
+        "R06_NEG",
+        "R07_NEG",
+        "R08_NEG",
+        "R09_NEG",
+        "R10_NEG",
+        "R11_NEG",
+        "R12_NEG",
+        "R13_NEG",
+        "R14_NEG",
+        "R15_NEG",
+        "R16_NEG",
+        "DELEGATED_UNIQUE",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ASK_EMPTY",
+        "ASK_WHITESPACE",
+        "ASKS_EMPTY",
+        "ASKS_NINE",
+        "RANK_ZERO",
+        "RANK_ELEVEN",
+        "RANKS_ELEVEN",
+        "THEN_EMPTY",
+        "ELSE_NONEMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/decision/enum",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "enum",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R03_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R03_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "items",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R05_NEG",
+        "R06_NEG",
+        "R07_NEG",
+        "R08_NEG",
+        "R09_NEG",
+        "R10_NEG",
+        "R11_NEG",
+        "R12_NEG",
+        "R13_NEG",
+        "DELEGATED_UNIQUE",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ASK_EMPTY",
+        "ASK_WHITESPACE",
+        "RANK_ZERO",
+        "RANK_ELEVEN",
+        "RANKS_ELEVEN",
+        "THEN_EMPTY",
+        "ELSE_NONEMPTY"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R05_NEG",
+        "R06_NEG",
+        "R07_NEG",
+        "R08_NEG",
+        "R09_NEG",
+        "R10_NEG",
+        "R11_NEG",
+        "R12_NEG",
+        "R13_NEG",
+        "DELEGATED_UNIQUE",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ASK_EMPTY",
+        "ASK_WHITESPACE",
+        "RANK_ZERO",
+        "RANK_ELEVEN",
+        "RANKS_ELEVEN",
+        "THEN_EMPTY",
+        "ELSE_NONEMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/additionalProperties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "additionalProperties",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R05_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R05_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "allOf",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "THEN_EMPTY",
+        "ELSE_NONEMPTY"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "THEN_EMPTY",
+        "ELSE_NONEMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf/0/else",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "else",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "ELSE_NONEMPTY"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ELSE_NONEMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf/0/else/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "ELSE_NONEMPTY"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ELSE_NONEMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf/0/else/properties/supporting_evidence_ranks/maxItems",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "maxItems",
+      "observed_witnesses": [
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "ELSE_NONEMPTY"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "ELSE_NONEMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf/0/if",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "if",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf/0/if/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf/0/if/properties/support_status/const",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "const",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf/0/then",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "then",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "THEN_EMPTY"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "THEN_EMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf/0/then/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "THEN_EMPTY"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "THEN_EMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/allOf/0/then/properties/supporting_evidence_ranks/minItems",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "minItems",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "THEN_EMPTY"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "DELEGATED_CONTAINS",
+        "DELEGATED_CONDITIONAL",
+        "THEN_EMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "properties",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R07_NEG",
+        "R08_NEG",
+        "R09_NEG",
+        "R10_NEG",
+        "R11_NEG",
+        "DELEGATED_UNIQUE",
+        "ASK_EMPTY",
+        "ASK_WHITESPACE",
+        "RANK_ZERO",
+        "RANK_ELEVEN",
+        "RANKS_ELEVEN"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R07_NEG",
+        "R08_NEG",
+        "R09_NEG",
+        "R10_NEG",
+        "R11_NEG",
+        "DELEGATED_UNIQUE",
+        "ASK_EMPTY",
+        "ASK_WHITESPACE",
+        "RANK_ZERO",
+        "RANK_ELEVEN",
+        "RANKS_ELEVEN"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/ask/minLength",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "minLength",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "ASK_EMPTY"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "ASK_EMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/ask/pattern",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "pattern",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "ASK_WHITESPACE"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "ASK_WHITESPACE"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/ask/type",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "type",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R07_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R07_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/support_status/enum",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "enum",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R08_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R08_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "items",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R09_NEG",
+        "R10_NEG",
+        "RANK_ZERO",
+        "RANK_ELEVEN"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R09_NEG",
+        "R10_NEG",
+        "RANK_ZERO",
+        "RANK_ELEVEN"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/maximum",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "maximum",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R09_NEG",
+        "RANK_ELEVEN"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R09_NEG",
+        "RANK_ELEVEN"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/minimum",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "minimum",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R09_NEG",
+        "RANK_ZERO"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R09_NEG",
+        "RANK_ZERO"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/items/type",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "type",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R09_NEG",
+        "R10_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R09_NEG",
+        "R10_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/maxItems",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "maxItems",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "RANKS_ELEVEN"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "RANKS_ELEVEN"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/type",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "type",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R11_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "R11_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/properties/supporting_evidence_ranks/uniqueItems",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "uniqueItems",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "DELEGATED_UNIQUE"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R06_NEG",
+        "DELEGATED_UNIQUE"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/required",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "required",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R12_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R12_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/items/type",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "type",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R04_NEG",
+        "R13_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R04_NEG",
+        "R13_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/maxItems",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "maxItems",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "ASKS_NINE"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "ASKS_NINE"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/minItems",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "minItems",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "ASKS_EMPTY"
+      ],
+      "owners": [
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "ASKS_EMPTY"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/material_asks/type",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "type",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R14_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R14_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/policy_context_status/enum",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "enum",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R15_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R15_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/properties/reason_code/enum",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "enum",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R02_NEG",
+        "R16_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R02_NEG",
+        "R16_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/required",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "required",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "R17_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "R17_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    },
+    {
+      "constraint_id": "/type",
+      "coverage_relationship": "Actual original-validator keyword dispatch at this exact schema pointer; then/else witnessed by executed selected-branch descendants. Combinator effects may be joint; no isolated-causality claim.",
+      "covered": true,
+      "keyword": "type",
+      "observed_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS",
+        "R18_NEG"
+      ],
+      "owners": [
+        "DECODER_ENFORCED",
+        "EXACT_VALIDATOR_ENFORCED"
+      ],
+      "planned_negative_witnesses": [
+        "R18_NEG"
+      ],
+      "planned_positive_witnesses": [
+        "M1",
+        "POS_INSUFFICIENT",
+        "POS_UNRESOLVED_ASK",
+        "POS_BOUNDS"
+      ]
+    }
+  ],
+  "status": "RESULT_BEARING_COVERAGE",
+  "total": 64
+}

@@ -1,0 +1,3443 @@
+{
+  "correct": 40,
+  "errors": 0,
+  "rows": [
+    {
+      "JSON_parse": "PASS",
+      "adapter": "ACCEPT",
+      "content_tokens_advanced": 48,
+      "decoder": "ACCEPT",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema_errors": [],
+      "exact_validator": "ACCEPT",
+      "expected": "COMBINED_STRUCTURAL_ACCEPT",
+      "final_state": 46336,
+      "fixture_id": "M1",
+      "gate_output": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "rank_bindings": [
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 0
+        }
+      ],
+      "raw_sha256": "fcc4e0b4d7d9f0edfb706f3321b3fcf0800c0acb2f09552eec77b96f64cf065b",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 48
+    },
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 1,
+      "decoder": "REJECT",
+      "disposition": "DECODER_STRUCTURAL_REJECT",
+      "exact_validator": "NOT_RUN",
+      "expected": "DECODER_STRUCTURAL_REJECT",
+      "final_state": 46592,
+      "fixture_id": "M2",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "005c6f10a197920eb151aee3be45180dac3bc9b89fa1a7a007d6ee542849d292",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 44
+    },
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 31,
+      "decoder": "REJECT",
+      "disposition": "DECODER_STRUCTURAL_REJECT",
+      "exact_validator": "NOT_RUN",
+      "expected": "DECODER_STRUCTURAL_REJECT",
+      "final_state": 35968,
+      "fixture_id": "M3",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "a69fd36118fed60516e6f094fb2cef26ba4dd6c15a81cc4a4f3b30dd36e41536",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 40
+    },
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 38,
+      "decoder": "REJECT",
+      "disposition": "DECODER_STRUCTURAL_REJECT",
+      "exact_validator": "NOT_RUN",
+      "expected": "DECODER_STRUCTURAL_REJECT",
+      "final_state": 54016,
+      "fixture_id": "M4",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "0d72e0fce14b5ab9450ce28e447e3dadabd31f1af1313fffd65b187db2620c7c",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 39
+    },
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 1,
+      "decoder": "REJECT",
+      "disposition": "DECODER_STRUCTURAL_REJECT",
+      "exact_validator": "NOT_RUN",
+      "expected": "DECODER_STRUCTURAL_REJECT",
+      "final_state": 46592,
+      "fixture_id": "M5",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "02a1ef1e49ce208e45104a372890ed16fc15edbbe79122a802a0141f4a69ed2c",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 27
+    },
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 3,
+      "decoder": "REJECT",
+      "disposition": "DECODER_STRUCTURAL_REJECT",
+      "exact_validator": "NOT_RUN",
+      "expected": "DECODER_STRUCTURAL_REJECT",
+      "final_state": 46592,
+      "fixture_id": "M6",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "a6ba60eccfcc076f569f464c90e9b6e9b25293edd0bf2502e66da5d9b521e9cb",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 44
+    },
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 3,
+      "decoder": "REJECT",
+      "disposition": "DECODER_STRUCTURAL_REJECT",
+      "exact_validator": "NOT_RUN",
+      "expected": "DECODER_STRUCTURAL_REJECT",
+      "final_state": 46592,
+      "fixture_id": "M7",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "1b078ff8fffba3a814fb0be5fdc4bb83b9a0a7a8799ac41e3b43016c7aa43afe",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 80
+    },
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 3,
+      "decoder": "REJECT",
+      "disposition": "DECODER_STRUCTURAL_REJECT",
+      "exact_validator": "NOT_RUN",
+      "expected": "DECODER_STRUCTURAL_REJECT",
+      "final_state": 46592,
+      "fixture_id": "M8",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "467f92a2c8d285dddb5f574c3c227af3361e7b7f6396fab3ee409a767bbe362a",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 42
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 51,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "supporting_evidence_ranks"
+          ],
+          "keyword": "uniqueItems",
+          "message": "[1, 1] has non-unique elements",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "properties",
+            "supporting_evidence_ranks",
+            "uniqueItems"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "DELEGATED_UNIQUE",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "ab74219f7ad53772e526682d37e0647141ccf315aaea3fd38980bbf183d4d6c0",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 51
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 48,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "supporting_evidence_ranks"
+          ],
+          "keyword": "minItems",
+          "message": "[] should be non-empty",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "allOf",
+            0,
+            "then",
+            "properties",
+            "supporting_evidence_ranks",
+            "minItems"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "DELEGATED_CONTAINS",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "c8af7e97d62d912389a720a22ec29946c6a482a936d70369c9336e86918b285f",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 48
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 51,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ALLOW' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks"
+              ],
+              "keyword": "contains",
+              "message": "[{'ask': 'Synthetic structural item', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "material_asks",
+                "contains"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'INSUFFICIENT_POLICY_SUPPORT' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [
+                {
+                  "context": [],
+                  "instance_path": [
+                    "policy_context_status"
+                  ],
+                  "keyword": "const",
+                  "message": "'UNRESOLVED' was expected",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    0,
+                    "properties",
+                    "policy_context_status",
+                    "const"
+                  ]
+                },
+                {
+                  "context": [],
+                  "instance_path": [
+                    "material_asks"
+                  ],
+                  "keyword": "contains",
+                  "message": "[{'ask': 'Synthetic structural item', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    1,
+                    "properties",
+                    "material_asks",
+                    "contains"
+                  ]
+                }
+              ],
+              "instance_path": [],
+              "keyword": "anyOf",
+              "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural item', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+              "schema_path": [
+                "oneOf",
+                2,
+                "anyOf"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural item', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "DELEGATED_CONDITIONAL",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "2b5af58598f62bc74e3f16196891b9cbaa7ab268b35406138add5e52f0ded3b1",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 51
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "ACCEPT",
+      "content_tokens_advanced": 73,
+      "decoder": "ACCEPT",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema_errors": [],
+      "exact_validator": "ACCEPT",
+      "expected": "COMBINED_STRUCTURAL_ACCEPT",
+      "final_state": 46336,
+      "fixture_id": "POS_INSUFFICIENT",
+      "gate_output": {
+        "decision": "ABSTAIN",
+        "reason_code": "INSUFFICIENT_POLICY_SUPPORT"
+      },
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "rank_bindings": [
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 1
+        }
+      ],
+      "raw_sha256": "9d58ac6db4fb1881e6560d720db0366d171d3eb5dcbfd55de916cd25142c74b3",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 73
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "ACCEPT",
+      "content_tokens_advanced": 52,
+      "decoder": "ACCEPT",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema_errors": [],
+      "exact_validator": "ACCEPT",
+      "expected": "COMBINED_STRUCTURAL_ACCEPT",
+      "final_state": 46336,
+      "fixture_id": "POS_UNRESOLVED_CONTEXT",
+      "gate_output": {
+        "decision": "ABSTAIN",
+        "reason_code": "UNRESOLVED_POLICY_CONTEXT"
+      },
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "rank_bindings": [],
+      "raw_sha256": "aac7b4811ab9c1ba1ccc6e27b84909a43c3e2d6ae48589cf30a6cffa15961bfc",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 52
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "ACCEPT",
+      "content_tokens_advanced": 54,
+      "decoder": "ACCEPT",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema_errors": [],
+      "exact_validator": "ACCEPT",
+      "expected": "COMBINED_STRUCTURAL_ACCEPT",
+      "final_state": 46336,
+      "fixture_id": "POS_UNRESOLVED_ASK",
+      "gate_output": {
+        "decision": "ABSTAIN",
+        "reason_code": "UNRESOLVED_POLICY_CONTEXT"
+      },
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "rank_bindings": [],
+      "raw_sha256": "ce62717ac827c0719d02a36d53e784781b70a89392ceb1ae4a776cb9d126ef68",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 54
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "ACCEPT",
+      "content_tokens_advanced": 362,
+      "decoder": "ACCEPT",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema_errors": [],
+      "exact_validator": "ACCEPT",
+      "expected": "COMBINED_STRUCTURAL_ACCEPT",
+      "final_state": 46336,
+      "fixture_id": "POS_BOUNDS",
+      "gate_output": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "rank_bindings": [
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-2"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-2",
+          "evidence_rank": 2,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-3"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-3",
+          "evidence_rank": 3,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-4"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-4",
+          "evidence_rank": 4,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-5"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-5",
+          "evidence_rank": 5,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-6"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-6",
+          "evidence_rank": 6,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-7"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-7",
+          "evidence_rank": 7,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-8"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-8",
+          "evidence_rank": 8,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-9"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-9",
+          "evidence_rank": 9,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-10"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-10",
+          "evidence_rank": 10,
+          "material_ask_index": 0
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-2"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-2",
+          "evidence_rank": 2,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-3"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-3",
+          "evidence_rank": 3,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-4"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-4",
+          "evidence_rank": 4,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-5"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-5",
+          "evidence_rank": 5,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-6"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-6",
+          "evidence_rank": 6,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-7"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-7",
+          "evidence_rank": 7,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-8"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-8",
+          "evidence_rank": 8,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-9"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-9",
+          "evidence_rank": 9,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-10"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-10",
+          "evidence_rank": 10,
+          "material_ask_index": 1
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-2"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-2",
+          "evidence_rank": 2,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-3"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-3",
+          "evidence_rank": 3,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-4"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-4",
+          "evidence_rank": 4,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-5"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-5",
+          "evidence_rank": 5,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-6"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-6",
+          "evidence_rank": 6,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-7"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-7",
+          "evidence_rank": 7,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-8"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-8",
+          "evidence_rank": 8,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-9"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-9",
+          "evidence_rank": 9,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-10"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-10",
+          "evidence_rank": 10,
+          "material_ask_index": 2
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-2"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-2",
+          "evidence_rank": 2,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-3"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-3",
+          "evidence_rank": 3,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-4"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-4",
+          "evidence_rank": 4,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-5"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-5",
+          "evidence_rank": 5,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-6"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-6",
+          "evidence_rank": 6,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-7"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-7",
+          "evidence_rank": 7,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-8"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-8",
+          "evidence_rank": 8,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-9"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-9",
+          "evidence_rank": 9,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-10"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-10",
+          "evidence_rank": 10,
+          "material_ask_index": 3
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-2"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-2",
+          "evidence_rank": 2,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-3"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-3",
+          "evidence_rank": 3,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-4"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-4",
+          "evidence_rank": 4,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-5"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-5",
+          "evidence_rank": 5,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-6"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-6",
+          "evidence_rank": 6,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-7"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-7",
+          "evidence_rank": 7,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-8"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-8",
+          "evidence_rank": 8,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-9"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-9",
+          "evidence_rank": 9,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-10"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-10",
+          "evidence_rank": 10,
+          "material_ask_index": 4
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-2"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-2",
+          "evidence_rank": 2,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-3"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-3",
+          "evidence_rank": 3,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-4"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-4",
+          "evidence_rank": 4,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-5"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-5",
+          "evidence_rank": 5,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-6"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-6",
+          "evidence_rank": 6,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-7"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-7",
+          "evidence_rank": 7,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-8"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-8",
+          "evidence_rank": 8,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-9"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-9",
+          "evidence_rank": 9,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-10"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-10",
+          "evidence_rank": 10,
+          "material_ask_index": 5
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-2"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-2",
+          "evidence_rank": 2,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-3"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-3",
+          "evidence_rank": 3,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-4"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-4",
+          "evidence_rank": 4,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-5"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-5",
+          "evidence_rank": 5,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-6"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-6",
+          "evidence_rank": 6,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-7"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-7",
+          "evidence_rank": 7,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-8"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-8",
+          "evidence_rank": 8,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-9"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-9",
+          "evidence_rank": 9,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-10"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-10",
+          "evidence_rank": 10,
+          "material_ask_index": 6
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 7
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-2"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-2",
+          "evidence_rank": 2,
+          "material_ask_index": 7
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-3"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-3",
+          "evidence_rank": 3,
+          "material_ask_index": 7
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-4"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-4",
+          "evidence_rank": 4,
+          "material_ask_index": 7
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-5"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-5",
+          "evidence_rank": 5,
+          "material_ask_index": 7
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-6"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-6",
+          "evidence_rank": 6,
+          "material_ask_index": 7
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-7"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-7",
+          "evidence_rank": 7,
+          "material_ask_index": 7
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-8"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-8",
+          "evidence_rank": 8,
+          "material_ask_index": 7
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-9"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-9",
+          "evidence_rank": 9,
+          "material_ask_index": 7
+        },
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-10"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-10",
+          "evidence_rank": 10,
+          "material_ask_index": 7
+        }
+      ],
+      "raw_sha256": "fa332e55b8edd5eedc2ffaaa25e03ed3a532aed0d856f705315c36571171bfbe",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 362
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "ACCEPT",
+      "content_tokens_advanced": 51,
+      "decoder": "ACCEPT",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema_errors": [],
+      "exact_validator": "ACCEPT",
+      "expected": "COMBINED_STRUCTURAL_ACCEPT",
+      "final_state": 46336,
+      "fixture_id": "POS_NUL",
+      "gate_output": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "rank_bindings": [
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 0
+        }
+      ],
+      "raw_sha256": "1d431987a206f6b6e5465d1569ceba88742a54ce29cc2fc0df1ebf1a24007cef",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 51
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "ACCEPT",
+      "content_tokens_advanced": 50,
+      "decoder": "ACCEPT",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema_errors": [],
+      "exact_validator": "ACCEPT",
+      "expected": "COMBINED_STRUCTURAL_ACCEPT",
+      "final_state": 384,
+      "fixture_id": "POS_JSON_WHITESPACE",
+      "gate_output": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "rank_bindings": [
+        {
+          "canonical_identity": [
+            "SOP-90",
+            "1.0-demo",
+            "unit-1"
+          ],
+          "canonical_reference": "SOP-90@1.0-demo#unit-1",
+          "evidence_rank": 1,
+          "material_ask_index": 0
+        }
+      ],
+      "raw_sha256": "5b631f8ea6e2532bc8bb9d3817f57e45b53a5853cede4b9ba5846061d4550f3d",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "token_count": 50
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 44,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "ask"
+          ],
+          "keyword": "minLength",
+          "message": "'' should be non-empty",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "properties",
+            "ask",
+            "minLength"
+          ]
+        },
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "ask"
+          ],
+          "keyword": "pattern",
+          "message": "'' does not match '\\\\S'",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "properties",
+            "ask",
+            "pattern"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "ASK_EMPTY",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "c61936f5a85c4f7cec01b829531c7434fa3cb04fa0e091d66cccd050367eb700",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 44
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 49,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "ask"
+          ],
+          "keyword": "pattern",
+          "message": "' \\t\\r\\n' does not match '\\\\S'",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "properties",
+            "ask",
+            "pattern"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "ASK_WHITESPACE",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "1045c99ad31e4971af7a19f0ff69435bdbf07a52e1b014d49794714fd1e1d02a",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 49
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 27,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks"
+          ],
+          "keyword": "minItems",
+          "message": "[] should be non-empty",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "minItems"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "ASKS_EMPTY",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "d1739d54807c0dc02ec3f411802d87ecefadddfab18e511dc1b803bcfc595861",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 27
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 233,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks"
+          ],
+          "keyword": "maxItems",
+          "message": "[{'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] is too long",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "maxItems"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "ASKS_NINE",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "2a643b0d8c14cd05bcbc13e52245c0f1479633f6ad47bcfec825e73fee21503d",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 233
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 48,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "supporting_evidence_ranks",
+            0
+          ],
+          "keyword": "minimum",
+          "message": "0 is less than the minimum of 1",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "properties",
+            "supporting_evidence_ranks",
+            "items",
+            "minimum"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "RANK_ZERO",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "9a337a975d1803947357bfde8aa67f47c28b266d85d5f801dbfc7f12a97082bc",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 48
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 49,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "supporting_evidence_ranks",
+            0
+          ],
+          "keyword": "maximum",
+          "message": "11 is greater than the maximum of 10",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "properties",
+            "supporting_evidence_ranks",
+            "items",
+            "maximum"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "RANK_ELEVEN",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "429fc2f7a0c4a65d14e2668bb79afe13e8dccf52e121b188b026378ba8bddb0d",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 49
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 70,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "supporting_evidence_ranks",
+            10
+          ],
+          "keyword": "maximum",
+          "message": "11 is greater than the maximum of 10",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "properties",
+            "supporting_evidence_ranks",
+            "items",
+            "maximum"
+          ]
+        },
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "supporting_evidence_ranks"
+          ],
+          "keyword": "maxItems",
+          "message": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] is too long",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "properties",
+            "supporting_evidence_ranks",
+            "maxItems"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "RANKS_ELEVEN",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "323142c41a9066f2f8c1464feeb45e1f0a0ad40d70d9429cadde5bcb5edb3fdb",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 70
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 47,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "supporting_evidence_ranks"
+          ],
+          "keyword": "minItems",
+          "message": "[] should be non-empty",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "allOf",
+            0,
+            "then",
+            "properties",
+            "supporting_evidence_ranks",
+            "minItems"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "THEN_EMPTY",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "48545a6dd1b302f07078a9ca1e2e2c12c44f9f2112cc0bb5dc1c42db5179209f",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 47
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 74,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [],
+          "instance_path": [
+            "material_asks",
+            0,
+            "supporting_evidence_ranks"
+          ],
+          "keyword": "maxItems",
+          "message": "[1] is expected to be empty",
+          "schema_path": [
+            "properties",
+            "material_asks",
+            "items",
+            "allOf",
+            0,
+            "else",
+            "properties",
+            "supporting_evidence_ranks",
+            "maxItems"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "ELSE_NONEMPTY",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "baa90d811b4f4146bd0a901894b0c7054097a838bf9b12d294309b75d65cd170",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 74
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 51,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ALLOW' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED_BY_ACTIVE_POLICY' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks"
+              ],
+              "keyword": "contains",
+              "message": "[{'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "material_asks",
+                "contains"
+              ]
+            },
+            {
+              "context": [
+                {
+                  "context": [],
+                  "instance_path": [
+                    "policy_context_status"
+                  ],
+                  "keyword": "const",
+                  "message": "'UNRESOLVED' was expected",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    0,
+                    "properties",
+                    "policy_context_status",
+                    "const"
+                  ]
+                },
+                {
+                  "context": [],
+                  "instance_path": [
+                    "material_asks"
+                  ],
+                  "keyword": "contains",
+                  "message": "[{'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    1,
+                    "properties",
+                    "material_asks",
+                    "contains"
+                  ]
+                }
+              ],
+              "instance_path": [],
+              "keyword": "anyOf",
+              "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'INSUFFICIENT_POLICY_SUPPORT'} is not valid under any of the given schemas",
+              "schema_path": [
+                "oneOf",
+                2,
+                "anyOf"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'INSUFFICIENT_POLICY_SUPPORT'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "INSUFFICIENT_MISSING_TARGET",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "0822d2645b168caf3fd451843ddbc9af7eeb96d8b3df6016b7a7410ae51b7904",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 51
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 51,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ALLOW' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                0,
+                "support_status"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED_BY_ACTIVE_POLICY' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'INSUFFICIENT_POLICY_SUPPORT' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [
+                {
+                  "context": [],
+                  "instance_path": [
+                    "policy_context_status"
+                  ],
+                  "keyword": "const",
+                  "message": "'UNRESOLVED' was expected",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    0,
+                    "properties",
+                    "policy_context_status",
+                    "const"
+                  ]
+                },
+                {
+                  "context": [],
+                  "instance_path": [
+                    "material_asks"
+                  ],
+                  "keyword": "contains",
+                  "message": "[{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}] does not contain items matching the given schema",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    1,
+                    "properties",
+                    "material_asks",
+                    "contains"
+                  ]
+                }
+              ],
+              "instance_path": [],
+              "keyword": "anyOf",
+              "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}], 'policy_context_status': 'RESOLVED', 'reason_code': 'UNRESOLVED_POLICY_CONTEXT'} is not valid under any of the given schemas",
+              "schema_path": [
+                "oneOf",
+                2,
+                "anyOf"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}], 'policy_context_status': 'RESOLVED', 'reason_code': 'UNRESOLVED_POLICY_CONTEXT'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "UNRESOLVED_MISSING_TARGET",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "06d2a23c189bdf4d0391ec9ec72a096e0bcd074cede62600b322a7575f4df118",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 51
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 50,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ALLOW' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks"
+              ],
+              "keyword": "contains",
+              "message": "[{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "material_asks",
+                "contains"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'INSUFFICIENT_POLICY_SUPPORT' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [
+                {
+                  "context": [],
+                  "instance_path": [
+                    "policy_context_status"
+                  ],
+                  "keyword": "const",
+                  "message": "'UNRESOLVED' was expected",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    0,
+                    "properties",
+                    "policy_context_status",
+                    "const"
+                  ]
+                },
+                {
+                  "context": [],
+                  "instance_path": [
+                    "material_asks"
+                  ],
+                  "keyword": "contains",
+                  "message": "[{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    1,
+                    "properties",
+                    "material_asks",
+                    "contains"
+                  ]
+                }
+              ],
+              "instance_path": [],
+              "keyword": "anyOf",
+              "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+              "schema_path": [
+                "oneOf",
+                2,
+                "anyOf"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "BRANCH_0_DECISION",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "5834ddcd040f33c6985ed179d00bcb7a77a671478751ad9f0dadbf6a06b8f91a",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 50
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 49,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED_BY_ACTIVE_POLICY' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks"
+              ],
+              "keyword": "contains",
+              "message": "[{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "material_asks",
+                "contains"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'INSUFFICIENT_POLICY_SUPPORT' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [
+                {
+                  "context": [],
+                  "instance_path": [
+                    "policy_context_status"
+                  ],
+                  "keyword": "const",
+                  "message": "'UNRESOLVED' was expected",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    0,
+                    "properties",
+                    "policy_context_status",
+                    "const"
+                  ]
+                },
+                {
+                  "context": [],
+                  "instance_path": [
+                    "material_asks"
+                  ],
+                  "keyword": "contains",
+                  "message": "[{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    1,
+                    "properties",
+                    "material_asks",
+                    "contains"
+                  ]
+                }
+              ],
+              "instance_path": [],
+              "keyword": "anyOf",
+              "message": "{'decision': 'ALLOW', 'material_asks': [{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'UNRESOLVED_POLICY_CONTEXT'} is not valid under any of the given schemas",
+              "schema_path": [
+                "oneOf",
+                2,
+                "anyOf"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "decision",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ALLOW', 'material_asks': [{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'UNRESOLVED_POLICY_CONTEXT'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "BRANCH_0_REASON",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "78aeea26be0ed1b5c4d4bc9d5ca8fc35dcdc50f402d108ff1308ed7999c7d0bd",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 49
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 71,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                0,
+                "support_status"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED_BY_ACTIVE_POLICY' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [
+                {
+                  "context": [],
+                  "instance_path": [
+                    "policy_context_status"
+                  ],
+                  "keyword": "const",
+                  "message": "'UNRESOLVED' was expected",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    0,
+                    "properties",
+                    "policy_context_status",
+                    "const"
+                  ]
+                },
+                {
+                  "context": [],
+                  "instance_path": [
+                    "material_asks"
+                  ],
+                  "keyword": "contains",
+                  "message": "[{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    1,
+                    "properties",
+                    "material_asks",
+                    "contains"
+                  ]
+                }
+              ],
+              "instance_path": [],
+              "keyword": "anyOf",
+              "message": "{'decision': 'ALLOW', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'INSUFFICIENT_POLICY_SUPPORT'} is not valid under any of the given schemas",
+              "schema_path": [
+                "oneOf",
+                2,
+                "anyOf"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ALLOW', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'INSUFFICIENT_POLICY_SUPPORT'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "BRANCH_1_DECISION",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "c4c58cf93f82733b065459f2eeec32832bc96fea06ffa27e6e3156f821679878",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 71
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 73,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ALLOW' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                0,
+                "support_status"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'INSUFFICIENT_POLICY_SUPPORT' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [
+                {
+                  "context": [],
+                  "instance_path": [
+                    "policy_context_status"
+                  ],
+                  "keyword": "const",
+                  "message": "'UNRESOLVED' was expected",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    0,
+                    "properties",
+                    "policy_context_status",
+                    "const"
+                  ]
+                },
+                {
+                  "context": [],
+                  "instance_path": [
+                    "material_asks"
+                  ],
+                  "keyword": "contains",
+                  "message": "[{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    1,
+                    "properties",
+                    "material_asks",
+                    "contains"
+                  ]
+                }
+              ],
+              "instance_path": [],
+              "keyword": "anyOf",
+              "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+              "schema_path": [
+                "oneOf",
+                2,
+                "anyOf"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'RESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "BRANCH_1_REASON",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "dbd7614ace88dcb92e56ca902d9fd687b4cfab58a3a464d546393ce08425585a",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 73
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 50,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                0,
+                "support_status"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "policy_context_status"
+              ],
+              "keyword": "const",
+              "message": "'RESOLVED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "policy_context_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED_BY_ACTIVE_POLICY' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "policy_context_status"
+              ],
+              "keyword": "const",
+              "message": "'RESOLVED' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "policy_context_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'INSUFFICIENT_POLICY_SUPPORT' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "decision",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ALLOW', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}], 'policy_context_status': 'UNRESOLVED', 'reason_code': 'UNRESOLVED_POLICY_CONTEXT'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "BRANCH_2_DECISION",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "77dff18604bfcc505070387a3b501623989725223c11d3f1a91d552145dc2f19",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 50
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 51,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ALLOW' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                0,
+                "support_status"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "policy_context_status"
+              ],
+              "keyword": "const",
+              "message": "'RESOLVED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "policy_context_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "policy_context_status"
+              ],
+              "keyword": "const",
+              "message": "'RESOLVED' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "policy_context_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'INSUFFICIENT_POLICY_SUPPORT' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}], 'policy_context_status': 'UNRESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "BRANCH_2_REASON",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "e5b6c1078c405b0e3460d9fa7ac547756e3f92338bdbea6b375bc322cdcdc5f6",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 51
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 49,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "policy_context_status"
+              ],
+              "keyword": "const",
+              "message": "'RESOLVED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "policy_context_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks"
+              ],
+              "keyword": "contains",
+              "message": "[{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}] does not contain items matching the given schema",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "material_asks",
+                "contains"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "policy_context_status"
+              ],
+              "keyword": "const",
+              "message": "'RESOLVED' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "policy_context_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'INSUFFICIENT_POLICY_SUPPORT' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ALLOW', 'material_asks': [{'ask': 'Opaque diagnostic requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'UNRESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "ALLOW_CONTEXT",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "845bf9746c60eb35620407c7ab2b084f2fdc5d552f843c6e37f0de5ed54a6079",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 49
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 48,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                0,
+                "support_status"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'INSUFFICIENT_POLICY_SUPPORT' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [
+                {
+                  "context": [],
+                  "instance_path": [
+                    "policy_context_status"
+                  ],
+                  "keyword": "const",
+                  "message": "'UNRESOLVED' was expected",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    0,
+                    "properties",
+                    "policy_context_status",
+                    "const"
+                  ]
+                },
+                {
+                  "context": [],
+                  "instance_path": [
+                    "material_asks"
+                  ],
+                  "keyword": "contains",
+                  "message": "[{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}] does not contain items matching the given schema",
+                  "schema_path": [
+                    "oneOf",
+                    2,
+                    "anyOf",
+                    1,
+                    "properties",
+                    "material_asks",
+                    "contains"
+                  ]
+                }
+              ],
+              "instance_path": [],
+              "keyword": "anyOf",
+              "message": "{'decision': 'ALLOW', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}], 'policy_context_status': 'RESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+              "schema_path": [
+                "oneOf",
+                2,
+                "anyOf"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ABSTAIN' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ALLOW', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}], 'policy_context_status': 'RESOLVED', 'reason_code': 'SUPPORTED_BY_ACTIVE_POLICY'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "ALLOW_UNSUPPORTED",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "6ad5ece2846736cef625bbaa4458ce6b04f3ae8af8908bf931e23def60a20a45",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 48
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 74,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ALLOW' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                0,
+                "support_status"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "policy_context_status"
+              ],
+              "keyword": "const",
+              "message": "'RESOLVED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "policy_context_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED_BY_ACTIVE_POLICY' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "policy_context_status"
+              ],
+              "keyword": "const",
+              "message": "'RESOLVED' was expected",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "policy_context_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}, {'ask': 'Synthetic structural requirement', 'support_status': 'SUPPORTED', 'supporting_evidence_ranks': [1]}], 'policy_context_status': 'UNRESOLVED', 'reason_code': 'INSUFFICIENT_POLICY_SUPPORT'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "INSUFFICIENT_CONTEXT",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "5c08718e20470366d3bbdd1475f466da0a3af85b91c073c1d3eb4dc298b4208b",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 74
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "NOT_RUN",
+      "content_tokens_advanced": 75,
+      "decoder": "ACCEPT",
+      "disposition": "EXACT_SCHEMA_REJECT",
+      "exact_schema_errors": [
+        {
+          "context": [
+            {
+              "context": [],
+              "instance_path": [
+                "decision"
+              ],
+              "keyword": "const",
+              "message": "'ALLOW' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "decision",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                0,
+                "support_status"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                1,
+                "support_status"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'SUPPORTED_BY_ACTIVE_POLICY' was expected",
+              "schema_path": [
+                "oneOf",
+                0,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "material_asks",
+                1,
+                "support_status"
+              ],
+              "keyword": "enum",
+              "message": "'CONTEXT_UNRESOLVED' is not one of ['SUPPORTED', 'UNSUPPORTED']",
+              "schema_path": [
+                "oneOf",
+                1,
+                "properties",
+                "material_asks",
+                "items",
+                "properties",
+                "support_status",
+                "enum"
+              ]
+            },
+            {
+              "context": [],
+              "instance_path": [
+                "reason_code"
+              ],
+              "keyword": "const",
+              "message": "'UNRESOLVED_POLICY_CONTEXT' was expected",
+              "schema_path": [
+                "oneOf",
+                2,
+                "properties",
+                "reason_code",
+                "const"
+              ]
+            }
+          ],
+          "instance_path": [],
+          "keyword": "oneOf",
+          "message": "{'decision': 'ABSTAIN', 'material_asks': [{'ask': 'Synthetic structural requirement', 'support_status': 'UNSUPPORTED', 'supporting_evidence_ranks': []}, {'ask': 'Synthetic structural requirement', 'support_status': 'CONTEXT_UNRESOLVED', 'supporting_evidence_ranks': []}], 'policy_context_status': 'RESOLVED', 'reason_code': 'INSUFFICIENT_POLICY_SUPPORT'} is not valid under any of the given schemas",
+          "schema_path": [
+            "oneOf"
+          ]
+        }
+      ],
+      "exact_validator": "REJECT",
+      "expected": "EXACT_SCHEMA_REJECT",
+      "final_state": 46336,
+      "fixture_id": "INSUFFICIENT_STATUS",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "0d88e1c7bdcf2371436e9720766bc4e272eb57a9671f124b41cec953a0d270bd",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 75
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "REJECT",
+      "adapter_error": "Rank absent from exact supplied GateInput",
+      "content_tokens_advanced": 48,
+      "decoder": "ACCEPT",
+      "disposition": "ADAPTER_STRUCTURAL_REJECT",
+      "exact_schema_errors": [],
+      "exact_validator": "ACCEPT",
+      "expected": "ADAPTER_STRUCTURAL_REJECT",
+      "final_state": 46336,
+      "fixture_id": "ADAPTER_ABSENT_RANK",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "286b888bfb602a6baf5ff40643b9f638a9a8e871ea41031781d7c3a3d5f58987",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 48
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "REJECT",
+      "adapter_error": "Ranks must be unique and strictly ascending",
+      "content_tokens_advanced": 50,
+      "decoder": "ACCEPT",
+      "disposition": "ADAPTER_STRUCTURAL_REJECT",
+      "exact_schema_errors": [],
+      "exact_validator": "ACCEPT",
+      "expected": "ADAPTER_STRUCTURAL_REJECT",
+      "final_state": 46336,
+      "fixture_id": "ADAPTER_UNSORTED",
+      "generation_retry": 0,
+      "matches_expectation": true,
+      "raw_sha256": "c07b78f368f8db97e57b41bac3d5f2242feaee25390e75ee5150382c2e3a432b",
+      "repair": 0,
+      "semantic_evaluation": "NOT_RUN",
+      "structural_status": "STRUCTURAL_INVALID",
+      "token_count": 50
+    }
+  ]
+}

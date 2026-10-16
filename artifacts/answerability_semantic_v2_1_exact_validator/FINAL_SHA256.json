@@ -1,0 +1,15 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "artifacts/answerability_semantic_v2_1_exact_validator/COMBINED_PIPELINE_RESULTS.json": "e18a72ea15d2f66681904b617988d389c851e3c32d778e8a431fb6e82ba7ade5",
+    "artifacts/answerability_semantic_v2_1_exact_validator/CONSTRAINT_COVERAGE_MATRIX.json": "14eaea24645152b70488f30856a2d399a2cf19581ddc35268ff344f11a0e899c",
+    "artifacts/answerability_semantic_v2_1_exact_validator/FINAL_RECORD.md": "8de04b1396f0f37ed8bd6685c2dc610ad95dd53a4f8e2fdc0d7ae8b0c4414c01",
+    "artifacts/answerability_semantic_v2_1_exact_validator/QUALIFICATION_RECEIPT.json": "18f69bbf3c1a46598781f045a756c6f5195f6acc492565bb8b754464f97ce60f",
+    "artifacts/answerability_semantic_v2_1_exact_validator/VALIDATOR_FIXTURES.json": "1be0d730372498f3bf080047b472911689593ee32bd31bf49a664b7f2bf45402",
+    "artifacts/answerability_semantic_v2_1_exact_validator/VALIDATOR_IDENTITY.json": "2f0ceabed7defa77b4d147cbbe07e422761e19fbadcd1fb1b0ffdba29d2f69aa",
+    "artifacts/answerability_semantic_v2_1_exact_validator/VALIDATOR_PROTOCOL.md": "1cb971e3be0a87e2358065ddc8ca1ec19e9cb9a808ba5f2df4bed813a5e6ab19",
+    "artifacts/answerability_semantic_v2_1_exact_validator/VALIDATOR_RESULTS.json": "f6cc119f102f28df9a58d982a2bc2ad740c2b52050b8a23530d2608b1eddc958",
+    "gateway/domain/evaluation/answerability/qualify_exact_validator.py": "a8c8d0c7727630eba4d2d0eb0161656010e7cfb69f3e3d84f003573b129f1ea3"
+  },
+  "self_hash": "Excluded to avoid circularity; reported externally."
+}

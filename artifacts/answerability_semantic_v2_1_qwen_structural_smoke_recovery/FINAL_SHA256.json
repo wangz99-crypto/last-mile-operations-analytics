@@ -1,0 +1,13 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke_recovery/EAGER_MASK_PREFLIGHT.json": "52ad7f2b4fd8e8cdfe5cf19b5af031e794072993a7402e49688d30bb52db3a82",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke_recovery/FINAL_RECORD.md": "d32e1471a8dc578eea33ee86de9f1c4fcc98cbf88d578017cbf936f11645fd3a",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke_recovery/RAW_GENERATIONS.json": "f3321b0b91ff84fae346e22a822edcffbebdba58533ae75655606ac32d540248",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke_recovery/RECOVERY_PROTOCOL.md": "25cb8cca705d3251e2fdc133a55e2308ca0ee5a699475e1afb38caaf94d714cc",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke_recovery/RUNTIME_IDENTITY.json": "dd641e8c9e3e8a27e34624885f4ab60b299c2c70a24c9e69cca4c6fe62af4bae",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke_recovery/STRUCTURAL_RESULTS.json": "edc5f1552ec9acef9e2f0d8cd96731063d0920e4801867d4108f2748fe062a49",
+    "gateway/domain/evaluation/answerability/run_qwen_smoke_eager_recovery.py": "37c16fc8b7bb7f1801fce47d11d6dfb023190435d088e2433e767cce5186bfe9"
+  },
+  "self_hash": "Excluded to avoid circularity; reported externally."
+}

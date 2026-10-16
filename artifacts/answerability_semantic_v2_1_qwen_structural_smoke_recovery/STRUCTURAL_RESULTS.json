@@ -1,0 +1,73 @@
+{
+  "attempts": [
+    {
+      "id": "SMOKE-01",
+      "started_utc": "2026-10-16T03:30:36.669159+00:00",
+      "status": "COMBINED_STRUCTURAL_ACCEPT"
+    },
+    {
+      "id": "SMOKE-02",
+      "started_utc": "2026-10-16T03:31:43.265798+00:00",
+      "status": "COMBINED_STRUCTURAL_ACCEPT"
+    },
+    {
+      "id": "SMOKE-03",
+      "started_utc": "2026-10-16T03:33:06.606319+00:00",
+      "status": "COMBINED_STRUCTURAL_ACCEPT"
+    }
+  ],
+  "rows": [
+    {
+      "JSON_parse": "PASS",
+      "adapter": "PASS",
+      "decoder": "PASS",
+      "decoder_acceptance_basis": "Frozen traversal/final-state/EOS and qualified JSON-whitespace closure; not sole-EOS",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema": "PASS",
+      "gate_output": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "generation_completed": true,
+      "id": "SMOKE-01",
+      "raw_byte_length": 329,
+      "raw_sha256": "fe2413b78a8075ac1807e0155763b48724b6a3e6aee5de74a28d27bb22c3bf3b",
+      "semantic_accuracy": "NOT_EVALUATED"
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "PASS",
+      "decoder": "PASS",
+      "decoder_acceptance_basis": "Frozen traversal/final-state/EOS and qualified JSON-whitespace closure; not sole-EOS",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema": "PASS",
+      "gate_output": {
+        "decision": "ALLOW",
+        "reason_code": "SUPPORTED_BY_ACTIVE_POLICY"
+      },
+      "generation_completed": true,
+      "id": "SMOKE-02",
+      "raw_byte_length": 474,
+      "raw_sha256": "95cc5034f55933d7899ae2d89fdbae5804bc51b8fc58f89bb59650e87d1f71d3",
+      "semantic_accuracy": "NOT_EVALUATED"
+    },
+    {
+      "JSON_parse": "PASS",
+      "adapter": "PASS",
+      "decoder": "PASS",
+      "decoder_acceptance_basis": "Frozen traversal/final-state/EOS and qualified JSON-whitespace closure; not sole-EOS",
+      "disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "exact_schema": "PASS",
+      "gate_output": {
+        "decision": "ABSTAIN",
+        "reason_code": "INSUFFICIENT_POLICY_SUPPORT"
+      },
+      "generation_completed": true,
+      "id": "SMOKE-03",
+      "raw_byte_length": 502,
+      "raw_sha256": "97f8ff5b6f06e9830485e2ef91ad83c9630cbf63cd89daf8c16d441fdcf5b0ad",
+      "semantic_accuracy": "NOT_EVALUATED"
+    }
+  ],
+  "semantic_correctness": "NOT_EVALUATED"
+}

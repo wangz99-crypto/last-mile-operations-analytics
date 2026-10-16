@@ -1,0 +1,73 @@
+{
+  "compiler_invocation_attempts": 0,
+  "compiler_stance": "force_eager",
+  "finished_utc": "2026-10-16T03:30:22.126380+00:00",
+  "model_initialization_during_preflight": 0,
+  "passed": 3,
+  "rows": [
+    {
+      "actual_fp32_hex": "000000c1000080ff000080ff0000e8c0000080ff000080ff000080ff0000c8c0000080ff000080ff000080ff000080ff000080ff000080ff000080ff000088c0",
+      "allowed_ids": [
+        0,
+        3,
+        7,
+        15
+      ],
+      "allowed_logits_byte_identical": true,
+      "disallowed_negative_infinity": true,
+      "exception": null,
+      "expected_fp32_hex": "000000c1000080ff000080ff0000e8c0000080ff000080ff000080ff0000c8c0000080ff000080ff000080ff000080ff000080ff000080ff000080ff000088c0",
+      "id": "PRE-1",
+      "independent_expected_bytes_match": true,
+      "mask_words_int32": [
+        32905
+      ],
+      "status": "PASS",
+      "vocab_size": 16
+    },
+    {
+      "actual_fp32_hex": "000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080be",
+      "allowed_ids": [
+        31
+      ],
+      "allowed_logits_byte_identical": true,
+      "disallowed_negative_infinity": true,
+      "exception": null,
+      "expected_fp32_hex": "000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080be",
+      "id": "PRE-2",
+      "independent_expected_bytes_match": true,
+      "mask_words_int32": [
+        -2147483648
+      ],
+      "status": "PASS",
+      "vocab_size": 32
+    },
+    {
+      "actual_fp32_hex": "000000c10000f8c0000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080be00000000000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff00007040000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff0000f84000000041000080ff000080ff000080ff000080ff00001441",
+      "allowed_ids": [
+        0,
+        1,
+        31,
+        32,
+        47,
+        63,
+        64,
+        69
+      ],
+      "allowed_logits_byte_identical": true,
+      "disallowed_negative_infinity": true,
+      "exception": null,
+      "expected_fp32_hex": "000000c10000f8c0000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080be00000000000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff00007040000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff000080ff0000f84000000041000080ff000080ff000080ff000080ff00001441",
+      "id": "PRE-3",
+      "independent_expected_bytes_match": true,
+      "mask_words_int32": [
+        -2147483645,
+        -2147450879,
+        33
+      ],
+      "status": "PASS",
+      "vocab_size": 70
+    }
+  ],
+  "status": "PASS"
+}

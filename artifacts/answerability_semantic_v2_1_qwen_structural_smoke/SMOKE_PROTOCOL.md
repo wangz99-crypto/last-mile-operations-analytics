@@ -1,0 +1,15 @@
+# Three-call Qwen structural smoke
+
+Status: FROZEN_BEFORE_MODEL_INITIALIZATION
+
+Exactly three fresh, independently authored public-policy smoke inputs; no semantic Gold or expected gate decisions. Evidence is copied deterministically from named active SOP sections. Scores are synthetic interface placeholders (0.95 - rank * 0.01), never measured retrieval results. No benchmark contents were consulted. All fixtures are EXCLUDED_FROM_SEMANTIC_QUALIFICATION.
+
+Frozen V2 canonical prompt and unmodified GateInput boundary. SMOKE IDs and shape/scope annotations are not passed to the model. No prompt edits, truncation, or evidence reordering. Complete fixed direct-regex V0.1 decoder, exact Draft202012Validator on original schema bytes, and frozen deterministic adapter. No per-input substitute schema.
+
+Generation configuration comes from full_proposed_generation_config in the frozen runtime identity, with ONLY the previously authorized structural-smoke max_new_tokens=512 change. The historical owner-reviewed repetition_penalty=1.1 deviation is rejected; frozen repetition_penalty=1.0 applies. Greedy sampling flags and all other serialized fields are preserved, including inactive temperature=1.0, top_p=1.0, top_k=50. Seed=0, threads=4, interop=1, deterministic algorithms=true, CPU FP32. Timeout=600 seconds per call; zero quality/infrastructure retries. No inference during preparation.
+
+Requested GenerationConfig is constructed explicitly, never inherited from snapshot generation_config.json. Model defaults are disabled and the effective configuration is compared field-for-field inside _prepare_generation_config before any forward pass for each call. Transformers' derived max_length from input length + max_new_tokens is runtime bookkeeping, not a change in the frozen new-token budget. The guard records the resolved configuration, no scientific decision is repaired.
+
+Each exact generated token sequence and decoded text (with special tokens) is checkpointed before parsing. Raw JSON payload excludes only one final generation EOS control token if emitted; no strip, special-token filtering, manual completion, or whitespace normalization. UTF-8 hex and SHA preserve payload bytes. Outputs capped without EOS are retained unchanged and subjected to structural checks. Decoder acceptance is checked on observed content tokens without advancing EOS; previously qualified JSON whitespace closure permits legal trailing whitespace, not a sole-EOS oracle.
+
+Ordered pipeline: frozen token constraint -> strict standard JSON parse -> exact authoritative schema -> deterministic adapter -> structural disposition. Failure skips later stages. Semantic accuracy, decision correctness and support correctness are NOT_EVALUATED. Completed structural failures do not trigger retries; proceed with remaining preregistered calls. Genuine runtime failure stops remaining calls and preserves partial evidence. Forward counter measures top-level causal-LM forward invocations via a pre-hook. No package changes, downloads, external network, retrieval, DEVELOPMENT or HELDOUT access. No formal semantic qualification suite authored.

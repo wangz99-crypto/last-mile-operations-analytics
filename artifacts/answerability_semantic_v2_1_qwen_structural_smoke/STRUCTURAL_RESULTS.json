@@ -1,0 +1,51 @@
+{
+  "attempt_dispositions": [
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "disposition": "RUNTIME_FAILED",
+      "exact_schema": "NOT_RUN",
+      "generate_calls": 1,
+      "generation_completed": false,
+      "id": "SMOKE-01",
+      "semantic_accuracy": "NOT_EVALUATED"
+    },
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "disposition": "NOT_RUN_AFTER_RUNTIME_FAILURE",
+      "exact_schema": "NOT_RUN",
+      "generate_calls": 0,
+      "generation_completed": false,
+      "id": "SMOKE-02",
+      "semantic_accuracy": "NOT_EVALUATED"
+    },
+    {
+      "JSON_parse": "NOT_RUN",
+      "adapter": "NOT_RUN",
+      "disposition": "NOT_RUN_AFTER_RUNTIME_FAILURE",
+      "exact_schema": "NOT_RUN",
+      "generate_calls": 0,
+      "generation_completed": false,
+      "id": "SMOKE-03",
+      "semantic_accuracy": "NOT_EVALUATED"
+    }
+  ],
+  "counts": {
+    "JSON_parse_PASS": 0,
+    "JSON_parse_executions": 0,
+    "adapter_PASS": 0,
+    "adapter_executions": 0,
+    "authorized_calls": 3,
+    "combined_structural_accept": 0,
+    "exact_schema_PASS": 0,
+    "exact_schema_executions": 0,
+    "generate_calls": 1,
+    "generation_completed": 0,
+    "unexecuted_calls": 2
+  },
+  "outcome": "QWEN_STRUCTURAL_SMOKE_RUNTIME_FAILED",
+  "rows": [],
+  "runtime_failure": "Outlines Torch bitmask kernel invoked Torch Inductor; InvalidCxxCompiler: Compiler: cl is not found. No completed generation. No structural rejection inferred.",
+  "semantic_accuracy": "NOT_EVALUATED"
+}

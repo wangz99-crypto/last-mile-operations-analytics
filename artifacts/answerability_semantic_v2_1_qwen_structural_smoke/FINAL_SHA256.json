@@ -1,0 +1,13 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke/FINAL_RECORD.md": "03dfd54ab2acd1074a8fc1fc06701cc95e5179e1a576b54f5ae88191bdfd8294",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke/RAW_GENERATIONS.json": "b29c06f0e7ddfaf9478d2b11a1e3801bf45b0d1669af92ec0440e42c0c493382",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke/RUNTIME_IDENTITY.json": "b4e0dae5281c419f102ef312be5f70b4c9c40a6849febf8f9abd068e2c8448f5",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke/SMOKE_FIXTURES.json": "3abf857514394cbbab8ea2b2f3f14095ffe917b8dd16906f5d97b6120ac598a6",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke/SMOKE_PROTOCOL.md": "4f1ea6c5f34c7d540c552b08ca507246105462ae74d0d1f5075d211938a1d6a2",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke/STRUCTURAL_RESULTS.json": "a001ee8d1d93e2dbc5aee87db1740c4566057a3803328c04f051528780135895",
+    "gateway/domain/evaluation/answerability/run_qwen_structural_smoke.py": "20538eae3676385ea9f68ed42f0cc746ce2b6e5d9918fa4233f2e0980b019b2c"
+  },
+  "self_hash": "Excluded to avoid circularity; report separately."
+}

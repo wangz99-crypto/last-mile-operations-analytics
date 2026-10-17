@@ -1,0 +1,1286 @@
+{
+  "DEVELOPMENT_access": 0,
+  "audit_utc": "2026-10-16T19:21:51.122754+00:00",
+  "comparison_cases": 15,
+  "comparison_sources_sha256": {
+    "artifacts/answerability_semantic_model_v1_qualification_attempt2/SYNTHETIC_QUALIFICATION_SUITE.json": "b320a1af101f07d11a9fd42254c6b0c680a9b95ebcdff80de735c89f79e2c508",
+    "artifacts/answerability_semantic_v2_1_qwen_structural_smoke/SMOKE_FIXTURES.json": "3abf857514394cbbab8ea2b2f3f14095ffe917b8dd16906f5d97b6120ac598a6"
+  },
+  "comparisons": [
+    {
+      "case_id": "Q01",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q01",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks persistence of a valid shipment failed-attempt exception after movement before closure; no old item asks that proposition."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q02",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks resulting address state for contradictory simultaneous address markers; smoke-03 asks how gaps/conflicts are represented in records, not the specific marker-state rule."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q03",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Two distinct boundary propositions: PRE_TRANSIT empty scans and exact promise equality; no old item asks either combination or an equivalent operational boundary."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q04",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks subtype-driven category readiness and exclusion of an unknown address trigger; smoke-02 asks general draft content/review boundary, not these subtype eligibility propositions."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q05",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks a clearance-to-new-exception cooldown; old duration questions concern charging, sanitation, holding or visitor badges, with different governing propositions and evidence."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q06",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks an event-submission scanner-button sequence; old dispenser lever and enclosure cover questions concern different safety prerequisites, not this submission procedure."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q07",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks label reset behavior plus scan-ingestion latency SLA; no old item covers these two policy propositions."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q08",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks tracking-history dependency of late handoff plus exact escalation email; smoke-02 asks draft content/review boundaries, not either requested detail."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q09",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks historical failed-attempt authority before the supplied bundle effective date; V1 workshop edition/seal question asks a seal requirement, not this dated governing rule."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q10",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing address-clearance authority between demo and contract-specific policy; prior workshop edition and mobile-bench questions have distinct asked propositions and conditions."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q11",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing versions for two exception rules with an unknown original event date; no old item asks this temporal applicability pair."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q1",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q2",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q3",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q4",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q5",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q6",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q7",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q8",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q9",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q10",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q11",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "Q12",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "SMOKE-01",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "SMOKE-02",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    },
+    {
+      "case_id": "Q12",
+      "compared_id": "SMOKE-03",
+      "exact_duplicate": false,
+      "one_to_one_paraphrase": false,
+      "rationale": "Asks governing late and address rules with unverified case-to-artifact binding; smoke audit-record and gap-record questions do not ask policy authority resolution."
+    }
+  ],
+  "exact_duplicates": 0,
+  "execution_helper_frozen_before_model_initialization": true,
+  "execution_helper_sha256": "b2f9b916eb4d9c0e29d526a77dac29a3b276a3ffef02cd7cf8bf0e55a26525c5",
+  "gold_sha256": "971e2617f69c9d6ebc4b3eafe51f0394c4759247bc8963ef4bd9c7bd7f58ae61",
+  "method": "Exact string comparison plus explicit manual proposition/condition equivalence review under frozen rubric; topic or abstract test-shape similarity alone is not a 1:1 paraphrase. No another-model judge call.",
+  "new_cases": 12,
+  "one_to_one_paraphrases": 0,
+  "pair_count": 180,
+  "performed_after_suite_freeze": true,
+  "phase_2g_private_heldout_access": false,
+  "phase_2h_held_out_access": false,
+  "previous_model_generation_contents_accessed": false,
+  "status": "PASS",
+  "suite_freeze_receipt_sha256": "dfe41f7c858ccbdf8f0fc4dce95f265c4537ffb135bad62cc85fa8139ef43080",
+  "suite_sha256": "28dd6bc1d7a561ac350284c3e5df5b92979960b591d39609dd202c1de1aa360c"
+}

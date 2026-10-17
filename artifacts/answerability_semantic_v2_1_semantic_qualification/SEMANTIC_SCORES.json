@@ -1,0 +1,4101 @@
+{
+  "cases": [
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q01-A1",
+              "match": false,
+              "rationale": "Repeats a bundle-governance prerequisite already stipulated in the question; never asks whether movement erases an existing failed-attempt exception."
+            }
+          ],
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Repeats a bundle-governance prerequisite already stipulated in the question; never asks whether movement erases an existing failed-attempt exception.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q01-A1",
+              "match": false,
+              "rationale": "Repeats a bundle-governance prerequisite already stipulated in the question; never asks whether movement erases an existing failed-attempt exception."
+            }
+          ],
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Repeats a bundle-governance prerequisite already stipulated in the question; never asks whether movement erases an existing failed-attempt exception.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q01-A1",
+              "match": false,
+              "rationale": "Repeats a bundle-governance prerequisite already stipulated in the question; never asks whether movement erases an existing failed-attempt exception."
+            }
+          ],
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Repeats a bundle-governance prerequisite already stipulated in the question; never asks whether movement erases an existing failed-attempt exception.",
+          "support_status_correct": null
+        }
+      ],
+      "case_id": "Q01",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: single-attempt.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-counting.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: stale-escalate.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: address-notices.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: single-attempt.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-counting.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: stale-escalate.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: address-notices.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: single-attempt.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-counting.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: stale-escalate.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: address-notices.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q01",
+          "generated_ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        }
+      ],
+      "context_correct": true,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": false,
+      "generated_decision": "ABSTAIN",
+      "generated_material_asks": [
+        {
+          "ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "ask": "Does the active bundle's version 1.0-demo govern the assessment?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_class": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_final_decision": "ALLOW",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "single-attempt",
+            "attempt-counting"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1,
+            2
+          ],
+          "ask": "Whether later movement erases a valid failed-attempt exception before closure.",
+          "ask_id": "Q01-A1",
+          "rationale": "single-attempt forbids inferring recovery from movement; attempt-counting retains failed-attempt history until closure.",
+          "support_status": "SUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 30,
+      "matched_ask_count": 0,
+      "negative_class_evidence_behavior": "NOT_APPLICABLE",
+      "observed_generated_ask_count": 3,
+      "observed_material_ask_fragments": [],
+      "reason_correct": true,
+      "structural_disposition": "EXACT_SCHEMA_REJECT",
+      "unmatched_gold_ask_ids": [
+        "Q01-A1"
+      ],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q02-A1",
+              "match": false,
+              "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers."
+            }
+          ],
+          "generated_ask": "Does the active bundle SOP-04 govern the assessment?",
+          "generated_ask_index": 1,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q02-A1",
+              "match": false,
+              "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers."
+            }
+          ],
+          "generated_ask": "Does the active bundle SOP-01 govern the assessment?",
+          "generated_ask_index": 2,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q02-A1",
+              "match": false,
+              "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers."
+            }
+          ],
+          "generated_ask": "Does the active bundle SOP-02 govern the assessment?",
+          "generated_ask_index": 3,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q02-A1",
+              "match": false,
+              "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers."
+            }
+          ],
+          "generated_ask": "Does the active bundle SOP-03 govern the assessment?",
+          "generated_ask_index": 4,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q02-A1",
+              "match": false,
+              "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers."
+            }
+          ],
+          "generated_ask": "Does the active bundle SOP-05 govern the assessment?",
+          "generated_ask_index": 5,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Asks which SOP governs, not the address state produced by contradictory simultaneous markers.",
+          "support_status_correct": null
+        }
+      ],
+      "case_id": "Q02",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-04 govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: address-notices.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-04 govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-04 govern the assessment?",
+          "generated_ask_index": 1,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-01 govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-01 govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-02 govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-02 govern the assessment?",
+          "generated_ask_index": 3,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: stale-escalate.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-03 govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-counting.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-03 govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: single-attempt.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q02",
+          "generated_ask": "Does the active bundle SOP-05 govern the assessment?",
+          "generated_ask_index": 5,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        }
+      ],
+      "context_correct": true,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": false,
+      "generated_decision": "ABSTAIN",
+      "generated_material_asks": [
+        {
+          "ask": "Does the active bundle SOP-04 govern the assessment?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "ask": "Does the active bundle SOP-01 govern the assessment?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            4,
+            5
+          ]
+        },
+        {
+          "ask": "Does the active bundle SOP-02 govern the assessment?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            6,
+            7
+          ]
+        },
+        {
+          "ask": "Does the active bundle SOP-03 govern the assessment?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            8,
+            9
+          ]
+        },
+        {
+          "ask": "Does the active bundle SOP-05 govern the assessment?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            10
+          ]
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_class": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_final_decision": "ALLOW",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "address-notices"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1
+          ],
+          "ask": "The resulting address state for contradictory simultaneous address markers.",
+          "ask_id": "Q02-A1",
+          "rationale": "address-notices explicitly makes contradictory simultaneous markers unknown.",
+          "support_status": "SUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 10,
+      "matched_ask_count": 0,
+      "negative_class_evidence_behavior": "NOT_APPLICABLE",
+      "observed_generated_ask_count": 5,
+      "observed_material_ask_fragments": [],
+      "reason_correct": true,
+      "structural_disposition": "EXACT_SCHEMA_REJECT",
+      "unmatched_gold_ask_ids": [
+        "Q02-A1"
+      ],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q03-A1",
+              "match": true,
+              "rationale": "Preserves PRE_TRANSIT, complete empty scan history, and the applicability proposition."
+            },
+            {
+              "gold_ask_id": "Q03-A2",
+              "match": false,
+              "rationale": "This entry matches the other named gold proposition, not this distinct ask."
+            }
+          ],
+          "generated_ask": "Is inactivity applicable for a valid PRE_TRANSIT shipment with complete but empty scan history?",
+          "generated_ask_index": 1,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": "SUPPORTED",
+          "matched_gold_ask_id": "Q03-A1",
+          "rationale": "Preserves PRE_TRANSIT, complete empty scan history, and the applicability proposition.",
+          "support_status_correct": true
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q03-A1",
+              "match": false,
+              "rationale": "This entry matches the other named gold proposition, not this distinct ask."
+            },
+            {
+              "gold_ask_id": "Q03-A2",
+              "match": true,
+              "rationale": "Preserves open status, exact equality of as_of and promise, and late classification."
+            }
+          ],
+          "generated_ask": "Is a different open shipment late when as_of exactly equals its promised-delivery timestamp?",
+          "generated_ask_index": 2,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": "SUPPORTED",
+          "matched_gold_ask_id": "Q03-A2",
+          "rationale": "Preserves open status, exact equality of as_of and promise, and late classification.",
+          "support_status_correct": true
+        }
+      ],
+      "case_id": "Q03",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [
+        {
+          "case_id": "Q03",
+          "generated_ask": "Is inactivity applicable for a valid PRE_TRANSIT shipment with complete but empty scan history?",
+          "generated_ask_index": 1,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "scan-scope explicitly says valid PRE_TRANSIT with complete empty scan history is not applicable.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q03",
+          "generated_ask": "Is inactivity applicable for a valid PRE_TRANSIT shipment with complete but empty scan history?",
+          "generated_ask_index": 1,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "stale-escalate discusses threshold eligibility and evidence, not the PRE_TRANSIT complete-empty-history applicability exception.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q03",
+          "generated_ask": "Is a different open shipment late when as_of exactly equals its promised-delivery timestamp?",
+          "generated_ask_index": 2,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "late-boundaries explicitly excludes equality from late detection.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q03",
+          "generated_ask": "Is a different open shipment late when as_of exactly equals its promised-delivery timestamp?",
+          "generated_ask_index": 2,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "late-escalate discusses escalation eligibility, not whether exact promise equality constitutes late detection.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        }
+      ],
+      "context_correct": true,
+      "covered_supported_gold_ask_ids": [
+        "Q03-A1",
+        "Q03-A2"
+      ],
+      "decision_correct": true,
+      "generated_decision": "ALLOW",
+      "generated_material_asks": [
+        {
+          "ask": "Is inactivity applicable for a valid PRE_TRANSIT shipment with complete but empty scan history?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            6
+          ]
+        },
+        {
+          "ask": "Is a different open shipment late when as_of exactly equals its promised-delivery timestamp?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            2,
+            5
+          ]
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_class": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_final_decision": "ALLOW",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "scan-scope"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1
+          ],
+          "ask": "Whether tracking inactivity applies to valid PRE_TRANSIT with complete empty scan history.",
+          "ask_id": "Q03-A1",
+          "rationale": "scan-scope explicitly says this is not applicable.",
+          "support_status": "SUPPORTED"
+        },
+        {
+          "acceptable_support_sections": [
+            "late-boundaries"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            2
+          ],
+          "ask": "Whether an open shipment is late at exact equality of as_of and promise.",
+          "ask_id": "Q03-A2",
+          "rationale": "late-boundaries explicitly excludes equality.",
+          "support_status": "SUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 2,
+      "matched_ask_count": 2,
+      "negative_class_evidence_behavior": "NOT_APPLICABLE",
+      "observed_generated_ask_count": 2,
+      "observed_material_ask_fragments": [],
+      "reason_correct": true,
+      "structural_disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "unmatched_gold_ask_ids": [],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q04-A1",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            },
+            {
+              "gold_ask_id": "Q04-A2",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            }
+          ],
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q04-A1",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            },
+            {
+              "gold_ask_id": "Q04-A2",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            }
+          ],
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q04-A1",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            },
+            {
+              "gold_ask_id": "Q04-A2",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            }
+          ],
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q04-A1",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            },
+            {
+              "gold_ask_id": "Q04-A2",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            }
+          ],
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q04-A1",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            },
+            {
+              "gold_ask_id": "Q04-A2",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            }
+          ],
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q04-A1",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            },
+            {
+              "gold_ask_id": "Q04-A2",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            }
+          ],
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q04-A1",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            },
+            {
+              "gold_ask_id": "Q04-A2",
+              "match": false,
+              "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired."
+            }
+          ],
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 7,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Version identity/governance is not either requested subtype readiness or escalation-basis inclusion proposition. The visible complete ask string is unmatched; no incomplete candidate output is repaired.",
+          "support_status_correct": null
+        }
+      ],
+      "case_id": "Q04",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo?",
+          "generated_ask_index": 1,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "The cited evidence entry itself carries version=1.0-demo, corroborating the generated version-identity question. This does not establish authority or answer either gold ask.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: repeated-attempts.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: stale-escalate.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-counting.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 2,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: single-attempt.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: repeated-attempts.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: stale-escalate.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-counting.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 3,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: single-attempt.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: repeated-attempts.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: stale-escalate.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-counting.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 4,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: single-attempt.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: repeated-attempts.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: stale-escalate.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-counting.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 5,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: single-attempt.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: repeated-attempts.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: stale-escalate.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-counting.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "generated_ask_index": 6,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: single-attempt.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 7,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: attempt-address-evidence.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": false
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 7,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: repeated-attempts.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "repeated-attempts"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": false
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 7,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scope.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": false
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 7,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: taxonomy.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": false
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 7,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-boundaries.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": false
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 7,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: late-escalate.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": false
+        },
+        {
+          "case_id": "Q04",
+          "generated_ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "generated_ask_index": 7,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "This section's identity/topic or version does not establish that the named bundle/version governs this assessment. Governance is stipulated by the question/active-bundle context, not proven by this section's policy content. A context-supported premise is not converted into a supporting section citation. Section: scan-scope.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": true,
+          "source_rank_array_complete": false
+        }
+      ],
+      "context_correct": false,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": false,
+      "generated_decision": null,
+      "generated_material_asks": null,
+      "generated_policy_context_status": null,
+      "generated_reason_code": null,
+      "gold_class": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_final_decision": "ALLOW",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "attempt-address-evidence",
+            "repeated-attempts"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1,
+            2
+          ],
+          "ask": "Whether an independently supported eligible failed-attempt subtype can make the category ready despite an unknown address subtype.",
+          "ask_id": "Q04-A1",
+          "rationale": "The evidence section explicitly allows a supported eligible subtype to establish readiness; repeated-attempts removes address dependence when an address decision is not claimed.",
+          "support_status": "SUPPORTED"
+        },
+        {
+          "acceptable_support_sections": [
+            "attempt-address-evidence"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1
+          ],
+          "ask": "Whether the unknown address subtype may be included in the escalation basis.",
+          "ask_id": "Q04-A2",
+          "rationale": "The section says disclose the unknown subtype and exclude it from the escalation basis.",
+          "support_status": "SUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "incomplete_output_scoring_note": "No valid complete JSON/candidate decision. Visible complete ask strings and cited-rank prefixes are audited without closing the JSON or repairing any field; they receive no match/decision credit. All seven emitted ask statements count as observed generated entries. The final unclosed rank array contains seven visible rank numerals, each audited as a prefix observation.",
+      "incorrect_or_unsupported_citation_count": 57,
+      "matched_ask_count": 0,
+      "negative_class_evidence_behavior": "NOT_APPLICABLE",
+      "observed_generated_ask_count": 7,
+      "observed_material_ask_fragments": [
+        {
+          "ask": "Is the active bundle version 1.0-demo?",
+          "entry_complete": true,
+          "forensic_only": true,
+          "rank_array_complete": true,
+          "source_char_end": 230,
+          "source_char_start": 58,
+          "source_excerpt": "\"ask\": \"Is the active bundle version 1.0-demo?\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n    },\n    {\n      ",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "entry_complete": true,
+          "forensic_only": true,
+          "rank_array_complete": true,
+          "source_char_end": 426,
+          "source_char_start": 230,
+          "source_excerpt": "\"ask\": \"Does the active bundle version 1.0-demo govern the assessment?\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n    },\n    {\n      ",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "entry_complete": true,
+          "forensic_only": true,
+          "rank_array_complete": true,
+          "source_char_end": 638,
+          "source_char_start": 426,
+          "source_excerpt": "\"ask\": \"Is the active bundle version 1.0-demo the correct version for this assessment?\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n    },\n    {\n      ",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "entry_complete": true,
+          "forensic_only": true,
+          "rank_array_complete": true,
+          "source_char_end": 834,
+          "source_char_start": 638,
+          "source_excerpt": "\"ask\": \"Does the active bundle version 1.0-demo govern the assessment?\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n    },\n    {\n      ",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "entry_complete": true,
+          "forensic_only": true,
+          "rank_array_complete": true,
+          "source_char_end": 1046,
+          "source_char_start": 834,
+          "source_excerpt": "\"ask\": \"Is the active bundle version 1.0-demo the correct version for this assessment?\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n    },\n    {\n      ",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "ask": "Does the active bundle version 1.0-demo govern the assessment?",
+          "entry_complete": true,
+          "forensic_only": true,
+          "rank_array_complete": true,
+          "source_char_end": 1242,
+          "source_char_start": 1046,
+          "source_excerpt": "\"ask\": \"Does the active bundle version 1.0-demo govern the assessment?\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n    },\n    {\n      ",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "ask": "Is the active bundle version 1.0-demo the correct version for this assessment?",
+          "entry_complete": false,
+          "forensic_only": true,
+          "rank_array_complete": false,
+          "source_char_end": 1423,
+          "source_char_start": 1242,
+          "source_excerpt": "\"ask\": \"Is the active bundle version 1.0-demo the correct version for this assessment?\",\n      \"support_status\": \"SUPPORTED\",\n      \"supporting_evidence_ranks\": [1, 2, 3, 4, 5, 6, 7",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "reason_correct": false,
+      "structural_disposition": "DECODER_STRUCTURAL_REJECT",
+      "unmatched_gold_ask_ids": [
+        "Q04-A1",
+        "Q04-A2"
+      ],
+      "visible_decision_prefix_forensic_only": "ALLOW"
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q05-A1",
+              "match": true,
+              "rationale": "Same requested numeric cooldown between clearance and a new exception; status correctness is scored separately."
+            }
+          ],
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": "UNSUPPORTED",
+          "matched_gold_ask_id": "Q05-A1",
+          "rationale": "Same requested numeric cooldown between clearance and a new exception; status correctness is scored separately.",
+          "support_status_correct": false
+        }
+      ],
+      "case_id": "Q05",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in address-notices; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in scope; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in taxonomy; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in late-boundaries; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in late-escalate; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in scan-scope; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in stale-escalate; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in attempt-counting; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in single-attempt; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q05",
+          "generated_ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "generated_ask_index": 1,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "No numeric clearance-to-new-exception cooldown is specified in attempt-address-evidence; topic relevance or a prohibition on inventing cooldowns does not supply the requested duration.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        }
+      ],
+      "context_correct": true,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": false,
+      "generated_decision": "ALLOW",
+      "generated_material_asks": [
+        {
+          "ask": "What is the cooldown duration in minutes after ADDRESS_CLEARED before a new ADDRESS_EXCEPTION can count?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_class": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "The required cooldown duration between an address clearance and a new address exception.",
+          "ask_id": "Q05-A1",
+          "rationale": "address-notices supplies marker-state rules and forbids inventing a cooldown; no supplied section specifies a duration. The request for a numeric cooldown cannot be fulfilled.",
+          "support_status": "UNSUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 10,
+      "matched_ask_count": 1,
+      "negative_class_evidence_behavior": "FAIL: missing-support asks were labeled SUPPORTED and cited non-supporting sections.",
+      "observed_generated_ask_count": 1,
+      "observed_material_ask_fragments": [],
+      "reason_correct": false,
+      "structural_disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "unmatched_gold_ask_ids": [],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q06-A1",
+              "match": true,
+              "rationale": "Same requested scanner-button sequence for submitting ATTEMPT_FAILED; status correctness is scored separately."
+            }
+          ],
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": "UNSUPPORTED",
+          "matched_gold_ask_id": "Q06-A1",
+          "rationale": "Same requested scanner-button sequence for submitting ATTEMPT_FAILED; status correctness is scored separately.",
+          "support_status_correct": false
+        }
+      ],
+      "case_id": "Q06",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "attempt-counting does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "single-attempt does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "scope does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "taxonomy does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "late-boundaries does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "late-escalate does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "scan-scope does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "stale-escalate does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "address-notices does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q06",
+          "generated_ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "generated_ask_index": 1,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "attempt-address-evidence does not specify a scanner-button submission procedure.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "attempt-address-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        }
+      ],
+      "context_correct": true,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": false,
+      "generated_decision": "ALLOW",
+      "generated_material_asks": [
+        {
+          "ask": "What is the sequence of scanner buttons required to submit an ATTEMPT_FAILED event?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_class": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "The required scanner-button sequence for submitting ATTEMPT_FAILED.",
+          "ask_id": "Q06-A1",
+          "rationale": "The sections define valid events and counting, not scanner user-interface procedures; authority is established but substantive procedure is absent.",
+          "support_status": "UNSUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 10,
+      "matched_ask_count": 1,
+      "negative_class_evidence_behavior": "FAIL: missing-support asks were labeled SUPPORTED and cited non-supporting sections.",
+      "observed_generated_ask_count": 1,
+      "observed_material_ask_fragments": [],
+      "reason_correct": false,
+      "structural_disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "unmatched_gold_ask_ids": [],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q07-A1",
+              "match": false,
+              "rationale": "Drops the material label-event condition and asks generally whether inactivity resets; the missing trigger is not inserted to award a match."
+            },
+            {
+              "gold_ask_id": "Q07-A2",
+              "match": false,
+              "rationale": "Drops the material label-event condition and asks generally whether inactivity resets; the missing trigger is not inserted to award a match."
+            }
+          ],
+          "generated_ask": "Does the active bundle confirm that physical-scan inactivity resets?",
+          "generated_ask_index": 1,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Drops the material label-event condition and asks generally whether inactivity resets; the missing trigger is not inserted to award a match.",
+          "support_status_correct": null
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q07-A1",
+              "match": false,
+              "rationale": "This entry matches the other named gold proposition, not this distinct ask."
+            },
+            {
+              "gold_ask_id": "Q07-A2",
+              "match": true,
+              "rationale": "Same maximum scan-ingestion latency in seconds."
+            }
+          ],
+          "generated_ask": "What is the maximum ingestion latency in seconds for the scan-ingestion service?",
+          "generated_ask_index": 2,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": "UNSUPPORTED",
+          "matched_gold_ask_id": "Q07-A2",
+          "rationale": "Same maximum scan-ingestion latency in seconds.",
+          "support_status_correct": false
+        }
+      ],
+      "case_id": "Q07",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [
+        {
+          "case_id": "Q07",
+          "generated_ask": "Does the active bundle confirm that physical-scan inactivity resets?",
+          "generated_ask_index": 1,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "scan-scope supplies a reset/non-reset distinction and the last-qualifying-physical-scan basis for inactivity; it grounds the broader generated reset topic. This does not restore the omitted label condition for gold-ask matching.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q07",
+          "generated_ask": "Does the active bundle confirm that physical-scan inactivity resets?",
+          "generated_ask_index": 1,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "stale-evidence enumerates evidence requirements; it does not provide a reset rule for the generated reset proposition.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "stale-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q07",
+          "generated_ask": "What is the maximum ingestion latency in seconds for the scan-ingestion service?",
+          "generated_ask_index": 2,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "stale-escalate does not specify a scan-ingestion latency SLA; scan gaps and attempt/address rules are not ingestion latency limits.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q07",
+          "generated_ask": "What is the maximum ingestion latency in seconds for the scan-ingestion service?",
+          "generated_ask_index": 2,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "attempt-counting does not specify a scan-ingestion latency SLA; scan gaps and attempt/address rules are not ingestion latency limits.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q07",
+          "generated_ask": "What is the maximum ingestion latency in seconds for the scan-ingestion service?",
+          "generated_ask_index": 2,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "single-attempt does not specify a scan-ingestion latency SLA; scan gaps and attempt/address rules are not ingestion latency limits.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q07",
+          "generated_ask": "What is the maximum ingestion latency in seconds for the scan-ingestion service?",
+          "generated_ask_index": 2,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "address-notices does not specify a scan-ingestion latency SLA; scan gaps and attempt/address rules are not ingestion latency limits.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        }
+      ],
+      "context_correct": true,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": false,
+      "generated_decision": "ALLOW",
+      "generated_material_asks": [
+        {
+          "ask": "Does the active bundle confirm that physical-scan inactivity resets?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2
+          ]
+        },
+        {
+          "ask": "What is the maximum ingestion latency in seconds for the scan-ingestion service?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_class": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "scan-scope"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1
+          ],
+          "ask": "Whether label events reset physical-scan inactivity.",
+          "ask_id": "Q07-A1",
+          "rationale": "scan-scope explicitly says labels do not reset inactivity.",
+          "support_status": "SUPPORTED"
+        },
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "The maximum permitted scan-ingestion latency in seconds.",
+          "ask_id": "Q07-A2",
+          "rationale": "No supplied section defines a service ingestion-latency SLA; scan gap rules do not establish that SLA.",
+          "support_status": "UNSUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 5,
+      "matched_ask_count": 1,
+      "negative_class_evidence_behavior": "FAIL: missing-support asks were labeled SUPPORTED and cited non-supporting sections.",
+      "observed_generated_ask_count": 2,
+      "observed_material_ask_fragments": [],
+      "reason_correct": false,
+      "structural_disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "unmatched_gold_ask_ids": [
+        "Q07-A1"
+      ],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q08-A1",
+              "match": true,
+              "rationale": "Same dependency question: whether missing tracking history prevents a handoff otherwise having complete late evidence."
+            },
+            {
+              "gold_ask_id": "Q08-A2",
+              "match": false,
+              "rationale": "This entry matches the other named gold proposition, not this distinct ask."
+            }
+          ],
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": "SUPPORTED",
+          "matched_gold_ask_id": "Q08-A1",
+          "rationale": "Same dependency question: whether missing tracking history prevents a handoff otherwise having complete late evidence.",
+          "support_status_correct": true
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q08-A1",
+              "match": false,
+              "rationale": "This entry matches the other named gold proposition, not this distinct ask."
+            },
+            {
+              "gold_ask_id": "Q08-A2",
+              "match": true,
+              "rationale": "Same requested exact escalation mailbox for the reviewer."
+            }
+          ],
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "generated_support_status": "SUPPORTED",
+          "gold_support_status": "UNSUPPORTED",
+          "matched_gold_ask_id": "Q08-A2",
+          "rationale": "Same requested exact escalation mailbox for the reviewer.",
+          "support_status_correct": false
+        }
+      ],
+      "case_id": "Q08",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "late-escalate and late-evidence explicitly remove tracking-history completeness as a late-handoff dependency. The additional late-boundaries section states complete tracking history is not a dependency, supporting the same question under its otherwise-complete late-evidence condition; rank 5 is credited beyond canonical gold ranks.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "late-escalate and late-evidence explicitly remove tracking-history completeness as a late-handoff dependency. The additional late-boundaries section states complete tracking history is not a dependency, supporting the same question under its otherwise-complete late-evidence condition; rank 5 is credited beyond canonical gold ranks.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "late-evidence"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "scope concerns another category or general scope/taxonomy; it does not substantively establish the late-handoff tracking-history dependency.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "taxonomy concerns another category or general scope/taxonomy; it does not substantively establish the late-handoff tracking-history dependency.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "late-escalate and late-evidence explicitly remove tracking-history completeness as a late-handoff dependency. The additional late-boundaries section states complete tracking history is not a dependency, supporting the same question under its otherwise-complete late-evidence condition; rank 5 is credited beyond canonical gold ranks.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": true,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "scan-scope concerns another category or general scope/taxonomy; it does not substantively establish the late-handoff tracking-history dependency.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "stale-escalate concerns another category or general scope/taxonomy; it does not substantively establish the late-handoff tracking-history dependency.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "attempt-counting concerns another category or general scope/taxonomy; it does not substantively establish the late-handoff tracking-history dependency.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "single-attempt concerns another category or general scope/taxonomy; it does not substantively establish the late-handoff tracking-history dependency.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "generated_ask_index": 1,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "address-notices concerns another category or general scope/taxonomy; it does not substantively establish the late-handoff tracking-history dependency.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 1,
+          "rank_exists": true,
+          "rationale": "late-escalate supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 2,
+          "rank_exists": true,
+          "rationale": "late-evidence supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-05",
+            "1.0-demo",
+            "late-evidence"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 3,
+          "rank_exists": true,
+          "rationale": "scope supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 4,
+          "rank_exists": true,
+          "rationale": "taxonomy supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-01",
+            "1.0-demo",
+            "taxonomy"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 5,
+          "rank_exists": true,
+          "rationale": "late-boundaries supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-02",
+            "1.0-demo",
+            "late-boundaries"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 6,
+          "rank_exists": true,
+          "rationale": "scan-scope supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "scan-scope"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 7,
+          "rank_exists": true,
+          "rationale": "stale-escalate supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-03",
+            "1.0-demo",
+            "stale-escalate"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 8,
+          "rank_exists": true,
+          "rationale": "attempt-counting supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "attempt-counting"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 9,
+          "rank_exists": true,
+          "rationale": "single-attempt supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "single-attempt"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        },
+        {
+          "case_id": "Q08",
+          "generated_ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "generated_ask_index": 2,
+          "rank": 10,
+          "rank_exists": true,
+          "rationale": "address-notices supplies no escalation mailbox address.",
+          "section_identity": [
+            "SOP-04",
+            "1.0-demo",
+            "address-notices"
+          ],
+          "semantically_supports_generated_ask": false,
+          "source_is_incomplete_candidate_output": false,
+          "source_rank_array_complete": true
+        }
+      ],
+      "context_correct": true,
+      "covered_supported_gold_ask_ids": [
+        "Q08-A1"
+      ],
+      "decision_correct": false,
+      "generated_decision": "ALLOW",
+      "generated_material_asks": [
+        {
+          "ask": "Is missing tracking history sufficient to prevent a late handoff with complete late evidence?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "ask": "What is the exact escalation mailbox address that the human reviewer should use?",
+          "support_status": "SUPPORTED",
+          "supporting_evidence_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_class": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "late-escalate",
+            "late-evidence"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1,
+            2
+          ],
+          "ask": "Whether missing tracking history alone prevents an otherwise fully evidenced late handoff.",
+          "ask_id": "Q08-A1",
+          "rationale": "Both supplied late sections explicitly remove tracking-history completeness as a dependency of late readiness.",
+          "support_status": "SUPPORTED"
+        },
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "The exact escalation mailbox address the human reviewer must use.",
+          "ask_id": "Q08-A2",
+          "rationale": "The supplied policy discusses handoff readiness and review but provides no escalation email address.",
+          "support_status": "UNSUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 17,
+      "matched_ask_count": 2,
+      "negative_class_evidence_behavior": "FAIL: missing-support asks were labeled SUPPORTED and cited non-supporting sections.",
+      "observed_generated_ask_count": 2,
+      "observed_material_ask_fragments": [],
+      "reason_correct": false,
+      "structural_disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "unmatched_gold_ask_ids": [],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q09-A1",
+              "match": false,
+              "rationale": "Broadens the ask from the authoritative failed-attempt counting rule to a generic governing policy; the requested counting-rule granularity is omitted. Keeping the date alone is insufficient."
+            }
+          ],
+          "generated_ask": "What is the governing policy for the assessment with the effective date of 2026-09-20?",
+          "generated_ask_index": 1,
+          "generated_support_status": "UNSUPPORTED",
+          "gold_support_status": null,
+          "matched_gold_ask_id": null,
+          "rationale": "Broadens the ask from the authoritative failed-attempt counting rule to a generic governing policy; the requested counting-rule granularity is omitted. Keeping the date alone is insufficient.",
+          "support_status_correct": null
+        }
+      ],
+      "case_id": "Q09",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [],
+      "context_correct": false,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": true,
+      "generated_decision": "ABSTAIN",
+      "generated_material_asks": [
+        {
+          "ask": "What is the governing policy for the assessment with the effective date of 2026-09-20?",
+          "support_status": "UNSUPPORTED",
+          "supporting_evidence_ranks": []
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_class": "UNRESOLVED_POLICY_CONTEXT",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which failed-attempt counting rule was authoritative on 2026-09-20.",
+          "ask_id": "Q09-A1",
+          "rationale": "The supplied active bundle begins 2026-09-26 and contains no earlier authoritative version. The governing historical rule cannot be established.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        }
+      ],
+      "gold_policy_context_disposition": "UNRESOLVED",
+      "gold_reason_code": "UNRESOLVED_POLICY_CONTEXT",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 0,
+      "matched_ask_count": 0,
+      "negative_class_evidence_behavior": "EMPTY_RANK_BEHAVIOR_PASS; semantic status/reason FAIL: CONTEXT_UNRESOLVED was replaced with UNSUPPORTED and insufficient-support reason.",
+      "observed_generated_ask_count": 1,
+      "observed_material_ask_fragments": [],
+      "reason_correct": false,
+      "structural_disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "unmatched_gold_ask_ids": [
+        "Q09-A1"
+      ],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q10-A1",
+              "match": true,
+              "rationale": "An answerability-audit phrasing retains the specific governing address-clearance rules and explicitly refers to this case, whose unresolved precedence context is supplied; it is equivalent to the one governing-authority ask."
+            }
+          ],
+          "generated_ask": "Is the active policy evidence sufficient to determine the governing address-clearance rules for this case?",
+          "generated_ask_index": 1,
+          "generated_support_status": "UNSUPPORTED",
+          "gold_support_status": "CONTEXT_UNRESOLVED",
+          "matched_gold_ask_id": "Q10-A1",
+          "rationale": "An answerability-audit phrasing retains the specific governing address-clearance rules and explicitly refers to this case, whose unresolved precedence context is supplied; it is equivalent to the one governing-authority ask.",
+          "support_status_correct": false
+        }
+      ],
+      "case_id": "Q10",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [],
+      "context_correct": false,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": true,
+      "generated_decision": "ABSTAIN",
+      "generated_material_asks": [
+        {
+          "ask": "Is the active policy evidence sufficient to determine the governing address-clearance rules for this case?",
+          "support_status": "UNSUPPORTED",
+          "supporting_evidence_ranks": []
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_class": "UNRESOLVED_POLICY_CONTEXT",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which address-clearance policy governs when authority between the supplied demo bundle and a contract-specific policy is unresolved.",
+          "ask_id": "Q10-A1",
+          "rationale": "The question explicitly lacks authority/precedence binding; the supplied bundle and missing-policy section do not resolve which policy governs. No content of the other policy is assumed.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        }
+      ],
+      "gold_policy_context_disposition": "UNRESOLVED",
+      "gold_reason_code": "UNRESOLVED_POLICY_CONTEXT",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 0,
+      "matched_ask_count": 1,
+      "negative_class_evidence_behavior": "EMPTY_RANK_BEHAVIOR_PASS; semantic status/reason FAIL: CONTEXT_UNRESOLVED was replaced with UNSUPPORTED and insufficient-support reason.",
+      "observed_generated_ask_count": 1,
+      "observed_material_ask_fragments": [],
+      "reason_correct": false,
+      "structural_disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "unmatched_gold_ask_ids": [],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q11-A1",
+              "match": true,
+              "rationale": "Retains governing version for failed-attempt counting; the only event in question supplies its unknown-date context without introducing a different event."
+            },
+            {
+              "gold_ask_id": "Q11-A2",
+              "match": false,
+              "rationale": "This entry matches the other named gold proposition, not this distinct ask."
+            }
+          ],
+          "generated_ask": "Which version governs failed-attempt counting?",
+          "generated_ask_index": 1,
+          "generated_support_status": "UNSUPPORTED",
+          "gold_support_status": "CONTEXT_UNRESOLVED",
+          "matched_gold_ask_id": "Q11-A1",
+          "rationale": "Retains governing version for failed-attempt counting; the only event in question supplies its unknown-date context without introducing a different event.",
+          "support_status_correct": false
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q11-A1",
+              "match": false,
+              "rationale": "This entry matches the other named gold proposition, not this distinct ask."
+            },
+            {
+              "gold_ask_id": "Q11-A2",
+              "match": true,
+              "rationale": "Retains governing version for tracking inactivity for the event, explicitly referring to the event with unknown original date."
+            }
+          ],
+          "generated_ask": "Which version governs tracking inactivity for the event?",
+          "generated_ask_index": 2,
+          "generated_support_status": "UNSUPPORTED",
+          "gold_support_status": "CONTEXT_UNRESOLVED",
+          "matched_gold_ask_id": "Q11-A2",
+          "rationale": "Retains governing version for tracking inactivity for the event, explicitly referring to the event with unknown original date.",
+          "support_status_correct": false
+        }
+      ],
+      "case_id": "Q11",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [],
+      "context_correct": false,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": true,
+      "generated_decision": "ABSTAIN",
+      "generated_material_asks": [
+        {
+          "ask": "Which version governs failed-attempt counting?",
+          "support_status": "UNSUPPORTED",
+          "supporting_evidence_ranks": []
+        },
+        {
+          "ask": "Which version governs tracking inactivity for the event?",
+          "support_status": "UNSUPPORTED",
+          "supporting_evidence_ranks": []
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_class": "UNRESOLVED_POLICY_CONTEXT",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which failed-attempt policy version governs the event when its required governing date is unknown.",
+          "ask_id": "Q11-A1",
+          "rationale": "The one supplied version has an effective interval but no event date can be bound to it.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        },
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which tracking-inactivity policy version governs the event when its required governing date is unknown.",
+          "ask_id": "Q11-A2",
+          "rationale": "The same unresolved temporal applicability prevents selecting the governing tracking version.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        }
+      ],
+      "gold_policy_context_disposition": "UNRESOLVED",
+      "gold_reason_code": "UNRESOLVED_POLICY_CONTEXT",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 0,
+      "matched_ask_count": 2,
+      "negative_class_evidence_behavior": "EMPTY_RANK_BEHAVIOR_PASS; semantic status/reason FAIL: CONTEXT_UNRESOLVED was replaced with UNSUPPORTED and insufficient-support reason.",
+      "observed_generated_ask_count": 2,
+      "observed_material_ask_fragments": [],
+      "reason_correct": false,
+      "structural_disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "unmatched_gold_ask_ids": [],
+      "visible_decision_prefix_forensic_only": null
+    },
+    {
+      "ask_match_decisions": [
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q12-A1",
+              "match": true,
+              "rationale": "Retains the governing late-delivery rule for this case; the anaphoric case retains the question's unverified binding context."
+            },
+            {
+              "gold_ask_id": "Q12-A2",
+              "match": false,
+              "rationale": "This entry matches the other named gold proposition, not this distinct ask."
+            }
+          ],
+          "generated_ask": "Which late-delivery rule governs this case?",
+          "generated_ask_index": 1,
+          "generated_support_status": "UNSUPPORTED",
+          "gold_support_status": "CONTEXT_UNRESOLVED",
+          "matched_gold_ask_id": "Q12-A1",
+          "rationale": "Retains the governing late-delivery rule for this case; the anaphoric case retains the question's unverified binding context.",
+          "support_status_correct": false
+        },
+        {
+          "all_gold_comparisons": [
+            {
+              "gold_ask_id": "Q12-A1",
+              "match": false,
+              "rationale": "This entry matches the other named gold proposition, not this distinct ask."
+            },
+            {
+              "gold_ask_id": "Q12-A2",
+              "match": true,
+              "rationale": "Retains the governing address-marker rule for this same case with unverified binding."
+            }
+          ],
+          "generated_ask": "Which address-marker rule governs this case?",
+          "generated_ask_index": 2,
+          "generated_support_status": "UNSUPPORTED",
+          "gold_support_status": "CONTEXT_UNRESOLVED",
+          "matched_gold_ask_id": "Q12-A2",
+          "rationale": "Retains the governing address-marker rule for this same case with unverified binding.",
+          "support_status_correct": false
+        }
+      ],
+      "case_id": "Q12",
+      "case_level_semantic_disposition": "FAIL",
+      "citation_audit": [],
+      "context_correct": false,
+      "covered_supported_gold_ask_ids": [],
+      "decision_correct": true,
+      "generated_decision": "ABSTAIN",
+      "generated_material_asks": [
+        {
+          "ask": "Which late-delivery rule governs this case?",
+          "support_status": "UNSUPPORTED",
+          "supporting_evidence_ranks": []
+        },
+        {
+          "ask": "Which address-marker rule governs this case?",
+          "support_status": "UNSUPPORTED",
+          "supporting_evidence_ranks": []
+        }
+      ],
+      "generated_policy_context_status": "RESOLVED",
+      "generated_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_class": "UNRESOLVED_POLICY_CONTEXT",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which late-delivery rule governs a case whose authoritative binding to the supplied policy artifacts is unverified.",
+          "ask_id": "Q12-A1",
+          "rationale": "The question explicitly withholds verified case-to-policy authority; valid-looking section labels do not supply that missing binding.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        },
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which address-marker rule governs a case whose authoritative binding to the supplied policy artifacts is unverified.",
+          "ask_id": "Q12-A2",
+          "rationale": "The same provenance/applicability blocker prevents asserting the governing address rule.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        }
+      ],
+      "gold_policy_context_disposition": "UNRESOLVED",
+      "gold_reason_code": "UNRESOLVED_POLICY_CONTEXT",
+      "incomplete_output_scoring_note": null,
+      "incorrect_or_unsupported_citation_count": 0,
+      "matched_ask_count": 2,
+      "negative_class_evidence_behavior": "EMPTY_RANK_BEHAVIOR_PASS; semantic status/reason FAIL: CONTEXT_UNRESOLVED was replaced with UNSUPPORTED and insufficient-support reason.",
+      "observed_generated_ask_count": 2,
+      "observed_material_ask_fragments": [],
+      "reason_correct": false,
+      "structural_disposition": "COMBINED_STRUCTURAL_ACCEPT",
+      "unmatched_gold_ask_ids": [],
+      "visible_decision_prefix_forensic_only": null
+    }
+  ],
+  "execution_finished_utc": "2026-10-16T19:53:46.725638+00:00",
+  "gold_sha256": "971e2617f69c9d6ebc4b3eafe51f0394c4759247bc8963ef4bd9c7bd7f58ae61",
+  "metrics": {
+    "case_count": 12,
+    "case_level_semantic_pass": 0,
+    "cited_rank_occurrences": 157,
+    "complete_JSON_output_ask_precision_diagnostic": {
+      "generated_total": 22,
+      "matched": 12,
+      "ratio": 0.5454545454545454
+    },
+    "final_decision_exact": {
+      "correct": 5,
+      "total": 12
+    },
+    "incorrect_citations_in_complete_JSON_outputs": 84,
+    "incorrect_citations_in_incomplete_Q04_prefix": 57,
+    "incorrect_or_unsupported_citation_occurrences": 141,
+    "material_ask_precision": {
+      "matched": 12,
+      "observed_generated_total": 29,
+      "ratio": 0.41379310344827586
+    },
+    "material_ask_recall": {
+      "gold_total": 18,
+      "matched": 12,
+      "ratio": 0.6666666666666666
+    },
+    "per_class_decision": {
+      "INSUFFICIENT_POLICY_SUPPORT": {
+        "correct": 0,
+        "total": 4
+      },
+      "SUPPORTED_BY_ACTIVE_POLICY": {
+        "correct": 1,
+        "total": 4
+      },
+      "UNRESOLVED_POLICY_CONTEXT": {
+        "correct": 4,
+        "total": 4
+      }
+    },
+    "reason_code_exact_accepted_gate_outputs": {
+      "correct": 1,
+      "total": 12
+    },
+    "reason_code_exact_parseable_raw_fields": {
+      "correct": 3,
+      "total": 12
+    },
+    "structural": {
+      "JSON_PASS": 11,
+      "adapter_PASS": 9,
+      "combined_accept": 9,
+      "completed_generations": 12,
+      "exact_schema_PASS": 9
+    },
+    "supported_ask_evidence_coverage": {
+      "covered": 3,
+      "ratio": 0.375,
+      "supported_gold_total": 8
+    }
+  },
+  "outcome": "SEMANTIC_V2_1_QUALIFICATION_FAILED",
+  "protocol_sha256": "2625040df5fabab42d12f158ec9d39d35ba7a735978dd343a64688be3b37b55d",
+  "raw_generations_sha256": "6ad5884bbb694bd5e5feb5cbbe6e1b1ce642d8659ef885b1cc38dacb159a5d3e",
+  "review_status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+  "scored_after_execution_finished": true,
+  "scoring_method": "Agent-applied manual semantic-equivalence and section-grounding rubric, explicit judgments for owner review; no second model/API judge and no new inference.",
+  "scoring_notes": [
+    "The primary reason-field diagnostic counts matching literal reason codes in parseable Q01/Q02 despite their rejected decision/reason pairing. Their adapter was NOT_RUN; these are not valid GateOutput successes. Accepted-output reason accuracy is also reported.",
+    "Q04 hit max_new_tokens=512 without EOS. Its partial ALLOW prefix is not a completed candidate decision and earns no exact-decision credit. Seven complete ask strings and 67 visible rank numerals can be inspected without adding bytes, closing syntax, or passing repaired data to any layer. Prefix-only observations are separately marked.",
+    "Precision uses all 29 observed emitted ask entries, including seven unmatched complete ask strings in the incomplete Q04 output. The separate 22-entry complete-JSON diagnostic is not substituted for the preregistered all-entry denominator.",
+    "Citation support is assessed for each generated proposition against the actual cited section. A premise stated only in question/bundle context does not turn every policy section into supporting proof of authority. Version-identity metadata is credited for the literal version identity proposition, but not for case-governance/correct-authority propositions.",
+    "Q07-A1 omits the material label trigger; Q09 omits the failed-attempt counting-rule specificity. These receive no match credit under the frozen condition/granularity rule. Q10-Q12 preserve their concrete rule/version target and case/event referent; anaphoric context is retained.",
+    "All adjudications are explicit and reviewable; no Gold, prompt, threshold or raw output was changed. Qualification fails independently on structural and decision/reason thresholds."
+  ],
+  "scoring_recorded_utc": "2026-10-17T20:08:18.537548+00:00",
+  "structural_results_sha256": "8bb68eb885388503afb2b45b960b2779c42411f62694fc111d3462f7b0ef8337",
+  "suite_sha256": "28dd6bc1d7a561ac350284c3e5df5b92979960b591d39609dd202c1de1aa360c",
+  "threshold_checks": {
+    "ask_precision_at_least_90_percent": false,
+    "ask_recall_at_least_90_percent": false,
+    "decision_at_least_10_of_12": false,
+    "every_class_decision_at_least_3_of_4": false,
+    "incorrect_citations_zero": false,
+    "reason_at_least_10_of_12": false,
+    "structural_12_of_12": false,
+    "supported_ask_coverage_at_least_90_percent": false,
+    "zero_retries_and_repairs": true
+  }
+}

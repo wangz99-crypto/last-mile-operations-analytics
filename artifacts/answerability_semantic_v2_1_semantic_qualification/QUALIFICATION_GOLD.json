@@ -1,0 +1,308 @@
+{
+  "cases": [
+    {
+      "case_id": "Q01",
+      "gold_final_decision": "ALLOW",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "single-attempt",
+            "attempt-counting"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1,
+            2
+          ],
+          "ask": "Whether later movement erases a valid failed-attempt exception before closure.",
+          "ask_id": "Q01-A1",
+          "rationale": "single-attempt forbids inferring recovery from movement; attempt-counting retains failed-attempt history until closure.",
+          "support_status": "SUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_semantic_class": "SUPPORTED_BY_ACTIVE_POLICY",
+      "material_ask_count": 1
+    },
+    {
+      "case_id": "Q02",
+      "gold_final_decision": "ALLOW",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "address-notices"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1
+          ],
+          "ask": "The resulting address state for contradictory simultaneous address markers.",
+          "ask_id": "Q02-A1",
+          "rationale": "address-notices explicitly makes contradictory simultaneous markers unknown.",
+          "support_status": "SUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_semantic_class": "SUPPORTED_BY_ACTIVE_POLICY",
+      "material_ask_count": 1
+    },
+    {
+      "case_id": "Q03",
+      "gold_final_decision": "ALLOW",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "scan-scope"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1
+          ],
+          "ask": "Whether tracking inactivity applies to valid PRE_TRANSIT with complete empty scan history.",
+          "ask_id": "Q03-A1",
+          "rationale": "scan-scope explicitly says this is not applicable.",
+          "support_status": "SUPPORTED"
+        },
+        {
+          "acceptable_support_sections": [
+            "late-boundaries"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            2
+          ],
+          "ask": "Whether an open shipment is late at exact equality of as_of and promise.",
+          "ask_id": "Q03-A2",
+          "rationale": "late-boundaries explicitly excludes equality.",
+          "support_status": "SUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_semantic_class": "SUPPORTED_BY_ACTIVE_POLICY",
+      "material_ask_count": 2
+    },
+    {
+      "case_id": "Q04",
+      "gold_final_decision": "ALLOW",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "attempt-address-evidence",
+            "repeated-attempts"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1,
+            2
+          ],
+          "ask": "Whether an independently supported eligible failed-attempt subtype can make the category ready despite an unknown address subtype.",
+          "ask_id": "Q04-A1",
+          "rationale": "The evidence section explicitly allows a supported eligible subtype to establish readiness; repeated-attempts removes address dependence when an address decision is not claimed.",
+          "support_status": "SUPPORTED"
+        },
+        {
+          "acceptable_support_sections": [
+            "attempt-address-evidence"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1
+          ],
+          "ask": "Whether the unknown address subtype may be included in the escalation basis.",
+          "ask_id": "Q04-A2",
+          "rationale": "The section says disclose the unknown subtype and exclude it from the escalation basis.",
+          "support_status": "SUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "SUPPORTED_BY_ACTIVE_POLICY",
+      "gold_semantic_class": "SUPPORTED_BY_ACTIVE_POLICY",
+      "material_ask_count": 2
+    },
+    {
+      "case_id": "Q05",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "The required cooldown duration between an address clearance and a new address exception.",
+          "ask_id": "Q05-A1",
+          "rationale": "address-notices supplies marker-state rules and forbids inventing a cooldown; no supplied section specifies a duration. The request for a numeric cooldown cannot be fulfilled.",
+          "support_status": "UNSUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_semantic_class": "INSUFFICIENT_POLICY_SUPPORT",
+      "material_ask_count": 1
+    },
+    {
+      "case_id": "Q06",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "The required scanner-button sequence for submitting ATTEMPT_FAILED.",
+          "ask_id": "Q06-A1",
+          "rationale": "The sections define valid events and counting, not scanner user-interface procedures; authority is established but substantive procedure is absent.",
+          "support_status": "UNSUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_semantic_class": "INSUFFICIENT_POLICY_SUPPORT",
+      "material_ask_count": 1
+    },
+    {
+      "case_id": "Q07",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "scan-scope"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1
+          ],
+          "ask": "Whether label events reset physical-scan inactivity.",
+          "ask_id": "Q07-A1",
+          "rationale": "scan-scope explicitly says labels do not reset inactivity.",
+          "support_status": "SUPPORTED"
+        },
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "The maximum permitted scan-ingestion latency in seconds.",
+          "ask_id": "Q07-A2",
+          "rationale": "No supplied section defines a service ingestion-latency SLA; scan gap rules do not establish that SLA.",
+          "support_status": "UNSUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_semantic_class": "INSUFFICIENT_POLICY_SUPPORT",
+      "material_ask_count": 2
+    },
+    {
+      "case_id": "Q08",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [
+            "late-escalate",
+            "late-evidence"
+          ],
+          "acceptable_supporting_evidence_ranks": [
+            1,
+            2
+          ],
+          "ask": "Whether missing tracking history alone prevents an otherwise fully evidenced late handoff.",
+          "ask_id": "Q08-A1",
+          "rationale": "Both supplied late sections explicitly remove tracking-history completeness as a dependency of late readiness.",
+          "support_status": "SUPPORTED"
+        },
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "The exact escalation mailbox address the human reviewer must use.",
+          "ask_id": "Q08-A2",
+          "rationale": "The supplied policy discusses handoff readiness and review but provides no escalation email address.",
+          "support_status": "UNSUPPORTED"
+        }
+      ],
+      "gold_policy_context_disposition": "RESOLVED",
+      "gold_reason_code": "INSUFFICIENT_POLICY_SUPPORT",
+      "gold_semantic_class": "INSUFFICIENT_POLICY_SUPPORT",
+      "material_ask_count": 2
+    },
+    {
+      "case_id": "Q09",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which failed-attempt counting rule was authoritative on 2026-09-20.",
+          "ask_id": "Q09-A1",
+          "rationale": "The supplied active bundle begins 2026-09-26 and contains no earlier authoritative version. The governing historical rule cannot be established.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        }
+      ],
+      "gold_policy_context_disposition": "UNRESOLVED",
+      "gold_reason_code": "UNRESOLVED_POLICY_CONTEXT",
+      "gold_semantic_class": "UNRESOLVED_POLICY_CONTEXT",
+      "material_ask_count": 1
+    },
+    {
+      "case_id": "Q10",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which address-clearance policy governs when authority between the supplied demo bundle and a contract-specific policy is unresolved.",
+          "ask_id": "Q10-A1",
+          "rationale": "The question explicitly lacks authority/precedence binding; the supplied bundle and missing-policy section do not resolve which policy governs. No content of the other policy is assumed.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        }
+      ],
+      "gold_policy_context_disposition": "UNRESOLVED",
+      "gold_reason_code": "UNRESOLVED_POLICY_CONTEXT",
+      "gold_semantic_class": "UNRESOLVED_POLICY_CONTEXT",
+      "material_ask_count": 1
+    },
+    {
+      "case_id": "Q11",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which failed-attempt policy version governs the event when its required governing date is unknown.",
+          "ask_id": "Q11-A1",
+          "rationale": "The one supplied version has an effective interval but no event date can be bound to it.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        },
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which tracking-inactivity policy version governs the event when its required governing date is unknown.",
+          "ask_id": "Q11-A2",
+          "rationale": "The same unresolved temporal applicability prevents selecting the governing tracking version.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        }
+      ],
+      "gold_policy_context_disposition": "UNRESOLVED",
+      "gold_reason_code": "UNRESOLVED_POLICY_CONTEXT",
+      "gold_semantic_class": "UNRESOLVED_POLICY_CONTEXT",
+      "material_ask_count": 2
+    },
+    {
+      "case_id": "Q12",
+      "gold_final_decision": "ABSTAIN",
+      "gold_material_asks": [
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which late-delivery rule governs a case whose authoritative binding to the supplied policy artifacts is unverified.",
+          "ask_id": "Q12-A1",
+          "rationale": "The question explicitly withholds verified case-to-policy authority; valid-looking section labels do not supply that missing binding.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        },
+        {
+          "acceptable_support_sections": [],
+          "acceptable_supporting_evidence_ranks": [],
+          "ask": "Which address-marker rule governs a case whose authoritative binding to the supplied policy artifacts is unverified.",
+          "ask_id": "Q12-A2",
+          "rationale": "The same provenance/applicability blocker prevents asserting the governing address rule.",
+          "support_status": "CONTEXT_UNRESOLVED"
+        }
+      ],
+      "gold_policy_context_disposition": "UNRESOLVED",
+      "gold_reason_code": "UNRESOLVED_POLICY_CONTEXT",
+      "gold_semantic_class": "UNRESOLVED_POLICY_CONTEXT",
+      "material_ask_count": 2
+    }
+  ],
+  "gold_ask_count": 18,
+  "supported_gold_ask_count": 8
+}

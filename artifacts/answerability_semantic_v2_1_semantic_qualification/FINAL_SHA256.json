@@ -1,0 +1,16 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "artifacts/answerability_semantic_v2_1_semantic_qualification/FINAL_RECORD.md": "bd47d52f3775171174e168bc4a748598c2fdb51028d535c6f8f59d0a1be73be5",
+    "artifacts/answerability_semantic_v2_1_semantic_qualification/FRESHNESS_AUDIT.json": "ce305dba39fe6ee174c8101f4bb14225582f16fda9caf1f1ce8d8ba3d59042c9",
+    "artifacts/answerability_semantic_v2_1_semantic_qualification/QUALIFICATION_GOLD.json": "971e2617f69c9d6ebc4b3eafe51f0394c4759247bc8963ef4bd9c7bd7f58ae61",
+    "artifacts/answerability_semantic_v2_1_semantic_qualification/QUALIFICATION_PROTOCOL.md": "2625040df5fabab42d12f158ec9d39d35ba7a735978dd343a64688be3b37b55d",
+    "artifacts/answerability_semantic_v2_1_semantic_qualification/QUALIFICATION_SUITE.json": "28dd6bc1d7a561ac350284c3e5df5b92979960b591d39609dd202c1de1aa360c",
+    "artifacts/answerability_semantic_v2_1_semantic_qualification/RAW_GENERATIONS.json": "6ad5884bbb694bd5e5feb5cbbe6e1b1ce642d8659ef885b1cc38dacb159a5d3e",
+    "artifacts/answerability_semantic_v2_1_semantic_qualification/SEMANTIC_SCORES.json": "82ac2ba593048d37059f1620a43cbc25646c2660ac745dcdd028a7cfd7635ee4",
+    "artifacts/answerability_semantic_v2_1_semantic_qualification/STRUCTURAL_RESULTS.json": "8bb68eb885388503afb2b45b960b2779c42411f62694fc111d3462f7b0ef8337",
+    "artifacts/answerability_semantic_v2_1_semantic_qualification/SUITE_FREEZE_RECEIPT.json": "dfe41f7c858ccbdf8f0fc4dce95f265c4537ffb135bad62cc85fa8139ef43080",
+    "gateway/domain/evaluation/answerability/run_fresh_semantic_qualification.py": "b2f9b916eb4d9c0e29d526a77dac29a3b276a3ffef02cd7cf8bf0e55a26525c5"
+  },
+  "self_hash": "Excluded to avoid circularity; reported externally."
+}

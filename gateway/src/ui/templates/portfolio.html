@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Last Mile | Operations Exception Console</title>
+  <meta name="description" content="Prioritize delivery exceptions, review the policy-backed next action and prepare a human-reviewed handoff.">
+  <link rel="stylesheet" href="/portfolio-assets/portfolio.css?v=console-4">
+  <script src="/portfolio-assets/portfolio.js?v=console-4" defer></script>
+</head>
+<body>
+<a class="skip" href="#workspace">Skip to exception queue</a>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">&#8627;</span><span>LAST MILE<span class="brand-sub">OPERATIONS CONSOLE</span></span></a>
+  <nav aria-label="Main navigation"><a class="nav-active" href="#workspace">Delivery issue queue</a><a href="/engineering">Engineering</a><span class="environment"><i></i> Synthetic workspace</span></nav>
+</header>
+<main>
+  <section class="hero console-hero">
+    <div><p class="eyebrow">FROM DISPATCH TO DOORSTEP</p><h1>Know what needs attention.<br><span>Know what to do next.</span></h1><p class="hero-sub">One queue for delivery issues that need attention. See which shipments need help, what the operating rules recommend, and what a person should do next.</p><a class="button primary" href="#operations-overview">Review delivery issues <span aria-hidden="true">&#8595;</span></a></div>
+    <aside class="hero-note"><p class="eyebrow">YOUR REVIEW WORKFLOW</p><h2>Find the issue.<br>Check the reason.<br>Decide the next step.</h2><p>The system checks facts against operating rules.<br>A person approves any further action.</p></aside>
+  </section>
+  <section id="operations-overview" aria-labelledby="overview-title" class="operations-overview">
+    <div class="section-heading"><div><p class="eyebrow">SUMMARY → DIAGNOSE → DRILL DOWN → ACT</p><h2 id="overview-title">Operations overview</h2></div><span class="small-tag">FULL SNAPSHOT · CLICK TO EXPLORE</span></div>
+    <p class="footnote">The 10 shipments are designed synthetic scenarios for demonstrating the analysis workflow; they are not a representative operational sample.</p>
+    <p id="overview-status" role="status">Loading snapshot metrics...</p>
+    <div class="overview-grid" id="overview-charts" hidden>
+      <article class="metric-card"><h3>Action status</h3><p class="metric-unit">Unit: shipment · one overall action each</p><div id="action-chart" class="metric-bars"></div><details class="metric-definition"><summary>How this metric is defined</summary><p>Count distinct shipments by the engine's overall action. Shipment-wide blockers require review; otherwise the order is ready to escalate, needs review, monitor, then normal.</p><p>Counts describe this full synthetic snapshot only. Queue filters and local human decisions do not change the engine's recommendations.</p></details></article>
+      <article class="metric-card"><h3>Review gaps</h3><p class="metric-unit">Unit: shipments affected per gap group</p><div id="gap-chart" class="metric-bars"></div><p class="metric-note">A gap may affect one judgment without blocking the whole shipment.</p><details class="metric-definition"><summary>How this metric is defined</summary><p>Group actual review blockers by the judgment they affect: delivery promise, tracking history, attempt history/identity, or address state. Count each shipment once per group, even if multiple blockers apply.</p><p>A shipment can appear in several groups; do not add these counts as a shipment total. Gaps do not establish a root cause or prove that an issue occurred.</p></details></article>
+      <article class="metric-card"><h3>Longest-running confirmed issues</h3><p class="metric-unit">Unit: shipment · longest confirmed issue age</p><div id="age-chart" class="metric-bars"></div><button id="unknown-age" class="text-button" type="button"></button><p id="age-overlap" class="metric-note"></p><details class="metric-definition"><summary>How this metric is defined</summary><p>For each shipment, take the longest engine-derived age among confirmed issues with a known start. Sort longest first, then shipment ID. Normal checks and unknown ages are excluded.</p><p>Unknown starts count shipments with at least one unresolved or confirmed issue check whose start cannot be established. They can overlap the ranking; an unresolved check is not proof of an issue. This is not queue waiting time, backlog or team performance.</p></details></article>
+    </div>
+  </section>
+  <section id="workspace" aria-labelledby="workspace-title">
+    <div class="section-heading"><div><p class="eyebrow">OPERATIONS WORKSPACE</p><h2 id="workspace-title">Exception queue</h2></div><p id="snapshot-time" class="muted">Loading fixed shipment snapshot...</p></div>
+    <p class="queue-intro"><strong>Delivery issues that need attention.</strong> Each shipment is checked for overdue delivery, missing tracking updates, and delivery attempt or address problems. The system prioritizes the work and shows the next step supported by the operating rules.</p>
+    <div class="queue-stats" aria-label="Queue summary">
+      <div><span>Shipments</span><strong id="count-all">&mdash;</strong></div>
+      <div><span>Ready to escalate</span><strong id="count-ready">&mdash;</strong></div>
+      <div><span>Need review</span><strong id="count-review">&mdash;</strong></div>
+      <div><span>Reviewed locally</span><strong id="count-reviewed">0</strong></div>
+    </div>
+    <p class="footnote">Fixed synthetic snapshot. Counts and recommendations are computed from shipment facts. Local review progress resets on reload.</p>
+    <details class="action-guide"><summary>What do the actions mean?</summary><dl><div><dt>Normal</dt><dd>No action needed right now.</dd></div><div><dt>Monitor</dt><dd>Keep watching. The issue has not reached the next action threshold.</dd></div><div><dt>Needs review</dt><dd>Some required facts are missing, unclear, or conflicting.</dd></div><div><dt>Ready to escalate</dt><dd>The operating rules support sending this case for human escalation review.</dd></div></dl></details>
+    <div id="queue-error" role="alert" hidden></div>
+    <div id="drilldown-context" class="drilldown-context" hidden><span id="drilldown-label"></span><button id="reset-drilldown" class="text-button" type="button">Show all shipments</button></div>
+    <div class="queue-toolbar">
+      <div class="filters" role="group" aria-label="Filter shipments">
+        <button data-filter="all" aria-pressed="true">All shipments</button>
+        <button data-filter="HIGH" aria-pressed="false">High priority</button>
+        <button data-filter="NEEDS_REVIEW" aria-pressed="false">Needs review</button>
+        <button data-filter="READY_TO_ESCALATE" aria-pressed="false">Ready to escalate</button>
+        <button data-filter="unreviewed" aria-pressed="false">Not reviewed locally</button>
+      </div>
+      <label class="search-label">Find shipment <input id="shipment-search" type="search" placeholder="e.g. DEMO-003" autocomplete="off"></label>
+    </div>
+    <div class="queue-table-wrap" tabindex="0" role="region" aria-label="Shipment exception queue, scroll horizontally on narrow screens">
+      <table class="queue-table"><caption id="queue-caption">Loading queue...</caption><thead><tr><th scope="col">Shipment</th><th scope="col">Delivery issue</th><th scope="col">Priority</th><th scope="col">Next step</th><th scope="col">Issue age</th><th scope="col">Policy support</th></tr></thead><tbody id="queue-rows"></tbody></table>
+    </div>
+    <p id="queue-empty" hidden>No shipments match these filters. <button id="clear-filters" class="text-button">Clear filters</button></p>
+    <p class="footnote">Sorted by priority, then longest known issue age: time since the issue met the operating rule, not since the shipment was created. Unknown means the start time cannot be confirmed. Policy support shows whether the recommendation has the facts and operating rules it needs.</p>
+  </section>
+  <section id="selected-shipment" class="selected-shipment" aria-labelledby="selected-title">
+    <div class="section-heading"><div><p class="eyebrow">SELECTED SHIPMENT</p><h2 id="selected-title">Select a shipment to start</h2></div><a href="#workspace" class="text-link">Back to queue &#8593;</a></div>
+    <div id="detail-error" role="alert" hidden></div>
+    <p id="detail-status" role="status" aria-live="polite">Choose any shipment in the queue to see its recommended action and next steps.</p>
+    <div id="result" hidden>
+      <section class="recommendation" id="recommendation">
+        <div><p class="eyebrow">RECOMMENDED ACTION</p><h2 id="action-state"></h2><p id="action-explanation"></p><ul id="top-reasons"></ul></div><span id="priority" class="priority"></span>
+      </section>
+      <div class="detail-grid">
+        <div>
+          <section class="card next-card"><p class="eyebrow">MOVE THE WORK FORWARD</p><h3>What happens next?</h3><ol id="next-steps"></ol><p id="next-note" class="muted"></p><button id="prepare-brief" class="button primary" hidden>Prepare handoff brief</button><div id="brief-panel" hidden><label for="handoff-brief">Draft for human review</label><textarea id="handoff-brief" readonly rows="9"></textarea><p class="footnote">Prepared from verified ready categories only. Nothing sent or saved.</p></div></section>
+          <section class="card human-review"><div class="card-heading"><h3>Human review</h3><span class="small-tag">THIS SESSION ONLY</span></div><p>Confirm the recommendation or record your own review decision.</p><div class="review-buttons"><button id="approve" class="button primary">Approve recommendation</button><button id="change" class="button secondary" aria-expanded="false" aria-controls="change-panel">Change action</button><button id="escalate" class="button secondary">Mark for escalation</button></div><div id="change-panel" hidden><label for="human-action">Your selected action</label><select id="human-action"><option value="NORMAL">Normal</option><option value="MONITOR">Monitor</option><option value="NEEDS_REVIEW">Needs review</option><option value="READY_TO_ESCALATE">Ready to escalate</option></select><button id="save-action" class="button secondary">Apply locally</button></div><p id="review-status" role="status" aria-live="polite">No human decision recorded.</p><p class="footnote">Demo controls only. Nothing is sent to a carrier or saved to a server. The system recommendation stays unchanged. Local review progress resets on reload.</p></section>
+        </div>
+        <div>
+          <details id="policy-panel" class="card disclosure"><summary><span><strong>Why this is supported</strong><small id="evidence-count"></small></span><span aria-hidden="true">+</span></summary><p class="muted">These are the operating instructions behind the checks. SOP means standard operating procedure: the written rules for handling a delivery issue, including what information is needed.</p><div id="evidence"></div></details>
+          <details id="decision-panel" class="card disclosure"><summary><span><strong>Decision details</strong><small>All three checks and any unresolved facts</small></span><span aria-hidden="true">+</span></summary><p id="gap-focus" class="metric-note" hidden></p><div id="assessments"></div><details><summary>View rule trace</summary><pre id="raw-result"></pre></details></details>
+          <details id="facts-panel" class="card disclosure"><summary><span><strong>Shipment facts</strong><small id="facts-summary"></small></span><span aria-hidden="true">+</span></summary><dl id="facts" class="facts"></dl><details><summary>View raw case data</summary><pre id="raw-case"></pre></details></details>
+          <button id="analyze" class="button secondary">Re-run triage</button><p class="footnote">This demo rechecks the same fixed snapshot; editing source facts is not connected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="coverage card"><p class="eyebrow">WHEN THE RULES DO NOT HAVE AN ANSWER</p><h3>What if the policy does not cover the question?</h3><p>For example: &ldquo;How much money should the customer receive for this delivery problem?&rdquo;</p><div class="coverage-status">Policy support not available</div><p>The demo operating rules do not say how much money to pay. This example flags the missing rule for a person to review, rather than inventing an amount.</p><div class="coverage-columns"><div><h4>Available policy evidence</h4><p>How to handle delivery problems<br>What to check before asking a team to take further action</p></div><div><h4>Missing policy support</h4><p>Reimbursement amount</p></div></div><details><summary>About this coverage example</summary><p>One predefined question for the frozen demo policy. It is not a general-purpose question-answering capability. No refund amount is inferred.</p><p class="footnote">SOP-06 / handoff-boundary: draft only; human review required; do not issue refunds.</p></details></section>
+  <section class="business-value"><p class="eyebrow">LESS ASSEMBLY. MORE CLARITY.</p><h2>From scattered facts to a reviewable next step.</h2><div class="capabilities"><article><span>ONE REVIEW</span><h3>Check 3 delivery issue types together</h3><p>Check overdue deliveries, missing tracking updates and delivery attempt or address problems together.</p></article><article><span>CONSISTENT NEXT STEPS</span><h3>Apply the same operating rules every time</h3><p>See why each shipment needs monitoring, review or escalation.</p></article><article><span>NO POLICY HUNTING</span><h3>See the exact rule behind each recommendation</h3><p>Open the exact SOP sections behind every ready recommendation.</p></article><article><span>SAFE HANDOFFS</span><h3>Escalate only what is supported; keep gaps visible</h3><p>Prepare a local brief without losing unresolved facts. Keep unsupported requests, such as this reimbursement example, with a human.</p></article></div></section>
+  <aside class="evaluation-link"><p><strong>Why not let the AI decide?</strong><br>We tested that approach. The small model did not reliably judge whether policy evidence truly supported an answer, so this demo keeps business decisions rule-based and human-reviewed.</p><a class="text-link" href="/engineering">See evaluation &#8594;</a></aside>
+</main>
+<footer><span>LAST MILE / Evidence before action.</span><span>Synthetic shipments. Fictional demo operating policy. Not carrier or industry standards.</span></footer>
+</body>
+</html>

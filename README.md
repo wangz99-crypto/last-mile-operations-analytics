@@ -1,356 +1,91 @@
-# Internal LLM Gateway
-### Enterprise-Style Tool-First RAG System with Secure Access, Audit Logging & Deterministic Business Tools
+# Last-Mile Operations Analytics & Decision Support
 
-An internal-facing LLM Gateway that wraps a raw LLM backend (vLLM) with:
+Turn shipment exceptions into consistent, policy-backed actions with traceable SOP evidence and human-controlled escalation.
 
-- hybrid keyword-semantic tool routing
-- authentication and role-based access control
-- deterministic business tools
-- retrieval-augmented grounding
-- retrieval quality evaluation harness
-- structured citation outputs
-- audit logging and metrics
-- CI-safe testability
+Built for operations teams handling late deliveries, stale tracking, failed delivery attempts and address issues. This portfolio workspace shows **what needs attention, why, and which operating policy supports the recommendation**.
 
-> This project demonstrates how real organizations deploy internal AI assistants — not as raw model endpoints, but as secure, observable gateway systems.
+## Try the workspace
 
----
-
-# Live Demo (Render Deployment)
-
-You can try the live instance hosted on Render:
-
-https://llm-internal-assistant.onrender.com/
-
----
-
-## Quick Start (60 seconds)
-
-1) Verify service health:
+From the repository root, using Python 3.11+:
 
 ```bash
-curl https://llm-internal-assistant.onrender.com/health
+python -m venv .venv
+# Windows PowerShell: .venv/Scripts/Activate.ps1
+# macOS/Linux: source .venv/bin/activate
+python -m pip install -r gateway/requirements.txt
+python -m uvicorn src.portfolio:app --app-dir gateway --host 127.0.0.1 --port 8000
 ```
 
-Expected:
+Open **http://127.0.0.1:8000**. No GPU, model weights, embedding dependencies or API key is required for this public synthetic demo. This dedicated app does not start the older gateway's knowledge-base/model lifecycle.
 
-```json
-{"status":"ok","service":"llm-gateway-demo"}
+1. Start with the compact **Operations overview**: action distribution, shipments affected by review gaps, and the longest-running confirmed issues. Each chart includes its metric definition and drills into the same 10-shipment queue.
+2. Filter by priority, review needs or escalation readiness; search by shipment ID.
+3. DEMO-001 is selected automatically, showing a supported overdue-delivery action alongside unresolved checks. Select any row to see its recommended action, priority, top two reasons and **What happens next?**
+4. Expand **Why this is supported** for verified SOP sections, or **Decision details** for the complete rule trace.
+5. Prepare a local handoff brief for a ready action and record a **Human review** decision. Review progress survives shipment switching within this page, but resets on reload. Nothing is sent or saved to an operational system.
+
+| Synthetic shipments | Operational story |
+|---|---|
+| DEMO-001 / DEMO-006 | Late delivery at escalation and monitoring stages; unrelated gaps remain visible. |
+| DEMO-002 / DEMO-007 | Stale tracking at monitoring and escalation stages. |
+| DEMO-003 / DEMO-008 | Multiple failed attempts with an active address notice, and a single failed attempt. |
+| DEMO-004 / DEMO-009 / DEMO-010 | Missing promise, missing attempt identity and conflicting address notices require review. |
+| DEMO-005 | A normal shipment provides a comparison. |
+
+All cases use a **fixed snapshot time**, synthetic facts and fictional policy. They do not track real shipments. Inputs reuse the public illustrative examples and add small, documented variations; no evaluation question or benchmark label is used.
+
+## Evidence before action
+
+```text
+Shipment facts -> Deterministic business rules -> Exact SOP sections
+               -> Evidence-backed explanation -> Human review
 ```
 
-2) Try a deterministic tool query:
+- **Consistent triage:** business rules produce the recommendation, not a model response.
+- **Operational visibility:** summarize the same engine results, identify information gaps and drill into the underlying shipment. All totals describe designed synthetic scenarios, not representative business performance.
+- **Traceable evidence:** stable policy/version/section identities connect every rule assessment to real SOP text. Integrity failures prevent the recommendation.
+- **Defined boundaries:** a scoped reimbursement coverage example demonstrates an unsupported policy request. It is not a general-purpose question-answering classifier.
+- **Human control:** readiness is distinct from operational approval. There is no carrier contact, refund, shipment mutation or production action integration.
 
-```bash
-curl -X POST https://llm-internal-assistant.onrender.com/ask \
-  -H "Content-Type: application/json" \
-  -H "x-api-key: dev-user-key" \
-  -d '{"question":"List open Sev-2 incidents","k":3}'
+The default UI is an operations workspace. The separate **Engineering** page at `/engineering` contains the engineering detail and evaluation lessons.
+
+## Evaluation-driven design
+
+**Structured output does not guarantee correct reasoning.** The constrained small-model runtime passed its structural smoke recovery. The subsequent frozen 12-case semantic qualification failed: final-decision accuracy was 5/12, structural acceptance 9/12, and supported-evidence coverage 37.50%.
+
+The owner-reviewed `SEMANTIC_MATERIAL_SUPPORT_V2_1` candidate using Qwen2.5-1.5B is **rejected for DEVELOPMENT evaluation**. It is not used by this workspace. This measured limitation informs the architecture: deterministic business rules and human review retain decision responsibility. It does not invalidate every possible semantic architecture.
+
+The scientific core, policy bundle and historical evaluation artifacts remain frozen. This sprint does not rerun qualification, introduce a model, or expose DEVELOPMENT/HELD_OUT data.
+
+## Implementation and verification
+
+FastAPI + plain HTML/CSS/JavaScript, following the existing stack; no frontend build system or new UI framework.
+
+- `gateway/src/portfolio.py`: public demo routes and standalone app.
+- `gateway/src/triage_demo.py`: allowlisted synthetic inputs, unchanged `triage_snapshot`, verified `SectionStore`, and `retrieve_case_sections` integration.
+- `gateway/src/ui/templates/portfolio.html` and `gateway/src/ui/static/portfolio.*`: responsive queue, collapsed evidence, next steps and local human-review interactions.
+- `gateway/src/ui/templates/engineering.html`: separate engineering and evaluation page.
+- `GET /api/triage/queue`: computes the 10 allowlisted shipment summaries, ordered by priority and longest known exception age. Unknown age is never treated as zero.
+- `POST /api/triage/analyze`: accepts **only** a predefined `case_id`; arbitrary shipment input and arbitrary questions are not supported.
+- The existing gateway app also serves the portfolio at `/`; its former UI is preserved at `/gateway`. `/ask` and its existing authentication/response contract are unchanged.
+
+Offline tests that do not read benchmark data (PowerShell, from repo root):
+
+```powershell
+python -m pip install pytest
+$env:PYTHONPATH = "gateway;."
+$env:DISABLE_EMBEDDINGS = "1"
+python -m pytest gateway/tests gateway/domain/tests/test_engine.py gateway/domain/tests/test_engine_diagnostics.py gateway/domain/tests/test_section_store.py gateway/domain/tests/test_exact_retrieval.py
+node --check gateway/src/ui/static/portfolio.js
 ```
 
-3) Open the Web UI in browser:
+Full scientific evaluation commands are deliberately not part of demo startup or this verification scope. See [portfolio implementation notes](docs/PORTFOLIO.md) for boundaries and checks.
 
-https://llm-internal-assistant.onrender.com/
+## Deeper project history
 
----
+- [Original gateway README, preserved verbatim](docs/GATEWAY_REFERENCE.md): earlier tool-first RAG architecture, routes, deployment notes and research commands. Its older live deployment is not evidence that this new sprint is deployed.
+- [Domain contract](gateway/domain/CONTRACTS.md) and [engine implementation](gateway/domain/engine/IMPLEMENTATION.md).
+- [Policy retrieval interfaces](gateway/domain/retrieval/README.md).
+- [Original project specification](PROJECT_SPEC.md).
 
-## Demo API Keys
-
-| Role  | API Key        |
-|-------|----------------|
-| User  | dev-user-key   |
-| Admin | dev-admin-key  |
-
-Include API key in requests:
-
-```bash
--H "x-api-key: dev-user-key"
-```
-
----
-
-# Why This Project Matters
-
-Most LLM demos look like this:
-
-User → Model → Text Output  
-
-Real production systems look like this:
-
-User  
-↓  
-Gateway (Auth + Policy + Tools + RAG + Audit)  
-↓  
-LLM Backend  
-
-This repository implements the **gateway layer** — the part real companies actually build.
-
----
-
-# Core Capabilities
-
-## 1) Tool-First Architecture (Deterministic Layer)
-
-Operational queries are routed to deterministic tools before calling the LLM.
-
-Tool routing works in two layers:
-- **Keyword routing** — exact phrase matching; fast, deterministic, no embedding cost
-- **Semantic fallback** — when keyword routing finds no match, an embedding-based classifier compares the query against precomputed intent vectors. Definitional questions (`"what is ..."`, `"explain ..."`) are excluded before embedding to prevent false positives from shared domain vocabulary.
-
-Example:
-
-- "List open Sev-2 incidents" → `incident.list_open`
-- No LLM call
-- No token usage
-- Fully deterministic output
-- Still backed by internal documentation citations
-
-If the LLM backend is offline:
-
-```bash
-docker compose stop vllm
-```
-
-Tool-based queries continue to function.
-
-This mirrors real production priorities:
-
-- reliability  
-- cost control  
-- deterministic workflows  
-
----
-
-### Execution Modes
-
-The gateway dynamically selects execution mode **before token generation**:
-
-- `tool` → deterministic business logic only
-- `tool+llm` → tool output enriched with model reasoning
-- `rag+llm` → retrieval grounding + model generation
-- `llm` → direct model invocation
-
-Mode selection is handled via routing rules.
-
----
-
-## 2) Retrieval-Augmented Generation (RAG)
-
-For knowledge questions, the gateway:
-
-- indexes Markdown documents under `gateway/kb/`
-- chunks with overlap
-- builds embeddings (SentenceTransformer)
-- performs cosine top-k retrieval
-- filters out low-relevance chunks below a cosine threshold before building LLM context
-- injects context into the LLM prompt
-
-If no chunks clear the relevance threshold, the response includes a structured warning (`warnings` field) rather than silently sending ungrounded context to the LLM.
-
-Answers are grounded in internal documentation, reducing hallucination risk.
-
-Embeddings can be disabled in CI:
-
-```bash
-DISABLE_EMBEDDINGS=1
-```
-
----
-
-## 3) Retrieval Evaluation Harness
-
-Retrieval quality is measured offline against a labeled eval set:
-
-- 15 ground-truth examples across incident, escalation, runbook, audit, and policy categories
-- tagged by difficulty (`easy` / `medium` / `hard`)
-- reports hit@1, hit@3, per-category and per-difficulty breakdown
-- identifies failed retrievals with predicted top-1 and top-3 source files
-
-Run without a live app or GPU:
-
-```bash
-PYTHONPATH=gateway python gateway/eval/retrieval_eval.py
-```
-
-Baseline (keyword-only routing): hit@3 = 13/15 (86%). The two persistent hard failures motivate the semantic routing layer.
-
----
-
-## 5) Enterprise Citation Cards
-
-Responses return structured citation metadata:
-
-```json
-{
-  "sources": [
-    {
-      "title": "Incident Response",
-      "doc_type": "Runbook",
-      "section": "# Severity Levels",
-      "score": 1.0,
-      "preview": "...",
-      "rank": 1
-    }
-  ]
-}
-```
-
-Tool-mode citations are intelligently distributed across multiple documents to maximize policy coverage.
-
----
-
-## 6) Secure Access (Auth + RBAC)
-
-All endpoints require API keys.
-
-Roles:
-
-- `user` → `/ask`
-- `admin` → `/reload_kb`, `/kb_status`
-
-Unauthorized access returns structured 403 responses.
-
----
-
-## 7) Audit Logging (Privacy-Preserving)
-
-Each request logs:
-
-- request_id
-- user_id
-- role
-- latency
-- tool usage
-- prompt hash (not raw prompt text)
-
-No sensitive text is stored.
-
-Audit logs:
-
-```
-gateway/artifacts/audit/audit.jsonl
-```
-
-This mirrors internal AI governance requirements.
-
----
-
-## 8) Observability
-
-Prometheus metrics included:
-
-- request counts
-- error types
-- latency histogram
-
-Endpoint:
-
-```
-GET /metrics
-```
-
----
-
-# Response Contract (Structured JSON Envelope)
-
-All responses follow a structured contract:
-
-```json
-{
-  "status": "ok",
-  "request_id": "uuid",
-  "answer": {
-    "summary": "...",
-    "steps": [],
-    "notes": [],
-    "confidence": 0.95
-  },
-  "sources": [],
-  "tool": {
-    "used": "incident.list_open",
-    "result": {}
-  },
-  "meta": {
-    "mode": "tool",
-    "engine": "gateway"
-  },
-  "timings_ms": {
-    "llm": 0,
-    "total": 5
-  },
-  "warnings": []
-}
-```
-
-This ensures:
-
-- deterministic structure
-- API contract stability
-- UI compatibility
-- auditability
-
----
-
-# Architecture Overview
-
-User  
-↓  
-POST /ask  
-↓  
-FastAPI Gateway  
-  - Auth + RBAC  
-  - Rate limiting  
-  - Tool routing  
-  - RAG retrieval  
-  - Citation builder  
-  - Structured JSON envelope  
-↓  
-vLLM (OpenAI-compatible backend)
-
----
-
-# Running Locally
-
-Start services:
-
-```bash
-docker compose up -d --build
-```
-
-Health check:
-
-```bash
-curl http://127.0.0.1:8000/health
-```
-
----
-
-# CI-Safe Testing
-
-No GPU required.
-
-Run locally:
-
-```bash
-export PYTHONPATH=gateway
-export DISABLE_EMBEDDINGS=1
-pytest -q
-```
-
----
-
-# Design Tradeoffs
-
-This system intentionally separates deterministic tools from LLM reasoning.
-
-Key decisions:
-
-- Operational workflows must remain functional even if the LLM backend is offline
-- Business-critical queries should not depend on token generation
-- Deterministic tools reduce latency and cost
-- RAG is invoked only when semantic reasoning is required
-
-Embeddings are lazily loaded and can be disabled in CI to ensure:
-
-- no external downloads
-- deterministic test behavior
-- stable automated pipelines
+Public UI improvements do not supersede these scientific records. No private benchmark or research-artifact directory is served by the demo.

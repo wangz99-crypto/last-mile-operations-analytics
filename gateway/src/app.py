@@ -23,6 +23,7 @@ from src.tools.router import route_tool
 from src.tools.incident_tool import list_open_incidents
 from src.tools.runbook_tool import get_sev_checklist
 from src.ui.demo_page import mount_demo_ui
+from src.portfolio import router as portfolio_router
 
 # ==========================================
 # Demo deterministic scenarios
@@ -860,8 +861,9 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="Internal LLM Gateway with RAG", version="0.2.0", lifespan=lifespan)
+app.include_router(portfolio_router)
 
-# Mount demo UI (root route)
+# Preserve the original gateway playground at /gateway.
 mount_demo_ui(
     app,
     demo_mode=DEMO_MODE,

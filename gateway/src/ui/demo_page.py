@@ -14,7 +14,7 @@ def mount_demo_ui(
     demo_admin_key: str,
 ) -> None:
     """
-    Register the demo landing page (GET /) on the given FastAPI app.
+    Preserve the original gateway playground at GET /gateway.
     Keeps UI concerns out of src/app.py.
     """
 
@@ -22,7 +22,7 @@ def mount_demo_ui(
     template_path = Path(__file__).resolve().parent / "templates" / "demo.html"
     html = template_path.read_text(encoding="utf-8")
 
-    @app.get("/", response_class=HTMLResponse)
+    @app.get("/gateway", response_class=HTMLResponse)
     async def root(request: Request):
         resp = HTMLResponse(html)
 

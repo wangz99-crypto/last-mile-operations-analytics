@@ -45,6 +45,20 @@ The ten scenarios demonstrate metric definition, aggregation and drill-down. The
 - Engineering metrics live on `/engineering` as a static, labeled summary of the owner-reviewed experiment, not a fresh or live evaluation. The workflow links to this page without displaying research scores. The full scientific artifacts remain untouched and are not mounted as static assets.
 - Failed HTTP analysis clears prior results and reports unavailability. A late response for a previously selected case cannot overwrite the current case. All policy text is rendered as text, not executable HTML.
 
+## Cross-platform policy-byte preservation
+
+The public artifact manifest freezes CRLF file bytes. Git stores these text blobs
+with LF, so a default Linux checkout previously failed the policy checksum check
+and the queue returned 503. Thirteen exact-path `.gitattributes` rules now specify
+`text eol=crlf` for the manifest-listed public files. Policy content, manifest
+hashes and runtime integrity enforcement are unchanged. No evaluation artifact
+is covered by these new rules.
+
+A fresh public-runtime checkout with `core.autocrlf=false` and `core.eol=lf`
+matched all 13 frozen file hashes and loaded 25 sections and all 10 shipments.
+This checks deployment byte portability rather than rerunning any model or
+scientific evaluation.
+
 ## Verification scope
 
 Use existing gateway tests plus the input-only engine, engine diagnostics, section-store and exact-retrieval suites. These suites use public runtime policy and synthetic inputs rather than DEVELOPMENT or HELD_OUT data. Do not run broad evaluation discovery as a substitute. Portfolio tests compare real API results to the unchanged engine, verify exact evidence and hashes, reject arbitrary inputs, and check fail-closed behavior when policy integrity fails.

@@ -452,3 +452,18 @@ gateway/domain/evaluation/answerability/development/AQ040.json -text
 /artifacts/answerability_semantic_v2_1_direct_regex_decoder/UNICODE_REGRESSION_RESULT.json -text
 /gateway/domain/evaluation/answerability/direct_regex_qualification.py -text
 /gateway/domain/tests/test_direct_regex_qualification.py -text
+# Public runtime artifacts were frozen with CRLF byte hashes. Reproduce those
+# exact bytes on every checkout, including Linux deployments; never rehash them.
+/gateway/domain/CONTRACTS.md text eol=crlf
+/gateway/domain/examples/late_with_gaps.example.json text eol=crlf
+/gateway/domain/examples/normal.example.json text eol=crlf
+/gateway/domain/policy/policy_registry.json text eol=crlf
+/gateway/domain/schemas/contracts.schema.json text eol=crlf
+/gateway/domain/sops/last_mile/carrier_handoff.md text eol=crlf
+/gateway/domain/sops/last_mile/escalation_evidence.md text eol=crlf
+/gateway/domain/sops/last_mile/exception_classification.md text eol=crlf
+/gateway/domain/sops/last_mile/failed_attempt_address.md text eol=crlf
+/gateway/domain/sops/last_mile/insufficient_evidence.md text eol=crlf
+/gateway/domain/sops/last_mile/late_delivery.md text eol=crlf
+/gateway/domain/sops/last_mile/operations_audit.md text eol=crlf
+/gateway/domain/sops/last_mile/tracking_inactivity.md text eol=crlf
